@@ -18,9 +18,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 Williamson selects a governance form from three properties of a transaction: how specific the investment is, how uncertain the environment is, and **how often the transaction recurs between the same two parties**.
 
-Two of those three have been in this framework since the beginning. Asset specificity is the level, $\lVert \mathbf{F} \rVert_1$. Uncertainty is the three component gaps. Frequency was present once, as a scoring factor called Retention Horizon, and it was folded into the implementation count as though a long relationship were a kind of installation cost.
-
-That was a category error and it cost the framework its entire strategy layer. Frequency is not a cost. It is the property that decides whether building machinery to govern a relationship is worth building at all, because machinery amortizes over repetitions and a single transaction has nothing to amortize over.
+Specificity is the level under Axiom II. Uncertainty is the three component gaps under Axiom III. Frequency is the third reading, and it is not a cost. It is what decides whether machinery built to govern a relationship can be amortized at all, because machinery amortizes over repetitions and a single transaction has nothing to amortize over.
 
 **Frequency is a separate axis with three readings.**
 
@@ -43,9 +41,9 @@ Williamson's result is that specificity and frequency together select the govern
 | At or above | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
 | Far above, and rising | Continuous | **Unified** | One party absorbs the other's function. The buyer builds it internally, or the seller acquires the delivery capability. The transaction stops being a transaction. |
 
-**The MIP has always been bilateral governance and was justified as something narrower.** Its stated purpose is protection against hold-up, which is true and incomplete. What it actually is, structurally, is a relational contract: it leaves both parties autonomous, it safeguards the relationship rather than the transaction, and its gates are the mechanism by which each repetition earns the next. That is why it works on recurrent deals and reads as bureaucratic overhead on one-shot ones.
+**The MIP is bilateral governance.** Its stated purpose is protection against hold-up, which is true and incomplete. Structurally it is a relational contract: it leaves both parties autonomous, it safeguards the relationship rather than the transaction, and its gates are the mechanism by which each repetition earns the next. That is why it works on recurring deals and reads as overhead on one-shot ones.
 
-**The fourth row is a loss condition, and the framework has never named it.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom II's under-frictioned failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
+**The fourth row is a loss condition.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom II's under-frictioned failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
 
 ---
 

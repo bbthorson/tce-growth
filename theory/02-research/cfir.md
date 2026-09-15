@@ -28,7 +28,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Supports in TCG:**
 - **Axiom III — Law of Uncertainty Inflation** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of $F_{consensus}$ and $F_{implementation}$.
 - **Friction Allocation Principles** (primary derivation) — the Blueprint and Red Team operationalize CFIR diagnostic in the seller's hands.
-- **Three Transaction Costs** (clarifying concept) — CFIR's process domain maps directly to consensus and implementation costs.
+- **Three Transaction Costs** (clarifying concept) — CFIR's process domain maps directly to the bargaining and enforcement costs.
 - See [`practice/cfir-field-mapping.md`](../../practice/cfir-field-mapping.md) for the construct-by-construct mapping into the implementation artifacts.
 
 **Notable quotes:**

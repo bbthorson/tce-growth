@@ -18,7 +18,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The framework makes two kinds of claim and they carry very different weight.
 
-**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion and level sets the boundary. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
+**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion. Specificity sets the level, the boundary, and how much of the cost must be paid before signature. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
 
 **Parameters** say how much. Every one of them is a reasoned starting value. None is fitted to booked deal data.
 
@@ -106,7 +106,7 @@ Weakest layer in the framework, and the only one whose parameters have no argume
 |---|---|---|
 | Composite weights | 0.35, 0.25, 0.25, 0.15 | **Chosen.** No source. |
 | Friction allocation target band | 0.60-0.75 | **Chosen.** No source. |
-| Committee-size correction | $N^{0.5}$ | **Structurally motivated.** Direction follows from consensus friction rising in $N$. The exponent is chosen. |
+| Committee-size correction | $N^{0.5}$ | **Structurally motivated.** Direction follows from the bargaining cost rising in $N$. The exponent is chosen. |
 | Provisioning guard | +1 | **Convention.** Prevents division by zero. |
 | Change-order weight | 0.25 | **Chosen.** No source. |
 | Buyer commitment reference | 0.5 | **Convention** until twenty closed Structural deals exist, then a trailing median. |

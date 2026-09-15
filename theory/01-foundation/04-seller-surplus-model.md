@@ -162,9 +162,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetr
 
 ## Open questions
 
-- **Resolved in the Constitution.** Axiom II names the party bearing the specificity and sets the level, and Axiom I separates composition, which selects the motion, from that level. Both were open questions raised by this document.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
-- **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
 - **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.
 - **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
 

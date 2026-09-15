@@ -31,7 +31,7 @@ The **research files** in `theory/02-research/` back specific axioms:
 - Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`
 - Axiom III (Inflation) → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`, `re-aim-framework.md`
 
-Start with `theory/02-research/00-reading-guide.md` before modifying any research file.
+Start with `theory/02-research/00-reading-guide.md` before modifying any research file. Before extending the theory, read `theory/01-foundation/07-open-questions.md`, which records where it is under-developed by axiom; an extension should land on a recorded gap or add one.
 
 **A motion is a region, not a list entry.** `theory/01-foundation/01-motions.md` carries the derivation, adopted in Constitution v17.0 as the friction vector and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom III description, not the market states, because those were never load-bearing outside the two files that carried them.
 

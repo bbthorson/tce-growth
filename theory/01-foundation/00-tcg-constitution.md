@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 2.0
+version: 2.1
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 2.0
+**Version:** 2.1
 **Purpose:** To state the three claims from which everything else in this repository derives, each at the level where a seller meets it, each producing a decision, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -241,10 +241,11 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.0.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 2.1.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 2.1 | 2026-09 | Restructure, step 5. Coase's component names swept through theory prose, fit verification moved out of the search component and under specificity, the motions and governance files trimmed of material the Constitution now carries, and 07-open-questions.md opened as the register of under-developed areas. No axiom changed. |
 | 2.0 | 2026-09 | The axioms are rewritten. Governance stops being an axiom and becomes a corollary of specificity, where Williamson put it. Specificity becomes Axiom II with its own law. Uncertainty Inflation moves from II to III and gains its second clause. Each axiom is stated at the level where a seller meets it, in one sentence, with a falsifier. Three standing assumptions are named above the axioms. The components take Coase's names in theory, with consensus and implementation kept as the field translations. Part II becomes a table. No equation changed. |
 | 1.2 | 2026-09 | Restructure, step 3. Three motion files merged into 01-motions.md, the foundation files renumbered, this history reduced to a pointer, the reading guide and glossary trimmed. |
 | 1.1 | 2026-09 | Restructure, step 2. Practice flattened to one directory and ten operating-procedure files removed. The vesting claim moved to 05-governance-forms.md section 5. |
@@ -263,6 +264,7 @@ The nineteen revisions made under the earlier name, and the prose entry for each
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side of Axiom II.
 - [05-governance-forms.md](./05-governance-forms.md) — Axiom II's governance corollaries in full.
 - [06-calibration.md](./06-calibration.md) — Every number, with its provenance.
+- [07-open-questions.md](./07-open-questions.md) — Where the theory is under-developed, by axiom, and what would settle each gap.
 
 **Academic backing** (per axiom):
 - Axiom I (Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [buying-center-dynamics.md](../02-research/buying-center-dynamics.md), [channel-collapse.md](../02-research/channel-collapse.md)

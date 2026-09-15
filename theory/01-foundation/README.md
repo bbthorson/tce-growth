@@ -21,6 +21,7 @@ The three levels (market, workflow, deal) are the framework's primary index. Eac
 5. **[04-seller-surplus-model.md](./04-seller-surplus-model.md)**: the seller's side of the transaction. What the seller spends before signature, what portion of it is exposed, and when the spend is worth making.
 6. **[05-governance-forms.md](./05-governance-forms.md)**: what shape the arrangement should take once the deal closes. Adds frequency as Axiom II's second selector, derives Williamson's four governance forms from level and frequency, and names the make-or-buy boundary that sits in the Surplus equation.
 7. **[06-calibration.md](./06-calibration.md)**: *(reference)* every coefficient, threshold and band in the framework, with an honest provenance status on each. Nothing in it is measured. Read it before quoting any number outside this repository.
+8. **[07-open-questions.md](./07-open-questions.md)**: where the theory is under-developed, grouped by the axiom each gap weakens, with what would settle it. Read it before extending the theory, so the extension lands on a recorded gap.
 
 ## What goes here vs. elsewhere
 

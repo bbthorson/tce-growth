@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Version:** 1.0
 **Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
 
-The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that consensus friction rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
+The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that the bargaining cost rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
 Nothing here introduces new claims. Every model traces to a term the Constitution already defines. If a model here cannot be traced to an axiom, it does not belong in this file either.
 
@@ -81,7 +81,7 @@ $$\hat{\Delta}_A = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_A \in [0, 1
 
 This keeps the structural multiplier in $[1, 2]$ and keeps the reduced form's quadratic term bounded by $a$. Use the raw score for the field triage bands in the scorecard. Use the normalized value in either equation. Confusing the two produces cost estimates off by an order of magnitude.
 
-**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the implementation pair's range, because that is the pair it measures. The search and consensus gaps are emitted directly on $[0, 1]$ by the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
+**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the enforcement pair's range, because that is the pair it measures. The search and bargaining gaps are emitted directly on $[0, 1]$ by the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
 
 The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ceiling under the Decay Clock dynamics ($\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$). The scorecard measures a point in time and cannot observe drift beyond its own range.
 
@@ -121,7 +121,7 @@ The gap is a **sum**, not a difference. Total informational misalignment across 
 
 $\Delta_A = 0$ represents complete informational symmetry.
 
-**This is the implementation component's gap, not the deal's.** Sections 2.2 and 2.3 model its two halves. Section 2.4 gives the other two components' gaps, which have different parties and different instruments, and section 1.1 gives the weighted mean that recovers the deal-level scalar from all three.
+**This is the enforcement component's gap, the implementation gap in field terms, not the deal's.** Sections 2.2 and 2.3 model its two halves. Section 2.4 gives the other two components' gaps, which have different parties and different instruments, and section 1.1 gives the weighted mean that recovers the deal-level scalar from all three.
 
 ### 2.2 Seller Ignorance
 
@@ -172,11 +172,11 @@ Axiom III amplifies each friction component by the asymmetry inside its own pair
 
 | Gap | Pair | What is unknown | Instrument | Closed by |
 |---|---|---|---|---|
-| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, whether the fit holds, how to reach a seller at all | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), search block | Education, reference architectures, category definition, channel |
+| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, how to reach a seller at all | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), search block | Education, reference architectures, category definition, channel |
 | $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
 | $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) | Blueprint, Red Team, MIP |
 
-**Only the implementation gap is bilateral.** Sections 2.2 and 2.3 model its two halves, $I_{seller}$ and $I_{buyer}$, and section 2.1's sum applies to that pair alone:
+**Only the enforcement gap is bilateral.** Sections 2.2 and 2.3 model its two halves, $I_{seller}$ and $I_{buyer}$, and section 2.1's sum applies to that pair alone:
 
 $$\hat{\Delta}_{implementation} = \frac{I_{seller} + I_{buyer} - 2}{8}$$
 
@@ -184,15 +184,15 @@ The other two gaps have no seller-side term. A buyer who cannot name the categor
 
 $$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}_{consensus} = 1 - \frac{e_{consensus}}{n_{consensus}}$$
 
-Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items at all leaves its gap undefined rather than zero, and a component with no cost carries no weight in the mean either way.
+Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. The bargaining reading is a proxy: the instrument counts stakeholders whose measured objective the seller can read, while Axiom III names each stakeholder's own uncertainty about their outcome. [07-open-questions.md](./07-open-questions.md) item 13 records the gap. An instrument emitting no items at all leaves its gap undefined rather than zero, and a component with no cost carries no weight in the mean either way.
 
-**Consensus asymmetry is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the stakeholders' interests actually sit. $\hat{\Delta}_{consensus}$ measures how much of that the room can see. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late. The two terms enter $F_{effective}$ at different places: variance raises the base cost $F_{consensus}$, and the gap amplifies it.
+**The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the stakeholders' interests actually sit. $\hat{\Delta}_{consensus}$ measures how much of that the room can see. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late. The two terms enter $F_{effective}$ at different places: variance raises the base cost $F_{consensus}$, and the gap amplifies it.
 
-**A note on $\beta$.** Section 3.1's $\beta$ is the organizational complexity exponent and belongs to the consensus base cost. Nothing in this framework weights one side's ignorance against the other's inside a gap. $I_{seller}$ and $I_{buyer}$ are summed unweighted by section 2.1, and any future weighting parameter would be a parameter of the implementation pair specifically, since it is the only pair with two distinguishable sides.
+**A note on $\beta$.** Section 3.1's $\beta$ is the organizational complexity exponent and belongs to the bargaining base cost. Nothing in this framework weights one side's ignorance against the other's inside a gap. $I_{seller}$ and $I_{buyer}$ are summed unweighted by section 2.1, and any future weighting parameter would be a parameter of the enforcement pair specifically, since it is the only pair with two distinguishable sides.
 
 ---
 
-## 3. Consensus Friction
+## 3. Bargaining Cost (Consensus Friction)
 
 ### 3.1 Formulation
 

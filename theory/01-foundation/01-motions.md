@@ -63,23 +63,24 @@ A seller can lower the buyer's perceived cost, and the reduced form in [02-mathe
 
 This resolves a question the older framing could not answer. Asking whether consensus work is a separate motion or a phase of an implementation-heavy one assumes motions are exclusive. They never were. Every deal carries all three components, and what varies is the weighting.
 
-### 2.1 The three sub-costs of search
+### 2.1 The two blockers inside search
 
-$F_{search}$ carries three distinct blockers.
+$F_{search}$ carries two distinct blockers.
 
 | Blocker | Instrument |
 |---|---|
 | The buyer cannot name the category | Commercial teaching, reference architectures, category definition |
 | The buyer cannot reach the seller | Partnerships, channel, marketplace listing, group purchasing |
-| The buyer cannot tell whether the fit holds | Trial, sandbox, self-serve evaluation |
 
-The middle row is a cost most frameworks do not name. A hospital chief information officer can know the category, name five vendors, and still be structurally unreachable without a channel. That cost falls largely on the seller, and neither education nor a trial reduces it. Research backing is in [channel-collapse.md](../02-research/channel-collapse.md), and Axiom II's requirement that any adjudicator carry a stake applies directly to the channels involved.
+**Fit verification is not a search blocker.** Trying the product is verification the buyer runs on themselves, and it resolves fit only when the investment is not specific, because nobody can trial a six-month integration. Where specificity is low, a trial settles the question at no cost and the deal is Turnkey under Axiom II. Where it is high, the same question becomes the enforcement pair's uncertainty under Axiom III and needs the seller's proof. The trialability gate in the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) is where the framework reads which case it is in.
 
-These are three instruments serving one component. They are not three motions.
+The second row is a cost most frameworks do not name. A hospital chief information officer can know the category, name five vendors, and still be structurally unreachable without a channel. That cost falls largely on the seller, and neither education nor a trial reduces it. Research backing is in [channel-collapse.md](../02-research/channel-collapse.md), and Axiom II's requirement that any adjudicator carry a stake applies directly to the channels involved.
 
-### 2.2 Consensus has a mature instrument set this repository does not carry
+These are two instruments serving one component. They are not two motions.
 
-The consensus component is worked hard by the wider sales profession. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are consensus instruments, and they are the incumbent practice for that component.
+### 2.2 Bargaining has a mature instrument set this repository does not carry
+
+The bargaining component, which the field calls consensus, is worked hard by the wider sales profession. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are instruments for that cost, and they are the incumbent practice for it.
 
 This repository measures the component and supplies no instruments for it. The [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) produces a number and then prescribes executive sponsorship, which is a single tactic rather than a motion. The component resists the instruments that work on the other two because its gap sits between the buyer's stakeholders, about each other, where nothing the seller knows and withholds is causing it. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
 
@@ -108,7 +109,7 @@ Named motions are regions of the space rather than members of a list. The domina
 | Region | Signature | Name | What the seller deploys | State of the instruments |
 |---|---|---|---|---|
 | Short vector, any direction | Level below 15 | **Turnkey** | Published pricing, automated provisioning, self-service trial, zero-touch onboarding. Fit verification transfers entirely to the buyer. | None needed. A short vector repays no dedicated apparatus. |
-| Long, search-dominant | $\hat{F}_{search} \ge 0.50$ | **Search-led** | The three search instruments of section 2.1: teaching where the category is unnamed, channel where the buyer is unreachable, trial where the fit is unverified. | Present and thin. No instrument file in this repository. |
+| Long, search-dominant | $\hat{F}_{search} \ge 0.50$ | **Search-led** | The two search instruments of section 2.1: teaching where the category is unnamed, channel where the buyer is unreachable. | Present and thin. No instrument file in this repository. |
 | Long, consensus-dominant | $\hat{F}_{consensus} \ge 0.50$ | **Consensus-led** | Cross-department objective mapping, champion enablement, bilateral decision criteria. | Absent. Measured by the Consensus Friction Calculator and otherwise served by the incumbent qualification practice, outside this framework. |
 | Long, implementation-dominant | $\hat{F}_{implementation} \ge 0.50$ | **Implementation-led** | Four sequenced governance artifacts: [Contextual Blueprint](../../practice/implementation-motion/01-discovery-contextual-blueprint.md), [Red Team Protocol](../../practice/implementation-motion/02-validation-red-team-protocol.md), [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md), [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md). | Present and developed. |
 | Long, no component at 0.50 | None reaches 0.50 | **Composed** | The top two instrument sets in proportion to their weights, heaviest first. | Whatever the two regions supply. |
@@ -125,17 +126,9 @@ Naming the consensus region beyond its component is still open. Any name chosen 
 
 ## 5. Asymmetry rotates the vector, and drift rotates it back
 
-The obvious way to write the effective cost equation applies one amplifier to the whole sum:
-
-$$F_{effective} = (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \hat{\Delta}_A)$$
-
-Scaling every component by the same factor changes the length of the vector and leaves its direction untouched. The consequence is exact rather than approximate: **under that equation, no amount of asymmetry and no amount of work reducing it can change which motion a deal needs.** Direction would be invariant to $\hat{\Delta}_A$.
-
-That contradicts ordinary experience. A seller who maps an environment has changed the shape of the deal, not only its size. This section is the argument that rules the single-multiplier form out.
+Axiom III amplifies each component by its own pair's gap, and the Constitution carries the equation and the factorization. What this section adds is the geometric consequence. A single multiplier on the whole sum changes the vector's length and leaves its direction untouched, so under that form no amount of discovery could change which motion a deal needs. Per-component amplification is what lets a Blueprint change the shape of a deal and not only its size.
 
 ### 5.1 Three pairs, three gaps
-
-The single gap $\Delta_A = I_{seller} + I_{buyer}$ describes two parties, and the three components do not share one pair of parties between them.
 
 | Component | Whose ignorance, about what |
 |---|---|
@@ -143,15 +136,7 @@ The single gap $\Delta_A = I_{seller} + I_{buyer}$ describes two parties, and th
 | $F_{consensus}$ | The buyer's stakeholders, about each other |
 | $F_{implementation}$ | The seller, about the buyer's environment |
 
-Only the third is seller against buyer. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair.
-
-Amplify each component by its own pair's gap, which is what Axiom III does:
-
-$$F_{effective} = \sum_{k} F_k \, (1 + \hat{\Delta}_k)$$
-
-The sum still factors exactly into $F_{base}(1 + \hat{\Delta}_A)$ when $\hat{\Delta}_A$ is read as the friction-weighted mean of the three, so nothing that needs only the total has to carry three numbers.
-
-Direction now moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for.
+Only the third is seller against buyer, and the [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair alone. Direction moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for.
 
 ### 5.2 Drift is the same rotation running backwards
 
@@ -167,17 +152,15 @@ $$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
 | $\gamma_{consensus}$ | Stakeholder turnover, reorganization | Nowhere |
 | $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen | [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7.2 |
 
-**The field consequence sits in the consensus row.** A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone without any change in the product, the price or the technical work. That event is the most common way an enterprise deal dies.
+**The field consequence sits in the bargaining row.** A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone without any change in the product, the price or the technical work. That event is the most common way an enterprise deal dies.
 
-**The same rotation runs at the level of a category.** An emerging category carries high search and high implementation cost and routes search-led or composed. As industry-wide education completes, search cost collapses and the buyer's risk concentrates on deployment, so the category rotates implementation-led. As integrations standardize and switching costs fall, every component drops below the boundary and the category commoditizes to Turnkey, at which point the apparatus retires. The second and third transitions are the pair sellers miss, and they miss the third more often, because nothing external prompts a re-score.
+**The same rotation runs at the level of a category.** An emerging category carries high search and high enforcement cost and routes search-led or composed. As industry-wide education completes, search cost collapses and the buyer's risk concentrates on deployment, so the category rotates implementation-led. As integrations standardize and switching costs fall, every component drops below the boundary and the category commoditizes to Turnkey, at which point the apparatus retires. The second and third transitions are the pair sellers miss, and they miss the third more often, because nothing external prompts a re-score.
 
 This also generalizes Axiom II's trajectory. $D(t)$ is written as a scalar, the distance between transaction cost and opportunity cost. Under per-component drift it is a path with a direction, and the direction says which instrument would arrest it.
 
 ### 5.3 What this demotes
 
-The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar, and [02-mathematical-models.md](./02-mathematical-models.md) section 1.4 already concedes that it "produces a number, not a diagnosis." Under this model the concession is heavier, because direction is the quantity that selects the motion and the reduced form destroys it. The form keeps its one job, which is showing why cutting price cannot offset a wide gap. It stops being a representation of transaction cost.
-
-**Nothing weights one side of a gap against the other.** $I_{seller}$ and $I_{buyer}$ are summed unweighted, and $\beta$ elsewhere in this framework is the organizational complexity exponent in $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$, which belongs to the consensus base cost and has nothing to do with asymmetry. Any future weighting between two sides of a gap would be a parameter of the implementation component alone, because that is the only component whose pair has two distinguishable sides.
+The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar and destroys the direction that selects the motion. It keeps its one job, showing why cutting price cannot offset a wide gap, and stops being a representation of transaction cost. Nothing in the framework weights one side of a gap against the other, and [02-mathematical-models.md](./02-mathematical-models.md) section 2.4 says why any such weight would belong to the enforcement pair alone.
 
 ---
 
@@ -191,28 +174,20 @@ Addressable market is therefore a property of the motion rather than of the prod
 
 ## 7. A second symptom of under-frictioning
 
-Axiom II names under-frictioning as the failure where asset specificity exceeds the friction deployed, and gives one symptom: the buyer declines to transact and builds internally.
-
-There is a second symptom, and it appears after signature rather than before. A buyer whose implementation uncertainty was never resolved can still transact when the commercial path is easy enough. They buy, they fail to deploy, and they leave. The cause is identical. The symptom lands in retention rather than in win rate, which is why it is usually diagnosed as a product problem or an onboarding problem.
-
-Both symptoms belong to the same failure, and Axiom II names both.
+Axiom II's under-frictioned failure has two symptoms and the Constitution names both. Before signature the buyer declines and builds internally. After it, a buyer whose enforcement uncertainty was never resolved signs on an easy commercial path, fails to deploy, and leaves, and the failure is misdiagnosed as product or onboarding. The second is the one the level alone cannot see, which is why the calculator carries a hidden-Structural override.
 
 ---
 
 ## 8. Why sellers choose the wrong region
 
-The seller picks the motion, and the seller has a reason to pick the short-vector one that has nothing to do with the deal in front of them. Short-vector tactics carry lower cost of sale, and lower cost of sale reads well on an income statement.
-
-**This is an Axiom II failure inside the seller's own organization.** The party choosing the motion holds no stake in the outcome the choice produces. A representative compensated on new bookings, or a leader measured on sales efficiency, is an adjudicator of motion selection with no exposure to the churn that follows a misread vector. Axiom II predicts exactly this: an adjudicator without a stake drifts from adjudication toward extraction, and here the extraction runs against the seller's own future revenue.
-
-The remedy is vested compensation ([05-governance-forms.md](./05-governance-forms.md) section 5), which ties compensation to outcomes that survive past signature. It is usually read as protection against poor Structural deal execution. It is also the instrument that governs motion selection, and that is the wider of the two claims.
+Short-vector tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. By the Constitution's third standing assumption that is expected, and by Axiom II's stakes corollary the remedy is vesting compensation on outcomes that survive signature ([05-governance-forms.md](./05-governance-forms.md) section 5). It is usually read as protection against poor Structural execution. It is also the instrument that governs motion selection, and that is the wider claim.
 
 ---
 
 ## 9. What this does not settle
 
 - **The consensus region has no instrument file.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) says so out loud when a deal routes there. Building the instrument set is the open work, and naming the region further before that would produce a label with nothing behind it.
-- **Whether direction is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different vectors, because the incumbent's implementation cost is already sunk. The instrument scores the deal rather than a seat, which is a decision rather than an oversight: a seat-scored instrument owes the reader an account of how each seat wins, and that account does not exist yet. Until it does, an incumbent scoring a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
+- **Whether direction is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different vectors, because the incumbent's enforcement cost is already sunk. The instrument scores the deal rather than a seat, which is a decision rather than an oversight: a seat-scored instrument owes the reader an account of how each seat wins, and that account does not exist yet. Until it does, an incumbent scoring a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
 - **Where the boundary between short and long sits.** The threshold sits at half the instrument's range and nothing but convention puts it there.
 - **Whether the count bands are the right shape.** The instrument counts named things, which fixes the ordinal problem, and then converts counts to component scores through bands that are chosen rather than fitted. The counts are observations. The bands are not.
 - **Whether the three drift rates behave as one mechanism.** $\gamma_{consensus}$ is the only one with a discrete field event attached, namely a departed stakeholder. The other two are asserted to be continuous and nothing tests that.
@@ -242,7 +217,7 @@ Everyone arriving here knows what Product-Led Growth means. This section says wh
 | **Implementation-led** | Implementation-Led Growth, forward-deployed engineering, solution selling | Direct. This framework was called ILG before the theory outgrew the name. Older analyses still use it for the whole framework. |
 | **Composed** | No established term | The industry treats motions as exclusive, so the case where two costs are comparable has no name. |
 
-**Product-Led and Sales-Led are instruments for the same cost.** The industry treats them as opposites. Under section 2.1 they are two of the three search instruments: Sales-Led resolves a buyer who cannot name the category, Product-Led resolves a buyer who knows the category and cannot verify this particular fit. What separates them in practice is level rather than kind. A trial cannot resolve a six-month integration question, so self-service works where the other two components are also small. Education can run at any level, which is why it survives upmarket and trials often do not. Treating them as rival philosophies produces an argument that cannot resolve, because each side is right about its own blocker.
+**Product-Led and Sales-Led name the seller, not the cost, and each bundles several costs.** A sales-led company runs evangelical representatives, who reduce search, and enterprise representatives working a committee, who reduce bargaining, and solutions engineers, who reduce enforcement uncertainty. Calling all of that one instrument narrows the term to one of its functions. And a trial, the Product-Led instrument, is not a search instrument at all: it is verification the buyer runs alone, and it works only when specificity is low enough that the buyer can walk away at no cost. Read by cost, the argument the two camps are having splits into two measurable questions. Can the buyer verify fit alone, which is Axiom II. Does the buyer know what they are looking for, which is Axiom I. Neither answer is a philosophy.
 
 **What this framework is not competing with.** Go-to-market vocabulary mixes three tiers, and the tiers compose.
 
