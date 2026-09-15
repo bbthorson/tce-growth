@@ -32,7 +32,7 @@ The **research files** in `theory/02-research/` back specific axioms:
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file.
 
-**A motion is a region, not a list entry.** `theory/01-foundation/06-friction-vector.md` was adopted in Constitution v17.0 and now carries the derivation: motion selection follows from the direction and length of the three-component cost vector, and its section 10 records what adoption rewrote and retired. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom II description, not the market states, because those were never load-bearing outside the two files that carried them.
+**A motion is a region, not a list entry.** `theory/01-foundation/06-friction-vector.md` was adopted in Constitution v17.0 and now carries the derivation: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom II description, not the market states, because those were never load-bearing outside the two files that carried them.
 
 ## Frontmatter
 
@@ -129,9 +129,9 @@ The separation earns its keep: the theory states structure, the calibration laye
 New content in `publishing/` follows the multi-phase workflow in the relevant generator file:
 
 ```
-tcg-concept-map.md → voice-guide.md → context-request-protocol.md → {long-form | short-form}-generator.md → style-references/
+publishing/README.md (content pillars) → voice-guide.md → writing-protocols.md (context check) → {long-form | short-form}-generator.md → style-references/
 ```
 
-Case analyses go in `publishing/01-cases/` following `publishing/02-tools/trenches-analysis-protocol.md`. If a case becomes a polished published piece, the final version moves to `publishing/02-tools/style-references/`.
+Case analyses go in `publishing/01-cases/` following the trenches analysis protocol in `publishing/02-tools/writing-protocols.md`. If a case becomes a polished published piece, the final version moves to `publishing/02-tools/style-references/`.
 
-The AI persona config for deal-analysis writing is in `publishing/02-tools/ai-persona.md`.
+The AI persona config for deal-analysis writing is the first section of the same file.

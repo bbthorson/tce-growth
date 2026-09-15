@@ -169,3 +169,7 @@ swap:
   Bridge and Toaster: Structural and Turnkey
   bridge and toaster: structural and turnkey
 
+  tcg-concept-map\.md: "publishing/README.md, Content pillars (the concept map was deleted in the 2026-09 restructure; it still carried the ILG title, the retired market phases and unsourced statistics)"
+  ai-persona\.md: writing-protocols.md
+  context-request-protocol\.md: writing-protocols.md
+  trenches-analysis-protocol\.md: writing-protocols.md

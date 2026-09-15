@@ -73,7 +73,7 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 
 - **S** = Deal Surplus (must be > 0 for a deal to close)
 - **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance + Buyer Uncertainty
-- **y** = Total Perceived Transaction Cost = $ax^2 + c$ (where $a = 2.25$ is risk aversion, $x \approx \Delta_A$ is uncertainty, and $c$ is direct cost)
+- **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$ (where $a = 2.25$ is risk aversion, $\hat{\Delta}_A$ is the normalized deal-level asymmetry gap, and $c$ is direct cost, all as fractions of annual contract value)
 - **δ** = Decay Rate of urgency after the triggering event
 - Applies when **k > k_threshold** (the deal is Structural, not Turnkey) AND **F_deployed ~ k** (the friction deployed matches the specificity)
 

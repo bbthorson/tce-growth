@@ -244,4 +244,3 @@ One line each, then the canonical source. The line identifies the term. The sour
 - [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the clarifying concepts most term entries point to.
 - [03-mathematical-models.md](./03-mathematical-models.md) supplies the functional forms and every parameter default, plus the provenance status of each.
 - [01-motion-taxonomy.md](./01-motion-taxonomy.md) covers motion vocabulary in context.
-- [tcg-concept-map.md](../../publishing/02-tools/tcg-concept-map.md) is the content architecture for public writing, which is a different purpose from this file.
