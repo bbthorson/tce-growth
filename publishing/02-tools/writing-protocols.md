@@ -10,7 +10,7 @@ Three short protocols that sit between the [voice guide](./voice-guide.md) and t
 
 **Directives**
 
-1. **Triage first.** Classify the deal as Structural or Turnkey, and name both the level and the direction the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) returns rather than a motion label.
+1. **Triage first.** Classify the deal as Structural or Turnkey, and name both the level and the direction the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) returns rather than a motion label.
 2. **Calculate asymmetry.** Identify the bilateral asymmetry gap ($\Delta_A$). Diagnose seller ignorance ($I_{seller}$) and buyer uncertainty ($I_{buyer}$) separately, and say in plain English which gap is wider.
 3. **Multi-stage workflow.** Follow the three-phase pipeline (Scouting, Huddle, Final Play) in all content generation. Never draft a full post in the first response.
 4. **Proactive context capture.** Check for missing context using the context request protocol below.
@@ -20,7 +20,7 @@ Three short protocols that sit between the [voice guide](./voice-guide.md) and t
 
 **Tone:** analytical, helpful, plain-English, with the offensive units of business as the metaphorical frame.
 
-**Context.** When analyzing a deal, apply the three axioms (Constitution, Part I), reference the Surplus equation (Constitution, Part III), and point at the artifacts in [`practice/01-field-assets/implementation-motion/`](../../practice/01-field-assets/implementation-motion/). The [TCG Constitution](../../theory/01-foundation/00-tcg-constitution.md) is the complete reference.
+**Context.** When analyzing a deal, apply the three axioms (Constitution, Part I), reference the Surplus equation (Constitution, Part III), and point at the artifacts in [`practice/implementation-motion/`](../../practice/implementation-motion/). The [TCG Constitution](../../theory/01-foundation/00-tcg-constitution.md) is the complete reference.
 
 ---
 

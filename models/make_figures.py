@@ -11,7 +11,7 @@ the diff check failing.
     python3 models/make_figures.py --check    # regenerate and fail on diff
 
 Deliberately dependency-free, like tcg_models.py and the two checkers in
-practice/02-internal-ops/linting/. The SVG is written by hand rather than by a
+tools/linting/. The SVG is written by hand rather than by a
 plotting library so that the diff check runs anywhere Python does, the output
 is byte-for-byte reproducible, and the prefers-color-scheme block is authored
 directly rather than injected by post-processing.
@@ -37,8 +37,7 @@ import tcg_models as m
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ASSETS = os.path.join(ROOT, "theory", "01-foundation", "assets")
-STYLES = os.path.join(ROOT, "practice", "02-internal-ops", "linting",
-                      "styles", "TCG")
+STYLES = os.path.join(ROOT, "tools", "linting", "styles", "TCG")
 
 W, H = 760, 470
 PAD_L, PAD_R, PAD_T, PAD_B = 78, 34, 92, 74

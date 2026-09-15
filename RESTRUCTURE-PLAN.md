@@ -97,7 +97,7 @@ Anything in a deleted file that an axiom depends on gets checked before deletion
 
 ### Tooling
 
-- Move `practice/02-internal-ops/linting/` to a top-level `tools/` directory next to `models/`. The linter guards the whole repo and does not belong under practice. This touches `.vale.ini`, the pre-commit hook, `CLAUDE.md` and the root README. Optional, but the practice flatten is the moment to do it.
+- Move `tools/linting/` to a top-level `tools/` directory next to `models/`. The linter guards the whole repo and does not belong under practice. This touches `.vale.ini`, the pre-commit hook, `CLAUDE.md` and the root README. Optional, but the practice flatten is the moment to do it.
 - Fix the pre-commit hook's stale test filename.
 - Fix the section 10 reference in `CLAUDE.md`.
 - No model code or tests are removed. Every file the tests assert survives the cut list. The triage calculator compression keeps every worked example the suite checks.

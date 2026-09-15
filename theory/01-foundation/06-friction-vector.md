@@ -13,7 +13,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Purpose:** To derive motion selection from the two quantities Axiom I already names, so that a motion is a region of one space rather than an item on a list.
 
 > [!IMPORTANT]
-> **This file carries the derivation behind two of the framework's claims.** Axiom I's composition equation and Axiom II's per-component amplification are stated in the [Constitution](./00-tcg-constitution.md) and argued here. The [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) emits both quantities and [04-glossary-and-notation.md](./04-glossary-and-notation.md) carries the symbols. Section 9 records what the model does not settle.
+> **This file carries the derivation behind two of the framework's claims.** Axiom I's composition equation and Axiom II's per-component amplification are stated in the [Constitution](./00-tcg-constitution.md) and argued here. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits both quantities and [04-glossary-and-notation.md](./04-glossary-and-notation.md) carries the symbols. Section 9 records what the model does not settle.
 
 ---
 
@@ -73,7 +73,7 @@ These are three instruments serving one component. They are not three motions.
 
 The consensus component is worked hard by the wider sales profession. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are consensus instruments, and they are the incumbent practice for that component.
 
-This repository measures the component and supplies no instruments for it. The [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) produces a number and then prescribes executive sponsorship, which is a single tactic rather than a motion. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
+This repository measures the component and supplies no instruments for it. The [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) produces a number and then prescribes executive sponsorship, which is a single tactic rather than a motion. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
 
 The gap is real and it is the largest one this document surfaces.
 
@@ -133,7 +133,7 @@ The single gap $\Delta_A = I_{seller} + I_{buyer}$ describes two parties, and th
 | $F_{consensus}$ | The buyer's stakeholders, about each other |
 | $F_{implementation}$ | The seller, about the buyer's environment |
 
-Only the third is seller against buyer. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures that third pair and is currently applied as though it measured the deal.
+Only the third is seller against buyer. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair and is currently applied as though it measured the deal.
 
 Amplify each component by its own pair's gap, which is what Axiom II now does:
 
@@ -195,13 +195,13 @@ The seller picks the motion, and the seller has a reason to pick the short-vecto
 
 **This is an Axiom III failure inside the seller's own organization.** The party choosing the motion holds no stake in the outcome the choice produces. A representative compensated on new bookings, or a leader measured on sales efficiency, is an adjudicator of motion selection with no exposure to the churn that follows a misread vector. Axiom III predicts exactly this: an adjudicator without a stake drifts from adjudication toward extraction, and here the extraction runs against the seller's own future revenue.
 
-The remedy is [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md), which ties compensation to outcomes that survive past signature. It is usually read as protection against poor Structural deal execution. It is also the instrument that governs motion selection, and that is the wider of the two claims.
+The remedy is vested compensation ([07-governance-forms.md](./07-governance-forms.md) section 5), which ties compensation to outcomes that survive past signature. It is usually read as protection against poor Structural deal execution. It is also the instrument that governs motion selection, and that is the wider of the two claims.
 
 ---
 
 ## 9. What this does not settle
 
-- **The consensus region has no name and no instrument file.** Both are open, and the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) now says so out loud when a deal routes there. Naming it before building it would produce a label with nothing behind it.
+- **The consensus region has no name and no instrument file.** Both are open, and the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) now says so out loud when a deal routes there. Naming it before building it would produce a label with nothing behind it.
 - **Whether direction is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different vectors, because the incumbent's implementation cost is already sunk. The instrument scores the deal rather than a seat, which is a decision rather than an oversight: a seat-scored instrument owes the reader an account of how each seat wins, and that account does not exist yet. Until it does, an incumbent scoring a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
 - **Where the boundary between short and long sits.** The threshold sits at half the instrument's range and nothing but convention puts it there.
 - **Whether the count bands are the right shape.** The instrument counts named things, which fixes the ordinal problem, and then converts counts to component scores through bands that are chosen rather than fitted. The counts are observations. The bands are not.
@@ -216,5 +216,5 @@ The remedy is [03-incentives-vested-commission.md](../../practice/02-internal-op
 - [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms for the components, and the calibration status that governs every number here.
 - [05-seller-surplus-model.md](./05-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase and Williamson, the source of the decomposition.
-- [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) — The instrument that emits both quantities.
+- [Deal Triage Calculator](../../practice/deal-triage-calculator.md) — The instrument that emits both quantities.
 - [models/README.md](../../models/README.md) — Executable forms of the equations referenced here.

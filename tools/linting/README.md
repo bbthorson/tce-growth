@@ -2,7 +2,7 @@
 
 **Automated enforcement of the repo's content conventions.** Two independent checkers cover different failure classes. Run both before opening a PR.
 
-Parent: [02-internal-ops/](../) · Rules they enforce: [voice-guide.md](../../../publishing/02-tools/voice-guide.md) and [CLAUDE.md](../../../CLAUDE.md)
+Parent: [tools/](../) · Rules they enforce: [voice-guide.md](../../publishing/02-tools/voice-guide.md) and [CLAUDE.md](../../CLAUDE.md)
 
 ## check_frontmatter.py
 
@@ -33,7 +33,7 @@ The YAML parser is deliberately small. It handles the flat key/value and inline-
 Walks every `.md` file outside `.git`, `.claude`, `node_modules`, and `.gemini`. Reports two error classes and exits non-zero if either fires.
 
 ```bash
-python3 practice/02-internal-ops/linting/check_playbook.py
+python3 tools/linting/check_playbook.py
 ```
 
 1. **LaTeX integrity.** Unclosed inline or block math delimiters, and delimiters nested inside each other. The script knows the difference between math and a dollar sign, so currency amounts and template placeholders are not treated as opening a math block.
@@ -49,7 +49,7 @@ brew install vale
 vale .
 ```
 
-Configuration lives in [`.vale.ini`](../../../.vale.ini) at the repo root, which points `StylesPath` here and applies the `TCG` style to all `*.md`. `MinAlertLevel` is `warning`, so warnings surface alongside errors.
+Configuration lives in [`.vale.ini`](../../.vale.ini) at the repo root, which points `StylesPath` here and applies the `TCG` style to all `*.md`. `MinAlertLevel` is `warning`, so warnings surface alongside errors.
 
 ## The TCG style rules
 
@@ -71,7 +71,7 @@ The link checker validates hrefs. It cannot see the prose around them. In August
 
 <!-- vale TCG.RetiredTerms = NO -->
 ```markdown
-[TCG Constitution - Axiom II (Law of Friction)](../../../theory/01-foundation/00-tcg-constitution.md)
+[TCG Constitution - Axiom II (Law of Friction)](../../theory/01-foundation/00-tcg-constitution.md)
 ```
 
 The href was right. The name had been retired two Constitution versions earlier. Same pattern for directory numbering: link text said `04-internal-ops/` while the href pointed at the real `02-internal-ops/`. Both classes are invisible to a link checker and to a reader who trusts the link. `RetiredTerms.yml` is the rule that sees them.
@@ -118,7 +118,7 @@ Prefer this over deleting the row. An unenforced rule catches nothing.
 
 ## Pre-commit hook
 
-A ready-to-use pre-commit hook is provided in [`.githooks/pre-commit`](../../../.githooks/pre-commit). It runs `check_playbook.py` and `vale .` automatically before every commit.
+A ready-to-use pre-commit hook is provided in [`.githooks/pre-commit`](../../.githooks/pre-commit). It runs `check_playbook.py` and `vale .` automatically before every commit.
 
 To activate it for your local clone:
 
@@ -140,7 +140,7 @@ Both checkers pass cleanly across all files in the repository:
 
 ### The three AntiHype suppressions
 
-Two are self-referential: [`CLAUDE.md`](../../../CLAUDE.md) and [`voice-guide.md`](../../../publishing/02-tools/voice-guide.md) have to print the banned-word list in order to document it, so both are fenced. This README's own rule table is fenced for the same reason.
+Two are self-referential: [`CLAUDE.md`](../../CLAUDE.md) and [`voice-guide.md`](../../publishing/02-tools/voice-guide.md) have to print the banned-word list in order to document it, so both are fenced. This README's own rule table is fenced for the same reason.
 
 The third is a scope exclusion in `.vale.ini` for `publishing/02-tools/style-references/`. Those files are published posts kept verbatim as a record of what went out, and two of them predate the anti-hype list. Editing published text to satisfy a later rule would make this repo disagree with what readers can actually see.
 

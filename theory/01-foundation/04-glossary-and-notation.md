@@ -42,8 +42,8 @@ Two rules govern what is written here, and they differ by section.
 | $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$. | [05-seller-surplus-model.md §2](./05-seller-surplus-model.md) |
 | $Q$ | Appropriable quasi-rent. The seller's unprotected exposure, $C_{invest} - R_{redeploy}$. | [05-seller-surplus-model.md §3](./05-seller-surplus-model.md) |
 | $R_{redeploy}$ | Value of pre-signature work redeployed to other deals. **Not $R$, the reward payoff.** | [05-seller-surplus-model.md §3](./05-seller-surplus-model.md) |
-| $p_m$ | Probability of achieving milestone stage $m$. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
-| $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
+| $p_m$ | Probability of achieving milestone stage $m$. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
+| $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
 | $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. | [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
 | $C_{sustain}$ | Ongoing relationship investment per period. Holds $\gamma$ down; distinct from $C_{deliver}$. | [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
 | $\rho$ | Discount rate on future periods. **A policy choice, not $\delta_{discount}$.** | [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
@@ -56,7 +56,7 @@ Two rules govern what is written here, and they differ by section.
 | $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $k$ | Asset specificity of the deal. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 15$ on a 0 to 30 level). Above it, direction selects the motion. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
+| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 15$ on a 0 to 30 level). Above it, direction selects the motion. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 
 ### Friction terms (Axiom II)
@@ -82,7 +82,7 @@ Two rules govern what is written here, and they differ by section.
 | $\Delta_A^*$ | Akerlof Exit Threshold. Above it the buyer leaves the market entirely. | [costly-signals.md](../02-research/costly-signals.md) |
 | $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. | [03-mathematical-models.md §2.2](./03-mathematical-models.md) |
 | $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. | [03-mathematical-models.md §2.3](./03-mathematical-models.md) |
-| $x_m$ | Residual uncertainty **entering** milestone stage $m$, already normalized. Not a separate quantity from $\hat{\Delta}_{implementation}$, which is where the chain starts. | [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) |
+| $x_m$ | Residual uncertainty **entering** milestone stage $m$, already normalized. Not a separate quantity from $\hat{\Delta}_{implementation}$, which is where the chain starts. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
 
 ### Coefficients and parameters
 
@@ -123,11 +123,11 @@ Two rules govern what is written here, and they differ by section.
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| FAR | Friction Allocation Ratio. Share of implementation effort spent before signature. | [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) |
-| BCV | Buyer Commitment Velocity. How fast the buyer mobilized. | [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) |
-| RMS | Risk Mitigation Score. Share of discovered risk closed before signature. | [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) |
-| SVI | Scope Variance Index. Scope stability through delivery. | [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) |
-| $H_{pre}$, $H_{post}$ | Solutions-engineering and implementation hours before and after signature. | [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) |
+| FAR | Friction Allocation Ratio. Share of implementation effort spent before signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| BCV | Buyer Commitment Velocity. How fast the buyer mobilized. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| RMS | Risk Mitigation Score. Share of discovered risk closed before signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| SVI | Scope Variance Index. Scope stability through delivery. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| $H_{pre}$, $H_{post}$ | Solutions-engineering and implementation hours before and after signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
 
 ---
 
@@ -139,7 +139,7 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 **2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to Axiom I's half of the Decay Clock. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to Axiom III's cooperation condition. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [05-seller-surplus-model.md §7](./05-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
 
-**3. $\Delta_A$ and $\hat{\Delta}_A$ differ by an order of magnitude, and $\hat{\Delta}_A$ and $\hat{\Delta}_{implementation}$ differ by scope.** The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before either cost equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [03-mathematical-models.md §1.5](./03-mathematical-models.md). Separately, what the scorecard measures is the implementation component's gap alone, because that is the only component whose pair is buyer against seller. $\hat{\Delta}_A$ is the friction-weighted mean across all three. Substituting the scorecard's output for $\hat{\Delta}_A$ treats one pair's gap as though it governed the deal.
+**3. $\Delta_A$ and $\hat{\Delta}_A$ differ by an order of magnitude, and $\hat{\Delta}_A$ and $\hat{\Delta}_{implementation}$ differ by scope.** The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before either cost equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [03-mathematical-models.md §1.5](./03-mathematical-models.md). Separately, what the scorecard measures is the implementation component's gap alone, because that is the only component whose pair is buyer against seller. $\hat{\Delta}_A$ is the friction-weighted mean across all three. Substituting the scorecard's output for $\hat{\Delta}_A$ treats one pair's gap as though it governed the deal.
 
 **4. $a$, $b$, and $\lambda$ are three different quantities that all sit near 2.25, and only two of them carry units.** $\lambda$ is measured (prospect theory) and dimensionless, $b$ is the rate at which base friction grows per unit of asymmetry, and the derivation identifies $a$ with $b$, borrowing $\lambda$'s magnitude as justification rather than measurement. $a$ and $b$ are in annual contract values, per [03-mathematical-models.md §1.7](./03-mathematical-models.md). Do not cite $a$ as though prospect theory established it, and do not add it to a figure quoted in percentage points. The full account is [§1.6](./03-mathematical-models.md).
 
@@ -167,15 +167,15 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Structural Deal** | A deal whose level reaches the boundary. Level 15 to 30. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
-| **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Level below 15. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
-| **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/01-field-assets/deal-triage-calculator.md) |
+| **Structural Deal** | A deal whose level reaches the boundary. Level 15 to 30. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Level below 15. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
 | **Level** | The friction vector's $L^1$ length, on base friction. Sets the Turnkey and Structural boundary. | [06-friction-vector.md](./06-friction-vector.md) |
 | **Frequency** | How often the same two parties transact. One-shot, recurrent, or continuous. Selects the governance form. | [07-governance-forms.md](./07-governance-forms.md) |
 | **Governance Form** | The shape of the arrangement after signature. Market, trilateral, bilateral, or unified. | [07-governance-forms.md](./07-governance-forms.md) |
 | **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of transaction cost. | [07-governance-forms.md](./07-governance-forms.md) |
 | **Direction** | Each component's share of effective cost. Selects the instruments. Dominant at 0.50. | [06-friction-vector.md](./06-friction-vector.md) |
-| **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) |
+| **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | **Boundary Condition** | The test every deal passes before heavy apparatus is justified. | [Constitution, Part II](./00-tcg-constitution.md) |
 
 ### Axiom II concepts
@@ -203,29 +203,28 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
 | **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Bridge Concepts](./00-tcg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md), operationalized in [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) |
+| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
 
 ### Artifact vocabulary
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md) |
-| **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) |
-| **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) |
-| **Education-Led Motion** | The search-led field asset. Written mainly as a counter-example showing which implementation machinery to leave switched off. | [01-education-motion.md](../../practice/01-field-assets/search-motion/01-education-motion.md) |
-| **Reciprocity Gate** | The artifacts a buyer must supply before discovery advances. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Sacred Cow** | A politically protected workflow, tool, or team. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **The Casualty** | The stakeholder who loses power, budget, or status if the initiative succeeds. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Negative Capability Declaration** | Stating platform limitations before signature, as a costly signal. | [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Resource Expiry Clause** | The buyer-side hostage that makes buyer delay costly. | [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) |
-| **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [03-incentives-vested-commission.md](../../practice/02-internal-ops/03-incentives-vested-commission.md) |
+| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/implementation-motion/02-validation-red-team-protocol.md) |
+| **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **Reciprocity Gate** | The artifacts a buyer must supply before discovery advances. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Sacred Cow** | A politically protected workflow, tool, or team. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **The Casualty** | The stakeholder who loses power, budget, or status if the initiative succeeds. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Negative Capability Declaration** | Stating platform limitations before signature, as a costly signal. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
+| **Resource Expiry Clause** | The buyer-side hostage that makes buyer delay costly. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [07-governance-forms.md](./07-governance-forms.md) section 5 |
 
 ### External frameworks
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **CFIR** | Implementation-science framework for reading a buyer's organization pre-sale. | [cfir.md](../02-research/cfir.md), mapped in [02-cfir-field-mapping.md](./02-cfir-field-mapping.md) |
+| **CFIR** | Implementation-science framework for reading a buyer's organization pre-sale. | [cfir.md](../02-research/cfir.md), mapped in [cfir-field-mapping.md](../../practice/cfir-field-mapping.md) |
 | **RE-AIM** | Five-dimension framework for post-sale success measurement. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 | **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 | **JOLT Effect** | Research on buyer indecision, and why urgency tactics backfire on indecisive buyers. | [fear-of-failure.md](../02-research/fear-of-failure.md) |

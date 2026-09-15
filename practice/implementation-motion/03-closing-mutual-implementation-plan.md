@@ -18,7 +18,7 @@ Goal: To contractualize the outcome and lock in the "Infinite Game."
 |---|---|
 | **Inputs** | [Blueprint](./01-discovery-contextual-blueprint.md) + [Red Team](./02-validation-red-team-protocol.md) outputs. Identified risks, mitigations, and bilateral resource commitments. |
 | **Outputs** | Signed MIP with North Star metric, Governance Structure, Go/No-Go Protocol. Resource plan attached to contract. |
-| **Next step** | [Sustaining Adoption Review](./04-sustaining-adoption-review.md) (handoff packet, then RE-AIM reviews); vested commission terms ([incentives doc](../../02-internal-ops/03-incentives-vested-commission.md)) activate. |
+| **Next step** | [Sustaining Adoption Review](./04-sustaining-adoption-review.md) (handoff packet, then RE-AIM reviews); vested compensation terms activate ([07-governance-forms.md](../../theory/01-foundation/07-governance-forms.md) section 5). |
 | **Owner** | AE + Customer PM + Procurement + Legal. |
 | **Reduces** | Defection risk via mutual skin in the game (Axiom III — Governance). |
 
@@ -117,8 +117,7 @@ Signature Block:
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III (Governance)](../../../theory/01-foundation/00-tcg-constitution.md) — The MIP operationalizes the deal-level case of recursive cooperation; bilateral skin in the game between buyer and seller.
-- **Academic backing:** [game-theory-and-nrr.md](../../../theory/02-research/game-theory-and-nrr.md) — Shadow of the Future; why mutual skin in the game shifts the Nash equilibrium.
-- **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md) — Implementation Process constructs (Planning, Executing, Reflecting & Evaluating).
-- **Comp alignment:** [02-internal-ops/03-incentives-vested-commission.md](../../02-internal-ops/03-incentives-vested-commission.md) — How rep comp must follow MIP outcomes, not signature.
-- **Manager audit:** [02-internal-ops/02-governance-review-checklist.md](../../02-internal-ops/02-governance-review-checklist.md) (Phase 3).
+- **Theory:** [TCG Constitution, Axiom III (Governance)](../../theory/01-foundation/00-tcg-constitution.md) — The MIP operationalizes the deal-level case of recursive cooperation; bilateral skin in the game between buyer and seller.
+- **Academic backing:** [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) — Shadow of the Future; why mutual skin in the game shifts the Nash equilibrium.
+- **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Implementation Process constructs (Planning, Executing, Reflecting & Evaluating).
+- **Comp alignment:** [07-governance-forms.md](../../theory/01-foundation/07-governance-forms.md) section 5. Rep compensation must follow MIP outcomes, not signature.

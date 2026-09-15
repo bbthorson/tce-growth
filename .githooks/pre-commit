@@ -4,10 +4,10 @@ set -e
 echo "Running pre-commit playbook checks..."
 
 # 1. Check link & LaTeX integrity
-python3 practice/02-internal-ops/linting/check_playbook.py
+python3 tools/linting/check_playbook.py
 
 # 2. Check frontmatter schema and Constitution/README version parity
-python3 practice/02-internal-ops/linting/check_frontmatter.py
+python3 tools/linting/check_frontmatter.py
 
 # 3. Check every worked example in the docs still reproduces from the models
 python3 models/test_tcg_models.py

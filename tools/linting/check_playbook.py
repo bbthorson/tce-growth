@@ -5,7 +5,7 @@ import urllib.parse
 import sys
 
 # Define root of the workspace
-WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 # Directories to exclude from linting
 EXCLUDED_DIRS = {".git", ".claude", "node_modules", ".gemini"}

@@ -37,7 +37,7 @@ Every opportunity routes through two sequential measurements emitted by Axiom I:
 | **Structural** | $\hat{F}_{implementation} \ge 0.50$ | **Implementation-led** | Bilateral technical discovery, prospective failure stress-testing, and mutual governance. |
 | **Structural** | None reaches 0.50 | **Composed** | Top two instruments deployed in direct proportion to relative component weights. |
 
-Level is read from base friction and direction from the amplified components, which is why discovery rotates a deal without reclassifying it. The [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) emits both, and the five values in the Motion Routing column are the words it returns.
+Level is read from base friction and direction from the amplified components, which is why discovery rotates a deal without reclassifying it. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits both, and the five values in the Motion Routing column are the words it returns.
 
 ---
 
@@ -46,7 +46,7 @@ Level is read from base friction and direction from the amplified components, wh
 ### Turnkey
 
 * **Deal Profile:** Minimal integration surface, singular sign-off authority, and immediate native workflow alignment.
-* **Seller Instruments:** Automated provisioning, published pricing, self-service trial environments, and zero-touch onboarding. See [turnkey-motion/](../../practice/01-field-assets/turnkey-motion/).
+* **Seller Instruments:** Automated provisioning, published pricing, self-service trial environments, and zero-touch onboarding. No instrument file: a short vector needs none.
 * **Primary Failure Mode:** Misclassifying structural friction as turnkey. Low initial seat counts within complex enterprise architectures mask downstream integration barriers.
 
 ### Search-led
@@ -56,23 +56,23 @@ Level is read from base friction and direction from the amplified components, wh
   * *Category Unnamed:* Deploys commercial teaching, reference architectures, and diagnostic frameworks.
   * *Vendor Unreachable:* Deploys marketplace agreements, system integrator distribution, and purchasing vehicles. This blocker falls largely on the seller, and neither education nor a trial reduces it. Research is in [channel-collapse.md](../02-research/channel-collapse.md).
   * *Fit Unverified:* Deploys sandboxes, standardized proofs-of-concept, and self-serve evaluation suites.
-* **Seller Instruments:** See [search-motion/](../../practice/01-field-assets/search-motion/).
+* **Seller Instruments:** Commercial teaching, reference architectures, sandboxes and channel agreements. No instrument file in this repository.
 * **Primary Failure Mode:** Mid-cycle category commoditization. As educational instruments succeed, search costs drop, and the buyer transitions to price-based vendor comparisons.
 
 ### Consensus-led
 
 * **Deal Profile:** Technical viability is established, but misaligned cross-functional stakeholder incentives block internal transaction approval.
 * **Seller Instruments:** Cross-department objective mapping, champion-enablement collateral, and bilateral decision-criteria frameworks.
-* **Operational Rule:** Identified as an active theoretical gap in this repository. Routing to this motion flags an uninstrumented deal boundary during forecast triage. [consensus-motion/](../../practice/01-field-assets/consensus-motion/) records what exists and what an instrument here would have to do.
+* **Operational Rule:** Identified as an active theoretical gap in this repository. Routing to this motion flags an uninstrumented deal boundary during forecast triage. No dedicated instrument exists in this repository, and the incumbent practice (economic-buyer access, written decision criteria, champion development) lives outside the framework. Research on why the component resists the other two motions' instruments is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
 
 ### Implementation-led
 
 * **Deal Profile:** Category is established, but high operational risk, deep legacy dependencies, or architectural integration complexity threatens delivery viability.
 * **Seller Instruments:** Four sequenced pre-signature governance artifacts:
-  1. *[Contextual Blueprint](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md):* Rigorous baseline mapping of operational and technical workflows.
-  2. *[Red Team Protocol](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md):* Structured prospective hindsight sessions to expose latent failure modes.
-  3. *[Mutual Implementation Plan](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md):* Formal bilateral resource and decision-authority allocation.
-  4. *[Adoption Review](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md):* Post-signature metric verification confirming target value realization.
+  1. *[Contextual Blueprint](../../practice/implementation-motion/01-discovery-contextual-blueprint.md):* Rigorous baseline mapping of operational and technical workflows.
+  2. *[Red Team Protocol](../../practice/implementation-motion/02-validation-red-team-protocol.md):* Structured prospective hindsight sessions to expose latent failure modes.
+  3. *[Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md):* Formal bilateral resource and decision-authority allocation.
+  4. *[Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md):* Post-signature metric verification confirming target value realization.
 * **Primary Failure Mode:** Applying implementation governance to search-dominant deals, forcing operational rigor onto an uncommitted prospect.
 
 ---
@@ -141,4 +141,4 @@ The first three are properties of the deal. The last three are properties of the
 * [06-friction-vector.md](./06-friction-vector.md) — Vector space geometry and apparatus boundary derivations.
 * [07-governance-forms.md](./07-governance-forms.md) — Post-signature governance structures and transaction frequency.
 * [09-motion-vocabulary.md](./09-motion-vocabulary.md) — Translation mappings for legacy go-to-market frameworks.
-* [deal-triage-calculator.md](../../practice/01-field-assets/deal-triage-calculator.md) — Algorithmic quantification of level and direction.
+* [deal-triage-calculator.md](../../practice/deal-triage-calculator.md) — Algorithmic quantification of level and direction.

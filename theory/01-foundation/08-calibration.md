@@ -63,7 +63,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 | Responsiveness factor | $\gamma_r$ | 0.5 | **Chosen.** Staging logic follows from Dixit and Pindyck (1994). The value does not. |
 | Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | — | **Named, not valued.** |
 
-### 3.2 The triage instrument ([Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md))
+### 3.2 The triage instrument ([Deal Triage Calculator](../../practice/deal-triage-calculator.md))
 
 Every input to this instrument is a count of a named thing. Everything in this table is what converts those counts into scores, and it is the layer where the arbitrariness that counting removed comes back.
 
@@ -81,7 +81,7 @@ Every input to this instrument is a count of a named thing. Everything in this t
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |
 | Dominance threshold | 0.50 | **Chosen.** A discontinuity doing real work: 0.49 and 0.51 route differently on no argument. Section 5 records it as a known defect. |
 
-### 3.3 The asymmetry scorecard ([Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md))
+### 3.3 The asymmetry scorecard ([Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md))
 
 | Parameter | Value | Provenance |
 |---|---|---|
@@ -91,14 +91,14 @@ Every input to this instrument is a count of a named thing. Everything in this t
 | Risk band edges | 4.0, 7.0 | **Chosen.** No source. |
 | Commercial hold threshold | 7.0 | **Chosen.** No source. |
 
-### 3.4 Staged commitment ([Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md))
+### 3.4 Staged commitment ([Milestone Valuation Model](../../practice/milestone-valuation-model.md))
 
 | Parameter | Value | Provenance |
 |---|---|---|
 | Reference resolution profile | $\mu$ = 0.25, 0.50, 0.80 | **Chosen.** The shape is the argument and the values are illustrative. |
 | Reference payment schedule | 0.25, 0.35, 0.40 of annual contract value | **Chosen.** Illustrative. The constraint that matters is that committed payment stays below value realized at every row. |
 
-### 3.5 Retrospective measures ([Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md))
+### 3.5 Retrospective measures ([Friction Efficiency Index](../../practice/friction-efficiency-index.md))
 
 Weakest layer in the framework, and the only one whose parameters have no argument behind them at all.
 

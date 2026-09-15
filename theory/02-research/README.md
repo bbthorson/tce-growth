@@ -27,7 +27,7 @@ Each research entry follows a standard shape:
 
 ## Quality control
 
-- **[audits/](./audits)** — currently one audit:
+- **[audits/](./audits/)** — currently one audit:
   - [citation-provenance-audit.md](./audits/citation-provenance-audit.md) — the provenance table for every headline statistic: claim, primary source, verification status. Check a statistic's status there before quoting it outside this repository.
 
 ## What goes here vs. elsewhere

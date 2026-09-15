@@ -40,7 +40,7 @@ Williamson's result is that specificity and frequency together select the govern
 |---|---|---|---|
 | Below the boundary | Any | **Market** | Standard terms, published pricing, no relationship apparatus. Classical contracting: the document is complete and the parties are strangers. |
 | At or above | One-shot | **Trilateral** | Neither side will build relational machinery for a transaction that happens once, so safeguards come from outside the pair. Fixed scope, external acceptance criteria, escrow, arbitration, a named third party who adjudicates. |
-| At or above | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
+| At or above | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
 | Far above, and rising | Continuous | **Unified** | One party absorbs the other's function. The buyer builds it internally, or the seller acquires the delivery capability. The transaction stops being a transaction. |
 
 **The MIP has always been bilateral governance and was justified as something narrower.** Its stated purpose is protection against hold-up, which is true and incomplete. What it actually is, structurally, is a relational contract: it leaves both parties autonomous, it safeguards the relationship rather than the transaction, and its gates are the mechanism by which each repetition earns the next. That is why it works on recurrent deals and reads as bureaucratic overhead on one-shot ones.
@@ -97,6 +97,8 @@ Restructuring a one-shot sale as a subscription converts a single-play game into
 
 **What follows operationally.** Where a deal reads high-level and one-shot, the highest-leverage move is often not a better safeguard. It is to find a structure that makes the relationship recurrent, because that changes which governance form applies rather than making an expensive form cheaper.
 
+**What follows for compensation.** The cooperation condition binds the seller's own agents as well as the seller. A representative paid in full at signature holds no stake in whether the relationship reaches its second repetition, so the seller's side of the repeated game is being played by someone with a one-shot payoff. Vesting commission on outcomes that survive signature brings that agent's $\delta_{discount}$ above the threshold: a clawback when the customer fails to launch, a safe harbor for risks nobody could have seen, and a share of expansion revenue for the ones who did the job. This matters beyond the Structural deal it protects, because the person choosing the motion is otherwise an adjudicator with no exposure to the churn a misread vector produces. The framework carried this as a comp plan template until 2026-09. The template is gone and the claim stays.
+
 **What would falsify this.** If categories that moved from perpetual licence to subscription showed no change in the specificity of deals they could close, only in revenue timing, the claim is wrong. The prediction is that the reachable region of the friction space widened, and that is observable in the deals that became closeable rather than in the income statement.
 
 ---
@@ -132,5 +134,5 @@ The framework now emits three things about a deal and they are routinely confuse
 - [05-seller-surplus-model.md](./05-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.
 - [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) — Axelrod, and why a repeated game safeguards itself.
-- [Mutual Implementation Plan](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md) — The bilateral form's instrument.
-- [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) — Emits level, direction and frequency.
+- [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) — The bilateral form's instrument.
+- [Deal Triage Calculator](../../practice/deal-triage-calculator.md) — Emits level, direction and frequency.

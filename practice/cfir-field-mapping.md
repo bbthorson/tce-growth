@@ -1,6 +1,6 @@
 ---
 title: "CFIR-to-Field Asset Mapping"
-layer: theory
+layer: practice
 status: active
 version: 1.0
 operationalizes: [axiom-2]
@@ -13,9 +13,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Audience:** Framework designers, sales enablement, anyone updating or creating field assets.
 
-**Canonical Reference:** [CFIR Research Paper](../02-research/cfir.md)
+**Canonical Reference:** [CFIR Research Paper](../theory/02-research/cfir.md)
 
-**Scope:** CFIR is the spine of this document. Two companion frameworks appear where the artifacts actually use them: RE-AIM supplies the Red Team's five failure dimensions, and Frame Alignment Processes supply the cross-asset consensus tactics. Both are documented in [cfir.md](../02-research/cfir.md) and [re-aim-framework.md](../02-research/re-aim-framework.md). Where a section maps something other than a CFIR construct, it names the source.
+**Scope:** CFIR is the spine of this document. Two companion frameworks appear where the artifacts actually use them: RE-AIM supplies the Red Team's five failure dimensions, and Frame Alignment Processes supply the cross-asset consensus tactics. Both are documented in [cfir.md](../theory/02-research/cfir.md) and [re-aim-framework.md](../theory/02-research/re-aim-framework.md). Where a section maps something other than a CFIR construct, it names the source.
 
 ---
 
@@ -98,7 +98,7 @@ Frame Alignment Processes are the four ways to connect an initiative to what a s
 
 ## Intervention Characteristics → Deal Triage Calculator
 
-Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), which routes the deal before an artifact is chosen.
+Two CFIR constructs govern deal triage rather than any single artifact. Both live in the [Deal Triage Calculator](./deal-triage-calculator.md), which routes the deal before an artifact is chosen.
 
 | Calculator Section | CFIR Construct | What It Captures | Rep Sees It As |
 |---|---|---|---|
@@ -109,7 +109,7 @@ Two CFIR constructs govern deal triage rather than any single artifact. Both liv
 
 Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the implementation artifacts exist to satisfy.
 
-The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../02-research/process-misfit.md).
+The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../theory/02-research/process-misfit.md).
 
 ---
 
@@ -126,14 +126,14 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
-- [cfir.md](../02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
-- [re-aim-framework.md](../02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
+- [cfir.md](../theory/02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
+- [re-aim-framework.md](../theory/02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:
-  - [01-discovery-contextual-blueprint.md](../../practice/01-field-assets/implementation-motion/01-discovery-contextual-blueprint.md)
-  - [02-validation-red-team-protocol.md](../../practice/01-field-assets/implementation-motion/02-validation-red-team-protocol.md)
-  - [03-closing-mutual-implementation-plan.md](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md)
-  - [04-sustaining-adoption-review.md](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
+  - [01-discovery-contextual-blueprint.md](./implementation-motion/01-discovery-contextual-blueprint.md)
+  - [02-validation-red-team-protocol.md](./implementation-motion/02-validation-red-team-protocol.md)
+  - [03-closing-mutual-implementation-plan.md](./implementation-motion/03-closing-mutual-implementation-plan.md)
+  - [04-sustaining-adoption-review.md](./implementation-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
 
 ---
 

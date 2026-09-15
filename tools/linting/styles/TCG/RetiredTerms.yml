@@ -33,7 +33,7 @@ ignorecase: false
 # from git history above. Canonical definition: 04-glossary-and-notation.md.
 # Retired Constitution sections (v15.0). Clarifying Concepts was deleted as a
 # third home for definitions that already had a research file and a glossary
-# row. Part IV moved to practice/02-internal-ops/07-variable-ownership.md. Both
+# row. Part IV moved to practice/07-variable-ownership.md. Both
 # names survive only inside link text, where hrefs stay valid and the link
 # checker cannot see the staleness. Keys are scoped to the link-text shape on
 # purpose, the way the v14.0 analogies avoid bare "Bridge" and "Toaster", so the
@@ -132,7 +132,7 @@ swap:
   plain-language-part-I-companion: 00-tcg-constitution.md Part I
   Constitution, Clarifying Concepts: the concept's research file, indexed in 04-glossary-and-notation.md
   Constitution clarifying concept: the concept's research file, indexed in 04-glossary-and-notation.md
-  Constitution, Part IV: practice/02-internal-ops/07-variable-ownership.md
+  Constitution, Part IV: "removed in the 2026-09 restructure; the Handoff Rule lives in practice/implementation-motion/04-sustaining-adoption-review.md"
   net recurring revenue: Net Revenue Retention
   Net Recurring Revenue: Net Revenue Retention
   net retained revenue: Net Revenue Retention
@@ -147,8 +147,8 @@ swap:
   Law of Prospective Hindsight: "the Red Team protocol (the framework has three axioms, not six)"
   n_viable: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
   n_max: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
-  03-field-assets: 01-field-assets
-  04-internal-ops: 02-internal-ops
+  03-field-assets: "practice/ (flattened in the 2026-09 restructure)"
+  04-internal-ops: "practice/ (flattened in the 2026-09 restructure)"
   05-learning-plan: 03-learning-plan
   06-tools: 02-tools
   02-cases: 01-cases
@@ -173,3 +173,17 @@ swap:
   ai-persona\.md: writing-protocols.md
   context-request-protocol\.md: writing-protocols.md
   trenches-analysis-protocol\.md: writing-protocols.md
+  01-field-assets: "practice/ (flattened in the 2026-09 restructure)"
+  02-internal-ops: "practice/ (flattened in the 2026-09 restructure; the linters are in tools/linting/)"
+  04-incentives-asymmetry-scorecard\.md: asymmetry-scorecard.md
+  05-diagnostics-friction-efficiency-index\.md: friction-efficiency-index.md
+  02-cfir-field-mapping\.md: practice/cfir-field-mapping.md
+  costly-signal-discovery-scripts\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
+  structural-deal-calibration-checklist\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
+  01-standard-order-protocol\.md: "removed in the 2026-09 restructure (a short vector needs no instrument file)"
+  01-education-motion\.md: "removed in the 2026-09 restructure (the search-led region has no instrument file)"
+  00-setup-implementation-guide\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
+  02-governance-review-checklist\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
+  03-incentives-vested-commission\.md: "07-governance-forms.md section 5 (the comp plan template was removed in the 2026-09 restructure; the claim it carried stays)"
+  06-governance-implementation-veto\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
+  07-variable-ownership\.md: "removed in the 2026-09 restructure; the Handoff Rule lives in practice/implementation-motion/04-sustaining-adoption-review.md"

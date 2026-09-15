@@ -13,7 +13,7 @@ import os
 import re
 import sys
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 SCOPE = ("theory", "practice")
 EXCLUDE_DIRS = {".git", ".claude", "linting", "node_modules"}
 

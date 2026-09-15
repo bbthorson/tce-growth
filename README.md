@@ -16,22 +16,23 @@ The named motions are regions of that space rather than competing philosophies. 
 
 Three axioms carry the argument. Costs decompose and their composition selects the motion. Uncertainty inflates each cost by whatever the parties to it cannot verify, which is why unverifiable claims are expensive rather than merely unconvincing. And whether the arrangement survives depends on who holds a stake in the outcome, including the channels and platforms standing between the two sides.
 
-Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](models/), every worked example is tested against it, and every headline statistic carries a provenance row.
+Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
-**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](theory/01-foundation/08-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
+**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](./theory/01-foundation/08-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
 
 ---
 
 ## How this repo is organized
 
-The repo serves **three functions**, each in its own top-level directory, plus a fourth directory holding the equations in code.
+The repo serves **three functions**, each in its own top-level directory, plus two directories holding the equations in code and the checkers.
 
 | Function | Where | What it is |
 |---|---|---|
-| **[theory/](theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the TCG framework. Academic papers, axioms, definitions. |
-| **[practice/](practice/)** | `practice/01-field-assets/` + `practice/02-internal-ops/` | Help sellers and managers actually run the motions. Templates and governance. |
-| **[publishing/](publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
-| **[models/](models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
+| **[theory/](./theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the TCG framework. Academic papers, axioms, definitions. |
+| **[practice/](./practice/)** | `practice/` + `practice/implementation-motion/` | Operationalize the theory. The instruments the axioms name, and the measurement tools the tests assert. |
+| **[publishing/](./publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
+| **[models/](./models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
+| **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
 
 Each group has its own README listing what is inside it.
 
@@ -39,13 +40,13 @@ Each group has its own README listing what is inside it.
 
 ## Start here: which state are you in
 
-The framework indexes on **state**, not on document. Name where the deal is, and the state names what governs it. The three states are defined in [Constitution Part I](theory/01-foundation/00-tcg-constitution.md).
+The framework indexes on **state**, not on document. Name where the deal is, and the state names what governs it. The three states are defined in [Constitution Part I](./theory/01-foundation/00-tcg-constitution.md).
 
 | State | The question | Governed by | Go here |
 |---|---|---|---|
-| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md), then [01-motion-taxonomy.md](theory/01-foundation/01-motion-taxonomy.md) |
-| **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/01-field-assets/](practice/01-field-assets/) — Blueprint, Red Team, MIP in order |
-| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) §7 |
+| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motion-taxonomy.md](./theory/01-foundation/01-motion-taxonomy.md) |
+| **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/](./practice/) — Blueprint, Red Team, MIP in order |
+| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](./theory/01-foundation/05-seller-surplus-model.md) §7 |
 
 Each axiom has a home state and none is confined to it. Part I explains where the mapping holds and where it does not.
 
@@ -53,15 +54,14 @@ Each axiom has a home state and none is confined to it. Part I explains where th
 
 | If you want to... | Go here |
 |---|---|
-| Understand the theory cold | [theory/01-foundation/](theory/01-foundation/) |
-| Look up a symbol or term | [04-glossary-and-notation.md](theory/01-foundation/04-glossary-and-notation.md) |
-| See the evidence behind a claim | [theory/02-research/00-reading-guide.md](theory/02-research/00-reading-guide.md) |
-| Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](theory/01-foundation/05-seller-surplus-model.md) |
-| Set up your org for TCG | [practice/02-internal-ops/](practice/02-internal-ops/) |
-| Compute a formula, or check one still holds | [models/](models/) |
-| Write about TCG publicly | [publishing/02-tools/](publishing/02-tools/) |
+| Understand the theory cold | [theory/01-foundation/](./theory/01-foundation/) |
+| Look up a symbol or term | [04-glossary-and-notation.md](./theory/01-foundation/04-glossary-and-notation.md) |
+| See the evidence behind a claim | [theory/02-research/00-reading-guide.md](./theory/02-research/00-reading-guide.md) |
+| Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](./theory/01-foundation/05-seller-surplus-model.md) |
+| Compute a formula, or check one still holds | [models/](./models/) |
+| Write about TCG publicly | [publishing/02-tools/](./publishing/02-tools/) |
 
-**Orientation lives in two places only:** this file, and [the research reading guide](theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
+**Orientation lives in two places only:** this file, and [the research reading guide](./theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
 
 ---
 
@@ -79,7 +79,7 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 
 ### The Three Axioms
 
-Names, scope, and taglines below are canonical. If this table and the [Constitution](theory/01-foundation/00-tcg-constitution.md) ever disagree, the Constitution wins.
+Names, scope, and taglines below are canonical. If this table and the [Constitution](./theory/01-foundation/00-tcg-constitution.md) ever disagree, the Constitution wins.
 
 | Axiom | Governs | Tagline | What it says |
 |---|---|---|---|
@@ -91,7 +91,7 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 
 | | **Turnkey Deal** | **Structural Deal** |
 |---|---|---|
-| Level | Below 15 on the [Deal Triage Calculator](practice/01-field-assets/deal-triage-calculator.md) | 15 to 30 |
+| Level | Below 15 on the [Deal Triage Calculator](./practice/deal-triage-calculator.md) | 15 to 30 |
 | Motion | Turnkey. Optimize for velocity | Search-led, consensus-led or implementation-led, by direction |
 | Example | Standalone SaaS tools, modular utilities | Enterprise platforms, deep workflow rewiring |
 
@@ -100,11 +100,11 @@ Names, scope, and taglines below are canonical. If this table and the [Constitut
 ## Contributing
 
 This is a living document. As you work:
-- Add new applied analyses to [publishing/01-cases/](publishing/01-cases/) using the trenches protocol.
-- Refine field assets in [practice/01-field-assets/](practice/01-field-assets/) based on what works.
-- Update research with new evidence; the [provenance audit](theory/02-research/audits/citation-provenance-audit.md) tracks source quality.
+- Add new applied analyses to [publishing/01-cases/](./publishing/01-cases/) using the trenches protocol.
+- Refine field assets in [practice/](./practice/) based on what works.
+- Update research with new evidence; the [provenance audit](./theory/02-research/audits/citation-provenance-audit.md) tracks source quality.
 
 ---
 
-**Version:** 1.0 (tracks the [Constitution](theory/01-foundation/00-tcg-constitution.md) version; bump both together)
-**Last updated:** 2026-09-10
+**Version:** 1.1 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Last updated:** 2026-09-15

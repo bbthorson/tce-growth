@@ -30,8 +30,8 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Axiom III — Law of Governance** — RE-AIM's Maintenance dimension is how recursive cooperation gets measured; NRR is the lagging signal.
 - **Reputation Depreciation** (primary derivation) — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
 - **Surplus** (bridge concept) — RE-AIM measures whether surplus is preserved post-signature.
-- MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md).
-- Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
+- MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md).
+- Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
 
 **Notable quotes:**
 - "A highly effective drug that no one can afford (low Reach) or a complex exercise regimen that no hospital can staff (low Adoption) has a net public health impact of zero."

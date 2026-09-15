@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Use when:** The Red Team has surfaced the failure modes and you are drafting the MIP's timeline and commercial terms.
 
-**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../../theory/01-foundation/00-tcg-constitution.md), research in [real-options.md](../../theory/02-research/real-options.md).
+**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../theory/01-foundation/00-tcg-constitution.md), research in [real-options.md](../theory/02-research/real-options.md).
 
 ---
 
@@ -41,13 +41,13 @@ $$S_m = p_m \cdot \left[ V_{gross,m} - \left(a \cdot x_m^2 + c_m\right) \right]$
 | $c_m$ | Payment allocated to stage $m$, as a fraction of annual contract value |
 
 > [!IMPORTANT]
-> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [03-mathematical-models.md](../../theory/01-foundation/03-mathematical-models.md) section 1.7 carries the arithmetic.
+> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) section 1.7 carries the arithmetic.
 
 Uncertainty decays as gates clear, with each stage resolving a fraction of what remains:
 
 $$x_m = x_0 \cdot \prod_{k=1}^{m}(1 - \mu_k)$$
 
-Where $x_0$ is the normalized implementation gap from the [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) and $\mu_k$ is the fraction of remaining uncertainty that stage $k$ resolves. The gates resolve implementation uncertainty specifically, so the scorecard's gap is the right input and the deal-level mean is not.
+Where $x_0$ is the normalized implementation gap from the [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) and $\mu_k$ is the fraction of remaining uncertainty that stage $k$ resolves. The gates resolve implementation uncertainty specifically, so the scorecard's gap is the right input and the deal-level mean is not.
 
 ---
 
@@ -122,7 +122,7 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 
 ## Related
 
-- [real-options.md](../../theory/02-research/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
-- [00-tcg-constitution.md](../../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment bridge concept.
+- [real-options.md](../theory/02-research/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment bridge concept.
 - [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) — The artifact these gates go into.
-- [Bilateral Asymmetry Scorecard](../02-internal-ops/04-incentives-asymmetry-scorecard.md) — Supplies $x_0$.
+- [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — Supplies $x_0$.

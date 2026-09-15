@@ -73,7 +73,7 @@ Two things, and both matter in the field.
 
 ### 1.5 Normalizing the gap before substitution
 
-The [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) produces a raw score on $[2, 10]$. Neither equation accepts that range directly. At a raw score of 10 the structural multiplier $(1 + \Delta_A)$ would inflate base friction elevenfold, which no observed deal supports.
+The [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw score on $[2, 10]$. Neither equation accepts that range directly. At a raw score of 10 the structural multiplier $(1 + \Delta_A)$ would inflate base friction elevenfold, which no observed deal supports.
 
 Normalize before substituting:
 
@@ -81,7 +81,7 @@ $$\hat{\Delta}_A = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_A \in [0, 1
 
 This keeps the structural multiplier in $[1, 2]$ and keeps the reduced form's quadratic term bounded by $a$. Use the raw score for the field triage bands in the scorecard. Use the normalized value in either equation. Confusing the two produces cost estimates off by an order of magnitude.
 
-**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the implementation pair's range, because that is the pair it measures. The search and consensus gaps are emitted directly on $[0, 1]$ by the [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
+**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the implementation pair's range, because that is the pair it measures. The search and consensus gaps are emitted directly on $[0, 1]$ by the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
 
 The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ceiling under the Decay Clock dynamics ($\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$). The scorecard measures a point in time and cannot observe drift beyond its own range.
 
@@ -95,7 +95,7 @@ The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a behavioral justif
 
 The reduced form adds $a\hat{\Delta}_A^2$ to $c$. Addition requires common units, so $a$ carries whatever units $c$ carries. This has to be stated rather than assumed, because the anchor for $a$ is borrowed from a dimensionless behavioral coefficient and the term it is added to is a price.
 
-**All three are fractions of annual contract value.** A deal transacting at list price with no internal cost has $c = 1$. The [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) is the one place where $a$, $c$ and the payment schedule meet on a common scale, and its reference table settles the reading.
+**All three are fractions of annual contract value.** A deal transacting at list price with no internal cost has $c = 1$. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the one place where $a$, $c$ and the payment schedule meet on a common scale, and its reference table settles the reading.
 
 | Stage | Payment $c_m$ | Residual entering, $x_m$ | $a x_m^2$ | Ratio to that stage's payment |
 |---|---|---|---|---|
@@ -172,9 +172,9 @@ Axiom II amplifies each friction component by the asymmetry inside its own pair 
 
 | Gap | Pair | What is unknown | Instrument | Closed by |
 |---|---|---|---|---|
-| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, whether the fit holds, how to reach a seller at all | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), search block | Education, reference architectures, category definition, channel |
-| $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
-| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) | Blueprint, Red Team, MIP |
+| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, whether the fit holds, how to reach a seller at all | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), search block | Education, reference architectures, category definition, channel |
+| $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
+| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) | Blueprint, Red Team, MIP |
 
 **Only the implementation gap is bilateral.** Sections 2.2 and 2.3 model its two halves, $I_{seller}$ and $I_{buyer}$, and section 2.1's sum applies to that pair alone:
 
@@ -227,7 +227,7 @@ $$\frac{\partial F_{consensus}}{\partial N} = \alpha \beta N^{\beta-1}(1 + \text
 
 $$\frac{\partial F_{consensus}}{\partial \text{Var}(I_i)} = \alpha N^{\beta}$$
 
-The return on reducing misalignment scales with $N^{\beta}$. In a committee of three, aligning incentives produces modest gains. In a committee of ten, it produces the largest single reduction available to the seller. This is the quantitative case for running the Red Team workshop on large committees specifically, and it is why the [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) escalates to executive sponsorship above a threshold rather than recommending more meetings.
+The return on reducing misalignment scales with $N^{\beta}$. In a committee of three, aligning incentives produces modest gains. In a committee of ten, it produces the largest single reduction available to the seller. This is the quantitative case for running the Red Team workshop on large committees specifically, and it is why the [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) escalates to executive sponsorship above a threshold rather than recommending more meetings.
 
 ### 3.4 Field extension: technical overlap
 
@@ -301,8 +301,8 @@ Until then, treat every output as a structured comparison between deals rather t
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
 - [01-motion-taxonomy.md](./01-motion-taxonomy.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
-- [Bilateral Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
-- [Consensus Friction Calculator](../../practice/01-field-assets/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
-- [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.
+- [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
+- [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
+- [Milestone Valuation Model](../../practice/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.
 - [real-options.md](../02-research/real-options.md) — Source for the staging logic behind $\delta$ and milestone gating.
-- [Friction Efficiency Index](../../practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md) — Retrospective execution metrics (FAR, BCV, RMS, SVI). Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.
+- [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics (FAR, BCV, RMS, SVI). Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

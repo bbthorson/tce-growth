@@ -22,19 +22,19 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 | **Inputs** | Signed [MIP](./03-closing-mutual-implementation-plan.md), the filled [Blueprint](./01-discovery-contextual-blueprint.md), and the [Red Team](./02-validation-red-team-protocol.md) risk register. |
 | **Outputs** | A receipted handoff packet, a completed RE-AIM review per cycle, and a renewal posture backed by evidence rather than relationship. |
 | **Next step** | Renewal, expansion, or a documented decision to let the account lapse. |
-| **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under [vested commission](../../02-internal-ops/03-incentives-vested-commission.md). |
+| **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under vested compensation ([07-governance-forms.md](../../theory/01-foundation/07-governance-forms.md) section 5). |
 | **Reduces** | Post-signature defection and drift (Axiom III). Prevents $\Delta_A$ from resetting at the handoff boundary. |
 
 ---
 
 ## Why this artifact exists
 
-Axiom III governs whether a deal persists, and the [Constitution's Handoff Rule](../../../theory/01-foundation/00-tcg-constitution.md) states the mechanism plainly. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, meaning the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
+Axiom III governs whether a deal persists, and the [Constitution's Handoff Rule](../../theory/01-foundation/00-tcg-constitution.md) states the mechanism plainly. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, meaning the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
 
 The first three artifacts drive $\Delta_A$ toward zero before signature. Nothing keeps it there. This document is the maintenance.
 
 > [!NOTE]
-> **Genre.** This is a fill-in template in the same family as the Blueprint and the MIP, not a scored instrument like the [Asymmetry Scorecard](../../02-internal-ops/04-incentives-asymmetry-scorecard.md) or the [Friction Efficiency Index](../../02-internal-ops/05-diagnostics-friction-efficiency-index.md). It deliberately carries no formulas and no reference bands, so it adds nothing to the repo's uncalibrated-parameter backlog. Judgment, evidenced.
+> **Genre.** This is a fill-in template in the same family as the Blueprint and the MIP, not a scored instrument like the [Asymmetry Scorecard](../asymmetry-scorecard.md) or the [Friction Efficiency Index](../friction-efficiency-index.md). It deliberately carries no formulas and no reference bands, so it adds nothing to the repo's uncalibrated-parameter backlog. Judgment, evidenced.
 
 ---
 
@@ -82,7 +82,7 @@ Before the AE steps back, the receiving CS lead answers these from memory. If th
 3. What killed their last attempt at solving this?
 
 > [!WARNING]
-> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom II](../../../theory/01-foundation/00-tcg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
+> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom II](../../theory/01-foundation/00-tcg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
 
 ---
 
@@ -90,7 +90,7 @@ Before the AE steps back, the receiving CS lead answers these from memory. If th
 
 *The MIP promised success metrics via RE-AIM and supplied no instrument. This is the instrument.*
 
-RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from public-health intervention evaluation, where the gap between "works in a trial" and "works in the world" is the whole problem. See [re-aim-framework.md](../../../theory/02-research/re-aim-framework.md) for sourcing. Run this at every review cycle.
+RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from public-health intervention evaluation, where the gap between "works in a trial" and "works in the world" is the whole problem. See [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for sourcing. Run this at every review cycle.
 
 **Review date:** ______  **Cycle:** [ ] T+90  [ ] T+180  [ ] Annual  [ ] Pre-renewal
 
@@ -133,7 +133,7 @@ This is the only audit the counting instrument has on itself. Counts are checkab
 
 ## Section 3: The QBR Protocol
 
-*Both the [MIP](./03-closing-mutual-implementation-plan.md) and the [comp plan](../../02-internal-ops/03-incentives-vested-commission.md) already require a QBR. Neither defines one. This does.*
+*The [MIP](./03-closing-mutual-implementation-plan.md) already requires a QBR and does not define one. This does.*
 
 ### 3.1 Attendance
 
@@ -210,9 +210,9 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III (Law of Governance)](../../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
-- **Academic backing:** [re-aim-framework.md](../../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
-- **CFIR mapping:** [02-cfir-field-mapping.md](../../../theory/01-foundation/02-cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension and names the same failure signals.
+- **Theory:** [TCG Constitution, Axiom III (Law of Governance)](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
+- **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
+- **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension and names the same failure signals.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact has no meaning without one, because it audits commitments the MIP created.
-- **Comp alignment:** [03-incentives-vested-commission.md](../../02-internal-ops/03-incentives-vested-commission.md). The T+90 review is the clawback checkpoint, and the first QBR is the AE's NRR bonus requirement.
-- **Cohort view:** [05-diagnostics-friction-efficiency-index.md](../../02-internal-ops/05-diagnostics-friction-efficiency-index.md) aggregates post-signature effort across closed deals. This artifact governs one account. That one scores the book.
+- **Comp alignment:** [07-governance-forms.md](../../theory/01-foundation/07-governance-forms.md) section 5. The T+90 review is the natural clawback checkpoint, and the first QBR is where an expansion bonus would vest.
+- **Cohort view:** [friction-efficiency-index.md](../friction-efficiency-index.md) aggregates post-signature effort across closed deals. This artifact governs one account. That one scores the book.

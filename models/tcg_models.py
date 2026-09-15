@@ -35,7 +35,7 @@ close date, or a probability. Do not quote any number this module produces as
 an empirical estimate.
 
 No dependencies, standard library only, matching the two checkers in
-practice/02-internal-ops/linting/.
+tools/linting/.
 """
 
 import collections
@@ -46,7 +46,7 @@ import math
 #
 # Provenance for each of these is in the parameter reference tables of
 # theory/01-foundation/03-mathematical-models.md section 5 and
-# practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md.
+# practice/friction-efficiency-index.md.
 # Read those columns before quoting any value outside this repository.
 # --------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ KAPPA_PROOF_DECAY = 0.5      # chosen
 GAMMA_RESPONSIVENESS = 0.5   # chosen
 
 # Raw Bilateral Asymmetry Scorecard range, from
-# practice/02-internal-ops/04-incentives-asymmetry-scorecard.md part 3.
+# practice/asymmetry-scorecard.md part 3.
 RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
 
 # Friction Efficiency Index composite weights, in FAR / BCV / RMS / SVI order.
@@ -448,7 +448,7 @@ def buyer_uncertainty_floor(cv_roi, mu=MU_RETURN_UNCERTAINTY):
 
 # ==========================================================================
 # theory/01-foundation/03-mathematical-models.md section 3
-# practice/01-field-assets/consensus-friction-calculator.md
+# practice/consensus-friction-calculator.md
 # Consensus friction.
 # ==========================================================================
 
@@ -647,7 +647,7 @@ def deal_surplus(v_effective, v_next_best, f_effective):
 
 
 # ==========================================================================
-# practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md
+# practice/friction-efficiency-index.md
 # Retrospective execution metrics. Every threshold, weight and coefficient on
 # that page is a reasoned starting value; none is fitted to booked deal data.
 # ==========================================================================
@@ -850,7 +850,7 @@ def fei_band(fei):
 
 
 # ==========================================================================
-# practice/01-field-assets/milestone-valuation-model.md
+# practice/milestone-valuation-model.md
 # ==========================================================================
 
 def residual_uncertainty(x0, mus):
@@ -1085,7 +1085,7 @@ def cooperation_threshold(temptation, reward, punishment):
 
 
 # ==========================================================================
-# practice/01-field-assets/deal-triage-calculator.md (v5.0)
+# practice/deal-triage-calculator.md (v5.0)
 #
 # The instrument counts named things and converts the counts to component
 # scores through chosen bands. It emits a level and a direction rather than a

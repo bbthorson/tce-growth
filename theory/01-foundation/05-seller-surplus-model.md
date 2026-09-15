@@ -83,7 +83,7 @@ This is the only lever that appears on both sides of the transaction, which is w
 
 ## 5. Staged investment: the mirror of the milestone model
 
-The [Milestone Valuation Model](../../practice/01-field-assets/milestone-valuation-model.md) stages the buyer's payments so the buyer never carries more committed cost than the stage has de-risked. The seller's engineering spend needs the same treatment in the other direction: each tranche of $C_{invest}$ gates on a buyer commitment that reduces the seller's unprotected $Q$.
+The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) stages the buyer's payments so the buyer never carries more committed cost than the stage has de-risked. The seller's engineering spend needs the same treatment in the other direction: each tranche of $C_{invest}$ gates on a buyer commitment that reduces the seller's unprotected $Q$.
 
 The buyer-side rule "payment follows proof, not calendar" has a seller-side twin: **engineering follows commitment, not optimism.** A tranche released against a date, a verbal assurance, or a forecast category converts a staged investment back into an unconditional one, which removes the protection the staging existed to provide.
 
@@ -156,7 +156,7 @@ So a forward-deployed motion raises the seller's temptation $T$ and the seller's
 
 [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
 
-The instrument already exists. The [Asymmetry Scorecard](../../practice/02-internal-ops/04-incentives-asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
+The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
 
 ---
 
@@ -165,7 +165,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 - **Resolved in the Constitution.** Axiom I names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
-- **$C_{sustain}$ has no budget owner.** [07-variable-ownership.md](../../practice/02-internal-ops/07-variable-ownership.md) maps each variable to a department. This one is unmapped, and unmapped variables drift by that corollary's own argument.
+- **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.
 - **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
 
 ---
@@ -175,4 +175,4 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/02-inter
 - **Research:** [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../02-research/real-options.md) for staging under irreversibility, [process-misfit.md](../02-research/process-misfit.md) for what drives $C_{deliver}$.
 - **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part III.
 - **Functional forms:** [03-mathematical-models.md](./03-mathematical-models.md).
-- **Staging in practice:** [milestone-valuation-model.md](../../practice/01-field-assets/milestone-valuation-model.md).
+- **Staging in practice:** [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).

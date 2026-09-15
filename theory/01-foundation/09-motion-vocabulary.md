@@ -113,7 +113,7 @@ This framework uses "search-led", "consensus-led" and "implementation-led" rathe
 
 **The field is already crowded with them.** Adding three more is the kind of move the [voice guide](../../publishing/02-tools/voice-guide.md) exists to prevent.
 
-**The names match the instrument's output.** The [Deal Triage Calculator](../../practice/01-field-assets/deal-triage-calculator.md) emits `search-dominant`, `consensus-dominant` or `implementation-dominant`. When the motion name is the same word as the reading, nothing has to be translated, and translation layers are where field errors accumulate.
+**The names match the instrument's output.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits `search-dominant`, `consensus-dominant` or `implementation-dominant`. When the motion name is the same word as the reading, nothing has to be translated, and translation layers are where field errors accumulate.
 
 "Implementation-Led Growth" and "ILG" still appear in analyses written before the rename. They named this framework and then named one motion inside it, which is the ambiguity the rename resolved.
 

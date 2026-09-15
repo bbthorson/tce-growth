@@ -27,7 +27,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Staged Commitment** (bridge concept, Axioms II + III) — direct theoretical basis. Phase gating is option construction.
 - **Axiom II — Law of Uncertainty Inflation** — explains a mechanism the Constitution otherwise leaves implicit. Buyer uncertainty does not only inflate cost, it also raises the value of doing nothing. This is the formal account of why the Safe No beats the Logical Yes.
 - **The MIP** — operationalizes both the staging option and the abandonment option. Gate-contingent payments with defined acceptance criteria give the buyer a priced right to stop.
-- **Milestone Valuation Model** — applies staged uncertainty decay to gate design. See [milestone-valuation-model.md](../../practice/01-field-assets/milestone-valuation-model.md).
+- **Milestone Valuation Model** — applies staged uncertainty decay to gate design. See [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).
 - **Akerlof Exit Threshold** (clarifying concept) — real options supplies the complementary explanation. The buyer may exit not because signals failed but because waiting dominates acting.
 
 **Notable quotes:**

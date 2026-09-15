@@ -4,14 +4,14 @@
 
 Parent: [publishing/](../) · Sibling: [01-cases/](../01-cases/)
 
-This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../../practice/01-field-assets/)) or where leadership operates the system (see [`../../practice/02-internal-ops/`](../../practice/02-internal-ops/)). This is the writer's toolkit.
+This is *not* where the instruments live (see [`../../practice/`](../../practice/)). This is the writer's toolkit.
 
 ## Files
 
 ### Voice and protocols
 
 - **[voice-guide.md](./voice-guide.md)**: the "Conversational Intellectual" voice. Four linguistic rules plus the constraint checklist the linter enforces.
-- **[writing-protocols.md](./writing-protocols.md)**: three protocols in one file. The AI persona for an LLM acting as a CSO-level deal analyst, the context request check run before drafting, and the four-step trenches analysis that every case in [`../01-cases/`](../01-cases) follows.
+- **[writing-protocols.md](./writing-protocols.md)**: three protocols in one file. The AI persona for an LLM acting as a CSO-level deal analyst, the context request check run before drafting, and the four-step trenches analysis that every case in [`../01-cases/`](../01-cases/) follows.
 
 ### Generators (multi-phase content workflows)
 
@@ -22,8 +22,8 @@ This is *not* where reps run deals (see [`../../practice/01-field-assets/`](../.
 
 Published examples. Use them to calibrate voice and structure, not to copy. They are kept verbatim as the record of what went out, so the linter's anti-hype and retired-term rules are off inside this directory.
 
-- **[style-references/blog-posts/](./style-references/blog-posts)**: three long-form pieces (TCE and sales, the ACCESS model, competing on value).
-- **[style-references/short-form-posts/](./style-references/short-form-posts)**: seven short-form pieces, including the archived `bridge-v-toaster`.
+- **[style-references/blog-posts/](./style-references/blog-posts/)**: three long-form pieces (TCE and sales, the ACCESS model, competing on value).
+- **[style-references/short-form-posts/](./style-references/short-form-posts/)**: seven short-form pieces, including the archived `bridge-v-toaster`.
 
 ## Workflow
 
@@ -39,4 +39,4 @@ writing-protocols.md          (pre-flight context check)
 style-references/             (sanity-check against published examples)
 ```
 
-For trenches and case analyses specifically, the output drops into [`../01-cases/`](../01-cases).
+For trenches and case analyses specifically, the output drops into [`../01-cases/`](../01-cases/).

@@ -9,9 +9,10 @@ A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-mar
 | Directory | Function |
 |---|---|
 | `theory/` | Develop and pressure-test the TCG framework. Axioms, equations, academic backing. |
-| `practice/` | Operationalize theory for sellers and managers. Templates and governance. |
+| `practice/` | Operationalize theory. The instruments the axioms name and the measurement tools the tests assert. |
 | `publishing/` | Turn the framework into public writing. Voice guide, content generators, case analyses. |
 | `models/` | Executable forms of the equations, the tests that check the worked examples, and the figure generator. Python, no dependencies. |
+| `tools/` | The two linters and the Vale style that keep the other directories consistent. |
 
 ## Conceptual architecture
 
@@ -20,10 +21,10 @@ A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-mar
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory should propagate downstream. Changes to practice or publishing never modify theory.
 
 Key cross-file dependencies to know:
-- The **Deal Triage Calculator** (`practice/01-field-assets/deal-triage-calculator.md`) operationalizes both of Axiom I's quantities: it emits a level and a direction, not a motion label. It is referenced by nearly every field asset.
-- The **CFIR field mapping** (`theory/01-foundation/02-cfir-field-mapping.md`) explains which research construct each artifact section operationalizes — read it before modifying any `practice/01-field-assets/` document.
-- The **Friction Allocation Diagnostic** (`practice/01-field-assets/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom II.
-- The **three the implementation artifacts** (Blueprint → Red Team → MIP) in `practice/01-field-assets/implementation-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
+- The **Deal Triage Calculator** (`practice/deal-triage-calculator.md`) operationalizes both of Axiom I's quantities: it emits a level and a direction, not a motion label. It is referenced by nearly every field asset.
+- The **CFIR field mapping** (`practice/cfir-field-mapping.md`) explains which research construct each artifact section operationalizes — read it before modifying any `practice/` document.
+- The **Friction Allocation Diagnostic** (`practice/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom II.
+- The **three implementation artifacts** (Blueprint → Red Team → MIP) in `practice/implementation-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
 
 The **research files** in `theory/02-research/` back specific axioms:
 - Axiom I → `transaction-cost-economics.md`
@@ -72,16 +73,16 @@ When writing or editing any document in this repo, apply the voice rules from `p
 
 ### Checking your work
 
-Most of the rules above are machine-checked. Run all five before finishing an edit. `practice/02-internal-ops/linting/README.md` covers the two linters and `models/README.md` covers the two model checks:
+Most of the rules above are machine-checked. Run all five before finishing an edit. `tools/linting/README.md` covers the two linters and `models/README.md` covers the two model checks:
 
 ```bash
-python3 practice/02-internal-ops/linting/check_playbook.py && \
-python3 practice/02-internal-ops/linting/check_frontmatter.py && \
+python3 tools/linting/check_playbook.py && \
+python3 tools/linting/check_frontmatter.py && \
 python3 models/test_tcg_models.py && \
 python3 models/make_figures.py --check && vale .
 ```
 
-`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom and that the Constitution version matches the root README footer. `test_tcg_models.py` checks that every worked example in `theory/` and `practice/` still reproduces from [`models/tcg_models.py`](models/tcg_models.py). `make_figures.py --check` regenerates the Constitution's axiom figures and fails if any has drifted from the equation that generates it. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
+`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom and that the Constitution version matches the root README footer. `test_tcg_models.py` checks that every worked example in `theory/` and `practice/` still reproduces from [`models/tcg_models.py`](./models/tcg_models.py). `make_figures.py --check` regenerates the Constitution's axiom figures and fails if any has drifted from the equation that generates it. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
 
 All four Python checks run in `.githooks/pre-commit` alongside Vale.
 
@@ -90,7 +91,7 @@ All four Python checks run in `.githooks/pre-commit` alongside Vale.
 The dependency chain runs `theory/` → `practice/` → `publishing/`, and nothing enforces it automatically. When you rename an axiom, retire an equation variable, or renumber a directory:
 
 1. Grep the whole repo for the old term before assuming the rename is local. Stale names hide inside links whose hrefs are still correct, so the link checker will not catch them.
-2. Add the old term to `swap:` in `practice/02-internal-ops/linting/styles/TCG/RetiredTerms.yml` in the same commit. That is what stops the rename from drifting back.
+2. Add the old term to `swap:` in `tools/linting/styles/TCG/RetiredTerms.yml` in the same commit. That is what stops the rename from drifting back.
 3. Bump the version in `theory/01-foundation/00-tcg-constitution.md` (both the frontmatter and the body) and the matching version footer in the root `README.md` together. `check_frontmatter.py` enforces that they agree.
 4. Check the *descriptions*, not just the names. A paragraph can use every current term and still describe a superseded version of an axiom.
 
@@ -111,7 +112,7 @@ When diagnosing a stall or editing a prescription, identify which term in the eq
 
 ### Changing an equation or a coefficient
 
-Every live formula has an implementation in [`models/tcg_models.py`](models/tcg_models.py), and every worked example in `theory/` and `practice/` is asserted against it. **The document is the specification: where the two disagree, the code is the bug.** So the order is fixed.
+Every live formula has an implementation in [`models/tcg_models.py`](./models/tcg_models.py), and every worked example in `theory/` and `practice/` is asserted against it. **The document is the specification: where the two disagree, the code is the bug.** So the order is fixed.
 
 1. Edit the document first. The test then fails against the old code, which is the point of having it.
 2. Update `tcg_models.py` and rerun `python3 models/test_tcg_models.py`.
@@ -120,7 +121,7 @@ Every live formula has an implementation in [`models/tcg_models.py`](models/tcg_
 
 This is what stops formula drift, the way `RetiredTerms.yml` stops rename drift and the provenance audit stops stat drift.
 
-**Parameters in this repo are unfitted, and every new one must say so.** [`theory/01-foundation/08-calibration.md`](theory/01-foundation/08-calibration.md) is the single home for every coefficient, threshold and band edge in the framework. Any new one needs a row there with an honest provenance status, in the same commit, and anything that reads as an empirical estimate is wrong. `test_tcg_models.py` asserts that every numeric constant in the module is declared on that page, so adding a constant without declaring it fails the suite.
+**Parameters in this repo are unfitted, and every new one must say so.** [`theory/01-foundation/08-calibration.md`](./theory/01-foundation/08-calibration.md) is the single home for every coefficient, threshold and band edge in the framework. Any new one needs a row there with an honest provenance status, in the same commit, and anything that reads as an empirical estimate is wrong. `test_tcg_models.py` asserts that every numeric constant in the module is declared on that page, so adding a constant without declaring it fails the suite.
 
 The separation earns its keep: the theory states structure, the calibration layer states quantity, and a reader can reject any number without rejecting the claim it sits inside. Keep it that way. A coefficient quoted in `theory/` prose without a pointer to the calibration layer is how the two collapse back together. Do not fit these to synthetic data: it produces parameters that look measured and are not. `models/README.md` records why.
 
