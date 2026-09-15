@@ -263,9 +263,9 @@ def component_gap(n_items, n_evidenced):
 
 def friction_vector(f_search, f_consensus, f_implementation,
                     gap_search, gap_consensus, gap_implementation):
-    """Both of Axiom I's quantities, computed together. 01-motions.md.
+    """Level (Axiom II) and direction (Axiom I), computed together. 01-motions.md.
 
-    Level is the L1 norm of BASE friction. It is the asset specificity Axiom I
+    Level is the L1 norm of BASE friction. It is the asset specificity Axiom II
     bounds, a property of the deal rather than of what anyone currently knows
     about it, so discovery does not move it.
 
@@ -595,7 +595,7 @@ def decay_rate(lambda_inertia, e_external, gamma_r=GAMMA_RESPONSIVENESS):
 
 
 def value_decay(v0, delta, t):
-    """Section 4.1, and Axiom I's time dynamics.
+    """Section 4.1, and the value-decay standing assumption.
 
         V_effective(t) = V_0 * exp(-delta * t)
 
@@ -615,7 +615,7 @@ def asymmetry_drift(gap0, gamma, t):
 
         gap_hat(t) = gap_hat(0) + gamma * t
 
-    Pre-close this is the Axiom II half of the Decay Clock: information goes
+    Pre-close this is the Axiom III half of the Decay Clock: information goes
     stale, raising the multiplier on friction. Post-close, section 7.2 of
     04-seller-surplus-model.md reads the same equation as the erosion of an
     incumbent's information advantage, where gamma runs on staff turnover,
@@ -701,7 +701,7 @@ def buyer_commitment_velocity(s_dept, d_prov, n):
 
     The N^0.5 denominator is a correction rather than decoration. The canvas
     form was S_dept / (D_prov + 1), which rewards engaging more departments and
-    so inverts Axiom II: the consensus model treats stakeholder count as a cost
+    so inverts Axiom III: the consensus model treats stakeholder count as a cost
     driver. Uncorrected, an organization could raise its score by dragging more
     people into rooms, which the Consensus Friction Calculator correctly scores
     as worse.
@@ -1067,7 +1067,7 @@ def repeated_seller_surplus(r, v, c_deliver, c_sustain, rho, c_invest):
 
 
 def cooperation_threshold(temptation, reward, punishment):
-    """Axiom III's cooperation condition.
+    """Axiom II's cooperation condition.
 
         delta_discount > (T - R) / (T - P)
 
@@ -1089,7 +1089,7 @@ def cooperation_threshold(temptation, reward, punishment):
 #
 # The instrument counts named things and converts the counts to component
 # scores through chosen bands. It emits a level and a direction rather than a
-# motion label, which is Axiom I's two claims kept apart.
+# motion label, which is Axioms I and II kept apart.
 #
 # Two properties of the v4.2 model survive because the document still requires
 # them. The gates run before divergence and can skip it entirely, and the
@@ -1126,7 +1126,7 @@ GATE_A_ENCODED = "encoded"
 
 SEARCH_EVIDENCE_ITEMS = 4
 
-# Frequency, Axiom I's third property. Step 1d. Not a count and not part of
+# Frequency, Axiom II's second selector. Step 1d. Not a count and not part of
 # the level: it selects the governance form and decides whether the apparatus
 # the level calls for can be amortized at all.
 ONE_SHOT, RECURRENT, CONTINUOUS = "one-shot", "recurrent", "continuous"
@@ -1295,7 +1295,7 @@ def deal_class(level):
     score multiplied by 1.5 is comparable. It carries no more empirical support
     here than it did there.
 
-    This is the Axiom I level claim and it answers how much apparatus the deal
+    This is the Axiom II level claim and it answers how much apparatus the deal
     can carry. It does not select the motion. Direction does that.
     """
     if not LEVEL_MIN <= level <= LEVEL_MAX:

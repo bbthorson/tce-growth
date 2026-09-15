@@ -2,7 +2,7 @@
 title: "Channel Collapse: Jevons' Paradox in B2B Outreach"
 layer: theory
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-1, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -31,10 +31,10 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Mechanism design solutions require: hostages (credible commitments), deep quality measurement, and demurrage on reputation.
 
 **Supports in TCG:**
-- **Axiom II — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
+- **Axiom III — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
 - **Friction Allocation Principles** (primary derivation) — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
 - **Jevons Vulnerability** (clarifying concept) — direct.
-- **Axiom III — Law of Governance** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
+- **Axiom II — Law of Asset Specificity, governance corollary** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
 - **Reputation Depreciation** (primary derivation) — demurrage on reputation is the channel-level prescription.
 - **Friction vector direction** ([01-motions.md](../01-foundation/01-motions.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
 

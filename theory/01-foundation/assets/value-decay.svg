@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="figtitle figdesc">
-<title id="figtitle">Axiom I: urgency decays from the triggering event</title>
+<title id="figtitle">Value decays from the triggering event</title>
 <desc id="figdesc">Two exponential decay curves falling from a peak perceived value of 100 toward a horizontal floor at 40, the value of the buyer's next best alternative. The curve driven by organizational inertia alone reaches the floor in the second month. The curve with a named external catalyst decays roughly five times more slowly and does not reach the floor until the eleventh. Below the floor the buyer keeps the status quo.</desc>
 <style>
   :root {
@@ -52,7 +52,7 @@
 </style>
   <rect class="bg" x="0" y="0" width="760" height="470"/>
   <rect class="panel" x="78" y="92" width="648" height="304"/>
-  <text class="title" x="78" y="34">Axiom I: urgency decays from the triggering event</text>
+  <text class="title" x="78" y="34">Value decays from the triggering event</text>
   <text class="subtitle" x="78" y="55">Parameters are reasoned starting values, not fitted to deal data. Read the shape, not the numbers.</text>
   <line class="grid" x1="78" y1="92" x2="78" y2="396"/>
   <text class="tick" x="78" y="416" text-anchor="middle">0</text>

@@ -3,7 +3,7 @@ title: "The Sustaining Adoption Review (The Proof)"
 layer: practice
 status: active
 version: 1.1
-operationalizes: [axiom-3]
+operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -21,13 +21,13 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 | **Outputs** | A receipted handoff packet, a completed RE-AIM review per cycle, and a renewal posture backed by evidence rather than relationship. |
 | **Next step** | Renewal, expansion, or a documented decision to let the account lapse. |
 | **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under vested compensation ([05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5). |
-| **Reduces** | Post-signature defection and drift (Axiom III). Prevents $\Delta_A$ from resetting at the handoff boundary. |
+| **Reduces** | Post-signature defection and drift (Axiom II). Prevents $\Delta_A$ from resetting at the handoff boundary. |
 
 ---
 
 ## Why this artifact exists
 
-Axiom III governs whether a deal persists, and the [Constitution's Handoff Rule](../../theory/01-foundation/00-tcg-constitution.md) states the mechanism. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
+Axiom II governs whether a deal persists, and the [Constitution's Handoff Rule](../../theory/01-foundation/00-tcg-constitution.md) states the mechanism. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
 
 The first three artifacts drive $\Delta_A$ toward zero before signature. Nothing keeps it there. This document is the maintenance. It is a fill-in template rather than a scored instrument, so it carries no formulas and adds nothing to the uncalibrated-parameter backlog.
 
@@ -71,7 +71,7 @@ The receiving lead confirms each item arrived, in writing. An unchecked box is a
 Before the AE steps back, the receiving lead answers from memory: who is the Casualty on this account and what are they likely to do, what did we promise this customer we could NOT do, and what killed their last attempt at solving this. If they cannot, the packet moved but the knowledge did not.
 
 > [!WARNING]
-> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom II](../../theory/01-foundation/00-tcg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
+> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom III](../../theory/01-foundation/00-tcg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
 
 ---
 
@@ -127,7 +127,7 @@ The variance is read across a book rather than on this account. One deal scored 
 
 ## Section 4: Renewal and Reputation Refresh
 
-*Axiom III's second primary derivation: reputation depreciates. What was earned at signature does not carry to renewal without intervening evidence of delivery.*
+*Axiom II's second primary derivation: reputation depreciates. What was earned at signature does not carry to renewal without intervening evidence of delivery.*
 
 The Constitution prescribes **demurrage on credibility**, a standing charge against reputation that forces it to be re-earned rather than accumulated. The trust that closed the deal has been spending down since T-0, and the renewal conversation prices what has been delivered since, not what was promised before.
 
@@ -161,7 +161,7 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III (Law of Governance)](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
+- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
 - **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact audits commitments the MIP created.

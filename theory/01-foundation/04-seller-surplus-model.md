@@ -3,7 +3,7 @@ title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
 version: 1.0
-operationalizes: [axiom-1, axiom-3]
+operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -16,7 +16,7 @@ The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equat
 
 That omission is invisible while the motion is advisory. It becomes binding the moment the seller deploys engineers into a buyer's environment before signature, because the seller is then sinking capital that no term of the buyer's equation accounts for.
 
-This document adds the second equation. Axiom I names which party bears the asset specificity, which is the claim section 3 depends on.
+This document adds the second equation. Axiom II names which party bears the asset specificity, which is the claim section 3 depends on.
 
 ---
 
@@ -34,7 +34,7 @@ A seller reading this equation learns whether the deal *can* close. It cannot te
 
 ## 2. The seller's surplus
 
-*Deal State (T0). Sections 2 through 5 govern the single transaction up to signature.*
+*Before signature. Sections 2 through 5 govern the single transaction up to signature.*
 
 $$S_{seller} = p_{close} \cdot \left(V_{contract} - C_{deliver}\right) - C_{invest}$$
 
@@ -61,7 +61,7 @@ Where $R_{redeploy}$ is the value of that work redeployed elsewhere: reusable co
 
 $Q$ is the amount a buyer can extract by threatening to walk after the engineering is spent, and it is the number that belongs in a risk review. Two engagements consuming identical hours carry different exposure when one produces a connector the seller ships to every subsequent customer and the other produces a mapping to a schema that exists in exactly one hospital.
 
-**This inverts the axiom's usual direction.** Axiom I treats asset specificity as the buyer's problem, solved by governance the seller supplies. In a forward-deployed motion the seller sinks the specific investment first, so the seller holds the exposure and needs the governance. The Mutual Implementation Plan already provides it. Its stated rationale covers only one direction.
+**This inverts the axiom's usual direction.** Axiom II treats asset specificity as the buyer's problem, solved by governance the seller supplies. In a forward-deployed motion the seller sinks the specific investment first, so the seller holds the exposure and needs the governance. The Mutual Implementation Plan already provides it. Its stated rationale covers only one direction.
 
 ---
 
@@ -73,7 +73,7 @@ $$\frac{\partial p_{close}}{\partial C_{invest}} \cdot \left(V_{contract} - C_{d
 
 Spend the next increment while a unit of pre-signature engineering raises the close probability enough that the expected gross margin gain exceeds the unit spent. Stop when it does not.
 
-**Why the left side is ever large enough to justify the spend.** $C_{invest}$ enters the buyer's equation by two routes at once. It reduces $\Delta_A$, because deployed engineering is a demonstration a weak competitor cannot afford to imitate, which is the Single Crossing Property from Axiom II. It also reduces the buyer's $F_{implementation}$ directly, because work the seller performs is work the buyer does not. Both raise $S_{buyer}$, and $p_{close}$ rises with $S_{buyer}$.
+**Why the left side is ever large enough to justify the spend.** $C_{invest}$ enters the buyer's equation by two routes at once. It reduces $\Delta_A$, because deployed engineering is a demonstration a weak competitor cannot afford to imitate, which is the Single Crossing Property from Axiom III. It also reduces the buyer's $F_{implementation}$ directly, because work the seller performs is work the buyer does not. Both raise $S_{buyer}$, and $p_{close}$ rises with $S_{buyer}$.
 
 This is the only lever that appears on both sides of the transaction, which is what makes it worth modeling separately from price. Discounting moves $c$ and leaves $\Delta_A$ untouched.
 
@@ -104,7 +104,7 @@ The same caution governs section 7, where $r_t$ is no better observed than $p_{c
 
 ## 7. The repeated game
 
-*Relationship State (T1+).*
+*After signature.*
 
 Sections 2 through 4 describe a single transaction. Subscription businesses do not have those. The contract renews, the seller keeps spending on the relationship, and Net Revenue Retention is the outcome of a sequence rather than of a close.
 
@@ -126,7 +126,7 @@ The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustai
 
 A forward-deployed engagement is often defended on the grounds that it raises the buyer's switching cost. That defence has a problem inside this framework.
 
-Switching cost is a **lock-in** mechanism, and lock-in raises the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$. A buyer who cannot leave can be repriced and under-served. Raising $T$ raises the threshold the seller's own discount factor must clear, so the arrangement becomes harder to sustain exactly as the seller's position strengthens. This is the extraction drift Axiom III describes for channels and adjudicators, arriving at the deal level.
+Switching cost is a **lock-in** mechanism, and lock-in raises the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$. A buyer who cannot leave can be repriced and under-served. Raising $T$ raises the threshold the seller's own discount factor must clear, so the arrangement becomes harder to sustain exactly as the seller's position strengthens. This is the extraction drift Axiom II describes for channels and adjudicators, arriving at the deal level.
 
 The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../02-research/real-options.md) says that option carries real value. So switching cost raises $\Delta_A$ and $y$ before the seller has delivered anything.
 
@@ -142,7 +142,7 @@ That is an information asset rather than a hostage. The buyer is not trapped, th
 
 **It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
-The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
+The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom II. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
 
 ### 7.3 Why $Q$ appears twice
 
@@ -162,7 +162,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetr
 
 ## Open questions
 
-- **Resolved in the Constitution.** Axiom I names the party bearing the specificity, and separates composition (which selects the motion) from level (which sets the Turnkey and Structural boundary). Both were open questions raised by this document.
+- **Resolved in the Constitution.** Axiom II names the party bearing the specificity and sets the level, and Axiom I separates composition, which selects the motion, from that level. Both were open questions raised by this document.
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **The first-year margin disqualifier assumes a single-shot game.** Section 7 shows the test is too strict when $r_t$ holds up. Correcting it means editing a disqualification rule reps rely on, so it waits for review.
 - **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.

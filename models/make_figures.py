@@ -212,13 +212,13 @@ UNFITTED = ("Parameters are reasoned starting values, not fitted to deal "
 
 
 # ==========================================================================
-# Panel 1 — Axiom I. Value decay against the next-best floor.
+# Panel 1 — Standing assumption 2. Value decay against the next-best floor.
 # ==========================================================================
 
 def panel_1():
     """V_effective(t) = V_0 * exp(-delta t) against V_next_best.
 
-    Illustrates Axiom I's time dynamics and the only term in delta a seller can
+    Illustrates the value-decay assumption and the only term in delta a seller can
     move. delta comes from the structural form of 02-mathematical-models.md
     section 4.2, so the two curves differ only in the external catalyst.
     """
@@ -262,7 +262,7 @@ def panel_1():
         12.0, 12.0, "Below the line the buyer keeps the status quo",
         "note-muted", anchor="middle"))
     return _frame(
-        title="Axiom I: urgency decays from the triggering event",
+        title="Value decays from the triggering event",
         subtitle=UNFITTED,
         axes=axes,
         x_label="Months since the triggering event",
@@ -287,7 +287,7 @@ def _first_crossing(series, level):
 
 
 # ==========================================================================
-# Panel 2 — Axiom II. Convexity, and why discounting fails.
+# Panel 2 — Axiom III. Convexity, and why discounting fails.
 # ==========================================================================
 
 def panel_2():
@@ -348,7 +348,7 @@ def panel_2():
                    "note", anchor="end"),
     ]
     return _frame(
-        title="Axiom II: perceived cost is convex in uncertainty",
+        title="Axiom III: perceived cost is convex in uncertainty",
         subtitle=UNFITTED,
         axes=axes,
         x_label="Normalized bilateral asymmetry gap",
@@ -432,8 +432,8 @@ def panel_3():
 
 
 FIGURES = {
-    "axiom-1-urgency-decay.svg": panel_1,
-    "axiom-2-cost-convexity.svg": panel_2,
+    "value-decay.svg": panel_1,
+    "axiom-3-cost-convexity.svg": panel_2,
     "axiom-3-asymmetry-drift.svg": panel_3,
 }
 

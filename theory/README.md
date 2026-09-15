@@ -14,7 +14,7 @@ status: active
 
 The canonical TCG framework. Start here if you're new to TCG.
 
-- [00-tcg-constitution.md](./01-foundation/00-tcg-constitution.md) — Three axioms, the three states, derived concepts, and the Surplus equation.
+- [00-tcg-constitution.md](./01-foundation/00-tcg-constitution.md) — Three standing assumptions, three axioms stated at the market, workflow and deal levels, the derivations table, and the Surplus equation.
 - [01-motions.md](./01-foundation/01-motions.md) — Motion selection derived from the friction vector, the four regions, and the map onto incumbent vocabulary.
 - [02-mathematical-models.md](./01-foundation/02-mathematical-models.md) — Functional forms behind the variables in the Constitution.
 - [03-glossary-and-notation.md](./01-foundation/03-glossary-and-notation.md) — Look up any symbol or term, and find where it is canonically defined.

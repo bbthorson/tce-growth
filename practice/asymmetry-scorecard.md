@@ -3,7 +3,7 @@ title: "The Bilateral Asymmetry Scorecard"
 layer: practice
 status: active
 version: 3.0
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -14,11 +14,11 @@ Owner: Sales Manager and Rep
 Frequency: Weekly forecast call
 **Purpose:** To measure the implementation component's gap by counting what neither side has evidence for, and to route the deal to whichever artifact closes the wider half.
 
-- **Theory:** Per Axiom II, the implementation component is amplified by $\hat{\Delta}_{implementation}$, and that gap is bilateral: $\Delta_A = I_{seller} + I_{buyer}$. The gap is a **sum**, not a difference.
+- **Theory:** Per Axiom III, the implementation component is amplified by $\hat{\Delta}_{implementation}$, and that gap is bilateral: $\Delta_A = I_{seller} + I_{buyer}$. The gap is a **sum**, not a difference.
 - **Rule:** Above 7.0, place a commercial hold. Do not issue pricing into a gap that wide.
 
 > [!IMPORTANT]
-> **This instrument measures one component, not the deal.** Axiom II amplifies each friction component by the asymmetry inside its own pair of parties, and three components mean three pairs. Search asymmetry is the buyer against the market. Consensus asymmetry is the buyer's stakeholders against each other. This scorecard measures the third pair, seller against buyer, which is the implementation component and the only bilateral one. Substituting its output for the deal-level gap $\hat{\Delta}_A$ treats one pair's gap as though it governed all three, and it is the substitution that was standard practice before v17.0. The [Deal Triage Calculator](./deal-triage-calculator.md) emits the other two.
+> **This instrument measures one component, not the deal.** Axiom III amplifies each friction component by the asymmetry inside its own pair of parties, and three components mean three pairs. Search asymmetry is the buyer against the market. Consensus asymmetry is the buyer's stakeholders against each other. This scorecard measures the third pair, seller against buyer, which is the implementation component and the only bilateral one. Substituting its output for the deal-level gap $\hat{\Delta}_A$ treats one pair's gap as though it governed all three, and it is the substitution that was standard practice before v17.0. The [Deal Triage Calculator](./deal-triage-calculator.md) emits the other two.
 
 > [!IMPORTANT]
 > **Version 3.0 counts. Version 2 rated.** Every dimension below used to be rated 1 to 5 on a rubric, and the models downstream raise their inputs to powers, which is not a defensible operation on an ordinal rating. Each dimension is now a pair of counts: how many items are in scope, and how many of those have evidence behind them. The dimension score is derived from the fraction, and the derivation is stated so the output scale is unchanged.
@@ -79,7 +79,7 @@ $$\Delta_A = I_{seller} + I_{buyer} \qquad \Delta_A \in [2, 10]$$
 
 **Total gap:** ______
 
-The sum is deliberate and it corrects a documented error. An earlier version computed the gap as the absolute difference between the two halves, which contradicted Axiom II and produced a specific false negative: a deal where both sides were equally blind scored as symmetric and therefore forecastable, when it was the most dangerous deal on the board. The sum is the headline metric. The balance between the halves is still used, for routing rather than for risk.
+The sum is deliberate and it corrects a documented error. An earlier version computed the gap as the absolute difference between the two halves, which contradicted Axiom III and produced a specific false negative: a deal where both sides were equally blind scored as symmetric and therefore forecastable, when it was the most dangerous deal on the board. The sum is the headline metric. The balance between the halves is still used, for routing rather than for risk.
 
 ### Risk bands
 
@@ -127,7 +127,7 @@ The whole 1-to-5 presentation cancels. A deal where the seller has evidence for 
 
 ## Related
 
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Axiom II defines the three component gaps. This card measures the implementation one.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Axiom III defines the three component gaps. This card measures the implementation one.
 - [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, the normalization rule, and the three-gap table in section 2.4.
 - [Deal Triage Calculator](./deal-triage-calculator.md) — Emits the search and consensus gaps, and a provisional implementation gap this card supersedes.
 - [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.

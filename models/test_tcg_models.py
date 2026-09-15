@@ -238,7 +238,7 @@ class TestFrictionVector(unittest.TestCase):
         self.assertEqual(opened.magnitude, after.magnitude)
 
     def test_one_multiplier_cannot_rotate_the_vector(self):
-        """The negative result stated in Axiom II's mathematical content."""
+        """The negative result stated in Axiom III's mathematical content."""
         base = (1.0, 4.0, 4.0)
         shares = []
         for level in (0.0, 0.3, 0.9):
@@ -703,7 +703,7 @@ class TestMilestoneValuation(unittest.TestCase):
         as_percent = [m.reduced_cost(x) / c
                       for x, c in zip(entering, (25.0, 35.0, 40.0))]
         # Under this reading uncertainty never reaches even a tenth of any
-        # payment, so risk never outweighs return and Axiom II is false.
+        # payment, so risk never outweighs return and Axiom III is false.
         self.assertLess(max(as_percent), 0.1)
 
     def test_staging_raises_surplus_by_shrinking_residual_uncertainty(self):
@@ -986,7 +986,7 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertEqual(blind.level, mapped.level)
 
     def test_closing_every_gap_equally_does_not_rotate_the_vector(self):
-        """Axiom II's negative result, reproduced at the instrument.
+        """Axiom III's negative result, reproduced at the instrument.
 
         Uniform gaps are the single-multiplier case, and there the proportions
         are fixed. Only closing one gap faster than the others rotates

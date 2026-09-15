@@ -27,7 +27,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Technical debt consumes 20–40% of IT budgets annually.
 
 **Supports in TCG:**
-- **Axiom III — Law of Governance** — RE-AIM's Maintenance dimension is how recursive cooperation gets measured; NRR is the lagging signal.
+- **Axiom II — Law of Asset Specificity, governance corollary** — RE-AIM's Maintenance dimension is how recursive cooperation gets measured; NRR is the lagging signal.
 - **Reputation Depreciation** (primary derivation) — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
 - **Surplus** (bridge concept) — RE-AIM measures whether surplus is preserved post-signature.
 - MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md).

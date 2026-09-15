@@ -2,7 +2,7 @@
 title: "Consolidated Framework for Implementation Research (CFIR)"
 layer: theory
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -26,7 +26,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - "Resistance as a Resource" — vocal detractors expose real implementation constraints; objections are co-design opportunities.
 
 **Supports in TCG:**
-- **Axiom II — Law of Uncertainty Inflation** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of $F_{consensus}$ and $F_{implementation}$.
+- **Axiom III — Law of Uncertainty Inflation** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of $F_{consensus}$ and $F_{implementation}$.
 - **Friction Allocation Principles** (primary derivation) — the Blueprint and Red Team operationalize CFIR diagnostic in the seller's hands.
 - **Three Transaction Costs** (clarifying concept) — CFIR's process domain maps directly to consensus and implementation costs.
 - See [`practice/cfir-field-mapping.md`](../../practice/cfir-field-mapping.md) for the construct-by-construct mapping into the implementation artifacts.

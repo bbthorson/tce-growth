@@ -16,24 +16,24 @@ A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-mar
 
 ## Conceptual architecture
 
-**The canonical source of truth is `theory/01-foundation/00-tcg-constitution.md`** — three axioms from which all other concepts derive. Everything in `practice/` and `publishing/` traces back to it.
+**The canonical source of truth is `theory/01-foundation/00-tcg-constitution.md`** — three standing assumptions and three axioms from which all other concepts derive. Each axiom is stated at the level where a seller meets it (market, workflow, deal), in one sentence, with a falsifier. Axiom II is the gate. Everything in `practice/` and `publishing/` traces back to it.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory should propagate downstream. Changes to practice or publishing never modify theory.
 
 Key cross-file dependencies to know:
-- The **Deal Triage Calculator** (`practice/deal-triage-calculator.md`) operationalizes both of Axiom I's quantities: it emits a level and a direction, not a motion label. It is referenced by nearly every field asset.
+- The **Deal Triage Calculator** (`practice/deal-triage-calculator.md`) operationalizes Axiom II's level and Axiom I's direction: it emits both, not a motion label. It is referenced by nearly every field asset.
 - The **CFIR field mapping** (`practice/cfir-field-mapping.md`) explains which research construct each artifact section operationalizes — read it before modifying any `practice/` document.
-- The **Friction Allocation Diagnostic** (`practice/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom II.
+- The **Friction Allocation Diagnostic** (`practice/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom III.
 - The **three implementation artifacts** (Blueprint → Red Team → MIP) in `practice/implementation-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
 
 The **research files** in `theory/02-research/` back specific axioms:
-- Axiom I → `transaction-cost-economics.md`
-- Axiom II → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`
-- Axiom III → `game-theory-and-nrr.md`, `re-aim-framework.md`
+- Axiom I (Composition) → `transaction-cost-economics.md`, `buying-center-dynamics.md`, `channel-collapse.md`
+- Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`
+- Axiom III (Inflation) → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`, `re-aim-framework.md`
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file.
 
-**A motion is a region, not a list entry.** `theory/01-foundation/01-motions.md` carries the derivation, adopted in Constitution v17.0 as the friction vector and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom II description, not the market states, because those were never load-bearing outside the two files that carried them.
+**A motion is a region, not a list entry.** `theory/01-foundation/01-motions.md` carries the derivation, adopted in Constitution v17.0 as the friction vector and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom III description, not the market states, because those were never load-bearing outside the two files that carried them.
 
 ## Frontmatter
 
@@ -60,6 +60,7 @@ grep -rl "axiom-1" --include=*.md theory/ practice/
 
 When writing or editing any document in this repo, apply the voice rules from `publishing/02-tools/voice-guide.md`:
 
+- **Component names**: Coase's names, *search*, *bargaining* and *enforcement*, are canonical in theory prose. *Consensus* and *implementation* are the field names and the notation subscripts (`F_consensus`, `F_implementation`). Introduce the field name at first use in a theory file, and do not retire either.
 - **Translate every technical term** immediately after first use — never drop "Asset Specificity" or "Single Crossing Property" without a plain-English follow-up.
 <!-- vale TCG.AntiHype = NO -->
 - **Anti-hype vocabulary**: banned words include *synergy*, *revolutionize*, *disruptive*, *cutting-edge*, *seamlessly*, *unlock potential*. See voice guide for replacements.

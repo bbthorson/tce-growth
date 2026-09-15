@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="figtitle figdesc">
-<title id="figtitle">Axiom II: perceived cost is convex in uncertainty</title>
+<title id="figtitle">Axiom III: perceived cost is convex in uncertainty</title>
 <desc id="figdesc">Perceived transaction cost plotted against the normalized bilateral asymmetry gap. The list-price curve is convex, rising slowly at a narrow gap and steeply at a wide one. A deep discount shifts the whole curve downward by a constant amount without changing its shape. A dashed straight line shows what a linear cost of uncertainty would look like instead. At a wide gap a bracket marks the vertical distance between the discounted price and the discounted curve: the share of perceived cost that comes from uncertainty, which no price concession removes.</desc>
 <style>
   :root {
@@ -52,7 +52,7 @@
 </style>
   <rect class="bg" x="0" y="0" width="760" height="470"/>
   <rect class="panel" x="78" y="92" width="648" height="304"/>
-  <text class="title" x="78" y="34">Axiom II: perceived cost is convex in uncertainty</text>
+  <text class="title" x="78" y="34">Axiom III: perceived cost is convex in uncertainty</text>
   <text class="subtitle" x="78" y="55">Parameters are reasoned starting values, not fitted to deal data. Read the shape, not the numbers.</text>
   <line class="grid" x1="78" y1="92" x2="78" y2="396"/>
   <text class="tick" x="78" y="416" text-anchor="middle">0</text>

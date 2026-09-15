@@ -2,7 +2,7 @@
 title: "Process Misfit"
 layer: theory
 status: active
-operationalizes: [axiom-1, axiom-2]
+operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -24,8 +24,8 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - A codified workflow does not reduce misfit on its own. Codification records the choices an organization has already made, and those recorded choices are precisely what the package must then match.
 
 **Supports in TCG:**
-- **Axiom I — Law of Transaction Cost Composition** — supplies the internal structure of $F_{implementation}$. Williamson explains why asset specificity (an investment locked to one relationship) raises governance cost. The misfit literature explains what that specificity consists of in a software deal: six named domains a seller can inspect one at a time.
-- **Axiom II — Law of Uncertainty Inflation** — misfit is invisible to both parties at first contact, which makes it a direct generator of the bilateral asymmetry gap $\Delta_A$. The buyer cannot articulate exception paths they have stopped noticing. The seller cannot see them from outside. Neither side is withholding information; the information does not yet exist in a form either can transmit.
+- **Axiom II — Law of Asset Specificity** — supplies the internal structure of $F_{implementation}$. Williamson explains why asset specificity (an investment locked to one relationship) raises governance cost. The misfit literature explains what that specificity consists of in a software deal: six named domains a seller can inspect one at a time.
+- **Axiom III — Law of Uncertainty Inflation** — misfit is invisible to both parties at first contact, which makes it a direct generator of the bilateral asymmetry gap $\Delta_A$. The buyer cannot articulate exception paths they have stopped noticing. The seller cannot see them from outside. Neither side is withholding information; the information does not yet exist in a form either can transmit.
 - **Contextual Blueprint** — the six domains give the Blueprint a coverage checklist. Role misfit and control misfit are what stakeholder mapping is for, and they are the two domains a demonstration-led process never reaches.
 - **Red Team Protocol** — deficiency and imposition are two distinct classes of failure mode. A Red Team that surfaces only deficiencies has done half the work, because impositions are what produce the Saboteur described in [buying-center-dynamics.md](./buying-center-dynamics.md).
 - **Milestone Valuation Model** — the four resolution responses are what a phase gate actually chooses between. A gate that has not named which response the buyer will take has not resolved the uncertainty it claims to price.

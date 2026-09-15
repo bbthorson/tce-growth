@@ -3,7 +3,7 @@ title: "Governance Forms"
 layer: theory
 status: active
 version: 1.0
-operationalizes: [axiom-1, axiom-3]
+operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -45,7 +45,7 @@ Williamson's result is that specificity and frequency together select the govern
 
 **The MIP has always been bilateral governance and was justified as something narrower.** Its stated purpose is protection against hold-up, which is true and incomplete. What it actually is, structurally, is a relational contract: it leaves both parties autonomous, it safeguards the relationship rather than the transaction, and its gates are the mechanism by which each repetition earns the next. That is why it works on recurrent deals and reads as bureaucratic overhead on one-shot ones.
 
-**The fourth row is a loss condition, and the framework has never named it.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom I's under-frictioned failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
+**The fourth row is a loss condition, and the framework has never named it.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom II's under-frictioned failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
 
 ---
 
@@ -87,7 +87,7 @@ This is the strategic claim the rest of the file assembles, and it is the framew
 
 A one-shot high-specificity transaction sits in trilateral governance, where safeguards have to come from outside the pair because neither party will build machinery for a single event. Third-party safeguards are expensive, slow, and adversarial by construction.
 
-A recurrent transaction of identical specificity sits in bilateral governance, where the safeguard is the next repetition. That is Axiom III's cooperation condition doing the work that an arbitrator would otherwise have to do, and it costs nothing per transaction once the relationship exists.
+A recurrent transaction of identical specificity sits in bilateral governance, where the safeguard is the next repetition. That is Axiom II's cooperation condition doing the work that an arbitrator would otherwise have to do, and it costs nothing per transaction once the relationship exists.
 
 **So the frequency of a transaction is not only a fact about the market. It is partly a decision by the seller, and it changes what the same deal costs to govern.**
 
@@ -128,7 +128,7 @@ The framework now emits three things about a deal and they are routinely confuse
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies level and frequency. Axiom III supplies the cooperation condition section 5 turns on.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies level and frequency. Axiom II supplies the cooperation condition section 5 turns on.
 - [01-motions.md](./01-motions.md) — Direction and level, the other two outputs.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.

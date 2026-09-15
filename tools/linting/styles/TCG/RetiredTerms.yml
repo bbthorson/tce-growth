@@ -72,7 +72,7 @@ ignorecase: false
 # prevent. The row catches the LaTeX shape rather than the letter x, which is
 # still legitimate as x_m in the milestone chain.
 #
-# Superseded Axiom II description (v17.0). The axiom name did not change, so
+# Superseded Axiom III description (v17.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the single-multiplier version. These are the load-bearing phrases from the
 # form that per-component amplification replaced.
@@ -142,10 +142,10 @@ swap:
   Law of Economic Boundaries: Law of Transaction Cost Composition
   Law of Friction: Law of Uncertainty Inflation
   Law of Asymmetry Convergence: Law of Uncertainty Inflation
-  Law of Bilateral Governance: Law of Governance
-  Law of Aligned Adjudication: Law of Governance
+  Law of Bilateral Governance: "the governance corollary of Axiom II (Law of Asset Specificity)"
+  Law of Aligned Adjudication: "the governance corollary of Axiom II (Law of Asset Specificity)"
   Law of Commercial Friction: Law of Transaction Cost Composition
-  Law of The Boundary: "the Boundary Condition (Axiom I), or the Workflow Maturity Gate for the workflow-definition half"
+  Law of The Boundary: "the Boundary Condition (Axiom II), or the Workflow Maturity Gate for the workflow-definition half"
   Law of Prospective Hindsight: "the Red Team protocol (the framework has three axioms, not six)"
   n_viable: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
   n_max: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
@@ -197,3 +197,11 @@ swap:
   05-seller-surplus-model\.md: 04-seller-surplus-model.md
   07-governance-forms\.md: 05-governance-forms.md
   08-calibration\.md: 06-calibration.md
+  # Constitution v2.0 (2026-09). Governance stopped being an axiom and became a
+  # corollary of Axiom II, the Law of Asset Specificity, which is where
+  # Williamson put it. The three states index (Market, Deal at T0, Relationship
+  # at T1+) was replaced by the three levels each axiom is stated at.
+  Law of Governance: "the governance corollary of Axiom II (Law of Asset Specificity); governance stopped being an axiom in Constitution v2.0"
+  Market State: "market level (Constitution v2.0 indexes on the level each axiom is stated at)"
+  Deal State: "deal level (Constitution v2.0 indexes on the level each axiom is stated at)"
+  Relationship State: "deal level, after signature (Constitution v2.0 has no separate relationship state)"

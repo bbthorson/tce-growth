@@ -2,7 +2,7 @@
 title: "Fear of Failure: The Empirical Evidence"
 layer: theory
 status: active
-operationalizes: [axiom-1, axiom-2]
+operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -29,9 +29,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - 17% of large initiatives present existential threat to the organization (McKinsey).
 
 **Supports in TCG:**
-- **Axiom I — Law of Transaction Cost Composition** — empirical scale of $F_{implementation}$. Documented failure rates are why implementation is the dominant cost component in high-specificity deals, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the under-frictioned Structural failure mode measured.
-- **Axiom II — Law of Uncertainty Inflation** — empirical grounding for why $\Delta_A$ multiplies friction rather than reducing value. Also the limit case: buyers leave the market entirely (Akerlof saturation) when failure rates exceed risk tolerance, because no costly signal can credibly reduce a gap that wide.
-- **Akerlof Exit Threshold** (clarifying concept, elaborating Axiom II) — the 40–60% No Decision rate is the threshold being crossed.
+- **Axiom II — Law of Asset Specificity** — empirical scale of $F_{implementation}$. Documented failure rates are why implementation is the dominant cost component in high-specificity deals, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the under-frictioned Structural failure mode measured.
+- **Axiom III — Law of Uncertainty Inflation** — empirical grounding for why $\Delta_A$ multiplies friction rather than reducing value. Also the limit case: buyers leave the market entirely (Akerlof saturation) when failure rates exceed risk tolerance, because no costly signal can credibly reduce a gap that wide.
+- **Akerlof Exit Threshold** (clarifying concept, elaborating Axiom III) — the 40–60% No Decision rate is the threshold being crossed.
 - **Decay Clock** (bridge concept) — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
 - **Reputation Depreciation** — 60% renewal regret rate (Gartner 2023) is the failure-mode signal.
 

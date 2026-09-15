@@ -3,7 +3,7 @@ title: "CFIR-to-Field Asset Mapping"
 layer: practice
 status: active
 version: 1.0
-operationalizes: [axiom-2]
+operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -71,7 +71,7 @@ The Red Team also classifies resistance using CFIR constructs. This is the mappi
 
 ## Implementation Process → Mutual Implementation Plan (MIP)
 
-The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom III's recursive cooperation principle, meaning bilateral skin in the game between buyer and seller.
+The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom II's recursive cooperation principle, meaning bilateral skin in the game between buyer and seller.
 
 | MIP Section | CFIR Construct | What It Ensures |
 |---|---|---|

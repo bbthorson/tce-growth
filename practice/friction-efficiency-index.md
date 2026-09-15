@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Use when:** Reviewing a closed cohort of Structural deals quarterly. This is a retrospective management instrument, not a per-deal gate.
 
-**Operationalizes:** Axiom I's scaling requirement ($F_{deployed} \sim k$) and Friction Allocation Principle 3 (friction scales with stakes). It measures execution of the motion rather than a term in the Surplus equation.
+**Operationalizes:** Axiom II's scaling requirement ($F_{deployed} \sim k$) and Friction Allocation Principle 3 (friction scales with stakes). It measures execution of the motion rather than a term in the Surplus equation.
 
 > [!IMPORTANT]
 > **Why this lives in `practice/` and not `theory/`.** Every model in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) supplies a functional form for a variable the Constitution already names, and that file states it introduces no new claims. The measures below do something different: they score how well an organization ran the motion. They are observations about execution, not derivations from the axioms, and placing them in the foundation would break the axioms-first rule.
@@ -44,7 +44,7 @@ $$\text{BCV} = \frac{S_{dept}}{(D_{prov} + 1) \cdot N^{0.5}}$$
 
 Where $S_{dept}$ is the count of departments that supplied a named participant to Blueprint or Red Team sessions, $D_{prov}$ is calendar days from the request to the first delivered artifact or confirmed attendee, and $N$ is total committee size.
 
-**The $N^{0.5}$ denominator is a correction, not decoration.** The canvas form of this metric was $S_{dept} / (D_{prov} + 1)$, which rewards engaging more departments. That inverts Axiom II. The consensus model treats stakeholder count as a cost driver, where $F_{consensus} = \alpha N^{\beta}(1 + \text{Var})$ rises with $N$. Uncorrected, an organization could raise its score by dragging more people into rooms, which the [Consensus Friction Calculator](./consensus-friction-calculator.md) correctly scores as worse. Dividing by $\sqrt{N}$ measures mobilization speed per unit of coordination burden rather than raw breadth.
+**The $N^{0.5}$ denominator is a correction, not decoration.** The canvas form of this metric was $S_{dept} / (D_{prov} + 1)$, which rewards engaging more departments. That inverts Axiom III. The consensus model treats stakeholder count as a cost driver, where $F_{consensus} = \alpha N^{\beta}(1 + \text{Var})$ rises with $N$. Uncorrected, an organization could raise its score by dragging more people into rooms, which the [Consensus Friction Calculator](./consensus-friction-calculator.md) correctly scores as worse. Dividing by $\sqrt{N}$ measures mobilization speed per unit of coordination burden rather than raw breadth.
 
 **What BCV actually detects.** Speed of resource commitment is a costly signal in Spence's sense. A buyer who convenes four departments in three days has spent real internal capital and cannot cheaply fake it. A buyer who takes six weeks to produce one attendee is signalling that this project sits below the line on their priority list, whatever they say on calls.
 

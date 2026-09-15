@@ -3,7 +3,7 @@ title: "Mathematical Models"
 layer: theory
 status: active
 version: 1.0
-operationalizes: [axiom-1, axiom-2]
+operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -23,7 +23,7 @@ Nothing here introduces new claims. Every model traces to a term the Constitutio
 
 ## 1. The Two Representations of Transaction Cost
 
-Axiom II carries two equations for the same quantity. The Constitution presents both and asserts they are representations of one thing. This section shows why that assertion holds.
+Axiom III carries two equations for the same quantity. The Constitution presents both and asserts they are representations of one thing. This section shows why that assertion holds.
 
 ### 1.1 The structural form
 
@@ -168,7 +168,7 @@ This floor is the model's most useful field implication. No quantity of costly s
 
 ### 2.4 The three component gaps
 
-Axiom II amplifies each friction component by the asymmetry inside its own pair of parties. The three pairs are different, so the three gaps have different instruments and cannot be read off one score.
+Axiom III amplifies each friction component by the asymmetry inside its own pair of parties. The three pairs are different, so the three gaps have different instruments and cannot be read off one score.
 
 | Gap | Pair | What is unknown | Instrument | Closed by |
 |---|---|---|---|---|
@@ -249,7 +249,7 @@ Treat $TO$ as a field refinement rather than core theory. The two-term form abov
 
 $$V_{solution}(t) = V_0 \cdot e^{-\delta t}$$
 
-Where $V_0$ is peak perceived value at the triggering event and $t$ is elapsed months. This is the Axiom I half of the Decay Clock.
+Where $V_0$ is peak perceived value at the triggering event and $t$ is elapsed months. This is the value-decay half of the Decay Clock, the second standing assumption in the Constitution.
 
 ### 4.2 Structural form of the decay rate
 
@@ -299,7 +299,7 @@ Until then, treat every output as a structured comparison between deals rather t
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom III carries both cost representations reconciled in Section 1.
 - [01-motions.md](./01-motions.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
 - [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
 - [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
