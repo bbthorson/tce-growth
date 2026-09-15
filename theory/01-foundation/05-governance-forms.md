@@ -113,7 +113,7 @@ The framework now emits three things about a deal and they are routinely confuse
 | **Direction** | Which instruments, of the apparatus it needs? | Discovery. Every closed gap rotates it. |
 | **Governance form** | What shape should the arrangement take after signature, and can the apparatus be paid for? | Frequency, which is partly a commercial choice rather than a finding. |
 
-**Level says what the deal needs and frequency says whether it can be afforded.** A one-shot deal at level 22 needs the full implementation chain and cannot amortize it over anything. That is the second exclusion criterion in [01-motion-taxonomy.md](./01-motion-taxonomy.md) section 4, stated in its proper terms, and it is the case where declining is correct and running a lighter version is not.
+**Level says what the deal needs and frequency says whether it can be afforded.** A one-shot deal at level 22 needs the full implementation chain and cannot amortize it over anything. That is the second decline condition in the [Deal Triage Calculator](../../practice/deal-triage-calculator.md), stated in its proper terms, and it is the case where declining is correct and running a lighter version is not.
 
 ---
 
@@ -129,9 +129,8 @@ The framework now emits three things about a deal and they are routinely confuse
 ## Related
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies level and frequency. Axiom III supplies the cooperation condition section 5 turns on.
-- [06-friction-vector.md](./06-friction-vector.md) — Direction and level, the other two outputs.
-- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — Section 4's six exclusion criteria, of which the second is section 6's affordability case.
-- [05-seller-surplus-model.md](./05-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
+- [01-motions.md](./01-motions.md) — Direction and level, the other two outputs.
+- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.
 - [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) — Axelrod, and why a repeated game safeguards itself.
 - [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) — The bilateral form's instrument.

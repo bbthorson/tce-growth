@@ -18,7 +18,7 @@ Three axioms carry the argument. Costs decompose and their composition selects t
 
 Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
-**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](./theory/01-foundation/08-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
+**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](./theory/01-foundation/06-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
 
 ---
 
@@ -44,9 +44,9 @@ The framework indexes on **state**, not on document. Name where the deal is, and
 
 | State | The question | Governed by | Go here |
 |---|---|---|---|
-| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motion-taxonomy.md](./theory/01-foundation/01-motion-taxonomy.md) |
+| **Market** | Which motion is viable at all? | Axiom I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
 | **Deal** (T0) | What must the seller supply before signature? | Axiom II | [practice/](./practice/) — Blueprint, Red Team, MIP in order |
-| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md](./theory/01-foundation/05-seller-surplus-model.md) §7 |
+| **Relationship** (T1+) | Does the surplus survive, and who can displace it? | Axiom III | [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) §7 |
 
 Each axiom has a home state and none is confined to it. Part I explains where the mapping holds and where it does not.
 
@@ -55,9 +55,9 @@ Each axiom has a home state and none is confined to it. Part I explains where th
 | If you want to... | Go here |
 |---|---|
 | Understand the theory cold | [theory/01-foundation/](./theory/01-foundation/) |
-| Look up a symbol or term | [04-glossary-and-notation.md](./theory/01-foundation/04-glossary-and-notation.md) |
+| Look up a symbol or term | [03-glossary-and-notation.md](./theory/01-foundation/03-glossary-and-notation.md) |
 | See the evidence behind a claim | [theory/02-research/00-reading-guide.md](./theory/02-research/00-reading-guide.md) |
-| Decide whether to invest engineering in a deal | [05-seller-surplus-model.md](./theory/01-foundation/05-seller-surplus-model.md) |
+| Decide whether to invest engineering in a deal | [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
 | Compute a formula, or check one still holds | [models/](./models/) |
 | Write about TCG publicly | [publishing/02-tools/](./publishing/02-tools/) |
 
@@ -106,5 +106,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 1.1 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 1.2 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-15

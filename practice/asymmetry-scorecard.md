@@ -103,7 +103,7 @@ The raw gap on $[2, 10]$ does not substitute directly into the cost equations. N
 
 $$\hat{\Delta}_{implementation} = \frac{\Delta_A - 2}{8}, \qquad \hat{\Delta}_{implementation} \in [0, 1]$$
 
-Use the raw score for the bands above. Use the normalized value as the implementation component's amplifier in $F_{effective}$, and as $x_0$ in the [Milestone Valuation Model](./milestone-valuation-model.md), whose gates resolve implementation uncertainty specifically. See [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) sections 1.5 and 2.4.
+Use the raw score for the bands above. Use the normalized value as the implementation component's amplifier in $F_{effective}$, and as $x_0$ in the [Milestone Valuation Model](./milestone-valuation-model.md), whose gates resolve implementation uncertainty specifically. See [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 1.5 and 2.4.
 
 **The normalized gap is the mean of the two unevidenced fractions.** Substituting $S_k = 1 + 4f_k$ through both halves:
 
@@ -128,7 +128,7 @@ The whole 1-to-5 presentation cancels. A deal where the seller has evidence for 
 ## Related
 
 - [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Axiom II defines the three component gaps. This card measures the implementation one.
-- [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, the normalization rule, and the three-gap table in section 2.4.
+- [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, the normalization rule, and the three-gap table in section 2.4.
 - [Deal Triage Calculator](./deal-triage-calculator.md) — Emits the search and consensus gaps, and a provisional implementation gap this card supersedes.
 - [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.
 - [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) — Reduces $I_{buyer}$.

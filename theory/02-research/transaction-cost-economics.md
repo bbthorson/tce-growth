@@ -27,7 +27,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Supports in TCG:**
 - **Axiom I — Law of Transaction Cost Composition** — direct theoretical basis. Asset specificity is the boundary parameter and frequency is the governance-form selector.
-- **Governance Form** (bridge concept, Axioms I + III) — the four structures above, mapped onto level and frequency in [07-governance-forms.md](../01-foundation/07-governance-forms.md). The MIP is the bilateral form.
+- **Governance Form** (bridge concept, Axioms I + III) — the four structures above, mapped onto level and frequency in [05-governance-forms.md](../01-foundation/05-governance-forms.md). The MIP is the bilateral form.
 - **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** (clarifying concept) — direct.
 - **Three Transaction Costs** (clarifying concept) — direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.

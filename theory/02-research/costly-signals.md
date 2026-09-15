@@ -42,7 +42,7 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 - **Akerlof Exit Threshold** (clarifying concept) — direct.
 - **Jevons Vulnerability** (clarifying concept) — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
 - **Axiom III — Law of Governance** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
-- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [03-mathematical-models.md](../01-foundation/03-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
+- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
 
 **Notable quotes:**
 - "The difficulty of the sales process is not a barrier to the product; it is the product itself."

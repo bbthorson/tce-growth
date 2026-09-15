@@ -283,7 +283,7 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 
 ## 5. Parameter Reference
 
-Every parameter in this file, and every threshold and band elsewhere in the framework, lives in [08-calibration.md](./08-calibration.md). It is the single home for them on purpose: two tables of the same values drift, and the separation is what lets the structural claims above be read without any of the numbers.
+Every parameter in this file, and every threshold and band elsewhere in the framework, lives in [06-calibration.md](./06-calibration.md). It is the single home for them on purpose: two tables of the same values drift, and the separation is what lets the structural claims above be read without any of the numbers.
 
 Nothing in that file is a measurement. Read the provenance column before quoting any value outside this repository.
 
@@ -291,7 +291,7 @@ Nothing in that file is a measurement. Read the provenance column before quoting
 
 ## 6. What Would Make These Models Empirical
 
-Five conditions, in [08-calibration.md](./08-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three component gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable and what would test the framework's central dynamic claim.
+Five conditions, in [06-calibration.md](./06-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three component gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable and what would test the framework's central dynamic claim.
 
 Until then, treat every output as a structured comparison between deals rather than a quantity. A deal scoring 7.2 is meaningfully worse than one scoring 4.1. Neither number predicts a close date.
 
@@ -300,7 +300,7 @@ Until then, treat every output as a structured comparison between deals rather t
 ## Related
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom II carries both cost representations reconciled in Section 1.
-- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
+- [01-motions.md](./01-motions.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
 - [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
 - [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
 - [Milestone Valuation Model](../../practice/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.

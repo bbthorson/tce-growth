@@ -43,7 +43,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 
 ## 3. Every parameter in the framework
 
-### 3.1 Cost and asymmetry ([03-mathematical-models.md](./03-mathematical-models.md))
+### 3.1 Cost and asymmetry ([02-mathematical-models.md](./02-mathematical-models.md))
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
@@ -145,6 +145,6 @@ Recorded rather than fixed, because each fix means choosing a shape and that is 
 ## Related
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The structural claims, which are stated without reference to any value on this page.
-- [03-mathematical-models.md](./03-mathematical-models.md) — The functional forms these parameters sit inside.
+- [02-mathematical-models.md](./02-mathematical-models.md) — The functional forms these parameters sit inside.
 - [citation-provenance-audit.md](../02-research/audits/citation-provenance-audit.md) — The companion for headline statistics, on the same discipline. That file traces numbers cited from outside; this one traces numbers chosen inside.
 - [models/README.md](../../models/README.md) — Why nothing here is fitted, and what fitting to synthetic data would cost.

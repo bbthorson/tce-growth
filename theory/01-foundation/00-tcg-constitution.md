@@ -2,18 +2,18 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 1.1
+version: 1.2
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 1.1
+**Version:** 1.2
 **Purpose:** To define the economic and behavioral laws governing high-friction B2B sales, organized as a deductive framework: three axioms from which all concepts, equations, and prescriptions derive.
 
 Version history is at the end of this document.
 
 > [!IMPORTANT]
-> **This document states structure. It states no measured quantity.** Every claim below says what depends on what, and each is argued from a mechanism. The coefficients, thresholds and band edges that turn those claims into numbers live in [08-calibration.md](./08-calibration.md), none of them is fitted to booked deal data, and each carries an honest provenance status there. The separation is deliberate: a reader who doubts a coefficient should be able to doubt it without doubting the structural claim it sits inside, because the structural claim does not depend on it.
+> **This document states structure. It states no measured quantity.** Every claim below says what depends on what, and each is argued from a mechanism. The coefficients, thresholds and band edges that turn those claims into numbers live in [06-calibration.md](./06-calibration.md), none of them is fitted to booked deal data, and each carries an honest provenance status there. The separation is deliberate: a reader who doubts a coefficient should be able to doubt it without doubting the structural claim it sits inside, because the structural claim does not depend on it.
 
 ---
 
@@ -33,9 +33,9 @@ The State column is the framework's primary index. A practitioner arrives holdin
 
 | State | The question it answers | Where the answer lives |
 |---|---|---|
-| **Market** | How long is the friction vector, and where does it point? | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), [06-friction-vector.md](./06-friction-vector.md), [01-motion-taxonomy.md](./01-motion-taxonomy.md) |
+| **Market** | How long is the friction vector, and where does it point? | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), [01-motions.md](./01-motions.md), [01-motions.md](./01-motions.md) |
 | **Deal** (T0) | What must be true, and what must the seller supply, before signature? | [Contextual Blueprint](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) → [Red Team](../../practice/implementation-motion/02-validation-red-team-protocol.md) → [MIP](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
-| **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md), [05-seller-surplus-model.md §7](./05-seller-surplus-model.md) |
+| **Relationship** (T1+) | Does the surplus survive, and can a competitor take it? | [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md), [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
 
 **Each axiom has a home state, and none is confined to it.** Axiom II runs past signature, where $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ governs how fast an incumbent's advantage erodes, and which component it erodes in. Axiom III runs at T0, because the MIP is signed at close. Axiom I recurs whenever a category commoditizes and the motion must be re-scored. Treat the mapping as where each axiom does most of its work, not as a partition.
 
@@ -51,7 +51,7 @@ Each axiom carries one figure, plotting the equation stated under that axiom. Ev
 
 ![A convex cost curve rising steeply as the asymmetry gap widens, a discounted curve shifted down by a constant amount without changing shape, and a straight line showing what a linear cost of uncertainty would look like instead.](./assets/axiom-2-cost-convexity.svg)
 
-**Axiom III.** The incumbent's implementation gap after signature, $\hat{\Delta}_{implementation}(t) = \hat{\Delta}_{implementation}(0) + \gamma_{implementation} t$, against the gap a challenger starts from. The vertical distance between them is the incumbent's advantage, and it erodes unless sustaining spend holds the rate down. The component is named because the drivers are implementation drivers: staff turnover, workflow change, and systems installed unseen. An incumbent whose consensus gap reopens loses the account faster and without a curve. The mechanism is in [05-seller-surplus-model.md](./05-seller-surplus-model.md) section 7.2.
+**Axiom III.** The incumbent's implementation gap after signature, $\hat{\Delta}_{implementation}(t) = \hat{\Delta}_{implementation}(0) + \gamma_{implementation} t$, against the gap a challenger starts from. The vertical distance between them is the incumbent's advantage, and it erodes unless sustaining spend holds the rate down. The component is named because the drivers are implementation drivers: staff turnover, workflow change, and systems installed unseen. An incumbent whose consensus gap reopens loses the account faster and without a curve. The mechanism is in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7.2.
 
 ![Two rising lines from a near-zero implementation gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained line approaches the challenger within three years. The maintained line stays well below it.](./assets/axiom-3-asymmetry-drift.svg)
 
@@ -69,7 +69,7 @@ Each axiom carries one figure, plotting the equation stated under that axiom. Ev
 
 **Mechanism (Williamson).** Coase established that firms exist to minimize transaction costs. Williamson operationalized this through *asset specificity*, the degree to which an investment is locked to a particular relationship. When asset specificity is high, the price mechanism alone is insufficient: the dependent party faces hold-up risk because once the asset-specific investment is sunk, the counterparty can extract its full value. To make "buy" preferable to "make," the buyer requires governance structures (the the implementation artifacts) that reduce hold-up risk. When specificity is low, those same governance structures destroy surplus through over-engineering — a Turnkey deal does not need a Blueprint.
 
-**Who bears the specificity (Klein, Crawford and Alchian).** Exposure follows the investment rather than the invoice. Whoever sinks capital that cannot be redeployed is the exposed party, whichever side of the transaction they sit on. Williamson's account is usually read from the buyer's side because the buyer is usually the one making the specific investment. That reading fails for a forward-deployed motion, where the seller commits engineering into the buyer's environment before signature and therefore holds the exposure first. The measure of what is at stake is the appropriable quasi-rent, not the hours worked, and the seller-side model is [05-seller-surplus-model.md](./05-seller-surplus-model.md). Research is in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md).
+**Who bears the specificity (Klein, Crawford and Alchian).** Exposure follows the investment rather than the invoice. Whoever sinks capital that cannot be redeployed is the exposed party, whichever side of the transaction they sit on. Williamson's account is usually read from the buyer's side because the buyer is usually the one making the specific investment. That reading fails for a forward-deployed motion, where the seller commits engineering into the buyer's environment before signature and therefore holds the exposure first. The measure of what is at stake is the appropriable quasi-rent, not the hours worked, and the seller-side model is [04-seller-surplus-model.md](./04-seller-surplus-model.md). Research is in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md).
 
 **The three components are not statistically independent.** They arise from distinct conditions and respond to distinct interventions, which is what makes the decomposition diagnostically useful. They still move together. A workflow the product must fit but does not raises $F_{implementation}$ and generates $F_{consensus}$ at the same time, because an imposition creates a stakeholder whose objectives worsen. Treat the three as separately addressable, not as separately caused.
 
@@ -87,13 +87,13 @@ $$\mathbf{F} = (F_{search},\; F_{consensus},\; F_{implementation})$$
 
 $$\text{Level} = \lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{implementation}, \qquad \text{Composition} = \hat{\mathbf{F}} = \frac{\mathbf{F}}{\lVert \mathbf{F} \rVert_1}$$
 
-Level is a length and composition is a direction, and the two are independent. A short vector pointed at implementation is a small technical purchase. A long vector pointed at implementation is a Structural deal. Same direction, different apparatus. The $L^1$ norm is used because the field instrument produces a sum rather than a Euclidean length, and nothing downstream depends on the choice. Axiom II amplifies each component by its own gap before composition is read, which is what lets discovery rotate the vector. [06-friction-vector.md](./06-friction-vector.md) derives the consequences and the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) measures both quantities.
+Level is a length and composition is a direction, and the two are independent. A short vector pointed at implementation is a small technical purchase. A long vector pointed at implementation is a Structural deal. Same direction, different apparatus. The $L^1$ norm is used because the field instrument produces a sum rather than a Euclidean length, and nothing downstream depends on the choice. Axiom II amplifies each component by its own gap before composition is read, which is what lets discovery rotate the vector. [01-motions.md](./01-motions.md) derives the consequences and the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) measures both quantities.
 
 **Frequency is the third property of a transaction, and it selects the governance form.** Williamson's selection runs on specificity, uncertainty and frequency together. Level is the specificity, the component gaps under Axiom II are the uncertainty, and frequency is how often the same two parties transact: one-shot, recurrent, or continuous.
 
 $$\text{Governance form} = g\left(\lVert \mathbf{F} \rVert_1,\; \text{frequency}\right)$$
 
-Below the boundary the form is market governance at any frequency. At or above it, a one-shot transaction takes trilateral governance because neither party will build relational machinery for a single event, a recurrent one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes unified governance, which is the buyer building it themselves. [07-governance-forms.md](./07-governance-forms.md) derives the four forms and what each costs.
+Below the boundary the form is market governance at any frequency. At or above it, a one-shot transaction takes trilateral governance because neither party will build relational machinery for a single event, a recurrent one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes unified governance, which is the buyer building it themselves. [05-governance-forms.md](./05-governance-forms.md) derives the four forms and what each costs.
 
 **Level says what the deal needs and frequency says whether it can be paid for.** Apparatus amortizes over repetitions, so a one-shot deal has nothing to amortize it over. This is why a deal can sit above the boundary, genuinely require the full instrument chain, and still be correct to decline.
 
@@ -166,9 +166,9 @@ Where:
 - $\hat{\Delta}_A$ is the **deal-level asymmetry gap, normalized to $[0, 1]$**, which is the friction-weighted mean defined above. The impact of uncertainty is modeled as quadratic because information gaps have a compounding, non-linear effect on consensus and implementation friction: a small gap cascades into project delays and misalignment. The square serves as a simplification of the three underlying friction curves. **The normalized value is required here.** A raw scorecard score on $[2, 10]$ substituted into this equation produces a cost estimate off by an order of magnitude, which is why `models/tcg_models.py` refuses one at the type level.
 - $a$ is the **risk aversion coefficient** (anchored at $a = 2.25$, derived from prospect theory's loss aversion parameter $\lambda \approx 2.25$).
 
-**Scale.** $y$, $c$, and $a$ are fractions of annual contract value. The equation adds a term carrying $a$ to a term carrying a price, so $a$ must share $c$'s units, and stating the scale is what makes $a = 2.25$ mean anything. Read this way, at a fully open gap the uncertainty term is 2.25 annual contract values, which is the framework's own claim that risk outweighs return, expressed as a number. Read as percentage points instead, the same term rounds to nothing against a stage payment and the claim inverts. [03-mathematical-models.md](./03-mathematical-models.md) section 1.7 carries the arithmetic, and the [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is where both terms meet on the common scale.
+**Scale.** $y$, $c$, and $a$ are fractions of annual contract value. The equation adds a term carrying $a$ to a term carrying a price, so $a$ must share $c$'s units, and stating the scale is what makes $a = 2.25$ mean anything. Read this way, at a fully open gap the uncertainty term is 2.25 annual contract values, which is the framework's own claim that risk outweighs return, expressed as a number. Read as percentage points instead, the same term rounds to nothing against a stage payment and the claim inverts. [02-mathematical-models.md](./02-mathematical-models.md) section 1.7 carries the arithmetic, and the [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is where both terms meet on the common scale.
 
-The two representations are not alternatives to choose between. The reduced form follows from the structural form once base friction is allowed to depend on the asymmetry gap, because an uncertain buyer does not merely pay a surcharge on fixed work. The uncertainty changes how much work exists. [03-mathematical-models.md](./03-mathematical-models.md) carries the derivation, the rule for which form to use when (structural to diagnose, reduced to explain), and the normalization a raw scorecard score requires before either equation accepts it.
+The two representations are not alternatives to choose between. The reduced form follows from the structural form once base friction is allowed to depend on the asymmetry gap, because an uncertain buyer does not merely pay a surcharge on fixed work. The uncertainty changes how much work exists. [02-mathematical-models.md](./02-mathematical-models.md) carries the derivation, the rule for which form to use when (structural to diagnose, reduced to explain), and the normalization a raw scorecard score requires before either equation accepts it.
 
 For a deal to close, the total perceived transaction cost $y$ must be less than the opportunity cost of switching:
 
@@ -254,7 +254,7 @@ Part II organizes the operational consequences of the axioms. Concepts come in t
 - **Primary derivations**: one axiom → one concept. The operational content of each axiom.
 - **Bridge concepts**: two or more axioms integrated. The places where the axioms talk to each other.
 
-Concepts that only elaborate a source rather than derive from an axiom are not listed here. Each has a research file that defines it and a row in [04-glossary-and-notation.md](./04-glossary-and-notation.md) that points there.
+Concepts that only elaborate a source rather than derive from an axiom are not listed here. Each has a research file that defines it and a row in [03-glossary-and-notation.md](./03-glossary-and-notation.md) that points there.
 
 ### Primary Derivations
 
@@ -298,7 +298,7 @@ The transaction cost curve $y = a\hat{\Delta}_A^2 + c$ gives the seller exactly 
 2. **Lower risk aversion (reduce $a$).** The seller can implement structures that shift risk back to themselves, the economic concept of **giving hostages**. Operationally, this is done via the Mutual Implementation Plan (MIP) through performance guarantees, service level agreements (SLAs) with credit clawbacks, or resource-holding fees.
 3. **Reduce uncertainty (reduce $\hat{\Delta}_A$).** The seller can close the information asymmetry gap using costly signaling and rigorous discovery (the Contextual Blueprint and the Red Team Workshop). There are three gaps rather than one, so this lever has three settings, and pulling the wrong one leaves the binding gap untouched. Which one to pull is a reading of direction, not of the total.
 
-Lever 1 is the weakest because the cost curve is convex: cost grows quadratically in uncertainty, so cutting the constant term cannot offset a large gap. That argument, and the derivation behind it, live in [03-mathematical-models.md](./03-mathematical-models.md).
+Lever 1 is the weakest because the cost curve is convex: cost grows quadratically in uncertainty, so cutting the constant term cannot offset a large gap. That argument, and the derivation behind it, live in [02-mathematical-models.md](./02-mathematical-models.md).
 
 ---
 
@@ -364,7 +364,7 @@ Effective Cost is the *static* snapshot of deal economics: Axiom II's cost equat
 
 The three representations are the per-component form, the single-multiplier form it factors into, and the reduced form $y = a\hat{\Delta}_A^2 + c$. The first two are the same quantity written two ways. The third discards the decomposition, and with it the direction that selects the instrument, which is why it explains rather than diagnoses.
 
-The derivation connecting the two representations, and the operating rule for which to use when, live in [03-mathematical-models.md](./03-mathematical-models.md).
+The derivation connecting the two representations, and the operating rule for which to use when, live in [02-mathematical-models.md](./02-mathematical-models.md).
 
 ---
 
@@ -374,7 +374,7 @@ Axiom I says how specific a transaction is and how often it repeats. Axiom III s
 
 What the bridge adds beyond either parent is that **frequency is partly a commercial choice rather than only a market fact, and changing it changes which form applies.** A one-shot transaction of high specificity needs safeguards from outside the pair, because neither side will build machinery for a single event. The same transaction made recurrent is safeguarded by the next repetition, which is Axiom III's condition doing the work an arbitrator would otherwise do, at no cost per transaction.
 
-This is the framework's account of why subscription pricing changed what could be sold rather than only when it was paid for. It converted single-play transactions into repeated ones, which brought high-specificity software inside bilateral governance and within reach of buyers who would not sign a fixed-scope build. The claim is falsifiable and section 5 of [07-governance-forms.md](./07-governance-forms.md) says how.
+This is the framework's account of why subscription pricing changed what could be sold rather than only when it was paid for. It converted single-play transactions into repeated ones, which brought high-specificity software inside bilateral governance and within reach of buyers who would not sign a fixed-scope build. The claim is falsifiable and section 5 of [05-governance-forms.md](./05-governance-forms.md) says how.
 
 The Mutual Implementation Plan is the bilateral form's instrument. It was justified as hold-up protection, which is true and narrower than what it is.
 
@@ -488,55 +488,25 @@ Each mode names one axiom violation and one place to intervene. A stall matching
 
 ## Version History
 
-**Numbering restarted at 1.0 when the framework was named.** This document was revised nineteen times under the name Implementation-Led Growth, ending at v19.1. Nothing in that record was removed and the entries are kept below under their original numbers, because references to v14.0, v15.0 and v17.0 elsewhere in this repository point into that sequence. Only the count was reset. Nineteen revisions of a document is not nineteen versions of Transaction Cost Growth, and a number that says otherwise on the cover contradicts a framework whose axioms no longer argue with their own past.
+**Current version: 1.2.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
-### Transaction Cost Growth
+| Version | Date | Change |
+|---|---|---|
+| 1.2 | 2026-09 | Restructure, step 3. Three motion files merged into 01-motions.md, the foundation files renumbered, this history reduced to a pointer, the reading guide and glossary trimmed. No axiom, equation or derivation changed. |
+| 1.1 | 2026-09 | Restructure, step 2. Practice flattened to one directory and ten operating-procedure files removed. The vesting claim moved to 05-governance-forms.md section 5. No axiom changed. |
+| 1.0 | 2026-09 | First release under the name Transaction Cost Growth. The framework was renamed from Implementation-Led Growth, every motion was named after the cost it reduces, and the count restarted. |
 
-**v1.1.** Restructure, no change to any axiom, equation, or derivation. The practice layer is flattened to one directory and loses ten operating-procedure files (comp plan, veto policy, manager checklist, setup workshop, call scripts, order forms, the education motion, the variable ownership table). The claim the comp plan carried, that the seller's own agent must hold a stake for the cooperation condition to bind, is now section 5 of 07-governance-forms.md. The CFIR field mapping moves to practice/ as an artifact-design document. The linters move to tools/. The concept map is deleted and the publishing protocols merge into one file.
-
-**v1.0.** First release under the name. Three things happened together and they are one change.
-
-*The framework is renamed.* Implementation-Led Growth named both the whole body of theory and one of the motions inside it. That was survivable while a motion was an item on a list. Once a motion became a region of the friction vector's space, with four of them, the framework was named after one of its own regions and the most common misreading of it followed directly from the title page.
-
-*Axiom I gains frequency*, the third property Williamson selects a governance form from. It had been present once as a scoring factor called Retention Horizon and was folded into the implementation count, as though a long relationship were a kind of installation cost. It is not a cost. It is the property that decides whether machinery to govern a relationship is worth building at all, because machinery amortizes over repetitions and a single transaction has nothing to amortize over. A bridge concept, Governance Form (Axioms I + III), derives the four arrangements that follow, and [07-governance-forms.md](./07-governance-forms.md) carries the argument. Three things the framework already contained are named for the first time: the Mutual Implementation Plan is bilateral relational contracting rather than only hold-up protection, $V_{next\_best}$ in the Surplus equation is Coase's make-or-buy boundary, and a fourth governance form exists in which the buyer integrates and no contract the two parties can write will beat it. A failure mode, Mis-governed, covers a deal whose instruments are right and whose arrangement is wrong.
-
-*Every number moves behind a calibration layer.* Coefficients, thresholds and band edges live in [08-calibration.md](./08-calibration.md), each with an honest provenance status and none fitted to a booked deal. The separation is what lets a reader reject any value without rejecting the claim it sits inside, and `test_tcg_models.py` fails if a constant ships in the module without being declared there. The theory documents also stop narrating their own revision history in the body, which is why this section exists and is the only place that record is kept.
-
-### Prior numbering, under the name Implementation-Led Growth
-
-**v17.0.** Axiom II's mathematical content changes. The single amplifier becomes three, one per friction component, because the three components do not run between the same pair of parties: search asymmetry is the buyer against the market, consensus asymmetry is the buyer's stakeholders against each other, and only implementation asymmetry is buyer against seller. The old form is recovered exactly by factoring, with the scalar gap identified as the friction-weighted mean of the three, so no downstream result breaks. What the change buys is the one thing a single multiplier cannot do: scaling all three components by the same factor leaves their proportions fixed, so under the old form composition was invariant to asymmetry and no amount of discovery could change which motion a deal needed. Drift splits the same way, into $\gamma_{search}$, $\gamma_{consensus}$ and $\gamma_{implementation}$, which gives the framework its first term for a departed champion. Axiom I gains the equation for composition it has been missing since v16.0 separated the two claims, in the form of the friction vector's direction and $L^1$ length, and a second symptom of under-frictioning that lands after signature rather than before it. Axiom III's trajectory is noted as carrying a direction. The reduced form gains a stated scale: $y$, $c$ and $a$ are fractions of annual contract value, which is what makes $a = 2.25$ a quantity rather than a number. Adopted from [06-friction-vector.md](./06-friction-vector.md), which carried all of this as a proposal under review.
-
-**v16.1.** Editorial pass, no change to any axiom, equation, or derivation. Part I's three figures are replaced. The retired panels developed a potential-well diagram one panel at a time, plotting a U-shaped transaction cost curve against workflow legibility. No equation in this repository produces that curve, which is the reason they were replaced. Each axiom now carries one figure plotting the equation stated under it: value decay for Axiom I, the reduced cost form for Axiom II, and asymmetry drift for Axiom III. All three are generated from [`models/`](../../models/) and checked against it, so a figure can no longer assert a coefficient the equation has stopped carrying. They are also SVGs with a dark-mode palette, where the retired panels were PNGs that glared.
-
-**v16.0.** Axiom I is restated. Two claims were fused in one sentence: that the sum of the three costs picks the motion, and that it sets the Turnkey and Structural boundary. Only the second holds. A deal weighted toward search takes a different motion from one of identical total weighted toward implementation, which is why the Deal Triage Calculator has always needed market stage as a separate axis the axiom did not mention. Composition now selects the motion and level now sets the boundary, stated as two sentences that can be cited separately. The axiom also now names which party bears the asset specificity, since exposure follows whoever sinks the non-redeployable investment, and in a forward-deployed motion that is the seller before signature. The claim that the three components arise independently is withdrawn: they arise from distinct conditions, which is what makes the decomposition useful, but they are not statistically independent. A third failure mode, Mis-composed, covers a correctly measured level with a misread dominant component. No equation changed.
-
-**v15.0.** Structural pass, no change to any axiom, equation, or derivation. Part I's Scale column is renamed **State** and promoted from a table cell to the framework's primary index, with the three states (Market, Deal at T0, Relationship at T1+) each mapped to the question it answers and the artifacts that answer it. The mapping is stated as a primary assignment rather than a partition, since Axiom II runs past signature and Axiom III runs at close. Part II's Clarifying Concepts tier is removed: seven of its nine entries restated a concept that already had a dedicated research file and a glossary row pointing at it, making the Constitution a third home for the same definition. Three Transaction Costs restated Axiom II's own mechanism paragraph, and the $F_{search}$ split is stated in [01-motion-taxonomy.md](./01-motion-taxonomy.md). Market States moves to that same document, where motion-to-market mapping belongs. Part IV's Organizational Corollary moves to practice/07-variable-ownership.md, since a variable-to-department mapping is operational content by the Constitution's own rule. Nothing was deleted without a surviving canonical home.
-
-**v14.0.** Retired the "Bridge" and "Toaster" deal analogies in favor of the 2x2 Deal Archetype Matrix. Deals are now canonically classified as **Turnkey Deals** ($k \le 9$, low friction/specificity, velocity motion) vs. **Structural Deals** ($k \ge 10$, high friction/specificity, implementation-led motion) across category legibility. Core axioms, mathematical content, and derivations unchanged.
-
-**v13.3.** Editorial pass, no change to any axiom or equation. Axiom I's statement is tightened to three sentences. The Three Sales Levers move from Axiom II's statement in Part I to Part II as a primary derivation, which is where operational consequences live. Signposting sentences that restated a document relationship in reverse ("the why / the how") are removed here and in the glossary and reading guide.
-
-**v13.2.** Editorial pass, no change to any axiom or equation. Part II now states only what each derivation adds beyond its parent axiom: the Boundary Condition, Friction Allocation failure modes, Recursive Cooperation, Decay Clock, and Effective Cost sections reference Part I's equations and examples instead of restating them. Part I remains the canonical statement of every equation, and Part III remains the one full assembly. The Safe No and the Logical Yes are now defined at first use in Axiom II's tagline.
-
-**v13.1.** Editorial pass, no change to any axiom or equation. "Fundamental Equation" now names the Surplus equation only, matching how the root README, CLAUDE.md, and the publishing generators already used it. The Part II bridge concept that previously carried the name is now **Effective Cost**. Coase's three costs are attributed consistently (his are search, bargaining, and enforcement; the ILG trio is an operationalization). Version history moved here from the top of the document.
-
-**v13.** No axiom was renamed or restructured. Three additions deepen the existing three.
-
-1. **The two cost representations are reconciled instead of asserted.** v12 introduced $y = ax^2 + c$ alongside $F_{effective} = F_{base} \cdot (1 + \Delta_A)$ and called them two representations without showing why. The derivation now lives in [03-mathematical-models.md](./03-mathematical-models.md), with the operating rule for which form to use when.
-2. **Axiom III gains its missing theoretical layer.** Skin in the game is the prescription. Residual control rights (Grossman-Hart, Hart-Moore) are the mechanism it allocates, and incomplete contract theory explains why no amount of drafting substitutes for governance.
-3. **Staged Commitment enters as a bridge concept** (Axioms II + III), grounded in real options theory. It supplies the formal account of why a buyer rationally waits even when the business case is positive.
-
-**Retained from v12.** The three axioms map to three well-studied bodies of economics: Axiom I to Transaction Cost Economics (Coase, Williamson), Axiom II to Signaling Theory and Behavioral Economics (Spence, Kahneman/Tversky), and Axiom III to Game Theory and Institutional Governance (Axelrod, Williamson). Axiom I does not lead with asset specificity as the classification gate. It establishes the cost structure first and treats Turnkey vs. Structural classification as downstream of measuring those costs. The v12 wording described the three components as independently-arising, which v16.0 withdrew.
+The nineteen revisions made under the earlier name, and the prose entry for each, are in the git history: `git log -- theory/01-foundation/00-tcg-constitution.md`, then `git show <commit>:theory/01-foundation/00-tcg-constitution.md`. `RetiredTerms.yml` cites those version numbers when it records what each one retired.
 
 ---
 
 ## Related
 
 **Sibling theory:**
-- [01-motion-taxonomy.md](./01-motion-taxonomy.md) — When to use the motion taxonomy.
+- [01-motions.md](./01-motions.md) — Motion selection derived from the friction vector, the four regions and what each deploys, and the map onto the incumbent vocabulary.
 - [cfir-field-mapping.md](../../practice/cfir-field-mapping.md) — How CFIR constructs map to the artifacts.
-- [03-mathematical-models.md](./03-mathematical-models.md) — Functional forms behind the variables named here, and the derivation reconciling the two cost representations.
-- [04-glossary-and-notation.md](./04-glossary-and-notation.md) — Canonical index of every symbol used here, plus disambiguation of the pairs that collide ($\delta$ vs $\delta_{discount}$, $\gamma$ vs $\gamma_r$, $\Delta_A$ vs $\hat{\Delta}_A$).
+- [02-mathematical-models.md](./02-mathematical-models.md) — Functional forms behind the variables named here, and the derivation reconciling the two cost representations.
+- [03-glossary-and-notation.md](./03-glossary-and-notation.md) — Canonical index of every symbol used here, plus disambiguation of the pairs that collide ($\delta$ vs $\delta_{discount}$, $\gamma$ vs $\gamma_r$, $\Delta_A$ vs $\hat{\Delta}_A$).
 
 **Academic backing** (per axiom):
 - Axiom I (Transaction Cost Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [fear-of-failure.md](../02-research/fear-of-failure.md) (empirical scale of $F_{implementation}$ and the under-frictioned Structural failure mode)

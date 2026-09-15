@@ -94,7 +94,7 @@ Rule 3 of the milestone model already requires symmetric consequence when a stag
 ## 6. Calibration status
 
 > [!IMPORTANT]
-> **Nothing here is fitted.** $p_{close}$ is not directly observable, and $\partial p_{close} / \partial C_{invest}$ cannot be estimated without a record of deals carrying both the investment made and the outcome. No such record exists in this repository. Treat these forms as a way to structure the decision and to name what a reviewer should ask for, not as a way to forecast a number. The same caution governs [03-mathematical-models.md](./03-mathematical-models.md) and applies here with more force, because this model has no parameter anchored in published literature at all.
+> **Nothing here is fitted.** $p_{close}$ is not directly observable, and $\partial p_{close} / \partial C_{invest}$ cannot be estimated without a record of deals carrying both the investment made and the outcome. No such record exists in this repository. Treat these forms as a way to structure the decision and to name what a reviewer should ask for, not as a way to forecast a number. The same caution governs [02-mathematical-models.md](./02-mathematical-models.md) and applies here with more force, because this model has no parameter anchored in published literature at all.
 
 The practical consequence: a manager can use section 4 to ask "what would have to be true about $\partial p_{close} / \partial C_{invest}$ for this spend to make sense," and can compare that answer against experience. That is a real use. Producing a number and calling it a probability is not.
 
@@ -118,7 +118,7 @@ $$S_{seller} = \sum_{t=1}^{T} \frac{r_t \left(V_t - C_{deliver,t} - C_{sustain,t
 
 The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustain} = 0$. Two consequences follow immediately, and the first is a correction.
 
-**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. [01-motion-taxonomy.md](./01-motion-taxonomy.md) section 4 carries the same assumption in its exclusion criteria, where a motion is ruled out when pre-sale cost exceeds first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify.
+**$C_{invest}$ amortizes across the stream, not against the first contract.** The marginal rule in section 4 used first-year gross margin. That is the right test only when $r_t$ collapses quickly. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) once ruled the implementation-led region out whenever pre-sale cost exceeded first-year gross margin. Read literally that is a single-shot test, and it disqualifies deals that a durable relationship would justify, which is why its decline conditions now state the test as level against frequency.
 
 **$C_{sustain}$ is not overhead.** It is the spend that holds $r_t$ up, and section 7.2 says what it actually buys.
 
@@ -174,5 +174,5 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetr
 
 - **Research:** [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../02-research/real-options.md) for staging under irreversibility, [process-misfit.md](../02-research/process-misfit.md) for what drives $C_{deliver}$.
 - **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part III.
-- **Functional forms:** [03-mathematical-models.md](./03-mathematical-models.md).
+- **Functional forms:** [02-mathematical-models.md](./02-mathematical-models.md).
 - **Staging in practice:** [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).

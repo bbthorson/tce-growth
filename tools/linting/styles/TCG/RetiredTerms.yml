@@ -5,10 +5,12 @@ ignorecase: false
 # NOTE ON VERSION NUMBERS IN THIS FILE. The comments below cite v13 through
 # v19, which are the Constitution's PRE-RESET numbering, used while the
 # framework was called Implementation-Led Growth. The count restarted at 1.0
-# when it was renamed to Transaction Cost Growth. The old entries are kept in
-# the Constitution's version history under their original numbers, so every
-# reference here still resolves. Do not renumber them: the point of a retired
-# term is that it records when something stopped being true.
+# when it was renamed to Transaction Cost Growth. The Constitution's prose
+# version history was removed in the 2026-09 restructure. To read an old
+# entry, run `git log -- theory/01-foundation/00-tcg-constitution.md` and
+# `git show <commit>:theory/01-foundation/00-tcg-constitution.md`. Do not
+# renumber the citations here: the point of a retired term is that it records
+# when something stopped being true.
 #
 # Retired axiom names. The canonical names live in
 # theory/01-foundation/00-tcg-constitution.md Part I. Add a row here whenever an
@@ -30,7 +32,7 @@ ignorecase: false
 # Metric name. NRR is Net Revenue Retention, confirmed 2026-09. The expansion
 # below is a common slip and has never appeared in the working tree, so this row
 # is preventive rather than corrective, in the same spirit as the entries mined
-# from git history above. Canonical definition: 04-glossary-and-notation.md.
+# from git history above. Canonical definition: 03-glossary-and-notation.md.
 # Retired Constitution sections (v15.0). Clarifying Concepts was deleted as a
 # third home for definitions that already had a research file and a glossary
 # row. Part IV moved to practice/07-variable-ownership.md. Both
@@ -41,7 +43,7 @@ ignorecase: false
 # Retired directory (v15.0). practice/03-learning-plan/ was removed: an
 # LLM-facilitated curriculum restating theory/ in parallel, with nothing linking
 # a module to the axiom it taught, so an axiom revision could not reach it. The
-# 2x2 matrix in module-0 had already drifted from 01-motion-taxonomy.md.
+# 2x2 matrix in module-0 had already drifted from 01-motions.md.
 # Superseded Axiom I description (v16.0). The axiom name did not change, so
 # nothing here catches a paragraph that uses every current term while describing
 # the pre-v16 version. These two phrases are the load-bearing ones.
@@ -93,7 +95,7 @@ ignorecase: false
 # vector takes the deal class's own word.
 #
 # The acronyms are retired rather than rebased, because SLG would otherwise
-# mean Search-Led here and Sales-Led everywhere else. 09-motion-vocabulary.md
+# mean Search-Led here and Sales-Led everywhere else. 01-motions.md
 # carries the map, so the incumbent terms stay findable without being live.
 swap:
   ILG motion: implementation-led motion
@@ -103,8 +105,8 @@ swap:
   plg-motion: turnkey-motion
   slg-motion: search-motion
   Implementation-Led Growth \(ILG\): "implementation-led motion (the framework is Transaction Cost Growth)"
-  Product-Led Growth \(PLG\): "the Turnkey motion, though the two are not equal; see 09-motion-vocabulary.md section 3"
-  Sales-Led Growth \(SLG\): "the search-led motion, which is wider; see 09-motion-vocabulary.md section 4"
+  Product-Led Growth \(PLG\): "the Turnkey motion, though the two are not equal; see 01-motions.md section 10"
+  Sales-Led Growth \(SLG\): "the search-led motion, which is wider; see 01-motions.md section 10"
   ILG Constitution: TCG Constitution
   Constitution of Implementation-Led Growth: Constitution of Transaction Cost Growth
   ILG framework: TCG framework
@@ -130,8 +132,8 @@ swap:
   03-learning-plan: "no replacement; the curriculum was removed in v15.0"
   llm-tutor-instructions: "no replacement; the curriculum was removed in v15.0"
   plain-language-part-I-companion: 00-tcg-constitution.md Part I
-  Constitution, Clarifying Concepts: the concept's research file, indexed in 04-glossary-and-notation.md
-  Constitution clarifying concept: the concept's research file, indexed in 04-glossary-and-notation.md
+  Constitution, Clarifying Concepts: the concept's research file, indexed in 03-glossary-and-notation.md
+  Constitution clarifying concept: the concept's research file, indexed in 03-glossary-and-notation.md
   Constitution, Part IV: "removed in the 2026-09 restructure; the Handoff Rule lives in practice/implementation-motion/04-sustaining-adoption-review.md"
   net recurring revenue: Net Revenue Retention
   Net Recurring Revenue: Net Revenue Retention
@@ -184,6 +186,14 @@ swap:
   01-education-motion\.md: "removed in the 2026-09 restructure (the search-led region has no instrument file)"
   00-setup-implementation-guide\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
   02-governance-review-checklist\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
-  03-incentives-vested-commission\.md: "07-governance-forms.md section 5 (the comp plan template was removed in the 2026-09 restructure; the claim it carried stays)"
+  03-incentives-vested-commission\.md: "05-governance-forms.md section 5 (the comp plan template was removed in the 2026-09 restructure; the claim it carried stays)"
   06-governance-implementation-veto\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
   07-variable-ownership\.md: "removed in the 2026-09 restructure; the Handoff Rule lives in practice/implementation-motion/04-sustaining-adoption-review.md"
+  01-motion-taxonomy\.md: "01-motions.md (merged with the friction vector and the motion vocabulary in the 2026-09 restructure)"
+  06-friction-vector\.md: "01-motions.md (merged in the 2026-09 restructure; sections 1 to 9 keep their numbers)"
+  09-motion-vocabulary\.md: "01-motions.md section 10"
+  03-mathematical-models\.md: 02-mathematical-models.md
+  04-glossary-and-notation\.md: 03-glossary-and-notation.md
+  05-seller-surplus-model\.md: 04-seller-surplus-model.md
+  07-governance-forms\.md: 05-governance-forms.md
+  08-calibration\.md: 06-calibration.md

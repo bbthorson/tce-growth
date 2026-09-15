@@ -30,7 +30,7 @@ The four artifacts in [`implementation-motion/`](./implementation-motion/) run i
 
 ## Quantitative instruments
 
-Four instruments convert deal observations into comparable numbers. Each measures one term in the Surplus equation, each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [08-calibration.md](../theory/01-foundation/08-calibration.md), and every worked example is asserted in [`models/`](../models/).
+Four instruments convert deal observations into comparable numbers. Each measures one term in the Surplus equation, each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
 
 | Instrument | Measures | Run it when |
 |---|---|---|
@@ -52,5 +52,5 @@ Four instruments convert deal observations into comparable numbers. Each measure
 
 ## Related
 
-- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the axioms, [06-friction-vector.md](../theory/01-foundation/06-friction-vector.md) for why direction selects the instrument, [07-governance-forms.md](../theory/01-foundation/07-governance-forms.md) for what shape the arrangement takes after signature.
+- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-motions.md](../theory/01-foundation/01-motions.md) for why direction selects the instrument, [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) for what shape the arrangement takes after signature.
 - **Checks:** [`tools/linting/`](../tools/linting/) for the link, frontmatter and style checkers.

@@ -37,17 +37,17 @@ Formula coverage, by canonical home:
 
 | Document | What the module implements |
 |---|---|
-| [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) | Both cost representations and the derivation joining them, the section 1.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, and the decay rate. |
-| [05-seller-surplus-model.md](../theory/01-foundation/05-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
+| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | Both cost representations and the derivation joining them, the section 1.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, and the decay rate. |
+| [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [consensus-friction-calculator.md](../practice/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
 | [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation and the uncertainty decay chain. |
 | [friction-efficiency-index.md](../practice/friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
 | [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three component counts and their bands, both divergence gates and the modifier, the level and direction routing, and the frequency reading. |
-| [07-governance-forms.md](../theory/01-foundation/07-governance-forms.md) | The four governance forms selected by level and frequency, and whether the apparatus the level calls for can be amortized. |
+| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by level and frequency, and whether the apparatus the level calls for can be amortized. |
 
 ## Nothing here is fitted, and it must stay that way
 
-Every parameter default is a reasoned starting value. `03-mathematical-models.md` states the forms are "specified, not fitted" and exist "to structure judgment, not to forecast," and the Friction Efficiency Index carries a stronger warning still.
+Every parameter default is a reasoned starting value. `02-mathematical-models.md` states the forms are "specified, not fitted" and exist "to structure judgment, not to forecast," and the Friction Efficiency Index carries a stronger warning still.
 
 - $a = 2.25$ is anchored by analogy to prospect theory's loss aversion coefficient. Section 1.6 is explicit that $a$ is not that coefficient, only borrowing its magnitude as a reason to believe $a$ is large.
 - $\beta = 1.35$ is chosen inside a motivated range. Only $\beta > 1$ carries literature support.
@@ -58,7 +58,7 @@ Every parameter default is a reasoned starting value. `03-mathematical-models.md
 
 **Do not fit these to synthetic data.** A previous session evaluated a public "AWS SaaS Sales" dataset for this purpose: 9,994 rows from a fictitious company, with no cycle stages, no stakeholder counts, and no implementation outcomes. Fitting to it produces parameters that look empirical and are not, which would launder invented numbers past the provenance audit. Synthetic data is acceptable only as a test fixture that never produces a published number.
 
-What would make the models empirical is already written down, in section 6 of `03-mathematical-models.md` and section 6 of the Friction Efficiency Index. Those conditions are about logging real deals, not about finding a dataset.
+What would make the models empirical is already written down, in section 6 of `02-mathematical-models.md` and section 6 of the Friction Efficiency Index. Those conditions are about logging real deals, not about finding a dataset.
 
 ## The figures
 
@@ -72,7 +72,7 @@ Each is sampled from `tcg_models.py`, so a coefficient change moves the picture 
 
 Recorded rather than silently reconciled, on the same principle the provenance audit uses for statistics.
 
-**1. $I_{seller}$ has two incompatible definitions.** `03-mathematical-models.md` section 2.2 gives a weighted power form over inputs on $[0, 10]$, which ranges to about 14.6. The [Asymmetry Scorecard](../practice/asymmetry-scorecard.md) defines the same symbol as the mean of four dimensions each scored 1 to 5, which lands on $[1, 5]$. Section 1.5's normalization assumes the scorecard's range, so the theory's own functional forms cannot feed the normalizer the theory makes mandatory. The module implements both under separate names and does not pretend they compose. Resolving this means deciding which one the symbol denotes. Scorecard v3.0 did not resolve it: the dimensions became pairs of counts, but the presentation scale stayed at $[1, 5]$ deliberately so the bands and the normalizer kept working, so the two definitions still disagree by the same amount.
+**1. $I_{seller}$ has two incompatible definitions.** `02-mathematical-models.md` section 2.2 gives a weighted power form over inputs on $[0, 10]$, which ranges to about 14.6. The [Asymmetry Scorecard](../practice/asymmetry-scorecard.md) defines the same symbol as the mean of four dimensions each scored 1 to 5, which lands on $[1, 5]$. Section 1.5's normalization assumes the scorecard's range, so the theory's own functional forms cannot feed the normalizer the theory makes mandatory. The module implements both under separate names and does not pretend they compose. Resolving this means deciding which one the symbol denotes. Scorecard v3.0 did not resolve it: the dimensions became pairs of counts, but the presentation scale stayed at $[1, 5]$ deliberately so the bands and the normalizer kept working, so the two definitions still disagree by the same amount.
 
 **2. The consensus worked example is labelled against its own rubric.** [consensus-friction-calculator.md](../practice/consensus-friction-calculator.md) describes its worked example as "two camps in genuine conflict (Var = 0.25)". The rubric a few lines above assigns that description to 0.50 and gives 0.25 as "minor divergence in priority, nobody is threatened". The arithmetic is correct and reproduces to 17.6. Only the prose label is wrong, so the test asserts the arithmetic and this note records the rest.
 
@@ -90,4 +90,4 @@ Recorded rather than silently reconciled, on the same principle the provenance a
 
 - [CLAUDE.md](../CLAUDE.md) for the repository conventions this directory follows.
 - [tools/linting/](../tools/linting/) for the two checkers this one sits alongside in `.githooks/pre-commit`.
-- [theory/01-foundation/04-glossary-and-notation.md](../theory/01-foundation/04-glossary-and-notation.md) for the canonical meaning of every symbol implemented here.
+- [theory/01-foundation/03-glossary-and-notation.md](../theory/01-foundation/03-glossary-and-notation.md) for the canonical meaning of every symbol implemented here.

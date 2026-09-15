@@ -25,7 +25,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Supports in TCG:**
 - **Axiom II — Law of Uncertainty Inflation** — supplies the internal structure of $F_{consensus}$. The Constitution names consensus cost. Cyert-March and Webster-Wind explain what generates it.
-- **Consensus Friction model** — direct theoretical basis for $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ in [03-mathematical-models.md](../01-foundation/03-mathematical-models.md). The exponent $\beta > 1$ follows from channel growth, and the variance term follows from goal heterogeneity.
+- **Consensus Friction model** — direct theoretical basis for $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md). The exponent $\beta > 1$ follows from channel growth, and the variance term follows from goal heterogeneity.
 - **The Red Team Protocol** — operationalizes variance reduction. Forcing stakeholders to state failure modes aloud converts quasi-resolution into explicit trade-off, which is the only mechanism that lowers $\text{Var}(I_i)$ before signature.
 - **The Saboteur** (CFIR field mapping) — the buying center model explains why a saboteur is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
 - **Axiom III — Law of Governance** — intra-organizational alignment is a cooperation condition applied inside the buyer, not only across the buyer-seller boundary.

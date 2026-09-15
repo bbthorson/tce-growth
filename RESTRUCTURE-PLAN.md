@@ -1,6 +1,15 @@
 # Restructure Plan
 
-**Status:** proposal, awaiting approval. Nothing below has been applied.
+**Status:** approved 2026-09-15. Steps 1 to 3 are applied on this branch. Step 4, the Constitution rewrite, waits on the axiom discussion.
+
+| Step | Commit | Result |
+|---|---|---|
+| 1. Housekeeping and publishing | applied | Concept map deleted, protocols merged, hook and CLAUDE.md defects fixed, README reduced-form notation corrected. |
+| 2. Practice cut and flatten | applied | Ten files deleted, practice flattened to one directory, linters moved to `tools/`, CFIR mapping moved to practice, scorecard and index moved out of internal-ops. |
+| 3. Theory merges | applied | Three motion files merged into `01-motions.md`, foundation renumbered 00 to 06, Constitution version history reduced to a table, reading guide and glossary trimmed, triage calculator and adoption review compressed. |
+| 4. Constitution rewrite | pending | Needs the author's agreement on each axiom first. |
+
+Where the applied steps landed against the targets below: live text (excluding verbatim published posts) went from about 84,000 words to about 59,000. Theory is 37,000 against a target of 22,000, and the remaining 15,000 is almost entirely the Constitution, which step 4 addresses. The triage calculator landed at 3,500 words rather than 2,000, because its tables are the instrument and the cut took prose only. The adoption review landed at 2,100 rather than 1,500 for the same reason.
 **Audience for the trimmed repo:** the author, who needs a tight, defensible theory to publish from. A seller who needs to run a deal this week is not the audience, and that decision sets what counts as fat.
 
 ## 1. Where the repo stands
@@ -14,7 +23,7 @@
 | Theory foundation files | 3 | 11 | 8 |
 | Practice files | 8 | 26 | 12 |
 
-The five machine checks pass on the current head. Vale is not installed in this environment, so the style rules were not run here.
+The five machine checks pass on the current head, Vale included.
 
 ## 2. Diagnosis
 

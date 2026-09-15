@@ -36,7 +36,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Jevons Vulnerability** (clarifying concept) — direct.
 - **Axiom III — Law of Governance** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
 - **Reputation Depreciation** (primary derivation) — demurrage on reputation is the channel-level prescription.
-- **Friction vector direction** ([06-friction-vector.md](../01-foundation/06-friction-vector.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
+- **Friction vector direction** ([01-motions.md](../01-foundation/01-motions.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
 
 **Notable quotes:**
 - "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." (Jevons, 1865)

@@ -2,57 +2,53 @@
 title: "The Deal Triage Calculator"
 layer: practice
 status: active
-version: 6.0
+version: 7.0
 operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
 
-Version: 6.0
-Audience: Internal Rep / Pre-Sales
+Version: 7.0
 Goal: Emit the three quantities Axiom I names, so that the motion follows from the deal rather than from a label. Direction selects the instruments. Level sets how much apparatus the deal can carry. Frequency sets what kind of arrangement can hold it, and whether the apparatus can be paid for at all.
 
-**Canonical Reference:** [TCG Constitution, Axiom I](../theory/01-foundation/00-tcg-constitution.md) for both quantities and [Axiom II](../theory/01-foundation/00-tcg-constitution.md) for the amplification. The derivation is [06-friction-vector.md](../theory/01-foundation/06-friction-vector.md).
+**Canonical Reference:** [TCG Constitution, Axiom I](../theory/01-foundation/00-tcg-constitution.md) for level and direction and [Axiom II](../theory/01-foundation/00-tcg-constitution.md) for the amplification. The derivation is [01-motions.md](../theory/01-foundation/01-motions.md).
 
 | | |
 |---|---|
 | **Inputs** | A live deal, and a willingness to count things rather than rate them. |
 | **Outputs** | Three component scores, three component gaps, a direction, a level, a frequency, a governance form, and a routing. |
-| **Next step** | See "What to run" below. |
-| **Owner** | AE / pre-sales, with manager spot-check on the counts rather than on the scores. |
+| **Next step** | See Step 4. |
+| **Owner** | AE / pre-sales, with a spot-check on the counts rather than on the scores. |
 
 > [!IMPORTANT]
-> **This instrument counts. It does not rate.** Every input below is a number of named things, and every number is backed by a list. Version 4.2 and earlier asked for ratings of 1 to 5, and the models downstream raised those ratings to powers. Exponentiating an ordinal rating is not a defensible operation: the distance between a 2 and a 3 was never established as equal to the distance between a 4 and a 5, so no component score built on one could be trusted. Counts have a true zero and equal intervals, which is what the equations need. Section "Why counts" says what this does and does not fix.
+> **This instrument counts. It does not rate.** Every input below is a number of named things, and every number is backed by a list. Earlier versions asked for ratings of 1 to 5, and the models downstream raised those ratings to powers. Exponentiating an ordinal rating is not a defensible operation, because the distance between a 2 and a 3 was never established as equal to the distance between a 4 and a 5. Counts have a true zero and equal intervals, which is what the equations need. The closing section says what counting does and does not fix.
 
 ---
 
 ## Step 0: Workflow Maturity Gate
 
-**Before counting anything, classify the buyer's workflow.** You cannot digitize a process nobody has defined, and a count of exception paths means nothing when no path is written down.
+**Before counting anything, classify the buyer's workflow for the specific problem being solved.** You cannot digitize a process nobody has defined, and a count of exception paths means nothing when no path is written down.
 
-Score the workflow for the specific problem being solved, not the buyer's operational sophistication generally. A hospital with excellent finance procedures may have no documented process for the clinical workflow you are selling into.
-
-| Level | Condition | Evidence required | Route |
+| Level | Condition | Evidence | Route |
 |---|---|---|---|
-| **1. Undefined** | No written process. Steps vary by person. Practitioners disagree on what the current process is. | Ask three people to describe the workflow and get three different answers. | **Stop. Chaos Trap** *if the product automates the process.* Redirect to consulting or a paid workshop to define the process first. If the product supplies a medium rather than automating a process, an undefined workflow is not a trap. See Gate A. |
-| **2. Emergent** | A process exists and is partly written down, but business units have diverged, exceptions are undocumented, and nobody owns the variance. | A written procedure exists that people describe as out of date. | **Conditional.** Continue, but the Blueprint must reconstruct the workflow before the Red Team runs. Budget additional discovery. |
-| **3. Codified** | Documented, followed, and exception handling is quantified. Someone owns the process and can name its failure rates. | The current procedure, plus volumes for the exception paths. | **Continue.** |
+| **1. Undefined** | No written process. Steps vary by person. | Ask three people to describe the workflow and get three different answers. | **Stop. Chaos Trap**, *if the product automates the process.* Redirect to consulting or a paid workshop to define the process first. If the product supplies a medium the buyer encodes their own workflow into, an undefined workflow is not a trap. See Gate A. |
+| **2. Emergent** | A process exists and is partly written down, but units have diverged and nobody owns the variance. | A written procedure people describe as out of date. | **Conditional.** Continue, but the Blueprint must reconstruct the workflow before the Red Team runs. |
+| **3. Codified** | Documented, followed, and exception handling is quantified. | The current procedure, plus volumes for the exception paths. | **Continue.** |
 
-**Level 2 is the level that gets misread.** A buyer at Level 2 can produce a document on request, which reads as Level 3 to a rep who does not check whether the document matches practice. The failure surfaces during implementation as unmapped exception paths, which is the single most common source of post-signature scope expansion. When in doubt, score down.
+**Level 2 is the level that gets misread.** A buyer at Level 2 can produce a document on request, which reads as Level 3 to anyone who does not check whether the document matches practice. The failure surfaces during implementation as unmapped exception paths, which is the single most common source of post-signature scope expansion. When in doubt, score down.
 
-> [!IMPORTANT]
-> **Workflow maturity is not a friction component.** A Level 1 workflow with a legible category and a single decision maker is a Chaos Trap, not a light deal. The buyer has nothing to automate, and no reading of the vector says so. Run this gate on its own evidence before anything below.
+Workflow maturity is not a friction component. A Level 1 workflow with a legible category and a single decision maker is a Chaos Trap, not a light deal, and no reading of the vector says so. Run this gate on its own evidence.
 
 ---
 
 ## Step 1: Count the three components
 
-Each component takes one count of a named thing. Write the list, then the number. **A number with no list attached is not a score**, and the manager calibration questions below all take the form "show me the list."
+Each component takes one count of a named thing. Write the list, then the number. **A number with no list attached is not a score.**
 
 ### 1a. Search
 
-**Count: alternatives the buyer must rule out before they can choose.** Include every named vendor, plus "build it internally" as one, plus "do nothing" as one.
+**Count: alternatives the buyer must rule out before they can choose.** Every named vendor, plus "build it internally" as one, plus "do nothing" as one.
 
 $$n_{search} = (\text{named vendors}) + (\text{build}) + (\text{do nothing})$$
 
@@ -66,14 +62,9 @@ $$n_{search} = (\text{named vendors}) + (\text{build}) + (\text{do nothing})$$
 **Add 2 if no path to this buyer exists that you hold today.** A buyer who knows the category, can name five vendors, and sits behind a purchasing consortium you have no agreement with is unreachable, and neither education nor a trial touches that cost. Research is in [channel-collapse.md](../theory/02-research/channel-collapse.md).
 
 > [!WARNING]
-> **A buyer who cannot name the category does not score 2.** They score 9. The alternative set is not small, it is unbounded, because the buyer cannot enumerate what they are choosing between. Treating an unnamed category as a short list is the most common misreading this instrument produces, and it is the same error the retired market-stage step described as reading absence of competition as maturity.
+> **A buyer who cannot name the category does not score 2. They score 9.** The alternative set is not small, it is unbounded, because the buyer cannot enumerate what they are choosing between. Treating an unnamed category as a short list is the most common misreading this instrument produces.
 
-**Evidence, four items.** Count how many hold, with a document or a named person behind each.
-
-- A recognized category name exists and the buyer uses it.
-- The buyer can name three or more vendors.
-- Published third-party comparison material exists (analyst coverage, reviews, implementation write-ups).
-- A path from you to this buyer exists that you hold today.
+**Evidence, four items.** Count how many hold, with a document or a named person behind each: a recognized category name the buyer uses, three or more vendors the buyer can name, published third-party comparison material, and a path from you to this buyer that you hold today.
 
 $$\hat{\Delta}_{search} = 1 - \frac{\text{items evidenced}}{4}$$
 
@@ -96,7 +87,7 @@ $$n_{consensus} = (\text{individuals with a veto})$$
 
 $$\hat{\Delta}_{consensus} = 1 - \frac{\text{people with a documented measured objective}}{n_{consensus}}$$
 
-What a stakeholder says in a room containing the others is not evidence. Stated positions converge under social pressure and measured objectives do not, so a committee where nobody voices dissent is as consistent with suppressed variance as with agreement. Score from what each person is measured on. [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) section 3.2 carries the argument and [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md) carries the research.
+What a stakeholder says in a room containing the others is not evidence. Stated positions converge under social pressure and measured objectives do not, so a committee where nobody voices dissent is as consistent with suppressed variance as with agreement. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.2 carries the argument and [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md) the research.
 
 ### 1c. Implementation
 
@@ -121,25 +112,21 @@ This is a seller-side reading and it is provisional. It measures $I_{seller}$ on
 
 ### 1d. Frequency
 
-**This is a classification, not a count, and it does not enter the level.** Frequency is how often the same two parties transact. It selects the governance form and it decides whether the apparatus the level calls for can be amortized at all. See [07-governance-forms.md](../theory/01-foundation/07-governance-forms.md).
+**A classification, not a count, and it does not enter the level.** Frequency is how often the same two parties transact. It selects the governance form and decides whether the apparatus the level calls for can be amortized at all. See [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md).
 
-| Reading | Condition | Evidence required |
+| Reading | Condition | Evidence |
 |---|---|---|
 | **One-shot** | The transaction completes and neither party has a structural reason to meet again. A migration, a perpetual licence, a fixed-scope build. | No renewal date exists, and nobody on either side can name what a second purchase would be. |
 | **Recurrent** | The transaction renews on a cycle and either party can decline at the boundary. | A renewal date, and a named owner of it on each side. |
-| **Continuous** | The product sits inside the buyer's operations and leaving is itself a project. | Ask what migrating away would cost them. If nobody can answer, it is continuous rather than recurrent. |
+| **Continuous** | The product sits inside the buyer's operations and leaving is itself a project. | Ask what migrating away would cost them. If nobody can answer, it is continuous. |
 
-**Do not read your own pricing model as the answer.** A product billed annually that the buyer treats as a one-time installation with a maintenance fee is one-shot, whatever the invoice says. Frequency is a property of the relationship, and the question is whether a second transaction is a real event that someone is responsible for.
-
-**Frequency Reading:** ______
+**Do not read your own pricing model as the answer.** A product billed annually that the buyer treats as a one-time installation with a maintenance fee is one-shot, whatever the invoice says.
 
 ---
 
 ## Step 2: The divergence modifier
 
-The counts measure how *large* the installation is. None measures how far the buyer's workflow sits from the one the product was built around. Those are different quantities, and the second decides whether the installation succeeds.
-
-Packaged software carries an assumed workflow. When the buyer's actual workflow differs, the buyer changes the organization to match the product, accepts the shortfall, builds a workaround, or pays to customize. All four cost money and only the first two are visible before signature. Research calls this gap *misfit*. See [process-misfit.md](../theory/02-research/process-misfit.md). It operationalizes the CFIR **Compatibility** construct in its workflow sense, where Step 0 operationalizes the same construct in its maturity sense.
+The counts measure how *large* the installation is. None measures how far the buyer's workflow sits from the one the product was built around. Those are different quantities, and the second decides whether the installation succeeds. Research calls the gap *misfit*, per [process-misfit.md](../theory/02-research/process-misfit.md). It operationalizes the CFIR **Compatibility** construct in its workflow sense, where Step 0 operationalizes the same construct in its maturity sense.
 
 Two gates decide whether divergence governs at all.
 
@@ -147,24 +134,17 @@ Two gates decide whether divergence governs at all.
 
 | Answer | Condition | Route |
 |---|---|---|
-| **No, greenfield** | No encoded workflow exists for this problem. The product creates the practice rather than replacing one. | Skip the modifier. Divergence has no reference point to measure from. |
+| **No, greenfield** | No encoded workflow exists for this problem. The product creates the practice. | Skip the modifier. Divergence has no reference point. |
 | **No, the product absorbs it** | The product ships underspecified on purpose, and the buyer encodes their own workflow inside it without vendor engineering. | Skip the modifier. |
 | **Yes** | The buyer runs an encoded workflow the product must fit, extend, or replace. | Continue to Gate B. |
 
-**Gate B: can the buyer measure the gap themselves, and reverse the decision?**
-
-This is CFIR's **Trialability** construct. A trial does not mainly reduce the cost of evaluating vendors. It transfers the divergence measurement to the buyer, who is the only party positioned to perform it. Where that transfer works, the seller does not need to supply proof before signature, which is the entire reason the implementation instruments exist.
-
-All three must hold for the answer to be yes:
+**Gate B: can the buyer measure the gap themselves, and reverse the decision?** This is CFIR's **Trialability** construct. A trial transfers the divergence measurement to the buyer, who is the only party positioned to perform it. Where that transfer works, the seller does not need to supply proof before signature, which is the entire reason the implementation instruments exist. All three must hold:
 
 - The buyer can run the product against their real work, with their real data, without seller engineering.
 - Discovering a bad fit costs them days rather than quarters.
 - Walking away strands no committed spend and no migrated data.
 
-| Answer | Route |
-|---|---|
-| **Yes** | Skip the modifier and route on the vector as counted. The buyer will find the misfit faster than the seller can prove its absence. Track churn rather than implementation risk. |
-| **No** | Divergence governs. Apply the modifier below. |
+If all three hold, skip the modifier and route on the vector as counted. Otherwise divergence governs.
 
 **Count: how many steps in the buyer's workflow have no counterpart in the product's assumed workflow.** Walk the procedure and mark each step the product cannot perform as written.
 
@@ -178,11 +158,9 @@ All three must hold for the answer to be yes:
 The modifier is capped so that $F_{implementation}$ does not exceed 10.
 
 > [!IMPORTANT]
-> **The modifier multiplies one component. It is never added to the level.** Level measures size and divergence measures fit. Adding them would let a large aligned deal and a small misaligned deal produce the same number, which is the specific confusion this step exists to prevent. Multiplying the implementation component instead is what makes a small misaligned deal read as implementation-dominant, which is the routing it needs.
+> **The modifier multiplies one component. It is never added to the level.** Level measures size and divergence measures fit. Adding them would let a large aligned deal and a small misaligned deal produce the same number. Multiplying the implementation component instead is what makes a small misaligned deal read as implementation-dominant, which is the routing it needs.
 
-**Who codified the workflow is the question that predicts the count.** A workflow codified by a regulator converges across buyers, which is how mature Turnkey categories form. A workflow codified by the buyer diverges from every other buyer, and it diverges more the longer it has been in place. Both are well-defined workflows and they route to opposite motions.
-
-**What a demonstration can and cannot show.** Misfit runs across six domains: functionality, data, usability, role, control, and organizational culture. A product demonstration reaches the first two. The remaining four surface during implementation unless discovery goes looking for them, which is what the [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) is for.
+**Who codified the workflow predicts the count.** A workflow codified by a regulator converges across buyers, which is how mature Turnkey categories form. A workflow codified by the buyer diverges from every other buyer, and more so the longer it has been in place. A demonstration reaches two of misfit's six domains, functionality and data. Usability, role, control and organizational culture surface during implementation unless the [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) goes looking for them.
 
 ---
 
@@ -194,10 +172,10 @@ $$\text{Level} = \lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{im
 
 | Level | Class | What it means |
 |---|---|---|
-| 0 to 14 | **Turnkey** | The deal cannot carry heavy apparatus. Blueprints and gate structures cost more than they unlock. |
+| 0 to 14 | **Turnkey** | The deal cannot carry heavy apparatus. Blueprints and gate structures cost more than they save. |
 | 15 to 30 | **Structural** | The deal can carry apparatus, and $F_{deployed} \sim k$ requires that it does. |
 
-The threshold sits at half the range, which is where the retired 4-to-20 scale put it. Multiply an archived score by 1.5 to compare it against this one. The threshold carries no more empirical support here than it did there, and section 6 of [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) says what would change that.
+The threshold sits at half the range and carries no empirical support. [06-calibration.md](../theory/01-foundation/06-calibration.md) records it as chosen.
 
 **Direction.** The share of *effective* cost each component carries, after each is amplified by its own gap.
 
@@ -210,7 +188,7 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 | **Implementation-dominant** | $\hat{F}_{implementation} \ge 0.50$ |
 | **Composed** | No component reaches 0.50 |
 
-**Level uses base friction and direction uses amplified friction, and the difference is the point.** Level is asset specificity, a property of the deal that discovery does not change. Direction is where the unresolved cost currently sits, and it moves every time an artifact closes a gap. A deal that opens implementation-dominant rotates toward consensus as the Blueprint lands. Re-run this step at every artifact boundary, because the answer is supposed to change.
+**Level uses base friction and direction uses amplified friction, and the difference is the point.** Level is asset specificity, a property of the deal that discovery does not change. Direction is where the unresolved cost currently sits, and it moves every time an artifact closes a gap. Re-run this step at every artifact boundary, because the answer is supposed to change.
 
 ---
 
@@ -229,45 +207,52 @@ $$\hat{F}_k = \frac{F_k (1 + \hat{\Delta}_k)}{\sum_j F_j (1 + \hat{\Delta}_j)}$$
 |---|---|---|---|
 | Turnkey | Not evaluated | **Turnkey** | Standard terms, published pricing, self-service provisioning. No instrument file: a short vector needs none. |
 | Structural | Search-dominant | **Search-led** | Commercial teaching, reference architectures, category definition, channel work. No instrument file in this repository. |
-| Structural | Consensus-dominant | **Consensus-led** | Stakeholder mapping from the [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), then the [Red Team](./implementation-motion/02-validation-red-team-protocol.md) workshop, sized by the [Consensus Friction Calculator](./consensus-friction-calculator.md). **The thinnest instrument set here.** No dedicated instrument exists, and a deal routing here is routing to a gap. See the note below. |
+| Structural | Consensus-dominant | **Consensus-led** | Stakeholder mapping from the [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), then the [Red Team](./implementation-motion/02-validation-red-team-protocol.md), sized by the [Consensus Friction Calculator](./consensus-friction-calculator.md). No dedicated instrument exists, and a deal routing here is routing to a gap. Say so rather than substituting the implementation chain because it is the one that exists. |
 | Structural | Implementation-dominant | **Implementation-led** | In sequence: [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) → [Red Team](./implementation-motion/02-validation-red-team-protocol.md) → [MIP](./implementation-motion/03-closing-mutual-implementation-plan.md) → [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
 | Structural | No component at 0.50 | **Composed** | The top two instrument sets in proportion, heaviest first. Do not pick one and call it the motion. |
 
-The five names in the Motion column are the framework's field names and the values this instrument returns. [01-motion-taxonomy.md](../theory/01-foundation/01-motion-taxonomy.md) specifies each one.
+The five names in the Motion column are the words this instrument returns, and [01-motions.md](../theory/01-foundation/01-motions.md) section 4 specifies each region.
+
+**Hidden Structural deal.** A Turnkey level that reads implementation-dominant after a divergence modifier of 1.5 or more is a Structural deal wearing Turnkey clothes. Every count is low and the workflow underneath matches nothing the product assumes. Route to the implementation instruments anyway and record why. This is Axiom I's under-frictioned failure mode, and it is the one the level alone cannot see.
+
+**Possible over-frictioning.** A Structural level that reads implementation-dominant with a divergence count of zero is large but aligned. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work. Run the implementation instruments and confirm the full chain earns its cost.
 
 ### The governance form
 
-Read it off level and frequency together. It answers a different question from the routing above: not which instruments to run before signature, but what shape the arrangement should take after it.
+Read it off level and frequency together. It answers a different question from the routing above: what shape the arrangement should take after signature.
 
 | Level | Frequency | Form | What to write |
 |---|---|---|---|
 | Turnkey | Any | **Market** | Standard terms, published pricing, no relationship apparatus. |
 | Structural | One-shot | **Trilateral** | Safeguards from outside the pair. Fixed scope, external acceptance criteria, escrow or arbitration, a named third party who adjudicates. |
-| Structural | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md). Mutual commitments, staged gates, symmetric consequence. Each repetition safeguards the next. |
+| Structural | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md). Mutual commitments, staged gates, symmetric consequence. |
 | Structural | Continuous | **Bilateral, watching for unified** | The MIP still applies. Also ask what the buyer's build alternative now costs, because rising specificity on a continuous relationship eventually makes integrating beat any contract you can write. |
 
 > [!WARNING]
-> **A Structural one-shot deal is the case to escalate.** The level says it needs the full instrument chain and the frequency says there is nothing to amortize that chain over. Both readings are correct and they point opposite ways. Do not resolve it by running a lighter version of the motion, which produces the under-frictioned failure with the cost already sunk. Either find a structure that makes the relationship recurrent, which changes the governance form rather than making an expensive one cheaper, or decline. Escalate it rather than deciding it alone.
+> **A Structural one-shot deal is the case to escalate.** The level says it needs the full instrument chain and the frequency says there is nothing to amortize that chain over. Do not resolve it by running a lighter version of the motion, which produces the under-frictioned failure with the cost already sunk. Either find a structure that makes the relationship recurrent, which changes the governance form rather than making an expensive one cheaper, or decline.
 
-**Hidden Structural deal.** A Turnkey level that reads implementation-dominant after a divergence modifier of 1.5 or more is a Structural deal wearing Turnkey clothes. The installation is small, so every count is low, and the workflow underneath matches nothing the product assumes. Route to the implementation instruments anyway and record why. This is Axiom I's under-frictioned failure mode, and it is the one the level alone cannot see.
+### When to decline the implementation-led region
 
-**Possible over-frictioning.** A Structural level that reads implementation-dominant with a divergence count of zero is large but aligned. Run the implementation instruments and flag the deal for review to confirm the full chain earns its cost. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work.
+Deploying the implementation chain when the deal cannot repay it destroys margin. Any one condition below routes the deal away from the implementation instruments or out of the pipeline. The first three are properties of the deal. The last three are properties of the environment or the seller, and they are the ones teams skip when auditing their own boundary.
 
-**The consensus region has the thinnest instrument set here.** The framework measures consensus friction carefully and then prescribes executive sponsorship, which is one tactic rather than a set. Qualification frameworks built around economic buyer access, written decision criteria, and champion development are the incumbent practice for this component and this repository does not name them. A deal routing here is routing to a gap. Say so on the forecast call rather than substituting the implementation chain because it is the one that exists.
+| Condition | Why it fails | Route |
+|---|---|---|
+| **No operational baseline** (Step 0 Level 1) | Mapping a nonexistent workflow produces fabricated alignment, and the Red Team stress-tests fiction. | Decline. Advisory work to establish the process, then re-qualify. |
+| **The deal cannot amortize the apparatus** (Structural one-shot) | Pre-sale engineering has nothing to recover against. [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) section 7 shows the spend amortizes across renewals, so a first-year margin test is right where retention is weak and too strict where it holds. | Restructure as recurrent, or decline. |
+| **The category has commoditized** | Standardized integrations have pushed the level below the boundary. | Re-score, run Turnkey, retire the pre-sale engineering. |
+| **The specification is externally fixed** | A regulatory mandate or rigid request for proposal has removed the discovery surplus. | Compete on unit economics, service levels, and delivery credibility. |
+| **The buyer lacks implementation capacity** | The MIP assigns tasks to engineering staff the buyer does not have. | Defer until the capacity exists, or contract as a managed service. |
+| **The seller lacks delivery depth** | A Red Team run without technical competence produces false confidence and downstream failure. | Stop the motion until the delivery capability is real. |
 
 ---
 
 ## Why counts, and what counts do not fix
 
-**What the change buys.** The models raise their inputs to powers, and $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ needs $N$ to be a count for $N^{1.35}$ to mean anything. A rating of 4 is not twice a rating of 2 in any established sense, so nothing downstream of a rating survived being exponentiated. A count of stakeholders is. The bands above then convert counts to component scores on one common scale, because three counts of different things cannot be summed directly, and the band edges are chosen rather than fitted.
+**What the change buys.** The models raise their inputs to powers, and $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ needs $N$ to be a count for $N^{1.35}$ to mean anything. A count of stakeholders is one. The bands above then convert counts to component scores on one common scale, because three counts of different things cannot be summed directly, and the band edges are chosen rather than fitted.
 
-**What it does not buy: honesty.** A count can be manipulated, and a sales leader who wants a deal routed to a velocity motion can undercount every component. Three things make that harder than manipulating a rating, and none of them makes it impossible.
+**What it does not buy: honesty.** A count can be manipulated, and anyone who wants a deal routed to a velocity motion can undercount every component. Three things make that harder than manipulating a rating, and none makes it impossible. Every count is a list, so a disputed count is an argument about whether a named system is on it, which one party can lose. The counts are re-taken after the fact at the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md), and the variance is recorded. And both directions cost something: inflating routes the deal into heavier apparatus, deflating produces the post-signature failure Axiom I names, which vested compensation ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5) attaches to the representative's own payout.
 
-1. **Every count is a list.** The instrument asks for the list first and the number second. A disputed rating is an argument about judgment. A disputed count is an argument about whether a named system is on a list, which one party can lose.
-2. **The counts are re-taken after the fact.** At the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md), count the integration points, changed workflows, and exception paths that actually existed. Record **Count Variance** as the difference. A rep who scored 3 and delivered against 11 has a number attached to that, and the manager sees the pattern across a book long before any single deal proves it.
-3. **Both directions cost something.** Inflating counts raises the level, which pulls the deal into manager review and heavier apparatus. Deflating them routes to a velocity motion and produces the post-signature failure Axiom I names, which vested compensation ([07-governance-forms.md](../theory/01-foundation/07-governance-forms.md) section 5) attaches to the representative's own payout. Neither direction is free, which is the Axiom III condition this instrument needs to satisfy and the reason the comp structure is not optional alongside it.
-
-**What it also does not buy: measurement.** These are counts of real things converted to scores by chosen bands. The counts are observations and the bands are not. Read the level as a comparison between deals in your own book, never as a quantity.
+**What it also does not buy: measurement.** These are counts of real things converted to scores by chosen bands. Read the level as a comparison between deals in one book, never as a quantity.
 
 ---
 
@@ -304,39 +289,14 @@ Read it off level and frequency together. It answers a different question from t
 | Governance form | |
 | Date scored, and by whom | |
 
-Re-score at every artifact boundary and keep the old rows. The sequence of directions is the record of what the discovery actually moved, and a deal whose direction never changes is a deal where nothing was learned.
-
----
-
-## Common diagnostic mistakes
-
-- **Rating instead of counting.** A rep who writes "integration depth: 4" has produced nothing this instrument can use. The question is how many systems, and the answer is a list.
-- **Reading an unnamed category as a short list.** The buyer names no vendors, so the rep counts two alternatives and routes to a velocity motion. An unnamed category is the maximum search cost, not the minimum.
-- **Counting attendees as vetoes.** Eleven people on the call and two who can stop the purchase is a consensus count of two. Nine people who can be overruled do not hold a veto, however loudly they speak.
-- **Scoring the consensus gap from the room.** Every stakeholder agreed, so the gap reads zero. Agreement in a room containing the others is not evidence of aligned objectives, and the scorecard's rule applies here: if you cannot name what a person is measured on, that person is unevidenced.
-- **Reading direction off base friction.** Direction takes the amplified components. Skipping the amplification is what made the old instrument unable to notice that a Blueprint had changed anything.
-- **Scoring once.** The vector is a path, not a point. A direction recorded at qualification and never re-taken is stale by the time it is used.
-- **Adding the divergence modifier to the level.** It multiplies one component. Size and fit are different quantities and the instrument keeps them apart on purpose.
-- **Skipping Step 0.** A high level with no defined workflow is a Chaos Trap. The apparatus has nothing to attach to.
-- **Reading the invoice as the frequency.** Annual billing does not make a relationship recurrent. A buyer who treats the purchase as an installation with a maintenance fee is one-shot, and giving them a relational contract charges them for machinery that will never pay for itself.
-
----
-
-## Manager calibration questions
-
-- "Show me the list of alternatives. Which one is 'do nothing' and who told you it was on the list?"
-- "Name the people who can say no. For each one, what are they measured on, and where is that written down?"
-- "How many integration points, and which of them have a schema attached?"
-- "What was the direction at qualification and what is it now? If it has not moved, what did the Blueprint do?"
-- "What was the Count Variance on the last three deals this rep closed?"
-- "Who owns the renewal on their side? If nobody, why is the frequency not one-shot?"
+Re-score at every artifact boundary and keep the old rows. The sequence of directions is the record of what discovery moved, and a deal whose direction never changes is a deal where nothing was learned.
 
 ---
 
 ## Related
 
 - **Theory:** [TCG Constitution, Axiom I](../theory/01-foundation/00-tcg-constitution.md) supplies level and direction. [Axiom II](../theory/01-foundation/00-tcg-constitution.md) supplies the per-component amplification this instrument feeds.
-- **Derivation:** [06-friction-vector.md](../theory/01-foundation/06-friction-vector.md) is why the instrument emits a vector rather than a label.
-- **Motion framing:** [01-motion-taxonomy.md](../theory/01-foundation/01-motion-taxonomy.md) maps the named motions onto regions of the vector space.
-- **Functional forms:** [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) sections 2.4 and 3.1 consume these counts.
+- **Derivation:** [01-motions.md](../theory/01-foundation/01-motions.md) is why the instrument emits a vector rather than a label, and maps the named motions onto regions of the vector space.
+- **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.4 and 3.1 consume these counts.
+- **Provenance:** [06-calibration.md](../theory/01-foundation/06-calibration.md) records every band and threshold above as chosen.
 - **Deeper implementation gap:** [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) supersedes this instrument's provisional implementation gap once both halves are scored.

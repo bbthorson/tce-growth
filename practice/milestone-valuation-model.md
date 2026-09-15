@@ -41,7 +41,7 @@ $$S_m = p_m \cdot \left[ V_{gross,m} - \left(a \cdot x_m^2 + c_m\right) \right]$
 | $c_m$ | Payment allocated to stage $m$, as a fraction of annual contract value |
 
 > [!IMPORTANT]
-> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [03-mathematical-models.md](../theory/01-foundation/03-mathematical-models.md) section 1.7 carries the arithmetic.
+> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 1.7 carries the arithmetic.
 
 Uncertainty decays as gates clear, with each stage resolving a fraction of what remains:
 
