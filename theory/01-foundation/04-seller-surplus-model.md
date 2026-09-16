@@ -2,14 +2,14 @@
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
-version: 1.0
+version: 1.1
 operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.0
+**Version:** 1.1
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
 The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
@@ -154,13 +154,24 @@ So a forward-deployed motion raises the seller's temptation $T$ and the seller's
 
 The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
 
+### 7.5 The information asset at the market level
+
+Section 7.2 names the durable asset after a forward-deployed engagement: the incumbent's ignorance of one buyer's environment is near zero and every challenger's is near maximum. The same asset exists one level up. The seller's accumulated map of a buyer population, the market ledger of [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.1, is the market-level form of it, and how much of it is filled is how much unique insight the seller holds.
+
+Four consequences.
+
+- **The entrant prices below the incumbent, and the framework says why.** An entrant with a thin ledger opens every deal with a wider enforcement gap than the incumbent would, because the seller's ignorance is half of that gap and the buyer prices it. The entrant cannot yet close the gap cheaply, so of Axiom III's three levers only price and risk are available. The concessions that get the early deals done are $C_{invest}$ at the market level rather than discounting, and the ledger is what they buy.
+- **Do not enter at zero fill.** With an empty ledger the cost to serve is at its maximum on every component, and the amortizability corollary returns decline. The floor is a reading the seller can act on.
+- **The ledger is a quasi-rent.** It loses value outside the market that produced it, so it is specific in Williamson's sense, and section 3's exposure argument applies. A seller who has filled a market ledger and not yet recovered it has sunk something that market's buyers can hold up, and the repeated game of this section is what recovers it.
+- **Redeployable value has a scoring method.** $R_{redeploy}$ is the share of an adjacent market's ledger that this market's work has already filled. The spine makes it countable: workflows share typed touchpoints, so the fill an adjacent market inherits is the share of its touchpoints the seller already knows. Expansion into an adjacent market is the moment that inherited fill carries the amortizability reading from decline to pursue, and a seller can reach it ancillary to the work they are already doing.
+
 ---
 
 ## Open questions
 
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.
-- **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
+- **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one. Section 7.5 proposes one, the inherited fill of an adjacent market's ledger, and nothing has tested it.
 
 ---
 

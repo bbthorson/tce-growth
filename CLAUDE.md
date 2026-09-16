@@ -27,8 +27,8 @@ Key cross-file dependencies to know:
 - The **three implementation artifacts** (Blueprint → Red Team → MIP) in `practice/implementation-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
 
 The **research files** in `theory/02-research/` back specific axioms:
-- Axiom I (Composition) → `transaction-cost-economics.md`, `buying-center-dynamics.md`, `channel-collapse.md`
-- Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`
+- Axiom I (Composition) → `transaction-cost-economics.md`, `buying-center-dynamics.md`, `channel-collapse.md`, `integration-touchpoints.md`
+- Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`, `integration-touchpoints.md`
 - Axiom III (Inflation) → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`, `re-aim-framework.md`
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file. Before extending the theory, read `theory/01-foundation/07-open-questions.md`, which records where it is under-developed by axiom; an extension should land on a recorded gap or add one.

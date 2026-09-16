@@ -78,6 +78,10 @@ Plus the seller-side layer:
 
 13. **[Appropriable Quasi-Rents and Supplier-Side Hold-Up](./klein-crawford-alchian.md)** — Read after Transaction Cost Economics and alongside Incomplete Contracts. Williamson says specificity creates exposure. Klein, Crawford and Alchian name the quantity at stake and establish that it belongs to whichever party sank the investment, which in a forward-deployed motion is the seller. Backs [04-seller-surplus-model.md](../01-foundation/04-seller-surplus-model.md).
 
+Plus the workflow layer:
+
+14. **[Integration Touchpoints](./integration-touchpoints.md)** — Read after Process Misfit. Misfit says what specificity is made of. The touchpoint taxonomy says where a product meets the buyer's system of record, in five types that hold in any vertical. It is how the step library in [08-from-axioms-to-instruments.md](../01-foundation/08-from-axioms-to-instruments.md) matches steps across workflows, and how the seats around a workflow are predicted before a buyer is met. The one practitioner source in this directory, recorded as such.
+
 ---
 
 ## What you won't find here
