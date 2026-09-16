@@ -16,11 +16,11 @@ CALIBRATION STATUS
 ------------------
 Nothing in this module is fitted. Every parameter default is a reasoned
 starting value carried over from the documents, and the documents say so
-themselves: 03-mathematical-models.md states the functional forms are
+themselves: 02-mathematical-models.md states the functional forms are
 "specified, not fitted" and exist "to structure judgment, not to forecast."
 
 - a = 2.25 is anchored by analogy to prospect theory's loss aversion
-  coefficient. It is not a measurement, and 03-mathematical-models.md section
+  coefficient. It is not a measurement, and 02-mathematical-models.md section
   1.6 is explicit that a is not the same quantity as lambda. Section 1.7 fixes
   its units: a, c and y are all fractions of annual contract value, so a = 2.25
   means the uncertainty term is worth 2.25 annual contract values at a fully
@@ -35,7 +35,7 @@ close date, or a probability. Do not quote any number this module produces as
 an empirical estimate.
 
 No dependencies, standard library only, matching the two checkers in
-practice/02-internal-ops/linting/.
+tools/linting/.
 """
 
 import collections
@@ -45,8 +45,8 @@ import math
 # Parameter defaults.
 #
 # Provenance for each of these is in the parameter reference tables of
-# theory/01-foundation/03-mathematical-models.md section 5 and
-# practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md.
+# theory/01-foundation/02-mathematical-models.md section 5 and
+# practice/friction-efficiency-index.md.
 # Read those columns before quoting any value outside this repository.
 # --------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ KAPPA_PROOF_DECAY = 0.5      # chosen
 GAMMA_RESPONSIVENESS = 0.5   # chosen
 
 # Raw Bilateral Asymmetry Scorecard range, from
-# practice/02-internal-ops/04-incentives-asymmetry-scorecard.md part 3.
+# practice/asymmetry-scorecard.md part 3.
 RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
 
 # Friction Efficiency Index composite weights, in FAR / BCV / RMS / SVI order.
@@ -72,7 +72,7 @@ BCV_REF_DEFAULT = 0.5  # convention until twenty closed Structural deals exist
 
 
 # ==========================================================================
-# theory/01-foundation/03-mathematical-models.md section 1.5
+# theory/01-foundation/02-mathematical-models.md section 1.5
 # Normalizing the gap before substitution.
 # ==========================================================================
 
@@ -142,14 +142,14 @@ def _require_normalized(gap, caller):
             "Scorecard emits a raw score on [2, 10] and neither cost equation "
             "accepts that range. Call normalize_gap(raw) first, or wrap an "
             "already-normalized value in NormalizedGap(). See "
-            "03-mathematical-models.md section 1.5.".format(
+            "02-mathematical-models.md section 1.5.".format(
                 caller, type(gap).__name__)
         )
     return float(gap)
 
 
 # ==========================================================================
-# theory/01-foundation/03-mathematical-models.md section 1
+# theory/01-foundation/02-mathematical-models.md section 1
 # The two representations of transaction cost.
 # ==========================================================================
 
@@ -263,9 +263,9 @@ def component_gap(n_items, n_evidenced):
 
 def friction_vector(f_search, f_consensus, f_implementation,
                     gap_search, gap_consensus, gap_implementation):
-    """Both of Axiom I's quantities, computed together. 06-friction-vector.md.
+    """Level (Axiom II) and direction (Axiom I), computed together. 01-motions.md.
 
-    Level is the L1 norm of BASE friction. It is the asset specificity Axiom I
+    Level is the L1 norm of BASE friction. It is the asset specificity Axiom II
     bounds, a property of the deal rather than of what anyone currently knows
     about it, so discovery does not move it.
 
@@ -347,7 +347,7 @@ def effective_cost_expanded(gap, b, c):
 
 
 # ==========================================================================
-# theory/01-foundation/03-mathematical-models.md section 2
+# theory/01-foundation/02-mathematical-models.md section 2
 # The Bilateral Asymmetry Gap.
 # ==========================================================================
 
@@ -447,8 +447,8 @@ def buyer_uncertainty_floor(cv_roi, mu=MU_RETURN_UNCERTAINTY):
 
 
 # ==========================================================================
-# theory/01-foundation/03-mathematical-models.md section 3
-# practice/01-field-assets/consensus-friction-calculator.md
+# theory/01-foundation/02-mathematical-models.md section 3
+# practice/consensus-friction-calculator.md
 # Consensus friction.
 # ==========================================================================
 
@@ -564,7 +564,7 @@ def consensus_sensitivity_to_variance(n, alpha=ALPHA_COORDINATION,
 
 
 # ==========================================================================
-# theory/01-foundation/03-mathematical-models.md section 4
+# theory/01-foundation/02-mathematical-models.md section 4
 # Urgency decay.
 # ==========================================================================
 
@@ -595,7 +595,7 @@ def decay_rate(lambda_inertia, e_external, gamma_r=GAMMA_RESPONSIVENESS):
 
 
 def value_decay(v0, delta, t):
-    """Section 4.1, and Axiom I's time dynamics.
+    """Section 4.1, and the value-decay standing assumption.
 
         V_effective(t) = V_0 * exp(-delta * t)
 
@@ -615,9 +615,9 @@ def asymmetry_drift(gap0, gamma, t):
 
         gap_hat(t) = gap_hat(0) + gamma * t
 
-    Pre-close this is the Axiom II half of the Decay Clock: information goes
+    Pre-close this is the Axiom III half of the Decay Clock: information goes
     stale, raising the multiplier on friction. Post-close, section 7.2 of
-    05-seller-surplus-model.md reads the same equation as the erosion of an
+    04-seller-surplus-model.md reads the same equation as the erosion of an
     incumbent's information advantage, where gamma runs on staff turnover,
     workflow change, and systems the seller never saw installed. Net Revenue
     Retention is that document's phrase for this equation run past signature.
@@ -647,7 +647,7 @@ def deal_surplus(v_effective, v_next_best, f_effective):
 
 
 # ==========================================================================
-# practice/02-internal-ops/05-diagnostics-friction-efficiency-index.md
+# practice/friction-efficiency-index.md
 # Retrospective execution metrics. Every threshold, weight and coefficient on
 # that page is a reasoned starting value; none is fitted to booked deal data.
 # ==========================================================================
@@ -701,7 +701,7 @@ def buyer_commitment_velocity(s_dept, d_prov, n):
 
     The N^0.5 denominator is a correction rather than decoration. The canvas
     form was S_dept / (D_prov + 1), which rewards engaging more departments and
-    so inverts Axiom II: the consensus model treats stakeholder count as a cost
+    so inverts Axiom III: the consensus model treats stakeholder count as a cost
     driver. Uncorrected, an organization could raise its score by dragging more
     people into rooms, which the Consensus Friction Calculator correctly scores
     as worse.
@@ -850,7 +850,7 @@ def fei_band(fei):
 
 
 # ==========================================================================
-# practice/01-field-assets/milestone-valuation-model.md
+# practice/milestone-valuation-model.md
 # ==========================================================================
 
 def residual_uncertainty(x0, mus):
@@ -908,7 +908,7 @@ def stage_surplus(p_m, v_gross_m, x_m, c_m, a=A_RISK_AVERSION):
     the stage's own payment as the constant term.
 
     UNITS. v_gross_m, c_m and a are all fractions of annual contract value, per
-    03-mathematical-models.md section 1.7. Passing a payment as 25 rather than
+    02-mathematical-models.md section 1.7. Passing a payment as 25 rather than
     0.25 does not scale the answer, it reverses it. The uncertainty term drops
     to five percent of the first gate's payment where it should be five times
     that payment, and the model then recommends demanding everything at
@@ -924,9 +924,9 @@ def stage_surplus(p_m, v_gross_m, x_m, c_m, a=A_RISK_AVERSION):
 
 
 # ==========================================================================
-# theory/01-foundation/05-seller-surplus-model.md
+# theory/01-foundation/04-seller-surplus-model.md
 # Nothing in this section is fitted, and section 6 says so in stronger terms
-# than 03-mathematical-models.md: this model has no parameter anchored in
+# than 02-mathematical-models.md: this model has no parameter anchored in
 # published literature at all.
 # ==========================================================================
 
@@ -1067,7 +1067,7 @@ def repeated_seller_surplus(r, v, c_deliver, c_sustain, rho, c_invest):
 
 
 def cooperation_threshold(temptation, reward, punishment):
-    """Axiom III's cooperation condition.
+    """Axiom II's cooperation condition.
 
         delta_discount > (T - R) / (T - P)
 
@@ -1085,11 +1085,11 @@ def cooperation_threshold(temptation, reward, punishment):
 
 
 # ==========================================================================
-# practice/01-field-assets/deal-triage-calculator.md (v5.0)
+# practice/deal-triage-calculator.md (v5.0)
 #
 # The instrument counts named things and converts the counts to component
 # scores through chosen bands. It emits a level and a direction rather than a
-# motion label, which is Axiom I's two claims kept apart.
+# motion label, which is Axioms I and II kept apart.
 #
 # Two properties of the v4.2 model survive because the document still requires
 # them. The gates run before divergence and can skip it entirely, and the
@@ -1126,7 +1126,7 @@ GATE_A_ENCODED = "encoded"
 
 SEARCH_EVIDENCE_ITEMS = 4
 
-# Frequency, Axiom I's third property. Step 1d. Not a count and not part of
+# Frequency, Axiom II's second selector. Step 1d. Not a count and not part of
 # the level: it selects the governance form and decides whether the apparatus
 # the level calls for can be amortized at all.
 ONE_SHOT, RECURRENT, CONTINUOUS = "one-shot", "recurrent", "continuous"
@@ -1144,7 +1144,7 @@ TriageResult = collections.namedtuple(
 
 
 def governance_form(klass, frequency):
-    """Williamson's selection, on level and frequency. 07-governance-forms.md.
+    """Williamson's selection, on level and frequency. 05-governance-forms.md.
 
     Below the boundary the form is market governance at any frequency: the
     parties are strangers and the contract is complete.
@@ -1295,7 +1295,7 @@ def deal_class(level):
     score multiplied by 1.5 is comparable. It carries no more empirical support
     here than it did there.
 
-    This is the Axiom I level claim and it answers how much apparatus the deal
+    This is the Axiom II level claim and it answers how much apparatus the deal
     can carry. It does not select the motion. Direction does that.
     """
     if not LEVEL_MIN <= level <= LEVEL_MAX:

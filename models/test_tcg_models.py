@@ -21,7 +21,7 @@ import tcg_models as m
 
 
 # ==========================================================================
-# 03-mathematical-models.md section 1.5, the normalization guard.
+# 02-mathematical-models.md section 1.5, the normalization guard.
 # ==========================================================================
 
 class TestGapNormalization(unittest.TestCase):
@@ -81,7 +81,7 @@ class TestGapNormalization(unittest.TestCase):
 
 
 # ==========================================================================
-# 03-mathematical-models.md section 1, the two cost representations.
+# 02-mathematical-models.md section 1, the two cost representations.
 # ==========================================================================
 
 class TestTransactionCost(unittest.TestCase):
@@ -151,7 +151,7 @@ class TestTransactionCost(unittest.TestCase):
 
 
 # ==========================================================================
-# 03-mathematical-models.md sections 1.1 and 2.4, and 06-friction-vector.md.
+# 02-mathematical-models.md sections 1.1 and 2.4, and 01-motions.md.
 # Per-component amplification, adopted in Constitution v17.0.
 # ==========================================================================
 
@@ -202,7 +202,7 @@ class TestPerComponentAmplification(unittest.TestCase):
 
 
 class TestFrictionVector(unittest.TestCase):
-    """06-friction-vector.md sections 1 to 3, and Axiom I's composition claim.
+    """01-motions.md sections 1 to 3, and Axiom I's composition claim.
 
     Level is the L1 norm of base friction and direction is the share of
     effective cost. Keeping them on different quantities is what makes
@@ -238,7 +238,7 @@ class TestFrictionVector(unittest.TestCase):
         self.assertEqual(opened.magnitude, after.magnitude)
 
     def test_one_multiplier_cannot_rotate_the_vector(self):
-        """The negative result stated in Axiom II's mathematical content."""
+        """The negative result stated in Axiom III's mathematical content."""
         base = (1.0, 4.0, 4.0)
         shares = []
         for level in (0.0, 0.3, 0.9):
@@ -271,11 +271,11 @@ class TestFrictionVector(unittest.TestCase):
 
 
 # ==========================================================================
-# 03-mathematical-models.md section 2, the two halves of the gap.
+# 02-mathematical-models.md section 2, the two halves of the gap.
 # ==========================================================================
 
 class TestScorecardDimensions(unittest.TestCase):
-    """04-incentives-asymmetry-scorecard.md v3.0, which counts rather than rates."""
+    """asymmetry-scorecard.md v3.0, which counts rather than rates."""
 
     def test_the_endpoints_match_the_retired_rubric(self):
         self.assertAlmostEqual(m.dimension_score(4, 4), 1.0)
@@ -439,7 +439,7 @@ class TestConsensusFriction(unittest.TestCase):
 
 
 # ==========================================================================
-# 03-mathematical-models.md section 4, urgency decay.
+# 02-mathematical-models.md section 4, urgency decay.
 # ==========================================================================
 
 class TestUrgencyDecay(unittest.TestCase):
@@ -480,7 +480,7 @@ class TestUrgencyDecay(unittest.TestCase):
                                float(start) + 0.5)
 
     def test_maintenance_holds_the_drift_rate_down(self):
-        """05-seller-surplus-model.md section 7.2: C_sustain is the spend that
+        """04-seller-surplus-model.md section 7.2: C_sustain is the spend that
         holds gamma down, and Net Revenue Retention is this equation run past
         signature."""
         start = m.normalize_gap(2.0)
@@ -490,7 +490,7 @@ class TestUrgencyDecay(unittest.TestCase):
 
 
 # ==========================================================================
-# 05-diagnostics-friction-efficiency-index.md
+# friction-efficiency-index.md
 # ==========================================================================
 
 class TestFrictionEfficiencyIndex(unittest.TestCase):
@@ -703,7 +703,7 @@ class TestMilestoneValuation(unittest.TestCase):
         as_percent = [m.reduced_cost(x) / c
                       for x, c in zip(entering, (25.0, 35.0, 40.0))]
         # Under this reading uncertainty never reaches even a tenth of any
-        # payment, so risk never outweighs return and Axiom II is false.
+        # payment, so risk never outweighs return and Axiom III is false.
         self.assertLess(max(as_percent), 0.1)
 
     def test_staging_raises_surplus_by_shrinking_residual_uncertainty(self):
@@ -724,7 +724,7 @@ class TestMilestoneValuation(unittest.TestCase):
 
 
 # ==========================================================================
-# 05-seller-surplus-model.md
+# 04-seller-surplus-model.md
 # ==========================================================================
 
 class TestSellerSurplus(unittest.TestCase):
@@ -986,7 +986,7 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertEqual(blind.level, mapped.level)
 
     def test_closing_every_gap_equally_does_not_rotate_the_vector(self):
-        """Axiom II's negative result, reproduced at the instrument.
+        """Axiom III's negative result, reproduced at the instrument.
 
         Uniform gaps are the single-multiplier case, and there the proportions
         are fixed. Only closing one gap faster than the others rotates
@@ -1121,7 +1121,7 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertNotIn("structural-one-shot-escalate", result.flags)
 
     def test_making_a_deal_recurrent_changes_the_form_not_the_deal(self):
-        """The strategic claim in 07-governance-forms.md section 5: recurrence
+        """The strategic claim in 05-governance-forms.md section 5: recurrence
         is partly a commercial choice, and it changes which governance form
         applies rather than making an expensive one cheaper."""
         one_shot = m.triage(**dict(self.STRUCTURAL_DEAL, frequency=m.ONE_SHOT))
@@ -1218,7 +1218,7 @@ class TestCalibrationDiscipline(unittest.TestCase):
             m.consensus_friction(5, 0.25, beta=1.0)
 
     def test_every_numeric_constant_is_listed_in_the_calibration_layer(self):
-        """08-calibration.md is the single home for every value in the model.
+        """06-calibration.md is the single home for every value in the model.
 
         The point of quarantining the numbers is that a reader can accept the
         structural claims without accepting any of them, and that only works
@@ -1228,7 +1228,7 @@ class TestCalibrationDiscipline(unittest.TestCase):
         """
         here = os.path.dirname(os.path.abspath(__file__))
         page = open(os.path.join(here, "..", "theory", "01-foundation",
-                                 "08-calibration.md"), encoding="utf-8").read()
+                                 "06-calibration.md"), encoding="utf-8").read()
         # Names, not values: a value can legitimately appear under a different
         # label, but every knob has to be findable.
         knobs = ("A_RISK_AVERSION", "DOMINANCE_THRESHOLD", "ALPHA_COORDINATION",
@@ -1247,13 +1247,13 @@ class TestCalibrationDiscipline(unittest.TestCase):
             if not any(f in page for f in forms):
                 missing.append("{} = {}".format(name, value))
         self.assertEqual(missing, [],
-                         "values in the module that 08-calibration.md does not "
+                         "values in the module that 06-calibration.md does not "
                          "declare: {}".format(missing))
 
     def test_the_calibration_layer_claims_nothing_is_measured(self):
         here = os.path.dirname(os.path.abspath(__file__))
         page = open(os.path.join(here, "..", "theory", "01-foundation",
-                                 "08-calibration.md"), encoding="utf-8").read()
+                                 "06-calibration.md"), encoding="utf-8").read()
         self.assertIn("No value on this page is a measurement", page)
 
     def test_the_module_has_no_third_party_imports(self):

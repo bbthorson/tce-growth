@@ -2,7 +2,7 @@
 title: "Prospect Theory"
 layer: theory
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -26,23 +26,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Re-anchoring the reference point via Cost of Inaction converts the "Safe No" into a loss frame.
 
 **Supports in TCG:**
-- **Axiom II — Law of Uncertainty Inflation** — explains *why* $\Delta_A$ multiplies friction rather than reducing value. Asymmetry inflates the perceived downside via loss aversion. This is represented by the transaction cost equation $y = a\hat{\Delta}_A^2 + c$, where the risk aversion coefficient $a$ is anchored to the loss aversion coefficient ($\lambda \approx 2.25$). The anchor is an analogy and not an inheritance: $\lambda$ is measured and dimensionless, and $a$ is unfitted and carries units of annual contract value.
-- **Friction Allocation Principles** (primary derivation) — risk-mitigation tactics (fixed-price scope, paid pilots) are how friction is structured to address loss aversion.
-- **Decay Clock** (bridge concept) — value decay over time corresponds to the buyer's reference point shifting back toward status quo as urgency fades.
-- **Akerlof Exit Threshold** (clarifying concept) — loss aversion + status quo bias explain why buyers tolerate suboptimal incumbents rather than switching.
+- **Axiom III — Law of Uncertainty Inflation** — explains *why* $\Delta_A$ multiplies friction rather than reducing value. Asymmetry inflates the perceived downside via loss aversion. This is represented by the transaction cost equation $y = a\hat{\Delta}_A^2 + c$, where the risk aversion coefficient $a$ is anchored to the loss aversion coefficient ($\lambda \approx 2.25$). The anchor is an analogy and not an inheritance: $\lambda$ is measured and dimensionless, and $a$ is unfitted and carries units of annual contract value.
+- **Friction Allocation Principles** — risk-mitigation tactics (fixed-price scope, paid pilots) are how friction is structured to address loss aversion.
+- **Decay Clock** — value decay over time corresponds to the buyer's reference point shifting back toward status quo as urgency fades.
+- **Akerlof Exit Threshold** — loss aversion + status quo bias explain why buyers tolerate suboptimal incumbents rather than switching.
 
-**Notable quotes:**
-- "The pain of losing $1,000 is significantly greater than the pleasure of gaining $1,000."
-- "The single largest competitor in complex B2B sales is not a rival firm, but 'No Decision' — the decision to maintain the status quo."
-- "To overcome 1 unit of Risk, the vendor must provide approximately 2.25 units of ROI."
-- "Stop selling the upside and start solving for the fear."
-
-**Notable statistics:**
-- λ ≈ 2.25 (loss aversion coefficient; validated by 2024 meta-analysis across 30+ studies). Represents the parameter $a$ in the transaction cost model.
-- 61% of potential B2B deals fall through with "No Decision" (Genius Drive).
-- 40–60% of deals lost to indecision (JOLT Effect).
-- Only 14% of B2B buyers perceive meaningful differentiation in Business Value (CEB).
-- Personal Value has 2× impact on commercial outcomes vs. Business Value (CEB).
-- 71% purchase likelihood when high Personal Value is present (CEB).
-- 8× more likely to pay premium when Personal Value is present (CEB).
-- α, β ≈ 0.88 (diminishing sensitivity exponents).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

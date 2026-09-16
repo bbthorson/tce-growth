@@ -2,7 +2,7 @@
 title: "Channel Collapse: Jevons' Paradox in B2B Outreach"
 layer: theory
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-1, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -31,19 +31,11 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Mechanism design solutions require: hostages (credible commitments), deep quality measurement, and demurrage on reputation.
 
 **Supports in TCG:**
-- **Axiom II — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
-- **Friction Allocation Principles** (primary derivation) — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
-- **Jevons Vulnerability** (clarifying concept) — direct.
-- **Axiom III — Law of Governance** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
-- **Reputation Depreciation** (primary derivation) — demurrage on reputation is the channel-level prescription.
-- **Friction vector direction** ([06-friction-vector.md](../01-foundation/06-friction-vector.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
+- **Axiom III — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
+- **Friction Allocation Principles** — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
+- **Jevons Vulnerability** — direct.
+- **Axiom II — Law of Asset Specificity, governance corollary** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
+- **Reputation Depreciation** — demurrage on reputation is the channel-level prescription.
+- **Friction vector direction** ([01-motions.md](../01-foundation/01-motions.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
 
-**Notable quotes:**
-- "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." (Jevons, 1865)
-- "A channel mismatch — using a Jevons-vulnerable, Stage 2 channel for a Stage 3 buyer — means the seller is fighting both channel-level congestion and structural irrelevance."
-
-**Notable statistics:**
-- Email volume: 293B/day (2019) → 376B/day (2025), +28% (Radicati Group Email Statistics Reports).
-- Reply rates: 8.5% in 2019 (Backlinko/Pitchbox study of 12M outreach emails, link-building and PR) → 3.4% in 2026 (Instantly cold-email platform benchmarks). The endpoints come from different populations, so treat the decline as directional rather than a measured drop.
-- No-decision rate: 40–60% in enterprise sales (partly channel-level phenomenon).
-- Wörgl scrip historical example: depreciated 1% per month, incentivizing circulation — demurrage in practice.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

@@ -107,7 +107,7 @@ Before publishing or accepting an LLM draft, check:
 9. Is the voice forensic but friendly — analytical without being sales-y?
 10. Does the post earn the reader's trust before making the hard claim?
 
-Items 2, 3, and the emoji ban are machine-checked. Run `vale .` from the repo root rather than scanning by eye. See [`practice/02-internal-ops/linting/README.md`](../../practice/02-internal-ops/linting/README.md) for setup and for the full rule list. Items 1 and 4 through 10 still need a human.
+Items 2, 3, and the emoji ban are machine-checked. Run `vale .` from the repo root rather than scanning by eye. See [`tools/linting/README.md`](../../tools/linting/README.md) for setup and for the full rule list. Items 1 and 4 through 10 still need a human.
 
 ---
 

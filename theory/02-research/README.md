@@ -21,13 +21,12 @@ Each research entry follows a standard shape:
 - **Sources** — Authors, year, paper title, journal/publisher, link to primary source.
 - **Abstract** — 3–4 sentences capturing the core finding or framework.
 - **Key claims** — Bulleted statements of what the work establishes.
-- **Supports in TCG** — Which axiom, primary derivation, bridge concept, or clarifying concept this source supports, with a one-line connection.
-- **Notable quotes** — Passages worth citing in blog posts or talks.
-- **Notable statistics** — Specific numbers worth referencing.
+- **Supports in TCG** — Which axiom or corollary this source backs, with a one-line connection.
+- **Quotes and statistics** — A pointer. Citable passages live in [`publishing/02-tools/source-quotes.md`](../../publishing/02-tools/source-quotes.md) and every number lives in the provenance audit below, so the research file carries argument only.
 
 ## Quality control
 
-- **[audits/](./audits)** — currently one audit:
+- **[audits/](./audits/)** — currently one audit:
   - [citation-provenance-audit.md](./audits/citation-provenance-audit.md) — the provenance table for every headline statistic: claim, primary source, verification status. Check a statistic's status there before quoting it outside this repository.
 
 ## What goes here vs. elsewhere

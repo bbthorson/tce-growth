@@ -6,7 +6,7 @@
 This generator is designed for a multi-stage dialogue. **Do not jump to Phase 3 (The Draft) unless the user has approved a specific angle.**
 
 ### Phase 1: The Scouting Report (Analysis)
-- Perform the analysis using [trenches-analysis-protocol.md](./trenches-analysis-protocol.md).
+- Perform the analysis using the trenches analysis protocol in [writing-protocols.md](./writing-protocols.md).
 - Present 2-3 specific "Angles" or "Perspectives" as bullet points.
 - Identify the core economic friction ($\Delta_A$, $F_{base}$, or $\delta$) for each angle.
 

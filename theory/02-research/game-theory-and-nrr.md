@@ -2,7 +2,7 @@
 title: "Game Theory and Net Revenue Retention"
 layer: theory
 status: active
-operationalizes: [axiom-3]
+operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -25,18 +25,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - NRR is the lagging indicator of whether the repeated game is being played well.
 
 **Supports in TCG:**
-- **Axiom III — Law of Governance** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
-- **Recursive Cooperation** (primary derivation) — Shadow of the Future must hold for every party in the system, including adjudicators.
-- **Reputation Depreciation** (primary derivation) — the Promise Gap is what reputation depreciation looks like when not actively refreshed.
-- **Surplus** (bridge concept) — NRR > 100% is the macro-level evidence that surplus is being preserved over time.
+- **Axiom II — Law of Asset Specificity, governance corollary** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
+- **Stakes for agents and adjudicators** (Axiom II corollary) — the Shadow of the Future must hold for every party in the system, including adjudicators.
+- **Reputation Depreciation** — the Promise Gap is what reputation depreciation looks like when not actively refreshed.
+- **Surplus** — NRR > 100% is the macro-level evidence that surplus is being preserved over time.
 
-**Notable quotes:**
-- "One might as well defect in all cases" (Axelrod, on ALL D strategy when the future is negligible).
-- 60% of technology buyers involved in renewal decisions "regret nearly every purchase they make" (Gartner, 2023).
-- The Shadow of the Future is "artificially suppressed for sales agents via compensation plans."
-
-**Notable statistics:**
-- 60% of technology buyers involved in renewal decisions regret nearly every purchase (Gartner, 2023).
-- Involuntary churn ~0.8%; voluntary churn ~2.6% on average B2B (Recurly churn benchmarks).
-- 36% higher customer retention and 38% higher win rates in tightly aligned organizations (Aberdeen Group, sales-marketing alignment research).
-- NRR above 120% roughly doubles the revenue multiple relative to 100–110% NRR in published valuation analyses (FE International).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

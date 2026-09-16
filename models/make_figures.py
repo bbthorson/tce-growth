@@ -11,7 +11,7 @@ the diff check failing.
     python3 models/make_figures.py --check    # regenerate and fail on diff
 
 Deliberately dependency-free, like tcg_models.py and the two checkers in
-practice/02-internal-ops/linting/. The SVG is written by hand rather than by a
+tools/linting/. The SVG is written by hand rather than by a
 plotting library so that the diff check runs anywhere Python does, the output
 is byte-for-byte reproducible, and the prefers-color-scheme block is authored
 directly rather than injected by post-processing.
@@ -37,8 +37,7 @@ import tcg_models as m
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ASSETS = os.path.join(ROOT, "theory", "01-foundation", "assets")
-STYLES = os.path.join(ROOT, "practice", "02-internal-ops", "linting",
-                      "styles", "TCG")
+STYLES = os.path.join(ROOT, "tools", "linting", "styles", "TCG")
 
 W, H = 760, 470
 PAD_L, PAD_R, PAD_T, PAD_B = 78, 34, 92, 74
@@ -213,14 +212,14 @@ UNFITTED = ("Parameters are reasoned starting values, not fitted to deal "
 
 
 # ==========================================================================
-# Panel 1 — Axiom I. Value decay against the next-best floor.
+# Panel 1 — Standing assumption 2. Value decay against the next-best floor.
 # ==========================================================================
 
 def panel_1():
     """V_effective(t) = V_0 * exp(-delta t) against V_next_best.
 
-    Illustrates Axiom I's time dynamics and the only term in delta a seller can
-    move. delta comes from the structural form of 03-mathematical-models.md
+    Illustrates the value-decay assumption and the only term in delta a seller can
+    move. delta comes from the structural form of 02-mathematical-models.md
     section 4.2, so the two curves differ only in the external catalyst.
     """
     v0, v_next_best = 100.0, 40.0
@@ -263,7 +262,7 @@ def panel_1():
         12.0, 12.0, "Below the line the buyer keeps the status quo",
         "note-muted", anchor="middle"))
     return _frame(
-        title="Axiom I: urgency decays from the triggering event",
+        title="Value decays from the triggering event",
         subtitle=UNFITTED,
         axes=axes,
         x_label="Months since the triggering event",
@@ -288,7 +287,7 @@ def _first_crossing(series, level):
 
 
 # ==========================================================================
-# Panel 2 — Axiom II. Convexity, and why discounting fails.
+# Panel 2 — Axiom III. Convexity, and why discounting fails.
 # ==========================================================================
 
 def panel_2():
@@ -299,7 +298,7 @@ def panel_2():
     gap. That argument is exactly a comparison of three curves, so the figure
     is the argument rather than a decoration on it.
     """
-    # In annual contract values, per 03-mathematical-models.md section 1.7.
+    # In annual contract values, per 02-mathematical-models.md section 1.7.
     # A deal at list price is 1 ACV of direct cost; the discounted line is the
     # same deal at 40 percent of it, which is a steeper concession than any
     # real desk would approve and still does not reach the quadratic term.
@@ -349,7 +348,7 @@ def panel_2():
                    "note", anchor="end"),
     ]
     return _frame(
-        title="Axiom II: perceived cost is convex in uncertainty",
+        title="Axiom III: perceived cost is convex in uncertainty",
         subtitle=UNFITTED,
         axes=axes,
         x_label="Normalized bilateral asymmetry gap",
@@ -377,7 +376,7 @@ def panel_2():
 def panel_3():
     """gap_hat_implementation(t) = gap_hat(0) + gamma_impl * t.
 
-    Section 7.2 of 05-seller-surplus-model.md argues the durable asset is
+    Section 7.2 of 04-seller-surplus-model.md argues the durable asset is
     asymmetric information rather than lock-in: after a forward-deployed
     engagement the incumbent's implementation gap approaches zero while a
     challenger starts near the ceiling. The incumbent's advantage is the
@@ -433,8 +432,8 @@ def panel_3():
 
 
 FIGURES = {
-    "axiom-1-urgency-decay.svg": panel_1,
-    "axiom-2-cost-convexity.svg": panel_2,
+    "value-decay.svg": panel_1,
+    "axiom-3-cost-convexity.svg": panel_2,
     "axiom-3-asymmetry-drift.svg": panel_3,
 }
 

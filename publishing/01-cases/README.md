@@ -10,7 +10,7 @@ They are distinct from [`../../theory/02-research/`](../../theory/02-research/) 
 
 ## Format
 
-Each case follows the four-step protocol from [`02-tools/trenches-analysis-protocol.md`](../02-tools/trenches-analysis-protocol.md):
+Each case follows the four-step trenches analysis protocol in [`02-tools/writing-protocols.md`](../02-tools/writing-protocols.md):
 
 1. **Scouting Report** — what happened, who's involved
 2. **Line of Scrimmage** — the economic friction (Δ_A, F_base, TC)

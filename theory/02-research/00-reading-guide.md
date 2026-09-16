@@ -12,14 +12,6 @@ The theoretical synthesis of these papers lives in the [Constitution](../01-foun
 
 ---
 
-## The narrative in one paragraph
-
-The traditional B2B sales playbook — built on persuasion, relationship-building, and "growth at all costs" — is fundamentally broken. It fails to account for the economic and psychological realities of the modern enterprise buyer. Implementation-Led Growth synthesizes frameworks from Implementation Science (CFIR, RE-AIM), Behavioral Economics (Prospect Theory, Costly Signaling), and Institutional Economics (Transaction Cost Economics, Game Theory) into a single coherent framework. The shift is from "Persuader" to "Diagnostic Change Agent," and from "Closing" to "De-risking."
-
-For the formal axioms and derivations, read the [Constitution](../01-foundation/00-tcg-constitution.md). For the research that backs each axiom, use the reading order and audience guide below.
-
----
-
 ## How the research builds
 
 The papers in this directory depend on each other in a specific order. Lower-level papers establish foundations the higher-level papers build on.
@@ -84,19 +76,7 @@ Plus the implementation layer:
 
 Plus the seller-side layer:
 
-13. **[Appropriable Quasi-Rents and Supplier-Side Hold-Up](./klein-crawford-alchian.md)** — Read after Transaction Cost Economics and alongside Incomplete Contracts. Williamson says specificity creates exposure. Klein, Crawford and Alchian name the quantity at stake and establish that it belongs to whichever party sank the investment, which in a forward-deployed motion is the seller. Backs [05-seller-surplus-model.md](../01-foundation/05-seller-surplus-model.md).
-
----
-
-## Reading guide by audience
-
-| Audience | Start with | Then read | Skip |
-|---|---|---|---|
-| **Executive / CRO** | This guide → [Constitution](../01-foundation/00-tcg-constitution.md) | [Motion Taxonomy](../01-foundation/01-motion-taxonomy.md) | Deep theory papers unless interested |
-| **Sales Practitioner** | This guide → [CFIR](./cfir.md) (Saboteur Matrix) | [Costly Signals](./costly-signals.md), [Prospect Theory](./prospect-theory.md) | Mathematical proofs |
-| **Sales Enablement / Ops** | [RE-AIM](./re-aim-framework.md) (KPI tables) → [Game Theory and NRR](./game-theory-and-nrr.md) (compensation) | Full [CFIR](./cfir.md), [Motion Taxonomy](../01-foundation/01-motion-taxonomy.md) | Nothing — read everything |
-| **Academic / Researcher** | [TCE](./transaction-cost-economics.md) → [Costly Signals](./costly-signals.md) → [Prospect Theory](./prospect-theory.md) | [Game Theory](./game-theory-and-nrr.md), [CFIR](./cfir.md), [RE-AIM](./re-aim-framework.md) | [Fear of Failure](./fear-of-failure.md) unless reviewing data |
-| **Marketing / Content** | This guide → [Motion Taxonomy](../01-foundation/01-motion-taxonomy.md) | [Costly Signals](./costly-signals.md), [Channel Collapse](./channel-collapse.md) | Detailed implementation science |
+13. **[Appropriable Quasi-Rents and Supplier-Side Hold-Up](./klein-crawford-alchian.md)** — Read after Transaction Cost Economics and alongside Incomplete Contracts. Williamson says specificity creates exposure. Klein, Crawford and Alchian name the quantity at stake and establish that it belongs to whichever party sank the investment, which in a forward-deployed motion is the seller. Backs [04-seller-surplus-model.md](../01-foundation/04-seller-surplus-model.md).
 
 ---
 

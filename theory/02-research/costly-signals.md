@@ -2,7 +2,7 @@
 title: "Costly Signals"
 layer: theory
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -36,24 +36,15 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 - When all signals become production-cheap, the channel reaches a babbling equilibrium (Crawford-Sobel).
 
 **Supports in TCG:**
-- **Axiom II — Law of Uncertainty Inflation** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
-- **Friction Allocation Principles** (primary derivation) — all four principles derive from the Single Crossing Property.
-- **Single Crossing Property** (clarifying concept) — direct.
-- **Akerlof Exit Threshold** (clarifying concept) — direct.
-- **Jevons Vulnerability** (clarifying concept) — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
-- **Axiom III — Law of Governance** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
-- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [03-mathematical-models.md](../01-foundation/03-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
+- **Axiom III — Law of Uncertainty Inflation** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
+- **Friction Allocation Principles** — all four principles derive from the Single Crossing Property.
+- **Single Crossing Property** — direct.
+- **Akerlof Exit Threshold** — direct.
+- **Jevons Vulnerability** — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
+- **Axiom II — Law of Asset Specificity, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
+- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
 
-**Notable quotes:**
-- "The difficulty of the sales process is not a barrier to the product; it is the product itself."
-- "Trust is an economic asset that must be purchased with the currency of costly action."
-- "Without a reliable signaling mechanism, high-quality B2B commerce is mathematically impossible."
-
-**Notable statistics:**
-- 40–60% of B2B deals end in "No Decision" (Dixon/McKenna JOLT data).
-- 84% of implementations end in "Challenged/Failed" (Standish Group, 1994; the 2020 figure is 69%).
-- 56% of no-decision losses attributed to "Fear of Messing Up" (Dixon/McKenna).
-- Loss aversion coefficient λ ≈ 2.25 (Kahneman & Tversky); psychological pain ~2x heavier than equivalent pleasure.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
 
 ---
 
@@ -77,6 +68,6 @@ Removing a proxy without substituting a produced signal does not reduce friction
 4. **Risk transfer:** seller holds the financial downside of the buyer's outcome. Self-enforcing, unfakeable.
 
 **Supports in TCG (proposed):**
-- **Axiom II — Law of Uncertainty Inflation**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
+- **Axiom III — Law of Uncertainty Inflation**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
 - **Friction Allocation Principles**: candidate fifth principle, or a refinement of existing ones. When allocating friction, prefer friction that forces tier-3/tier-4 signal production over friction that merely gates access.
 - **Δ_A in the Fundamental Equation**: tier-4 signals collapse Buyer Uncertainty ($I_{buyer}$) faster than any other mechanism, because the buyer no longer needs to resolve uncertainty before contracting. The seller has priced it.

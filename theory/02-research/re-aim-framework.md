@@ -27,20 +27,10 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Technical debt consumes 20–40% of IT budgets annually.
 
 **Supports in TCG:**
-- **Axiom III — Law of Governance** — RE-AIM's Maintenance dimension is how recursive cooperation gets measured; NRR is the lagging signal.
-- **Reputation Depreciation** (primary derivation) — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
-- **Surplus** (bridge concept) — RE-AIM measures whether surplus is preserved post-signature.
-- MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/01-field-assets/implementation-motion/03-closing-mutual-implementation-plan.md).
-- Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/01-field-assets/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
+- **Axiom II — Law of Asset Specificity, governance corollary** — RE-AIM's Maintenance dimension is how the stakes corollary gets measured; NRR is the lagging signal.
+- **Reputation Depreciation** — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
+- **Surplus** — RE-AIM measures whether surplus is preserved post-signature.
+- MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md).
+- Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
 
-**Notable quotes:**
-- "A highly effective drug that no one can afford (low Reach) or a complex exercise regimen that no hospital can staff (low Adoption) has a net public health impact of zero."
-
-**Notable statistics:**
-- Gartner: SaaS spending forecast at $299B in 2025 (19.2% YoY growth).
-- Average $18M annual license waste per enterprise, with 49% license utilization (Zylo, 2024 SaaS Management Index).
-- 80% of features are rarely or never used; public cloud companies invested an estimated $29.5B building them (Pendo, 2019).
-- 12% of features generate 80% of daily usage volume (Pendo, 2019).
-- Average SaaS DAU/MAU ratio: 13% (Mixpanel product benchmarks). Healthy B2B products typically run 10–20%, and habitual-use products exceed 40%.
-- Best-in-class NRR > 120%. NRR above 120% roughly doubles the revenue multiple relative to 100–110% NRR in published valuation analyses (FE International).
-- Technical debt: developers spend roughly a third of their time on debt servicing, 13.5 hours of a 41-hour week (CISQ 2022); 20–40% of IT budgets.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
