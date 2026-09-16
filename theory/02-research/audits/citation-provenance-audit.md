@@ -128,6 +128,11 @@ The point of a provenance audit is to catch drift between files. Most severe fir
 
 ## Not yet traced
 
+- No-decision rate: 40–60% in enterprise sales (partly channel-level phenomenon). *(moved from channel-collapse.md when the statistics sections were retired, 2026-09; provenance not yet checked)*
+- Wörgl scrip historical example: depreciated 1% per month, incentivizing circulation — demurrage in practice. *(moved from channel-collapse.md when the statistics sections were retired, 2026-09; provenance not yet checked)*
+- λ ≈ 2.25 (loss aversion coefficient; validated by 2024 meta-analysis across 30+ studies). Represents the parameter $a$ in the transaction cost model. *(moved from prospect-theory.md when the statistics sections were retired, 2026-09; provenance not yet checked)*
+- α, β ≈ 0.88 (diminishing sensitivity exponents). *(moved from prospect-theory.md when the statistics sections were retired, 2026-09; provenance not yet checked)*
+
 Statistics quoted in research entries with no provenance row yet. Add a row when each is verified. The sourcing pass of 2026-08-28 cleared the original list into the tables above; two items remain:
 
 - Gartner's $299B 2025 SaaS spending forecast (19.2% growth), in [re-aim-framework.md](../re-aim-framework.md).

@@ -63,13 +63,9 @@ The reduced form is this expression with the middle term dropped and $a$ identif
 
 ### 1.4 What the reduced form gives up
 
-Two things, and both matter in the field.
+Two things. It drops the linear term $(b + c)\hat{\Delta}_A$, which is not small over the operating range, so the reduced form is a two-parameter approximation of a three-parameter expression and a fitted $a$ and $c$ would absorb the discarded term. And it drops the component decomposition, and with it the direction that selects the motion, so it produces a number rather than a diagnosis. What survives is convexity, which is the one property the three-levers argument needs.
 
-**The linear term.** Dropping $(b + c)\hat{\Delta}_A$ is not justified by that term being small. Over the normalized operating range defined in Section 1.5, the linear term is comparable to the quadratic term and sometimes larger. The reduced form is a two-parameter approximation of a three-parameter expression. When $a$ and $c$ are fitted to observed deals rather than assumed, they absorb the discarded term across the operating range. What the reduced form preserves, and the reason it earns its place in the framework, is convexity. Convexity is the property the Three Sales Levers argument depends on.
-
-**The component decomposition, and with it the direction.** The reduced form cannot tell you whether search, consensus, or implementation is binding. It produces a number, not a diagnosis. The concession is heavier than it first appears, because direction is the quantity that selects the motion and collapsing to $\hat{\Delta}_A$ destroys it. What survives is convexity, which is the property the Three Sales Levers argument needs and the only job the reduced form is asked to do.
-
-**Operating rule.** Use the structural form to diagnose a specific deal. Use the reduced form to explain why discounting fails and to frame the three levers. Do not use the reduced form to choose an intervention.
+**Operating rule.** Diagnose a deal with the structural form. Explain why discounting fails with the reduced form. Never choose an intervention from the reduced form.
 
 ### 1.5 Normalizing the gap before substitution
 
@@ -87,15 +83,11 @@ The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ce
 
 ### 1.6 A note on the coefficient $a$
 
-The derivation identifies $a$ with $b$, the rate at which base friction grows per unit of asymmetry. It does not identify $a$ with the loss aversion coefficient $\lambda$.
-
-The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a behavioral justification for why $b$ is large. Buyers add review cycles and contingency scope because they weight potential losses roughly twice as heavily as equivalent gains, so the work a buyer generates per unit of unresolved uncertainty is substantial. That reasoning supports the order of magnitude. It is not a measurement. The Constitution's hedge on $\lambda$ (conceptual anchor, likely higher in organizational contexts) applies with equal force to $a$.
+The derivation identifies $a$ with $b$, the rate at which base friction grows per unit of asymmetry, not with the loss aversion coefficient $\lambda$. The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a reason $b$ should be large: buyers add review cycles and contingency scope because they weight losses roughly twice as heavily as gains. That supports the order of magnitude and is not a measurement. [06-calibration.md](./06-calibration.md) records how far the analogy stretches.
 
 ### 1.7 The scale of $y$, $c$ and $a$
 
-The reduced form adds $a\hat{\Delta}_A^2$ to $c$. Addition requires common units, so $a$ carries whatever units $c$ carries. This has to be stated rather than assumed, because the anchor for $a$ is borrowed from a dimensionless behavioral coefficient and the term it is added to is a price.
-
-**All three are fractions of annual contract value.** A deal transacting at list price with no internal cost has $c = 1$. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the one place where $a$, $c$ and the payment schedule meet on a common scale, and its reference table settles the reading.
+The reduced form adds $a\hat{\Delta}_A^2$ to $c$, so $a$ carries $c$'s units. **All three are fractions of annual contract value.** A deal at list price with no internal cost has $c = 1$, and the [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is where $a$, $c$ and the payment schedule meet on that scale.
 
 | Stage | Payment $c_m$ | Residual entering, $x_m$ | $a x_m^2$ | Ratio to that stage's payment |
 |---|---|---|---|---|
@@ -103,11 +95,9 @@ The reduced form adds $a\hat{\Delta}_A^2$ to $c$. Addition requires common units
 | 2. Pilot | 0.35 | 0.375 | 0.316 | 0.90 |
 | 3. Full rollout | 0.40 | 0.075 | 0.0127 | 0.032 |
 
-Computed at $x_0 = 1$, the fully open gap. Entering a deal, the uncertainty a buyer is asked to swallow is worth five times the first payment. By the last gate it is worth three percent of it. That profile is the staging argument exactly: the option to stop is worth most when least is known, and gate design should return most of it early.
+Computed at $x_0 = 1$. Entering the deal, the uncertainty the buyer is asked to carry is worth five times the first payment. By the last gate it is three percent of it. That profile is the staging argument, and it is why gate design should return most of the option value early.
 
-**The alternative reading fails.** Take the same table as percentage points, so $c_1 = 25$. Then $a x_1^2 = 1.266$ against a payment of 25, or five percent, falling to three hundredths of a percent by the last gate. Under that reading uncertainty is a rounding error at every stage, which contradicts the framework's central claim that risk outweighs return, and it would make the Three Sales Levers argument false rather than merely approximate. The percentage reading is not a second option. It is a unit error.
-
-**What this does not settle.** $a = 2.25$ remains anchored by analogy rather than measured, and stating its units does not make it an estimate. What the units buy is that the number can now be wrong in a checkable way: a fitted $a$ would be recovered in annual contract values per unit of squared normalized gap, and section 6 says what data that needs.
+Read the same table in percentage points and the uncertainty term becomes a rounding error at every stage, which inverts the framework's central claim. The percentage reading is a unit error, not a second option. Stating the units makes $a$ wrong in a checkable way: a fitted value would come back in annual contract values per unit of squared normalized gap, and section 6 says what data that needs.
 
 ---
 

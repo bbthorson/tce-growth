@@ -192,21 +192,17 @@ One line each, then the canonical source. The line identifies the term. The sour
 |---|---|---|
 | **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce $\Delta_A$. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
 | **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
-| **Costly Signal** | A demonstration a low-quality competitor could not afford to replicate. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| **Safe No / Logical Yes** | The buyer's refusal to change, which risks nothing for the decider, versus the positive business case it defeats. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Jevons Vulnerability** | A channel whose binding constraint is production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
-| **Buying Center** | The set of people in a purchase decision, each judging it against a different objective. | [buying-center-dynamics.md](../02-research/buying-center-dynamics.md) |
 | **Decay Clock** | The two time dynamics that erode deal viability before close. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery. Axiom III's second clause after signature. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility carries demurrage and must be re-earned. Axiom III's second clause after signature. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
 
 ### Axiom II concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Recursive Cooperation** | The cooperation condition must hold for every party holding exposed rent or adjudicating it. Axiom II's stakes corollary. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-| **Demurrage on Credibility** | The prescription following from depreciation. Reputation must be re-earned to retain signal value. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Stakes corollary** | Every party holding exposed rent, or adjudicating it, needs a stake, including the seller's own agents and the channel. Axiom II. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
 | **Williamson Hold-Up** | Once asset-specific investment is sunk, either party can extract its value. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
 | **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
@@ -221,11 +217,6 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/implementation-motion/02-validation-red-team-protocol.md) |
 | **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
 | **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
-| **Reciprocity Gate** | The artifacts a buyer must supply before discovery advances. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Sacred Cow** | A politically protected workflow, tool, or team. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **The Casualty** | The stakeholder who loses power, budget, or status if the initiative succeeds. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Negative Capability Declaration** | Stating platform limitations before signature, as a costly signal. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Resource Expiry Clause** | The buyer-side hostage that makes buyer delay costly. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
 | **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [05-governance-forms.md](./05-governance-forms.md) section 5 |
 
 ### External frameworks
@@ -235,19 +226,18 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **CFIR** | Implementation-science framework for reading a buyer's organization pre-sale. | [cfir.md](../02-research/cfir.md), mapped in [cfir-field-mapping.md](../../practice/cfir-field-mapping.md) |
 | **RE-AIM** | Five-dimension framework for post-sale success measurement. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 | **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
-| **JOLT Effect** | Research on buyer indecision, and why urgency tactics backfire on indecisive buyers. | [fear-of-failure.md](../02-research/fear-of-failure.md) |
 
 ---
 
 ## Maintaining this file
 
 - **New symbol introduced anywhere:** add a row to the notation index in the same commit.
-- **New concept that two or more directories reference:** add a row to the term index, pointing at its canonical home. Do not define it here.
+- **New concept that two or more directories reference:** add a row to the term index, pointing at its canonical home. Do not define it here. A term used in one file belongs in that file and not here.
 - **A term is renamed or retired:** update the row, and add the old name to the retired-terms lint rule if this repo has one, so the rename cannot drift back.
 - **An entry disagrees with its source:** the source wins. Fix the entry.
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the clarifying concepts most term entries point to.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the corollaries most term entries point to.
 - [02-mathematical-models.md](./02-mathematical-models.md) supplies the functional forms. [06-calibration.md](./06-calibration.md) carries every parameter and its provenance.
 - [01-motions.md](./01-motions.md) derives the motions and carries the incumbent-vocabulary map in section 10.

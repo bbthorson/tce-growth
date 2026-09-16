@@ -71,7 +71,7 @@ The Red Team also classifies resistance using CFIR constructs. This is the mappi
 
 ## Implementation Process → Mutual Implementation Plan (MIP)
 
-The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom II's recursive cooperation principle, meaning bilateral skin in the game between buyer and seller.
+The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom II's stakes corollary, meaning bilateral skin in the game between buyer and seller.
 
 | MIP Section | CFIR Construct | What It Ensures |
 |---|---|---|

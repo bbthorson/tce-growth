@@ -30,11 +30,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **The Saboteur** (CFIR field mapping) — the buying center model explains why a saboteur is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
 - **Axiom II — Law of Asset Specificity, governance corollary** — intra-organizational alignment is a cooperation condition applied inside the buyer, not only across the buyer-seller boundary.
 
-**Notable quotes:**
-- The proposal is evaluated once per stakeholder, against a different objective each time, and it must survive all of them.
-- A saboteur is usually not irrational. They are optimizing a scorecard the seller never read.
-- Committee size sets the floor on consensus cost. Goal conflict sets the ceiling.
-
-**Notable statistics:**
-- The typical buying group for a complex B2B purchase involves 6 to 10 decision makers (Gartner, [The B2B Buying Journey](https://www.gartner.com/en/sales/insights/b2b-buying-journey)).
-- 40–60% of B2B deals end in "No Decision" (Dixon/McKenna). See [fear-of-failure.md](./fear-of-failure.md) for the verified chain.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

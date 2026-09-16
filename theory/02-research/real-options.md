@@ -28,12 +28,6 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Axiom III — Law of Uncertainty Inflation** — explains a mechanism the Constitution otherwise leaves implicit. Buyer uncertainty does not only inflate cost, it also raises the value of doing nothing. This is the formal account of why the Safe No beats the Logical Yes.
 - **The MIP** — operationalizes both the staging option and the abandonment option. Gate-contingent payments with defined acceptance criteria give the buyer a priced right to stop.
 - **Milestone Valuation Model** — applies staged uncertainty decay to gate design. See [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).
-- **Akerlof Exit Threshold** (clarifying concept) — real options supplies the complementary explanation. The buyer may exit not because signals failed but because waiting dominates acting.
+- **Akerlof Exit Threshold** — real options supplies the complementary explanation. The buyer may exit not because signals failed but because waiting dominates acting.
 
-**Notable quotes:**
-- The status quo is not inertia. It is an option the buyer currently holds and the seller is asking them to give up.
-- A buyer who says "not yet" is often pricing the option to wait correctly. The counter is to make waiting cost something.
-- Staging does not reduce the work. It reduces how much of the work must be committed before the buyer knows whether it will succeed.
-
-**Notable statistics:**
-- None. This source contributes structure rather than measurement. Implementation failure rates that justify the abandonment option live in [fear-of-failure.md](./fear-of-failure.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

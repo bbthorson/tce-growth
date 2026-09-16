@@ -37,23 +37,14 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 
 **Supports in TCG:**
 - **Axiom III — Law of Uncertainty Inflation** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
-- **Friction Allocation Principles** (primary derivation) — all four principles derive from the Single Crossing Property.
-- **Single Crossing Property** (clarifying concept) — direct.
-- **Akerlof Exit Threshold** (clarifying concept) — direct.
-- **Jevons Vulnerability** (clarifying concept) — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
+- **Friction Allocation Principles** — all four principles derive from the Single Crossing Property.
+- **Single Crossing Property** — direct.
+- **Akerlof Exit Threshold** — direct.
+- **Jevons Vulnerability** — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
 - **Axiom II — Law of Asset Specificity, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
 - **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
 
-**Notable quotes:**
-- "The difficulty of the sales process is not a barrier to the product; it is the product itself."
-- "Trust is an economic asset that must be purchased with the currency of costly action."
-- "Without a reliable signaling mechanism, high-quality B2B commerce is mathematically impossible."
-
-**Notable statistics:**
-- 40–60% of B2B deals end in "No Decision" (Dixon/McKenna JOLT data).
-- 84% of implementations end in "Challenged/Failed" (Standish Group, 1994; the 2020 figure is 69%).
-- 56% of no-decision losses attributed to "Fear of Messing Up" (Dixon/McKenna).
-- Loss aversion coefficient λ ≈ 2.25 (Kahneman & Tversky); psychological pain ~2x heavier than equivalent pleasure.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
 
 ---
 

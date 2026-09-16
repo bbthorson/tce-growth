@@ -13,6 +13,7 @@ Applied analyses of real deals and market events through the TCG lens. Each foll
 The content-production toolkit:
 - [Voice guide](./02-tools/voice-guide.md), the "Conversational Intellectual" voice and the rule set the linter enforces
 - [Writing protocols](./02-tools/writing-protocols.md), the AI persona, the pre-drafting context check, and the trenches analysis steps
+- [Source quotes](./02-tools/source-quotes.md), citable passages from the research, grouped by source
 - **Generators** for long-form and short-form posts (multi-phase workflows)
 - **Style references**, published examples to calibrate against
 

@@ -117,7 +117,7 @@ Signature Block:
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom II (Governance)](../../theory/01-foundation/00-tcg-constitution.md) — The MIP operationalizes the deal-level case of recursive cooperation; bilateral skin in the game between buyer and seller.
+- **Theory:** [TCG Constitution, Axiom II (Governance)](../../theory/01-foundation/00-tcg-constitution.md) — The MIP operationalizes the deal-level case of Axiom II's stakes corollary; bilateral skin in the game between buyer and seller.
 - **Academic backing:** [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) — Shadow of the Future; why mutual skin in the game shifts the Nash equilibrium.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Implementation Process constructs (Planning, Executing, Reflecting & Evaluating).
 - **Comp alignment:** [05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5. Rep compensation must follow MIP outcomes, not signature.

@@ -27,7 +27,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 ## Why this artifact exists
 
-Axiom II governs whether a deal persists, and the [Constitution's Handoff Rule](../../theory/01-foundation/00-tcg-constitution.md) states the mechanism. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
+Axiom II's governance corollary decides whether a deal persists, and Axiom III's second clause, that verified uncertainty rebuilds unless it is maintained, states the mechanism this artifact exists to run. The Handoff Rule below is that clause applied at the seam between sales and Customer Success. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
 
 The first three artifacts drive $\Delta_A$ toward zero before signature. Nothing keeps it there. This document is the maintenance. It is a fill-in template rather than a scored instrument, so it carries no formulas and adds nothing to the uncalibrated-parameter backlog.
 
@@ -127,7 +127,7 @@ The variance is read across a book rather than on this account. One deal scored 
 
 ## Section 4: Renewal and Reputation Refresh
 
-*Axiom II's second primary derivation: reputation depreciates. What was earned at signature does not carry to renewal without intervening evidence of delivery.*
+*Axiom III's second clause after signature: reputation depreciates. What was earned at signature does not carry to renewal without intervening evidence of delivery.*
 
 The Constitution prescribes **demurrage on credibility**, a standing charge against reputation that forces it to be re-earned rather than accumulated. The trust that closed the deal has been spending down since T-0, and the renewal conversation prices what has been delivered since, not what was promised before.
 
@@ -161,7 +161,7 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and the Reputation Depreciation derivation.
+- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both Axiom III's second clause applied after signature.
 - **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact audits commitments the MIP created.

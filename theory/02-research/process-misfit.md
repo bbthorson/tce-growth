@@ -32,10 +32,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Open question this source raises.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) treats workflow maturity as a precondition gate and workflow divergence as a multiplier on the enforcement component. The misfit literature suggests workflow codification and enforcement cost are coupled rather than independent, because codification is itself a relationship-specific investment. Resolving this requires deciding whether workflow definition and workflow divergence are one variable or two. The framework treats these as two variables and does not argue that they are.
 
-**Notable quotes:**
-- The enforcement cost is not a property of the product or of the buyer. It is the distance between them, and distance takes two points to measure.
-- A demonstration can only fail on functionality and data. The four domains that kill implementations do not appear on a screen.
-- A deficiency asks the buyer to go without. An imposition asks a named person to work differently. Only one of those creates an enemy.
-- Codifying a workflow does not make it standard. It makes it explicit, and explicit is what a package has to match.
-
-**Notable statistics:** None. Both sources are qualitative, and no headline number from either is used elsewhere in this repository. Practitioner sources on process standardization circulate figures for cost reduction and revenue growth that trace to no primary study; those figures are deliberately excluded. See [audits/citation-provenance-audit.md](./audits/citation-provenance-audit.md) for the standard.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

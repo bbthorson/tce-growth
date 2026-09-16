@@ -14,8 +14,6 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
 
-That omission is invisible while the motion is advisory. It becomes binding the moment the seller deploys engineers into a buyer's environment before signature, because the seller is then sinking capital that no term of the buyer's equation accounts for.
-
 This document adds the second equation. Axiom II names which party bears the asset specificity, which is the claim section 3 depends on.
 
 ---
@@ -26,9 +24,7 @@ Part III of the Constitution gives:
 
 $$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
 
-Every term describes the buyer. $F_{effective}$ is the friction the buyer bears. $\Delta_A$ inflates the buyer's perceived cost. $c$ is the price the buyer pays, which is the seller's revenue rather than the seller's cost.
-
-A seller reading this equation learns whether the deal *can* close. It cannot tell them whether the deal is *worth closing*, because nothing in it moves when the seller spends more or less to close it. Asking "should I invest in implementation" of the Surplus equation is asking a question in a language that has no word for it.
+Every term describes the buyer, and $c$ is the seller's revenue rather than the seller's cost. The equation says whether a deal *can* close and nothing in it moves when the seller spends more or less to close it, so it cannot say whether the deal is *worth closing*.
 
 ---
 

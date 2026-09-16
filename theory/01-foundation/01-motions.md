@@ -227,9 +227,9 @@ Everyone arriving here knows what Product-Led Growth means. This section says wh
 | **Qualification framework** | What must be true before a deal is called committed | MEDDPICC, BANT |
 | **Conversational methodology** | How a perspective gets reframed in the room | Challenger, SPIN |
 
-A team using this framework still needs a qualification standard and a conversational technique. What changes is what the qualification evidence *is*: the economic buyer is confirmed in the Blueprint, the decision criteria are the Red Team's surfaced failure modes, and the champion is tested by whether they commit resources to the MIP. Qualification tells you whether a deal is real. It does not tell you which of three costs is blocking it, and it does not reduce any of them.
+A team using this framework still needs a qualification standard and a conversational technique. Qualification tells you whether a deal is real. It does not tell you which of three costs is blocking it, and it does not reduce any of them.
 
-**On the missing acronyms.** The motions are written out as search-led, consensus-led and implementation-led. SLG would silently mean two things in one conversation, the field is already crowded with three-letter forms, and the written names match the words the Deal Triage Calculator returns, so nothing has to be translated between the reading and the motion.
+The motions are written out rather than abbreviated, because SLG would mean two things in one conversation and the written names match the words the Deal Triage Calculator returns.
 
 <!-- vale TCG.RetiredTerms = YES -->
 

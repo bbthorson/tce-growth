@@ -28,16 +28,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Supports in TCG:**
 - **Axiom II — Law of Asset Specificity** — direct theoretical basis. Asset specificity is the boundary parameter and frequency is the governance-form selector.
 - **Governance Form** (Axiom II corollary) — the four structures above, mapped onto level and frequency in [05-governance-forms.md](../01-foundation/05-governance-forms.md). The MIP is the bilateral form.
-- **Boundary Condition** (primary derivation) — $k > k_{threshold}$ is Williamson's threshold for governance preference.
-- **Williamson Hold-Up** (clarifying concept) — direct.
+- **Boundary Condition** — $k > k_{threshold}$ is Williamson's threshold for governance preference.
+- **Williamson Hold-Up** — direct.
 - **Axiom I — Law of Transaction Cost Composition** — Coase's three costs, with the B2B enlargement of each. Direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.
-- **Axiom II — Law of Asset Specificity, governance corollary** — bilateral hostages and relational contracts are the mechanism behind recursive cooperation. In the transaction cost model $y = a\hat{\Delta}_A^2 + c$, hostages are the primary operational lever to reduce the risk aversion coefficient $a$, helping to satisfy the deal-winning condition $y < OC_{\text{switching}}$.
+- **Axiom II — Law of Asset Specificity, governance corollary** — bilateral hostages and relational contracts are the mechanism behind the stakes corollary. In the transaction cost model $y = a\hat{\Delta}_A^2 + c$, hostages are the primary operational lever to reduce the risk aversion coefficient $a$, helping to satisfy the deal-winning condition $y < OC_{\text{switching}}$.
 
-**Notable quotes:**
-- "Speed is risk" when governance structures are immature.
-- "The Fundamental Transformation" shifts a market from "large numbers" competition to "small numbers" bilateral monopoly.
-- Friction is an efficiency mechanism in high-specificity transactions, not waste.
-
-**Notable statistics:**
-- Hershey ERP failure (1999): roughly $100M in unfulfilled orders from a compressed implementation timeline; quarterly profit fell 19% and the stock fell 8%.
-- Nike i2 failure (2000): $100M sales loss, 20% stock decline from algorithm mismatch.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

@@ -7,6 +7,7 @@
 | 1. Housekeeping and publishing | applied | Concept map deleted, protocols merged, hook and CLAUDE.md defects fixed, README reduced-form notation corrected. |
 | 2. Practice cut and flatten | applied | Ten files deleted, practice flattened to one directory, linters moved to `tools/`, CFIR mapping moved to practice, scorecard and index moved out of internal-ops. |
 | 3. Theory merges | applied | Three motion files merged into `01-motions.md`, foundation renumbered 00 to 06, Constitution version history reduced to a table, reading guide and glossary trimmed, triage calculator and adoption review compressed. |
+| 6. Reference trim | applied | Research quotes moved to publishing, statistics sections retired in favour of the provenance audit, glossary term index cut to cross-directory terms, math units argument compressed, stale derivation-tier labels removed. |
 | 5. Sweep and register | applied | Coase's names through theory prose, fit verification moved under specificity, motions and governance files trimmed, `theory/01-foundation/07-open-questions.md` opened with 23 recorded gaps. |
 | 4. Constitution rewrite | applied | Three axioms locked with the author and restated at the market, workflow and deal levels, one sentence each with a falsifier. Governance became a corollary of specificity. Three standing assumptions named. Every axiom reference, `operationalizes` field and figure caption in the repo remapped. Constitution 2.0. |
 

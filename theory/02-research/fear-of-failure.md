@@ -31,26 +31,8 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Supports in TCG:**
 - **Axiom II — Law of Asset Specificity** — empirical scale of $F_{implementation}$. Documented failure rates are why implementation is the dominant cost component in high-specificity deals, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the under-frictioned Structural failure mode measured.
 - **Axiom III — Law of Uncertainty Inflation** — empirical grounding for why $\Delta_A$ multiplies friction rather than reducing value. Also the limit case: buyers leave the market entirely (Akerlof saturation) when failure rates exceed risk tolerance, because no costly signal can credibly reduce a gap that wide.
-- **Akerlof Exit Threshold** (clarifying concept, elaborating Axiom III) — the 40–60% No Decision rate is the threshold being crossed.
-- **Decay Clock** (bridge concept) — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
+- **Akerlof Exit Threshold** — the 40–60% No Decision rate is the threshold being crossed.
+- **Decay Clock** — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
 - **Reputation Depreciation** — 60% renewal regret rate (Gartner 2023) is the failure-mode signal.
 
-**Notable quotes:**
-- "The primary barrier to revenue is not the competitor's feature set; it is the buyer's calculation of risk."
-- "High-pressure (FOMO) tactics increase the likelihood of losing the deal by 84% when the buyer is indecisive."
-- "Organizations are so consumed by servicing the debt of previous failures that they lack the bandwidth to innovate."
-
-**Notable statistics:**
-- 69% project failure/challenged rate (Standish, 2020: 31% success, 50% challenged, 19% failed). The 1994 baseline was 83.8%.
-- 56% purchase regret (Gartner, 2022).
-- 40–60% "No Decision" pipeline loss (Dixon/McKenna JOLT Effect).
-- 189% average cost overrun on challenged projects (Standish, 1994).
-- 100× cost multiplier for post-delivery fixes vs. the requirements and design phase, on large systems (Boehm & Basili, 2001).
-- $2.41 trillion CPSQ (Cost of Poor Software Quality, CISQ 2022).
-- 17% existential threat rate on large initiatives (McKinsey).
-- 45% budget overrun and 7% schedule overrun on the average large project (McKinsey/Oxford).
-- 60% renewal regret rate (Gartner, 2023).
-- 30% GenAI project abandonment post-POC (Gartner).
-- Roughly 300 SaaS applications per enterprise (Zylo, 2026 index: average 305, median 240), with about half of licenses unused (Zylo, 2024: 49% utilization).
-
-> **Citation Provenance.** Every statistic above traces to a primary source documented in [audits/citation-provenance-audit.md](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

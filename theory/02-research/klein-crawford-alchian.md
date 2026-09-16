@@ -29,10 +29,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Axiom II — Law of Asset Specificity, governance corollary** — bilateral hostages are the joint-ownership remedy applied to a deal. Both parties post something they lose if they defect, which removes the incentive to appropriate the other side's quasi-rent.
 - **Milestone Valuation Model** — the buyer-side staging model. Teece and Klein together argue for its mirror: the seller's engineering spend staged against buyer commitments, so unprotected exposure never exceeds what a failed stage would cost.
 
-**Notable quotes:**
-- The exposure follows the investment, not the invoice. Whoever sinks the specific work is the party who can be held up.
-- A quasi-rent measures redeployability, not effort. Ten weeks of work that transfers to the next deal is not exposure; one week that does not is.
-- Building the complement and handing over the ownership transfers the returns with it.
-- Specificity is created by working, not by signing. A contract executed after the engineering is spent arrives too late to price the exposure it was meant to cover.
-
-**Notable statistics:** None. Both sources are analytical rather than empirical, and no number from either is used elsewhere in this repository.
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

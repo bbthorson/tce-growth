@@ -11,6 +11,7 @@ This is *not* where the instruments live (see [`../../practice/`](../../practice
 ### Voice and protocols
 
 - **[voice-guide.md](./voice-guide.md)**: the "Conversational Intellectual" voice. Four linguistic rules plus the constraint checklist the linter enforces.
+- **[source-quotes.md](./source-quotes.md)**: citable passages from every research file, grouped by source. Numbers are not here. They live in the provenance audit with their verification status.
 - **[writing-protocols.md](./writing-protocols.md)**: three protocols in one file. The AI persona for an LLM acting as a CSO-level deal analyst, the context request check run before drafting, and the four-step trenches analysis that every case in [`../01-cases/`](../01-cases/) follows.
 
 ### Generators (multi-phase content workflows)

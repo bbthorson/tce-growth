@@ -123,6 +123,6 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 ## Related
 
 - [real-options.md](../theory/02-research/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment bridge concept.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment, an Axiom II corollary.
 - [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) — The artifact these gates go into.
 - [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — Supplies $x_0$.

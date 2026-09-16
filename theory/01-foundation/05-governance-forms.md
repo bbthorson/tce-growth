@@ -65,11 +65,7 @@ Reading it that way makes two things visible that the deal-level reading hides.
 
 ## 4. Addressable market is a property of the motion
 
-A seller who runs only Turnkey instruments can transact only with short-vector buyers. Buyers whose deals carry a long vector are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was blocking them.
-
-**This inverts the usual reading.** Addressable market is normally treated as a property of the product, fixed by what it does and who needs it. Under Axiom I it is a property of the motion, because the motion decides which regions of the friction space a seller can serve at all. Changing the motion changes the market, and no product change is required for that to happen.
-
-Three consequences follow, and the first two are uncomfortable.
+Addressable market is normally treated as a property of the product. Under Axiom I it is a property of the motion, because the motion decides which regions of the friction space a seller can serve at all, and buyers whose deals carry a long vector are never reached by a seller running only short-vector instruments. Three consequences follow.
 
 **A market sizing exercise conducted without naming the motion is not measuring anything stable.** It is measuring the intersection of who needs the product with who the current motion can reach, and reporting the first number.
 

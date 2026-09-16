@@ -206,3 +206,12 @@ swap:
   Deal State: "deal level (Constitution v2.0 indexes on the level each axiom is stated at)"
   Relationship State: "deal level, after signature (Constitution v2.0 has no separate relationship state)"
   Fit Unverified: "not a search blocker (Constitution v2.1): a trial is verification the buyer runs alone, gated by specificity under Axiom II"
+  # Constitution v2.0 removed the derivation tiers (primary derivation, bridge
+  # concept, clarifying concept) in favour of a flat corollaries list and a
+  # derivations table. Recursive Cooperation became the stakes corollary.
+  Recursive Cooperation: "the stakes corollary of Axiom II (every party holding exposed rent, or adjudicating it, needs a stake)"
+  primary derivation: "corollary (the Constitution's derivation tiers were removed in v2.0)"
+  bridge concept: "corollary (the Constitution's derivation tiers were removed in v2.0)"
+  clarifying concept: "research concept (the Constitution's derivation tiers were removed in v2.0)"
+  Notable quotes: "publishing/02-tools/source-quotes.md (the research files stopped carrying quotes in 2026-09)"
+  Notable statistics: "the citation provenance audit (the research files stopped carrying statistics in 2026-09)"
