@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 2.2
+version: 2.3
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 2.2
+**Version:** 2.3
 **Purpose:** To state the three claims from which everything else in this repository derives, each at the level where a seller meets it, each producing a decision, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -26,6 +26,19 @@ Three premises sit above the axioms. They are inherited rather than argued, and 
 3. **Every actor acts on their own payoff** (Jensen and Meckling 1976). That includes the seller's own representatives and every intermediary standing between the two parties. An actor whose payoff does not depend on the outcome behaves as though the outcome does not matter, whatever their intent.
 
 ![Two exponential decay curves falling toward a floor at the value of the next best alternative. Organizational inertia alone reaches the floor in the second month. A named external catalyst holds value above it until the eleventh.](./assets/value-decay.svg)
+
+---
+
+## Definitions
+
+Four words the axioms use, each naming the unit at which one axiom is read. They are definitions rather than claims. A claim that follows from one is stated under its axiom.
+
+- **Market.** The buyers who call a problem by one name. Axiom I is read here, and coarsely on purpose: which of the three costs dominates across that population, and so which motion a seller must build to serve it. The reading is a property of the buyers and not of any seller. Two sellers with different organizations read the same market and reach different answers on whether to pursue it, because what each pays to serve the vector differs.
+- **Workflow.** The procedure a product changes. A product is an encoded reference workflow, and Axiom II is read here: how far the buyer's version sits from the reference is the specificity of the investment.
+- **Seat.** A position in the buying coalition, defined by its relation to the workflow rather than by its occupant: who runs it, who owns it, who pays for it, who polices it. A seat holds a veto or an evaluation, is measured on something the change touches, and survives the person in it. The bargaining cost counts seats. A champion leaving is an occupant change on a stable seat, which is why the gap reopens without the cost changing.
+- **Deal.** One buyer's divergence from the reference workflow, with the seats their version carries. Axiom III is read here: what each party to each cost cannot verify about their own outcome, at signature and again at renewal.
+
+A market's name says how its buyers search and nothing about what they are buying. Which of those buyers a product can serve is decided one level down, at the workflow.
 
 ---
 
@@ -73,6 +86,7 @@ Two properties of that object carry the decision. Its **direction**, $\hat{\math
 
 - **A motion is a region, not a list entry.** The named motions are regions of the space $\mathbf{F}$ spans, and Product-Led, Sales-Led and Implementation-Led name the seller rather than the cost. Read by cost, the argument between them splits into two measurable questions. [01-motions.md](./01-motions.md) carries the derivation.
 - **A sales organization is a division of labor over the three costs.** Business development reduces search, account executives reduce bargaining, solutions engineers reduce enforcement uncertainty. The standard org meets the costs in that fixed order, so a deal whose binding cost is enforcement gets its engineer last, at the demo, when it needed one first. And each handoff between roles is a seam where a cost gets paid twice, because what one role learned does not travel.
+- **Cost to serve is directional.** The seller pays the mirror of each cost: reaching buyers, working the coalition, proving and delivering. Two markets with the same cost of sale can demand it in different components, so a motion is a decision about which cost an organization is built to pay, and an organization built to pay the wrong one is mis-composed before its first deal.
 - **Addressable market is a property of the motion.** A seller who runs only short-vector instruments can transact only with short-vector buyers. The rest were never reachable. [05-governance-forms.md](./05-governance-forms.md) section 4.
 
 **What would falsify it.** A deal whose binding cost is search closing reliably under enforcement instruments, or the reverse. The prediction is that a motion aimed at a cost that is not binding leaves the deal where it was, and that is observable in stage-to-stage conversion by dominant component.
@@ -109,6 +123,8 @@ The second clause, that the pre-signature share of the cost rises with $k$, is s
 - **Commitment must be staged.** When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). Gating the commitment converts one irreversible decision into a sequence, each taken with more information, and preserves a priced right to stop. Hold-up explains why commitments must be mutual. Option value explains why they must be staged. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the instrument.
 - **Every party holding exposed rent, or adjudicating it, needs a stake.** By the third standing assumption, a representative paid in full at signature plays the seller's side of a repeated game with a one-shot payoff, and a channel with no exposure to the outcome drifts from adjudication toward extraction. Vesting compensation on outcomes that survive signature is the seller's own safeguard. [05-governance-forms.md](./05-governance-forms.md) section 5.
 - **Who bears the specificity decides who needs the safeguard.** In a forward-deployed motion the seller sinks the specific investment before signature, and the exposure is the seller's. [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries that side of the transaction.
+- **A product that cannot name its workflow has not chosen its market.** Specificity is read as divergence from the reference workflow the product encodes. A product that claims a category and names no workflow has no reference to read divergence against, so neither its specificity nor the apparatus it needs can be known. The gate applies to the seller before it applies to any buyer.
+- **Pursuit is amortizability at market level.** Whether a market is worth entering is the deal question asked of a population: can the buyers' contract value and frequency recover the spend their vector demands from this seller. A seller that cannot recover it declines the market rather than running the motion lighter, for the same reason a Structural one-shot deal is declined rather than under-frictioned. [04-seller-surplus-model.md](./04-seller-surplus-model.md).
 
 **What would falsify it.** A population of highly specific deals that closed on light pre-signature work and kept their surplus through renewal. The prediction is that such deals close and then fail to deploy, so the failure lands in retention rather than in win rate, and it is observable in churn by specificity at signature.
 
@@ -177,6 +193,7 @@ Everything the repository claims beyond the three axioms is derived from them, a
 |---|---|---|
 | A motion is a region of the friction space | I, with III supplying the direction reading | [01-motions.md](./01-motions.md) |
 | Division of sales labor over the three costs | I | Part I above |
+| Cost to serve is directional | I | Part I above |
 | Addressable market is a property of the motion | I | [05-governance-forms.md](./05-governance-forms.md) §4 |
 | Boundary condition, $k > k_{threshold}$ and $F_{deployed} \sim k$ | II | [01-motions.md](./01-motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | Governance form from specificity and frequency | II | [05-governance-forms.md](./05-governance-forms.md) §2 |
@@ -184,6 +201,8 @@ Everything the repository claims beyond the three axioms is derived from them, a
 | Staged commitment | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../02-research/real-options.md) |
 | Stakes for agents and adjudicators | II, with the third standing assumption | [05-governance-forms.md](./05-governance-forms.md) §5 |
 | Seller surplus and who bears the specificity | II | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
+| A product must name its workflow | II | Part I above |
+| Pursuit as amortizability at market level | II, with I | Part I above, [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
 | Per-component amplification and its factorization | III | [02-mathematical-models.md](./02-mathematical-models.md) §1, §2 |
 | Friction Allocation Principles | III | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
 | Three sales levers | III | [02-mathematical-models.md](./02-mathematical-models.md) §1 |
@@ -222,6 +241,7 @@ A deal closes when $S > 0$ at the moment of decision. It persists when the gover
 | Axiom | Failure | Signal |
 |---|---|---|
 | I | Mis-composed | Direction misread, motion attacks a cost that is not binding |
+| I | Mis-composed, organization | Motion adopted by imitation, seller built to pay a cost its market's buyers do not carry |
 | II | Under-frictioned, pre-signature | Specific deal on a velocity motion, buyer builds internally |
 | II | Under-frictioned, post-signature | Specific deal on an easy commercial path, buyer signs, fails to deploy, churns |
 | II | Over-frictioned | Turnkey deal under heavy apparatus, buyer chooses a lighter competitor |
@@ -241,10 +261,11 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.2.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 2.3.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 2.3 | 2026-09 | Definitions added for market, workflow, seat and deal, the units at which the three axioms are read. Three corollaries added: cost to serve is directional (I), a product must name its workflow (II), pursuit is amortizability at market level (II). An organization-level mis-composed failure mode. Two register entries opened: the market reading has no instrument, and the components have no equilibrium statement. No axiom changed. |
 | 2.2 | 2026-09 | Restructure, step 6. Reference trim. The research files stop carrying quotes and statistics, which move to publishing and the provenance audit. The glossary term index loses every single-file term. The math file's argument about units is compressed. The retired derivation tiers are removed from every support line. No axiom changed. |
 | 2.1 | 2026-09 | Restructure, step 5. Coase's component names swept through theory prose, fit verification moved out of the search component and under specificity, the motions and governance files trimmed of material the Constitution now carries, and 07-open-questions.md opened as the register of under-developed areas. No axiom changed. |
 | 2.0 | 2026-09 | The axioms are rewritten. Governance stops being an axiom and becomes a corollary of specificity, where Williamson put it. Specificity becomes Axiom II with its own law. Uncertainty Inflation moves from II to III and gains its second clause. Each axiom is stated at the level where a seller meets it, in one sentence, with a falsifier. Three standing assumptions are named above the axioms. The components take Coase's names in theory, with consensus and implementation kept as the field translations. Part II becomes a table. No equation changed. |
