@@ -2,14 +2,14 @@
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
-version: 1.1
+version: 1.2
 operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.1
+**Version:** 1.2
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
 The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
@@ -130,7 +130,7 @@ The buyer prices this at signature. A buyer who anticipates lock-in is losing th
 
 ### 7.2 What actually defends the position
 
-The durable asset is not lock-in. It is **asymmetric $\Delta_A$**.
+Lock-in is real, measurable, and under-priced by the buyer at signing (Farrell and Klemperer 2007). The asset that does not raise the seller's temptation is **asymmetric $\Delta_A$**, and it sits alongside lock-in rather than instead of it.
 
 After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero, because the environment has been mapped. Every challenger begins at close to maximum. The buyer's renewal decision compares $y$ with the incumbent against $y$ with a challenger, and the challenger's figure carries a full $F_{implementation}$ amplified by an asymmetry gap nobody has closed yet.
 
@@ -139,6 +139,8 @@ That is an information asset rather than a hostage. The buyer is not trapped, th
 **It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
 The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom II. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
+
+*Falsifier.* In replacement bids where the challenger is handed full documentation of the incumbent's implementation, the incumbent's renewal rate should fall toward what lock-in alone predicts. If it does not move, the moat was lock-in after all.
 
 ### 7.3 Why $Q$ appears twice
 

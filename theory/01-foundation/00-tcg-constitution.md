@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 2.3
+version: 2.4
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 2.3
+**Version:** 2.4
 **Purpose:** To state the three claims from which everything else in this repository derives, each at the level where a seller meets it, each producing a decision, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -23,7 +23,7 @@ Three premises sit above the axioms. They are inherited rather than argued, and 
 
 1. **Bounded rationality and opportunism** (Williamson 1985). No party can foresee every state the relationship will reach, so every contract is incomplete. And a party will exploit a gap once the other side's position is exposed. The first is why uncertainty has a price. The second is why safeguards exist.
 2. **Value is exogenous to the seller, and it decays.** Willingness to pay is a property of the product and the buyer's situation. The seller's levers are the cost of transacting and the buyer's perception of it. Where value moves during a cycle it moves down, from the triggering event: $V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$. This is a modeling assumption, stated in [02-mathematical-models.md](./02-mathematical-models.md) section 4, and the one term in $\delta$ a seller can touch is whether an external catalyst has been named.
-3. **Every actor acts on their own payoff** (Jensen and Meckling 1976). That includes the seller's own representatives and every intermediary standing between the two parties. An actor whose payoff does not depend on the outcome behaves as though the outcome does not matter, whatever their intent.
+3. **Every actor acts on their own payoff** (Jensen and Meckling 1976). That includes the seller's own representatives and every intermediary standing between the two parties. An actor whose payoff does not depend on the outcome behaves as though the outcome does not matter, whatever their intent. The assumption is descriptive, and the framework does not build governance as though it predicted bad faith. Ghoshal and Moran (1996) showed that designing around opportunism can produce the opportunism it assumes, and the instruments take the other route: they make the arrangement one each party can say yes to. [tce-empirical-record.md](../02-research/tce-empirical-record.md) carries the critique.
 
 ![Two exponential decay curves falling toward a floor at the value of the next best alternative. Organizational inertia alone reaches the floor in the second month. A named external catalyst holds value above it until the eleventh.](./assets/value-decay.svg)
 
@@ -35,7 +35,7 @@ Four words the axioms use, each naming the unit at which one axiom is read. They
 
 - **Market.** The buyers who call a problem by one name. Axiom I is read here, and coarsely on purpose: which of the three costs dominates across that population, and so which motion a seller must build to serve it. The reading is a property of the buyers and not of any seller. Two sellers with different organizations read the same market and reach different answers on whether to pursue it, because what each pays to serve the vector differs.
 - **Workflow.** The procedure a product changes. A product is an encoded reference workflow, and Axiom II is read here: how far the buyer's version sits from the reference is the specificity of the investment.
-- **Seat.** A position in the buying coalition, defined by its relation to the workflow rather than by its occupant: who runs it, who owns it, who pays for it, who polices it. A seat holds a veto or an evaluation, is measured on something the change touches, and survives the person in it. The bargaining cost counts seats. A champion leaving is an occupant change on a stable seat, which is why the gap reopens without the cost changing.
+- **Seat.** A position in the buying coalition, defined by its relation to the workflow rather than by its occupant: who runs it, who owns it, who pays for it, who polices it. A seat holds a veto or an evaluation, is measured on something the change touches, and survives the person in it. The bargaining cost counts seats. A departure is one of two events. An occupant change on a stable seat reopens the gap and leaves the cost where it was. The dissolution of a seat, when the mandate leaves with the person, changes the coalition and the base cost with it.
 - **Deal.** One buyer's divergence from the reference workflow, with the seats their version carries. Axiom III is read here: what each party to each cost cannot verify about their own outcome, at signature and again at renewal.
 
 A market's name says how its buyers search and nothing about what they are buying. Which of those buyers a product can serve is decided one level down, at the workflow.
@@ -118,8 +118,8 @@ The second clause, that the pre-signature share of the cost rises with $k$, is s
 
 **Corollaries.**
 
-- **Governance form.** With frequency, specificity selects the arrangement that holds the deal after signature. Below the boundary, market terms at any frequency. Above it, a one-shot transaction takes a third-party safeguard because neither side will build relational machinery for a single event, a recurring one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes integration, which for the seller means the buyer builds it. The Mutual Implementation Plan is the bilateral form's instrument. [05-governance-forms.md](./05-governance-forms.md).
-- **Frequency is partly the seller's choice.** Restructuring a one-shot sale as a subscription converts a single-play game into a repeated one, which brings the cooperation condition $\delta_{discount} > (T - R)/(T - P)$ within reach (Axelrod 1984) and lets a specific transaction be governed bilaterally rather than through an arbitrator. This is the framework's account of why subscription changed what could be sold, not only when it was paid for. [05-governance-forms.md](./05-governance-forms.md) section 5.
+- **Governance form.** With frequency, specificity selects the arrangement that holds the deal after signature. Below the boundary, market terms at any frequency. Above it, a one-shot transaction takes a third-party safeguard because neither side will build relational machinery for a single event, a recurring one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes integration, which for the seller means the buyer builds it. Frequency is the field's reading of the buyer's cost of exit at the next boundary, which section 5 of that file names as the variable underneath. The Mutual Implementation Plan is the bilateral form's instrument. [05-governance-forms.md](./05-governance-forms.md).
+- **The buyer's exit cost is partly the seller's choice.** What governs a specific deal bilaterally is the buyer's ability to leave at low cost at a near boundary. Cheap exit is the buyer's credible punishment in the repeated game, it lowers the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$ (Axelrod 1984), and it preserves the option to stop that the buyer prices at signature. Subscription was the vehicle that made cheap exit commercially normal, and the framework does not claim it as the reason subscription won: hosting economies, revenue smoothing and accounting treatment explain most of that adoption. The claim kept is narrower. Lowering the buyer's exit cost widens the specificity a seller can govern without an arbitrator, and where exit is impossible, governance falls back to the trilateral form whatever the pricing model. [05-governance-forms.md](./05-governance-forms.md) section 5.
 - **Commitment must be staged.** When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). Gating the commitment converts one irreversible decision into a sequence, each taken with more information, and preserves a priced right to stop. Hold-up explains why commitments must be mutual. Option value explains why they must be staged. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the instrument.
 - **Every party holding exposed rent, or adjudicating it, needs a stake.** By the third standing assumption, a representative paid in full at signature plays the seller's side of a repeated game with a one-shot payoff, and a channel with no exposure to the outcome drifts from adjudication toward extraction. Vesting compensation on outcomes that survive signature is the seller's own safeguard. [05-governance-forms.md](./05-governance-forms.md) section 5.
 - **Who bears the specificity decides who needs the safeguard.** In a forward-deployed motion the seller sinks the specific investment before signature, and the exposure is the seller's. [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries that side of the transaction.
@@ -197,7 +197,7 @@ Everything the repository claims beyond the three axioms is derived from them, a
 | Addressable market is a property of the motion | I | [05-governance-forms.md](./05-governance-forms.md) §4 |
 | Boundary condition, $k > k_{threshold}$ and $F_{deployed} \sim k$ | II | [01-motions.md](./01-motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | Governance form from specificity and frequency | II | [05-governance-forms.md](./05-governance-forms.md) §2 |
-| Frequency as a commercial choice | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
+| Exit cost as a commercial choice, with frequency as its field reading | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
 | Staged commitment | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../02-research/real-options.md) |
 | Stakes for agents and adjudicators | II, with the third standing assumption | [05-governance-forms.md](./05-governance-forms.md) §5 |
 | Seller surplus and who bears the specificity | II | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
@@ -245,7 +245,7 @@ A deal closes when $S > 0$ at the moment of decision. It persists when the gover
 | II | Under-frictioned, pre-signature | Specific deal on a velocity motion, buyer builds internally |
 | II | Under-frictioned, post-signature | Specific deal on an easy commercial path, buyer signs, fails to deploy, churns |
 | II | Over-frictioned | Turnkey deal under heavy apparatus, buyer chooses a lighter competitor |
-| II | Mis-governed | Frequency ignored, wrong arrangement for the repetition pattern |
+| II | Mis-governed | Exit cost ignored, wrong arrangement for the boundary the buyer can leave at |
 | II | Defection | A party's weight on the future below threshold, hold-up on either side |
 | III | Cheap talk | Signal fails single crossing, no gap moves |
 | III | Misallocated friction | Receiver bears the filtering cost |
@@ -261,10 +261,11 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.3.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 2.4.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 2.4 | 2026-09 | Corrections after an external review. Axiom II's frequency corollary becomes the exit-cost corollary: what governs a specific deal bilaterally is the buyer's cost of exit at the next boundary, subscription was its vehicle and not the reason subscription won, and frequency is the field's reading of it. The seat definition gains two departure events, vacancy and dissolution. The third standing assumption is marked descriptive against Ghoshal and Moran. tce-empirical-record.md added to the research. No axiom changed. |
 | 2.3 | 2026-09 | Definitions added for market, workflow, seat and deal, the units at which the three axioms are read. Three corollaries added: cost to serve is directional (I), a product must name its workflow (II), pursuit is amortizability at market level (II). An organization-level mis-composed failure mode. Two register entries opened: the market reading has no instrument, and the components have no equilibrium statement. 08-from-axioms-to-instruments.md opened as the derivation of what a reader must be able to do, and integration-touchpoints.md added to the research. No axiom changed. |
 | 2.2 | 2026-09 | Restructure, step 6. Reference trim. The research files stop carrying quotes and statistics, which move to publishing and the provenance audit. The glossary term index loses every single-file term. The math file's argument about units is compressed. The retired derivation tiers are removed from every support line. No axiom changed. |
 | 2.1 | 2026-09 | Restructure, step 5. Coase's component names swept through theory prose, fit verification moved out of the search component and under specificity, the motions and governance files trimmed of material the Constitution now carries, and 07-open-questions.md opened as the register of under-developed areas. No axiom changed. |
@@ -291,8 +292,8 @@ The nineteen revisions made under the earlier name, and the prose entry for each
 
 **Academic backing** (per axiom):
 - Axiom I (Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [buying-center-dynamics.md](../02-research/buying-center-dynamics.md), [channel-collapse.md](../02-research/channel-collapse.md), [integration-touchpoints.md](../02-research/integration-touchpoints.md)
-- Axiom II (Specificity) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [process-misfit.md](../02-research/process-misfit.md), [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [real-options.md](../02-research/real-options.md), [fear-of-failure.md](../02-research/fear-of-failure.md), [integration-touchpoints.md](../02-research/integration-touchpoints.md)
-- Axiom III (Inflation) → [costly-signals.md](../02-research/costly-signals.md), [prospect-theory.md](../02-research/prospect-theory.md), [cfir.md](../02-research/cfir.md), [re-aim-framework.md](../02-research/re-aim-framework.md), [fear-of-failure.md](../02-research/fear-of-failure.md)
+- Axiom II (Specificity) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [process-misfit.md](../02-research/process-misfit.md), [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [real-options.md](../02-research/real-options.md), [fear-of-failure.md](../02-research/fear-of-failure.md), [integration-touchpoints.md](../02-research/integration-touchpoints.md), [tce-empirical-record.md](../02-research/tce-empirical-record.md)
+- Axiom III (Inflation) → [costly-signals.md](../02-research/costly-signals.md), [prospect-theory.md](../02-research/prospect-theory.md), [cfir.md](../02-research/cfir.md), [re-aim-framework.md](../02-research/re-aim-framework.md), [fear-of-failure.md](../02-research/fear-of-failure.md), [tce-empirical-record.md](../02-research/tce-empirical-record.md)
 
 **Field operationalization:**
 - Level, direction and frequency → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md)

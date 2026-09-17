@@ -2,14 +2,14 @@
 title: "From Axioms to Instruments"
 layer: theory
 status: active
-version: 1.0
+version: 1.1
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # From Axioms to Instruments
 
-**Version:** 1.0
+**Version:** 1.1
 **Purpose:** To derive, from the three axioms and the four definitions, what a reader must be able to do and in what order: determine the state of the three transaction costs, plan their minimization, and execute the plan with the buyer. This file names activities and outcomes. It names no tool. The instruments are built from it and trace to it, and nothing here is inherited from the practice it will replace.
 
 > [!IMPORTANT]
@@ -55,12 +55,12 @@ The unfilled fraction is a seller cost on all three columns. It reaches the buye
 
 ### 2.2 The deal reading
 
-A deal is one buyer's divergence from the reference workflow, with the seats their version carries. The deal reading emits the quantities the Constitution names: the level on base cost, which is specificity and which discovery does not move, the direction after amplification, which moves at every boundary, the frequency, and the three gaps.
+A deal is one buyer's divergence from the reference workflow, with the seats their version carries. The deal reading emits the quantities the Constitution names: the level on base cost, which is specificity and which discovery does not move, the direction after amplification, which moves at every boundary, the frequency, which is the field's reading of the buyer's exit cost at the next boundary, and the three gaps.
 
 Each gap is its own pair's uncertainty about its own outcome, per Axiom III, and this file states the bargaining gap at the level of the claim so that no instrument can inherit the older proxy.
 
 - **The search gap** is the buyer's, about the market. It is the share of what the buyer needs in order to rank the alternatives that they do not yet hold as evidence.
-- **The bargaining gap** is each seat's, about its own outcome. It is the share of seats whose occupant has not stated, on the record and with a definite sign, what the change does to the thing they are measured on. A seat the seller has mapped but whose occupant has not confirmed is an open gap, however good the seller's map. A stated hedge is the gap observed directly.
+- **The bargaining gap** is each seat's, about its own outcome. It is the share of seats whose occupant has not stated what the change does to the thing they are measured on, either as a reservation the arrangement can answer or as a confirmation that it costs them nothing. The sign is read from the statement. The statement is recorded as a reservation and its answer, never as a verdict on the person. A seat the seller has mapped but whose occupant has not confirmed is an open gap, however good the seller's map, and a stated hedge is the gap observed directly.
 - **The enforcement gap** is bilateral, the seller's about the buyer's environment and the buyer's about the seller's capability, and it is the one pair whose two halves are read separately and summed.
 
 ### 2.3 Definition works on the gaps
@@ -104,9 +104,9 @@ Five verbs on three costs. Each cell is an activity and the outcome it works tow
 | | **Search** (buyer against the market) | **Bargaining** (each seat against its own outcome) | **Enforcement** (seller and buyer against each other) |
 |---|---|---|---|
 | **Read** | Whether this buyer population can name the problem, enumerate its alternatives, compare them on published material, and be reached by this seller at all. Outcome: how much of the buyer's search cannot be resolved without a seller present. | The seats the workflow carries, how many can say no, whether a formal body sits over them, and how many occupants have stated their own exposure. Outcome: the size of the coalition and the share of it whose outcome is known to itself. | How far the buyer's workflow diverges from the reference, how many systems exchange data, how many procedures change, how many exception paths are undocumented, and how much of that either side has evidence for. Outcome: the specificity of the investment and both halves of the gap. |
-| **Map** | Define what the buyer is choosing between: the problem's boundary, the alternative set including build and do nothing, and the reference workflow the product speaks to. Outcome: the buyer can name the problem and locate the product inside the set. | For each seat, what the change does to the thing its occupant is measured on: budget, headcount, standing, control. Sign and size, including the casualty. Outcome: every seat named with its exposure, and the seller knows who loses. | The buyer's environment and workflow as it is: exception paths with volumes, integration points with schemas, the political map of who loses control. Outcome: seller ignorance closed, and the divergence from the reference known step by step. |
-| **Test** | Verifiable proof that travels without the seller: third-party comparison, reference architectures, produced outcomes a buyer can check alone. Outcome: the buyer ranks alternatives on evidence rather than claims. | Each occupant confirms their exposure on the record, and the objections are surfaced in a room built to hear them. Outcome: stated positions replaced by confirmed exposures, and variance visible rather than suppressed. | The seller proves capability in the buyer's environment at the seller's cost, and the buyer's skeptic attacks the plan before signature. Outcome: buyer uncertainty closed, product limits acknowledged in writing, failure modes named with owners. |
-| **Stage** | A path to the buyer that carries a stake: a channel, partner or consortium that loses something when a bad match passes. Where specificity is low, a trial that hands fit verification to the buyer. Outcome: the buyer can reach the seller, and whoever adjudicates between them bears consequences. | Written decision criteria and a decision sequence the coalition agrees to before the vendor decision, with the casualty's containment written in. Outcome: the coalition's decision is a sequence with owners rather than a late veto. | Mutual commitments sequenced into gates, each with a priced right to stop, and residual control allocated for the states nobody specified. Outcome: one irreversible decision becomes a series, and exposure is staged for whoever sinks the specific investment. |
+| **Map** | Define what the buyer is choosing between: the problem's boundary, the alternative set including build and do nothing, and the reference workflow the product speaks to. Outcome: the buyer can name the problem and locate the product inside the set. | For each seat, what the change does to the thing its occupant is measured on: budget, headcount, standing, control. Recorded as the occupant's reservation and what the arrangement will do about it. Outcome: every seat named with its exposure, and the seller knows whose arrangement has to change. | The buyer's environment and workflow as it is: exception paths with volumes, integration points with schemas, the political map of who loses control. Outcome: seller ignorance closed, and the divergence from the reference known step by step. |
+| **Test** | Verifiable proof that travels without the seller: third-party comparison, reference architectures, produced outcomes a buyer can check alone. Outcome: the buyer ranks alternatives on evidence rather than claims. | Each occupant confirms their reservation is stated as they mean it, and the reservations are heard together in a room built for them. Outcome: stated positions replaced by confirmed reservations, and variance visible rather than suppressed. | The seller proves capability in the buyer's environment at the seller's cost, and the buyer's skeptic attacks the plan before signature. Outcome: buyer uncertainty closed, product limits acknowledged in writing, failure modes named with owners. |
+| **Stage** | A path to the buyer that carries a stake: a channel, partner or consortium that loses something when a bad match passes. Where specificity is low, a trial that hands fit verification to the buyer. Outcome: the buyer can reach the seller, and whoever adjudicates between them bears consequences. | Written decision criteria and a decision sequence the coalition agrees to before the vendor decision, with each reservation's answer written in. Outcome: the coalition's decision is a sequence with owners rather than a late veto. | Mutual commitments sequenced into gates, each with a priced right to stop, and residual control allocated for the states nobody specified. Outcome: one irreversible decision becomes a series, and exposure is staged for whoever sinks the specific investment. |
 | **Maintain** | Keep the category from re-pooling: refresh the verifiable material as entrants arrive and the name drifts, and watch whether cheap signals are swamping costly ones. Outcome: the population can still rank, and the seller's rank is re-earned. | Re-read the seats at every occupant change, reorganization and budget cycle. Outcome: a new occupant states their exposure before the gap reopens into a stall, and a champion's departure is a seat event rather than a surprise. | Re-map the environment as staff, systems and workflow change, and re-earn credibility with delivered outcomes. Outcome: the gap stays closed, and the next renewal compares a mapped incumbent against an unmapped challenger. |
 
 **Three observations from filling the grid.**
@@ -127,7 +127,7 @@ The grid says what to do. Axiom III says who must be in the room when it is done
 | **Row** | An alternative the buyer must rule out, including build and do nothing | A seat | A workflow step |
 | **Lives at** | Market level. One per market, written before any deal, reused by every deal in it | Deal level. One per deal | Deal level. One per deal |
 | **Filled by** | The seller publishes it. The buyer can complete it alone, which is the point | The seller with each occupant, one at a time | Both parties, in the open |
-| **Done when** | The buyer has placed the product in the set on evidence and can reach the seller | Every seat has stated its exposure, and every loss is contained in writing | Every row matches the reference or carries a gated mitigation with an owner |
+| **Done when** | The buyer has placed the product in the set on evidence and can reach the seller | Every seat's reservation is written and answered in the arrangement | Every row matches the reference or carries a gated mitigation with an owner |
 
 **The spine.** The reference workflow, written once by the seller, is the row key of the enforcement ledger and the index of the other two. Each alternative in the search ledger is compared on which steps it covers. Each seat in the bargaining ledger is defined by which steps it runs, owns, pays for or polices. The three cross-reference by step without merging, and a change to the reference propagates to all three. A seller who has not written the reference workflow down cannot open any of the three, which is Axiom II's corollary that a product must name its workflow, applied before selling begins.
 
@@ -138,6 +138,8 @@ Typed this way, the fill fraction of an adjacent market is arithmetic: the share
 **Why one ledger fails.** Search content lives at the market and would be copied into every deal's file and drift there. And the seat ledger records exposure, which is different information from the step ledger's divergence, read by different people at different moments.
 
 **Every ledger is shared, and this is derived rather than chosen.** The gap a ledger tracks is a party's uncertainty about their own outcome, and only that party can close it. A search ledger the buyer cannot read alone has not travelled. A seat ledger whose occupant has not read their own row has confirmed nothing, and the Test cell has not happened. An enforcement ledger whose buyer column the seller filled alone is a map of the seller's guesses. So each ledger is addressed to the party whose uncertainty it tracks, and a ledger withheld from that party is not an instrument. Tact belongs in how a row is written, above all the casualty's, and the seller's private notes are a separate document that closes no gap.
+
+What the shared row carries is the reservation and the arrangement's answer to it, never a verdict on the occupant. The gap counts whether a seat's reservation is written and answered, so the ledger needs no minus sign against anyone. That is the design answer to the objection that buyers will not log political stakes on a seller's document: they are asked to write what they need, not what they fear, and the row exists to change the arrangement until they can say yes. It is also the cooperative reading of the third standing assumption, which [tce-empirical-record.md](../02-research/tce-empirical-record.md) sets against the critique that governing for opportunism produces it.
 
 **How the enforcement ledger grows.** It is the clearest case, and the other two follow its pattern.
 
@@ -151,7 +153,7 @@ Typed this way, the fill fraction of an adjacent market is arithmetic: the share
 
 The buyer sees the end state from the first meeting because the empty columns are visible. The empty cells are the seller's ignorance shown rather than hidden, and how many columns are filled before signature is how much of the cost was paid before signature, which is Axiom II's second clause made countable. The first gate in the Stage column is the minimum viable integration: the smallest set of touchpoints that lets the buyer verify value goes live first, and the later-phase types arrive as later gates.
 
-The seat ledger grows the same way with a seat per row: the seat and the steps it touches, then the occupant and what they are measured on, then the stated exposure with its sign, then the containment or the decision criteria the occupant has signed, then the re-statement when the occupant changes. The search ledger grows before the deal and is maintained at the market: the alternative, the steps it covers, the evidence that compares it, the path by which a buyer reaches it, and the entrants appended as the category drifts.
+The seat ledger grows the same way with a seat per row: the seat and the steps it touches, then the occupant and what they are measured on, then the reservation as the occupant states it, then the arrangement's answer and the decision criteria the occupant has signed, then the re-statement when the occupant changes. The search ledger grows before the deal and is maintained at the market: the alternative, the steps it covers, the evidence that compares it, the path by which a buyer reaches it, and the entrants appended as the category drifts.
 
 **Divergence after signature.** A buyer who moves away from the reference workflow after go-live raises their own specific investment, and with it the enforcement cost any challenger would face. This is the Maintain cell of the enforcement column, and [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7 sets its two conditions. The divergence must be the buyer's and disclosed, because an anticipated lock-in is priced at signature. And it is healthy only while the seller's own bond grows as fast as its temptation to exploit the position. Under those conditions it is a moat. Without them it is the extraction drift Axiom II names.
 
@@ -163,7 +165,7 @@ The plan is not a fourth document. It is the empty cells across the three ledger
 
 - **Ordered by direction.** Axiom I. The cells on the component that binds after amplification come first. A deal that reads bargaining-dominant works the seat ledger's empty cells before the step ledger's, however much the seller would rather run a demonstration.
 - **Bounded by level.** Axiom II. The level says how much apparatus the deal can carry, so it caps how many cells the seller fills before the cost of filling them exceeds what they save. Below the boundary the plan is empty and the buyer verifies by trying.
-- **Front-loaded by specificity.** Axiom II's second clause. The share of cells filled before signature rises with the level.
+- **Front-loaded by specificity.** Axiom II's second clause. The share of cells filled before signature rises with the level. It is a share and never the whole. The minimum viable integration goes live first and the rest is staged, and a plan that tries to resolve every cell before signature produces Axiom II's over-frictioned failure and the buyer fatigue the indecision research in [fear-of-failure.md](../02-research/fear-of-failure.md) describes.
 - **Checked on both sides.** The plan must leave the buyer's surplus positive at the moment of decision and the seller's surplus positive across the repetitions the frequency allows. A plan that closes the deal and cannot be recovered is the Structural one-shot case, and the answer is to restructure or decline rather than to run the plan lighter.
 - **Re-derived at every boundary.** Closing a gap rotates the direction, so the order of the remaining cells changes after each artifact lands. A plan whose order never changes is a plan in which nothing was learned.
 
@@ -180,7 +182,8 @@ The plan therefore has a cost the seller can read before committing to it. The c
 - **Whether Test is a distinct row for bargaining**, per section 4.
 - **Section 2.3 is a conjecture** with a stated falsifier and no test.
 - **The five touchpoint types are asserted general.** They are shown on three systems of record and tested on none.
-- **Equilibrium is not treated here.** [07-open-questions.md](./07-open-questions.md) item 25 records that the components have drift rates and no equilibrium statement, and the drift section of [01-motions.md](./01-motions.md) is where it belongs.
+- **Equilibrium is not treated here.** [07-open-questions.md](./07-open-questions.md) item 27 records that the components have drift rates and no equilibrium statement, and the drift section of [01-motions.md](./01-motions.md) is where it belongs.
+- **Whether buyers will write reservations on a shared instrument.** The seat ledger's first field test. An external review's strongest practical objection was that buying groups will not record internal stakes on a seller's document, and the reservation framing is the design answer until the field says otherwise.
 - **The instruments themselves.** This file derives what each must do. None yet exists in the form derived here.
 
 ---
@@ -192,4 +195,4 @@ The plan therefore has a cost the seller can read before committing to it. The c
 - [02-mathematical-models.md](./02-mathematical-models.md) — The functional forms behind the gaps the ledgers track.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side: cost to serve, amortization across repetitions, and the two conditions on post-signature divergence.
 - [05-governance-forms.md](./05-governance-forms.md) — What the Stage verb reallocates, and why recurrence is a base-lowering instrument.
-- [07-open-questions.md](./07-open-questions.md) — Items 2, 4, 6, 14, 18 and 25, which this file derives toward and does not close.
+- [07-open-questions.md](./07-open-questions.md) — Items 2, 4, 6, 14, 18, 27 and 28, which this file derives toward and does not close.

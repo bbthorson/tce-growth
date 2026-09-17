@@ -47,7 +47,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
-| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy.** Borrows $\lambda \approx 2.25$ (Tversky and Kahneman 1992) as an order-of-magnitude justification. The analogy crosses three boundaries without argument: individual to organizational, laboratory gamble to enterprise procurement, and dimensionless to denominated in annual contract value. Section 4 says what would replace it. |
+| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy.** Borrows $\lambda \approx 2.25$ (Tversky and Kahneman 1992) as an order-of-magnitude justification. The analogy crosses three boundaries without argument: individual to organizational, laboratory gamble to enterprise procurement, and dimensionless to denominated in annual contract value. Evidence against the transfer: List (2003, 2004) finds that market experience attenuates loss aversion and the endowment effect among experienced traders, so an experienced procurement organization may sit nearer risk neutrality than the anchor implies. Section 4 says what would replace it. |
 | Convexity exponent | — | 2 | **Chosen.** Convexity is structurally motivated and the exponent is not. Nothing in the framework distinguishes a square from any other convex form, and every argument built on the reduced form needs only convexity. Treat the square as the simplest convex shape rather than as a claim about curvature. |
 | Base friction growth rate | $b$ | measured per deal | **Named, not valued.** The derivation identifies $a$ with $b$. |
 | Technical weight | $w_t$ | 0.6 | **Chosen.** No source. |

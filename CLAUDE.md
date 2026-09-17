@@ -28,8 +28,8 @@ Key cross-file dependencies to know:
 
 The **research files** in `theory/02-research/` back specific axioms:
 - Axiom I (Composition) → `transaction-cost-economics.md`, `buying-center-dynamics.md`, `channel-collapse.md`, `integration-touchpoints.md`
-- Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`, `integration-touchpoints.md`
-- Axiom III (Inflation) → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`, `re-aim-framework.md`
+- Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`, `integration-touchpoints.md`, `tce-empirical-record.md`
+- Axiom III (Inflation) → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`, `re-aim-framework.md`, `tce-empirical-record.md`
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file. Before extending the theory, read `theory/01-foundation/07-open-questions.md`, which records where it is under-developed by axiom; an extension should land on a recorded gap or add one.
 

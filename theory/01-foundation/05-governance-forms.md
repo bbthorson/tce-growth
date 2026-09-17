@@ -2,14 +2,14 @@
 title: "Governance Forms"
 layer: theory
 status: active
-version: 1.0
+version: 1.1
 operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Governance Forms
 
-**Version:** 1.0
+**Version:** 1.1
 **Purpose:** To say what shape a commercial relationship should take, given what it costs to transact. The friction vector says which instruments a deal needs. This says what kind of arrangement should hold the two parties together once it closes, and when no arrangement will.
 
 ---
@@ -32,7 +32,7 @@ Specificity is the level under Axiom II. Uncertainty is the three component gaps
 
 ## 2. Four forms, selected by level and frequency
 
-Williamson's result is that specificity and frequency together select the governance structure, and that using the wrong one is expensive in a predictable direction.
+Williamson's result is that specificity and frequency together select the governance structure, and that using the wrong one is expensive in a predictable direction. Frequency is the field's reading of the variable underneath, the buyer's cost of exit at the next boundary, which section 5 names.
 
 | Level | Frequency | Governance form | What it looks like commercially |
 |---|---|---|---|
@@ -75,25 +75,25 @@ Addressable market is normally treated as a property of the product. Under Axiom
 
 ---
 
-## 5. Recurrence is a choice, and choosing it lowers the cost of governing specificity
+## 5. Exit cost is a choice, and lowering it lowers the cost of governing specificity
 
-This is the strategic claim the rest of the file assembles, and it is the framework's own rather than Williamson's.
+This is the strategic claim the rest of the file assembles, and it is the framework's own rather than Williamson's. Constitution 2.4 restated it, and section 7 records what the restatement gave up.
 
 A one-shot high-specificity transaction sits in trilateral governance, where safeguards have to come from outside the pair because neither party will build machinery for a single event. Third-party safeguards are expensive, slow, and adversarial by construction.
 
-A recurrent transaction of identical specificity sits in bilateral governance, where the safeguard is the next repetition. That is Axiom II's cooperation condition doing the work that an arbitrator would otherwise have to do, and it costs nothing per transaction once the relationship exists.
-
-**So the frequency of a transaction is not only a fact about the market. It is partly a decision by the seller, and it changes what the same deal costs to govern.**
+A recurrent transaction of identical specificity sits in bilateral governance, where the safeguard is the next repetition. What makes the repetition a safeguard is that the buyer can decline it. The buyer's ability to leave at low cost at a near boundary is the credible punishment in the repeated game. It lowers the seller's temptation payoff $T$ in the cooperation condition, and it preserves the option to stop that [real-options.md](../02-research/real-options.md) says the buyer prices at signature.
 
 $$\delta_{discount} > \frac{T - R}{T - P}$$
 
-Restructuring a one-shot sale as a subscription converts a single-play game into a repeated one, which raises both parties' weight on the future and brings the cooperation condition within reach. The usual account of why subscription pricing won is about revenue predictability and cash flow. Those are real and they are effects on the seller's income statement. This is a claim about the transaction itself: **subscription made high-specificity software governable without third-party machinery, and that is why it could be sold to buyers who would not have signed a fixed-scope build.**
+**So the variable underneath frequency is the buyer's cost of exit at the next boundary, and it is partly a decision by the seller.** A one-shot deal has no boundary. A recurrent deal has a boundary with cheap exit. A continuous deal has a boundary where exit is itself a project. A seller who lowers the buyer's exit cost, with short terms, termination for convenience, portable data or staged commitments, moves the same deal from the trilateral row to the bilateral one without changing its specificity.
 
-**What follows operationally.** Where a deal reads high-level and one-shot, the highest-leverage move is often not a better safeguard. It is to find a structure that makes the relationship recurrent, because that changes which governance form applies rather than making an expensive form cheaper.
+**What subscription did, and what it did not.** Subscription was the vehicle that made cheap exit commercially normal, because a term that renews is a term that can be declined. The framework does not claim it as the reason subscription won. Multi-tenant hosting, revenue smoothing and the treatment of software as operating expense explain most of that adoption (Choudhary 2007), and the highest-specificity software still runs on system integrators and multi-year terms, because where exit is impossible governance falls back to the trilateral row whatever the invoice says. The claim kept is narrower: lowering the buyer's exit cost widened the specificity a seller could govern without an arbitrator. An earlier version of this section claimed more, and [tce-empirical-record.md](../02-research/tce-empirical-record.md) records why it stopped.
+
+**What follows operationally.** Where a deal reads high-level and one-shot, the highest-leverage move is often not a better safeguard. It is to find a structure that gives the buyer a near, cheap exit, because that changes which governance form applies rather than making an expensive form cheaper. A multi-year auto-renewing subscription with no exit does not do this. A shorter term with a real right to leave does.
 
 **What follows for compensation.** The cooperation condition binds the seller's own agents as well as the seller. A representative paid in full at signature holds no stake in whether the relationship reaches its second repetition, so the seller's side of the repeated game is being played by someone with a one-shot payoff. Vesting commission on outcomes that survive signature brings that agent's $\delta_{discount}$ above the threshold: a clawback when the customer fails to launch, a safe harbor for risks nobody could have seen, and a share of expansion revenue for the ones who did the job. This matters beyond the Structural deal it protects, because the person choosing the motion is otherwise an adjudicator with no exposure to the churn a misread vector produces. The framework carried this as a comp plan template until 2026-09. The template is gone and the claim stays.
 
-**What would falsify this.** If categories that moved from perpetual licence to subscription showed no change in the specificity of deals they could close, only in revenue timing, the claim is wrong. The prediction is that the reachable region of the friction space widened, and that is observable in the deals that became closeable rather than in the income statement.
+**What would falsify this.** At equal price and specificity, deals offering cheap exit at a near boundary should close where multi-year auto-renewing terms do not, and the reachable region of the friction space should widen with the exit right rather than with the pricing model. If close rates do not move with exit cost when the pricing model is held constant, the claim is wrong.
 
 ---
 
@@ -105,7 +105,7 @@ The framework now emits three things about a deal and they are routinely confuse
 |---|---|---|
 | **Level** | How much apparatus does this deal need? | Nothing during the cycle. It is a property of the deal. |
 | **Direction** | Which instruments, of the apparatus it needs? | Discovery. Every closed gap rotates it. |
-| **Governance form** | What shape should the arrangement take after signature, and can the apparatus be paid for? | Frequency, which is partly a commercial choice rather than a finding. |
+| **Governance form** | What shape should the arrangement take after signature, and can the apparatus be paid for? | The buyer's exit cost at the next boundary, read as frequency, and partly a commercial choice rather than a finding. |
 
 **Level says what the deal needs and frequency says whether it can be afforded.** A one-shot deal at level 22 needs the full implementation chain and cannot amortize it over anything. That is the second decline condition in the [Deal Triage Calculator](../../practice/deal-triage-calculator.md), stated in its proper terms, and it is the case where declining is correct and running a lighter version is not.
 
@@ -114,8 +114,9 @@ The framework now emits three things about a deal and they are routinely confuse
 ## 7. What this does not settle
 
 - **Where the continuous boundary sits.** The fourth row says unified governance eventually wins on rising specificity in a continuous relationship. It does not say at what level, and there is no instrument that reads it. A seller currently learns they crossed it when the buyer announces a platform team.
-- **Whether frequency is three readings or a continuum.** The three readings are chosen for field use. Nothing argues that the boundaries between them are real rather than convenient.
-- **Whether the recurrence claim survives contact with a category that never had a one-shot form.** Software sold as a subscription from the beginning offers no before-and-after, so the falsification test in section 5 only runs on categories that made the transition.
+- **Where the thresholds on exit cost sit.** Section 5 names the variable under the three frequency readings. The boundaries between one-shot, recurrent and continuous are still chosen, and nothing places them on the exit-cost scale.
+- **Whether the exit-cost claim survives a category that never had a one-shot form.** Software sold as a subscription from the beginning offers no before-and-after on the pricing model, so the test in section 5 has to hold pricing constant and vary the exit right inside such a category.
+- **What the restatement gave up.** Until Constitution 2.4 this section claimed that subscription won because it made specific software governable. The external review recorded in [tce-empirical-record.md](../02-research/tce-empirical-record.md) showed the adoption story belongs to hosting economies and accounting, and the section now claims only the effect on governability.
 - **How governance form interacts with direction.** The forms are selected by level and frequency. Whether a consensus-dominant deal wants a different safeguard structure from an implementation-dominant one of identical level is untested, and there is reason to think it does: the parties who need safeguarding are not the same parties.
 
 ---
