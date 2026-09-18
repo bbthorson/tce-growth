@@ -14,7 +14,7 @@ Two properties of that cost structure carry the decision.
 
 The named motions are regions of that space rather than competing philosophies. A deal whose cost sits in finding and comparing is a Sales-Led deal. One whose cost is small on every axis is Product-Led. One whose cost sits in installation is Implementation-Led. One whose cost sits in getting the buyer's own people to agree has no established playbook at all, which is a finding rather than an omission. Choosing between Turnkey, search-led and implementation-led as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
 
-Three axioms carry the argument, each stated at the level where a seller meets it. At the market level, every deal carries three costs beyond price, search, bargaining and enforcement, and the one that binds selects the motion. At the workflow level, the more specific the investment, the more a deal costs to transact and the more of that cost must be paid before signature. At the deal level, each cost is inflated by what the parties to it cannot verify about their own outcome, and the inflation rebuilds unless it is maintained.
+Three axioms carry the argument, each stated at the level where a seller meets it. At the market level, every deal carries three costs beyond price, search, bargaining and enforcement, and the one that binds selects the motion. At the workflow level, the more specific the investment, the more a deal costs to transact and the more of that cost must be allocated before signature. At the deal level, each cost is inflated by what the parties to it cannot verify about their own outcome, and the inflation rebuilds unless it is maintained.
 
 Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
@@ -84,7 +84,7 @@ Statements below are canonical. If this table and the [Constitution](./theory/01
 | Axiom | Level | Statement |
 |---|---|---|
 | **I. Law of Transaction Cost Composition** | Market | Every deal carries three costs beyond price, search, bargaining and enforcement, and the one that binds selects the motion. |
-| **II. Law of Asset Specificity** | Workflow | The more specific the investment, the more a deal costs to transact, and the more of that cost must be paid before signature. |
+| **II. Law of Asset Specificity** | Workflow | The more specific the investment, the more a deal costs to transact, and the more of that cost must be allocated before signature. |
 | **III. Law of Uncertainty Inflation** | Deal | Each cost is inflated by what the parties to it cannot verify about their own outcome, and the inflation rebuilds over time unless it is maintained. |
 
 The field calls the bargaining cost *consensus* and the enforcement cost *implementation*, and the notation keeps those subscripts.
@@ -108,5 +108,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 2.4 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 3.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-09-15

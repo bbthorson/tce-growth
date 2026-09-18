@@ -160,7 +160,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | Term | Identifier | Canonical source |
 |---|---|---|
 | **Market level** | Where a seller meets the category. Which cost binds, and therefore which motion. Axiom I. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Workflow level** | Where a seller meets the buyer's operation. How specific the investment is, how much apparatus that needs, and when it must be spent. Axiom II. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Workflow level** | Where a seller meets the buyer's operation. How specific the investment is, how much apparatus that needs, and how much of its allocation must be settled before signature. Axiom II. | [Constitution, Part I](./00-tcg-constitution.md) |
 | **Deal level** | Where a seller meets the parties. What each cannot verify about their own outcome, before signature and again at renewal. Axiom III. | [Constitution, Part I](./00-tcg-constitution.md) |
 
 ### The four units

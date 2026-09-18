@@ -2,14 +2,14 @@
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
-version: 1.2
+version: 1.3
 operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.2
+**Version:** 1.3
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
 The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
@@ -127,6 +127,8 @@ Switching cost is a **lock-in** mechanism, and lock-in raises the seller's tempt
 The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../02-research/real-options.md) says that option carries real value. So switching cost raises $\Delta_A$ and $y$ before the seller has delivered anything.
 
 **Switching cost is a liability at signature and an asset at renewal.** Any account of it that carries only one sign is describing half the mechanism.
+
+The buyer's exit has the same two signs. A cheap exit for the buyer reads as protection at signature and is a hold-up hazard for the seller at every boundary after it, because the seller's specific investment is sunk and the buyer's is not yet. That is why one-sided termination for convenience does not govern a specific deal, and why revenue-recognition rules truncate the recognizable term of such a contract to its notice period: the accounting treats the commitment the way the economics do.
 
 ### 7.2 What actually defends the position
 

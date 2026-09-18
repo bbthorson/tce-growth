@@ -18,7 +18,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The framework makes two kinds of claim and they carry very different weight.
 
-**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion. Specificity sets the level, the boundary, and how much of the cost must be paid before signature. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
+**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion. Specificity sets the level, the boundary, and how much of the cost must be allocated before signature. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
 
 **Parameters** say how much. Every one of them is a reasoned starting value. None is fitted to booked deal data.
 

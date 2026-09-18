@@ -18,6 +18,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Abstract.** This is the empirical evidence behind the Fear Economy thesis: documented failure rates, regret data, and "No Decision" statistics that explain why buyers default to inaction. Project success rates have stayed low for three decades (69% of projects were challenged or failed in the 2020 CHAOS data, against 83.8% in the 1994 baseline); 56% of buyers regret recent purchases (Gartner); 40–60% of qualified pipelines die in "No Decision" — and 56% of that is *FOMU* (Fear of Messing Up), not status quo preference. The Standish/McKinsey/JOLT corpus together provides the quantitative case that buyer risk-aversion is rational, not pathological, and explains why generic FOMO sales tactics backfire 84% of the time on indecisive buyers.
 
+> [!WARNING]
+> **The CHAOS figures below measure estimation accuracy, not delivery failure.** Eveleens and Verhoef (2010, *IEEE Software* 27(1)) and Jørgensen and Moløkken-Østvold (2006) show that Standish counts a project as challenged whenever it misses its initial estimate, ignores underruns, samples by self-selection, and has declined to release its data. Cite them as evidence that buyers *believe* projects fail, which is what the Fear Economy thesis needs, and not as failure rates. The [citation audit](./audits/citation-provenance-audit.md) carries the validity note.
+
 **Key claims:**
 - Project success rates have never cleared 40% in three decades of CHAOS tracking: 16.2% in 1994, 37% in 2012, 31% in 2020 (Standish).
 - Roughly half of projects become "zombies": operational but over budget and under-delivering. Standish counted 52.7% challenged in 1994 (with 189% average cost overruns) and 50% in 2020.

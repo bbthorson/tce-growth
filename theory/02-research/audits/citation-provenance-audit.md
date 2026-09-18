@@ -29,6 +29,8 @@ status: active
 | Later-year rates: 37/42/21 (2012), 31/50/19 (2020) | [fear-of-failure.md](../fear-of-failure.md), this audit | Standish Group, CHAOS research (2012, 2020) | **Primary named.** Repo links only summaries ([OpenCommons](https://opencommons.org/CHAOS_Report_on_IT_Project_Outcomes)). The recent reports are paywalled. |
 | Success by company size: 9% large, 16.2% medium, 28% small | this audit | Standish Group, *CHAOS Report* (1994) | **Primary linked.** Rehosted copy: [ResearchGate](https://www.researchgate.net/publication/263849222_The_Chaos_Report). |
 
+**Validity note (2026-09).** Every CHAOS row above keeps its provenance status and gains a validity caveat. Eveleens and Verhoef (2010, *IEEE Software* 27(1), 30–36) and Jørgensen and Moløkken-Østvold (2006) show that Standish's success definition measures conformance to the initial estimate rather than delivered value, ignores underruns, rests on self-selected surveys, and that the underlying data has not been released for replication. Cite these figures as what buyers believe about project risk, which is what the Fear Economy thesis uses them for. Do not cite them as failure rates.
+
 ## Large-scale IT projects (McKinsey and University of Oxford)
 
 | Statistic | Cited in | Primary source | Status |

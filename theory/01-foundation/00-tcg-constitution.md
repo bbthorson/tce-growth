@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 2.4
+version: 3.0
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 2.4
+**Version:** 3.0
 **Purpose:** To state the three claims from which everything else in this repository derives, each at the level where a seller meets it, each producing a decision, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -49,7 +49,7 @@ Each axiom is stated at the level where a seller meets it, and each produces one
 | Axiom | Level | Statement | Decision it produces |
 |---|---|---|---|
 | **I. Law of Transaction Cost Composition** | **Market** | Every deal carries three costs beyond price, search, bargaining and enforcement, and the one that binds selects the motion. | Which instruments to run |
-| **II. Law of Asset Specificity** | **Workflow** | The more specific the investment, the more a deal costs to transact, and the more of that cost must be paid before signature. | How much apparatus, when to spend it, what arrangement holds it, whether to decline |
+| **II. Law of Asset Specificity** | **Workflow** | The more specific the investment, the more a deal costs to transact, and the more of that cost must be allocated before signature. | How much apparatus, when to spend it, what arrangement holds it, whether to decline |
 | **III. Law of Uncertainty Inflation** | **Deal** | Each cost is inflated by what the parties to it cannot verify about their own outcome, and the inflation rebuilds over time unless it is maintained. | What to prove, in what order, and what to re-prove at renewal |
 
 **The axioms are numbered in the order a seller meets them, and the second is the gate.** A seller encounters a market before a buyer's workflow and a workflow before a deal, so the numbering follows that path. Williamson's result is that specificity is the master variable: when the investment is not specific, the buyer can verify by trying and walk away at no cost, market terms hold, and the other two readings barely matter. Uncertainty and frequency start to bite only once specificity is present. Read the three in order, and treat Axiom II as the test that decides whether the rest applies.
@@ -96,15 +96,17 @@ Two properties of that object carry the decision. Its **direction**, $\hat{\math
 
 ### Axiom II — The Law of Asset Specificity
 
-> **The more specific the investment, the more a deal costs to transact, and the more of that cost must be paid before signature.**
+> **The more specific the investment, the more a deal costs to transact, and the more of that cost must be allocated before signature.**
 
-*Plain English: when the thing being bought only works here, for this buyer, the deal is expensive, and whoever is left holding it if the deal dies needs to see the risk resolved before they sign.*
+*Plain English: when the thing being bought only works here, for this buyer, the deal is expensive, and whoever is left holding it if the deal dies needs to see who bears the risk, and when, settled before they sign.*
 
 *Origin: Williamson (1979, 1985). Specificity creates exposure, and exposure demands safeguards written before the investment is sunk.*
 
 **Mechanism.** An investment is specific when it loses value outside this relationship. Once it is sunk, the party who made it can be held up, because the other side can extract the difference between what the investment is worth here and what it is worth anywhere else. Klein, Crawford and Alchian (1978) named that difference the appropriable quasi-rent and established that the exposure follows the investment rather than the invoice: whoever sinks the specific capital is the exposed party, buyer or seller.
 
 In a software deal the buyer's post-signature cost has two halves, and the axiom's second clause rests on the distinction. One half is policing the seller's performance, which is enforcement in Coase's sense, and a contract can remedy it. The other half is the buyer's own adaptation, the workflows rewired and the integration built, and no clause against the seller recovers it because the buyer's investment is already gone. That second half is the fear that kills specific deals. It is not a fear that the seller will fail to perform. It is a fear of being left holding the investment, and the only thing that assuages it before signature is a process the buyer can inspect and a commitment that stages the exposure. Williamson (1983) calls these credible commitments, and they are ex ante by construction.
+
+What can be settled before signature is the allocation, and not the adaptation itself. Under uncertainty, parties write deliberately incomplete contracts and adapt after signature (Crocker and Reynolds 1993, Bajari and Tadelis 2001), and the misfits that decide whether a system is used, in roles, controls and culture, surface only in use (Strong and Volkoff 2010). So the share of the arrangement settled before signature rises with specificity, who bears which adaptation risk, staged how, with what right to stop, while the share of the work done before signature can fall as uncertainty rises. Where the specification is static and the cost of change steep, as in capital projects, the two coincide and front-end definition pays directly. Where it is not, discovery cannot reach what only use reveals, and forcing it produces the over-frictioned failure. [incomplete-contracts.md](../02-research/incomplete-contracts.md) carries the evidence.
 
 What governance allocates is residual control (Grossman and Hart 1986, Hart and Moore 1990). Contracts on specific transactions are incomplete as a structural matter, so states arise that nobody specified. What governs those states is the pre-agreed allocation of the right to decide, and a party who expects to be held up in them declines to sink the investment at all. That is why more legal review does not move a stalled specific deal.
 
@@ -114,12 +116,12 @@ $$k = \lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{implementatio
 
 The boundary condition is $k > k_{threshold}$, separating Structural deals from Turnkey ones, and $F_{deployed} \sim k$, requiring the friction the seller deploys to scale with the specificity it manages. The threshold is chosen and [06-calibration.md](./06-calibration.md) says so.
 
-The second clause, that the pre-signature share of the cost rises with $k$, is stated here in prose. The equation in Part III is a snapshot at signature and does not carry time, and the claim is deliberately left as a derivation beneath the axiom rather than a term inside the model until there is a reason to fit one. The [Friction Efficiency Index](../../practice/friction-efficiency-index.md) measures it in retrospect.
+The second clause, that the share of the arrangement settled before signature rises with $k$, is stated here in prose. The equation in Part III is a snapshot at signature and does not carry time, and the claim is deliberately left as a derivation beneath the axiom rather than a term inside the model until there is a reason to fit one. The [Friction Efficiency Index](../../practice/friction-efficiency-index.md) measures the pre-signature share of spend in retrospect, which after version 3.0 is one observable of the clause and not the clause itself.
 
 **Corollaries.**
 
-- **Governance form.** With frequency, specificity selects the arrangement that holds the deal after signature. Below the boundary, market terms at any frequency. Above it, a one-shot transaction takes a third-party safeguard because neither side will build relational machinery for a single event, a recurring one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes integration, which for the seller means the buyer builds it. Frequency is the field's reading of the buyer's cost of exit at the next boundary, which section 5 of that file names as the variable underneath. The Mutual Implementation Plan is the bilateral form's instrument. [05-governance-forms.md](./05-governance-forms.md).
-- **The buyer's exit cost is partly the seller's choice.** What governs a specific deal bilaterally is the buyer's ability to leave at low cost at a near boundary. Cheap exit is the buyer's credible punishment in the repeated game, it lowers the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$ (Axelrod 1984), and it preserves the option to stop that the buyer prices at signature. Subscription was the vehicle that made cheap exit commercially normal, and the framework does not claim it as the reason subscription won: hosting economies, revenue smoothing and accounting treatment explain most of that adoption. The claim kept is narrower. Lowering the buyer's exit cost widens the specificity a seller can govern without an arbitrator, and where exit is impossible, governance falls back to the trilateral form whatever the pricing model. [05-governance-forms.md](./05-governance-forms.md) section 5.
+- **Governance form.** With frequency, specificity selects the arrangement that holds the deal after signature. Below the boundary, market terms at any frequency. Above it, a one-shot transaction takes a third-party safeguard because neither side will build relational machinery for a single event, a recurring one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes integration, which for the seller means the buyer builds it. The Mutual Implementation Plan is the bilateral form's instrument. [05-governance-forms.md](./05-governance-forms.md).
+- **Frequency is partly the seller's choice, and what it buys is mutual sanction.** A recurrent transaction lets each party sanction the other at the next boundary, and the sanction is credible only when both hold exposure there: the buyer's non-renewal against the seller's delivery commitments, price caps and penalties. Williamson's term is the hostage, and credible commitments are mutual or they are not commitments. A one-sided cheap exit for the buyer does not govern a specific deal. It hands the seller's sunk investment to the buyer to hold up (MacLeod and Malcomson 1989), which is why version 2.4's exit-cost reading of this corollary was withdrawn. Restructuring a one-shot sale as a recurring one brings the cooperation condition $\delta_{discount} > (T - R)/(T - P)$ within reach (Axelrod 1984) when the seller can amortize the apparatus across repetitions and both sides carry a stake at each one. Subscription was one vehicle for recurrence, and the framework does not claim it as the reason subscription won. [05-governance-forms.md](./05-governance-forms.md) section 5.
 - **Commitment must be staged.** When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). Gating the commitment converts one irreversible decision into a sequence, each taken with more information, and preserves a priced right to stop. Hold-up explains why commitments must be mutual. Option value explains why they must be staged. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the instrument.
 - **Every party holding exposed rent, or adjudicating it, needs a stake.** By the third standing assumption, a representative paid in full at signature plays the seller's side of a repeated game with a one-shot payoff, and a channel with no exposure to the outcome drifts from adjudication toward extraction. Vesting compensation on outcomes that survive signature is the seller's own safeguard. [05-governance-forms.md](./05-governance-forms.md) section 5.
 - **Who bears the specificity decides who needs the safeguard.** In a forward-deployed motion the seller sinks the specific investment before signature, and the exposure is the seller's. [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries that side of the transaction.
@@ -144,7 +146,7 @@ The second clause, that the pre-signature share of the cost rises with $k$, is s
 | Component | Whose uncertainty, about what | What resolves it |
 |---|---|---|
 | Search | The buyer's, about the market. Which alternatives exist and whether this one fits. | Artifacts that travel without the seller: category definition, reference architectures, verifiable proof, a channel with a stake |
-| Bargaining | Each stakeholder's, about their own outcome. What the change does to their budget, headcount and standing. | Mapping who loses what, and surfacing the objections in a room built to hear them |
+| Bargaining | Each stakeholder's, about their own outcome. What the change does to their budget, headcount and standing. | Mapping who loses what, one seat at a time, and answering it in the arrangement. Objections are collected apart before any room convenes, because a room suppresses what only one member knows |
 | Enforcement | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability. | Discovery that maps the environment, and demonstrations the seller pays to produce |
 
 Only the third pair is buyer against seller, which is why an instrument built for that pair does not move the other two. The second pair is not an information gap between stakeholders that proof could close. Two stakeholders with perfect knowledge of each other and opposed interests still disagree. What proof can close is each stakeholder's uncertainty about their own exposure, and that is the inflation this axiom names on the bargaining cost.
@@ -197,7 +199,7 @@ Everything the repository claims beyond the three axioms is derived from them, a
 | Addressable market is a property of the motion | I | [05-governance-forms.md](./05-governance-forms.md) §4 |
 | Boundary condition, $k > k_{threshold}$ and $F_{deployed} \sim k$ | II | [01-motions.md](./01-motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | Governance form from specificity and frequency | II | [05-governance-forms.md](./05-governance-forms.md) §2 |
-| Exit cost as a commercial choice, with frequency as its field reading | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
+| Frequency as a commercial choice, buying mutual sanction | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
 | Staged commitment | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../02-research/real-options.md) |
 | Stakes for agents and adjudicators | II, with the third standing assumption | [05-governance-forms.md](./05-governance-forms.md) §5 |
 | Seller surplus and who bears the specificity | II | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
@@ -220,7 +222,7 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - \sum_{k} 
 
 - The value bracket, $OC_{\text{switching}}$, is the buyer's opportunity cost of staying where they are, decaying by the second standing assumption.
 - The sum runs over three components because of **Axiom I**, and its direction selects the motion.
-- The size of each $F_k$, and the level they sum to, is set by specificity under **Axiom II**, which also decides how much of the sum must be paid before signature and what arrangement holds it afterward.
+- The size of each $F_k$, and the level they sum to, is set by specificity under **Axiom II**, which also decides how much of the arrangement governing it must be settled before signature and what form holds it afterward.
 - The multiplier on each component is **Axiom III**, and $\hat{\Delta}_k(t)$ carries its second clause.
 - $y = a\hat{\Delta}_A^2 + c$ is the same cost collapsed to a scalar, in annual contract values.
 
@@ -230,7 +232,7 @@ A deal closes when $S > 0$ at the moment of decision. It persists when the gover
 
 1. **Is the investment specific?** If not, stop applying apparatus. Market terms, and let the buyer verify by trying. (Axiom II, the gate.)
 2. **If it is, which cost binds after amplification?** Aim the motion there and nowhere else. A component that dominated at open may not dominate now. (Axiom I.)
-3. **How much of the cost has been paid before signature, and what will hold the deal after?** A specific one-shot deal is the case to escalate or restructure, not to run lighter. (Axiom II.)
+3. **How much of the arrangement was settled before signature, and what will hold the deal after?** A specific one-shot deal is the case to escalate or restructure, not to run lighter. (Axiom II.)
 4. **Which pair cannot verify what, and is it rebuilding faster than discovery closes it?** A departed champion lands in the bargaining gap and no amount of technical proof reaches it. (Axiom III.)
 5. **Does the buyer accept the case and still defer?** They are pricing the right to wait. Stage the commitment rather than re-arguing the return. (Axiom II with III.)
 6. **Is value decaying faster than the gaps close?** Name a catalyst or close faster. (Second standing assumption.)
@@ -245,7 +247,7 @@ A deal closes when $S > 0$ at the moment of decision. It persists when the gover
 | II | Under-frictioned, pre-signature | Specific deal on a velocity motion, buyer builds internally |
 | II | Under-frictioned, post-signature | Specific deal on an easy commercial path, buyer signs, fails to deploy, churns |
 | II | Over-frictioned | Turnkey deal under heavy apparatus, buyer chooses a lighter competitor |
-| II | Mis-governed | Exit cost ignored, wrong arrangement for the boundary the buyer can leave at |
+| II | Mis-governed | Frequency ignored or sanction one-sided, wrong arrangement for the repetition pattern |
 | II | Defection | A party's weight on the future below threshold, hold-up on either side |
 | III | Cheap talk | Signal fails single crossing, no gap moves |
 | III | Misallocated friction | Receiver bears the filtering cost |
@@ -261,10 +263,11 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.4.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 3.0.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 3.0 | 2026-09 | Axiom II's second clause changes one word, after three adversarial reviews. The cost of a specific deal must be *allocated* before signature, no longer *paid*: what rises with specificity is the share of the arrangement settled before signing, who bears which adaptation risk and staged how, while the work done before signing can fall as uncertainty rises (Crocker and Reynolds, Bajari and Tadelis, Strong and Volkoff). The exit-cost corollary of 2.4 is withdrawn, because one-sided cheap exit hands the seller's sunk investment to the buyer, and the frequency corollary returns with mutual sanction as its mechanism. Axiom III's bargaining row collects objections apart before any room convenes. First axiom wording change since 2.0. |
 | 2.4 | 2026-09 | Corrections after an external review. Axiom II's frequency corollary becomes the exit-cost corollary: what governs a specific deal bilaterally is the buyer's cost of exit at the next boundary, subscription was its vehicle and not the reason subscription won, and frequency is the field's reading of it. The seat definition gains two departure events, vacancy and dissolution. The third standing assumption is marked descriptive against Ghoshal and Moran. tce-empirical-record.md added to the research. No axiom changed. |
 | 2.3 | 2026-09 | Definitions added for market, workflow, seat and deal, the units at which the three axioms are read. Three corollaries added: cost to serve is directional (I), a product must name its workflow (II), pursuit is amortizability at market level (II). An organization-level mis-composed failure mode. Two register entries opened: the market reading has no instrument, and the components have no equilibrium statement. 08-from-axioms-to-instruments.md opened as the derivation of what a reader must be able to do, and integration-touchpoints.md added to the research. No axiom changed. |
 | 2.2 | 2026-09 | Restructure, step 6. Reference trim. The research files stop carrying quotes and statistics, which move to publishing and the provenance audit. The glossary term index loses every single-file term. The math file's argument about units is compressed. The retired derivation tiers are removed from every support line. No axiom changed. |
