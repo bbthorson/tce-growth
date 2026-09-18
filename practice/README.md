@@ -18,13 +18,14 @@ The three levels are the Constitution's index: each axiom is stated at the level
 
 | Level | Your question | Instrument |
 |---|---|---|
-| **Market** | How long is this deal's friction vector, and where does it point? | [Deal Triage Calculator](./deal-triage-calculator.md) |
+| **Market** | Which cost dominates across this buyer population, and are we built to pay it? | [00. The Market Reading](./00-market-reading.md) |
+| **Deal** | How long is this deal's friction vector, and where does it point? | [Deal Triage Calculator](./deal-triage-calculator.md) |
 | **Workflow** | What do I not yet know about their environment, and how specific is the investment? | [01. Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) |
 | **Deal** | How does this implementation fail? | [02. Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) |
 | **Deal** | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) |
 
-The four artifacts in [`implementation-motion/`](./implementation-motion/) run in order and each gates the next. They are the implementation component's instruments. The Deal Triage Calculator decides whether the implementation component is what this deal is paying for. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
+The Market Reading is the first instrument built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) rather than inherited from earlier practice, and the deal reading, the plan and the three ledgers will follow it in phase order. The four artifacts in [`implementation-motion/`](./implementation-motion/) run in order and each gates the next. They are the implementation component's instruments. The Deal Triage Calculator decides whether the implementation component is what this deal is paying for. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
 
 ---
 

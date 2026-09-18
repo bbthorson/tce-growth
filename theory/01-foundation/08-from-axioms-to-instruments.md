@@ -183,7 +183,7 @@ The plan therefore has a cost the seller can read before committing to it. The c
 - **The five touchpoint types are asserted general.** They are shown on three systems of record and tested on none.
 - **Equilibrium is not treated here.** [07-open-questions.md](./07-open-questions.md) item 27 records that the components have drift rates and no equilibrium statement, and the drift section of [01-motions.md](./01-motions.md) is where it belongs.
 - **Whether occupants will state reservations one to one at the rate the metric needs.** An external review established that they will not write personal exposure on a shared instrument, which is why the bargaining ledger split. Whether they will say it privately often enough for the gap to be counted, and whether the shared arrangement record gets ratified, is the seat map's first field test.
-- **The instruments themselves.** This file derives what each must do. None yet exists in the form derived here.
+- **The instruments themselves.** This file derives what each must do. [The Market Reading](../../practice/00-market-reading.md) is the first built from it. The deal reading, the plan and the three ledgers do not yet exist in the form derived here.
 
 ---
 

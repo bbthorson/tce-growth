@@ -81,6 +81,16 @@ Every input to this instrument is a count of a named thing. Everything in this t
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |
 | Dominance threshold | 0.50 | **Chosen.** A discontinuity doing real work: 0.49 and 0.51 route differently on no argument. Section 5 records it as a known defect. |
 
+### 3.2a The market reading ([The Market Reading](../../practice/00-market-reading.md))
+
+The reading reuses every band in section 3.2 and adds one structural count of its own.
+
+| Parameter | Value | Provenance |
+|---|---|---|
+| Ledger rows | 12 | **Chosen.** The rows are argued from the three components and frequency. The count of them is an artifact of that argument, and the unfilled fraction is a share of it. |
+| Unfilled-fraction threshold | none | **Named, not valued.** The fraction is reported. A line needs data from populations entered and populations declined. |
+| Missing-capability range | 0 to 4 per component | **Convention.** The four activities below Read in the activity grid. |
+
 ### 3.3 The asymmetry scorecard ([Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md))
 
 | Parameter | Value | Provenance |
