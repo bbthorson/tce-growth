@@ -19,7 +19,7 @@ Four Python checks pass on the current head. Vale is not installed in the sessio
 | `publishing/style-references/` | 10 | 14,600 | verbatim | Kept by design |
 | `models/`, `tools/` | 2 READMEs | 2,600 | unchanged | Fine |
 
-**The headline.** The last restructure aimed at theory, and theory landed on target. Practice did not. It is now the heaviest live layer in the repo, and the 5,400 words inside `practice/implementation-motion/` are the oldest text in the repository by voice and the only text that still disagrees with the axioms. Section 4 covers that.
+**The headline.** The last restructure aimed at theory, and theory landed on target. Practice did not. It is now the heaviest live layer in the repo, and 3,300 of the 5,400 words inside `practice/implementation-motion/` are the oldest text in the repository by voice and the only text that still disagrees with the axioms. Section 4 covers that.
 
 Per-file, in the two layers that matter:
 
@@ -105,9 +105,11 @@ The bullets are roughly 1,500 words of the Constitution's 4,678, and they are th
 
 ---
 
-## 4. The practice layer did not come along
+## 4. Part of the practice layer did not come along
 
-`practice/` was flattened and relinked in the restructure. Its four implementation artifacts were moved and never rewritten, so they pass every check while describing a version of the theory that no longer exists. This is the largest correctness problem in the repo and it is invisible to the tooling for a reason section 4.4 gives.
+`practice/` was flattened and relinked in the restructure. Three of its four implementation artifacts were moved and never rewritten, so they pass every check while describing a version of the theory that no longer exists. This is the largest correctness problem in the repo and it is invisible to the tooling for a reason section 4.4 gives.
+
+**The affected set is `01-discovery-contextual-blueprint.md`, `02-validation-red-team-protocol.md` and `03-closing-mutual-implementation-plan.md`, and it is not the whole directory.** `04-sustaining-adoption-review.md` was rewritten during the restructure and is clean: it uses the locked numbering correctly ("Axiom II's governance corollary", "Axiom III's second clause"), it consumes the count re-take and Count Variance vocabulary the calculator's 7.0 rebuild introduced, and it carries no Ratio Check. Section 4.7 says why that distinction is the useful one.
 
 ### 4.1 A stale threshold
 
@@ -145,9 +147,25 @@ Those nine numbers appear nowhere in `theory/`, have no row in `06-calibration.m
 
 ### 4.6 Voice
 
-The four artifacts are the only files in the repo that use the football register ("The Ratio Check", "Honesty Hour", "The Ghost Town Risk", "Skin in the Game") outside `publishing/style-references/`, which is exempt from lint by design because it is a verbatim record. Everything else in `theory/` and `practice/` has been rewritten into the flat, forensic voice the Constitution uses. The gap is visible to any reader who opens a foundation file and a field artifact in the same sitting.
+The three artifacts are the only files in the repo that use the football register ("The Ratio Check", "Honesty Hour", "The Ghost Town Risk", "Skin in the Game") outside `publishing/style-references/`, which is exempt from lint by design because it is a verbatim record. Everything else in `theory/` and `practice/` has been rewritten into the flat, forensic voice the Constitution uses. The gap is visible to any reader who opens a foundation file and a field artifact in the same sitting.
 
-**Default taken:** the three defects in 4.1 through 4.3 are correctness and should be fixed immediately, in their own small commit, before any restructuring. The ratio check and the voice are editorial and belong in a dedicated pass after the segmentation lands, because rewriting them well means deciding what a field artifact is allowed to contain, which is what section 6 decides.
+### 4.7 What actually predicts which files rotted
+
+`test_tcg_models.py` carries a section banner naming each document it asserts. Five practice files have one: `deal-triage-calculator.md`, `asymmetry-scorecard.md`, `consensus-friction-calculator.md`, `milestone-valuation-model.md` and `friction-efficiency-index.md`. Those five are the five that are current. Nothing in the suite names `implementation-motion/01`, `02` or `03`, and those three are the three that rotted.
+
+The correlation is not quite causal, and `04-sustaining-adoption-review.md` is the case that shows why. Nothing asserts it either, and it is clean, because it was actually rewritten in step 3 of the restructure. So the rule is not that untested files rot. It is that **an untested file which also skipped a rewrite has nothing at all holding it to the theory**, and both conditions were true of exactly three files.
+
+Two consequences. A rebuild of those three should produce something the suite can assert, which means each artifact needs at least one worked example tied to a term in the equation. And `04` is the template: it is the one artifact that has already made the transition from rep collateral to author-facing specification, so it shows what the other three should look like when they are done.
+
+### 4.8 Two defects the axiom rename left behind
+
+Neither is in the three artifacts, and one is in `theory/`.
+
+**Reputation Depreciation is attributed to the wrong axiom in three places.** The Constitution puts it under Axiom III, both as a corollary at line 164 and as a row of the Part II table at line 190, and `03-glossary-and-notation.md` line 199 agrees. Three files still call it Axiom II: `friction-allocation-diagnostic.md` lines 108 and 168, and `04-seller-surplus-model.md` line 141. This is the Constitution 2.0 renumbering, where Uncertainty Inflation moved from II to III, not fully swept.
+
+**A retired term is live because of a plural.** `friction-allocation-diagnostic.md` line 16 reads "The four principles are primary derivations of Axiom III." The derivation tiers were removed in Constitution 2.0 and `RetiredTerms.yml` carries a `primary derivation` row for exactly this. It does not fire, because the rule anchors on word boundaries and the boundary after "derivation" is not one in "derivations". Worth adding the plural to the swap list in the same commit, since the same trap applies to several other rows.
+
+**Default taken:** the defects in 4.1 through 4.3 and 4.8 are correctness and should be fixed immediately, in their own small commit, before any restructuring. The ratio check and the voice are editorial and belong in the rebuild, because deciding them means deciding what a field artifact is allowed to contain, which is what section 6 decides.
 
 ---
 
@@ -249,12 +267,12 @@ This is the same trick the repo already runs three times. Name the drift, then g
 
 | Step | What | Risk |
 |---|---|---|
-| 1 | Correctness: the three defects in 4.1 to 4.3, and extend the provenance rule to `practice/` | None. No structure touched. |
+| 1 | Correctness: the defects in 4.1 to 4.3 and 4.8, extend the provenance rule to `practice/`, add the plural to the `primary derivation` swap row | None. No structure touched. |
 | 2 | Cruft: everything in section 5 | None. |
 | 3 | Deduplicate: sections 3.1, 3.2, 3.3, 3.5. One prose home each, links elsewhere | Low. Mechanical, reviewable per claim. |
 | 4 | Constitution corollaries into the Part II table, section 3.4 | Needs your eyes. It is the text the rest of the repo is held to. |
 | 5 | Move to the tree in 6.2, add `kind:` and the linter rules in 6.4 | Low but wide. Touches every link. |
-| 6 | Rewrite the four implementation artifacts against the locked axioms, sections 4.5 and 4.6 | Needs your eyes. It is editorial, and it decides what a field artifact contains. |
+| 6 | Rebuild `implementation-motion/` 01 to 03 against the locked axioms, using 04 as the template, sections 4.5 to 4.7 | Needs your eyes. It decides what a field artifact contains. |
 
 Steps 1 and 2 are safe to run now. Steps 3 through 6 want your read on this document first, and steps 4 and 6 want your read on each file before it merges.
 
