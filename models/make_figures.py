@@ -36,7 +36,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import tcg_models as m
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-ASSETS = os.path.join(ROOT, "theory", "01-foundation", "assets")
+ASSETS = os.path.join(ROOT, "theory", "canon", "assets")
 STYLES = os.path.join(ROOT, "tools", "linting", "styles", "TCG")
 
 W, H = 760, 470
@@ -219,7 +219,7 @@ def panel_1():
     """V_effective(t) = V_0 * exp(-delta t) against V_next_best.
 
     Illustrates the value-decay assumption and the only term in delta a seller can
-    move. delta comes from the structural form of 02-mathematical-models.md
+    move. delta comes from the structural form of theory/reference/models.md
     section 4.2, so the two curves differ only in the external catalyst.
     """
     v0, v_next_best = 100.0, 40.0
@@ -298,7 +298,7 @@ def panel_2():
     gap. That argument is exactly a comparison of three curves, so the figure
     is the argument rather than a decoration on it.
     """
-    # In annual contract values, per 02-mathematical-models.md section 1.7.
+    # In annual contract values, per models.md section 1.7.
     # A deal at list price is 1 ACV of direct cost; the discounted line is the
     # same deal at 40 percent of it, which is a steeper concession than any
     # real desk would approve and still does not reach the quadratic term.
@@ -376,7 +376,7 @@ def panel_2():
 def panel_3():
     """gap_hat_implementation(t) = gap_hat(0) + gamma_impl * t.
 
-    Section 7.2 of 04-seller-surplus-model.md argues the durable asset is
+    Section 7.2 of theory/arguments/seller-surplus.md argues the durable asset is
     asymmetric information rather than lock-in: after a forward-deployed
     engagement the incumbent's implementation gap approaches zero while a
     challenger starts near the ceiling. The incumbent's advantage is the
@@ -541,14 +541,14 @@ def main(argv):
             continue
         with open(path, "w", encoding="utf-8") as handle:
             handle.write(svg)
-        print("wrote theory/01-foundation/assets/{}".format(name))
+        print("wrote theory/canon/assets/{}".format(name))
 
     if check_only:
         if stale:
             print("FAIL these figures no longer match the equations that "
                   "generate them:")
             for name in stale:
-                print("  theory/01-foundation/assets/{}".format(name))
+                print("  theory/canon/assets/{}".format(name))
             print("Run: python3 models/make_figures.py")
             return 1
         print("All {} figures match the equations that generate "

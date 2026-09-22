@@ -1,9 +1,10 @@
 ---
 title: "Consolidated Framework for Implementation Research (CFIR)"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Consolidated Framework for Implementation Research (CFIR)
@@ -31,4 +32,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Three Transaction Costs** — CFIR's process domain maps directly to the bargaining and enforcement costs.
 - See [`practice/cfir-field-mapping.md`](../../practice/cfir-field-mapping.md) for the construct-by-construct mapping into the implementation artifacts.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

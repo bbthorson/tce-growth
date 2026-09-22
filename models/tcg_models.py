@@ -16,11 +16,11 @@ CALIBRATION STATUS
 ------------------
 Nothing in this module is fitted. Every parameter default is a reasoned
 starting value carried over from the documents, and the documents say so
-themselves: 02-mathematical-models.md states the functional forms are
+themselves: models.md states the functional forms are
 "specified, not fitted" and exist "to structure judgment, not to forecast."
 
 - a = 2.25 is anchored by analogy to prospect theory's loss aversion
-  coefficient. It is not a measurement, and 02-mathematical-models.md section
+  coefficient. It is not a measurement, and models.md section
   1.6 is explicit that a is not the same quantity as lambda. Section 1.7 fixes
   its units: a, c and y are all fractions of annual contract value, so a = 2.25
   means the uncertainty term is worth 2.25 annual contract values at a fully
@@ -45,7 +45,7 @@ import math
 # Parameter defaults.
 #
 # Provenance for each of these is in the parameter reference tables of
-# theory/01-foundation/02-mathematical-models.md section 5 and
+# theory/reference/models.md section 5 and
 # practice/friction-efficiency-index.md.
 # Read those columns before quoting any value outside this repository.
 # --------------------------------------------------------------------------
@@ -72,7 +72,7 @@ BCV_REF_DEFAULT = 0.5  # convention until twenty closed Structural deals exist
 
 
 # ==========================================================================
-# theory/01-foundation/02-mathematical-models.md section 1.5
+# theory/reference/models.md section 1.5
 # Normalizing the gap before substitution.
 # ==========================================================================
 
@@ -142,14 +142,14 @@ def _require_normalized(gap, caller):
             "Scorecard emits a raw score on [2, 10] and neither cost equation "
             "accepts that range. Call normalize_gap(raw) first, or wrap an "
             "already-normalized value in NormalizedGap(). See "
-            "02-mathematical-models.md section 1.5.".format(
+            "models.md section 1.5.".format(
                 caller, type(gap).__name__)
         )
     return float(gap)
 
 
 # ==========================================================================
-# theory/01-foundation/02-mathematical-models.md section 1
+# theory/reference/models.md section 1
 # The two representations of transaction cost.
 # ==========================================================================
 
@@ -263,7 +263,7 @@ def component_gap(n_items, n_evidenced):
 
 def friction_vector(f_search, f_consensus, f_implementation,
                     gap_search, gap_consensus, gap_implementation):
-    """Level (Axiom II) and direction (Axiom I), computed together. 01-motions.md.
+    """Level (Axiom II) and direction (Axiom I), computed together. motions.md.
 
     Level is the L1 norm of BASE friction. It is the asset specificity Axiom II
     bounds, a property of the deal rather than of what anyone currently knows
@@ -347,7 +347,7 @@ def effective_cost_expanded(gap, b, c):
 
 
 # ==========================================================================
-# theory/01-foundation/02-mathematical-models.md section 2
+# theory/reference/models.md section 2
 # The Bilateral Asymmetry Gap.
 # ==========================================================================
 
@@ -447,7 +447,7 @@ def buyer_uncertainty_floor(cv_roi, mu=MU_RETURN_UNCERTAINTY):
 
 
 # ==========================================================================
-# theory/01-foundation/02-mathematical-models.md section 3
+# theory/reference/models.md section 3
 # practice/consensus-friction-calculator.md
 # Consensus friction.
 # ==========================================================================
@@ -564,7 +564,7 @@ def consensus_sensitivity_to_variance(n, alpha=ALPHA_COORDINATION,
 
 
 # ==========================================================================
-# theory/01-foundation/02-mathematical-models.md section 4
+# theory/reference/models.md section 4
 # Urgency decay.
 # ==========================================================================
 
@@ -617,7 +617,7 @@ def asymmetry_drift(gap0, gamma, t):
 
     Pre-close this is the Axiom III half of the Decay Clock: information goes
     stale, raising the multiplier on friction. Post-close, section 7.2 of
-    04-seller-surplus-model.md reads the same equation as the erosion of an
+    seller-surplus.md reads the same equation as the erosion of an
     incumbent's information advantage, where gamma runs on staff turnover,
     workflow change, and systems the seller never saw installed. Net Revenue
     Retention is that document's phrase for this equation run past signature.
@@ -908,7 +908,7 @@ def stage_surplus(p_m, v_gross_m, x_m, c_m, a=A_RISK_AVERSION):
     the stage's own payment as the constant term.
 
     UNITS. v_gross_m, c_m and a are all fractions of annual contract value, per
-    02-mathematical-models.md section 1.7. Passing a payment as 25 rather than
+    models.md section 1.7. Passing a payment as 25 rather than
     0.25 does not scale the answer, it reverses it. The uncertainty term drops
     to five percent of the first gate's payment where it should be five times
     that payment, and the model then recommends demanding everything at
@@ -924,9 +924,9 @@ def stage_surplus(p_m, v_gross_m, x_m, c_m, a=A_RISK_AVERSION):
 
 
 # ==========================================================================
-# theory/01-foundation/04-seller-surplus-model.md
+# theory/arguments/seller-surplus.md
 # Nothing in this section is fitted, and section 6 says so in stronger terms
-# than 02-mathematical-models.md: this model has no parameter anchored in
+# than models.md: this model has no parameter anchored in
 # published literature at all.
 # ==========================================================================
 
@@ -1144,7 +1144,7 @@ TriageResult = collections.namedtuple(
 
 
 def governance_form(klass, frequency):
-    """Williamson's selection, on level and frequency. 05-governance-forms.md.
+    """Williamson's selection, on level and frequency. governance-forms.md.
 
     Below the boundary the form is market governance at any frequency: the
     parties are strangers and the contract is complete.

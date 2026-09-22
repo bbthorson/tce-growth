@@ -1,10 +1,11 @@
 ---
 title: "Governance Forms"
 layer: theory
+kind: argument
 status: active
 version: 1.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Governance Forms
@@ -57,7 +58,7 @@ $V_{next\_best}$ has always included building it internally. Which means the fra
 
 Reading it that way makes two things visible that the deal-level reading hides.
 
-**Every reduction in transaction cost widens the market for buying rather than making.** It is not only this deal that moves. A seller who lowers $F_{implementation}$ across a category shifts the make-or-buy boundary for every buyer in it, which is why the instrument sets in [`practice/`](../../practice/) are a market-making investment and not only a deal-closing one.
+**Every reduction in transaction cost widens the market for buying rather than making.** It is not only this deal that moves. A seller who lowers $F_{implementation}$ across a category shifts the make-or-buy boundary for every buyer in it, which is why the instrument sets in [`practice/`](../../practice) are a market-making investment and not only a deal-closing one.
 
 **A buyer's build alternative gets cheaper over time on its own.** Their internal capability compounds, tooling improves, and the specificity that made building expensive erodes as patterns standardize. A seller whose only argument is that building is hard is on a losing schedule, and the Decay Clock is the deal-level version of the same pressure.
 
@@ -99,7 +100,7 @@ Restructuring a one-shot sale as a subscription converts a single-play game into
 
 ## 6. Which output answers which question
 
-The framework emits three things about a deal and they are routinely confused. Level and direction are derived in [01-motions.md](./01-motions.md) section 1 and this table only names them, because what this file adds is the third row.
+The framework emits three things about a deal and they are routinely confused. Level and direction are derived in [motions.md](../canon/motions.md) section 1 and this table only names them, because what this file adds is the third row.
 
 | Quantity | Question it answers | What moves it |
 |---|---|---|
@@ -113,16 +114,16 @@ The framework emits three things about a deal and they are routinely confused. L
 
 ## 7. What this does not settle
 
-Four gaps sit under this file and all four are in [07-open-questions.md](./07-open-questions.md): where the continuous boundary sits (item 11), whether frequency is three readings or a continuum (10), whether the recurrence claim in section 5 can be falsified at all on a category that never had a one-shot form (27), and whether governance form interacts with direction (9).
+Four gaps sit under this file and all four are in [open-questions.md](../reference/open-questions.md): where the continuous boundary sits (item 11), whether frequency is three readings or a continuum (10), whether the recurrence claim in section 5 can be falsified at all on a category that never had a one-shot form (27), and whether governance form interacts with direction (9).
 
 ---
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies level and frequency. Axiom II supplies the cooperation condition section 5 turns on.
-- [01-motions.md](./01-motions.md) — Direction and level, the other two outputs.
-- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
-- [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.
-- [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) — Axelrod, and why a repeated game safeguards itself.
+- [constitution.md](../canon/constitution.md) — Axiom I supplies level and frequency. Axiom II supplies the cooperation condition section 5 turns on.
+- [motions.md](../canon/motions.md) — Direction and level, the other two outputs.
+- [seller-surplus.md](./seller-surplus.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
+- [transaction-cost-economics.md](../evidence/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.
+- [game-theory-and-nrr.md](../evidence/game-theory-and-nrr.md) — Axelrod, and why a repeated game safeguards itself.
 - [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) — The bilateral form's instrument.
 - [Deal Triage Calculator](../../practice/deal-triage-calculator.md) — Emits level, direction and frequency.

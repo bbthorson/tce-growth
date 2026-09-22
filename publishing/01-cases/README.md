@@ -2,7 +2,7 @@
 
 **Real-world events analyzed through the TCG lens.** Working scouting reports, raw material for posts and talks, each following the four-step trenches analysis protocol in [`02-tools/writing-protocols.md`](../02-tools/writing-protocols.md).
 
-These are *scouting reports* — short, structured deconstructions of specific deals, acquisitions, or market events using the [Transaction Cost Economics](../../theory/02-research/transaction-cost-economics.md) and [Costly Signals](../../theory/02-research/costly-signals.md) frameworks.
+These are *scouting reports* — short, structured deconstructions of specific deals, acquisitions, or market events using the [Transaction Cost Economics](../../theory/evidence/transaction-cost-economics.md) and [Costly Signals](../../theory/evidence/costly-signals.md) frameworks.
 
 Parent: [publishing/](../) · Sibling: [02-tools/](../02-tools/)
 

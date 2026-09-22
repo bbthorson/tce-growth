@@ -1,6 +1,6 @@
 # Segmentation Audit
 
-**Status:** proposed 2026-09-21. Steps 1 to 4 of section 6.6 applied 2026-09-22. Steps 5 and 6 are not. Step 4 changed the Constitution and is the one to read rather than trust, and step 6 will want the author's eyes on each file before it merges.
+**Status:** proposed 2026-09-21. Steps 1 to 5 of section 6.6 applied 2026-09-22. Step 6 is not. Step 4 changed the Constitution and is the one to read rather than trust, and step 6 will want the author's eyes on each file before it merges.
 
 **Scope:** what the repo currently holds, what repeats, what is stale, and a proposed segmentation to flesh out against. It replaces `RESTRUCTURE-PLAN.md`, whose six steps were all applied and which step 2 below deleted.
 
@@ -10,6 +10,7 @@
 | 2. Cruft | Applied. `RESTRUCTURE-PLAN.md` and the checked-in `.claude/` memory are deleted, `.claude/` is ignored, the reading guide's stale diagram is gone, the cases README is trimmed and the superseded case is marked. |
 | 3. Deduplicate | Applied, with two of its own findings corrected. See 3.1 and 3.2. Touched no Constitution prose beyond the version bump. |
 | 4. Constitution corollaries | Applied. The twelve bullets are gone and Part II carries each derivation as one sentence. Four claims that had no home outside those bullets were moved to their owning files first. This section's own arithmetic was wrong; see 3.4. |
+| 5. The contract tree | Applied. `theory/` is split into `canon/`, `reference/`, `arguments/` and `evidence/`, every file declares a `kind`, and `check_frontmatter.py` enforces the match and the canon word cap. One deviation from 6.2 and one wrong migration note; see 6.2 and 6.5. |
 
 The findings below are kept as written, as the record of what was found rather than a description of the tree today, except where a later pass proved one wrong and says so inline.
 
@@ -238,7 +239,9 @@ theory/
     reading-guide.md
     <the 15 source files>
     citation-provenance-audit.md
-  open-questions.md            the single register, at the theory root
+  reference/
+    open-questions.md          the single register. Proposed here at the theory
+                               root; it shipped in reference/, see 6.3.
 
 practice/                      stays flat, see 6.3
   deal-triage-calculator.md
@@ -263,6 +266,8 @@ models/  tools/                unchanged
 
 **`open-questions.md` sits at the theory root, not inside canon.** It is the register for all three contracts below it, and putting it inside any one of them makes it look like it belongs to that one.
 
+**Reversed on execution: it shipped in `reference/`.** The argument above is real, and it lost to two things. The register is looked up rather than read front to back, which is the reference contract stated exactly, so `reference/` describes it correctly rather than only housing it. And a file at the theory root would have needed a special case in the rule that `kind` matches the directory, which is the one rule the whole split rests on. A register that is cited by every contract is not thereby owned by none of them: what it promises a reader is lookup, and that is what decides where it goes.
+
 ### 6.4 Making the contract mechanical
 
 Add a `kind:` field to the frontmatter schema, taking one of the six values in 6.1, and teach `check_frontmatter.py` three rules:
@@ -273,12 +278,15 @@ Add a `kind:` field to the frontmatter schema, taking one of the six values in 6
 
 Rules 1 and 2 are mechanical. Rule 3 needs a heuristic and will have false positives, so it should start as a warning. Even as a warning it is the thing that would have caught the Constitution's corollaries regrowing.
 
+**What shipped.** Rules 1 and 2 as written. The cap is 4,750 words, set as a ratchet just above the Constitution's 4,519 so that file cannot grow, and it is lowered as material moves out toward the 3,000 target. Rule 3 shipped narrower than proposed: it flags a `Default` or `Range` column in a table inside a canon file, reports as a warning, and does not fail the check. Detecting a worked example by heuristic would have had a false-positive rate that trains a reader to ignore the output, and a rule people learn to ignore is worse than no rule.
+
 This is the same trick the repo already runs three times. Name the drift, then give it a file or a check that fails when it happens.
 
 ### 6.5 Migration notes
 
 - `check_frontmatter.py` hardcodes `theory/01-foundation/00-tcg-constitution.md` when it compares the Constitution version against the root README footer. That path changes with the move.
-- `.vale.ini` scopes the punctuation rules by directory and needs the new paths.
+- ~~`.vale.ini` scopes the punctuation rules by directory and needs the new paths.~~ Wrong. It scopes punctuation by `[*.md]` and one exemption block for `publishing/02-tools/style-references/`, neither of which names a `theory/` path. Nothing in `.vale.ini` changed.
+- `check_frontmatter.py` was not the only tool with a hardcoded path, and the list above missed two. `models/make_figures.py` writes into `theory/01-foundation/assets/`, and `models/test_tcg_models.py` opens `06-calibration.md` by path to check that every numeric constant is declared there. The figure check was run after the move and passed, because its own write and read agree; the test suite was not, and it was failing with two `FileNotFoundError`s at that point. The lesson is the one the repo already states and this step nearly broke: run all four checks, not the one that looks relevant.
 - Every moved file gets a `RetiredTerms.yml` row for its old path, per the standing rule.
 - The four Python checks should be green at each step, and each step below is one commit.
 
@@ -290,10 +298,10 @@ This is the same trick the repo already runs three times. Name the drift, then g
 | 2 | **Applied.** Cruft: everything in section 5 | None. |
 | 3 | **Applied.** Deduplicate: sections 3.1, 3.2, 3.3, 3.5. One prose home each, links elsewhere. Touched no Constitution prose, since that is step 4's review | Low. Mechanical, reviewable per claim. |
 | 4 | **Applied.** Constitution corollaries into the Part II table, section 3.4 | Needs your eyes. It is the text the rest of the repo is held to. |
-| 5 | Move to the tree in 6.2, add `kind:` and the linter rules in 6.4 | Low but wide. Touches every link. |
+| 5 | **Applied.** Move to the tree in 6.2, add `kind:` and the linter rules in 6.4 | Low but wide. Touches every link. |
 | 6 | Rebuild `implementation-motion/` 01 to 03 against the locked axioms, using 04 as the template, sections 4.5 to 4.7 | Needs your eyes. It decides what a field artifact contains. |
 
-Steps 1 to 4 are applied, and step 4 is the one to read rather than trust. Steps 5 and 6 remain, and step 6 wants your read on each file before it merges.
+Steps 1 to 5 are applied, and step 4 is the one to read rather than trust. Step 6 remains, and it wants your read on each file before it merges.
 
 ---
 

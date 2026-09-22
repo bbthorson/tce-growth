@@ -20,7 +20,7 @@ Three short protocols that sit between the [voice guide](./voice-guide.md) and t
 
 **Tone:** analytical, helpful, plain-English, with the offensive units of business as the metaphorical frame.
 
-**Context.** When analyzing a deal, apply the three axioms (Constitution, Part I), reference the Surplus equation (Constitution, Part III), and point at the artifacts in [`practice/implementation-motion/`](../../practice/implementation-motion/). The [TCG Constitution](../../theory/01-foundation/00-tcg-constitution.md) is the complete reference.
+**Context.** When analyzing a deal, apply the three axioms (Constitution, Part I), reference the Surplus equation (Constitution, Part III), and point at the artifacts in [`practice/implementation-motion/`](../../practice/implementation-motion/). The [TCG Constitution](../../theory/canon/constitution.md) is the complete reference.
 
 ---
 

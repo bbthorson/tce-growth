@@ -1,9 +1,10 @@
 ---
 title: "Transaction Cost Economics"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-1, axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Transaction Cost Economics
@@ -27,10 +28,10 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Supports in TCG:**
 - **Axiom II — Law of Asset Specificity** — direct theoretical basis. Asset specificity is the boundary parameter and frequency is the governance-form selector.
-- **Governance Form** (Axiom II corollary) — the four structures above, mapped onto level and frequency in [05-governance-forms.md](../01-foundation/05-governance-forms.md). The MIP is the bilateral form.
+- **Governance Form** (Axiom II corollary) — the four structures above, mapped onto level and frequency in [governance-forms.md](../arguments/governance-forms.md). The MIP is the bilateral form.
 - **Boundary Condition** — $k > k_{threshold}$ is Williamson's threshold for governance preference.
 - **Williamson Hold-Up** — direct.
 - **Axiom I — Law of Transaction Cost Composition** — Coase's three costs, with the B2B enlargement of each. Direct mapping to $F_{search} + F_{consensus} + F_{implementation}$.
 - **Axiom II — Law of Asset Specificity, governance corollary** — bilateral hostages and relational contracts are the mechanism behind the stakes corollary. In the transaction cost model $y = a\hat{\Delta}_A^2 + c$, hostages are the primary operational lever to reduce the risk aversion coefficient $a$, helping to satisfy the deal-winning condition $y < OC_{\text{switching}}$.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

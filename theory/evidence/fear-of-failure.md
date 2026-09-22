@@ -1,9 +1,10 @@
 ---
 title: "Fear of Failure: The Empirical Evidence"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Fear of Failure: The Empirical Evidence
@@ -35,4 +36,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Decay Clock** — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
 - **Reputation Depreciation** — 60% renewal regret rate (Gartner 2023) is the failure-mode signal.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

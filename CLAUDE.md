@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-market built on transaction cost economics, holding that what a deal costs a buyer beyond the price determines how it can be sold. Turnkey, search-led, consensus-led and implementation-led are motions inside it rather than rivals to it, each named after the cost it spends to reduce. `theory/01-foundation/01-motions.md` maps them onto the incumbent PLG and SLG vocabulary. Almost all content is Markdown. The repo is organized into four groups, each with its own README:
+A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-market built on transaction cost economics, holding that what a deal costs a buyer beyond the price determines how it can be sold. Turnkey, search-led, consensus-led and implementation-led are motions inside it rather than rivals to it, each named after the cost it spends to reduce. `theory/canon/motions.md` maps them onto the incumbent PLG and SLG vocabulary. Almost all content is Markdown. The repo is organized into five groups, each with its own README:
 
 | Directory | Function |
 |---|---|
-| `theory/` | Develop and pressure-test the TCG framework. Axioms, equations, academic backing. |
+| `theory/` | Develop and pressure-test the TCG framework. Split by document contract into `canon/`, `reference/`, `arguments/` and `evidence/`, which [`theory/README.md`](./theory/README.md) defines. |
 | `practice/` | Operationalize theory. The instruments the axioms name and the measurement tools the tests assert. |
 | `publishing/` | Turn the framework into public writing. Voice guide, content generators, case analyses. |
 | `models/` | Executable forms of the equations, the tests that check the worked examples, and the figure generator. Python, no dependencies. |
@@ -16,9 +16,11 @@ A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-mar
 
 ## Conceptual architecture
 
-**The canonical source of truth is `theory/01-foundation/00-tcg-constitution.md`** — three standing assumptions and three axioms from which all other concepts derive. Each axiom is stated at the level where a seller meets it (market, workflow, deal), in one sentence, with a falsifier. Axiom II is the gate. Everything in `practice/` and `publishing/` traces back to it.
+**The canonical source of truth is `theory/canon/constitution.md`** — three standing assumptions and three axioms from which all other concepts derive. Each axiom is stated at the level where a seller meets it (market, workflow, deal), in one sentence, with a falsifier. Axiom II is the gate. Everything in `practice/` and `publishing/` traces back to it.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory should propagate downstream. Changes to practice or publishing never modify theory.
+
+**Inside `theory/`, the directory is the document contract.** What a file promises a reader decides how long it may be and what it may contain, and `canon/`, `reference/`, `arguments/` and `evidence/` each declare one of those promises. This is the fourth anti-drift mechanism, aimed at the failure the other three cannot see: a pointer acquires a sentence, the sentence becomes a paragraph, and a claim ends up with two prose homes while both files pass every check. Before adding a document to `theory/`, read [`theory/README.md`](./theory/README.md) and put it where its promise belongs. Canon states a claim and sends the argument elsewhere; if a new paragraph derives, worked-examples or tabulates defaults, it belongs in `reference/` or `arguments/` and canon keeps the pointer.
 
 Key cross-file dependencies to know:
 - The **Deal Triage Calculator** (`practice/deal-triage-calculator.md`) operationalizes Axiom II's level and Axiom I's direction: it emits both, not a motion label. It is referenced by nearly every field asset.
@@ -26,14 +28,14 @@ Key cross-file dependencies to know:
 - The **Friction Allocation Diagnostic** (`practice/friction-allocation-diagnostic.md`) operationalizes the four Friction Allocation Principles from Axiom III.
 - The **three implementation artifacts** (Blueprint → Red Team → MIP) in `practice/implementation-motion/` run sequentially; each artifact gates the next. They are the implementation component's instruments. The directory keeps the motion's name because the motion keeps its name.
 
-The **research files** in `theory/02-research/` back specific axioms:
+The **research files** in `theory/evidence/` back specific axioms:
 - Axiom I (Composition) → `transaction-cost-economics.md`, `buying-center-dynamics.md`, `channel-collapse.md`
 - Axiom II (Specificity) → `transaction-cost-economics.md`, `klein-crawford-alchian.md`, `incomplete-contracts.md`, `process-misfit.md`, `game-theory-and-nrr.md`, `real-options.md`
 - Axiom III (Inflation) → `costly-signals.md`, `prospect-theory.md`, `fear-of-failure.md`, `cfir.md`, `re-aim-framework.md`
 
-Start with `theory/02-research/00-reading-guide.md` before modifying any research file. Before extending the theory, read `theory/01-foundation/07-open-questions.md`, which records where it is under-developed by axiom; an extension should land on a recorded gap or add one.
+Start with `theory/evidence/reading-guide.md` before modifying any research file. Before extending the theory, read `theory/reference/open-questions.md`, which records where it is under-developed by axiom; an extension should land on a recorded gap or add one.
 
-**A motion is a region, not a list entry.** `theory/01-foundation/01-motions.md` carries the derivation, adopted in Constitution v17.0 as the friction vector and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom III description, not the market states, because those were never load-bearing outside the two files that carried them.
+**A motion is a region, not a list entry.** `theory/canon/motions.md` carries the derivation, adopted in Constitution v17.0 as the friction vector and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom III description, not the market states, because those were never load-bearing outside the two files that carried them.
 
 ## Frontmatter
 
@@ -43,12 +45,15 @@ Every document in `theory/` and `practice/` opens with YAML frontmatter. `publis
 ---
 title: "The Deal Triage Calculator"   # must match the H1
 layer: practice                        # theory | practice, must match the directory
+kind: instrument                       # canon | reference | argument | evidence | instrument
 status: active                         # active | under-review | superseded
 version: 4.2                           # only where the document tracks one
 operationalizes: [axiom-1]             # which axioms it derives from
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 ```
+
+`kind` is the document contract, and inside `theory/` it must match the directory: a file in `canon/` declares `kind: canon` or the check fails. `practice/` is flat on purpose and holds both instruments and references, so `kind` is declared there and the path does not constrain it. A `canon` file also carries a word cap, which `check_frontmatter.py` enforces as a ratchet: it sits just above the largest canon file so that file cannot grow, and it is lowered as material moves out. Never raise it. Moving an argument to the file that owns it is the intended response to the cap, and raising the number is how the cap stops meaning anything.
 
 `operationalizes` is the field that earns the schema. It makes the theory-to-practice trace machine-readable, so revising an axiom can list every document claiming to derive from it:
 
@@ -69,8 +74,8 @@ When writing or editing any document in this repo, apply the voice rules from `p
 - **Anti-antithesis filter**: avoid "It's not X, it's Y" constructions.
 - **Active voice**: name actors. "HTD will map the workflow" over "the workflow will be mapped."
 - **No emojis.**
-- The Constitution is **axioms-first** (v11+): if a claim cannot be traced to one of the three axioms, it does not belong in `theory/01-foundation/00-tcg-constitution.md`. Operational content belongs in `practice/`.
-- **New headline statistics need a provenance row.** Any quantitative claim added to `theory/` or `practice/` gets a row in `theory/02-research/audits/citation-provenance-audit.md` in the same commit, with an honest verification status. `practice/` is in scope because a field artifact is where a statistic gets read aloud to a buyer, which is the one place an unsourced number does real damage. When two files disagree on a number, record the discrepancy there first, then fix both against the primary source. This is what stops stat drift, the way `RetiredTerms.yml` stops rename drift.
+- The Constitution is **axioms-first** (v11+): if a claim cannot be traced to one of the three axioms, it does not belong in `theory/canon/constitution.md`. Operational content belongs in `practice/`.
+- **New headline statistics need a provenance row.** Any quantitative claim added to `theory/` or `practice/` gets a row in `theory/evidence/citation-provenance-audit.md` in the same commit, with an honest verification status. `practice/` is in scope because a field artifact is where a statistic gets read aloud to a buyer, which is the one place an unsourced number does real damage. When two files disagree on a number, record the discrepancy there first, then fix both against the primary source. This is what stops stat drift, the way `RetiredTerms.yml` stops rename drift.
 
 ### Checking your work
 
@@ -83,7 +88,7 @@ python3 models/test_tcg_models.py && \
 python3 models/make_figures.py --check && vale .
 ```
 
-`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom and that the Constitution version matches the root README footer. `test_tcg_models.py` checks that every worked example in `theory/` and `practice/` still reproduces from [`models/tcg_models.py`](./models/tcg_models.py). `make_figures.py --check` regenerates the Constitution's axiom figures and fails if any has drifted from the equation that generates it. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
+`check_playbook.py` needs no dependencies and validates links plus LaTeX delimiters. `check_frontmatter.py` needs none either and validates the frontmatter schema across `theory/` and `practice/`, including that every `operationalizes` entry names a real axiom, that `kind` matches the directory, that a canon file is under the word cap, and that the Constitution version matches the root README footer. It also warns, without failing, when a canon file grows a parameter table, because a default belongs in the calibration layer. `test_tcg_models.py` checks that every worked example in `theory/` and `practice/` still reproduces from [`models/tcg_models.py`](./models/tcg_models.py). `make_figures.py --check` regenerates the Constitution's axiom figures and fails if any has drifted from the equation that generates it. Vale (`brew install vale`) enforces the banned-word list, the emoji ban, the punctuation limit, and retired vocabulary.
 
 All four Python checks run in `.githooks/pre-commit` alongside Vale.
 
@@ -93,7 +98,7 @@ The dependency chain runs `theory/` → `practice/` → `publishing/`, and nothi
 
 1. Grep the whole repo for the old term before assuming the rename is local. Stale names hide inside links whose hrefs are still correct, so the link checker will not catch them.
 2. Add the old term to `swap:` in `tools/linting/styles/TCG/RetiredTerms.yml` in the same commit. That is what stops the rename from drifting back.
-3. Bump the version in `theory/01-foundation/00-tcg-constitution.md` (both the frontmatter and the body) and the matching version footer in the root `README.md` together. `check_frontmatter.py` enforces that they agree.
+3. Bump the version in `theory/canon/constitution.md` (both the frontmatter and the body) and the matching version footer in the root `README.md` together. `check_frontmatter.py` enforces that they agree.
 4. Check the *descriptions*, not just the names. A paragraph can use every current term and still describe a superseded version of an axiom.
 
 ## How documents relate to the Fundamental Equation
@@ -103,7 +108,7 @@ All framework claims trace to:
 $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - \sum_{k} F_k \cdot (1 + \hat{\Delta}_k) = OC_{\text{switching}} - y$$
 
 - **S** = Deal Surplus, which must exceed 0 for the deal to close
-- **$\hat{\Delta}_k$** = the gap inside component $k$'s own pair of parties, normalized to $[0, 1]$. Three components, three different pairs, and only the implementation pair is buyer against seller. Per `02-mathematical-models.md` section 2.4.
+- **$\hat{\Delta}_k$** = the gap inside component $k$'s own pair of parties, normalized to $[0, 1]$. Three components, three different pairs, and only the implementation pair is buyer against seller. Per `models.md` section 2.4.
 - **$\hat{\Delta}_A$** = the deal-level gap, which is the friction-weighted mean of the three. The sum above factors into $F_{base}(1 + \hat{\Delta}_A)$ exactly, so both forms are the same quantity. The Asymmetry Scorecard emits a raw score on $[2, 10]$, it measures the implementation pair alone, and **neither cost equation accepts a raw value**. Normalize first, per section 1.5. `models/tcg_models.py` refuses a raw value at the type level.
 - **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$, where $a = 2.25$ is anchored by analogy to loss aversion and $c$ is direct cost. **All three are fractions of annual contract value**, per section 1.7. Reading them as percentage points inverts the argument the equation exists to make.
 - **Level** = the Deal Triage Calculator's summed component scores, on base friction, range 0–30. 15 and above is a Structural deal. It sets how much apparatus the deal can carry and discovery does not move it.
@@ -122,7 +127,7 @@ Every live formula has an implementation in [`models/tcg_models.py`](./models/tc
 
 This is what stops formula drift, the way `RetiredTerms.yml` stops rename drift and the provenance audit stops stat drift.
 
-**Parameters in this repo are unfitted, and every new one must say so.** [`theory/01-foundation/06-calibration.md`](./theory/01-foundation/06-calibration.md) is the single home for every coefficient, threshold and band edge in the framework. Any new one needs a row there with an honest provenance status, in the same commit, and anything that reads as an empirical estimate is wrong. `test_tcg_models.py` asserts that every numeric constant in the module is declared on that page, so adding a constant without declaring it fails the suite.
+**Parameters in this repo are unfitted, and every new one must say so.** [`theory/reference/calibration.md`](./theory/reference/calibration.md) is the single home for every coefficient, threshold and band edge in the framework. Any new one needs a row there with an honest provenance status, in the same commit, and anything that reads as an empirical estimate is wrong. `test_tcg_models.py` asserts that every numeric constant in the module is declared on that page, so adding a constant without declaring it fails the suite.
 
 The separation earns its keep: the theory states structure, the calibration layer states quantity, and a reader can reject any number without rejecting the claim it sits inside. Keep it that way. A coefficient quoted in `theory/` prose without a pointer to the calibration layer is how the two collapse back together. Do not fit these to synthetic data: it produces parameters that look measured and are not. `models/README.md` records why.
 

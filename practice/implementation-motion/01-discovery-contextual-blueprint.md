@@ -1,10 +1,11 @@
 ---
 title: "Project \[Customer Name\]: Contextual Blueprint"
 layer: practice
+kind: instrument
 status: active
 version: 2.0
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Project \[Customer Name\]: Contextual Blueprint
@@ -137,7 +138,7 @@ We use this Blueprint to map your specific environment—your politics, your dat
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — The Blueprint primarily addresses $F_{consensus}$ and reduces Seller Ignorance ($I_{seller}$). It is one of the four mechanisms by which $\Delta_A$ shrinks.
+- **Theory:** [TCG Constitution, Axiom III](../../theory/canon/constitution.md) — The Blueprint primarily addresses $F_{consensus}$ and reduces Seller Ignorance ($I_{seller}$). It is one of the four mechanisms by which $\Delta_A$ shrinks.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Inner Setting / Individuals constructs mapped to Blueprint sections.
 - **Prerequisite:** The [Deal Triage Calculator](../deal-triage-calculator.md) reads the deal at level 15 or above and implementation-dominant, or flags it Hidden Structural at a lower level.
 - **Next step:** [02-validation-red-team-protocol.md](./02-validation-red-team-protocol.md) — Stress-tests the implementation plan surfaced here.

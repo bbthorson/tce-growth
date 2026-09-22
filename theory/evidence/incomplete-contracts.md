@@ -1,9 +1,10 @@
 ---
 title: "Incomplete Contracts and Residual Control Rights"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Incomplete Contracts and Residual Control Rights
@@ -32,4 +33,4 @@ This is the theoretical layer beneath Williamson's hold-up problem. Williamson e
 - **The Blueprint** — operationalizes the second governance intervention. By mapping the buyer's environment before commercial execution, the Blueprint shrinks the set of unspecified states rather than arguing about who controls them.
 - **The MIP** — operationalizes the first. Phase gates with joint sign-off distribute residual control across both parties, so neither can unilaterally impose an outcome when an unmapped constraint appears.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

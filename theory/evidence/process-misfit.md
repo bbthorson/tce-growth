@@ -1,9 +1,10 @@
 ---
 title: "Process Misfit"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Process Misfit
@@ -32,4 +33,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Open question this source raises.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) treats workflow maturity as a precondition gate and workflow divergence as a multiplier on the enforcement component. The misfit literature suggests workflow codification and enforcement cost are coupled rather than independent, because codification is itself a relationship-specific investment. Resolving this requires deciding whether workflow definition and workflow divergence are one variable or two. The framework treats these as two variables and does not argue that they are.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

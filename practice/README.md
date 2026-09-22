@@ -1,12 +1,13 @@
 ---
 title: "Practice"
 layer: practice
+kind: reference
 status: active
 ---
 
 # Practice
 
-**Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
+**Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/canon/constitution.md) records what went.
 
 Each document carries its own header table stating its inputs, outputs, next step, and owner. This README points at them and does not restate them.
 
@@ -30,7 +31,7 @@ The four artifacts in [`implementation-motion/`](./implementation-motion/) run i
 
 ## Quantitative instruments
 
-Four instruments convert deal observations into comparable numbers. Each measures one term in the Surplus equation, each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
+Four instruments convert deal observations into comparable numbers. Each measures one term in the Surplus equation, each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [calibration.md](../theory/reference/calibration.md), and every worked example is asserted in [`models/`](../models/).
 
 | Instrument | Measures | Run it when |
 |---|---|---|
@@ -52,5 +53,5 @@ Four instruments convert deal observations into comparable numbers. Each measure
 
 ## Related
 
-- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-motions.md](../theory/01-foundation/01-motions.md) for why direction selects the instrument, [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) for what shape the arrangement takes after signature.
+- **Theory:** [constitution.md](../theory/canon/constitution.md) for the axioms, [motions.md](../theory/canon/motions.md) for why direction selects the instrument, [governance-forms.md](../theory/arguments/governance-forms.md) for what shape the arrangement takes after signature.
 - **Checks:** [`tools/linting/`](../tools/linting/) for the link, frontmatter and style checkers.

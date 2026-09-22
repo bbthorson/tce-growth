@@ -18,7 +18,7 @@ Three axioms carry the argument, each stated at the level where a seller meets i
 
 Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
-**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](./theory/01-foundation/06-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
+**The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](./theory/reference/calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
 
 ---
 
@@ -28,7 +28,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 
 | Function | Where | What it is |
 |---|---|---|
-| **[theory/](./theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the TCG framework. Academic papers, axioms, definitions. |
+| **[theory/](./theory/)** | `canon/`, `reference/`, `arguments/`, `evidence/` | Develop and pressure-test the TCG framework, segmented by what each document promises a reader. |
 | **[practice/](./practice/)** | `practice/` + `practice/implementation-motion/` | Operationalize the theory. The instruments the axioms name, and the measurement tools the tests assert. |
 | **[publishing/](./publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
 | **[models/](./models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
@@ -40,12 +40,12 @@ Each group has its own README listing what is inside it.
 
 ## Start here: which level are you at
 
-The framework indexes on **level**. Each axiom is stated where a seller meets it, and each produces a decision. The three levels are defined in [Constitution Part I](./theory/01-foundation/00-tcg-constitution.md).
+The framework indexes on **level**. Each axiom is stated where a seller meets it, and each produces a decision. The three levels are defined in [Constitution Part I](./theory/canon/constitution.md).
 
 | Level | The decision | Axiom | Go here |
 |---|---|---|---|
-| **Market** | Which cost binds, and therefore which instruments to run | I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
-| **Workflow** | How specific the investment is, how much apparatus it needs, when to spend it, what arrangement holds it | II | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md) |
+| **Market** | Which cost binds, and therefore which instruments to run | I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [motions.md](./theory/canon/motions.md) |
+| **Workflow** | How specific the investment is, how much apparatus it needs, when to spend it, what arrangement holds it | II | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [governance-forms.md](./theory/arguments/governance-forms.md) |
 | **Deal** | What each party cannot verify about their own outcome, what to prove, and what to re-prove at renewal | III | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
 
 Axiom II is the gate. When the investment is not specific, market terms hold and the other two readings barely matter.
@@ -54,14 +54,14 @@ Axiom II is the gate. When the investment is not specific, market terms hold and
 
 | If you want to... | Go here |
 |---|---|
-| Understand the theory cold | [theory/01-foundation/](./theory/01-foundation/) |
-| Look up a symbol or term | [03-glossary-and-notation.md](./theory/01-foundation/03-glossary-and-notation.md) |
-| See the evidence behind a claim | [theory/02-research/00-reading-guide.md](./theory/02-research/00-reading-guide.md) |
-| Decide whether to invest engineering in a deal | [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
+| Understand the theory cold | [theory/canon/](./theory/canon/) |
+| Look up a symbol or term | [notation.md](./theory/reference/notation.md) |
+| See the evidence behind a claim | [theory/evidence/reading-guide.md](./theory/evidence/reading-guide.md) |
+| Decide whether to invest engineering in a deal | [seller-surplus.md](./theory/arguments/seller-surplus.md) |
 | Compute a formula, or check one still holds | [models/](./models/) |
 | Write about TCG publicly | [publishing/02-tools/](./publishing/02-tools/) |
 
-**Orientation lives in two places only:** this file, and [the research reading guide](./theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
+**Orientation lives in two places only:** this file, and [the research reading guide](./theory/evidence/reading-guide.md). Every other README is a local index of its own directory.
 
 ---
 
@@ -79,7 +79,7 @@ $$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{searc
 
 ### The Three Axioms
 
-Statements below are canonical. If this table and the [Constitution](./theory/01-foundation/00-tcg-constitution.md) ever disagree, the Constitution wins.
+Statements below are canonical. If this table and the [Constitution](./theory/canon/constitution.md) ever disagree, the Constitution wins.
 
 | Axiom | Level | Statement |
 |---|---|---|
@@ -104,9 +104,9 @@ The field calls the bargaining cost *consensus* and the enforcement cost *implem
 This is a living document. As you work:
 - Add new applied analyses to [publishing/01-cases/](./publishing/01-cases/) using the trenches protocol.
 - Refine field assets in [practice/](./practice/) based on what works.
-- Update research with new evidence; the [provenance audit](./theory/02-research/audits/citation-provenance-audit.md) tracks source quality.
+- Update research with new evidence; the [provenance audit](./theory/evidence/citation-provenance-audit.md) tracks source quality.
 
 ---
 
-**Version:** 2.4 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 2.5 (tracks the [Constitution](./theory/canon/constitution.md) version; bump both together)
 **Last updated:** 2026-09-22

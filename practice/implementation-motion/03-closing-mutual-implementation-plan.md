@@ -1,10 +1,11 @@
 ---
 title: "The Mutual Implementation Plan (The Execution)"
 layer: practice
+kind: instrument
 status: active
 version: 2.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # The Mutual Implementation Plan (The Execution)
@@ -18,7 +19,7 @@ Goal: To contractualize the outcome and lock in the "Infinite Game."
 |---|---|
 | **Inputs** | [Blueprint](./01-discovery-contextual-blueprint.md) + [Red Team](./02-validation-red-team-protocol.md) outputs. Identified risks, mitigations, and bilateral resource commitments. |
 | **Outputs** | Signed MIP with North Star metric, Governance Structure, Go/No-Go Protocol. Resource plan attached to contract. |
-| **Next step** | [Sustaining Adoption Review](./04-sustaining-adoption-review.md) (handoff packet, then RE-AIM reviews); vested compensation terms activate ([05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5). |
+| **Next step** | [Sustaining Adoption Review](./04-sustaining-adoption-review.md) (handoff packet, then RE-AIM reviews); vested compensation terms activate ([governance-forms.md](../../theory/arguments/governance-forms.md) section 5). |
 | **Owner** | AE + Customer PM + Procurement + Legal. |
 | **Reduces** | Defection risk via mutual skin in the game (the governance corollary of Axiom II). |
 
@@ -117,7 +118,7 @@ Signature Block:
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom II (Governance)](../../theory/01-foundation/00-tcg-constitution.md) — The MIP operationalizes the deal-level case of Axiom II's stakes corollary; bilateral skin in the game between buyer and seller.
-- **Academic backing:** [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) — Shadow of the Future; why mutual skin in the game shifts the Nash equilibrium.
+- **Theory:** [TCG Constitution, Axiom II (Governance)](../../theory/canon/constitution.md) — The MIP operationalizes the deal-level case of Axiom II's stakes corollary; bilateral skin in the game between buyer and seller.
+- **Academic backing:** [game-theory-and-nrr.md](../../theory/evidence/game-theory-and-nrr.md) — Shadow of the Future; why mutual skin in the game shifts the Nash equilibrium.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Implementation Process constructs (Planning, Executing, Reflecting & Evaluating).
-- **Comp alignment:** [05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5. Rep compensation must follow MIP outcomes, not signature.
+- **Comp alignment:** [governance-forms.md](../../theory/arguments/governance-forms.md) section 5. Rep compensation must follow MIP outcomes, not signature.

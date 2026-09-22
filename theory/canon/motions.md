@@ -1,10 +1,11 @@
 ---
 title: "Motions"
 layer: theory
+kind: canon
 status: active
 version: 2.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Motions
@@ -13,7 +14,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Purpose:** To derive motion selection from the two quantities Axioms I and II name, so that a motion is a region of one space rather than an item on a list. Then to say what each region deploys, and how the names map onto the vocabulary the industry already uses.
 
 > [!IMPORTANT]
-> **This file carries the derivation behind two of the framework's claims.** Axiom I's composition equation and Axiom III's per-component amplification are stated in the [Constitution](./00-tcg-constitution.md) and argued here. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits both quantities and [03-glossary-and-notation.md](./03-glossary-and-notation.md) carries the symbols. Section 9 records what the model does not settle, and section 10 is the translation table for readers arriving with Product-Led and Sales-Led in hand.
+> **This file carries the derivation behind two of the framework's claims.** Axiom I's composition equation and Axiom III's per-component amplification are stated in the [Constitution](./constitution.md) and argued here. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits both quantities and [notation.md](../reference/notation.md) carries the symbols. Section 9 records what the model does not settle, and section 10 is the translation table for readers arriving with Product-Led and Sales-Led in hand.
 
 A sales motion is the instrument set a seller deploys to reduce a buyer's transaction friction. A seller cannot alter the buyer's willingness to pay, which is a property of the product, so a motion works entirely by lowering one or more of three costs:
 
@@ -49,7 +50,7 @@ The $L^1$ norm is used because it is what the field already produces. The Deal T
 
 ## 2. Direction selects the instrument mix
 
-A seller can lower the buyer's perceived cost, and the reduced form in [02-mathematical-models.md](./02-mathematical-models.md) section 1.2 establishes that lowering the price term alone is the weakest of the available levers. What remains is friction, and friction has three components.
+A seller can lower the buyer's perceived cost, and the reduced form in [models.md](../reference/models.md) section 1.2 establishes that lowering the price term alone is the weakest of the available levers. What remains is friction, and friction has three components.
 
 **A motion is therefore defined by which component the seller spends to reduce.** There are three components, so there are three families of instrument, and no more.
 
@@ -74,7 +75,7 @@ $F_{search}$ carries two distinct blockers.
 
 **Fit verification is not a search blocker.** Trying the product is verification the buyer runs on themselves, and it resolves fit only when the investment is not specific, because nobody can trial a six-month integration. Where specificity is low, a trial settles the question at no cost and the deal is Turnkey under Axiom II. Where it is high, the same question becomes the enforcement pair's uncertainty under Axiom III and needs the seller's proof. The trialability gate in the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) is where the framework reads which case it is in.
 
-The second row is a cost most frameworks do not name. A hospital chief information officer can know the category, name five vendors, and still be structurally unreachable without a channel. That cost falls largely on the seller, and neither education nor a trial reduces it. Research backing is in [channel-collapse.md](../02-research/channel-collapse.md), and Axiom II's requirement that any adjudicator carry a stake applies directly to the channels involved.
+The second row is a cost most frameworks do not name. A hospital chief information officer can know the category, name five vendors, and still be structurally unreachable without a channel. That cost falls largely on the seller, and neither education nor a trial reduces it. Research backing is in [channel-collapse.md](../evidence/channel-collapse.md), and Axiom II's requirement that any adjudicator carry a stake applies directly to the channels involved.
 
 These are two instruments serving one component. They are not two motions.
 
@@ -82,7 +83,7 @@ These are two instruments serving one component. They are not two motions.
 
 The bargaining component, which the field calls consensus, is worked hard by the wider sales profession. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are instruments for that cost, and they are the incumbent practice for it.
 
-This repository measures the component and supplies no instruments for it. The [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) produces a number and then prescribes executive sponsorship, which is a single tactic rather than a motion. The component resists the instruments that work on the other two because its gap sits between the buyer's stakeholders, about each other, where nothing the seller knows and withholds is causing it. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
+This repository measures the component and supplies no instruments for it. The [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) produces a number and then prescribes executive sponsorship, which is a single tactic rather than a motion. The component resists the instruments that work on the other two because its gap sits between the buyer's stakeholders, about each other, where nothing the seller knows and withholds is causing it. Research is in [buying-center-dynamics.md](../evidence/buying-center-dynamics.md).
 
 The gap is real and it is the largest one this document surfaces.
 
@@ -92,7 +93,7 @@ If a motion is the instrument set aimed at a component, then the standard sales 
 
 Two consequences follow, and both are structural rather than matters of execution. **The standard org meets the costs in a fixed order**, so a deal whose binding cost is enforcement gets its engineer last, at the demo, when it needed one first. And **each handoff between roles is a seam where a cost gets paid twice**, because what one role learned does not travel with the deal.
 
-A direction-following organization would therefore look different from a funnel-following one. What it would look like is not derived anywhere, and [07-open-questions.md](./07-open-questions.md) item 4 records that.
+A direction-following organization would therefore look different from a funnel-following one. What it would look like is not derived anywhere, and [open-questions.md](../reference/open-questions.md) item 4 records that.
 
 ---
 
@@ -102,7 +103,7 @@ Magnitude answers a different question: how much machinery the deal can carry be
 
 This is Axiom II's boundary condition. $k > k_{threshold}$ separates Turnkey deals from Structural deals, and $F_{deployed} \sim k$ requires the friction the seller deploys to scale with the specificity it manages. Both over-frictioning and under-frictioning are failures of magnitude rather than of direction.
 
-Three component scores on $[0, 10]$ put the level on $[0, 30]$, so $k_{threshold} = 15$ sits at half the range, where the retired four-factor scale's 10 out of 20 sat. Multiply an archived score by 1.5 to compare it. Nothing about the boundary gained empirical support in the move, and [06-calibration.md](./06-calibration.md) records it as chosen.
+Three component scores on $[0, 10]$ put the level on $[0, 30]$, so $k_{threshold} = 15$ sits at half the range, where the retired four-factor scale's 10 out of 20 sat. Multiply an archived score by 1.5 to compare it. Nothing about the boundary gained empirical support in the move, and [calibration.md](../reference/calibration.md) records it as chosen.
 
 **Level is read from base friction, before amplification.** Asset specificity is a property of the deal. What anyone currently knows about the deal is not, and folding the gaps into the level would make a well-mapped Structural deal reclassify itself as Turnkey the week the Blueprint landed.
 
@@ -138,11 +139,11 @@ Axiom III amplifies each component by its own pair's gap, and the Constitution c
 
 ### 5.1 Three pairs, three gaps
 
-Each component's gap runs between its own pair of parties, and [02-mathematical-models.md](./02-mathematical-models.md) section 2.4 tabulates the three with their instruments. What matters geometrically is that only the third pair is seller against buyer, and the [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair alone. Direction moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for.
+Each component's gap runs between its own pair of parties, and [models.md](../reference/models.md) section 2.4 tabulates the three with their instruments. What matters geometrically is that only the third pair is seller against buyer, and the [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair alone. Direction moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for.
 
 ### 5.2 Drift is the same rotation running backwards
 
-Written at the deal level, drift is $\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$ before signature, and section 7.2 of [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries the same equation after it. Per component:
+Written at the deal level, drift is $\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$ before signature, and section 7.2 of [seller-surplus.md](../arguments/seller-surplus.md) carries the same equation after it. Per component:
 
 $$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
 
@@ -152,7 +153,7 @@ $$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
 |---|---|---|
 | $\gamma_{search}$ | New entrants, category redefinition | Nowhere |
 | $\gamma_{consensus}$ | Stakeholder turnover, reorganization | Nowhere |
-| $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen | [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7.2 |
+| $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen | [seller-surplus.md](../arguments/seller-surplus.md) section 7.2 |
 
 **The field consequence sits in the bargaining row.** A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone without any change in the product, the price or the technical work. That event is the most common way an enterprise deal dies.
 
@@ -162,13 +163,13 @@ This also generalizes Axiom II's trajectory. $D(t)$ is written as a scalar, the 
 
 ### 5.3 What this demotes
 
-The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar and destroys the direction that selects the motion. It keeps its one job, showing why cutting price cannot offset a wide gap, and stops being a representation of transaction cost. Nothing in the framework weights one side of a gap against the other, and [02-mathematical-models.md](./02-mathematical-models.md) section 2.4 says why any such weight would belong to the enforcement pair alone.
+The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar and destroys the direction that selects the motion. It keeps its one job, showing why cutting price cannot offset a wide gap, and stops being a representation of transaction cost. Nothing in the framework weights one side of a gap against the other, and [models.md](../reference/models.md) section 2.4 says why any such weight would belong to the enforcement pair alone.
 
 ---
 
 ## 6. What follows for the seller's market
 
-A seller who runs only short-vector tactics can transact only with short-vector buyers, so addressable market is a property of the motion rather than of the product. [05-governance-forms.md](./05-governance-forms.md) section 4 carries that argument and the three consequences that follow from it.
+A seller who runs only short-vector tactics can transact only with short-vector buyers, so addressable market is a property of the motion rather than of the product. [governance-forms.md](../arguments/governance-forms.md) section 4 carries that argument and the three consequences that follow from it.
 
 ---
 
@@ -180,13 +181,13 @@ Axiom II's under-frictioned failure has two symptoms and the Constitution names 
 
 ## 8. Why sellers choose the wrong region
 
-Short-vector tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. By the Constitution's third standing assumption that is expected, and the remedy is the vesting claim argued in [05-governance-forms.md](./05-governance-forms.md) section 5. What this file adds is the target: vesting is usually read as protection against poor Structural execution, and it is also what governs which region a seller chooses in the first place.
+Short-vector tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. By the Constitution's third standing assumption that is expected, and the remedy is the vesting claim argued in [governance-forms.md](../arguments/governance-forms.md) section 5. What this file adds is the target: vesting is usually read as protection against poor Structural execution, and it is also what governs which region a seller chooses in the first place.
 
 ---
 
 ## 9. What this does not settle
 
-Six gaps sit under this file and all six are written out in [07-open-questions.md](./07-open-questions.md), which is the only register: the consensus region having no instrument file (item 2), whether direction is vendor-relative (24), where the boundary between short and long sits (26), whether the count bands are the right shape (25), whether the three drift rates behave as one mechanism (14), and whether $a$ is anywhere near 2.25 (15).
+Six gaps sit under this file and all six are written out in [open-questions.md](../reference/open-questions.md), which is the only register: the consensus region having no instrument file (item 2), whether direction is vendor-relative (24), where the boundary between short and long sits (26), whether the count bands are the right shape (25), whether the three drift rates behave as one mechanism (14), and whether $a$ is anywhere near 2.25 (15).
 
 ---
 
@@ -232,12 +233,12 @@ The motions are written out rather than abbreviated, because SLG would mean two 
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies both quantities and Axiom III supplies the amplification derived here.
-- [05-governance-forms.md](./05-governance-forms.md) — The third quantity, frequency, and what the seller's market follows from.
-- [02-mathematical-models.md](./02-mathematical-models.md) — Functional forms for the components.
-- [06-calibration.md](./06-calibration.md) — Provenance of every number named here: the boundary, the dominance threshold, the bands.
-- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.
-- [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase and Williamson, the source of the decomposition.
-- [channel-collapse.md](../02-research/channel-collapse.md) — The reachability blocker, which most frameworks do not name as a cost.
+- [constitution.md](./constitution.md) — Axiom I supplies both quantities and Axiom III supplies the amplification derived here.
+- [governance-forms.md](../arguments/governance-forms.md) — The third quantity, frequency, and what the seller's market follows from.
+- [models.md](../reference/models.md) — Functional forms for the components.
+- [calibration.md](../reference/calibration.md) — Provenance of every number named here: the boundary, the dominance threshold, the bands.
+- [seller-surplus.md](../arguments/seller-surplus.md) — The seller's side of the transaction, which section 8 depends on.
+- [transaction-cost-economics.md](../evidence/transaction-cost-economics.md) — Coase and Williamson, the source of the decomposition.
+- [channel-collapse.md](../evidence/channel-collapse.md) — The reachability blocker, which most frameworks do not name as a cost.
 - [Deal Triage Calculator](../../practice/deal-triage-calculator.md) — The instrument that emits both quantities, and the conditions under which the implementation-led region should be declined.
 - [models/README.md](../../models/README.md) — Executable forms of the equations referenced here.

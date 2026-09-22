@@ -21,7 +21,7 @@ import tcg_models as m
 
 
 # ==========================================================================
-# 02-mathematical-models.md section 1.5, the normalization guard.
+# models.md section 1.5, the normalization guard.
 # ==========================================================================
 
 class TestGapNormalization(unittest.TestCase):
@@ -81,7 +81,7 @@ class TestGapNormalization(unittest.TestCase):
 
 
 # ==========================================================================
-# 02-mathematical-models.md section 1, the two cost representations.
+# models.md section 1, the two cost representations.
 # ==========================================================================
 
 class TestTransactionCost(unittest.TestCase):
@@ -151,7 +151,7 @@ class TestTransactionCost(unittest.TestCase):
 
 
 # ==========================================================================
-# 02-mathematical-models.md sections 1.1 and 2.4, and 01-motions.md.
+# models.md sections 1.1 and 2.4, and motions.md.
 # Per-component amplification, adopted in Constitution v17.0.
 # ==========================================================================
 
@@ -202,7 +202,7 @@ class TestPerComponentAmplification(unittest.TestCase):
 
 
 class TestFrictionVector(unittest.TestCase):
-    """01-motions.md sections 1 to 3, and Axiom I's composition claim.
+    """motions.md sections 1 to 3, and Axiom I's composition claim.
 
     Level is the L1 norm of base friction and direction is the share of
     effective cost. Keeping them on different quantities is what makes
@@ -271,7 +271,7 @@ class TestFrictionVector(unittest.TestCase):
 
 
 # ==========================================================================
-# 02-mathematical-models.md section 2, the two halves of the gap.
+# models.md section 2, the two halves of the gap.
 # ==========================================================================
 
 class TestScorecardDimensions(unittest.TestCase):
@@ -439,7 +439,7 @@ class TestConsensusFriction(unittest.TestCase):
 
 
 # ==========================================================================
-# 02-mathematical-models.md section 4, urgency decay.
+# models.md section 4, urgency decay.
 # ==========================================================================
 
 class TestUrgencyDecay(unittest.TestCase):
@@ -480,7 +480,7 @@ class TestUrgencyDecay(unittest.TestCase):
                                float(start) + 0.5)
 
     def test_maintenance_holds_the_drift_rate_down(self):
-        """04-seller-surplus-model.md section 7.2: C_sustain is the spend that
+        """seller-surplus.md section 7.2: C_sustain is the spend that
         holds gamma down, and Net Revenue Retention is this equation run past
         signature."""
         start = m.normalize_gap(2.0)
@@ -724,7 +724,7 @@ class TestMilestoneValuation(unittest.TestCase):
 
 
 # ==========================================================================
-# 04-seller-surplus-model.md
+# seller-surplus.md
 # ==========================================================================
 
 class TestSellerSurplus(unittest.TestCase):
@@ -1121,7 +1121,7 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertNotIn("structural-one-shot-escalate", result.flags)
 
     def test_making_a_deal_recurrent_changes_the_form_not_the_deal(self):
-        """The strategic claim in 05-governance-forms.md section 5: recurrence
+        """The strategic claim in governance-forms.md section 5: recurrence
         is partly a commercial choice, and it changes which governance form
         applies rather than making an expensive one cheaper."""
         one_shot = m.triage(**dict(self.STRUCTURAL_DEAL, frequency=m.ONE_SHOT))
@@ -1218,7 +1218,7 @@ class TestCalibrationDiscipline(unittest.TestCase):
             m.consensus_friction(5, 0.25, beta=1.0)
 
     def test_every_numeric_constant_is_listed_in_the_calibration_layer(self):
-        """06-calibration.md is the single home for every value in the model.
+        """calibration.md is the single home for every value in the model.
 
         The point of quarantining the numbers is that a reader can accept the
         structural claims without accepting any of them, and that only works
@@ -1227,8 +1227,8 @@ class TestCalibrationDiscipline(unittest.TestCase):
         using and not declaring.
         """
         here = os.path.dirname(os.path.abspath(__file__))
-        page = open(os.path.join(here, "..", "theory", "01-foundation",
-                                 "06-calibration.md"), encoding="utf-8").read()
+        page = open(os.path.join(here, "..", "theory", "reference",
+                                 "calibration.md"), encoding="utf-8").read()
         # Names, not values: a value can legitimately appear under a different
         # label, but every knob has to be findable.
         knobs = ("A_RISK_AVERSION", "DOMINANCE_THRESHOLD", "ALPHA_COORDINATION",
@@ -1247,13 +1247,13 @@ class TestCalibrationDiscipline(unittest.TestCase):
             if not any(f in page for f in forms):
                 missing.append("{} = {}".format(name, value))
         self.assertEqual(missing, [],
-                         "values in the module that 06-calibration.md does not "
+                         "values in the module that calibration.md does not "
                          "declare: {}".format(missing))
 
     def test_the_calibration_layer_claims_nothing_is_measured(self):
         here = os.path.dirname(os.path.abspath(__file__))
-        page = open(os.path.join(here, "..", "theory", "01-foundation",
-                                 "06-calibration.md"), encoding="utf-8").read()
+        page = open(os.path.join(here, "..", "theory", "reference",
+                                 "calibration.md"), encoding="utf-8").read()
         self.assertIn("No value on this page is a measurement", page)
 
     def test_the_module_has_no_third_party_imports(self):

@@ -1,9 +1,10 @@
 ---
 title: "Costly Signals"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Costly Signals
@@ -42,9 +43,9 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 - **Akerlof Exit Threshold** — direct.
 - **Jevons Vulnerability** — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
 - **Axiom II — Law of Asset Specificity, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
-- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
+- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [models.md](../reference/models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).
 
 ---
 

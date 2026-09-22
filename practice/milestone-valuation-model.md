@@ -1,9 +1,10 @@
 ---
 title: "Milestone Valuation Model"
 layer: practice
+kind: instrument
 status: active
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Milestone Valuation Model
@@ -12,7 +13,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Use when:** The Red Team has surfaced the failure modes and you are drafting the MIP's timeline and commercial terms.
 
-**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../theory/01-foundation/00-tcg-constitution.md), research in [real-options.md](../theory/02-research/real-options.md).
+**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../theory/canon/constitution.md), research in [real-options.md](../theory/evidence/real-options.md).
 
 ---
 
@@ -43,7 +44,7 @@ $$S_m = p_m \cdot \left[ V_{gross,m} - \left(a \cdot x_m^2 + c_m\right) \right]$
 | $c_m$ | Payment allocated to stage $m$, as a fraction of annual contract value |
 
 > [!IMPORTANT]
-> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 1.7 carries the arithmetic.
+> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [models.md](../theory/reference/models.md) section 1.7 carries the arithmetic.
 
 Uncertainty decays as gates clear, with each stage resolving a fraction of what remains:
 
@@ -124,7 +125,7 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 
 ## Related
 
-- [real-options.md](../theory/02-research/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment, an Axiom II corollary.
+- [real-options.md](../theory/evidence/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
+- [constitution.md](../theory/canon/constitution.md) — Staged Commitment, an Axiom II corollary.
 - [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) — The artifact these gates go into.
 - [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — Supplies $x_0$.

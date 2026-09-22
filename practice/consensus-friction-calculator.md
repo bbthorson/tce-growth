@@ -1,9 +1,10 @@
 ---
 title: "Consensus Friction Calculator"
 layer: practice
+kind: instrument
 status: active
 operationalizes: [axiom-1]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Consensus Friction Calculator
@@ -15,7 +16,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 > [!IMPORTANT]
 > **This is the consensus component's only dedicated instrument, and one instrument is not a set.** Consensus-dominant is a routing destination in its own right, and a deal arriving here finds a calculator that produces a number and then prescribes executive sponsorship, which is a tactic rather than a motion. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are the incumbent practice for this component, and this repository does not carry them. Reach for those and say on the forecast call that you are working outside the framework, rather than substituting the implementation chain because it is the one that exists.
 
-**Operationalizes:** Axiom III's $F_{consensus}$ term. Theory in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 3, research in [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md).
+**Operationalizes:** Axiom III's $F_{consensus}$ term. Theory in [models.md](../theory/reference/models.md) Section 3, research in [buying-center-dynamics.md](../theory/evidence/buying-center-dynamics.md).
 
 ---
 
@@ -91,7 +92,7 @@ $$F_{consensus} = 1.0 \times 5^{1.35} \times 1.25 \times 1.6 = 8.78 \times 1.25 
 That lands in the medium band, which calls for a stakeholder alignment matrix and shared evaluation criteria before the deal is forecast.
 
 > [!NOTE]
-> These parameter values are reasoned defaults, not estimates fitted to booked deals. The output ranks deals against each other reliably. It does not predict a cycle length in weeks. See [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 6.
+> These parameter values are reasoned defaults, not estimates fitted to booked deals. The output ranks deals against each other reliably. It does not predict a cycle length in weeks. See [models.md](../theory/reference/models.md) Section 6.
 
 ---
 
@@ -121,8 +122,8 @@ In a committee of three, aligning incentives produces a modest gain. In a commit
 
 ## Related
 
-- [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md) — Cyert-March and Webster-Wind. Why the coalition behaves this way.
-- [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — Derivation and sensitivity analysis.
+- [buying-center-dynamics.md](../theory/evidence/buying-center-dynamics.md) — Cyert-March and Webster-Wind. Why the coalition behaves this way.
+- [models.md](../theory/reference/models.md) — Derivation and sensitivity analysis.
 - [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) — Where the committee gets mapped.
 - [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) — The variance-reduction instrument.
 - [Deal Triage Calculator](./deal-triage-calculator.md) — Counts the veto holders and the share of them with a documented measured objective, which is this component's gap.

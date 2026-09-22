@@ -1,9 +1,10 @@
 ---
 title: "RE-AIM Framework"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # RE-AIM Framework
@@ -33,4 +34,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md).
 - Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

@@ -1,10 +1,11 @@
 ---
 title: "The Calibration Layer"
 layer: theory
+kind: reference
 status: active
 version: 1.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # The Calibration Layer
@@ -43,7 +44,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 
 ## 3. Every parameter in the framework
 
-### 3.1 Cost and asymmetry ([02-mathematical-models.md](./02-mathematical-models.md))
+### 3.1 Cost and asymmetry ([models.md](./models.md))
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
@@ -144,7 +145,7 @@ Recorded rather than fixed, because each fix means choosing a shape and that is 
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — The structural claims, which are stated without reference to any value on this page.
-- [02-mathematical-models.md](./02-mathematical-models.md) — The functional forms these parameters sit inside.
-- [citation-provenance-audit.md](../02-research/audits/citation-provenance-audit.md) — The companion for headline statistics, on the same discipline. That file traces numbers cited from outside; this one traces numbers chosen inside.
+- [constitution.md](../canon/constitution.md) — The structural claims, which are stated without reference to any value on this page.
+- [models.md](./models.md) — The functional forms these parameters sit inside.
+- [citation-provenance-audit.md](../evidence/citation-provenance-audit.md) — The companion for headline statistics, on the same discipline. That file traces numbers cited from outside; this one traces numbers chosen inside.
 - [models/README.md](../../models/README.md) — Why nothing here is fitted, and what fitting to synthetic data would cost.

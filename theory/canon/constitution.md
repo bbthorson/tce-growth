@@ -1,8 +1,9 @@
 ---
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
+kind: canon
 status: active
-version: 2.4
+version: 2.5
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
@@ -13,7 +14,7 @@ version: 2.4
 Version history is at the end of this document.
 
 > [!IMPORTANT]
-> **This document states structure. It states no measured quantity.** Every claim below says what depends on what, and each is argued from a mechanism. The coefficients, thresholds and band edges that turn those claims into numbers live in [06-calibration.md](./06-calibration.md), none of them is fitted, and a reader can reject any number there without rejecting the claim it sits inside.
+> **This document states structure. It states no measured quantity.** Every claim below says what depends on what, and each is argued from a mechanism. The coefficients, thresholds and band edges that turn those claims into numbers live in [calibration.md](../reference/calibration.md), none of them is fitted, and a reader can reject any number there without rejecting the claim it sits inside.
 
 ---
 
@@ -22,7 +23,7 @@ Version history is at the end of this document.
 Three premises sit above the axioms. They are inherited rather than argued, and each is named here so a reader who rejects one knows what falls with it.
 
 1. **Bounded rationality and opportunism** (Williamson 1985). No party can foresee every state the relationship will reach, so every contract is incomplete. And a party will exploit a gap once the other side's position is exposed. The first is why uncertainty has a price. The second is why safeguards exist.
-2. **Value is exogenous to the seller, and it decays.** Willingness to pay is a property of the product and the buyer's situation. The seller's levers are the cost of transacting and the buyer's perception of it. Where value moves during a cycle it moves down, from the triggering event: $V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$. This is a modeling assumption, stated in [02-mathematical-models.md](./02-mathematical-models.md) section 4, and the one term in $\delta$ a seller can touch is whether an external catalyst has been named.
+2. **Value is exogenous to the seller, and it decays.** Willingness to pay is a property of the product and the buyer's situation. The seller's levers are the cost of transacting and the buyer's perception of it. Where value moves during a cycle it moves down, from the triggering event: $V_{effective}(t) = V_{solution} \cdot e^{-\delta t}$. This is a modeling assumption, stated in [models.md](../reference/models.md) section 4, and the one term in $\delta$ a seller can touch is whether an external catalyst has been named.
 3. **Every actor acts on their own payoff** (Jensen and Meckling 1976). That includes the seller's own representatives and every intermediary standing between the two parties. An actor whose payoff does not depend on the outcome behaves as though the outcome does not matter, whatever their intent.
 
 ![Two exponential decay curves falling toward a floor at the value of the next best alternative. Organizational inertia alone reaches the floor in the second month. A named external catalyst holds value above it until the eleventh.](./assets/value-decay.svg)
@@ -41,7 +42,7 @@ Each axiom is stated at the level where a seller meets it, and each produces one
 
 **The axioms are numbered in the order a seller meets them, and the second is the gate.** A seller encounters a market before a buyer's workflow and a workflow before a deal, so the numbering follows that path. Williamson's result is that specificity is the master variable: when the investment is not specific, the buyer can verify by trying and walk away at no cost, market terms hold, and the other two readings barely matter. Uncertainty and frequency start to bite only once specificity is present. Read the three in order, and treat Axiom II as the test that decides whether the rest applies.
 
-**On the component names.** The three costs carry Coase's names in this document and throughout the theory. The field calls the second one *consensus* and the third *implementation*, and the notation keeps those subscripts, because the field names say what a seller experiences and Coase's names say why. [03-glossary-and-notation.md](./03-glossary-and-notation.md) carries the mapping.
+**On the component names.** The three costs carry Coase's names in this document and throughout the theory. The field calls the second one *consensus* and the third *implementation*, and the notation keeps those subscripts, because the field names say what a seller experiences and Coase's names say why. [notation.md](../reference/notation.md) carries the mapping.
 
 ---
 
@@ -92,7 +93,7 @@ What governance allocates is residual control (Grossman and Hart 1986, Hart and 
 
 $$k = \lVert \mathbf{F} \rVert_1 = F_{search} + F_{consensus} + F_{implementation}$$
 
-The boundary condition is $k > k_{threshold}$, separating Structural deals from Turnkey ones, and $F_{deployed} \sim k$, requiring the friction the seller deploys to scale with the specificity it manages. The threshold is chosen and [06-calibration.md](./06-calibration.md) says so.
+The boundary condition is $k > k_{threshold}$, separating Structural deals from Turnkey ones, and $F_{deployed} \sim k$, requiring the friction the seller deploys to scale with the specificity it manages. The threshold is chosen and [calibration.md](../reference/calibration.md) says so.
 
 The second clause, that the pre-signature share of the cost rises with $k$, is stated here in prose. The equation in Part III is a snapshot at signature and does not carry time, and the claim is deliberately left as a derivation beneath the axiom rather than a term inside the model until there is a reason to fit one. The [Friction Efficiency Index](../../practice/friction-efficiency-index.md) measures it in retrospect.
 
@@ -117,11 +118,11 @@ The second clause, that the pre-signature share of the cost rises with $k$, is s
 | Bargaining | Each stakeholder's, about their own outcome. What the change does to their budget, headcount and standing. |
 | Enforcement | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability. |
 
-What closes each gap is an instrument rather than an axiom, and [02-mathematical-models.md](./02-mathematical-models.md) section 2.4 tabulates the three with theirs.
+What closes each gap is an instrument rather than an axiom, and [models.md](../reference/models.md) section 2.4 tabulates the three with theirs.
 
 Only the third pair is buyer against seller, which is why an instrument built for that pair does not move the other two. The second pair is not an information gap between stakeholders that proof could close. Two stakeholders with perfect knowledge of each other and opposed interests still disagree. What proof can close is each stakeholder's uncertainty about their own exposure, and that is the inflation this axiom names on the bargaining cost.
 
-A signal resolves uncertainty only when it costs the sender something a low-quality sender could not afford. This is Spence's single crossing property, and it is why volume is not verification: a message that costs nothing to send carries no information, and a channel full of them degrades for the costly signals too. How heavily the remaining uncertainty is weighed is a question of loss aversion (Kahneman and Tversky 1979). The framework anchors the weighting on their coefficient by analogy, and [06-calibration.md](./06-calibration.md) records how far the analogy stretches.
+A signal resolves uncertainty only when it costs the sender something a low-quality sender could not afford. This is Spence's single crossing property, and it is why volume is not verification: a message that costs nothing to send carries no information, and a channel full of them degrades for the costly signals too. How heavily the remaining uncertainty is weighed is a question of loss aversion (Kahneman and Tversky 1979). The framework anchors the weighting on their coefficient by analogy, and [calibration.md](../reference/calibration.md) records how far the analogy stretches.
 
 **Mathematical content.** Each component is amplified by its own pair's normalized gap:
 
@@ -156,20 +157,20 @@ Everything the repository claims beyond the three axioms is derived from them, a
 
 | Derivation | What follows | From | Argued in |
 |---|---|---|---|
-| A motion is a region | The named motions are regions of the space $\mathbf{F}$ spans, so a motion is read off a deal rather than chosen as a philosophy. | I, with III supplying the direction reading | [01-motions.md](./01-motions.md) |
-| Division of sales labor | The standard sales organization is an instrument set with a fixed direction, so it meets the three costs in an order the deal did not choose, and every handoff is a seam where a cost is paid twice. | I | [01-motions.md](./01-motions.md) §2.3 |
-| Addressable market | A seller who runs only short-vector instruments can transact only with short-vector buyers, so reach is a property of the motion rather than of the product. | I | [05-governance-forms.md](./05-governance-forms.md) §4 |
-| Boundary condition | $k > k_{threshold}$ separates Structural deals from Turnkey ones, and $F_{deployed} \sim k$ requires deployed friction to scale with the specificity it manages. | II | [01-motions.md](./01-motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| Governance form | Specificity and frequency together select market, trilateral, bilateral or unified governance, and the Mutual Implementation Plan is the bilateral form's instrument. | II | [05-governance-forms.md](./05-governance-forms.md) §2 |
-| Frequency as a commercial choice | Restructuring a one-shot sale as a recurring one brings the cooperation condition within reach, which changes what can be governed without a third party. | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
-| Staged commitment | Hold-up is why commitments must be mutual and option value is why they must be staged, so a mutual commitment taken all at once still fails. | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../02-research/real-options.md) |
-| Stakes for agents and adjudicators | A party paid in full at signature plays a repeated game with a one-shot payoff, and an adjudicator with no exposure drifts toward extraction, so both need a vested stake. | II, with the third standing assumption | [05-governance-forms.md](./05-governance-forms.md) §5 |
-| Who bears the specificity | Whoever sinks the specific investment holds the exposure, which in a forward-deployed motion is the seller rather than the buyer. | II | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
-| Per-component amplification | Each component is amplified by its own pair's gap, and the sum factors exactly into a single friction-weighted multiplier, which is why the two cost forms are one quantity. | III | [02-mathematical-models.md](./02-mathematical-models.md) §1, §2 |
+| A motion is a region | The named motions are regions of the space $\mathbf{F}$ spans, so a motion is read off a deal rather than chosen as a philosophy. | I, with III supplying the direction reading | [motions.md](./motions.md) |
+| Division of sales labor | The standard sales organization is an instrument set with a fixed direction, so it meets the three costs in an order the deal did not choose, and every handoff is a seam where a cost is paid twice. | I | [motions.md](./motions.md) §2.3 |
+| Addressable market | A seller who runs only short-vector instruments can transact only with short-vector buyers, so reach is a property of the motion rather than of the product. | I | [governance-forms.md](../arguments/governance-forms.md) §4 |
+| Boundary condition | $k > k_{threshold}$ separates Structural deals from Turnkey ones, and $F_{deployed} \sim k$ requires deployed friction to scale with the specificity it manages. | II | [motions.md](./motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| Governance form | Specificity and frequency together select market, trilateral, bilateral or unified governance, and the Mutual Implementation Plan is the bilateral form's instrument. | II | [governance-forms.md](../arguments/governance-forms.md) §2 |
+| Frequency as a commercial choice | Restructuring a one-shot sale as a recurring one brings the cooperation condition within reach, which changes what can be governed without a third party. | II | [governance-forms.md](../arguments/governance-forms.md) §5 |
+| Staged commitment | Hold-up is why commitments must be mutual and option value is why they must be staged, so a mutual commitment taken all at once still fails. | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../evidence/real-options.md) |
+| Stakes for agents and adjudicators | A party paid in full at signature plays a repeated game with a one-shot payoff, and an adjudicator with no exposure drifts toward extraction, so both need a vested stake. | II, with the third standing assumption | [governance-forms.md](../arguments/governance-forms.md) §5 |
+| Who bears the specificity | Whoever sinks the specific investment holds the exposure, which in a forward-deployed motion is the seller rather than the buyer. | II | [seller-surplus.md](../arguments/seller-surplus.md) |
+| Per-component amplification | Each component is amplified by its own pair's gap, and the sum factors exactly into a single friction-weighted multiplier, which is why the two cost forms are one quantity. | III | [models.md](../reference/models.md) §1, §2 |
 | Friction Allocation Principles | A mechanism reduces a gap only if its cost is non-automatable, borne by the claimant, scaled to the claim and adjudicated by someone who loses when a bad signal passes. Violate one and it is cheap talk. | III | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
-| Three levers, and their order | The seller can lower $c$, lower $a$, or lower $\hat{\Delta}_k$ where it binds, and the framework conjectures the third beats raising value because a constant cannot offset a squared term. | III | [02-mathematical-models.md](./02-mathematical-models.md) §1.8 |
+| Three levers, and their order | The seller can lower $c$, lower $a$, or lower $\hat{\Delta}_k$ where it binds, and the framework conjectures the third beats raising value because a constant cannot offset a squared term. | III | [models.md](../reference/models.md) §1.8 |
 | Reputation depreciation | Credibility carries demurrage and must be re-earned with evidence of continued delivery, at the seller's level, the channel's and the adjudicator's. | III | [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) §4 |
-| Decay Clock | Value decays from the trigger while the gaps rebuild, so a deal viable at $t_0$ is not necessarily viable at $t_1$ without intervention. | III, with the second standing assumption | [02-mathematical-models.md](./02-mathematical-models.md) §4 |
+| Decay Clock | Value decays from the trigger while the gaps rebuild, so a deal viable at $t_0$ is not necessarily viable at $t_1$ without intervention. | III, with the second standing assumption | [models.md](../reference/models.md) §4 |
 | The Surplus equation | The three axioms are what the terms of one equation mean. | All three | Part III below |
 
 ---
@@ -222,10 +223,19 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.4.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+<!-- vale TCG.RetiredTerms = NO -->
+<!--
+  The retired-term rule is off for this section. A history entry names a file
+  as it was called when the change happened, which is the same trade
+  RetiredTerms.yml makes with its own version citations. Renaming them here
+  would make the history describe a past that did not occur.
+-->
+
+**Current version: 2.5.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 2.5 | 2026-09 | Segmentation audit, step 5. `theory/` is re-split by document contract into canon, reference, arguments and evidence, and this document moves to `theory/canon/constitution.md`. Every file declares a `kind` in its frontmatter, `check_frontmatter.py` requires it to match the directory, and a canon file now carries a word cap it cannot grow past. No axiom, equation or derivation changed: this version moves files and adds a check. |
 | 2.4 | 2026-09 | Segmentation audit, step 4. The twelve corollary bullets are gone and Part II carries each derivation as one sentence naming the file that argues it. No axiom, equation or derivation changed, and nothing was dropped: four claims had no home outside these bullets and were moved first. The division of sales labour went to 01-motions.md §2.3, the hold-up against option-value distinction to the Milestone Valuation Model, the three levers and their conjecture to 02-mathematical-models.md §1.8, and the Decay Clock's second half to its section 4. Axiom III's pair table loses its prescription column to the same file's section 2.4. |
 | 2.3 | 2026-09 | Segmentation audit, step 3. Deduplication, and no claim in this document changed. The "what this does not settle" sections in the motions, governance and seller surplus files fold into 07-open-questions.md, which gains seven entries and is now the only register. The three-pairs table, the addressable-market argument and the vesting claim each drop to a single prose home. The research README's scope table merges into the reading guide. |
 | 2.2 | 2026-09 | Restructure, step 6. Reference trim. The research files stop carrying quotes and statistics, which move to publishing and the provenance audit. The glossary term index loses every single-file term. The math file's argument about units is compressed. The retired derivation tiers are removed from every support line. No axiom changed. |
@@ -237,23 +247,25 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 The nineteen revisions made under the earlier name, and the prose entry for each, are in the git history: `git log -- theory/01-foundation/00-tcg-constitution.md`, then `git show <commit>:theory/01-foundation/00-tcg-constitution.md`. `RetiredTerms.yml` cites those version numbers when it records what each one retired.
 
+<!-- vale TCG.RetiredTerms = YES -->
+
 ---
 
 ## Related
 
 **Sibling theory:**
-- [01-motions.md](./01-motions.md) — Motion selection derived from the friction vector, the four regions and what each deploys, and the map onto the incumbent vocabulary.
-- [02-mathematical-models.md](./02-mathematical-models.md) — Functional forms behind the variables named here, and the derivation reconciling the two cost representations.
-- [03-glossary-and-notation.md](./03-glossary-and-notation.md) — Canonical index of every symbol and term, including the Coase-to-field name mapping.
-- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side of Axiom II.
-- [05-governance-forms.md](./05-governance-forms.md) — Axiom II's governance corollaries in full.
-- [06-calibration.md](./06-calibration.md) — Every number, with its provenance.
-- [07-open-questions.md](./07-open-questions.md) — Where the theory is under-developed, by axiom, and what would settle each gap.
+- [motions.md](./motions.md) — Motion selection derived from the friction vector, the four regions and what each deploys, and the map onto the incumbent vocabulary.
+- [models.md](../reference/models.md) — Functional forms behind the variables named here, and the derivation reconciling the two cost representations.
+- [notation.md](../reference/notation.md) — Canonical index of every symbol and term, including the Coase-to-field name mapping.
+- [seller-surplus.md](../arguments/seller-surplus.md) — The seller's side of Axiom II.
+- [governance-forms.md](../arguments/governance-forms.md) — Axiom II's governance corollaries in full.
+- [calibration.md](../reference/calibration.md) — Every number, with its provenance.
+- [open-questions.md](../reference/open-questions.md) — Where the theory is under-developed, by axiom, and what would settle each gap.
 
 **Academic backing** (per axiom):
-- Axiom I (Composition) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [buying-center-dynamics.md](../02-research/buying-center-dynamics.md), [channel-collapse.md](../02-research/channel-collapse.md)
-- Axiom II (Specificity) → [transaction-cost-economics.md](../02-research/transaction-cost-economics.md), [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md), [incomplete-contracts.md](../02-research/incomplete-contracts.md), [process-misfit.md](../02-research/process-misfit.md), [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [real-options.md](../02-research/real-options.md), [fear-of-failure.md](../02-research/fear-of-failure.md)
-- Axiom III (Inflation) → [costly-signals.md](../02-research/costly-signals.md), [prospect-theory.md](../02-research/prospect-theory.md), [cfir.md](../02-research/cfir.md), [re-aim-framework.md](../02-research/re-aim-framework.md), [fear-of-failure.md](../02-research/fear-of-failure.md)
+- Axiom I (Composition) → [transaction-cost-economics.md](../evidence/transaction-cost-economics.md), [buying-center-dynamics.md](../evidence/buying-center-dynamics.md), [channel-collapse.md](../evidence/channel-collapse.md)
+- Axiom II (Specificity) → [transaction-cost-economics.md](../evidence/transaction-cost-economics.md), [klein-crawford-alchian.md](../evidence/klein-crawford-alchian.md), [incomplete-contracts.md](../evidence/incomplete-contracts.md), [process-misfit.md](../evidence/process-misfit.md), [game-theory-and-nrr.md](../evidence/game-theory-and-nrr.md), [real-options.md](../evidence/real-options.md), [fear-of-failure.md](../evidence/fear-of-failure.md)
+- Axiom III (Inflation) → [costly-signals.md](../evidence/costly-signals.md), [prospect-theory.md](../evidence/prospect-theory.md), [cfir.md](../evidence/cfir.md), [re-aim-framework.md](../evidence/re-aim-framework.md), [fear-of-failure.md](../evidence/fear-of-failure.md)
 
 **Field operationalization:**
 - Level, direction and frequency → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md)

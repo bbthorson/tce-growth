@@ -1,12 +1,12 @@
 # Source Quotes
 
-Citable passages, collected from the research files so the theory directory carries argument and this one carries material for writing. Two kinds sit here. Quoted lines are the source's own words and should be cited as such. Unquoted lines are this framework's compression of a source and should be presented as ours. Statistics are not here. Every number lives in the [citation provenance audit](../../theory/02-research/audits/citation-provenance-audit.md), with its verification status, and nothing should be quoted from memory.
+Citable passages, collected from the research files so the theory directory carries argument and this one carries material for writing. Two kinds sit here. Quoted lines are the source's own words and should be cited as such. Unquoted lines are this framework's compression of a source and should be presented as ours. Statistics are not here. Every number lives in the [citation provenance audit](../../theory/evidence/citation-provenance-audit.md), with its verification status, and nothing should be quoted from memory.
 
 ---
 
 ## Transaction cost economics
 
-*From [transaction-cost-economics.md](../../theory/02-research/transaction-cost-economics.md).*
+*From [transaction-cost-economics.md](../../theory/evidence/transaction-cost-economics.md).*
 
 - "Speed is risk" when governance structures are immature.
 - "The Fundamental Transformation" shifts a market from "large numbers" competition to "small numbers" bilateral monopoly.
@@ -14,7 +14,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Quasi-rents and supplier exposure
 
-*From [klein-crawford-alchian.md](../../theory/02-research/klein-crawford-alchian.md).*
+*From [klein-crawford-alchian.md](../../theory/evidence/klein-crawford-alchian.md).*
 
 - The exposure follows the investment, not the invoice. Whoever sinks the specific work is the party who can be held up.
 - A quasi-rent measures redeployability, not effort. Ten weeks of work that transfers to the next deal is not exposure. One week that does not is.
@@ -23,7 +23,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Incomplete contracts
 
-*From [incomplete-contracts.md](../../theory/02-research/incomplete-contracts.md).*
+*From [incomplete-contracts.md](../../theory/evidence/incomplete-contracts.md).*
 
 - The contract cannot cover every state. The question is who decides in the states it misses.
 - A buyer who expects to be held up will under-invest in the integration that makes the product work, and then blame the product.
@@ -31,7 +31,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Process misfit
 
-*From [process-misfit.md](../../theory/02-research/process-misfit.md).*
+*From [process-misfit.md](../../theory/evidence/process-misfit.md).*
 
 - The enforcement cost is not a property of the product or of the buyer. It is the distance between them, and distance takes two points to measure.
 - A demonstration can only fail on functionality and data. The four domains that kill implementations do not appear on a screen.
@@ -40,7 +40,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Buying center dynamics
 
-*From [buying-center-dynamics.md](../../theory/02-research/buying-center-dynamics.md).*
+*From [buying-center-dynamics.md](../../theory/evidence/buying-center-dynamics.md).*
 
 - The proposal is evaluated once per stakeholder, against a different objective each time, and it must survive all of them.
 - A saboteur is usually not irrational. They are optimizing a scorecard the seller never read.
@@ -48,7 +48,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Costly signals
 
-*From [costly-signals.md](../../theory/02-research/costly-signals.md).*
+*From [costly-signals.md](../../theory/evidence/costly-signals.md).*
 
 - "The difficulty of the sales process is not a barrier to the product; it is the product itself."
 - "Trust is an economic asset that must be purchased with the currency of costly action."
@@ -56,7 +56,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Prospect theory
 
-*From [prospect-theory.md](../../theory/02-research/prospect-theory.md).*
+*From [prospect-theory.md](../../theory/evidence/prospect-theory.md).*
 
 - "The pain of losing $1,000 is significantly greater than the pleasure of gaining $1,000."
 - "The single largest competitor in complex B2B sales is not a rival firm, but 'No Decision,' the decision to maintain the status quo."
@@ -65,7 +65,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Fear of failure
 
-*From [fear-of-failure.md](../../theory/02-research/fear-of-failure.md).*
+*From [fear-of-failure.md](../../theory/evidence/fear-of-failure.md).*
 
 - "The primary barrier to revenue is not the competitor's feature set; it is the buyer's calculation of risk."
 - "High-pressure (FOMO) tactics increase the likelihood of losing the deal by 84% when the buyer is indecisive."
@@ -73,7 +73,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Real options
 
-*From [real-options.md](../../theory/02-research/real-options.md).*
+*From [real-options.md](../../theory/evidence/real-options.md).*
 
 - The status quo is not inertia. It is an option the buyer currently holds and the seller is asking them to give up.
 - A buyer who says "not yet" is often pricing the option to wait correctly. The counter is to make waiting cost something.
@@ -81,7 +81,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Game theory and retention
 
-*From [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md).*
+*From [game-theory-and-nrr.md](../../theory/evidence/game-theory-and-nrr.md).*
 
 - "One might as well defect in all cases" (Axelrod, on the always-defect strategy when the future is negligible).
 - Technology buyers involved in renewal decisions "regret nearly every purchase they make" (Gartner, 2023). The share is in the provenance audit.
@@ -89,14 +89,14 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Channel collapse
 
-*From [channel-collapse.md](../../theory/02-research/channel-collapse.md).*
+*From [channel-collapse.md](../../theory/evidence/channel-collapse.md).*
 
 - "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." (Jevons, 1865)
 - A channel mismatch, using a Jevons-vulnerable channel for a buyer whose binding cost is elsewhere, means the seller is fighting both channel-level congestion and structural irrelevance.
 
 ## Implementation science
 
-*From [cfir.md](../../theory/02-research/cfir.md) and [re-aim-framework.md](../../theory/02-research/re-aim-framework.md).*
+*From [cfir.md](../../theory/evidence/cfir.md) and [re-aim-framework.md](../../theory/evidence/re-aim-framework.md).*
 
 - "Customer Resistance is reframed. It is no longer a barrier to the sale; it is **Implementation Data**."
 - "A highly effective drug that no one can afford (low Reach) or a complex exercise regimen that no hospital can staff (low Adoption) has a net public health impact of zero."

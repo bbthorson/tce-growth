@@ -71,7 +71,7 @@ The link checker validates hrefs. It cannot see the prose around them. In August
 
 <!-- vale TCG.RetiredTerms = NO -->
 ```markdown
-[TCG Constitution - Axiom III (Law of Friction)](../../theory/01-foundation/00-tcg-constitution.md)
+[TCG Constitution - Axiom III (Law of Friction)](../../theory/canon/constitution.md)
 ```
 
 The href was right. The name had been retired two Constitution versions earlier. Same pattern for directory numbering: link text said `04-internal-ops/` while the href pointed at the real `02-internal-ops/`. Both classes are invisible to a link checker and to a reader who trusts the link. `RetiredTerms.yml` is the rule that sees them.

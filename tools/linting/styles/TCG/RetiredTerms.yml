@@ -105,15 +105,15 @@ swap:
   plg-motion: turnkey-motion
   slg-motion: search-motion
   Implementation-Led Growth \(ILG\): "implementation-led motion (the framework is Transaction Cost Growth)"
-  Product-Led Growth \(PLG\): "the Turnkey motion, though the two are not equal; see 01-motions.md section 10"
-  Sales-Led Growth \(SLG\): "the search-led motion, which is wider; see 01-motions.md section 10"
+  Product-Led Growth \(PLG\): "the Turnkey motion, though the two are not equal; see theory/canon/motions.md section 10"
+  Sales-Led Growth \(SLG\): "the search-led motion, which is wider; see theory/canon/motions.md section 10"
   ILG Constitution: TCG Constitution
   Constitution of Implementation-Led Growth: Constitution of Transaction Cost Growth
   ILG framework: TCG framework
   ILG axiom: TCG axiom
   Supports in ILG: Supports in TCG
   Axioms of ILG: Axioms of TCG
-  00-ilg-constitution\.md: 00-tcg-constitution.md
+  00-ilg-constitution\.md: theory/canon/constitution.md
   ilg_models: tcg_models
   styles/ILG: styles/TCG
   vale ILG\.: "vale TCG."
@@ -131,9 +131,9 @@ swap:
   Their combined level determines which motion: "composition selects the motion, and combined level sets the Turnkey and Structural boundary"
   03-learning-plan: "no replacement; the curriculum was removed in v15.0"
   llm-tutor-instructions: "no replacement; the curriculum was removed in v15.0"
-  plain-language-part-I-companion: 00-tcg-constitution.md Part I
-  Constitution, Clarifying Concepts: the concept's research file, indexed in 03-glossary-and-notation.md
-  Constitution clarifying concept: the concept's research file, indexed in 03-glossary-and-notation.md
+  plain-language-part-I-companion: theory/canon/constitution.md Part I
+  Constitution, Clarifying Concepts: the concept's research file, indexed in theory/reference/notation.md
+  Constitution clarifying concept: the concept's research file, indexed in theory/reference/notation.md
   Constitution, Part IV: "removed in the 2026-09 restructure; the Handoff Rule lives in practice/implementation-motion/04-sustaining-adoption-review.md"
   net recurring revenue: Net Revenue Retention
   Net Recurring Revenue: Net Revenue Retention
@@ -154,8 +154,8 @@ swap:
   05-learning-plan: 03-learning-plan
   06-tools: 02-tools
   02-cases: 01-cases
-  00-foundation: 01-foundation
-  01-research: 02-research
+  00-foundation: theory/canon, theory/reference or theory/arguments, by contract
+  01-research: theory/evidence
   Toaster deal: Turnkey deal
   Toaster deals: Turnkey deals
   toaster deal: turnkey deal
@@ -186,17 +186,17 @@ swap:
   01-education-motion\.md: "removed in the 2026-09 restructure (the search-led region has no instrument file)"
   00-setup-implementation-guide\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
   02-governance-review-checklist\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
-  03-incentives-vested-commission\.md: "05-governance-forms.md section 5 (the comp plan template was removed in the 2026-09 restructure; the claim it carried stays)"
+  03-incentives-vested-commission\.md: "theory/arguments/governance-forms.md section 5 (the comp plan template was removed in the 2026-09 restructure; the claim it carried stays)"
   06-governance-implementation-veto\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
   07-variable-ownership\.md: "removed in the 2026-09 restructure; the Handoff Rule lives in practice/implementation-motion/04-sustaining-adoption-review.md"
-  01-motion-taxonomy\.md: "01-motions.md (merged with the friction vector and the motion vocabulary in the 2026-09 restructure)"
-  06-friction-vector\.md: "01-motions.md (merged in the 2026-09 restructure; sections 1 to 9 keep their numbers)"
-  09-motion-vocabulary\.md: "01-motions.md section 10"
-  03-mathematical-models\.md: 02-mathematical-models.md
-  04-glossary-and-notation\.md: 03-glossary-and-notation.md
-  05-seller-surplus-model\.md: 04-seller-surplus-model.md
-  07-governance-forms\.md: 05-governance-forms.md
-  08-calibration\.md: 06-calibration.md
+  01-motion-taxonomy\.md: "theory/canon/motions.md (merged with the friction vector and the motion vocabulary in the 2026-09 restructure)"
+  06-friction-vector\.md: "theory/canon/motions.md (merged in the 2026-09 restructure; sections 1 to 9 keep their numbers)"
+  09-motion-vocabulary\.md: "theory/canon/motions.md section 10"
+  03-mathematical-models\.md: theory/reference/models.md
+  04-glossary-and-notation\.md: theory/reference/notation.md
+  05-seller-surplus-model\.md: theory/arguments/seller-surplus.md
+  07-governance-forms\.md: theory/arguments/governance-forms.md
+  08-calibration\.md: theory/reference/calibration.md
   # Constitution v2.0 (2026-09). Governance stopped being an axiom and became a
   # corollary of Axiom II, the Law of Asset Specificity, which is where
   # Williamson put it. The three states index (Market, Deal at T0, Relationship
@@ -225,3 +225,22 @@ swap:
   clarifying concepts: "research concepts (the Constitution's derivation tiers were removed in v2.0)"
   Notable quotes: "publishing/02-tools/source-quotes.md (the research files stopped carrying quotes in 2026-09)"
   Notable statistics: "the citation provenance audit (the research files stopped carrying statistics in 2026-09)"
+
+  # Directory move, 2026-09-22. theory/ is segmented by document contract
+  # rather than by numbered stage: canon states the claims, reference is
+  # looked up, arguments stand on their own, evidence cites. The numbered
+  # prefixes are gone with the numbering, which also ends the renumber churn
+  # that produced six of the rows above. Every value here names where the file
+  # lives now, including in rows retired earlier, so one lookup is enough.
+  00-tcg-constitution\.md: theory/canon/constitution.md
+  01-motions\.md: theory/canon/motions.md
+  02-mathematical-models\.md: theory/reference/models.md
+  03-glossary-and-notation\.md: theory/reference/notation.md
+  04-seller-surplus-model\.md: theory/arguments/seller-surplus.md
+  05-governance-forms\.md: theory/arguments/governance-forms.md
+  06-calibration\.md: theory/reference/calibration.md
+  07-open-questions\.md: theory/reference/open-questions.md
+  00-reading-guide\.md: theory/evidence/reading-guide.md
+  audits/citation-provenance-audit\.md: theory/evidence/citation-provenance-audit.md
+  theory/01-foundation: "theory/canon, theory/reference or theory/arguments, by contract"
+  theory/02-research: theory/evidence

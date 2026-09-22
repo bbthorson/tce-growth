@@ -1,9 +1,10 @@
 ---
 title: "Friction Efficiency Index"
 layer: practice
+kind: instrument
 status: active
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Friction Efficiency Index
@@ -15,7 +16,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Operationalizes:** Axiom II's scaling requirement ($F_{deployed} \sim k$) and Friction Allocation Principle 3 (friction scales with stakes). It measures execution of the motion rather than a term in the Surplus equation.
 
 > [!IMPORTANT]
-> **Why this lives in `practice/` and not `theory/`.** Every model in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) supplies a functional form for a variable the Constitution already names, and that file states it introduces no new claims. The measures below do something different: they score how well an organization ran the motion. They are observations about execution, not derivations from the axioms, and placing them in the foundation would break the axioms-first rule.
+> **Why this lives in `practice/` and not `theory/`.** Every model in [models.md](../theory/reference/models.md) supplies a functional form for a variable the Constitution already names, and that file states it introduces no new claims. The measures below do something different: they score how well an organization ran the motion. They are observations about execution, not derivations from the axioms, and placing them in the foundation would break the axioms-first rule.
 
 > [!WARNING]
 > **Calibration status: none.** Every threshold, weight, and coefficient on this page is a reasoned starting value. None is fitted to booked deal data. Use these numbers to compare deals within your own book. Do not quote them externally as benchmarks, and do not report the composite index to a board as a performance figure until Section 7 conditions are met. Section 6 records three defects in the composite that are known and unfixed.
@@ -112,7 +113,7 @@ Each was found by evaluating the formulas in [`models/tcg_models.py`](../models/
 
 ## 7. What would make this empirical
 
-The same three conditions that govern [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 6 apply, plus one specific to this instrument:
+The same three conditions that govern [models.md](../theory/reference/models.md) Section 6 apply, plus one specific to this instrument:
 
 1. **Hours are logged by phase** in the professional services system, split at signature rather than reconstructed afterward.
 2. **Edge cases are recorded as structured Red Team output** rather than narrative notes, which is what makes $N_{identified}$ countable at all.
@@ -141,7 +142,7 @@ Read the provenance column before quoting any figure outside this repository. No
 
 ## Related
 
-- [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — The axiom-derived models. This file deliberately sits downstream of them.
+- [models.md](../theory/reference/models.md) — The axiom-derived models. This file deliberately sits downstream of them.
 - [Consensus Friction Calculator](./consensus-friction-calculator.md) — Source of the $N$ correction applied to BCV.
 - [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — Pre-close companion. The scorecard predicts; this index scores the result.
 - [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) — Where $N_{identified}$ originates.

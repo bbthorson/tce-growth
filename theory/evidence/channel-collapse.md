@@ -1,9 +1,10 @@
 ---
 title: "Channel Collapse: Jevons' Paradox in B2B Outreach"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-1, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Channel Collapse: Jevons' Paradox in B2B Outreach
@@ -36,6 +37,6 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Jevons Vulnerability** — direct.
 - **Axiom II — Law of Asset Specificity, governance corollary** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
 - **Reputation Depreciation** — demurrage on reputation is the channel-level prescription.
-- **Friction vector direction** ([01-motions.md](../01-foundation/01-motions.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
+- **Friction vector direction** ([motions.md](../canon/motions.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

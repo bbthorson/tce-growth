@@ -1,9 +1,10 @@
 ---
 title: "Prospect Theory"
 layer: theory
+kind: evidence
 status: active
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Prospect Theory
@@ -31,4 +32,4 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Decay Clock** — value decay over time corresponds to the buyer's reference point shifting back toward status quo as urgency fades.
 - **Akerlof Exit Threshold** — loss aversion + status quo bias explain why buyers tolerate suboptimal incumbents rather than switching.
 
-**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+**Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./citation-provenance-audit.md).

@@ -1,10 +1,11 @@
 ---
 title: "CFIR-to-Field Asset Mapping"
 layer: practice
+kind: reference
 status: active
 version: 1.0
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # CFIR-to-Field Asset Mapping
@@ -13,9 +14,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Audience:** Framework designers, sales enablement, anyone updating or creating field assets.
 
-**Canonical Reference:** [CFIR Research Paper](../theory/02-research/cfir.md)
+**Canonical Reference:** [CFIR Research Paper](../theory/evidence/cfir.md)
 
-**Scope:** CFIR is the spine of this document. Two companion frameworks appear where the artifacts actually use them: RE-AIM supplies the Red Team's five failure dimensions, and Frame Alignment Processes supply the cross-asset consensus tactics. Both are documented in [cfir.md](../theory/02-research/cfir.md) and [re-aim-framework.md](../theory/02-research/re-aim-framework.md). Where a section maps something other than a CFIR construct, it names the source.
+**Scope:** CFIR is the spine of this document. Two companion frameworks appear where the artifacts actually use them: RE-AIM supplies the Red Team's five failure dimensions, and Frame Alignment Processes supply the cross-asset consensus tactics. Both are documented in [cfir.md](../theory/evidence/cfir.md) and [re-aim-framework.md](../theory/evidence/re-aim-framework.md). Where a section maps something other than a CFIR construct, it names the source.
 
 ---
 
@@ -109,7 +110,7 @@ Two CFIR constructs govern deal triage rather than any single artifact. Both liv
 
 Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the implementation artifacts exist to satisfy.
 
-The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../theory/02-research/process-misfit.md).
+The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../theory/evidence/process-misfit.md).
 
 ---
 
@@ -126,9 +127,9 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ## Related
 
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
-- [cfir.md](../theory/02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
-- [re-aim-framework.md](../theory/02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
+- [constitution.md](../theory/canon/constitution.md) — The axioms the mapped artifacts serve. The artifacts themselves are field assets, linked below.
+- [cfir.md](../theory/evidence/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
+- [re-aim-framework.md](../theory/evidence/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:
   - [01-discovery-contextual-blueprint.md](./implementation-motion/01-discovery-contextual-blueprint.md)
   - [02-validation-red-team-protocol.md](./implementation-motion/02-validation-red-team-protocol.md)

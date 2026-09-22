@@ -1,10 +1,11 @@
 ---
 title: "The Red Team Protocol (The Validator)"
 layer: practice
+kind: instrument
 status: active
 version: 2.0
 operationalizes: [axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # The Red Team Protocol (The Validator)
@@ -222,8 +223,8 @@ Ready to draft Asset \#3: The Mutual Implementation Plan (MIP)?
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — The Red Team primarily addresses $F_{implementation}$ forecasting and reduces Buyer Uncertainty ($I_{buyer}$) through costly signals satisfying the Single Crossing Property.
+- **Theory:** [TCG Constitution, Axiom III](../../theory/canon/constitution.md) — The Red Team primarily addresses $F_{implementation}$ forecasting and reduces Buyer Uncertainty ($I_{buyer}$) through costly signals satisfying the Single Crossing Property.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Implementation Process / Engaging constructs.
-- **Academic backing:** [costly-signals.md](../../theory/02-research/costly-signals.md), [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) (inverted RE-AIM is the workshop's structure).
+- **Academic backing:** [costly-signals.md](../../theory/evidence/costly-signals.md), [re-aim-framework.md](../../theory/evidence/re-aim-framework.md) (inverted RE-AIM is the workshop's structure).
 - **Prerequisite:** [01-discovery-contextual-blueprint.md](./01-discovery-contextual-blueprint.md) — You stress-test what discovery surfaced.
 - **Next step:** [03-closing-mutual-implementation-plan.md](./03-closing-mutual-implementation-plan.md) — Contractualize the mitigations.

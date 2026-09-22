@@ -1,16 +1,17 @@
 ---
 title: "Mathematical Models"
 layer: theory
+kind: reference
 status: active
 version: 1.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Mathematical Models
 
 **Version:** 1.0
-**Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
+**Purpose:** To specify the functional forms behind the variables the [Constitution](../canon/constitution.md) names but does not compute.
 
 The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that the bargaining cost rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
@@ -83,7 +84,7 @@ The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ce
 
 ### 1.6 A note on the coefficient $a$
 
-The derivation identifies $a$ with $b$, the rate at which base friction grows per unit of asymmetry, not with the loss aversion coefficient $\lambda$. The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a reason $b$ should be large: buyers add review cycles and contingency scope because they weight losses roughly twice as heavily as gains. That supports the order of magnitude and is not a measurement. [06-calibration.md](./06-calibration.md) records how far the analogy stretches.
+The derivation identifies $a$ with $b$, the rate at which base friction grows per unit of asymmetry, not with the loss aversion coefficient $\lambda$. The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a reason $b$ should be large: buyers add review cycles and contingency scope because they weight losses roughly twice as heavily as gains. That supports the order of magnitude and is not a measurement. [calibration.md](./calibration.md) records how far the analogy stretches.
 
 ### 1.7 The scale of $y$, $c$ and $a$
 
@@ -109,7 +110,7 @@ The reduced form has one job, and this is it. Written as $y = a\hat{\Delta}_A^2 
 | Lower $a$ | Take risk back through hostages: guarantees, clawbacks, staged payment | The coefficient on the squared term |
 | Lower $\hat{\Delta}_k$ | Close the gap in whichever component binds | The squared term itself, and the vector's direction |
 
-**The framework conjectures that the third lever moves more surplus than raising value would**, because the cost curve is convex and a constant cannot offset a squared term. This is a conjecture rather than a result. It rests on $a$ being large, which is anchored by analogy in section 1.6 and recorded as unfitted in [06-calibration.md](./06-calibration.md), so the ordering is only as good as that anchor.
+**The framework conjectures that the third lever moves more surplus than raising value would**, because the cost curve is convex and a constant cannot offset a squared term. This is a conjecture rather than a result. It rests on $a$ being large, which is anchored by analogy in section 1.6 and recorded as unfitted in [calibration.md](./calibration.md), so the ordering is only as good as that anchor.
 
 **Its falsifier is a discount closing a deal that a resolved gap could not.** That is observable without any instrumentation: it is a deal where price movement succeeded after discovery had already run.
 
@@ -190,7 +191,7 @@ The other two gaps have no seller-side term. A buyer who cannot name the categor
 
 $$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}_{consensus} = 1 - \frac{e_{consensus}}{n_{consensus}}$$
 
-Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. The bargaining reading is a proxy: the instrument counts stakeholders whose measured objective the seller can read, while Axiom III names each stakeholder's own uncertainty about their outcome. [07-open-questions.md](./07-open-questions.md) item 13 records the gap. An instrument emitting no items at all leaves its gap undefined rather than zero, and a component with no cost carries no weight in the mean either way.
+Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. The bargaining reading is a proxy: the instrument counts stakeholders whose measured objective the seller can read, while Axiom III names each stakeholder's own uncertainty about their outcome. [open-questions.md](./open-questions.md) item 13 records the gap. An instrument emitting no items at all leaves its gap undefined rather than zero, and a component with no cost carries no weight in the mean either way.
 
 **The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the stakeholders' interests actually sit. $\hat{\Delta}_{consensus}$ measures how much of that the room can see. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late. The two terms enter $F_{effective}$ at different places: variance raises the base cost $F_{consensus}$, and the gap amplifies it.
 
@@ -225,7 +226,7 @@ When every stakeholder holds identical alignment, variance is zero and friction 
 
 **$I_i$ is not directly observable, and the observable proxy is biased downward.** The definition above is the stakeholder's utility from the initiative, meaning the effect on the objectives they are measured on. What a seller can actually watch is the position each stakeholder states in a room containing the others. Stated positions converge under social pressure while measured objectives do not, so variance computed from stated positions understates $\text{Var}(I_i)$, and it understates it most in the polarized committees where the term matters most.
 
-Two consequences. Score $I_i$ from what a stakeholder is measured on, never from what they said in the meeting. And read unanimous stated alignment as weak evidence, since a committee where nobody voices dissent is as consistent with suppressed variance as with genuine agreement. This is the quasi-resolution Cyert and March describe, and it is why a saboteur surfaces late rather than early. See [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
+Two consequences. Score $I_i$ from what a stakeholder is measured on, never from what they said in the meeting. And read unanimous stated alignment as weak evidence, since a committee where nobody voices dissent is as consistent with suppressed variance as with genuine agreement. This is the quasi-resolution Cyert and March describe, and it is why a saboteur surfaces late rather than early. See [buying-center-dynamics.md](../evidence/buying-center-dynamics.md).
 
 ### 3.3 Sensitivity
 
@@ -293,7 +294,7 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 
 ## 5. Parameter Reference
 
-Every parameter in this file, and every threshold and band elsewhere in the framework, lives in [06-calibration.md](./06-calibration.md). It is the single home for them on purpose: two tables of the same values drift, and the separation is what lets the structural claims above be read without any of the numbers.
+Every parameter in this file, and every threshold and band elsewhere in the framework, lives in [calibration.md](./calibration.md). It is the single home for them on purpose: two tables of the same values drift, and the separation is what lets the structural claims above be read without any of the numbers.
 
 Nothing in that file is a measurement. Read the provenance column before quoting any value outside this repository.
 
@@ -301,7 +302,7 @@ Nothing in that file is a measurement. Read the provenance column before quoting
 
 ## 6. What Would Make These Models Empirical
 
-Five conditions, in [06-calibration.md](./06-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three component gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable and what would test the framework's central dynamic claim.
+Five conditions, in [calibration.md](./calibration.md) section 4, in rough order of how much each one buys. The first is logging the three component gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable and what would test the framework's central dynamic claim.
 
 Until then, treat every output as a structured comparison between deals rather than a quantity. A deal scoring 7.2 is meaningfully worse than one scoring 4.1. Neither number predicts a close date.
 
@@ -309,10 +310,10 @@ Until then, treat every output as a structured comparison between deals rather t
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom III carries both cost representations reconciled in Section 1.
-- [01-motions.md](./01-motions.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
+- [constitution.md](../canon/constitution.md) — The axioms these models serve. Axiom III carries both cost representations reconciled in Section 1.
+- [motions.md](../canon/motions.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
 - [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
 - [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
 - [Milestone Valuation Model](../../practice/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.
-- [real-options.md](../02-research/real-options.md) — Source for the staging logic behind $\delta$ and milestone gating.
+- [real-options.md](../evidence/real-options.md) — Source for the staging logic behind $\delta$ and milestone gating.
 - [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics (FAR, BCV, RMS, SVI). Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

@@ -1,10 +1,11 @@
 ---
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
+kind: argument
 status: active
 version: 1.0
 operationalizes: [axiom-2]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
@@ -12,7 +13,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Version:** 1.0
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
-The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
+The [Constitution](../canon/constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
 
 This document adds the second equation. Axiom II names which party bears the asset specificity, which is the claim section 3 depends on.
 
@@ -53,7 +54,7 @@ $C_{invest}$ overstates the exposure. The correct measure is the appropriable qu
 
 $$Q = C_{invest} - R_{redeploy}$$
 
-Where $R_{redeploy}$ is the value of that work redeployed elsewhere: reusable connectors, a reference architecture, domain knowledge that transfers to the next deal in the segment. Research backing is in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md).
+Where $R_{redeploy}$ is the value of that work redeployed elsewhere: reusable connectors, a reference architecture, domain knowledge that transfers to the next deal in the segment. Research backing is in [klein-crawford-alchian.md](../evidence/klein-crawford-alchian.md).
 
 $Q$ is the amount a buyer can extract by threatening to walk after the engineering is spent, and it is the number that belongs in a risk review. Two engagements consuming identical hours carry different exposure when one produces a connector the seller ships to every subsequent customer and the other produces a mapping to a schema that exists in exactly one hospital.
 
@@ -90,7 +91,7 @@ Rule 3 of the milestone model already requires symmetric consequence when a stag
 ## 6. Calibration status
 
 > [!IMPORTANT]
-> **Nothing here is fitted.** $p_{close}$ is not directly observable, and $\partial p_{close} / \partial C_{invest}$ cannot be estimated without a record of deals carrying both the investment made and the outcome. No such record exists in this repository. Treat these forms as a way to structure the decision and to name what a reviewer should ask for, not as a way to forecast a number. The same caution governs [02-mathematical-models.md](./02-mathematical-models.md) and applies here with more force, because this model has no parameter anchored in published literature at all.
+> **Nothing here is fitted.** $p_{close}$ is not directly observable, and $\partial p_{close} / \partial C_{invest}$ cannot be estimated without a record of deals carrying both the investment made and the outcome. No such record exists in this repository. Treat these forms as a way to structure the decision and to name what a reviewer should ask for, not as a way to forecast a number. The same caution governs [models.md](../reference/models.md) and applies here with more force, because this model has no parameter anchored in published literature at all.
 
 The practical consequence: a manager can use section 4 to ask "what would have to be true about $\partial p_{close} / \partial C_{invest}$ for this spend to make sense," and can compare that answer against experience. That is a real use. Producing a number and calling it a probability is not.
 
@@ -124,7 +125,7 @@ A forward-deployed engagement is often defended on the grounds that it raises th
 
 Switching cost is a **lock-in** mechanism, and lock-in raises the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$. A buyer who cannot leave can be repriced and under-served. Raising $T$ raises the threshold the seller's own discount factor must clear, so the arrangement becomes harder to sustain exactly as the seller's position strengthens. This is the extraction drift Axiom II describes for channels and adjudicators, arriving at the deal level.
 
-The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../02-research/real-options.md) says that option carries real value. So switching cost raises $\Delta_A$ and $y$ before the seller has delivered anything.
+The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../evidence/real-options.md) says that option carries real value. So switching cost raises $\Delta_A$ and $y$ before the seller has delivered anything.
 
 **Switching cost is a liability at signature and an asset at renewal.** Any account of it that carries only one sign is describing half the mechanism.
 
@@ -144,13 +145,13 @@ The erosion is invisible until a challenger appears, which is the same structure
 
 Section 3 defines $Q = C_{invest} - R_{redeploy}$ as the seller's exposure: work that cannot be redeployed is what a buyer can appropriate by threatening to walk.
 
-In the repeated game the same quantity does the opposite job. Work that cannot be redeployed means the seller loses badly if the relationship ends, which is a credible bond rather than a liability. Mutual specific investment is the joint-ownership remedy in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md): neither party defects when both have sunk something they cannot recover.
+In the repeated game the same quantity does the opposite job. Work that cannot be redeployed means the seller loses badly if the relationship ends, which is a credible bond rather than a liability. Mutual specific investment is the joint-ownership remedy in [klein-crawford-alchian.md](../evidence/klein-crawford-alchian.md): neither party defects when both have sunk something they cannot recover.
 
 So a forward-deployed motion raises the seller's temptation $T$ and the seller's bond $Q$ at the same time. **The relationship is healthy while $Q$ grows at least as fast as $T$.** That is the condition to watch, and it is why the defensible account of the motion is not that the buyer is locked in but that both parties now have more to lose.
 
 ### 7.4 The leading indicator
 
-[game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
+[game-theory-and-nrr.md](../evidence/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
 
 The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
 
@@ -158,13 +159,13 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetr
 
 ## Open questions
 
-Three gaps sit under this file and all three are in [07-open-questions.md](./07-open-questions.md): $p_{close}$ has no estimator (item 28), $C_{sustain}$ has no budget owner (29), and $R_{redeploy}$ has no scoring method (30).
+Three gaps sit under this file and all three are in [open-questions.md](../reference/open-questions.md): $p_{close}$ has no estimator (item 28), $C_{sustain}$ has no budget owner (29), and $R_{redeploy}$ has no scoring method (30).
 
 ---
 
 ## Related
 
-- **Research:** [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../02-research/real-options.md) for staging under irreversibility, [process-misfit.md](../02-research/process-misfit.md) for what drives $C_{deliver}$.
-- **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part III.
-- **Functional forms:** [02-mathematical-models.md](./02-mathematical-models.md).
+- **Research:** [klein-crawford-alchian.md](../evidence/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../evidence/real-options.md) for staging under irreversibility, [process-misfit.md](../evidence/process-misfit.md) for what drives $C_{deliver}$.
+- **Buyer-side model:** [constitution.md](../canon/constitution.md) Part III.
+- **Functional forms:** [models.md](../reference/models.md).
 - **Staging in practice:** [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).

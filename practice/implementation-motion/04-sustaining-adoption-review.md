@@ -1,10 +1,11 @@
 ---
 title: "The Sustaining Adoption Review (The Proof)"
 layer: practice
+kind: instrument
 status: active
 version: 1.1
 operationalizes: [axiom-2, axiom-3]
-canonical_source: theory/01-foundation/00-tcg-constitution.md
+canonical_source: theory/canon/constitution.md
 ---
 
 # The Sustaining Adoption Review (The Proof)
@@ -20,7 +21,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 | **Inputs** | Signed [MIP](./03-closing-mutual-implementation-plan.md), the filled [Blueprint](./01-discovery-contextual-blueprint.md), and the [Red Team](./02-validation-red-team-protocol.md) risk register. |
 | **Outputs** | A receipted handoff packet, a completed RE-AIM review per cycle, and a renewal posture backed by evidence rather than relationship. |
 | **Next step** | Renewal, expansion, or a documented decision to let the account lapse. |
-| **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under vested compensation ([05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5). |
+| **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under vested compensation ([governance-forms.md](../../theory/arguments/governance-forms.md) section 5). |
 | **Reduces** | Post-signature defection and drift (Axiom II). Prevents $\Delta_A$ from resetting at the handoff boundary. |
 
 ---
@@ -71,7 +72,7 @@ The receiving lead confirms each item arrived, in writing. An unchecked box is a
 Before the AE steps back, the receiving lead answers from memory: who is the Casualty on this account and what are they likely to do, what did we promise this customer we could NOT do, and what killed their last attempt at solving this. If they cannot, the packet moved but the knowledge did not.
 
 > [!WARNING]
-> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom III](../../theory/01-foundation/00-tcg-constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
+> **The failure this prevents.** A customer who repeats their entire context to the new team reads the repetition as evidence that the seller's diligence was theater. The Red Team's costly signal is retroactively devalued, which is worse than never having run it. See [Axiom III](../../theory/canon/constitution.md) on why a signal that turns out to be cheap talk does more damage than silence.
 
 ---
 
@@ -79,7 +80,7 @@ Before the AE steps back, the receiving lead answers from memory: who is the Cas
 
 *The MIP promised success metrics via RE-AIM and supplied no instrument. This is the instrument.*
 
-RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from public-health intervention evaluation, where the gap between "works in a trial" and "works in the world" is the whole problem. See [re-aim-framework.md](../../theory/02-research/re-aim-framework.md). Run this at every review cycle.
+RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from public-health intervention evaluation, where the gap between "works in a trial" and "works in the world" is the whole problem. See [re-aim-framework.md](../../theory/evidence/re-aim-framework.md). Run this at every review cycle.
 
 **Review date:** ______  **Cycle:** [ ] T+90  [ ] T+180  [ ] Annual  [ ] Pre-renewal
 
@@ -161,9 +162,9 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both Axiom III's second clause applied after signature.
-- **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
+- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/canon/constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both Axiom III's second clause applied after signature.
+- **Academic backing:** [re-aim-framework.md](../../theory/evidence/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/evidence/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact audits commitments the MIP created.
-- **Comp alignment:** [05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5. The T+90 review is the natural clawback checkpoint, and the first QBR is where an expansion bonus would vest.
+- **Comp alignment:** [governance-forms.md](../../theory/arguments/governance-forms.md) section 5. The T+90 review is the natural clawback checkpoint, and the first QBR is where an expansion bonus would vest.
 - **Cohort view:** [friction-efficiency-index.md](../friction-efficiency-index.md) aggregates post-signature effort across closed deals. This artifact governs one account. That one scores the book.
