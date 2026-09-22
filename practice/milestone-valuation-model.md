@@ -24,6 +24,8 @@ When an investment is irreversible and the environment is uncertain, the ability
 
 This model is what separates a phased *project plan* from a phased *commitment*. A project plan with four phases and one signature preserves no option value. The buyer must be able to stop.
 
+**Two different results argue for two different properties of a commitment, and this instrument carries the second.** Hold-up explains why commitments must be mutual: once either party sinks a specific investment, the other can extract its value, so each needs the other bound. Option value explains why they must be staged: the right to wait is worth something, and a contract that demands all of it at once asks the buyer to destroy it (Dixit and Pindyck 1994). A commitment can be mutual and still unstaged, which is the failure this model exists to prevent. The [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) carries the mutual half.
+
 ---
 
 ## The stage equation

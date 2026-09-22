@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 2.3
+version: 2.4
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 2.3
+**Version:** 2.4
 **Purpose:** To state the three claims from which everything else in this repository derives, each at the level where a seller meets it, each producing a decision, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -69,12 +69,6 @@ $$\mathbf{F} = (F_{search},\; F_{consensus},\; F_{implementation})$$
 
 Two properties of that object carry the decision. Its **direction**, $\hat{\mathbf{F}} = \mathbf{F} / \lVert \mathbf{F} \rVert_1$, is which component dominates and by how much, and it selects the motion. Its **level**, $\lVert \mathbf{F} \rVert_1$, is how much cost there is in total, and Axiom II governs it. Direction is read from the components after Axiom III's amplification, because the cost that binds is the cost as the buyer perceives it. Do not read the total as a motion selector. Two deals of identical total, one sitting in search and one in enforcement, take different motions.
 
-**Corollaries.**
-
-- **A motion is a region, not a list entry.** The named motions are regions of the space $\mathbf{F}$ spans, and Product-Led, Sales-Led and Implementation-Led name the seller rather than the cost. Read by cost, the argument between them splits into two measurable questions. [01-motions.md](./01-motions.md) carries the derivation.
-- **A sales organization is a division of labor over the three costs.** Business development reduces search, account executives reduce bargaining, solutions engineers reduce enforcement uncertainty. The standard org meets the costs in that fixed order, so a deal whose binding cost is enforcement gets its engineer last, at the demo, when it needed one first. And each handoff between roles is a seam where a cost gets paid twice, because what one role learned does not travel.
-- **Addressable market is a property of the motion.** A seller who runs only short-vector instruments can transact only with short-vector buyers. The rest were never reachable. [05-governance-forms.md](./05-governance-forms.md) section 4.
-
 **What would falsify it.** A deal whose binding cost is search closing reliably under enforcement instruments, or the reverse. The prediction is that a motion aimed at a cost that is not binding leaves the deal where it was, and that is observable in stage-to-stage conversion by dominant component.
 
 **Failure mode.** Mis-composed. The collected table is in Part III.
@@ -102,14 +96,6 @@ The boundary condition is $k > k_{threshold}$, separating Structural deals from 
 
 The second clause, that the pre-signature share of the cost rises with $k$, is stated here in prose. The equation in Part III is a snapshot at signature and does not carry time, and the claim is deliberately left as a derivation beneath the axiom rather than a term inside the model until there is a reason to fit one. The [Friction Efficiency Index](../../practice/friction-efficiency-index.md) measures it in retrospect.
 
-**Corollaries.**
-
-- **Governance form.** With frequency, specificity selects the arrangement that holds the deal after signature. Below the boundary, market terms at any frequency. Above it, a one-shot transaction takes a third-party safeguard because neither side will build relational machinery for a single event, a recurring one takes bilateral governance where each repetition safeguards the next, and a continuous relationship of rising specificity eventually takes integration, which for the seller means the buyer builds it. The Mutual Implementation Plan is the bilateral form's instrument. [05-governance-forms.md](./05-governance-forms.md).
-- **Frequency is partly the seller's choice.** Restructuring a one-shot sale as a subscription converts a single-play game into a repeated one, which brings the cooperation condition $\delta_{discount} > (T - R)/(T - P)$ within reach (Axelrod 1984) and lets a specific transaction be governed bilaterally rather than through an arbitrator. This is the framework's account of why subscription changed what could be sold, not only when it was paid for. [05-governance-forms.md](./05-governance-forms.md) section 5.
-- **Commitment must be staged.** When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). Gating the commitment converts one irreversible decision into a sequence, each taken with more information, and preserves a priced right to stop. Hold-up explains why commitments must be mutual. Option value explains why they must be staged. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the instrument.
-- **Every party holding exposed rent, or adjudicating it, needs a stake.** By the third standing assumption, a representative paid in full at signature plays the seller's side of a repeated game with a one-shot payoff, and a channel with no exposure to the outcome drifts from adjudication toward extraction. Vesting compensation on outcomes that survive signature is the seller's own safeguard. [05-governance-forms.md](./05-governance-forms.md) section 5.
-- **Who bears the specificity decides who needs the safeguard.** In a forward-deployed motion the seller sinks the specific investment before signature, and the exposure is the seller's. [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries that side of the transaction.
-
 **What would falsify it.** A population of highly specific deals that closed on light pre-signature work and kept their surplus through renewal. The prediction is that such deals close and then fail to deploy, so the failure lands in retention rather than in win rate, and it is observable in churn by specificity at signature.
 
 **Failure modes.** Under-frictioned before and after signature, over-frictioned, mis-governed, and defection. The collected table is in Part III.
@@ -125,11 +111,13 @@ The second clause, that the pre-signature share of the cost rises with $k$, is s
 
 **Mechanism.** Each of the three costs runs between its own pair of parties, and what inflates it is each party's uncertainty about what the transaction does to *them*.
 
-| Component | Whose uncertainty, about what | What resolves it |
-|---|---|---|
-| Search | The buyer's, about the market. Which alternatives exist and whether this one fits. | Artifacts that travel without the seller: category definition, reference architectures, verifiable proof, a channel with a stake |
-| Bargaining | Each stakeholder's, about their own outcome. What the change does to their budget, headcount and standing. | Mapping who loses what, and surfacing the objections in a room built to hear them |
-| Enforcement | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability. | Discovery that maps the environment, and demonstrations the seller pays to produce |
+| Component | Whose uncertainty, about what |
+|---|---|
+| Search | The buyer's, about the market. Which alternatives exist and whether this one fits. |
+| Bargaining | Each stakeholder's, about their own outcome. What the change does to their budget, headcount and standing. |
+| Enforcement | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability. |
+
+What closes each gap is an instrument rather than an axiom, and [02-mathematical-models.md](./02-mathematical-models.md) section 2.4 tabulates the three with theirs.
 
 Only the third pair is buyer against seller, which is why an instrument built for that pair does not move the other two. The second pair is not an information gap between stakeholders that proof could close. Two stakeholders with perfect knowledge of each other and opposed interests still disagree. What proof can close is each stakeholder's uncertainty about their own exposure, and that is the inflation this axiom names on the bargaining cost.
 
@@ -157,13 +145,6 @@ Discovery and drift are one mechanism with opposite signs. A champion leaving is
 
 ![Two rising lines from a near-zero implementation gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained line approaches the challenger within three years. The maintained line stays well below it.](./assets/axiom-3-asymmetry-drift.svg)
 
-**Corollaries.**
-
-- **The Friction Allocation Principles.** A mechanism reduces a gap only if its cost cannot be automated away, is borne by the claimant rather than the receiver, scales with the size of the claim, and is adjudicated by someone who loses when a bad signal passes. Violate any one and the mechanism is cheap talk. The [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) tests them.
-- **Three levers, and a conjecture about their order.** The seller can lower $c$ by discounting, lower $a$ by taking risk back through hostages such as guarantees and clawbacks, or lower $\hat{\Delta}_k$ in whichever component binds. The framework conjectures that the third lever moves more surplus than raising value would, because the cost curve is convex and a constant cannot offset a squared term. That conjecture rests on the anchored coefficient, and its falsifier is a discount closing a deal that a resolved gap could not.
-- **Reputation depreciates.** What was verified at $t_0$ is not verified at $t_1$. Credibility carries demurrage, and it must be re-earned with evidence of continued delivery at every level: the seller's, the channel's, the adjudicator's. This is the second clause of the axiom applied after signature, and the [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) is where the re-earning happens.
-- **The Decay Clock.** Value decays from the trigger by the second standing assumption while the gaps rebuild by this axiom. Both push $S$ toward zero on a cycle, and a deal viable at $t_0$ is not necessarily viable at $t_1$ without intervention. [02-mathematical-models.md](./02-mathematical-models.md) section 4.
-
 **What would falsify it.** A component whose gap was closed by verifiable evidence and whose effective cost did not fall, or a channel that saturated with unverifiable claims and kept its response rate. The second is already observable in outbound email.
 
 **Failure modes.** Cheap talk, misallocated friction, Akerlof saturation, the wrong gap closed, Jevons collapse, and reputation hoarding. The collected table is in Part III.
@@ -171,25 +152,25 @@ Discovery and drift are one mechanism with opposite signs. A champion leaving is
 
 ## Part II: Derivations
 
-Everything the repository claims beyond the three axioms is derived from them, and this table says where. A concept missing from it is either a standing assumption, a research file elaborating a source, or a mistake.
+Everything the repository claims beyond the three axioms is derived from them, and this table is the complete list. Each row states what follows in one sentence and names the file that argues it. **The argument lives in that file and not here**, because a claim with two prose homes has to be maintained in both, and this document is the one that must stay short enough to be held to. A concept missing from this table is either a standing assumption, a research file elaborating a source, or a mistake.
 
-| Derivation | From | Stated in |
-|---|---|---|
-| A motion is a region of the friction space | I, with III supplying the direction reading | [01-motions.md](./01-motions.md) |
-| Division of sales labor over the three costs | I | Part I above |
-| Addressable market is a property of the motion | I | [05-governance-forms.md](./05-governance-forms.md) §4 |
-| Boundary condition, $k > k_{threshold}$ and $F_{deployed} \sim k$ | II | [01-motions.md](./01-motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| Governance form from specificity and frequency | II | [05-governance-forms.md](./05-governance-forms.md) §2 |
-| Frequency as a commercial choice | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
-| Staged commitment | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../02-research/real-options.md) |
-| Stakes for agents and adjudicators | II, with the third standing assumption | [05-governance-forms.md](./05-governance-forms.md) §5 |
-| Seller surplus and who bears the specificity | II | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
-| Per-component amplification and its factorization | III | [02-mathematical-models.md](./02-mathematical-models.md) §1, §2 |
-| Friction Allocation Principles | III | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
-| Three sales levers | III | [02-mathematical-models.md](./02-mathematical-models.md) §1 |
-| Reputation depreciation and demurrage | III | [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) §4 |
-| Decay Clock | III, with the second standing assumption | [02-mathematical-models.md](./02-mathematical-models.md) §4 |
-| The Surplus equation | All three | Part III below |
+| Derivation | What follows | From | Argued in |
+|---|---|---|---|
+| A motion is a region | The named motions are regions of the space $\mathbf{F}$ spans, so a motion is read off a deal rather than chosen as a philosophy. | I, with III supplying the direction reading | [01-motions.md](./01-motions.md) |
+| Division of sales labor | The standard sales organization is an instrument set with a fixed direction, so it meets the three costs in an order the deal did not choose, and every handoff is a seam where a cost is paid twice. | I | [01-motions.md](./01-motions.md) §2.3 |
+| Addressable market | A seller who runs only short-vector instruments can transact only with short-vector buyers, so reach is a property of the motion rather than of the product. | I | [05-governance-forms.md](./05-governance-forms.md) §4 |
+| Boundary condition | $k > k_{threshold}$ separates Structural deals from Turnkey ones, and $F_{deployed} \sim k$ requires deployed friction to scale with the specificity it manages. | II | [01-motions.md](./01-motions.md) §3, [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| Governance form | Specificity and frequency together select market, trilateral, bilateral or unified governance, and the Mutual Implementation Plan is the bilateral form's instrument. | II | [05-governance-forms.md](./05-governance-forms.md) §2 |
+| Frequency as a commercial choice | Restructuring a one-shot sale as a recurring one brings the cooperation condition within reach, which changes what can be governed without a third party. | II | [05-governance-forms.md](./05-governance-forms.md) §5 |
+| Staged commitment | Hold-up is why commitments must be mutual and option value is why they must be staged, so a mutual commitment taken all at once still fails. | II, with III | [Milestone Valuation Model](../../practice/milestone-valuation-model.md), [real-options.md](../02-research/real-options.md) |
+| Stakes for agents and adjudicators | A party paid in full at signature plays a repeated game with a one-shot payoff, and an adjudicator with no exposure drifts toward extraction, so both need a vested stake. | II, with the third standing assumption | [05-governance-forms.md](./05-governance-forms.md) §5 |
+| Who bears the specificity | Whoever sinks the specific investment holds the exposure, which in a forward-deployed motion is the seller rather than the buyer. | II | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
+| Per-component amplification | Each component is amplified by its own pair's gap, and the sum factors exactly into a single friction-weighted multiplier, which is why the two cost forms are one quantity. | III | [02-mathematical-models.md](./02-mathematical-models.md) §1, §2 |
+| Friction Allocation Principles | A mechanism reduces a gap only if its cost is non-automatable, borne by the claimant, scaled to the claim and adjudicated by someone who loses when a bad signal passes. Violate one and it is cheap talk. | III | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
+| Three levers, and their order | The seller can lower $c$, lower $a$, or lower $\hat{\Delta}_k$ where it binds, and the framework conjectures the third beats raising value because a constant cannot offset a squared term. | III | [02-mathematical-models.md](./02-mathematical-models.md) §1.8 |
+| Reputation depreciation | Credibility carries demurrage and must be re-earned with evidence of continued delivery, at the seller's level, the channel's and the adjudicator's. | III | [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) §4 |
+| Decay Clock | Value decays from the trigger while the gaps rebuild, so a deal viable at $t_0$ is not necessarily viable at $t_1$ without intervention. | III, with the second standing assumption | [02-mathematical-models.md](./02-mathematical-models.md) §4 |
+| The Surplus equation | The three axioms are what the terms of one equation mean. | All three | Part III below |
 
 ---
 
@@ -241,10 +222,11 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.3.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 2.4.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 2.4 | 2026-09 | Segmentation audit, step 4. The twelve corollary bullets are gone and Part II carries each derivation as one sentence naming the file that argues it. No axiom, equation or derivation changed, and nothing was dropped: four claims had no home outside these bullets and were moved first. The division of sales labour went to 01-motions.md §2.3, the hold-up against option-value distinction to the Milestone Valuation Model, the three levers and their conjecture to 02-mathematical-models.md §1.8, and the Decay Clock's second half to its section 4. Axiom III's pair table loses its prescription column to the same file's section 2.4. |
 | 2.3 | 2026-09 | Segmentation audit, step 3. Deduplication, and no claim in this document changed. The "what this does not settle" sections in the motions, governance and seller surplus files fold into 07-open-questions.md, which gains seven entries and is now the only register. The three-pairs table, the addressable-market argument and the vesting claim each drop to a single prose home. The research README's scope table merges into the reading guide. |
 | 2.2 | 2026-09 | Restructure, step 6. Reference trim. The research files stop carrying quotes and statistics, which move to publishing and the provenance audit. The glossary term index loses every single-file term. The math file's argument about units is compressed. The retired derivation tiers are removed from every support line. No axiom changed. |
 | 2.1 | 2026-09 | Restructure, step 5. Coase's component names swept through theory prose, fit verification moved out of the search component and under specificity, the motions and governance files trimmed of material the Constitution now carries, and 07-open-questions.md opened as the register of under-developed areas. No axiom changed. |

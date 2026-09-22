@@ -1,6 +1,6 @@
 # Segmentation Audit
 
-**Status:** proposed 2026-09-21. Steps 1 to 3 of section 6.6 applied 2026-09-22. Steps 4 to 6 are not, and steps 4 and 6 want the author's eyes on each file before they merge.
+**Status:** proposed 2026-09-21. Steps 1 to 4 of section 6.6 applied 2026-09-22. Steps 5 and 6 are not. Step 4 changed the Constitution and is the one to read rather than trust, and step 6 will want the author's eyes on each file before it merges.
 
 **Scope:** what the repo currently holds, what repeats, what is stale, and a proposed segmentation to flesh out against. It replaces `RESTRUCTURE-PLAN.md`, whose six steps were all applied and which step 2 below deleted.
 
@@ -8,7 +8,8 @@
 |---|---|
 | 1. Correctness | Applied. The stale threshold, the retired axiom description, the two unsourced read-aloud statistics, the three Reputation Depreciation misattributions and the live plural of a retired term are fixed. The provenance rule now covers `practice/`, and the plural trap has swap rows. |
 | 2. Cruft | Applied. `RESTRUCTURE-PLAN.md` and the checked-in `.claude/` memory are deleted, `.claude/` is ignored, the reading guide's stale diagram is gone, the cases README is trimmed and the superseded case is marked. |
-| 3. Deduplicate | Applied, with two of its own findings corrected. See 3.1 and 3.2. Touched no Constitution prose beyond the version bump, since that is step 4's review. |
+| 3. Deduplicate | Applied, with two of its own findings corrected. See 3.1 and 3.2. Touched no Constitution prose beyond the version bump. |
+| 4. Constitution corollaries | Applied. The twelve bullets are gone and Part II carries each derivation as one sentence. Four claims that had no home outside those bullets were moved to their owning files first. This section's own arithmetic was wrong; see 3.4. |
 
 The findings below are kept as written, as the record of what was found rather than a description of the tree today, except where a later pass proved one wrong and says so inline.
 
@@ -101,11 +102,17 @@ Seven files carry a local register of their own gaps: `01-motions.md` section 9,
 
 ### 3.4 The Constitution's corollary bullets against Part II
 
-Part II is a table titled Derivations. It has fifteen rows, and each row names a derivation, the axiom it follows from, and the file that states it. Immediately above it, the three axioms carry fourteen corollary bullets, and thirteen of those bullets are the same derivations written out again in two to five sentences each, with their own mechanisms and citations.
+Part II is a table titled Derivations. It has fifteen rows, and each row names a derivation, the axiom it follows from, and the file that states it. Immediately above it, the three axioms carry corollary bullets that write the same derivations out again in two to five sentences each, with their own mechanisms and citations. They are the exact place scope drift reaches first, because a corollary is where a new source gets parked.
 
-The bullets are roughly 1,500 words of the Constitution's 4,678, and they are the exact place scope drift reaches first, because a corollary is where a new source gets parked.
+**Default taken:** collapse the corollary bullets into rows of the Part II table.
 
-**Default taken:** collapse the corollary bullets into rows of the Part II table. The table already names every one of them. The Constitution drops to roughly 3,200 words and lands on the target the last restructure set for it.
+> **Corrected during step 4, twice over.** There are twelve bullets, not fourteen, and they weigh 748 words rather than 1,500. So the predicted drop to about 3,200 words was never arithmetically available from this step: even a bare name-only table would have left the Constitution near 4,100. It now sits at 4,519, down 250.
+>
+> The reason it is 250 and not 748 is a judgment call worth flagging. Part II now carries a **one-sentence statement of what follows** in each row, which cost 424 words, rather than only the derivation's name. A name-only table would have been the bigger cut and would have left this document unable to say what follows from its own axioms without opening eight other files, which is a real loss of function for the one file whose stated purpose is to hold the claims. By the test in 3.1 a one-sentence claim is naming rather than restating, and the mechanisms, citations and elaboration are what left. Stripping the column is a one-line change if the shorter document is worth more than the standalone read.
+>
+> **Where the Constitution's weight actually sits**, for whoever wants it shorter: Part I is 2,103 words, Part II 686, Part III 641, the version history 542, standing assumptions 250, Related 166. Everything except the version history is the axioms and their equation, so a further cut is a decision about what the theory states rather than a deduplication.
+>
+> **Four claims lived only in these bullets and were moved before anything was deleted**: the division of sales labour to `01-motions.md` section 2.3, the hold-up against option-value distinction to the Milestone Valuation Model, the three levers and their conjecture to `02-mathematical-models.md` section 1.8, and the Decay Clock's second half to its section 4. Six glossary rows cited "Constitution, Part I corollaries" as their canonical source and now cite the owning file.
 
 ### 3.5 Smaller repeats
 
@@ -282,11 +289,11 @@ This is the same trick the repo already runs three times. Name the drift, then g
 | 1 | **Applied.** Correctness: the defects in 4.1 to 4.3 and 4.8, extend the provenance rule to `practice/`, add the plural to the `primary derivation` swap row | None. No structure touched. |
 | 2 | **Applied.** Cruft: everything in section 5 | None. |
 | 3 | **Applied.** Deduplicate: sections 3.1, 3.2, 3.3, 3.5. One prose home each, links elsewhere. Touched no Constitution prose, since that is step 4's review | Low. Mechanical, reviewable per claim. |
-| 4 | Constitution corollaries into the Part II table, section 3.4 | Needs your eyes. It is the text the rest of the repo is held to. |
+| 4 | **Applied.** Constitution corollaries into the Part II table, section 3.4 | Needs your eyes. It is the text the rest of the repo is held to. |
 | 5 | Move to the tree in 6.2, add `kind:` and the linter rules in 6.4 | Low but wide. Touches every link. |
 | 6 | Rebuild `implementation-motion/` 01 to 03 against the locked axioms, using 04 as the template, sections 4.5 to 4.7 | Needs your eyes. It decides what a field artifact contains. |
 
-Steps 1 to 3 are applied. Steps 4 to 6 remain, and steps 4 and 6 want your read on each file before it merges.
+Steps 1 to 4 are applied, and step 4 is the one to read rather than trust. Steps 5 and 6 remain, and step 6 wants your read on each file before it merges.
 
 ---
 

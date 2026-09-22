@@ -99,6 +99,22 @@ Computed at $x_0 = 1$. Entering the deal, the uncertainty the buyer is asked to 
 
 Read the same table in percentage points and the uncertainty term becomes a rounding error at every stage, which inverts the framework's central claim. The percentage reading is a unit error, not a second option. Stating the units makes $a$ wrong in a checkable way: a fitted value would come back in annual contract values per unit of squared normalized gap, and section 6 says what data that needs.
 
+### 1.8 The three levers, and a conjecture about their order
+
+The reduced form has one job, and this is it. Written as $y = a\hat{\Delta}_A^2 + c$, the seller has exactly three ways to lower what the buyer perceives:
+
+| Lever | What the seller does | What it moves |
+|---|---|---|
+| Lower $c$ | Discount, or absorb direct cost | The constant term only |
+| Lower $a$ | Take risk back through hostages: guarantees, clawbacks, staged payment | The coefficient on the squared term |
+| Lower $\hat{\Delta}_k$ | Close the gap in whichever component binds | The squared term itself, and the vector's direction |
+
+**The framework conjectures that the third lever moves more surplus than raising value would**, because the cost curve is convex and a constant cannot offset a squared term. This is a conjecture rather than a result. It rests on $a$ being large, which is anchored by analogy in section 1.6 and recorded as unfitted in [06-calibration.md](./06-calibration.md), so the ordering is only as good as that anchor.
+
+**Its falsifier is a discount closing a deal that a resolved gap could not.** That is observable without any instrumentation: it is a deal where price movement succeeded after discovery had already run.
+
+The second lever is the one the framework says least about. Taking risk back lowers $a$ by changing who carries the consequence of a bad outcome, and no instrument here measures it.
+
 ---
 
 ## 2. The Bilateral Asymmetry Gap
@@ -234,6 +250,10 @@ Treat $TO$ as a field refinement rather than core theory. The two-term form abov
 ---
 
 ## 4. Urgency Decay
+
+**The Decay Clock is two dynamics running at once, and this section carries both.** Value decays from the triggering event by the second standing assumption, at the rate $\delta$ that sections 4.1 to 4.3 give structure to. The component gaps rebuild by Axiom III's second clause, at the rates $\gamma_k$ of section 1.5. Both push $S$ toward zero on a cycle, so a deal viable at $t_0$ is not necessarily viable at $t_1$ without intervention, and neither half is visible in a snapshot of the Surplus equation.
+
+The two are not symmetric in what a seller can do about them. A rebuilding gap is closed by running an artifact again. Decaying value is not recoverable by any instrument, and the only term in $\delta$ a seller can touch is whether an external catalyst has been named, which is section 4.3.
 
 ### 4.1 Value decay
 

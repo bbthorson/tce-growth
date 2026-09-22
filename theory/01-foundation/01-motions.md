@@ -86,6 +86,14 @@ This repository measures the component and supplies no instruments for it. The [
 
 The gap is real and it is the largest one this document surfaces.
 
+### 2.3 A sales organization is a division of labor over the three costs
+
+If a motion is the instrument set aimed at a component, then the standard sales organization is already an instrument set with a fixed direction. Business development reduces search, account executives reduce bargaining, solutions engineers reduce enforcement uncertainty.
+
+Two consequences follow, and both are structural rather than matters of execution. **The standard org meets the costs in a fixed order**, so a deal whose binding cost is enforcement gets its engineer last, at the demo, when it needed one first. And **each handoff between roles is a seam where a cost gets paid twice**, because what one role learned does not travel with the deal.
+
+A direction-following organization would therefore look different from a funnel-following one. What it would look like is not derived anywhere, and [07-open-questions.md](./07-open-questions.md) item 4 records that.
+
 ---
 
 ## 3. Magnitude sets the apparatus

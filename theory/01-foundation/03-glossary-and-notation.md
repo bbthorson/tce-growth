@@ -184,28 +184,28 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of transaction cost. | [05-governance-forms.md](./05-governance-forms.md) |
 | **Direction** | Each component's share of effective cost. Selects the instruments. Dominant at 0.50. | [01-motions.md](./01-motions.md) |
 | **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Boundary Condition** | The test every deal passes before heavy apparatus is justified. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Boundary Condition** | The test every deal passes before heavy apparatus is justified. | [01-motions.md](./01-motions.md) §3 |
 
 ### Axiom III concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce $\Delta_A$. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce $\Delta_A$. | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
 | **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Jevons Vulnerability** | A channel whose binding constraint is production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
-| **Decay Clock** | The two time dynamics that erode deal viability before close. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility carries demurrage and must be re-earned. Axiom III's second clause after signature. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Decay Clock** | The two time dynamics that erode deal viability before close. | [02-mathematical-models.md](./02-mathematical-models.md) §4 |
+| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility carries demurrage and must be re-earned. Axiom III's second clause after signature. | [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) §4 |
 
 ### Axiom II concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Stakes corollary** | Every party holding exposed rent, or adjudicating it, needs a stake, including the seller's own agents and the channel. Axiom II. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Stakes corollary** | Every party holding exposed rent, or adjudicating it, needs a stake, including the seller's own agents and the channel. Axiom II. | [05-governance-forms.md](./05-governance-forms.md) §5 |
 | **Williamson Hold-Up** | Once asset-specific investment is sunk, either party can extract its value. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
-| **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
 | **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
 
@@ -238,6 +238,6 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the corollaries most term entries point to.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms, and its Part II table says which file argues each derivation. Term entries point at that file rather than at the Constitution, because the Constitution stops at the claim.
 - [02-mathematical-models.md](./02-mathematical-models.md) supplies the functional forms. [06-calibration.md](./06-calibration.md) carries every parameter and its provenance.
 - [01-motions.md](./01-motions.md) derives the motions and carries the incumbent-vocabulary map in section 10.
