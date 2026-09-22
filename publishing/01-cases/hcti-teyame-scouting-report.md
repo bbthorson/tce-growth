@@ -1,5 +1,8 @@
 # Scouting Report: Healthcare Triangle (HCTI) acquires Teyame AI
 
+> [!NOTE]
+> **Archived, and its frame is superseded.** This report reads $\Delta_A$ as the market's uncertainty about an acquirer, and treats shareholder approval as a consensus cost. Under the current theory $\Delta_A$ is the implementation pair specifically, seller against buyer, and the three components describe a buyer's transaction rather than an acquisition. The observations stand and the framing does not. Kept as the record of an early analysis. The [Greenway report](./greenway-aws-scouting-report.md) is the one that still reads correctly.
+
 **The Event:** Healthcare Triangle (HCTI), a cloud-transformation microcap, has signed a definitive agreement to acquire **Teyame AI** for **$50 million**.  
 
 ## The Friction ($\Delta_A$ & $F_{base}$)

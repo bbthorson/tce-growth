@@ -19,7 +19,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 | | |
 |---|---|
-| **Inputs** | Structural classification (score ≥ 10) from [Deal Triage Calculator](../deal-triage-calculator.md); initial qualification call complete. |
+| **Inputs** | Structural classification (level 15 or above) from [Deal Triage Calculator](../deal-triage-calculator.md); initial qualification call complete. |
 | **Outputs** | Filled Blueprint covering Catalyst, Complexity, Stakeholder DNA, Reciprocity Gate, Negative Capability. A green/yellow/red verdict. |
 | **Next step** | Green → [Red Team Protocol](./02-validation-red-team-protocol.md). Yellow → assign homework to champion. Red → disqualify. |
 | **Owner** | AE (with sales manager validation). |
@@ -41,7 +41,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 ### The "Why" (Read Aloud to Customer)
 
-"Research consistently shows that two-thirds of enterprise IT projects fail to deliver their promised ROI (Standish Group CHAOS Report, 2020; BCG, 2020). This failure rarely happens because the software is broken; it happens because the *implementation plan* conflicts with the customer's unique environment.
+"Large IT projects deliver 56% less value than predicted, on average, across a sample of more than 5,400 projects over $15 million (McKinsey with the University of Oxford, 2012). This shortfall rarely happens because the software is broken; it happens because the *implementation plan* conflicts with the customer's unique environment.
 
 We use this Blueprint to map your specific environment—your politics, your data, and your urgency—so we don't become part of that statistic. If we find a blocker here that we can't solve, we won't ask you to buy."
 

@@ -13,7 +13,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Audience:** Sales reps, sales leadership, marketing, anyone designing or evaluating a signal mechanism.
 **Goal:** Check whether a signal mechanism — a sales artifact, an outreach channel, a marketing asset, a third-party validator — actually reduces buyer-side uncertainty, or whether it is cheap talk dressed up as effort.
 
-**Canonical Reference:** [TCG Constitution, Axiom III — Law of Uncertainty Inflation](../theory/01-foundation/00-tcg-constitution.md). The four principles are primary derivations of Axiom III.
+**Canonical Reference:** [TCG Constitution, Axiom III — Law of Uncertainty Inflation](../theory/01-foundation/00-tcg-constitution.md). The four principles are corollaries of Axiom III.
 
 | | |
 |---|---|
@@ -105,7 +105,7 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 **Common violations.** Pay-per-send platforms. Volume-based ad networks. Ratings agencies funded by the rated. Reputation systems that don't depreciate (the KLAS "coast on residual brand" pattern). Internal review processes where reviewers face no consequences for approving bad deals.
 
-**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom II: Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md).
+**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom III: Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md).
 
 ---
 
@@ -165,5 +165,5 @@ If all four hold, $\Delta_A$ shrinks. If any one fails, it doesn't — regardles
 
 - **Theory:** [TCG Constitution — Axiom III (Law of Uncertainty Inflation) and the Friction Allocation Principles](../theory/01-foundation/00-tcg-constitution.md).
 - **Channel evaluation:** [channel-collapse.md](../theory/02-research/channel-collapse.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
-- **Adjudicator design:** [Constitution Axiom II — Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md) describes how to design demurrage into adjudicator structures.
+- **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md) describes how to design demurrage into adjudicator structures.
 - **Deal-level scoring:** [Deal Triage Calculator](./deal-triage-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.

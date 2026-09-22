@@ -5,3 +5,7 @@
 # Python bytecode from models/
 __pycache__/
 *.pyc
+
+# Per-machine Claude Code session state. Was checked in at v12 keyed to one
+# local path; project guidance belongs in CLAUDE.md, which every machine reads.
+.claude/

@@ -1,8 +1,15 @@
 # Segmentation Audit
 
-**Status:** proposed 2026-09-21. Nothing here is applied. This document is for review before any file moves.
+**Status:** proposed 2026-09-21. Steps 1 and 2 of section 6.6 applied 2026-09-22. Steps 3 to 6 are not, and steps 4 and 6 want the author's eyes on each file before they merge.
 
-**Scope:** what the repo currently holds, what repeats, what is stale, and a proposed segmentation to flesh out against. It supersedes `RESTRUCTURE-PLAN.md`, whose six steps are all applied.
+**Scope:** what the repo currently holds, what repeats, what is stale, and a proposed segmentation to flesh out against. It replaces `RESTRUCTURE-PLAN.md`, whose six steps were all applied and which step 2 below deleted.
+
+| Step | Result |
+|---|---|
+| 1. Correctness | Applied. The stale threshold, the retired axiom description, the two unsourced read-aloud statistics, the three Reputation Depreciation misattributions and the live plural of a retired term are fixed. The provenance rule now covers `practice/`, and the plural trap has swap rows. |
+| 2. Cruft | Applied. `RESTRUCTURE-PLAN.md` and the checked-in `.claude/` memory are deleted, `.claude/` is ignored, the reading guide's stale diagram is gone, the cases README is trimmed and the superseded case is marked. |
+
+The findings below are kept as written, as the record of what was found rather than a description of the tree today.
 
 ---
 
@@ -267,14 +274,14 @@ This is the same trick the repo already runs three times. Name the drift, then g
 
 | Step | What | Risk |
 |---|---|---|
-| 1 | Correctness: the defects in 4.1 to 4.3 and 4.8, extend the provenance rule to `practice/`, add the plural to the `primary derivation` swap row | None. No structure touched. |
-| 2 | Cruft: everything in section 5 | None. |
+| 1 | **Applied.** Correctness: the defects in 4.1 to 4.3 and 4.8, extend the provenance rule to `practice/`, add the plural to the `primary derivation` swap row | None. No structure touched. |
+| 2 | **Applied.** Cruft: everything in section 5 | None. |
 | 3 | Deduplicate: sections 3.1, 3.2, 3.3, 3.5. One prose home each, links elsewhere | Low. Mechanical, reviewable per claim. |
 | 4 | Constitution corollaries into the Part II table, section 3.4 | Needs your eyes. It is the text the rest of the repo is held to. |
 | 5 | Move to the tree in 6.2, add `kind:` and the linter rules in 6.4 | Low but wide. Touches every link. |
 | 6 | Rebuild `implementation-motion/` 01 to 03 against the locked axioms, using 04 as the template, sections 4.5 to 4.7 | Needs your eyes. It decides what a field artifact contains. |
 
-Steps 1 and 2 are safe to run now. Steps 3 through 6 want your read on this document first, and steps 4 and 6 want your read on each file before it merges.
+Steps 1 and 2 are applied. Steps 3 through 6 remain, and steps 4 and 6 want your read on each file before it merges.
 
 ---
 

@@ -33,7 +33,7 @@ status: active
 
 | Statistic | Cited in | Primary source | Status |
 |---|---|---|---|
-| 45% average budget overrun, 7% schedule overrun, 56% less value than predicted (projects over $15M, n > 5,400) | [fear-of-failure.md](../fear-of-failure.md), this audit | McKinsey & Company with the BT Centre for Major Programme Management, University of Oxford, "Delivering large-scale IT projects on time, on budget, and on value" (2012) | **Primary linked** ([article](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value), [PDF](https://www.mckinsey.com/~/media/McKinsey/dotcom/client_service/BTO/PDF/MOBT_27_Delivering_large-scale_IT_projects_on_time_budget_and_value.ashx)). |
+| 45% average budget overrun, 7% schedule overrun, 56% less value than predicted (projects over $15M, n > 5,400) | [fear-of-failure.md](../fear-of-failure.md), this audit, and the read-aloud passages in the [Contextual Blueprint](../../../practice/implementation-motion/01-discovery-contextual-blueprint.md) and [Red Team Protocol](../../../practice/implementation-motion/02-validation-red-team-protocol.md) | McKinsey & Company with the BT Centre for Major Programme Management, University of Oxford, "Delivering large-scale IT projects on time, on budget, and on value" (2012) | **Primary linked** ([article](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value), [PDF](https://www.mckinsey.com/~/media/McKinsey/dotcom/client_service/BTO/PDF/MOBT_27_Delivering_large-scale_IT_projects_on_time_budget_and_value.ashx)). |
 | 17% of large projects threaten the existence of the company (overruns of 200 to 400%) | [fear-of-failure.md](../fear-of-failure.md) | same study | **Primary linked.** |
 | $66B total cost overrun in the sample. Expected overrun grows 15 percentage points per additional year of schedule | this audit | same study | **Primary linked.** |
 
@@ -125,6 +125,7 @@ The point of a provenance audit is to catch drift between files. Most severe fir
 4. **Developer time on technical debt: resolved.** The repo carried 69% of dev time ([fear-of-failure.md](../fear-of-failure.md)) and 44.1 hours per week ([re-aim-framework.md](../re-aim-framework.md)). Both files now carry the CISQ 2022 figure: roughly 33%, or 13.5 hours of a 41-hour week. Corrected on 2026-08-28.
 5. **"45% timeline slippage": resolved.** The McKinsey primary reports 45% budget overrun and 7% schedule overrun. [fear-of-failure.md](../fear-of-failure.md) now states both figures. Corrected on 2026-08-28.
 6. **Buying group size (6 to 10 decision makers, Gartner): resolved.** The figure is Gartner's B2B Buying Journey research. [buying-center-dynamics.md](../buying-center-dynamics.md) now cites it directly and the inline caveat is removed. Resolved on 2026-08-28.
+7. **"Two-thirds of IT projects fail (Standish 2020; BCG 2020)" in two field artifacts: resolved.** The [Contextual Blueprint](../../../practice/implementation-motion/01-discovery-contextual-blueprint.md) and the [Red Team Protocol](../../../practice/implementation-motion/02-validation-red-team-protocol.md) each carried this claim inside a passage marked for reading aloud to the buyer. Two faults. The Standish 2020 figures put challenged plus failed at 69% rather than two-thirds, and that row is only **Primary named** here because the recent reports are paywalled, so it was not quotable externally in the first place. And "BCG, 2020" appears nowhere else in the repository and no primary source for it was ever recorded. Both passages now cite the McKinsey and Oxford 2012 finding of 56% less value than predicted, which is **Primary linked** above and makes the same point about delivered value. Corrected on 2026-09-22. The provenance rule was extended to `practice/` in the same commit, because it had never covered the directory where a statistic gets spoken to a customer.
 
 ## Not yet traced
 
@@ -140,6 +141,6 @@ Statistics quoted in research entries with no provenance row yet. Add a row when
 
 ## Maintaining this file
 
-- A new headline statistic anywhere in `theory/` gets a row here in the same commit, with an honest status.
+- A new headline statistic anywhere in `theory/` or `practice/` gets a row here in the same commit, with an honest status. A statistic a field artifact reads aloud to a buyer needs **Primary linked** status, not **Primary named**: reading a paywalled summary figure to a customer is external use.
 - A status moves up only when someone opens the primary source and checks the number against it.
 - When two files disagree, record the disagreement here first, then fix the files against the primary.

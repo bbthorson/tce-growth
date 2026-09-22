@@ -138,7 +138,7 @@ That is an information asset rather than a hostage. The buyer is not trapped, th
 
 **It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
-The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom II. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
+The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
 
 ### 7.3 Why $Q$ appears twice
 

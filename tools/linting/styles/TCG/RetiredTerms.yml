@@ -213,5 +213,15 @@ swap:
   primary derivation: "corollary (the Constitution's derivation tiers were removed in v2.0)"
   bridge concept: "corollary (the Constitution's derivation tiers were removed in v2.0)"
   clarifying concept: "research concept (the Constitution's derivation tiers were removed in v2.0)"
+  # The plurals are listed separately because the rule anchors on word
+  # boundaries and the boundary after "derivation" is not one in "derivations",
+  # so the singular row never fires on the plural. "primary derivations" was
+  # live in practice/friction-allocation-diagnostic.md for that reason until
+  # 2026-09-22. Any multi-word key whose last word takes an s has the same trap:
+  # check both before assuming a rename is caught. The v14.0 archetype rows
+  # already list their plurals, which is the pattern to copy.
+  primary derivations: "corollaries (the Constitution's derivation tiers were removed in v2.0)"
+  bridge concepts: "corollaries (the Constitution's derivation tiers were removed in v2.0)"
+  clarifying concepts: "research concepts (the Constitution's derivation tiers were removed in v2.0)"
   Notable quotes: "publishing/02-tools/source-quotes.md (the research files stopped carrying quotes in 2026-09)"
   Notable statistics: "the citation provenance audit (the research files stopped carrying statistics in 2026-09)"

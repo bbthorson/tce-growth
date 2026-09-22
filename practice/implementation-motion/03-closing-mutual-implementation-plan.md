@@ -20,7 +20,7 @@ Goal: To contractualize the outcome and lock in the "Infinite Game."
 | **Outputs** | Signed MIP with North Star metric, Governance Structure, Go/No-Go Protocol. Resource plan attached to contract. |
 | **Next step** | [Sustaining Adoption Review](./04-sustaining-adoption-review.md) (handoff packet, then RE-AIM reviews); vested compensation terms activate ([05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5). |
 | **Owner** | AE + Customer PM + Procurement + Legal. |
-| **Reduces** | Defection risk via mutual skin in the game (Axiom II — Governance). |
+| **Reduces** | Defection risk via mutual skin in the game (the governance corollary of Axiom II). |
 
 ## Rep Compliance: The Ratio Check
 

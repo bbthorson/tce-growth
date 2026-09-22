@@ -14,41 +14,9 @@ The theoretical synthesis of these papers lives in the [Constitution](../01-foun
 
 ## How the research builds
 
-The papers in this directory depend on each other in a specific order. Lower-level papers establish foundations the higher-level papers build on.
+The papers in this directory depend on each other in a specific order. Lower-level papers establish foundations the higher-level papers build on, and the numbered list below is that order.
 
-```
-                         ┌─────────────────────────┐
-                         │       NRR (Output)       │
-                         │  The composite scorecard │
-                         └────────────┬────────────┘
-                                      │
-                    ┌─────────────────┴─────────────────┐
-                    │                                    │
-         ┌──────────┴──────────┐             ┌──────────┴──────────┐
-         │    CFIR (Pre-Sale)   │             │  RE-AIM (Post-Sale)  │
-         │  Diagnose barriers   │             │  Measure outcomes    │
-         │  Map Inner Setting   │             │  R-E-A-I-M KPIs      │
-         └──────────┬──────────┘             └──────────┬──────────┘
-                    │                                    │
-                    └─────────────────┬─────────────────┘
-                                      │
-              ┌───────────────────────┼───────────────────────┐
-              │                       │                       │
-    ┌─────────┴─────────┐  ┌─────────┴─────────┐  ┌─────────┴─────────┐
-    │  Prospect Theory   │  │   Game Theory      │  │  Costly Signals    │
-    │  λ ≈ 2.25          │  │  Shadow of Future  │  │  Friction = Signal │
-    │  Fear > Value      │  │  Nash Equilibrium  │  │  Cheap Talk Problem│
-    └─────────┬─────────┘  └─────────┬─────────┘  └─────────┬─────────┘
-              │                       │                       │
-              └───────────────────────┼───────────────────────┘
-                                      │
-                        ┌─────────────┴─────────────┐
-                        │  Transaction Cost Economics │
-                        │  (The Foundation)           │
-                        │  Asset Specificity →        │
-                        │  Governance → Friction      │
-                        └─────────────────────────────┘
-```
+This section carries reading order only. Which axiom each paper backs is in the [Constitution](../01-foundation/00-tcg-constitution.md) under Related, which is the canonical mapping, and repeating it here would give it a second home to drift from.
 
 **Order of dependency:**
 
@@ -64,7 +32,7 @@ Plus the channel-level layer:
 
 8. **[Channel Collapse](./channel-collapse.md)** — Jevons' Paradox applied to outbound. Governance solutions for the channel-level externality problem.
 
-Plus three sources added in Constitution v13. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
+Plus three sources that each deepen an axiom already in place, so read them after the paper they extend rather than in sequence:
 
 9. **[Incomplete Contracts](./incomplete-contracts.md)** — Read after Transaction Cost Economics. Williamson explains why asset specificity creates exposure. Grossman-Hart-Moore explain what determines the outcome once exposure exists, which is the allocation of residual control rights. This is the theory beneath the MIP.
 10. **[Buying Center Dynamics](./buying-center-dynamics.md)** — Read before CFIR. Establishes that the buyer is a coalition rather than an agent, which is the premise CFIR's Inner Setting analysis depends on. Supplies the structure of $F_{consensus}$.
