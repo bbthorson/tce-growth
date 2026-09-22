@@ -82,9 +82,11 @@ Recorded rather than silently reconciled, on the same principle the provenance a
 
 ## Open questions this work did not resolve
 
-**$p_{close}$ is not observable and no record of scored deals exists.** The module expresses the marginal rule but deliberately does not evaluate it. `required_marginal_close_gain()` inverts it into the question section 6 of the seller model actually endorses: what would the derivative have to be for this spend to make sense. A deal-record schema is the precondition for anything more, and it is a decision about what the organization logs rather than a modelling choice.
+Both are theory gaps rather than module defects, so they are stated in [07-open-questions.md](../theory/01-foundation/07-open-questions.md) as items 28 and 30. What belongs here is what the module does about them, which is to decline to guess.
 
-**$R_{redeploy}$ has no scoring method.** It is the term separating a good forward-deployed engagement from an expensive one, and `quasi_rent()` takes it as a caller-supplied input for that reason. Inventing a rubric here would put a number into a risk review that no document backs.
+**$p_{close}$ is not observable.** The module expresses the marginal rule and deliberately does not evaluate it. `required_marginal_close_gain()` inverts it into the question section 6 of the seller model actually endorses: what would the derivative have to be for this spend to make sense.
+
+**$R_{redeploy}$ has no scoring method.** `quasi_rent()` takes it as a caller-supplied input rather than deriving it, because a rubric invented here would put a number into a risk review that no document backs.
 
 ## Related
 

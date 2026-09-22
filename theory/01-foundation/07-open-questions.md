@@ -12,7 +12,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Version:** 1.0
 **Purpose:** To record, in one place, where the theory is under-developed now that the axioms are fixed. Each entry says what the framework claims, what it lacks, and what would settle it. Entries are grouped by the axiom they weaken.
 
-This register consolidates. Where a file already carries its own "what this does not settle" section, the entry here points at it rather than restating it. An entry leaves this file when the work is done or when the claim is withdrawn, and either exit is recorded in the Constitution's version history.
+This register consolidates, and it is the only place a gap is written out. A file that had its own "what this does not settle" section now points here instead, because two registers drift apart and these already had. An entry leaves this file when the work is done or when the claim is withdrawn, and either exit is recorded in the Constitution's version history.
+
+**The numbers are identifiers, not positions.** Other files cite entries by number, so a new entry takes the next free number inside its axiom group rather than renumbering what is already there. Expect gaps and expect the order inside a group to be arbitrary.
 
 ---
 
@@ -27,6 +29,10 @@ This register consolidates. Where a file already carries its own "what this does
 **4. The division-of-labor corollary predicts an org design it does not describe.** If the standard sales organization is a fixed-direction instrument set, a direction-following organization would look different, and the framework does not say how. *Settled by:* a short derivation of what it means to staff by direction rather than by funnel stage.
 
 **5. Reachability has research and no measurement.** The search component's second blocker, a buyer the seller cannot reach, is backed by [channel-collapse.md](../02-research/channel-collapse.md) and measured by a single addend in the calculator. *Settled by:* a count-based reading of reachability that survives the same scrutiny as the other counts.
+
+**24. Whether direction is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different vectors, because the incumbent's enforcement cost is already sunk. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) scores the deal rather than a seat, which is a decision rather than an oversight: a seat-scored instrument owes the reader an account of how each seat wins, and that account does not exist. Until it does, an incumbent scoring a renewal reads implementation-light for a reason the counts cannot see. *Settled by:* either that account, or a stated rule that the instrument is challenger-relative and a renewal is scored differently.
+
+**25. The count bands are chosen, and nothing tests their shape.** The instrument counts named things, which fixes the ordinal problem the ratings had, and then converts counts to component scores through bands. The counts are observations. The bands are not, and [06-calibration.md](./06-calibration.md) records them as chosen. *Settled by:* the same cohort logging that settles item 14, read against realized routing outcomes rather than against close dates.
 
 ---
 
@@ -45,6 +51,16 @@ This register consolidates. Where a file already carries its own "what this does
 **11. The unified-governance boundary has no instrument.** The fourth governance row says the buyer eventually builds it. Nothing reads when. *Settled by:* an instrument that reads the buyer's build alternative, which is $V_{next\_best}$ made observable.
 
 **12. Own the decomposition or cite it.** The Constitution says the B2B enlargements of Coase's three costs are the framework's own. The research files still present the decomposition as inherited. *Settled by:* one pass through [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) to separate what Coase said from what the framework added.
+
+**26. Where the boundary between short and long sits.** $k_{threshold} = 15$ sits at half the instrument's range and nothing but convention puts it there. *Settled by:* a cohort split at several candidate thresholds, checked for whether apparatus deployed above the line earns its cost and apparatus below it does not.
+
+**27. The recurrence claim cannot be falsified on a category that never had a one-shot form.** Section 5 of [05-governance-forms.md](./05-governance-forms.md) predicts that moving a category from perpetual licence to subscription widened the reachable region of the friction space. Software sold as a subscription from the beginning offers no before-and-after, so the test only runs on categories that made the transition. *Settled by:* naming the categories that did, which bounds the claim to a testable population rather than weakening it.
+
+**28. $p_{close}$ has no estimator.** The seller's marginal rule in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 4 turns on $\partial p_{close} / \partial C_{invest}$, and neither term is observed. The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would have to be recorded with that status rather than presented as clean. *Settled by:* a deal-record schema that logs the investment made against the outcome, which is a decision about what the organization logs rather than a modelling choice.
+
+**29. $C_{sustain}$ has no budget owner.** The post-signature relationship spend is what holds the incumbent's asymmetry advantage down, per section 7.2 of the seller surplus model, and the framework assigns it to no department. A variable with no owner drifts. *Settled by:* naming the owner, which is an organizational claim the framework has so far avoided making.
+
+**30. $R_{redeploy}$ has no scoring method.** Redeployability is the term separating a good forward-deployed engagement from an expensive one, and `quasi_rent()` in the module takes it as a caller-supplied input for exactly that reason. Inventing a rubric would put a number into a risk review that no document backs. *Settled by:* a scoring method argued from what actually transfers between deals, or a stated decision to keep it a judgment input.
 
 ---
 
@@ -85,4 +101,5 @@ This register consolidates. Where a file already carries its own "what this does
 ## Related
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The claims these questions weaken.
-- [01-motions.md](./01-motions.md) section 9, [05-governance-forms.md](./05-governance-forms.md) section 7, [04-seller-surplus-model.md](./04-seller-surplus-model.md) open questions, [06-calibration.md](./06-calibration.md) section 5 — The file-local registers this one points at.
+- [01-motions.md](./01-motions.md) section 9, [05-governance-forms.md](./05-governance-forms.md) section 7 and [04-seller-surplus-model.md](./04-seller-surplus-model.md) — Their gaps were folded in here and those sections now point back, so this file is the only prose home.
+- [06-calibration.md](./06-calibration.md) sections 4 and 5, and [friction-efficiency-index.md](../../practice/friction-efficiency-index.md) sections 6 and 7 — Not folded in. Those record what would make a number empirical and what is wrong inside one instrument's composite, which is narrower than a gap in the theory.

@@ -158,9 +158,7 @@ The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetr
 
 ## Open questions
 
-- **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
-- **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.
-- **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
+Three gaps sit under this file and all three are in [07-open-questions.md](./07-open-questions.md): $p_{close}$ has no estimator (item 28), $C_{sustain}$ has no budget owner (29), and $R_{redeploy}$ has no scoring method (30).
 
 ---
 

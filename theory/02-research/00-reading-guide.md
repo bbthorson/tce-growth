@@ -50,8 +50,14 @@ Plus the seller-side layer:
 
 ## What you won't find here
 
-This is a citation index, not a theoretical synthesis. The synthesis lives elsewhere:
+This is a citation index, not a theoretical synthesis, and this section is the directory's scope boundary in both directions.
 
-- **Three axioms and their derivations:** [Constitution](../01-foundation/00-tcg-constitution.md), Parts I and II.
-- **Surplus equation and failure modes table:** Constitution Part III. The per-axiom figures are in Part I, generated from [`models/`](../../models/).
-- **Operational tools** (rubric, artifacts): [`practice/`](../../practice/).
+| Content | Where it lives |
+|---|---|
+| Canonical citations, abstracts, source links | **this directory** |
+| Three axioms and their derivations | [Constitution](../01-foundation/00-tcg-constitution.md), Parts I and II |
+| Surplus equation and failure modes | Constitution Part III. The per-axiom figures are in Part I, generated from [`models/`](../../models/) |
+| Instruments and artifacts | [`practice/`](../../practice/) |
+| Applied analysis of a specific deal or event | [`publishing/01-cases/`](../../publishing/01-cases/) |
+| Published or polished commentary | [`publishing/02-tools/style-references/`](../../publishing/02-tools/style-references/) |
+| Citable passages, and every statistic with its status | [`source-quotes.md`](../../publishing/02-tools/source-quotes.md), [citation-provenance-audit.md](./audits/citation-provenance-audit.md) |

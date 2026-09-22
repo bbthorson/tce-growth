@@ -130,13 +130,7 @@ Axiom III amplifies each component by its own pair's gap, and the Constitution c
 
 ### 5.1 Three pairs, three gaps
 
-| Component | Whose ignorance, about what |
-|---|---|
-| $F_{search}$ | The buyer, about the market |
-| $F_{consensus}$ | The buyer's stakeholders, about each other |
-| $F_{implementation}$ | The seller, about the buyer's environment |
-
-Only the third is seller against buyer, and the [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair alone. Direction moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for.
+Each component's gap runs between its own pair of parties, and [02-mathematical-models.md](./02-mathematical-models.md) section 2.4 tabulates the three with their instruments. What matters geometrically is that only the third pair is seller against buyer, and the [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures that third pair alone. Direction moves with the work. A deal that opens implementation-dominant rotates toward consensus as discovery closes $\Delta_{implementation}$, which is what a Blueprint is for.
 
 ### 5.2 Drift is the same rotation running backwards
 
@@ -166,9 +160,7 @@ The reduced form $y = a\hat{\Delta}_A^2 + c$ collapses the vector to a scalar an
 
 ## 6. What follows for the seller's market
 
-A seller who runs only short-vector tactics can transact only with short-vector buyers. Buyers whose deals carry a long vector are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was blocking them.
-
-Addressable market is therefore a property of the motion rather than of the product, and [05-governance-forms.md](./05-governance-forms.md) section 4 carries that argument and its three consequences.
+A seller who runs only short-vector tactics can transact only with short-vector buyers, so addressable market is a property of the motion rather than of the product. [05-governance-forms.md](./05-governance-forms.md) section 4 carries that argument and the three consequences that follow from it.
 
 ---
 
@@ -180,18 +172,13 @@ Axiom II's under-frictioned failure has two symptoms and the Constitution names 
 
 ## 8. Why sellers choose the wrong region
 
-Short-vector tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. By the Constitution's third standing assumption that is expected, and by Axiom II's stakes corollary the remedy is vesting compensation on outcomes that survive signature ([05-governance-forms.md](./05-governance-forms.md) section 5). It is usually read as protection against poor Structural execution. It is also the instrument that governs motion selection, and that is the wider claim.
+Short-vector tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. By the Constitution's third standing assumption that is expected, and the remedy is the vesting claim argued in [05-governance-forms.md](./05-governance-forms.md) section 5. What this file adds is the target: vesting is usually read as protection against poor Structural execution, and it is also what governs which region a seller chooses in the first place.
 
 ---
 
 ## 9. What this does not settle
 
-- **The consensus region has no instrument file.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) says so out loud when a deal routes there. Building the instrument set is the open work, and naming the region further before that would produce a label with nothing behind it.
-- **Whether direction is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different vectors, because the incumbent's enforcement cost is already sunk. The instrument scores the deal rather than a seat, which is a decision rather than an oversight: a seat-scored instrument owes the reader an account of how each seat wins, and that account does not exist yet. Until it does, an incumbent scoring a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
-- **Where the boundary between short and long sits.** The threshold sits at half the instrument's range and nothing but convention puts it there.
-- **Whether the count bands are the right shape.** The instrument counts named things, which fixes the ordinal problem, and then converts counts to component scores through bands that are chosen rather than fitted. The counts are observations. The bands are not.
-- **Whether the three drift rates behave as one mechanism.** $\gamma_{consensus}$ is the only one with a discrete field event attached, namely a departed stakeholder. The other two are asserted to be continuous and nothing tests that.
-- **Whether $a$ is anywhere near 2.25.** The coefficient has stated units, which makes it checkable rather than correct. Section 6 of [02-mathematical-models.md](./02-mathematical-models.md) says what data would settle it.
+Six gaps sit under this file and all six are written out in [07-open-questions.md](./07-open-questions.md), which is the only register: the consensus region having no instrument file (item 2), whether direction is vendor-relative (24), where the boundary between short and long sits (26), whether the count bands are the right shape (25), whether the three drift rates behave as one mechanism (14), and whether $a$ is anywhere near 2.25 (15).
 
 ---
 

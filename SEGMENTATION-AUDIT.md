@@ -1,6 +1,6 @@
 # Segmentation Audit
 
-**Status:** proposed 2026-09-21. Steps 1 and 2 of section 6.6 applied 2026-09-22. Steps 3 to 6 are not, and steps 4 and 6 want the author's eyes on each file before they merge.
+**Status:** proposed 2026-09-21. Steps 1 to 3 of section 6.6 applied 2026-09-22. Steps 4 to 6 are not, and steps 4 and 6 want the author's eyes on each file before they merge.
 
 **Scope:** what the repo currently holds, what repeats, what is stale, and a proposed segmentation to flesh out against. It replaces `RESTRUCTURE-PLAN.md`, whose six steps were all applied and which step 2 below deleted.
 
@@ -8,8 +8,9 @@
 |---|---|
 | 1. Correctness | Applied. The stale threshold, the retired axiom description, the two unsourced read-aloud statistics, the three Reputation Depreciation misattributions and the live plural of a retired term are fixed. The provenance rule now covers `practice/`, and the plural trap has swap rows. |
 | 2. Cruft | Applied. `RESTRUCTURE-PLAN.md` and the checked-in `.claude/` memory are deleted, `.claude/` is ignored, the reading guide's stale diagram is gone, the cases README is trimmed and the superseded case is marked. |
+| 3. Deduplicate | Applied, with two of its own findings corrected. See 3.1 and 3.2. Touched no Constitution prose beyond the version bump, since that is step 4's review. |
 
-The findings below are kept as written, as the record of what was found rather than a description of the tree today.
+The findings below are kept as written, as the record of what was found rather than a description of the tree today, except where a later pass proved one wrong and says so inline.
 
 ---
 
@@ -74,15 +75,19 @@ The mechanism is specific and repeatable. A claim is stated in the Constitution.
 
 ## 3. What overlaps
 
-### 3.1 Level and direction, explained eight times
+### 3.1 Level and direction
 
-The distinction between the friction vector's length and its heading is the framework's central operational idea, and it carries a full prose explanation in eight files: the root `README.md`, `CLAUDE.md`, the Constitution's Axiom I, `01-motions.md` sections 1 and 3, `05-governance-forms.md` section 6, `03-glossary-and-notation.md`, `02-mathematical-models.md`, and `deal-triage-calculator.md` Step 3. Each one says the same two things in its own words, so a revision to the idea is an eight-file edit and any file missed is a file that now describes a superseded version.
+> **Corrected during step 3.** This section claimed eight prose explanations. Reading the eight showed the grep behind that number was matching phrases rather than expositions, and most of the hits were doing a different job. `03-glossary-and-notation.md` carries one-line term entries, which is what a glossary is for. `deal-triage-calculator.md` Step 3 gives the formulas and bands, which is the instrument computing. `02-mathematical-models.md` does not explain the idea at all and only mentions direction in passing. The root `README.md` carries a one-sentence version for a first-time reader, and `CLAUDE.md` carries terse definitions for a tool. None of those is a second home for the argument.
+>
+> The working test is whether a file **restates the argument** or merely **names the thing**. Naming is cheap to keep correct. Restating is what has to be maintained in parallel. By that test the real duplication was `05-governance-forms.md` section 6 and the Constitution's Axiom I, against the derivation in `01-motions.md` section 1. Section 6 now names the first two quantities and points; the Constitution's half rides with step 4.
 
-**One prose home, `01-motions.md` section 1.** Everywhere else, a link.
+The distinction between the friction vector's length and its heading is the framework's central operational idea. **One prose home, `01-motions.md` section 1.** Elsewhere, name it and link.
 
 ### 3.2 The three pairs, four times
 
-Axiom III's claim that each component has its own pair of parties, and therefore its own gap, is tabulated in `00-tcg-constitution.md` line 128, `01-motions.md` line 133, `02-mathematical-models.md` line 166, and again as a warning callout in `asymmetry-scorecard.md` line 21. Four tables, four column sets, one claim. The math file's version is the most complete and is the one that should survive.
+Axiom III's claim that each component has its own pair of parties, and therefore its own gap, is tabulated in `00-tcg-constitution.md` line 128, `01-motions.md` line 133, `02-mathematical-models.md` line 166, and again as a warning callout in `asymmetry-scorecard.md` line 21. Four tables, four column sets, one claim. The math file's version is the most complete and is the one that survives.
+
+Two of the four were not duplication on the test in 3.1. The scorecard's callout is a warning against a specific misuse at the point where a reader would commit it, which is worth its words. The Constitution's is the axiom stating its own mechanism, and it rides with step 4. Step 3 removed the motions table only.
 
 ### 3.3 Two registers of open questions
 
@@ -108,7 +113,7 @@ The bullets are roughly 1,500 words of the Constitution's 4,678, and they are th
 - **Vesting compensation on surviving outcomes.** Constitution Axiom II corollary, `01-motions.md` section 8, `05-governance-forms.md` section 5. Same treatment.
 - **Fit verification is not a search blocker.** Constitution Axiom I, `01-motions.md` section 2.1, plus a `RetiredTerms.yml` row. The motions file owns it.
 - **Research directory front matter.** `theory/02-research/README.md` and `00-reading-guide.md` both answer "where do I start" and both carry a "what you will not find here" section. Merge into the reading guide and reduce the README to a pointer.
-- **The `models/README.md` open-questions section** repeats items 20 and 21 of the register.
+- **The `models/README.md` open-questions section** restates two gaps. Corrected during step 3: they duplicate the seller surplus model's own open questions, now register items 28 and 30, rather than items 20 and 21. The README now says what the module does about each, which is the part that belongs there, and points at the register for the gap itself.
 
 ---
 
@@ -276,12 +281,12 @@ This is the same trick the repo already runs three times. Name the drift, then g
 |---|---|---|
 | 1 | **Applied.** Correctness: the defects in 4.1 to 4.3 and 4.8, extend the provenance rule to `practice/`, add the plural to the `primary derivation` swap row | None. No structure touched. |
 | 2 | **Applied.** Cruft: everything in section 5 | None. |
-| 3 | Deduplicate: sections 3.1, 3.2, 3.3, 3.5. One prose home each, links elsewhere | Low. Mechanical, reviewable per claim. |
+| 3 | **Applied.** Deduplicate: sections 3.1, 3.2, 3.3, 3.5. One prose home each, links elsewhere. Touched no Constitution prose, since that is step 4's review | Low. Mechanical, reviewable per claim. |
 | 4 | Constitution corollaries into the Part II table, section 3.4 | Needs your eyes. It is the text the rest of the repo is held to. |
 | 5 | Move to the tree in 6.2, add `kind:` and the linter rules in 6.4 | Low but wide. Touches every link. |
 | 6 | Rebuild `implementation-motion/` 01 to 03 against the locked axioms, using 04 as the template, sections 4.5 to 4.7 | Needs your eyes. It decides what a field artifact contains. |
 
-Steps 1 and 2 are applied. Steps 3 through 6 remain, and steps 4 and 6 want your read on each file before it merges.
+Steps 1 to 3 are applied. Steps 4 to 6 remain, and steps 4 and 6 want your read on each file before it merges.
 
 ---
 

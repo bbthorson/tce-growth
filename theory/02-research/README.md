@@ -31,9 +31,4 @@ Each research entry follows a standard shape:
 
 ## What goes here vs. elsewhere
 
-| Type of content | Where it lives |
-|---|---|
-| Canonical citations, abstracts, source links | **`theory/02-research/`** (this directory) |
-| Theoretical synthesis of these papers | [`../01-foundation/00-tcg-constitution.md`](../01-foundation/00-tcg-constitution.md) |
-| Applied analysis of a specific deal/event | [`../../publishing/01-cases/`](../../publishing/01-cases/) |
-| Published or polished commentary | [`../../publishing/02-tools/style-references/`](../../publishing/02-tools/style-references/) |
+The scope table is in [00-reading-guide.md](./00-reading-guide.md) under "What you won't find here", with the reading order it belongs beside. This README does not repeat it.

@@ -99,7 +99,7 @@ Restructuring a one-shot sale as a subscription converts a single-play game into
 
 ## 6. Which output answers which question
 
-The framework now emits three things about a deal and they are routinely confused.
+The framework emits three things about a deal and they are routinely confused. Level and direction are derived in [01-motions.md](./01-motions.md) section 1 and this table only names them, because what this file adds is the third row.
 
 | Quantity | Question it answers | What moves it |
 |---|---|---|
@@ -113,10 +113,7 @@ The framework now emits three things about a deal and they are routinely confuse
 
 ## 7. What this does not settle
 
-- **Where the continuous boundary sits.** The fourth row says unified governance eventually wins on rising specificity in a continuous relationship. It does not say at what level, and there is no instrument that reads it. A seller currently learns they crossed it when the buyer announces a platform team.
-- **Whether frequency is three readings or a continuum.** The three readings are chosen for field use. Nothing argues that the boundaries between them are real rather than convenient.
-- **Whether the recurrence claim survives contact with a category that never had a one-shot form.** Software sold as a subscription from the beginning offers no before-and-after, so the falsification test in section 5 only runs on categories that made the transition.
-- **How governance form interacts with direction.** The forms are selected by level and frequency. Whether a consensus-dominant deal wants a different safeguard structure from an implementation-dominant one of identical level is untested, and there is reason to think it does: the parties who need safeguarding are not the same parties.
+Four gaps sit under this file and all four are in [07-open-questions.md](./07-open-questions.md): where the continuous boundary sits (item 11), whether frequency is three readings or a continuum (10), whether the recurrence claim in section 5 can be falsified at all on a category that never had a one-shot form (27), and whether governance form interacts with direction (9).
 
 ---
 

@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 2.2
+version: 2.3
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 2.2
+**Version:** 2.3
 **Purpose:** To state the three claims from which everything else in this repository derives, each at the level where a seller meets it, each producing a decision, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -241,10 +241,11 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 2.2.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 2.3.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 | Version | Date | Change |
 |---|---|---|
+| 2.3 | 2026-09 | Segmentation audit, step 3. Deduplication, and no claim in this document changed. The "what this does not settle" sections in the motions, governance and seller surplus files fold into 07-open-questions.md, which gains seven entries and is now the only register. The three-pairs table, the addressable-market argument and the vesting claim each drop to a single prose home. The research README's scope table merges into the reading guide. |
 | 2.2 | 2026-09 | Restructure, step 6. Reference trim. The research files stop carrying quotes and statistics, which move to publishing and the provenance audit. The glossary term index loses every single-file term. The math file's argument about units is compressed. The retired derivation tiers are removed from every support line. No axiom changed. |
 | 2.1 | 2026-09 | Restructure, step 5. Coase's component names swept through theory prose, fit verification moved out of the search component and under specificity, the motions and governance files trimmed of material the Constitution now carries, and 07-open-questions.md opened as the register of under-developed areas. No axiom changed. |
 | 2.0 | 2026-09 | The axioms are rewritten. Governance stops being an axiom and becomes a corollary of specificity, where Williamson put it. Specificity becomes Axiom II with its own law. Uncertainty Inflation moves from II to III and gains its second clause. Each axiom is stated at the level where a seller meets it, in one sentence, with a falsifier. Three standing assumptions are named above the axioms. The components take Coase's names in theory, with consensus and implementation kept as the field translations. Part II becomes a table. No equation changed. |
