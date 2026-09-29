@@ -2,14 +2,14 @@
 title: "Seller Surplus and the Implementation Investment"
 layer: theory
 status: active
-version: 1.0
+version: 1.3
 operationalizes: [axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Seller Surplus and the Implementation Investment
 
-**Version:** 1.0
+**Version:** 1.3
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
 The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
@@ -128,9 +128,11 @@ The buyer prices this at signature. A buyer who anticipates lock-in is losing th
 
 **Switching cost is a liability at signature and an asset at renewal.** Any account of it that carries only one sign is describing half the mechanism.
 
+The buyer's exit has the same two signs. A cheap exit for the buyer reads as protection at signature and is a hold-up hazard for the seller at every boundary after it, because the seller's specific investment is sunk and the buyer's is not yet. That is why one-sided termination for convenience does not govern a specific deal, and why revenue-recognition rules truncate the recognizable term of such a contract to its notice period: the accounting treats the commitment the way the economics do.
+
 ### 7.2 What actually defends the position
 
-The durable asset is not lock-in. It is **asymmetric $\Delta_A$**.
+Lock-in is real, measurable, and under-priced by the buyer at signing (Farrell and Klemperer 2007). The asset that does not raise the seller's temptation is **asymmetric $\Delta_A$**, and it sits alongside lock-in rather than instead of it.
 
 After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero, because the environment has been mapped. Every challenger begins at close to maximum. The buyer's renewal decision compares $y$ with the incumbent against $y$ with a challenger, and the challenger's figure carries a full $F_{implementation}$ amplified by an asymmetry gap nobody has closed yet.
 
@@ -139,6 +141,8 @@ That is an information asset rather than a hostage. The buyer is not trapped, th
 **It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
 The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom II. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
+
+*Falsifier.* In replacement bids where the challenger is handed full documentation of the incumbent's implementation, the incumbent's renewal rate should fall toward what lock-in alone predicts. If it does not move, the moat was lock-in after all.
 
 ### 7.3 Why $Q$ appears twice
 
@@ -154,13 +158,24 @@ So a forward-deployed motion raises the seller's temptation $T$ and the seller's
 
 The instrument already exists. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures $\Delta_A$, and nothing currently runs it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
 
+### 7.5 The information asset at the market level
+
+Section 7.2 names the durable asset after a forward-deployed engagement: the incumbent's ignorance of one buyer's environment is near zero and every challenger's is near maximum. The same asset exists one level up. The seller's accumulated map of a buyer population, the market ledger of [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.1, is the market-level form of it, and how much of it is filled is how much unique insight the seller holds.
+
+Four consequences.
+
+- **The entrant prices below the incumbent, and the framework says why.** An entrant with a thin ledger opens every deal with a wider enforcement gap than the incumbent would, because the seller's ignorance is half of that gap and the buyer prices it. The entrant cannot yet close the gap cheaply, so of Axiom III's three levers only price and risk are available. The concessions that get the early deals done are $C_{invest}$ at the market level rather than discounting, and the ledger is what they buy.
+- **Do not enter at zero fill.** With an empty ledger the cost to serve is at its maximum on every component, and the amortizability corollary returns decline. The floor is a reading the seller can act on.
+- **The ledger is a quasi-rent.** It loses value outside the market that produced it, so it is specific in Williamson's sense, and section 3's exposure argument applies. A seller who has filled a market ledger and not yet recovered it has sunk something that market's buyers can hold up, and the repeated game of this section is what recovers it.
+- **Redeployable value has a scoring method.** $R_{redeploy}$ is the share of an adjacent market's ledger that this market's work has already filled. The spine makes it countable: workflows share typed touchpoints, so the fill an adjacent market inherits is the share of its touchpoints the seller already knows. Expansion into an adjacent market is the moment that inherited fill carries the amortizability reading from decline to pursue, and a seller can reach it ancillary to the work they are already doing.
+
 ---
 
 ## Open questions
 
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
 - **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.
-- **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one, and nothing in the repository measures it yet.
+- **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one. Section 7.5 proposes one, the inherited fill of an adjacent market's ledger, and nothing has tested it.
 
 ---
 

@@ -2,14 +2,14 @@
 title: "Motions"
 layer: theory
 status: active
-version: 2.0
+version: 2.1
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Motions
 
-**Version:** 2.0
+**Version:** 2.1
 **Purpose:** To derive motion selection from the two quantities Axioms I and II name, so that a motion is a region of one space rather than an item on a list. Then to say what each region deploys, and how the names map onto the vocabulary the industry already uses.
 
 > [!IMPORTANT]
@@ -152,7 +152,7 @@ $$\Delta_k(t) = \Delta_k(0) + \gamma_k t$$
 | $\gamma_{consensus}$ | Stakeholder turnover, reorganization | Nowhere |
 | $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen | [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7.2 |
 
-**The field consequence sits in the bargaining row.** A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone without any change in the product, the price or the technical work. That event is the most common way an enterprise deal dies.
+**The field consequence sits in the bargaining row.** A champion leaving is $\gamma_{consensus}$ arriving all at once. The alignment that stakeholder held is gone, the deal rotates back toward consensus-dominant, and it can leave the viable zone without any change in the product, the price or the technical work. That event is among the most common ways an enterprise deal dies, and the framework has not sourced how common. It is also one of two events. A seat can dissolve rather than empty, when the mandate leaves with the person, and then the base cost changes and no re-statement by a successor recovers it.
 
 **The same rotation runs at the level of a category.** An emerging category carries high search and high enforcement cost and routes search-led or composed. As industry-wide education completes, search cost collapses and the buyer's risk concentrates on deployment, so the category rotates implementation-led. As integrations standardize and switching costs fall, every component drops below the boundary and the category commoditizes to Turnkey, at which point the apparatus retires. The second and third transitions are the pair sellers miss, and they miss the third more often, because nothing external prompts a re-score.
 

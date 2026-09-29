@@ -66,7 +66,7 @@ Plus the channel-level layer:
 
 Plus three sources added in Constitution v13. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
 
-9. **[Incomplete Contracts](./incomplete-contracts.md)** — Read after Transaction Cost Economics. Williamson explains why asset specificity creates exposure. Grossman-Hart-Moore explain what determines the outcome once exposure exists, which is the allocation of residual control rights. This is the theory beneath the MIP.
+9. **[Incomplete Contracts](./incomplete-contracts.md)** — Read after Transaction Cost Economics. Williamson explains why asset specificity creates exposure. Grossman-Hart-Moore explain what determines the outcome once exposure exists, which is the allocation of residual control rights. This is the theory beneath the MIP. Its 2026-09 extension carries the incomplete-contracting and front-end-loading evidence behind Constitution 3.0's change of *paid* to *allocated* in Axiom II.
 10. **[Buying Center Dynamics](./buying-center-dynamics.md)** — Read before CFIR. Establishes that the buyer is a coalition rather than an agent, which is the premise CFIR's Inner Setting analysis depends on. Supplies the structure of $F_{consensus}$.
 11. **[Real Options](./real-options.md)** — Read after Prospect Theory. Loss aversion explains why the buyer fears the downside. Real options explains why waiting is a rationally priced alternative rather than mere inertia, and why staged commitment is the counter.
 
@@ -77,6 +77,14 @@ Plus the implementation layer:
 Plus the seller-side layer:
 
 13. **[Appropriable Quasi-Rents and Supplier-Side Hold-Up](./klein-crawford-alchian.md)** — Read after Transaction Cost Economics and alongside Incomplete Contracts. Williamson says specificity creates exposure. Klein, Crawford and Alchian name the quantity at stake and establish that it belongs to whichever party sank the investment, which in a forward-deployed motion is the seller. Backs [04-seller-surplus-model.md](../01-foundation/04-seller-surplus-model.md).
+
+Plus the workflow layer:
+
+14. **[Integration Touchpoints](./integration-touchpoints.md)** — Read after Process Misfit. Misfit says what specificity is made of. The touchpoint taxonomy says where a product meets the buyer's system of record, in five types that hold in any vertical. It is how the step library in [08-from-axioms-to-instruments.md](../01-foundation/08-from-axioms-to-instruments.md) matches steps across workflows, and how the seats around a workflow are predicted before a buyer is met. The one practitioner source in this directory, recorded as such.
+
+Plus the critiques:
+
+15. **[The TCE Empirical Record and Its Critiques](./tce-empirical-record.md)** — Read after Transaction Cost Economics and before extending Axiom III. Where the empirical record supports specificity and fails uncertainty, why Ghoshal and Moran say governing for opportunism is self-fulfilling, why List's field experiments count against borrowing loss aversion, and the software-economics account of subscription that the exit-cost corollary now defers to. This file records where the framework is weakest, on purpose.
 
 ---
 

@@ -18,7 +18,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The framework makes two kinds of claim and they carry very different weight.
 
-**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion. Specificity sets the level, the boundary, and how much of the cost must be paid before signature. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
+**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion. Specificity sets the level, the boundary, and how much of the cost must be allocated before signature. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
 
 **Parameters** say how much. Every one of them is a reasoned starting value. None is fitted to booked deal data.
 
@@ -47,7 +47,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
-| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy.** Borrows $\lambda \approx 2.25$ (Tversky and Kahneman 1992) as an order-of-magnitude justification. The analogy crosses three boundaries without argument: individual to organizational, laboratory gamble to enterprise procurement, and dimensionless to denominated in annual contract value. Section 4 says what would replace it. |
+| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy.** Borrows $\lambda \approx 2.25$ (Tversky and Kahneman 1992) as an order-of-magnitude justification. The analogy crosses three boundaries without argument: individual to organizational, laboratory gamble to enterprise procurement, and dimensionless to denominated in annual contract value. Evidence against the transfer: List (2003, 2004) finds that market experience attenuates loss aversion and the endowment effect among experienced traders, so an experienced procurement organization may sit nearer risk neutrality than the anchor implies. Section 4 says what would replace it. |
 | Convexity exponent | — | 2 | **Chosen.** Convexity is structurally motivated and the exponent is not. Nothing in the framework distinguishes a square from any other convex form, and every argument built on the reduced form needs only convexity. Treat the square as the simplest convex shape rather than as a claim about curvature. |
 | Base friction growth rate | $b$ | measured per deal | **Named, not valued.** The derivation identifies $a$ with $b$. |
 | Technical weight | $w_t$ | 0.6 | **Chosen.** No source. |
@@ -80,6 +80,16 @@ Every input to this instrument is a count of a named thing. Everything in this t
 | Divergence modifier | 0 → 1.0, 1-2 → 1.2, 3-5 → 1.5, 6+ → 2.0 | **Chosen.** |
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |
 | Dominance threshold | 0.50 | **Chosen.** A discontinuity doing real work: 0.49 and 0.51 route differently on no argument. Section 5 records it as a known defect. |
+
+### 3.2a The market reading ([The Market Reading](../../practice/00-market-reading.md))
+
+The reading reuses every band in section 3.2 and adds one structural count of its own.
+
+| Parameter | Value | Provenance |
+|---|---|---|
+| Ledger rows | 12 | **Chosen.** The rows are argued from the three components and frequency. The count of them is an artifact of that argument, and the unfilled fraction is a share of it. |
+| Unfilled-fraction threshold | none | **Named, not valued.** The fraction is reported. A line needs data from populations entered and populations declined. |
+| Missing-capability range | 0 to 4 per component | **Convention.** The four activities below Read in the activity grid. |
 
 ### 3.3 The asymmetry scorecard ([Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md))
 

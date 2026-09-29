@@ -160,8 +160,17 @@ One line each, then the canonical source. The line identifies the term. The sour
 | Term | Identifier | Canonical source |
 |---|---|---|
 | **Market level** | Where a seller meets the category. Which cost binds, and therefore which motion. Axiom I. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Workflow level** | Where a seller meets the buyer's operation. How specific the investment is, how much apparatus that needs, and when it must be spent. Axiom II. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Workflow level** | Where a seller meets the buyer's operation. How specific the investment is, how much apparatus that needs, and how much of its allocation must be settled before signature. Axiom II. | [Constitution, Part I](./00-tcg-constitution.md) |
 | **Deal level** | Where a seller meets the parties. What each cannot verify about their own outcome, before signature and again at renewal. Axiom III. | [Constitution, Part I](./00-tcg-constitution.md) |
+
+### The four units
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Market** | The buyers who call a problem by one name. The unit Axiom I is read at. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Workflow** | The procedure a product changes. A product is an encoded reference workflow. The unit Axiom II is read at. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Seat** | A position in the buying coalition defined by its relation to the workflow, not by its occupant. Holds a veto or an evaluation and survives the person in it. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Deal** | One buyer's divergence from the reference workflow, with the seats their version carries. The unit Axiom III is read at. | [Constitution, Definitions](./00-tcg-constitution.md) |
 
 ### Component names
 
