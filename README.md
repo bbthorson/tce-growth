@@ -12,7 +12,7 @@ Two properties of that cost structure carry the decision.
 
 > **How much cost there is decides how much apparatus the deal can carry. Which cost dominates decides what that apparatus should be.**
 
-The named motions are regions of that space rather than competing philosophies. A deal whose cost sits in finding and comparing is a Sales-Led deal. One whose cost is small on every axis is Product-Led. One whose cost sits in installation is Implementation-Led. One whose cost sits in getting the buyer's own people to agree has no established playbook at all, which is a finding rather than an omission. Choosing between Turnkey, search-led and implementation-led as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
+The named motions are regions of that space rather than competing philosophies, and each is named after the cost it spends to reduce. A deal whose cost sits in finding and comparing is search-led. One whose cost sits in getting the buyer's own people to agree is consensus-led. One whose cost sits in installation is implementation-led. One whose cost is small on every axis is Turnkey. The familiar labels only partly line up. Sales-Led Growth is narrower than search-led, Product-Led Growth overlaps Turnkey without equaling it, and consensus-led has no established name at all, which is a finding rather than an omission. [01-motions.md section 10](./theory/01-foundation/01-motions.md) carries the map. Choosing between these motions as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
 
 Three axioms carry the argument, each stated at the level where a seller meets it. At the market level, every deal carries three costs beyond price, search, bargaining and enforcement, and the one that binds selects the motion. At the workflow level, the more specific the investment, the more a deal costs to transact and the more of that cost must be allocated before signature. At the deal level, each cost is inflated by what the parties to it cannot verify about their own outcome, and the inflation rebuilds unless it is maintained.
 
@@ -34,7 +34,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 | **[models/](./models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
 | **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
 
-Each group has its own README listing what is inside it.
+Each has a README listing what is inside it. For `tools/` it is [tools/linting/README.md](./tools/linting/README.md).
 
 ---
 
@@ -69,13 +69,15 @@ Axiom II is the gate. When the investment is not specific, market terms hold and
 
 ### The Fundamental Equation
 
-$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - (F_{search} + F_{consensus} + F_{implementation}) \cdot (1 + \Delta_A) = OC_{\text{switching}} - y$$
+$$S = \left(V_{solution} \cdot e^{-\delta t} - V_{next\_best}\right) - \sum_{k} F_k \,(1 + \hat{\Delta}_k(t)) = OC_{\text{switching}} - y$$
 
 - **S** = Deal Surplus (must be > 0 for a deal to close)
-- **Δ_A** = Bilateral Asymmetry Gap = Seller Ignorance + Buyer Uncertainty
-- **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$ (where $a = 2.25$ is risk aversion, $\hat{\Delta}_A$ is the normalized deal-level asymmetry gap, and $c$ is direct cost, all as fractions of annual contract value)
+- **$F_k$** = the three cost components, $k \in \{search, consensus, implementation\}$
+- **$\hat{\Delta}_k$** = the gap inside component $k$'s own pair of parties, normalized to $[0, 1]$. The three pairs differ, and only the implementation pair is buyer against seller. That pair's gap is Seller Ignorance plus Buyer Uncertainty, normalized, and it is the only one the [Asymmetry Scorecard](./practice/asymmetry-scorecard.md) measures. See [02-mathematical-models.md section 2.4](./theory/01-foundation/02-mathematical-models.md).
+- **$\hat{\Delta}_A$** = the deal-level gap, the friction-weighted mean of the three. The sum factors exactly into $F_{base}(1 + \hat{\Delta}_A)$, but that shorthand cannot change which component dominates, so it cannot show discovery changing the motion.
+- **y** = Total Perceived Transaction Cost = $a\hat{\Delta}_A^2 + c$, the same cost collapsed to a scalar, where $c$ is direct cost. $y$, $a$ and $c$ are all fractions of annual contract value. $a$ is set at 2.25 by analogy to loss aversion, not by measurement, and [the calibration layer](./theory/01-foundation/06-calibration.md) records how far the analogy stretches.
 - **δ** = Decay Rate of urgency after the triggering event
-- Applies when **k > k_threshold** (the deal is Structural, not Turnkey) AND **F_deployed ~ k** (the friction deployed matches the specificity)
+- Applies when **k > k_threshold** (the deal is Structural, not Turnkey) AND **F_deployed ~ k** (the friction deployed matches the specificity). Here $k$ is asset specificity, not the component index in the sum.
 
 ### The Three Axioms
 
@@ -109,4 +111,4 @@ This is a living document. As you work:
 ---
 
 **Version:** 3.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
-**Last updated:** 2026-09-15
+**Last updated:** 2026-09-29

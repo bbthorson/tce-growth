@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-market built on transaction cost economics, holding that what a deal costs a buyer beyond the price determines how it can be sold. Turnkey, search-led, consensus-led and implementation-led are motions inside it rather than rivals to it, each named after the cost it spends to reduce. `theory/01-foundation/01-motions.md` maps them onto the incumbent PLG and SLG vocabulary. Almost all content is Markdown. The repo is organized into four groups, each with its own README:
+A knowledge base for **Transaction Cost Growth (TCG)** — a theory of go-to-market built on transaction cost economics, holding that what a deal costs a buyer beyond the price determines how it can be sold. Turnkey, search-led, consensus-led and implementation-led are motions inside it rather than rivals to it, each named after the cost it spends to reduce. `theory/01-foundation/01-motions.md` maps them onto the incumbent PLG and SLG vocabulary. Almost all content is Markdown. The repo is organized into five directories:
 
 | Directory | Function |
 |---|---|
