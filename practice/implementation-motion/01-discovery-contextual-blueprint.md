@@ -1,5 +1,5 @@
 ---
-title: "Project \[Customer Name\]: Contextual Blueprint"
+title: 'Project \[Customer Name\]: Contextual Blueprint'
 layer: practice
 status: active
 version: 2.0

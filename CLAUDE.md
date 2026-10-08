@@ -33,7 +33,7 @@ The **research files** in `theory/02-research/` back specific axioms:
 
 Start with `theory/02-research/00-reading-guide.md` before modifying any research file. Before extending the theory, read `theory/01-foundation/07-open-questions.md`, which records where it is under-developed by axiom; an extension should land on a recorded gap or add one.
 
-**A motion is a region, not a list entry.** `theory/01-foundation/01-motions.md` carries the derivation, adopted in Constitution v17.0 as the friction vector and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom III description, not the market states, because those were never load-bearing outside the two files that carried them.
+**A motion is a region, not a list entry.** `theory/01-foundation/01-motions.md` carries the derivation, adopted as the friction vector under the framework's earlier name and merged with the motion taxonomy and vocabulary in the 2026-09 restructure: motion selection follows from the direction and length of the three-component cost vector, and its section 9 records what it leaves unsettled. The retired names are worth knowing because they still appear in older analyses: Nascent, Efficient, Saturated, Transitional and Mature market states are all gone, along with the reading of a summed score as a motion selector. `RetiredTerms.yml` catches the instrument's old name and the superseded Axiom III description, not the market states, because those were never load-bearing outside the two files that carried them.
 
 ## Frontmatter
 
@@ -69,7 +69,7 @@ When writing or editing any document in this repo, apply the voice rules from `p
 - **Anti-antithesis filter**: avoid "It's not X, it's Y" constructions.
 - **Active voice**: name actors. "HTD will map the workflow" over "the workflow will be mapped."
 - **No emojis.**
-- The Constitution is **axioms-first** (v11+): if a claim cannot be traced to one of the three axioms, it does not belong in `theory/01-foundation/00-tcg-constitution.md`. Operational content belongs in `practice/`.
+- The Constitution is **axioms-first**: if a claim cannot be traced to one of the three axioms, it does not belong in `theory/01-foundation/00-tcg-constitution.md`. Operational content belongs in `practice/`.
 - **New headline statistics need a provenance row.** Any quantitative claim added to `theory/` gets a row in `theory/02-research/audits/citation-provenance-audit.md` in the same commit, with an honest verification status. When two files disagree on a number, record the discrepancy there first, then fix both against the primary source. This is what stops stat drift, the way `RetiredTerms.yml` stops rename drift.
 
 ### Checking your work
