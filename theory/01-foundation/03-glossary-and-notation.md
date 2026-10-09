@@ -259,7 +259,7 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
 | **Staged Commitment** | Why commitment to a specific investment must be staged, with a right to stop at each gate. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Three levers** | Discount, take risk back, or verify. Only verification raises the joint surplus. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Three levers** | Discount, take risk back, or verify. A discount never raises the joint surplus. Taking risk back raises it only by what it changes in the seller's conduct and what it reveals about which seller it is, both of which lower the chance of loss. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
 | **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce a gap. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
 | **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |

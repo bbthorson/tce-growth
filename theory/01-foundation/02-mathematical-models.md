@@ -53,13 +53,15 @@ $$S_b + S_s = V_{switch}(t) - C_{deliver} - \sum_{k} \left(I^b_k + I^s_k\right) 
 
 $P$ is gone, because price is a transfer: what leaves the buyer arrives at the seller. Price belongs in both conditions and in neither party's cost of transacting. Three results follow from the accounting rather than from any coefficient.
 
-**The three levers.** A seller can move a deal three ways, and only one of them raises the joint surplus.
+**The three levers.** A seller can move a deal three ways. A discount never raises the joint surplus, and the other two raise it only by lowering $\pi$.
 
 | Lever | What it moves | Effect on $S_b + S_s$ |
 |---|---|---|
 | Discount | $P$ | None. Surplus moves from seller to buyer one for one. |
-| Guarantee, clawback, hostage | Part of $L_b$ onto the seller | None, unless the commitment changes what the seller does, in which case it also lowers $\pi$ and so the loss itself |
+| Guarantee, clawback, hostage | Part of $L_b$ onto the seller, and $\pi$ | None for the transfer itself. Rises by as much as the commitment lowers $\pi$, by changing what the seller does or by revealing which sellers can afford to offer it |
 | Verification | $\pi$ for whichever party cannot verify | Rises. A cost both sides were carrying shrinks. |
+
+**A guarantee is part transfer and part verification.** The transfer moves loss without shrinking it. The selection effect is Spence's: a seller confident of delivering expects to pay little on its guarantee and a weak one expects to pay the full penalty, so the offer itself narrows the buyer's half of the implementation gap. The sorting is clean only when every seller can carry the penalty, because a guarantee also screens on balance sheet, and only when the outcome is the seller's to deliver, because a buyer that under-resources adoption makes the seller pay for its slack. [costly-signals.md](../02-research/costly-signals.md) carries the argument.
 
 A resolved gap can therefore close a deal that no discount could. When the joint surplus is negative, no price makes both conditions positive at once, and only a lever that raises the joint surplus can rescue the deal. When it is positive, a discount can close the deal by moving the split, and so can verification. What stays empirical is whether a given verification costs less than the loss it removes, and the verification's own cost is an investment under Axiom II.
 
