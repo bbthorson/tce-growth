@@ -18,11 +18,11 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The framework makes two kinds of claim and they carry very different weight.
 
-**Structural claims** say what depends on what. Transaction costs decompose into three components. Composition selects the motion. Specificity sets the level, the boundary, and how much of the cost must be allocated before signature. Each component is amplified by the asymmetry inside its own pair of parties. Cost is convex in uncertainty. Frequency selects the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
+**Structural claims** say what depends on what. Using the market costs three things, and any one of them can keep the buyer out. The sale starts at the cost nearest its own threshold. Each party goes ahead only when its own share of today's investment is covered by its own return, and price cancels between the two conditions. What a party sinks exposes it to what it cannot verify, and the gaps rebuild unless maintained. Specificity and frequency select the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
 
 **Parameters** say how much. Every one of them is a reasoned starting value. None is fitted to booked deal data.
 
-Mixing the two makes the framework weaker than it is. A reader who doubts that the risk aversion coefficient is 2.25 should be able to doubt that without doubting that cost is convex in uncertainty, because the second claim does not depend on the first. Keeping the numbers here is what makes those two positions separable.
+Mixing the two makes the framework weaker than it is. A reader who doubts where a band edge sits should be able to doubt that without doubting that any one cost can keep a buyer out, because the second claim does not depend on the first. Keeping the numbers here is what makes those two positions separable.
 
 > [!IMPORTANT]
 > **No value on this page is a measurement.** Read the provenance column before quoting any of them outside this repository, and do not present any of them as an empirical estimate of anything. The framework is currently coherent rather than confirmed, and section 4 says what would change that.
@@ -43,13 +43,17 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 
 ## 3. Every parameter in the framework
 
-### 3.1 Cost and asymmetry ([02-mathematical-models.md](./02-mathematical-models.md))
+### 3.1 The two conditions, the gaps and future loss ([02-mathematical-models.md](./02-mathematical-models.md))
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
-| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy.** Borrows $\lambda \approx 2.25$ (Tversky and Kahneman 1992) as an order-of-magnitude justification. The analogy crosses three boundaries without argument: individual to organizational, laboratory gamble to enterprise procurement, and dimensionless to denominated in annual contract value. Evidence against the transfer: List (2003, 2004) finds that market experience attenuates loss aversion and the endowment effect among experienced traders, so an experienced procurement organization may sit nearer risk neutrality than the anchor implies. Section 4 says what would replace it. |
-| Convexity exponent | — | 2 | **Chosen.** Convexity is structurally motivated and the exponent is not. Nothing in the framework distinguishes a square from any other convex form, and every argument built on the reduced form needs only convexity. Treat the square as the simplest convex shape rather than as a claim about curvature. |
-| Base friction growth rate | $b$ | measured per deal | **Named, not valued.** The derivation identifies $a$ with $b$. |
+| Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The theory states the threshold exists. The field instrument places it as a band edge when the calculator is rebuilt. |
+| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. Whether it rises with the value at stake is open. |
+| Floor on the chance of loss | $\pi_0$ | — | **Named, not valued.** That a floor above zero exists is structurally motivated by the return-variance floor in section 2.3 of the math file. No value is offered. |
+| Shape of the chance of loss | — | straight line | **Chosen.** A placeholder between floor and ceiling. No curvature is claimed. |
+| How a party's gaps combine | — | arithmetic mean | **Chosen.** No source. |
+| Drift ceiling | — | 1 | **Convention.** The top of the range every count-based gap is defined on. |
+| Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | — | **Named, not valued.** |
 | Technical weight | $w_t$ | 0.6 | **Chosen.** No source. |
 | Process weight | $w_p$ | 0.4 | **Chosen.** Fixed by $w_t + w_p = 1$. |
 | Tech acceleration exponent | $\phi_t$ | 1.2 | **Structurally motivated.** Convexity follows from Williamson's asset specificity argument. The value does not. |
@@ -57,11 +61,16 @@ Mixing the two makes the framework weaker than it is. A reader who doubts that t
 | Return uncertainty sensitivity | $\mu$ | 1.0 | **Convention.** |
 | Unvalidated vendor doubt | $\nu$ | 2.0 | **Chosen.** No source. |
 | Vendor proof decay | $\kappa$ | 0.5 | **Structurally motivated.** Diminishing returns follow from Spence (1973). The rate does not. |
-| Coordination overhead | $\alpha$ | 1.0 | **Convention.** |
+| Coordination overhead | $\alpha$ | 1.0 | **Convention.** Also the conversion of the bargaining cost into contract value, which nobody has measured. |
 | Committee complexity exponent | $\beta$ | 1.35 | **Structurally motivated.** $\beta > 1$ follows from $N(N-1)/2$ channel growth (Cyert and March 1963; Webster and Wind 1972). The value inside $[1.2, 2.0]$ is chosen. |
 | Technical overlap weight | $\gamma_{TO}$ | 0.20 | **Chosen.** Field refinement, not core theory. |
 | Responsiveness factor | $\gamma_r$ | 0.5 | **Chosen.** Staging logic follows from Dixit and Pindyck (1994). The value does not. |
-| Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | — | **Named, not valued.** |
+
+**Retiring.** Constitution 4.0 removed the reduced form $y = a\hat{\Delta}_A^2 + c$ from the theory, and with it three parameters. Two are gone from the model already: the convexity exponent and the base friction growth rate $b$. The third stays in the model only until the instrument that still uses it is rebuilt.
+
+| Parameter | Symbol | Value | Provenance |
+|---|---|---|---|
+| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy, retiring.** Borrowed from the loss aversion coefficient (Tversky and Kahneman 1992), which produces a kink at the reference point rather than a convex curve. Still used by the [Milestone Valuation Model](../../practice/milestone-valuation-model.md) stage equation until that model is rebuilt on expected loss. Do not use it anywhere new. |
 
 ### 3.2 The triage instrument ([Deal Triage Calculator](../../practice/deal-triage-calculator.md))
 
@@ -129,7 +138,7 @@ Weakest layer in the framework, and the only one whose parameters have no argume
 The framework becomes predictive rather than organizing when deals are instrumented. Five things, in rough order of how much each one buys.
 
 1. **The three component gaps logged separately** at deal open and at every artifact boundary. This makes the drift rates estimable and tests the framework's central dynamic claim, that discovery rotates the vector rather than only shortening it. A book of deals whose composition at close matches its composition at open falsifies it.
-2. **Scorecard scores logged at open and close** across enough deals to fit $a$ and $c$ against realized cycle length and outcome. A fitted $a$ would come back in annual contract values per unit of squared normalized gap, and it is the one number here that has a stated unit and therefore a well-posed estimation problem.
+2. **Each party's investment and specific exposure logged in contract value** at signature, with the outcome at each renewal. That makes the chance of loss estimable against the gaps, and it is the estimation problem with a stated unit on both sides.
 3. **Committee size and stakeholder alignment recorded as structured fields** rather than narrative notes, which makes $\beta$ estimable.
 4. **Triggering events dated**, which makes the decay rate observable as the fall in buyer-reported urgency between the event and close.
 5. **Count Variance recorded at every Adoption Review**, which is the only check the counting instrument has on itself and the fastest way to learn whether the bands in section 3.2 are the right shape.
@@ -144,9 +153,9 @@ Recorded rather than fixed, because each fix means choosing a shape and that is 
 
 **The bands reintroduce what counting removed.** The instrument counts named things, which fixes the ordinal problem at the input. Section 3.2 then converts those counts to scores through step functions with chosen edges. The counts are observations and the bands are not, so a component score is only as defensible as its band table.
 
-**The dominance threshold is a cliff.** Two deals at 0.49 and 0.51 receive different instrument sets. Either the framework should run the top two components in proportion at every reading, which removes the cliff and the crisp routing together, or the threshold needs an argument. It currently has neither.
+**The dominance threshold is a cliff.** Two deals at 0.49 and 0.51 receive different instrument sets. Constitution 4.0 removes it from the theory: the sale starts at the largest position $r_k$, and two costs at the same position are run together. It stays in the calculator until the calculator is rebuilt.
 
-**The convexity exponent is not identified.** Nothing in the framework distinguishes a square from any other convex form, and the reduced form's whole job needs only convexity. The square should be read as the simplest available convex shape.
+**The shape of the chance of loss is not identified.** The straight line between floor and ceiling is a placeholder, and nothing in the framework distinguishes it from any other increasing form. Constitution 3.0 carried the same defect as an unidentified convexity exponent on the retired reduced form.
 
 **The Friction Efficiency Index composite carries three defects of its own**, recorded in section 6 of that file. They are defects in the measure rather than in its parameters, so they are not repeated here.
 

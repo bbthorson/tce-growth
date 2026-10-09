@@ -30,6 +30,8 @@ This register consolidates. Where a file already carries its own "what this does
 
 **6. Axiom I is read at the market level and nothing reads a market.** The axiom is stated where a seller meets a buyer population, and its decision, which instruments to run, is an organizational one. Every instrument in the repository reads a single deal. Nothing reads which cost dominates across the buyers who call a problem by one name, or what it would cost a given seller to serve that vector, so the choice of motion is made by imitation, which is the organization-level mis-composed failure the Constitution now names. *Settled by:* an instrument that counts, for a buyer population, the observables behind each component, emits the buyer vector and the seller's cost to serve by component, and applies the amortizability corollary to return pursue, restructure or decline. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.1 derives what the reading must contain. [The Market Reading](../../practice/00-market-reading.md) is its first draft, with a worked scenario on two anonymized EHR-integration populations still to be filled.
 
+**30. Whether the participation threshold rises with the value at stake.** Constitution 4.0 gives each cost a threshold above which the buyer stays out of the market. A buyer plausibly bears a higher search cost for a bigger prize, which would make the threshold a function of $V_{switch}$ and put value into Axiom I's gate. *Settled by:* a stated argument either way, then a test across populations entered and declined. [02-mathematical-models.md](./02-mathematical-models.md) section 6.
+
 ---
 
 ## Axiom II, specificity

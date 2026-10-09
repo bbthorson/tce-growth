@@ -19,12 +19,14 @@ starting value carried over from the documents, and the documents say so
 themselves: 02-mathematical-models.md states the functional forms are
 "specified, not fitted" and exist "to structure judgment, not to forecast."
 
+- Constitution 4.0 states the theory as two conditions, one per party, in
+  fractions of annual contract value. Its thresholds, the floor on the chance
+  of future loss, and the drift rates are named and not valued, so this module
+  takes them as arguments rather than shipping defaults.
 - a = 2.25 is anchored by analogy to prospect theory's loss aversion
-  coefficient. It is not a measurement, and 02-mathematical-models.md section
-  1.6 is explicit that a is not the same quantity as lambda. Section 1.7 fixes
-  its units: a, c and y are all fractions of annual contract value, so a = 2.25
-  means the uncertainty term is worth 2.25 annual contract values at a fully
-  open gap. Stating the units does not make the number an estimate.
+  coefficient. It is not a measurement. Constitution 4.0 retired it from the
+  theory with the reduced form it belonged to, and it survives here only for
+  the Milestone Valuation Model's stage equation until that model is rebuilt.
 - beta = 1.35 is chosen inside a motivated range. Only the fact that beta > 1
   carries literature support; the value does not.
 - The Friction Efficiency Index weights have no empirical basis at all.
@@ -86,17 +88,16 @@ class NormalizedGap(float):
     that confusing the two scales "produces cost estimates off by an order of
     magnitude."
 
-    Because a bare float cannot say which scale it is on, effective_cost and
-    reduced_cost accept only this type. Reach it one of two ways:
+    Because a bare float cannot say which scale it is on, every function here
+    that takes a gap accepts only this type. Reach it one of two ways:
 
     - normalize_gap(raw) for a score straight off the scorecard, or
     - NormalizedGap(x) when you already hold a normalized value and are
       asserting that deliberately.
 
-    Values above 1 are permitted rather than clamped. Section 1.5 states the
-    normalized gap may exceed 1 when asymmetry rebuilds past the instrument's
-    ceiling under the Decay Clock, since the scorecard measures a point in time
-    and cannot observe drift beyond its own range.
+    Values above 1 are refused. Constitution 4.0 bounds drift at the ceiling,
+    and every count-based gap is a share of unevidenced items, which cannot
+    exceed all of them. 02-mathematical-models.md section 5.3.
     """
 
     __slots__ = ()
@@ -110,6 +111,10 @@ class NormalizedGap(float):
             )
         if math.isnan(value) or math.isinf(value):
             raise ValueError("a normalized gap must be finite")
+        if value > 1.0:
+            raise ValueError(
+                "a normalized gap cannot exceed 1; drift relaxes toward the "
+                "ceiling and never past it (section 5.3)")
         return super().__new__(cls, value)
 
     def __repr__(self):
@@ -117,13 +122,12 @@ class NormalizedGap(float):
 
 
 def normalize_gap(raw_gap):
-    """Map a raw scorecard gap on [2, 10] onto [0, 1]. Section 1.5.
+    """Map a raw scorecard gap on [2, 10] onto [0, 1]. Section 2.5.
 
         gap_hat = (raw - 2) / 8
 
-    Keeps the structural multiplier (1 + gap) inside [1, 2] and the reduced
-    form's quadratic term bounded by a. Use the raw score for the scorecard's
-    own field triage bands; use this value in either cost equation.
+    Use the raw score for the scorecard's own field triage bands, and this
+    value everywhere else.
     """
     raw_gap = float(raw_gap)
     if not RAW_GAP_MIN <= raw_gap <= RAW_GAP_MAX:
@@ -139,37 +143,20 @@ def _require_normalized(gap, caller):
     if not isinstance(gap, NormalizedGap):
         raise TypeError(
             "{} requires a NormalizedGap, not a bare {}. The Asymmetry "
-            "Scorecard emits a raw score on [2, 10] and neither cost equation "
+            "Scorecard emits a raw score on [2, 10] and no equation here "
             "accepts that range. Call normalize_gap(raw) first, or wrap an "
             "already-normalized value in NormalizedGap(). See "
-            "02-mathematical-models.md section 1.5.".format(
+            "02-mathematical-models.md section 2.5.".format(
                 caller, type(gap).__name__)
         )
     return float(gap)
 
 
 # ==========================================================================
-# theory/01-foundation/02-mathematical-models.md section 1
-# The two representations of transaction cost.
+# practice/deal-triage-calculator.md, the level and the direction.
+# Constitution 4.0 retired both from the theory. They stay here, unchanged,
+# so the calculator's worked examples reproduce until it is rebuilt on zones.
 # ==========================================================================
-
-def effective_cost(f_search, f_consensus, f_implementation, gap):
-    """Structural form, section 1.1.
-
-        F_effective = (F_search + F_consensus + F_implementation) * (1 + gap)
-
-    Diagnostic. Use this to find which component is binding on a specific deal
-    and therefore which artifact to deploy. `gap` must be a NormalizedGap.
-    """
-    gap = _require_normalized(gap, "effective_cost")
-    for name, value in (("f_search", f_search),
-                        ("f_consensus", f_consensus),
-                        ("f_implementation", f_implementation)):
-        if value < 0:
-            raise ValueError("{} cannot be negative".format(name))
-    base = f_search + f_consensus + f_implementation
-    return base * (1.0 + gap)
-
 
 COMPONENTS = ("search", "consensus", "implementation")
 
@@ -188,7 +175,7 @@ def _check_components(f_search, f_consensus, f_implementation):
 def effective_cost_per_component(f_search, f_consensus, f_implementation,
                                  gap_search, gap_consensus,
                                  gap_implementation):
-    """Structural form since Constitution v17.0, section 1.1.
+    """The per-component multiplier, retiring with the Deal Triage Calculator.
 
         F_effective = sum_k F_k * (1 + gap_k)
 
@@ -197,8 +184,8 @@ def effective_cost_per_component(f_search, f_consensus, f_implementation,
     market, consensus is the buyer's stakeholders against each other, and only
     implementation is buyer against seller. Section 2.4 gives the instruments.
 
-    Every gap must be a NormalizedGap. effective_cost() below is the same
-    quantity written with the single multiplier the three factor into.
+    Every gap must be a NormalizedGap. Constitution 4.0 retired the
+    multiplier from the theory: 02-mathematical-models.md section 7.
     """
     values = _check_components(f_search, f_consensus, f_implementation)
     gaps = (_require_normalized(gap_search, "effective_cost_per_component"),
@@ -210,14 +197,12 @@ def effective_cost_per_component(f_search, f_consensus, f_implementation,
 
 def weighted_mean_gap(f_search, f_consensus, f_implementation,
                       gap_search, gap_consensus, gap_implementation):
-    """The scalar the three component gaps factor into, section 1.1.
+    """The friction-weighted mean of the three gaps, retiring with the calculator.
 
         gap_A = sum_k F_k gap_k / sum_k F_k
 
-    The identity effective_cost_per_component(...) == effective_cost(..., this)
-    is exact, not an approximation. The scalar the framework carried before
-    v17.0 is the friction-weighted mean of the three, which is why no result
-    that consumed it broke when the split happened.
+    Constitution 4.0 retired the deal-level gap from the theory. The calculator
+    still reports it until it is rebuilt.
 
     Undefined when base friction is zero: a deal with no cost has no
     composition, and returning 0 there would assert symmetry that was never
@@ -236,7 +221,7 @@ def weighted_mean_gap(f_search, f_consensus, f_implementation,
 
 
 def component_gap(n_items, n_evidenced):
-    """A one-sided component gap, section 2.4.
+    """A one-sided component gap, 02-mathematical-models.md section 2.4.
 
         gap_k = 1 - evidenced / in_scope
 
@@ -263,7 +248,11 @@ def component_gap(n_items, n_evidenced):
 
 def friction_vector(f_search, f_consensus, f_implementation,
                     gap_search, gap_consensus, gap_implementation):
-    """Level (Axiom II) and direction (Axiom I), computed together. 01-motions.md.
+    """Level and direction, retiring with the Deal Triage Calculator.
+
+    Constitution 4.0 replaced both with each cost's position between its own
+    thresholds, threshold_position() below. Until the calculator is rebuilt on
+    zones, its worked examples still run through this function.
 
     Level is the L1 norm of BASE friction. It is the asset specificity Axiom II
     bounds, a property of the deal rather than of what anyone currently knows
@@ -294,56 +283,6 @@ def friction_vector(f_search, f_consensus, f_implementation,
         base=values, effective=effective, direction=direction,
         magnitude=base, gap=weighted_mean_gap(*(values + gaps)),
         dominant=dominant)
-
-
-def reduced_cost(gap, a=A_RISK_AVERSION, c=0.0):
-    """Reduced form, section 1.2.
-
-        y = a * gap^2 + c
-
-    Argumentative rather than diagnostic. It shows why discounting fails:
-    because cost grows faster than linearly in uncertainty, cutting the
-    constant term c cannot offset a large gap. It produces a number, not a
-    diagnosis, so section 1.4's operating rule says do not use it to choose an
-    intervention.
-
-    `a` is anchored by analogy to prospect theory's lambda and is not fitted.
-    Section 1.7 fixes the units: y, c and a are fractions of annual contract
-    value. The default c=0 therefore means a deal with no direct cost, not a
-    deal whose cost is unstated.
-
-    `gap` must be a NormalizedGap.
-    """
-    gap = _require_normalized(gap, "reduced_cost")
-    return a * gap ** 2 + c
-
-
-def base_friction(gap, b, c):
-    """Base friction as a function of the gap, section 1.3.
-
-        F_base(gap) = c + b * gap
-
-    The assumption the structural form leaves implicit. An uncertain buyer does
-    not pay a surcharge on a fixed quantity of work; the uncertainty changes how
-    much work exists.
-    """
-    gap = _require_normalized(gap, "base_friction")
-    return c + b * gap
-
-
-def effective_cost_expanded(gap, b, c):
-    """The three-parameter expression the reduced form approximates, section 1.3.
-
-        F_effective = (c + b*gap)(1 + gap) = b*gap^2 + (b + c)*gap + c
-
-    The reduced form is this with the middle term dropped and a identified with
-    b. Section 1.4 is explicit that dropping the linear term is not justified by
-    that term being small: over the normalized operating range it is comparable
-    to the quadratic term and sometimes larger. What survives, and what the
-    Three Sales Levers argument depends on, is convexity.
-    """
-    gap_f = _require_normalized(gap, "effective_cost_expanded")
-    return base_friction(gap, b, c) * (1.0 + gap_f)
 
 
 # ==========================================================================
@@ -611,39 +550,211 @@ def value_decay(v0, delta, t):
 
 
 def asymmetry_drift(gap0, gamma, t):
-    """The Constitution's asymmetry drift, and section 1.5's note on it.
+    """Drift toward the ceiling, 02-mathematical-models.md section 5.3.
 
-        gap_hat(t) = gap_hat(0) + gamma * t
+        gap_hat(t) = 1 - (1 - gap_hat(0)) * exp(-gamma * t)
 
-    Pre-close this is the Axiom III half of the Decay Clock: information goes
-    stale, raising the multiplier on friction. Post-close, section 7.2 of
-    04-seller-surplus-model.md reads the same equation as the erosion of an
-    incumbent's information advantage, where gamma runs on staff turnover,
-    workflow change, and systems the seller never saw installed. Net Revenue
-    Retention is that document's phrase for this equation run past signature.
+    Absent maintenance each gap relaxes toward its ceiling and never past it.
+    Post-close, section 7.2 of 04-seller-surplus-model.md reads the same
+    equation as the erosion of an incumbent's information advantage, and Net
+    Revenue Retention is that document's phrase for it run past signature.
 
-    Returns a NormalizedGap, which may exceed 1: the scorecard measures a point
-    in time and cannot observe drift beyond its own range.
+    gamma cannot be negative. Discovery is a separate, discrete step down that
+    someone pays for, not drift running backwards.
     """
     gap0 = _require_normalized(gap0, "asymmetry_drift")
     if gamma < 0:
         raise ValueError(
-            "gamma cannot be negative; absent maintenance the gap rebuilds, "
-            "and C_sustain holds gamma down rather than reversing it")
+            "gamma cannot be negative; discovery is a separate step down, and "
+            "maintenance holds gamma down rather than reversing it")
     if t < 0:
         raise ValueError("elapsed time cannot be negative")
-    return NormalizedGap(gap0 + gamma * t)
+    return NormalizedGap(1.0 - (1.0 - gap0) * math.exp(-gamma * t))
 
 
-def deal_surplus(v_effective, v_next_best, f_effective):
-    """The Surplus equation, Constitution part III.
+# ==========================================================================
+# theory/01-foundation/02-mathematical-models.md sections 1, 5 and 6.
+# The two conditions, future loss, and each cost's position between its own
+# thresholds. Every term is a fraction of annual contract value, and every
+# threshold and floor is an argument because the theory names them without
+# valuing them.
+# ==========================================================================
 
-        S = (V_effective(t) - V_next_best) - F_effective
+def switching_value(v_effective, v_next_best):
+    """V_switch(t), section 1.1: the buyer's opportunity cost of staying put.
 
-    Must exceed 0 for the deal to close. The first bracket is
-    OC_switching, the opportunity cost of staying with the status quo.
+        V_switch(t) = V_solution * exp(-delta * t) - V_next_best
+
+    Pass value_decay(...) as v_effective. V_next_best includes building it.
     """
-    return (v_effective - v_next_best) - f_effective
+    return v_effective - v_next_best
+
+
+def _total(investments, who):
+    values = tuple(investments)
+    for value in values:
+        if value < 0:
+            raise ValueError("{} investment cannot be negative".format(who))
+    return sum(values)
+
+
+def _require_loss(loss, who):
+    if loss < 0:
+        raise ValueError("{} future loss cannot be negative".format(who))
+    return loss
+
+
+def buyer_condition(v_switch, price, buyer_investments, buyer_loss):
+    """The buyer's condition, Constitution Part III and section 1.1.
+
+        S_b = V_switch(t) - P - sum_k I_b,k - L_b
+
+    buyer_investments is what the buyer invests today against each cost.
+    """
+    return (v_switch - price - _total(buyer_investments, "buyer")
+            - _require_loss(buyer_loss, "buyer"))
+
+
+def seller_condition(price, c_deliver, seller_investments, seller_loss):
+    """The seller's condition, Constitution Part III and section 1.1.
+
+        S_s = P - C_deliver - sum_k I_s,k - L_s
+
+    04-seller-surplus-model.md section 2 with the investment split by the cost
+    it pays down and the future loss written out.
+    """
+    return (price - c_deliver - _total(seller_investments, "seller")
+            - _require_loss(seller_loss, "seller"))
+
+
+def joint_surplus(v_switch, c_deliver, buyer_investments, seller_investments,
+                  buyer_loss, seller_loss):
+    """The two conditions added, section 1.3. Price does not appear.
+
+        S_b + S_s = V_switch - C_deliver - sum_k (I_b,k + I_s,k) - L_b - L_s
+
+    Price is a transfer. A discount moves the split and leaves this unchanged,
+    which is the accounting behind the three levers.
+    """
+    return (v_switch - c_deliver
+            - _total(buyer_investments, "buyer")
+            - _total(seller_investments, "seller")
+            - _require_loss(buyer_loss, "buyer")
+            - _require_loss(seller_loss, "seller"))
+
+
+def investment_shift_gain(work_moved, buyer_unit_cost, seller_unit_cost,
+                          change_in_buyer_loss=0.0, change_in_seller_loss=0.0):
+    """Change in joint surplus from moving work buyer to seller, section 1.4.
+
+        d(S_b + S_s) = w (theta_b - theta_s) - dL_b - dL_s
+
+    Zero when unit costs match and no future loss moves: the move then only
+    changes the split. A forward-deployed engineer moves all three terms.
+    """
+    if work_moved < 0:
+        raise ValueError("work moved cannot be negative; swap the parties")
+    if buyer_unit_cost < 0 or seller_unit_cost < 0:
+        raise ValueError("unit costs cannot be negative")
+    return (work_moved * (buyer_unit_cost - seller_unit_cost)
+            - change_in_buyer_loss - change_in_seller_loss)
+
+
+def loss_chance(gaps, floor):
+    """The chance a party's exposure does not come back, section 5.2.
+
+        pi = floor + (1 - floor) * mean(gaps)
+
+    A placeholder. The straight line and the mean are chosen, and no curvature
+    is claimed. The floor is named and not valued in 06-calibration.md, so the
+    caller supplies it. gaps are the normalized gaps the party cannot close:
+    for the buyer, its half of the implementation gap and the bargaining gap.
+    """
+    gaps = [_require_normalized(g, "loss_chance") for g in gaps]
+    if not gaps:
+        raise ValueError("a party with no gaps in scope has no loss chance")
+    if not 0.0 <= floor < 1.0:
+        raise ValueError("the floor lies on [0, 1)")
+    return floor + (1.0 - floor) * sum(gaps) / len(gaps)
+
+
+def future_loss(quasi_rent_value, chance):
+    """Expected future loss, Constitution Axiom III and section 5.1.
+
+        L_p = Q_p * pi_p
+
+    A shortfall in the return the party expected, bounded by its quasi-rent.
+    Not a second charge for the investment Axiom II already counted.
+    """
+    if quasi_rent_value < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if not 0.0 <= chance <= 1.0:
+        raise ValueError("a chance lies on [0, 1]")
+    return quasi_rent_value * chance
+
+
+def staged_loss(stage_quasi_rents, stage_residuals, floor):
+    """Expected loss across gates, section 5.4.
+
+        L_b = sum_m Q_m * pi(x_m)
+
+    Each gate sinks Q_m against the residual uncertainty x_m entering it, so a
+    schedule that puts the large commitments late loses less than committing
+    everything against x_0.
+    """
+    quasi_rents = tuple(stage_quasi_rents)
+    residuals = tuple(stage_residuals)
+    if len(quasi_rents) != len(residuals):
+        raise ValueError("one quasi-rent per gate, one residual per gate")
+    return sum(future_loss(q, loss_chance([x], floor))
+               for q, x in zip(quasi_rents, residuals))
+
+
+SELF_SERVE = "self-serve"
+NEEDS_INVESTMENT = "needs investment"
+KEEPS_BUYER_OUT = "keeps the buyer out"
+
+
+def threshold_position(cost, tau_self, tau_part):
+    """A cost's position between its own two thresholds, section 6.
+
+        r_k = (F_k - tau_self) / (tau_part - tau_self)
+
+    Dimensionless, so the three costs compare without sharing a scale. Both
+    thresholds are named and not valued in the theory.
+    """
+    if not tau_part > tau_self:
+        raise ValueError(
+            "the participation threshold must sit above the self-serve one")
+    return (cost - tau_self) / (tau_part - tau_self)
+
+
+def cost_zone(position):
+    """The zone a position falls in, section 6."""
+    if position <= 0.0:
+        return SELF_SERVE
+    if position <= 1.0:
+        return NEEDS_INVESTMENT
+    return KEEPS_BUYER_OUT
+
+
+def participates(positions):
+    """Axiom I's gate: no cost keeps the buyer out. positions maps cost to r_k."""
+    if not positions:
+        raise ValueError("no costs read")
+    return all(r <= 1.0 for r in positions.values())
+
+
+def sale_start(positions):
+    """Where the sale starts, Axiom I: the cost with the largest position.
+
+    Returns a tuple, because two costs at the same position are run together
+    rather than one being picked. positions maps cost name to r_k.
+    """
+    if not positions:
+        raise ValueError("no costs read")
+    top = max(positions.values())
+    return tuple(sorted(k for k, r in positions.items() if r == top))
 
 
 # ==========================================================================

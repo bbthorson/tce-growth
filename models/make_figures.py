@@ -287,103 +287,22 @@ def _first_crossing(series, level):
 
 
 # ==========================================================================
-# Panel 2 — Axiom III. Convexity, and why discounting fails.
-# ==========================================================================
-
-def panel_2():
-    """y = a * gap^2 + c against a linear counterfactual.
-
-    Section 1.2 says the reduced form's whole value is argumentative: it shows
-    why cutting the constant term through discounting cannot offset a large
-    gap. That argument is exactly a comparison of three curves, so the figure
-    is the argument rather than a decoration on it.
-    """
-    # In annual contract values, per 02-mathematical-models.md section 1.7.
-    # A deal at list price is 1 ACV of direct cost; the discounted line is the
-    # same deal at 40 percent of it, which is a steeper concession than any
-    # real desk would approve and still does not reach the quadratic term.
-    c_list, c_discounted = 1.0, 0.4
-    samples = [x / 100.0 for x in range(0, 101)]
-    gaps = [m.NormalizedGap(x) for x in samples]
-
-    quoted = [(float(g), m.reduced_cost(g, c=c_list)) for g in gaps]
-    discounted = [(float(g), m.reduced_cost(g, c=c_discounted)) for g in gaps]
-    # A linear cost of uncertainty, pinned to the same endpoints, is the
-    # intuition the convex form displaces.
-    top = m.reduced_cost(m.NormalizedGap(1.0), c=c_list)
-    linear = [(x, c_list + (top - c_list) * x) for x in samples]
-
-    axes = Axes((0, 1), (0, 3.6))
-    body = [
-        axes.path(linear, "good dashed thin"),
-        axes.path(discounted, "primary dashed"),
-        axes.path(quoted, "alert"),
-    ]
-    body += _legend([
-        ("alert", "", "Perceived cost at list price"),
-        ("primary", "dashed", "The same deal after a deep discount"),
-        ("good", "dashed thin", "What a linear cost of uncertainty would do"),
-    ], PAD_L + 16, PAD_T + 26)
-
-    # The claim the figure exists to make: a discount lowers c and leaves the
-    # quadratic term untouched, so the bracket below is the part of perceived
-    # cost that no price concession reaches.
-    wide = 0.9
-    floor_y = c_discounted
-    curve_y = m.reduced_cost(m.NormalizedGap(wide), c=c_discounted)
-    body += [
-        '  <line class="grid thin" stroke-dasharray="3 4" x1="{}" y1="{}" '
-        'x2="{}" y2="{}" stroke="var(--muted)"/>'.format(
-            _n(PAD_L), _n(axes.py(floor_y)),
-            _n(axes.px(wide)), _n(axes.py(floor_y))),
-        axes.label(0.02, floor_y - 0.24, "Discounted price on its own",
-                   "note-muted"),
-        '  <line class="curve thin" stroke="var(--ink)" x1="{}" y1="{}" '
-        'x2="{}" y2="{}"/>'.format(
-            _n(axes.px(wide)), _n(axes.py(floor_y)),
-            _n(axes.px(wide)), _n(axes.py(curve_y))),
-        axes.dot(wide, curve_y),
-        axes.label(0.985, floor_y - 0.24,
-                   "What uncertainty adds. No discount reaches it.",
-                   "note", anchor="end"),
-    ]
-    return _frame(
-        title="Axiom III: perceived cost is convex in uncertainty",
-        subtitle=UNFITTED,
-        axes=axes,
-        x_label="Normalized bilateral asymmetry gap",
-        y_label="Perceived cost, in annual contract values",
-        x_ticks=[(0, "0"), (0.25, "0.25"), (0.5, "0.5"), (0.75, "0.75"),
-                 (1, "1.0")],
-        y_ticks=[(0, "0"), (1, "1"), (2, "2"), (3, "3")],
-        body=body,
-        desc="Perceived transaction cost plotted against the normalized "
-             "bilateral asymmetry gap. The list-price curve is convex, rising "
-             "slowly at a narrow gap and steeply at a wide one. A deep "
-             "discount shifts the whole curve downward by a constant amount "
-             "without changing its shape. A dashed straight line shows what a "
-             "linear cost of uncertainty would look like instead. At a wide "
-             "gap a bracket marks the vertical distance between the "
-             "discounted price and the discounted curve: the share of "
-             "perceived cost that comes from uncertainty, which no price "
-             "concession removes.")
-
-
-# ==========================================================================
 # Panel 3 — Axiom III. Asymmetry drift after signature.
 # ==========================================================================
 
 def panel_3():
-    """gap_hat_implementation(t) = gap_hat(0) + gamma_impl * t.
+    """gap_hat_implementation(t) = 1 - (1 - gap_hat(0)) * exp(-gamma_impl * t).
 
     Section 7.2 of 04-seller-surplus-model.md argues the durable asset is
     asymmetric information rather than lock-in: after a forward-deployed
     engagement the incumbent's implementation gap approaches zero while a
     challenger starts near the ceiling. The incumbent's advantage is the
     vertical distance between the two, and it erodes at gamma_implementation
-    unless C_sustain holds that rate down.
+    unless C_sustain holds that rate down. Constitution 4.0 bounds the drift at
+    the ceiling, so the unmaintained curve bends toward the challenger rather
+    than crossing it.
 
-    The component matters. Constitution v17.0 splits drift into three rates,
+    The component matters. Drift runs at a separate rate per cost,
     and the drivers this curve runs on, staff turnover, workflow change and
     systems installed unseen, are all implementation drivers. An incumbent
     whose consensus gap reopens loses the account a different way, faster and
@@ -393,9 +312,9 @@ def panel_3():
     challenger = 1.0
     months = [t / 2.0 for t in range(0, 73)]  # 0 to 36 months
 
-    unmaintained = [(t, float(m.asymmetry_drift(start, 0.026, t)))
+    unmaintained = [(t, float(m.asymmetry_drift(start, 0.06, t)))
                     for t in months]
-    maintained = [(t, float(m.asymmetry_drift(start, 0.005, t)))
+    maintained = [(t, float(m.asymmetry_drift(start, 0.008, t)))
                   for t in months]
 
     axes = Axes((0, 36), (0, 1.15))
@@ -407,9 +326,9 @@ def panel_3():
                    "note-muted", anchor="end"),
         axes.path(unmaintained, "alert dashed"),
         axes.path(maintained, "good"),
-        axes.label(26.5, float(m.asymmetry_drift(start, 0.026, 26.5)) + 0.075,
+        axes.label(26.5, float(m.asymmetry_drift(start, 0.06, 26.5)) + 0.075,
                    "Without sustaining spend", "note", anchor="middle"),
-        axes.label(20.0, float(m.asymmetry_drift(start, 0.005, 20.0)) + 0.075,
+        axes.label(20.0, float(m.asymmetry_drift(start, 0.008, 20.0)) + 0.075,
                    "With sustaining spend", "note", anchor="middle"),
         axes.dot(0, float(start), "good"),
         axes.label(1.2, float(start) - 0.055, "At go-live", "note-muted"),
@@ -423,17 +342,16 @@ def panel_3():
         x_ticks=[(0, "0"), (12, "12"), (24, "24"), (36, "36")],
         y_ticks=[(0, "0"), (0.5, "0.5"), (1.0, "1.0")],
         body=body,
-        desc="Two rising lines starting from a near-zero asymmetry gap at "
-             "go-live, plotted against a horizontal line marking where a "
-             "challenger begins. The unmaintained line climbs steadily and "
-             "approaches the challenger line within three years, closing the "
-             "incumbent advantage. The maintained line rises far more slowly "
-             "and stays well below it.")
+        desc="Two rising curves starting from a near-zero implementation gap "
+             "at go-live, plotted against a horizontal line marking where a "
+             "challenger begins. The unmaintained curve bends toward the "
+             "challenger line and nearly reaches it within three years, "
+             "closing the incumbent advantage. The maintained curve rises far "
+             "more slowly and stays well below it.")
 
 
 FIGURES = {
     "value-decay.svg": panel_1,
-    "axiom-3-cost-convexity.svg": panel_2,
     "axiom-3-asymmetry-drift.svg": panel_3,
 }
 

@@ -163,6 +163,8 @@ $$\hat{\Delta}_k(t) = 1 - \left(1 - \hat{\Delta}_k(0)\right) e^{-\gamma_k t}$$
 
 Discovery is a separate, discrete step down that someone pays for. A departed champion is the bargaining gap reopening all at once, and a deal can leave the viable zone with no change in product, price or technical work.
 
+![Two rising curves from a near-zero implementation gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained curve bends toward the challenger line and nearly reaches it within three years. The maintained curve stays well below it.](./assets/axiom-3-asymmetry-drift.svg)
+
 A buyer who commits in stages sinks $Q_m$ at gate $m$ against residual uncertainty $x_m$, so the expected loss is $\sum_m Q_m \, \pi(x_m)$ rather than $Q \, \pi(x_0)$. Staging puts the small commitments where the uncertainty is high.
 
 **Corollaries.**

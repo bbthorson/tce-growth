@@ -21,11 +21,11 @@ import tcg_models as m
 
 
 # ==========================================================================
-# 02-mathematical-models.md section 1.5, the normalization guard.
+# 02-mathematical-models.md section 2.5, the normalization guard.
 # ==========================================================================
 
 class TestGapNormalization(unittest.TestCase):
-    """Section 1.5 makes normalization mandatory before either cost equation.
+    """Section 2.5 makes normalization mandatory before any equation.
 
     Confusing the raw and normalized scales is a documented past bug that
     produces cost estimates off by an order of magnitude.
@@ -46,34 +46,21 @@ class TestGapNormalization(unittest.TestCase):
             with self.assertRaises(ValueError):
                 m.normalize_gap(raw)
 
-    def test_structural_multiplier_stays_within_one_and_two(self):
-        # Section 1.5: normalizing "keeps the structural multiplier in [1, 2]".
-        for raw in (2.0, 5.0, 7.5, 10.0):
-            gap = m.normalize_gap(raw)
-            self.assertTrue(1.0 <= 1.0 + gap <= 2.0)
-
-    def test_effective_cost_refuses_a_bare_float(self):
+    def test_a_raw_score_is_refused_where_a_gap_is_expected(self):
+        """The documented past bug: a raw scorecard 10 read as a normalized
+        gap. The type system stops it at every function that takes a gap."""
         with self.assertRaises(TypeError):
-            m.effective_cost(10.0, 10.0, 10.0, 0.5)
-
-    def test_reduced_cost_refuses_a_bare_float(self):
+            m.loss_chance([10.0], floor=0.1)
         with self.assertRaises(TypeError):
-            m.reduced_cost(0.5)
+            m.asymmetry_drift(0.5, 0.1, 1.0)
 
-    def test_the_documented_past_bug_cannot_be_reproduced(self):
-        """A raw 10 would inflate base friction elevenfold. Section 1.5 says no
-        observed deal supports that, so the type system has to stop it."""
-        with self.assertRaises(TypeError):
-            m.effective_cost(1.0, 1.0, 1.0, 10.0)
-
-    def test_a_normalized_gap_may_exceed_one_under_drift(self):
-        """Section 1.5: the gap may exceed 1 when asymmetry rebuilds past the
-        instrument's ceiling. The scorecard measures a point in time."""
-        drifted = m.asymmetry_drift(m.normalize_gap(9.0), gamma=0.1, t=6.0)
-        self.assertGreater(drifted, 1.0)
+    def test_a_normalized_gap_cannot_exceed_one(self):
+        """Section 5.3: drift relaxes toward the ceiling and never past it."""
+        with self.assertRaises(ValueError):
+            m.NormalizedGap(1.01)
+        drifted = m.asymmetry_drift(m.normalize_gap(9.0), gamma=0.5, t=60.0)
+        self.assertLessEqual(drifted, 1.0)
         self.assertIsInstance(drifted, m.NormalizedGap)
-        # And it is still accepted by the cost equations.
-        self.assertGreater(m.reduced_cost(drifted), m.A_RISK_AVERSION)
 
     def test_a_negative_normalized_gap_is_rejected(self):
         with self.assertRaises(ValueError):
@@ -81,64 +68,86 @@ class TestGapNormalization(unittest.TestCase):
 
 
 # ==========================================================================
-# 02-mathematical-models.md section 1, the two cost representations.
+# 02-mathematical-models.md section 1, the two conditions, and section 2.1.
 # ==========================================================================
 
-class TestTransactionCost(unittest.TestCase):
+class TestTwoConditions(unittest.TestCase):
+    """Constitution 4.0 Part III: one condition per party, in fractions of
+    annual contract value, and price cancels when they are added."""
 
-    def test_effective_cost_matches_the_structural_form(self):
-        gap = m.normalize_gap(6.0)  # 0.5
-        self.assertAlmostEqual(m.effective_cost(10.0, 20.0, 30.0, gap), 90.0)
+    def test_the_buyer_condition_matches_section_one(self):
+        self.assertAlmostEqual(
+            m.buyer_condition(v_switch=2.0, price=1.0,
+                              buyer_investments=(0.1, 0.2, 0.3),
+                              buyer_loss=0.15),
+            2.0 - 1.0 - 0.6 - 0.15)
 
-    def test_reduced_form_uses_the_anchored_coefficient(self):
-        self.assertEqual(m.A_RISK_AVERSION, 2.25)
-        gap = m.normalize_gap(10.0)  # 1.0
-        self.assertAlmostEqual(m.reduced_cost(gap, c=5.0), 2.25 + 5.0)
+    def test_the_seller_condition_matches_section_one(self):
+        self.assertAlmostEqual(
+            m.seller_condition(price=1.0, c_deliver=0.4,
+                               seller_investments=(0.0, 0.1, 0.2),
+                               seller_loss=0.05),
+            1.0 - 0.4 - 0.3 - 0.05)
 
-    def test_reduced_form_is_convex(self):
-        """Convexity is the property section 1.4 says the reduced form exists
-        to preserve, and the Three Sales Levers argument depends on it."""
-        gaps = [m.NormalizedGap(x / 10.0) for x in range(11)]
-        costs = [m.reduced_cost(g) for g in gaps]
-        second_differences = [
-            costs[i + 1] - 2 * costs[i] + costs[i - 1]
-            for i in range(1, len(costs) - 1)
-        ]
-        for d in second_differences:
-            self.assertGreater(d, 0.0)
+    def test_price_cancels_when_the_conditions_are_added(self):
+        """Section 1.3. Whatever the price, the sum is the joint surplus."""
+        args = dict(v_switch=2.0, c_deliver=0.4,
+                    buyer_investments=(0.1, 0.2, 0.3),
+                    seller_investments=(0.0, 0.1, 0.2),
+                    buyer_loss=0.15, seller_loss=0.05)
+        joint = m.joint_surplus(**args)
+        for price in (0.0, 0.5, 1.0, 1.7):
+            total = (m.buyer_condition(args["v_switch"], price,
+                                       args["buyer_investments"],
+                                       args["buyer_loss"])
+                     + m.seller_condition(price, args["c_deliver"],
+                                          args["seller_investments"],
+                                          args["seller_loss"]))
+            self.assertAlmostEqual(total, joint)
 
-    def test_discounting_cannot_offset_a_large_gap(self):
-        """Section 1.2's argument, stated as a test. Cutting c to zero from a
-        starting price does less than closing the gap."""
-        wide = m.normalize_gap(10.0)
-        narrow = m.normalize_gap(3.0)
-        priced = m.reduced_cost(wide, c=1.0)
-        discounted_to_free = m.reduced_cost(wide, c=0.0)
-        gap_closed = m.reduced_cost(narrow, c=1.0)
-        self.assertLess(gap_closed, discounted_to_free)
-        self.assertLess(discounted_to_free, priced)
+    def test_a_discount_moves_the_split_and_not_the_joint_surplus(self):
+        """The first of section 1.3's three levers."""
+        before = (m.buyer_condition(2.0, 1.0, (0.5,), 0.3),
+                  m.seller_condition(1.0, 0.4, (0.2,), 0.0))
+        after = (m.buyer_condition(2.0, 0.8, (0.5,), 0.3),
+                 m.seller_condition(0.8, 0.4, (0.2,), 0.0))
+        self.assertAlmostEqual(after[0] - before[0], 0.2)
+        self.assertAlmostEqual(after[1] - before[1], -0.2)
+        self.assertAlmostEqual(sum(after), sum(before))
 
-    def test_expanded_form_equals_the_quadratic_it_derives(self):
-        """Section 1.3: (c + b*gap)(1 + gap) = b*gap^2 + (b + c)*gap + c."""
-        b, c = 2.25, 4.0
-        for x in (0.0, 0.25, 0.5, 0.75, 1.0):
-            gap = m.NormalizedGap(x)
-            expanded = m.effective_cost_expanded(gap, b, c)
-            polynomial = b * x ** 2 + (b + c) * x + c
-            self.assertAlmostEqual(expanded, polynomial)
+    def test_no_price_rescues_a_deal_with_negative_joint_surplus(self):
+        """Section 1.3: when the joint surplus is negative, no price makes
+        both conditions positive at once. Only verification can help."""
+        v_switch, c_deliver, i_b, i_s, l_b = 1.0, 0.4, (0.3,), (0.2,), 0.4
+        self.assertLess(m.joint_surplus(v_switch, c_deliver, i_b, i_s, l_b,
+                                        0.0), 0.0)
+        for price in [x / 100.0 for x in range(0, 201)]:
+            both = (m.buyer_condition(v_switch, price, i_b, l_b) > 0
+                    and m.seller_condition(price, c_deliver, i_s, 0.0) > 0)
+            self.assertFalse(both)
+        # Verification lowers the buyer's loss, and the joint surplus turns.
+        self.assertGreater(m.joint_surplus(v_switch, c_deliver, i_b, i_s,
+                                           0.0, 0.0), 0.0)
 
-    def test_the_dropped_linear_term_is_not_negligible(self):
-        """Section 1.4 states the linear term is comparable to the quadratic
-        term over the operating range and sometimes larger. That is a claim
-        about the models, so it is checkable."""
-        b, c = 2.25, 4.0
-        larger_at = []
-        for x in (0.1, 0.25, 0.5, 0.75, 1.0):
-            quadratic = b * x ** 2
-            linear = (b + c) * x
-            if linear > quadratic:
-                larger_at.append(x)
-        self.assertTrue(larger_at, "the linear term should dominate somewhere")
+    def test_moving_work_changes_only_the_split_at_equal_cost(self):
+        """Section 1.4: equal unit costs and no change in future loss."""
+        self.assertEqual(m.investment_shift_gain(10.0, 0.02, 0.02), 0.0)
+
+    def test_a_forward_deployed_engineer_moves_all_three_terms(self):
+        """Section 1.4: cheaper work and a lower buyer loss raise the joint
+        surplus, and the seller's new exposure lowers it."""
+        gain = m.investment_shift_gain(10.0, buyer_unit_cost=0.03,
+                                       seller_unit_cost=0.02,
+                                       change_in_buyer_loss=-0.2,
+                                       change_in_seller_loss=0.05)
+        self.assertAlmostEqual(gain, 10.0 * 0.01 + 0.2 - 0.05)
+
+    def test_switching_value_subtracts_the_next_best(self):
+        self.assertAlmostEqual(m.switching_value(3.0, 1.0), 2.0)
+
+    def test_negative_investment_is_refused(self):
+        with self.assertRaises(ValueError):
+            m.buyer_condition(2.0, 1.0, (-0.1,), 0.0)
 
     def test_the_gap_is_a_sum_not_a_difference(self):
         """Section 2.1. The Asymmetry Scorecard records that an earlier version
@@ -151,34 +160,118 @@ class TestTransactionCost(unittest.TestCase):
 
 
 # ==========================================================================
-# 02-mathematical-models.md sections 1.1 and 2.4, and 01-motions.md.
-# Per-component amplification, adopted in Constitution v17.0.
+# 02-mathematical-models.md section 5, future loss.
+# ==========================================================================
+
+class TestFutureLoss(unittest.TestCase):
+
+    def test_loss_chance_runs_from_the_floor_to_one(self):
+        """Section 5.2's placeholder: a straight line from floor to ceiling."""
+        floor = 0.1
+        self.assertAlmostEqual(m.loss_chance([m.NormalizedGap(0.0)], floor),
+                               floor)
+        self.assertAlmostEqual(m.loss_chance([m.NormalizedGap(1.0)], floor),
+                               1.0)
+        self.assertAlmostEqual(m.loss_chance([m.NormalizedGap(0.5)], floor),
+                               0.55)
+
+    def test_a_party_gaps_combine_as_a_mean(self):
+        chance = m.loss_chance([m.NormalizedGap(0.2), m.NormalizedGap(0.6)],
+                               floor=0.0)
+        self.assertAlmostEqual(chance, 0.4)
+
+    def test_proof_never_drives_the_chance_below_the_floor(self):
+        """Section 2.3's floor read as a probability."""
+        self.assertGreater(m.loss_chance([m.NormalizedGap(0.0)], 0.05), 0.0)
+
+    def test_the_floor_has_no_default(self):
+        """06-calibration.md declares the floor named and not valued."""
+        with self.assertRaises(TypeError):
+            m.loss_chance([m.NormalizedGap(0.5)])
+
+    def test_future_loss_is_exposure_times_chance(self):
+        q = m.quasi_rent(c_invest=0.8, r_redeploy=0.2)
+        self.assertAlmostEqual(m.future_loss(q, 0.25), 0.15)
+
+    def test_future_loss_is_bounded_by_the_quasi_rent(self):
+        self.assertLessEqual(m.future_loss(0.6, 1.0), 0.6)
+        with self.assertRaises(ValueError):
+            m.future_loss(0.6, 1.2)
+
+    def test_staging_loses_less_than_committing_everything_up_front(self):
+        """Section 5.4: the large commitments come late, against small
+        residuals, so the staged loss is smaller."""
+        residuals = m.residual_schedule(m.NormalizedGap(1.0),
+                                        (0.25, 0.50, 0.80))[1:]
+        stages = (0.25, 0.35, 0.40)
+        staged = m.staged_loss(stages, residuals, floor=0.05)
+        unstaged = m.future_loss(sum(stages),
+                                 m.loss_chance([m.NormalizedGap(1.0)], 0.05))
+        self.assertLess(staged, unstaged)
+
+    def test_staging_needs_one_residual_per_gate(self):
+        with self.assertRaises(ValueError):
+            m.staged_loss((0.5, 0.5), (m.NormalizedGap(0.5),), 0.05)
+
+
+# ==========================================================================
+# 02-mathematical-models.md section 6, thresholds and positions.
+# ==========================================================================
+
+class TestPositions(unittest.TestCase):
+
+    def test_position_is_zero_at_self_serve_and_one_at_participation(self):
+        self.assertAlmostEqual(m.threshold_position(0.2, 0.2, 0.6), 0.0)
+        self.assertAlmostEqual(m.threshold_position(0.6, 0.2, 0.6), 1.0)
+        self.assertAlmostEqual(m.threshold_position(0.4, 0.2, 0.6), 0.5)
+
+    def test_the_three_zones(self):
+        self.assertEqual(m.cost_zone(-0.3), m.SELF_SERVE)
+        self.assertEqual(m.cost_zone(0.0), m.SELF_SERVE)
+        self.assertEqual(m.cost_zone(0.5), m.NEEDS_INVESTMENT)
+        self.assertEqual(m.cost_zone(1.0), m.NEEDS_INVESTMENT)
+        self.assertEqual(m.cost_zone(1.2), m.KEEPS_BUYER_OUT)
+
+    def test_one_cost_above_its_threshold_keeps_the_buyer_out(self):
+        """Axiom I: a cost at a small share of the total can still end it."""
+        positions = {"search": 1.1, "consensus": -0.5, "implementation": -0.5}
+        self.assertFalse(m.participates(positions))
+        self.assertTrue(m.participates({"search": 0.9, "consensus": 0.2,
+                                        "implementation": 0.0}))
+
+    def test_the_sale_starts_at_the_largest_position_not_the_largest_cost(self):
+        """Positions compare costs measured on different scales. A large
+        cost far from its own threshold is not where the sale starts."""
+        search = m.threshold_position(5.0, tau_self=4.0, tau_part=20.0)
+        consensus = m.threshold_position(0.9, tau_self=0.2, tau_part=1.0)
+        self.assertEqual(
+            m.sale_start({"search": search, "consensus": consensus}),
+            ("consensus",))
+
+    def test_a_tie_is_run_together(self):
+        self.assertEqual(
+            m.sale_start({"search": 0.4, "consensus": 0.7,
+                          "implementation": 0.7}),
+            ("consensus", "implementation"))
+
+    def test_thresholds_must_be_ordered(self):
+        with self.assertRaises(ValueError):
+            m.threshold_position(0.5, tau_self=0.6, tau_part=0.6)
+
+
+# ==========================================================================
+# deal-triage-calculator.md, the per-component multiplier and its mean.
+# Retired from the theory in Constitution 4.0, kept until the calculator is
+# rebuilt on zones.
 # ==========================================================================
 
 class TestPerComponentAmplification(unittest.TestCase):
-    """Section 1.1 asserts the two forms are the same quantity, exactly.
-
-    The claim is load-bearing. If the identity only held approximately, every
-    downstream result that consumed the scalar gap would have inherited an
-    unquantified error when v17.0 split it into three.
-    """
+    """The calculator's direction still runs on these until it is rebuilt."""
 
     def setUp(self):
         self.f = (2.0, 5.0, 3.0)
         self.g = (m.NormalizedGap(0.2), m.NormalizedGap(0.8),
                   m.NormalizedGap(0.4))
-
-    def test_the_two_forms_agree_exactly(self):
-        per_component = m.effective_cost_per_component(*(self.f + self.g))
-        mean = m.weighted_mean_gap(*(self.f + self.g))
-        self.assertAlmostEqual(per_component,
-                               m.effective_cost(*(self.f + (mean,))), places=12)
-
-    def test_equal_gaps_reproduce_the_single_multiplier_form(self):
-        gap = m.NormalizedGap(0.6)
-        self.assertAlmostEqual(
-            m.effective_cost_per_component(*(self.f + (gap, gap, gap))),
-            m.effective_cost(*(self.f + (gap,))))
 
     def test_the_mean_is_friction_weighted_not_arithmetic(self):
         # Section 1.1 spells the weighting out; an arithmetic mean would be 0.4667.
@@ -190,7 +283,7 @@ class TestPerComponentAmplification(unittest.TestCase):
     def test_the_mean_is_a_normalized_gap_the_cost_equations_accept(self):
         mean = m.weighted_mean_gap(*(self.f + self.g))
         self.assertIsInstance(mean, m.NormalizedGap)
-        m.reduced_cost(mean)  # would raise TypeError on a bare float
+        m.loss_chance([mean], floor=0.0)  # would raise TypeError on a float
 
     def test_zero_base_friction_has_no_composition(self):
         with self.assertRaises(ValueError):
@@ -473,11 +566,20 @@ class TestUrgencyDecay(unittest.TestCase):
         v_catalyst = m.value_decay(100.0, m.decay_rate(1.0, 8.0), 12.0)
         self.assertGreater(v_catalyst, v_no_catalyst)
 
-    def test_asymmetry_drift_is_linear_in_time(self):
-        start = m.normalize_gap(4.0)
+    def test_asymmetry_drift_relaxes_toward_the_ceiling(self):
+        """Section 5.3: 1 - (1 - gap0) * exp(-gamma t), bounded at 1."""
+        start = m.normalize_gap(4.0)  # 0.25
         self.assertAlmostEqual(m.asymmetry_drift(start, 0.05, 0.0), start)
         self.assertAlmostEqual(m.asymmetry_drift(start, 0.05, 10.0),
-                               float(start) + 0.5)
+                               1.0 - 0.75 * math.exp(-0.5))
+        far = [m.asymmetry_drift(start, 0.05, t) for t in (10, 50, 200, 1000)]
+        self.assertEqual(far, sorted(far))
+        self.assertLessEqual(far[-1], 1.0)
+
+    def test_drift_cannot_run_backwards(self):
+        """Discovery is a separate step down, not a negative rate."""
+        with self.assertRaises(ValueError):
+            m.asymmetry_drift(m.NormalizedGap(0.5), -0.1, 1.0)
 
     def test_maintenance_holds_the_drift_rate_down(self):
         """04-seller-surplus-model.md section 7.2: C_sustain is the spend that
@@ -687,7 +789,8 @@ class TestMilestoneValuation(unittest.TestCase):
         x0 = m.normalize_gap(10.0)
         entering = m.residual_schedule(x0, self.MUS)[1:]
         payments = (0.25, 0.35, 0.40)
-        ratios = [m.reduced_cost(x) / c for x, c in zip(entering, payments)]
+        ratios = [m.A_RISK_AVERSION * x ** 2 / c
+                  for x, c in zip(entering, payments)]
         self.assertAlmostEqual(ratios[0], 5.06, places=2)
         self.assertAlmostEqual(ratios[1], 0.90, places=2)
         self.assertAlmostEqual(ratios[2], 0.03, places=2)
@@ -700,7 +803,7 @@ class TestMilestoneValuation(unittest.TestCase):
         """Section 1.7 calls this a unit error rather than a second reading."""
         x0 = m.normalize_gap(10.0)
         entering = m.residual_schedule(x0, self.MUS)[1:]
-        as_percent = [m.reduced_cost(x) / c
+        as_percent = [m.A_RISK_AVERSION * x ** 2 / c
                       for x, c in zip(entering, (25.0, 35.0, 40.0))]
         # Under this reading uncertainty never reaches even a tenth of any
         # payment, so risk never outweighs return and Axiom III is false.
@@ -745,8 +848,9 @@ class TestSellerSurplus(unittest.TestCase):
         """Section 2: a deal inside the buyer's potential well can sit outside
         the seller's, and closing it is accretive for the customer and dilutive
         for the seller's own firm."""
-        buyer_side = m.deal_surplus(v_effective=900.0, v_next_best=300.0,
-                                    f_effective=200.0)
+        buyer_side = m.buyer_condition(
+            v_switch=m.switching_value(900.0, 300.0), price=150.0,
+            buyer_investments=(50.0,), buyer_loss=0.0)
         seller_side = m.seller_surplus(0.3, 1000.0, 400.0, 400.0)
         self.assertGreater(buyer_side, 0.0)
         self.assertLess(seller_side, 0.0)

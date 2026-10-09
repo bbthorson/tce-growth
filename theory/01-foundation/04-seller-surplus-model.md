@@ -12,19 +12,17 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Version:** 1.3
 **Purpose:** To specify the seller's side of the transaction, so that "should we invest engineering in this deal, and how much" becomes a question the framework can express.
 
-The [Constitution](./00-tcg-constitution.md) models one party. Its Surplus equation describes what the *buyer* gains and what the *buyer* pays. The seller appears throughout as the agent who reduces the buyer's friction, and nowhere as a party with costs of its own.
-
-This document adds the second equation. Axiom II names which party bears the asset specificity, which is the claim section 3 depends on.
+Until Constitution 4.0 the Constitution modeled one party. Its Surplus equation described what the *buyer* gains and what the *buyer* pays, and the seller appeared only as the agent who reduces the buyer's friction. This document added the second equation, and 4.0 promoted it: Axiom II now states two conditions, one per party, and this file is the seller's in full. Axiom III names which party bears the specific investment, which is the claim section 3 depends on.
 
 ---
 
-## 1. Why the Surplus equation cannot answer the question
+## 1. Why a buyer-side equation cannot answer the question
 
-Part III of the Constitution gives:
+Before Constitution 4.0 the framework had one equation:
 
 $$S = \left(V_{effective}(t) - V_{next\_best}\right) - F_{effective}$$
 
-Every term describes the buyer, and $c$ is the seller's revenue rather than the seller's cost. The equation says whether a deal *can* close and nothing in it moves when the seller spends more or less to close it, so it cannot say whether the deal is *worth closing*.
+Every term describes the buyer. The equation said whether a deal *can* close and nothing in it moved when the seller spent more or less to close it, so it could not say whether the deal is *worth closing*. The two conditions in [02-mathematical-models.md](./02-mathematical-models.md) section 1 fix that by giving the seller its own, which is the equation below.
 
 ---
 
@@ -57,7 +55,7 @@ Where $R_{redeploy}$ is the value of that work redeployed elsewhere: reusable co
 
 $Q$ is the amount a buyer can extract by threatening to walk after the engineering is spent, and it is the number that belongs in a risk review. Two engagements consuming identical hours carry different exposure when one produces a connector the seller ships to every subsequent customer and the other produces a mapping to a schema that exists in exactly one hospital.
 
-**This inverts the axiom's usual direction.** Axiom II treats asset specificity as the buyer's problem, solved by governance the seller supplies. In a forward-deployed motion the seller sinks the specific investment first, so the seller holds the exposure and needs the governance. The Mutual Implementation Plan already provides it. Its stated rationale covers only one direction.
+**The exposure runs both ways.** Axiom III reads specificity for whichever party sinks the investment. In a forward-deployed motion the seller sinks it first, so the seller holds the exposure and needs the governance, and the allocation has to be settled before the seller spends. The Mutual Implementation Plan already provides the governance. Its stated rationale covers only the buyer's direction.
 
 ---
 
@@ -69,9 +67,9 @@ $$\frac{\partial p_{close}}{\partial C_{invest}} \cdot \left(V_{contract} - C_{d
 
 Spend the next increment while a unit of pre-signature engineering raises the close probability enough that the expected gross margin gain exceeds the unit spent. Stop when it does not.
 
-**Why the left side is ever large enough to justify the spend.** $C_{invest}$ enters the buyer's equation by two routes at once. It reduces $\Delta_A$, because deployed engineering is a demonstration a weak competitor cannot afford to imitate, which is the Single Crossing Property from Axiom III. It also reduces the buyer's $F_{implementation}$ directly, because work the seller performs is work the buyer does not. Both raise $S_{buyer}$, and $p_{close}$ rises with $S_{buyer}$.
+**Why the left side is ever large enough to justify the spend.** $C_{invest}$ enters the buyer's equation by two routes at once. It narrows the buyer's half of the implementation gap, because deployed engineering is a demonstration a weak competitor cannot afford to imitate, which is the Single Crossing Property under Axiom III, and that lowers the buyer's future loss. It also reduces the buyer's own investment directly, because work the seller performs is work the buyer does not. Both raise the buyer's condition, and $p_{close}$ rises with it.
 
-This is the only lever that appears on both sides of the transaction, which is what makes it worth modeling separately from price. Discounting moves $c$ and leaves $\Delta_A$ untouched.
+This is the only lever that appears on both sides of the transaction, which is what makes it worth modeling separately from price. Discounting moves price, which cancels between the two conditions, and leaves the gap untouched.
 
 **The exposure constraint runs alongside the marginal rule.** Unprotected quasi-rent at any moment must stay inside what a failed deal can cost the firm. A deal can satisfy the marginal rule at every increment and still be wrong to pursue, when the accumulated $Q$ before the buyer commits anything exceeds what the seller can absorb. Sequencing is what reconciles the two, which is section 5.
 
@@ -122,9 +120,9 @@ The single-shot form in section 2 is this expression with $T = 1$ and $C_{sustai
 
 A forward-deployed engagement is often defended on the grounds that it raises the buyer's switching cost. That defence has a problem inside this framework.
 
-Switching cost is a **lock-in** mechanism, and lock-in raises the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$. A buyer who cannot leave can be repriced and under-served. Raising $T$ raises the threshold the seller's own discount factor must clear, so the arrangement becomes harder to sustain exactly as the seller's position strengthens. This is the extraction drift Axiom II describes for channels and adjudicators, arriving at the deal level.
+Switching cost is a **lock-in** mechanism, and lock-in raises the seller's temptation payoff $T$ in the cooperation condition $\delta_{discount} > (T - R)/(T - P)$. A buyer who cannot leave can be repriced and under-served. Raising $T$ raises the threshold the seller's own discount factor must clear, so the arrangement becomes harder to sustain exactly as the seller's position strengthens. This is the extraction drift Axiom III describes for channels and adjudicators, arriving at the deal level.
 
-The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../02-research/real-options.md) says that option carries real value. So switching cost raises $\Delta_A$ and $y$ before the seller has delivered anything.
+The buyer prices this at signature. A buyer who anticipates lock-in is losing the option to exit, and [real-options.md](../02-research/real-options.md) says that option carries real value. So switching cost raises the buyer's specific exposure, and with it the future loss the buyer prices in, before the seller has delivered anything.
 
 **Switching cost is a liability at signature and an asset at renewal.** Any account of it that carries only one sign is describing half the mechanism.
 
@@ -134,13 +132,13 @@ The buyer's exit has the same two signs. A cheap exit for the buyer reads as pro
 
 Lock-in is real, measurable, and under-priced by the buyer at signing (Farrell and Klemperer 2007). The asset that does not raise the seller's temptation is **asymmetric $\Delta_A$**, and it sits alongside lock-in rather than instead of it.
 
-After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero, because the environment has been mapped. Every challenger begins at close to maximum. The buyer's renewal decision compares $y$ with the incumbent against $y$ with a challenger, and the challenger's figure carries a full $F_{implementation}$ amplified by an asymmetry gap nobody has closed yet.
+After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero, because the environment has been mapped. Every challenger begins at close to maximum. The buyer's renewal decision compares its own condition with the incumbent against its condition with a challenger, and the challenger's carries a full implementation investment and a gap nobody has closed yet, so a larger future loss on top of it.
 
 That is an information asset rather than a hostage. The buyer is not trapped, the alternative is genuinely more expensive, and the buyer can verify the comparison themselves. It also produces the renewal behaviour the lock-in story predicts, without raising $T$.
 
-**It decays at a rate the Constitution already names.** $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$ absent maintenance. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
+**It decays at a rate the Constitution already names.** Absent maintenance, $\hat{\Delta}_k(t) = 1 - (1 - \hat{\Delta}_k(0))e^{-\gamma_k t}$, relaxing toward its ceiling. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
-The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom II. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
+The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
 
 *Falsifier.* In replacement bids where the challenger is handed full documentation of the incumbent's implementation, the incumbent's renewal rate should fall toward what lock-in alone predicts. If it does not move, the moat was lock-in after all.
 
