@@ -38,7 +38,7 @@ Four instruments convert deal observations into comparable numbers. Three measur
 | [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) | $\Delta_A = I_{seller} + I_{buyer}$, the implementation gap, which feeds the chance of future loss | Weekly, from first qualification onward |
 | [Consensus Friction Calculator](./consensus-friction-calculator.md) | $F_{consensus}$ | After the Blueprint maps the buying committee |
 | [Milestone Valuation Model](./milestone-valuation-model.md) | Staged expected loss and gate payment structure | While drafting the MIP timeline and commercial terms |
-| [Friction Efficiency Index](./friction-efficiency-index.md) | Whether implementation effort landed before or after signature, across a closed cohort | Quarterly, in retrospect. The one instrument that could test Axiom III's allocation clause after the fact. |
+| [Friction Efficiency Index](./friction-efficiency-index.md) | Whether specific investment was allocated before it was sunk, and where the effort went, across a closed cohort | Quarterly, in retrospect. The one instrument that could test Axiom III's allocation clause after the fact. |
 
 ---
 

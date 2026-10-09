@@ -558,11 +558,30 @@ class TestFrictionEfficiencyIndex(unittest.TestCase):
         self.assertAlmostEqual(small, large)
         self.assertAlmostEqual(small, 2 / 3)
 
-    def test_far_reference_band_edges(self):
-        self.assertFalse(m.far_in_band(0.59))
-        self.assertTrue(m.far_in_band(0.60))
-        self.assertTrue(m.far_in_band(0.75))
-        self.assertFalse(m.far_in_band(0.76))
+    def test_far_has_no_band(self):
+        """Section 1.1: FAR is description, with no target and no weight."""
+        self.assertFalse(hasattr(m, "far_in_band"))
+
+    def test_acr_counts_what_was_allocated_before_it_was_sunk(self):
+        """Section 1: three of four exposure items sunk under an allocation."""
+        self.assertAlmostEqual(m.allocation_coverage_ratio(3, 4), 0.75)
+        self.assertAlmostEqual(m.allocation_coverage_ratio(4, 4), 1.0)
+
+    def test_acr_is_undefined_when_nothing_specific_was_sunk(self):
+        with self.assertRaises(ValueError):
+            m.allocation_coverage_ratio(0, 0)
+
+    def test_acr_cannot_allocate_more_than_was_sunk(self):
+        with self.assertRaises(ValueError):
+            m.allocation_coverage_ratio(5, 4)
+
+    def test_more_allocation_always_scores_higher(self):
+        """Section 6's resolved defect: the composite was monotonic in FAR
+        while calling a high FAR a failure. ACR is better all the way to 1.0,
+        so a monotonic weight is the right shape."""
+        scores = [m.friction_efficiency_index(acr / 10.0, 0.5, 0.8, 0.2)
+                  for acr in range(11)]
+        self.assertEqual(scores, sorted(scores))
 
     def test_bcv_penalizes_committee_size(self):
         """Section 2: the N^0.5 denominator is a correction, not decoration.
@@ -601,30 +620,30 @@ class TestFrictionEfficiencyIndex(unittest.TestCase):
         self.assertAlmostEqual(m.normalize_bcv(0.25, bcv_ref=0.5), 0.5)
 
     def test_the_index_is_bounded_on_zero_to_one_hundred(self):
-        best = m.friction_efficiency_index(far=1.0, bcv=10.0, rms=1.0, svi=0.0)
-        worst = m.friction_efficiency_index(far=0.0, bcv=0.0, rms=0.0, svi=5.0)
+        best = m.friction_efficiency_index(acr=1.0, bcv=10.0, rms=1.0, svi=0.0)
+        worst = m.friction_efficiency_index(acr=0.0, bcv=0.0, rms=0.0, svi=5.0)
         self.assertAlmostEqual(best, 100.0)
         self.assertAlmostEqual(worst, 0.0)
 
     def test_the_index_matches_the_weighted_sum_written_out(self):
-        far, bcv, rms, svi = 0.70, 0.40, 0.80, 0.30
-        expected = 100.0 * (0.35 * far
+        acr, bcv, rms, svi = 0.70, 0.40, 0.80, 0.30
+        expected = 100.0 * (0.35 * acr
                             + 0.25 * min(bcv / 0.5, 1.0)
                             + 0.25 * rms
                             + 0.15 * (1.0 - min(svi, 1.0)))
         self.assertAlmostEqual(
-            m.friction_efficiency_index(far, bcv, rms, svi), expected)
+            m.friction_efficiency_index(acr, bcv, rms, svi), expected)
 
-    def test_a_high_far_can_hide_a_low_rms(self):
-        """Section 5's stated failure of the composite: an expensive, shallow
-        process still produces a respectable score."""
-        shallow = m.friction_efficiency_index(far=0.75, bcv=0.5, rms=0.10,
+    def test_a_high_acr_can_hide_a_low_rms(self):
+        """Section 5's stated failure of the composite: a well-documented,
+        shallow process still produces a respectable score."""
+        shallow = m.friction_efficiency_index(acr=0.75, bcv=0.5, rms=0.10,
                                               svi=0.10)
         self.assertGreater(shallow, 50.0)
         self.assertLess(m.risk_mitigation_score(40, 36), 0.15)
 
     def test_band_edges_match_the_composite_table(self):
-        self.assertEqual(m.fei_band(75.1), "front-loaded")
+        self.assertEqual(m.fei_band(75.1), "allocated")
         self.assertEqual(m.fei_band(75.0), "mixed")
         self.assertEqual(m.fei_band(50.0), "mixed")
         self.assertEqual(m.fei_band(49.9), "late")

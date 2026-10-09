@@ -143,7 +143,8 @@ Every default below is unfitted. [06-calibration.md](./06-calibration.md) carrie
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| FAR | Friction Allocation Ratio. Share of implementation effort spent before signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| ACR | Allocation Coverage Ratio. Share of a deal's specific investment sunk only after an allocation covering it was agreed. The index's target. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| FAR | Friction Allocation Ratio. Share of implementation effort spent before signature. Descriptive, with no target. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
 | BCV | Buyer Commitment Velocity. How fast the buyer mobilized. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
 | RMS | Risk Mitigation Score. Share of discovered risk closed before signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
 | SVI | Scope Variance Index. Scope stability through delivery. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |

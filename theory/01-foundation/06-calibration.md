@@ -119,8 +119,8 @@ Weakest layer in the framework, and the only one whose parameters have no argume
 
 | Parameter | Value | Provenance |
 |---|---|---|
-| Composite weights | 0.35, 0.25, 0.25, 0.15 | **Chosen.** No source. |
-| Friction allocation target band | 0.60-0.75 | **Chosen.** No source. |
+| Composite weights | 0.35, 0.25, 0.25, 0.15 | **Chosen.** No source. In order ACR, BCV, RMS, SVI. Allocation coverage inherited the weight the effort ratio carried. |
+| What makes an allocation | Risk bearer, gate and right to stop, all three | **Chosen.** Mirrors what a Mutual Implementation Plan gate writes down. |
 | Committee-size correction | $N^{0.5}$ | **Structurally motivated.** Direction follows from the bargaining cost rising in $N$. The exponent is chosen. |
 | Provisioning guard | +1 | **Convention.** Prevents division by zero. |
 | Change-order weight | 0.25 | **Chosen.** No source. |
@@ -153,7 +153,7 @@ Recorded rather than fixed, because each fix means choosing a shape and that is 
 
 **The shape of the chance of loss is not identified.** The straight line between floor and ceiling is a placeholder, and nothing in the framework distinguishes it from any other increasing form. Constitution 3.0 carried the same defect as an unidentified convexity exponent on the retired reduced form.
 
-**The Friction Efficiency Index composite carries three defects of its own**, recorded in section 6 of that file. They are defects in the measure rather than in its parameters, so they are not repeated here.
+**The Friction Efficiency Index composite carries two open defects of its own**, recorded in section 6 of that file. They are defects in the measure rather than in its parameters, so they are not repeated here.
 
 ---
 
