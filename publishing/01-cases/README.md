@@ -19,8 +19,7 @@ Each case follows the four-step trenches analysis protocol in [`02-tools/writing
 
 ## Cases
 
-- [greenway-aws-scouting-report.md](./greenway-aws-scouting-report.md) — Greenway Health + AWS "Agentic AI Factory" (EHR + cloud industrialization of clinical AI)
-- [hcti-teyame-scouting-report.md](./hcti-teyame-scouting-report.md) — Healthcare Triangle's $50M Teyame AI acquisition (microcap "swallow the whale" deal)
+None at present. The Greenway Health and AWS report and the Healthcare Triangle and Teyame report were removed on 2026-10-09, because both predated Constitution 4.0 and neither was headed for publication. Git history keeps them.
 
 ## Adding a case
 
