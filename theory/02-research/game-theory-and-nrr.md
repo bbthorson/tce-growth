@@ -2,7 +2,7 @@
 title: "Game Theory and Net Revenue Retention"
 layer: theory
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -25,9 +25,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - NRR is the lagging indicator of whether the repeated game is being played well.
 
 **Supports in TCG:**
-- **Axiom II — Law of Asset Specificity, governance corollary** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
-- **Stakes for agents and adjudicators** (Axiom II corollary) — the Shadow of the Future must hold for every party in the system, including adjudicators.
+- **Axiom III — Law of Future Cost, governance corollary** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
+- **Stakes for agents and adjudicators** (Axiom III corollary) — the Shadow of the Future must hold for every party in the system, including adjudicators.
 - **Reputation Depreciation** — the Promise Gap is what reputation depreciation looks like when not actively refreshed.
-- **Surplus** — NRR > 100% is the macro-level evidence that surplus is being preserved over time.
+- **The two conditions** — NRR > 100% is the macro-level evidence that both parties' conditions keep holding across renewals.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

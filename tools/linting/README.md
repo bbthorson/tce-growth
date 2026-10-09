@@ -86,7 +86,7 @@ Whenever you rename an axiom, retire an equation variable, or renumber a directo
 <!-- vale TCG.RetiredTerms = NO -->
 ```yaml
 swap:
-  Law of Friction: Law of Uncertainty Inflation
+  Law of Friction: Law of Future Cost
 ```
 <!-- vale TCG.RetiredTerms = YES -->
 
@@ -133,7 +133,7 @@ Both checkers pass cleanly across all files in the repository:
 | Rule | State |
 |---|---|
 | `check_playbook.py` | Clean. Zero broken links or LaTeX errors across 78 scanned markdown files. |
-| `RetiredTerms` | Clean. Zero hits repo-wide. Covers retired axioms, old directory numbers, and retired deal analogies ("Bridge" / "Toaster" -> Structural / Turnkey). |
+| `RetiredTerms` | Clean. Zero hits repo-wide. Covers retired axioms, old directory numbers, and retired deal analogies ("Bridge" / "Toaster"). |
 | `NoEmoji` | Clean. |
 | `AntiHype` | Clean, with documented suppressions in style-references and self-documenting files. |
 | `Punctuation` / `PunctuationReference` | Clean. |

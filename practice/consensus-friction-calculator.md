@@ -10,12 +10,12 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Purpose:** To estimate how much organizational friction a buying committee will generate, and to decide whether the deal needs a stakeholder map, a joint steering committee, or executive sponsorship.
 
-**Use when:** The [Deal Triage Calculator](./deal-triage-calculator.md) reads the deal as consensus-dominant, or the Blueprint has identified the buying committee and you need to size $F_{consensus}$ before forecasting a close date.
+**Use when:** The [Deal Triage Calculator](./deal-triage-calculator.md) reads the sale as starting at the consensus cost, or the Blueprint has identified the buying committee and you need to size $F_{consensus}$ before forecasting a close date.
 
 > [!IMPORTANT]
-> **This is the consensus component's only dedicated instrument, and one instrument is not a set.** Consensus-dominant is a routing destination in its own right, and a deal arriving here finds a calculator that produces a number and then prescribes executive sponsorship, which is a tactic rather than a motion. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are the incumbent practice for this component, and this repository does not carry them. Reach for those and say on the forecast call that you are working outside the framework, rather than substituting the implementation chain because it is the one that exists.
+> **This is the consensus component's only dedicated instrument, and one instrument is not a set.** A sale that starts at consensus is a routing destination in its own right, and a deal arriving here finds a calculator that produces a number and then prescribes executive sponsorship, which is a tactic rather than a motion. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are the incumbent practice for this component, and this repository does not carry them. Reach for those and say on the forecast call that you are working outside the framework, rather than substituting the implementation chain because it is the one that exists.
 
-**Operationalizes:** Axiom III's $F_{consensus}$ term. Theory in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 3, research in [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md).
+**Operationalizes:** Axiom I's bargaining and decision cost, which the field calls consensus and the notation writes $F_{consensus}$. Theory in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 3, research in [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md).
 
 ---
 
@@ -32,13 +32,13 @@ A firm is not a single decision maker. It is a coalition whose members evaluate 
 
 ### 1. Committee size ($N$)
 
-Count every stakeholder holding veto power or direct evaluation responsibility, across executive, technical, legal, financial, and operational functions. Title does not matter. Veto power does.
+Count every decision role holding veto power or direct evaluation responsibility, across executive, technical, legal, financial, and operational functions. A decision role is a position, not a person. Title does not matter. Veto power does.
 
-Count the person who can stop the deal even if they never attend a meeting. Security architects and data protection officers are the ones most often missed.
+Count the role that can stop the deal even if its occupant never attends a meeting. Security architects and data protection officers are the ones most often missed.
 
 ### 2. Incentive variance (Var)
 
-Score each stakeholder $i$ from $-1$ to $+1$ on how the initiative affects the objectives they are measured on:
+Score each decision role $i$ from $-1$ to $+1$ on how the initiative affects the objectives it is measured on:
 
 - **+1** — advances their measured objectives directly
 - **0** — no material effect
@@ -84,14 +84,14 @@ $$F_{consensus} = \alpha \cdot N^{\beta} \cdot (1 + \text{Var}) \cdot (1 + \gamm
 
 With calibration defaults $\alpha = 1.0$, $\beta = 1.35$, $\gamma = 0.20$.
 
-**Worked example.** A committee of 5, with two camps in genuine conflict (Var = 0.25) and disagreement on integration patterns (TO = 3):
+**Worked example.** A committee of 5, with minor divergence in priority (Var = 0.25) and disagreement on integration patterns (TO = 3):
 
 $$F_{consensus} = 1.0 \times 5^{1.35} \times 1.25 \times 1.6 = 8.78 \times 1.25 \times 1.6 = 17.6$$
 
 That lands in the medium band, which calls for a stakeholder alignment matrix and shared evaluation criteria before the deal is forecast.
 
 > [!NOTE]
-> These parameter values are reasoned defaults, not estimates fitted to booked deals. The output ranks deals against each other reliably. It does not predict a cycle length in weeks. See [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 6.
+> These parameter values are reasoned defaults, not estimates fitted to booked deals. The output ranks deals against each other reliably. It does not predict a cycle length in weeks. See [06-calibration.md](../theory/01-foundation/06-calibration.md).
 
 ---
 

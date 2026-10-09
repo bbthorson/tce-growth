@@ -26,9 +26,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - "Resistance as a Resource" — vocal detractors expose real implementation constraints; objections are co-design opportunities.
 
 **Supports in TCG:**
-- **Axiom III — Law of Uncertainty Inflation** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of $F_{consensus}$ and $F_{implementation}$.
+- **Axiom III — Law of Future Cost** — CFIR's Inner Setting and Characteristics of Individuals are the structural sources of the bargaining and policing gaps: what each decision role cannot verify about its own outcome, and what the seller cannot see of the buyer's environment. Those two gaps decide the future loss.
 - **Friction Allocation Principles** — the Blueprint and Red Team operationalize CFIR diagnostic in the seller's hands.
-- **Three Transaction Costs** — CFIR's process domain maps directly to the bargaining and enforcement costs.
+- **Three Transaction Costs** — CFIR's process domain maps directly to two of Axiom I's costs, bargaining and decision, and policing and enforcement.
 - See [`practice/cfir-field-mapping.md`](../../practice/cfir-field-mapping.md) for the construct-by-construct mapping into the implementation artifacts.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

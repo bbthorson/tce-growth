@@ -2,7 +2,7 @@
 title: "CFIR-to-Field Asset Mapping"
 layer: practice
 status: active
-version: 1.0
+version: 1.1
 operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
@@ -71,7 +71,7 @@ The Red Team also classifies resistance using CFIR constructs. This is the mappi
 
 ## Implementation Process → Mutual Implementation Plan (MIP)
 
-The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom II's stakes corollary, meaning bilateral skin in the game between buyer and seller.
+The MIP is where CFIR's Process domain (Planning, Executing, Reflecting & Evaluating) becomes contractual. It also carries the Readiness constructs past signature, because the Inner Setting conditions the Blueprint diagnosed do not hold themselves in place. At the framework level this is the deal-level case of Axiom III's stakes and mutual-sanction corollaries, meaning bilateral skin in the game between buyer and seller, settled before the specific investment is sunk.
 
 | MIP Section | CFIR Construct | What It Ensures |
 |---|---|---|
@@ -105,11 +105,11 @@ Two CFIR constructs govern deal triage rather than any single artifact. Both liv
 | **Step 0: Workflow Maturity Gate** | Compatibility (maturity sense) | Has the buyer defined this process at all? | "Is there an SOP?" |
 | **Step 2 Gate A** | Compatibility (workflow sense) | Is there an encoded workflow for the product to fit, or does the product create the practice? | "Are we replacing something or starting something?" |
 | **Step 2 Gate B** | Trialability | Can the buyer verify fit themselves, cheaply, and walk away? | "Can they just try it?" |
-| **Step 2 divergence count** | Compatibility (workflow sense) | How many steps in the buyer's workflow have no counterpart in the product's | "How weird is their setup?" |
+| **Step 2 divergent steps** | Compatibility (workflow sense) | How many steps in the buyer's workflow have no counterpart in the product's | "How weird is their setup?" |
 
-Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves does not need the seller to prove it, which removes the condition the implementation artifacts exist to satisfy.
+Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves, and walk away, sinks nothing specific and does not need the seller to prove it. That is Axiom III's gate, and it removes the condition the implementation artifacts exist to satisfy.
 
-The divergence count enters as a multiplier on the implementation component rather than as a parallel score read alongside the total. A high-divergence deal therefore reads as implementation-dominant rather than needing a routing exception, which makes Compatibility's effect on the motion arithmetic rather than a table row. Research backing sits in [process-misfit.md](../theory/02-research/process-misfit.md).
+The divergent steps enter the specific-exposure count, never a cost. A workflow that matches nothing the product assumes is what makes an investment worthless outside this deal, so Compatibility decides whether the deal needs governance under Axiom III rather than where the sale starts under Axiom I. Research backing sits in [process-misfit.md](../theory/02-research/process-misfit.md).
 
 ---
 
@@ -137,5 +137,5 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 
 ---
 
-**Version:** 1.0
+**Version:** 1.1
 **Last Updated:** 2026-08-28

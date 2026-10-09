@@ -30,26 +30,27 @@ The dependency chain runs `theory/` to `practice/` to `publishing/`, one way. Th
 | File | What it does |
 |---|---|
 | `tcg_models.py` | Every live formula, one function each, with its canonical home named in the docstring. |
-| `test_tcg_models.py` | 118 assertions. Every worked example in the documents, plus the properties the documents claim (convexity, boundedness, monotonicity, the band edges). |
-| `make_figures.py` | Writes the three axiom figures in `theory/01-foundation/assets/` by sampling `tcg_models.py`. `--check` regenerates and fails on any diff. |
+| `test_tcg_models.py` | Every worked example in the documents, plus the properties the documents claim (price cancelling between the two conditions, boundedness, monotonicity, the band edges). |
+| `make_figures.py` | Writes the axiom figures in `theory/01-foundation/assets/` by sampling `tcg_models.py`. `--check` regenerates and fails on any diff. |
 
 Formula coverage, by canonical home:
 
 | Document | What the module implements |
 |---|---|
-| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | Both cost representations and the derivation joining them, the section 1.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, and the decay rate. |
+| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the decay rate, future loss and staging, bounded drift, and each cost's position between its thresholds. |
 | [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [consensus-friction-calculator.md](../practice/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
-| [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation and the uncertainty decay chain. |
+| [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
 | [friction-efficiency-index.md](../practice/friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
-| [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three component counts and their bands, both divergence gates and the modifier, the level and direction routing, and the frequency reading. |
-| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by level and frequency, and whether the apparatus the level calls for can be amortized. |
+| [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three counts and their edges, the positions and zones, both gates and the specific-exposure reading, the routing, and the frequency reading. |
+| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, and whether the seller's investment can be amortized. |
 
 ## Nothing here is fitted, and it must stay that way
 
 Every parameter default is a reasoned starting value. `02-mathematical-models.md` states the forms are "specified, not fitted" and exist "to structure judgment, not to forecast," and the Friction Efficiency Index carries a stronger warning still.
 
-- $a = 2.25$ is anchored by analogy to prospect theory's loss aversion coefficient. Section 1.6 is explicit that $a$ is not that coefficient, only borrowing its magnitude as a reason to believe $a$ is large.
+- The calculator's edges are chosen, placed on the boundaries of the score bands earlier versions used.
+- The thresholds, the floor on the chance of future loss, and the drift rates are named and not valued, so the functions take them as arguments and ship no default.
 - $\beta = 1.35$ is chosen inside a motivated range. Only $\beta > 1$ carries literature support.
 - The Friction Efficiency Index weights have no empirical basis at all.
 - The seller-surplus forms have no parameter anchored in published literature.

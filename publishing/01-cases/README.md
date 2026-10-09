@@ -13,8 +13,8 @@ They are distinct from [`../../theory/02-research/`](../../theory/02-research/) 
 Each case follows the four-step trenches analysis protocol in [`02-tools/writing-protocols.md`](../02-tools/writing-protocols.md):
 
 1. **Scouting Report** — what happened, who's involved
-2. **Line of Scrimmage** — the economic friction (Δ_A, F_base, TC)
-3. **Defensive Alignment** — structural barriers and asset specificity
+2. **Line of Scrimmage** — the economic friction (the three costs, where the sale starts, Δ_A)
+3. **Defensive Alignment** — specific exposure and lock-in
 4. **The Huddle** — strategic angles for further commentary
 
 ## Cases

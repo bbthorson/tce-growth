@@ -27,9 +27,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Technical debt consumes 20–40% of IT budgets annually.
 
 **Supports in TCG:**
-- **Axiom II — Law of Asset Specificity, governance corollary** — RE-AIM's Maintenance dimension is how the stakes corollary gets measured; NRR is the lagging signal.
+- **Axiom III — Law of Future Cost, governance corollary** — RE-AIM's Maintenance dimension is how the stakes corollary gets measured; NRR is the lagging signal.
 - **Reputation Depreciation** — RE-AIM's Implementation and Maintenance dimensions are what depreciation looks like operationally.
-- **Surplus** — RE-AIM measures whether surplus is preserved post-signature.
+- **The two conditions** — RE-AIM measures whether the buyer's condition still holds after signature, renewal by renewal.
 - MIP operationalization: the Mutual Implementation Plan uses RE-AIM dimensions as its success metrics. See [`practice/implementation-motion/03-closing-mutual-implementation-plan.md`](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md).
 - Field instrument: the five dimensions become a fill-in review in Section 2 of [`04-sustaining-adoption-review.md`](../../practice/implementation-motion/04-sustaining-adoption-review.md), which also documents the order the dimensions fail in and what each pattern implies.
 

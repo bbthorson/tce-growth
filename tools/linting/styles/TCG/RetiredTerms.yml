@@ -117,18 +117,18 @@ swap:
   ilg_models: tcg_models
   styles/ILG: styles/TCG
   vale ILG\.: "vale TCG."
-  ax\^2: "a \\hat{\\Delta}_A^2 (the reduced form takes the NORMALISED gap; a raw score is off by an order of magnitude)"
-  amplified by the bilateral information asymmetry: "amplified per component by the asymmetry inside that component's own pair of parties (Constitution v17.0)"
-  The teaching equation uses a global multiplier: "each component is amplified by its own gap; the single multiplier is the factored special case"
-  global multiplier: "per-component amplification, which factors into a single friction-weighted multiplier"
+  ax\^2: "nothing; the reduced form y = a gap^2 + c was retired in Constitution 4.0 (02-mathematical-models.md section 7)"
+  amplified by the bilateral information asymmetry: "exposed, through the chance of future loss, to what each party cannot verify (Constitution 4.0 retired the multiplier)"
+  The teaching equation uses a global multiplier: "the two conditions, in which the gaps feed future loss and multiply no cost (Constitution 4.0)"
+  global multiplier: "the chance of future loss (Constitution 4.0 retired every cost multiplier)"
   Risk Calculator: Deal Triage Calculator
   process-calculator\.md: deal-triage-calculator.md
-  Process Calculator Score: "Deal Triage Calculator level (0 to 30, Structural at 15)"
+  Process Calculator Score: "Deal Triage Calculator positions (each count against its own two edges)"
   Process Calculator, Step: "Deal Triage Calculator, Step"
   Lane 1: "Turnkey deal (the archetype names replaced the lane numbering in v14.0)"
-  Lane 2: "Structural deal (the archetype names replaced the lane numbering in v14.0)"
+  Lane 2: "a deal with specific exposure (Structural replaced the lane numbering in v14.0 and retired in Constitution 4.0)"
   independently-arising components: "components arising from distinct conditions (they are not statistically independent)"
-  Their combined level determines which motion: "composition selects the motion, and combined level sets the Turnkey and Structural boundary"
+  Their combined level determines which motion: "the sale starts at the cost nearest its own threshold, and the costs are never summed"
   03-learning-plan: "no replacement; the curriculum was removed in v15.0"
   llm-tutor-instructions: "no replacement; the curriculum was removed in v15.0"
   plain-language-part-I-companion: 00-tcg-constitution.md Part I
@@ -140,15 +140,20 @@ swap:
   net retained revenue: Net Revenue Retention
   Net Retained Revenue: Net Revenue Retention
   Law of Economic Boundaries: Law of Transaction Cost Composition
-  Law of Friction: Law of Uncertainty Inflation
-  Law of Asymmetry Convergence: Law of Uncertainty Inflation
-  Law of Bilateral Governance: "the governance corollary of Axiom II (Law of Asset Specificity)"
-  Law of Aligned Adjudication: "the governance corollary of Axiom II (Law of Asset Specificity)"
+  Law of Friction: Law of Future Cost
+  Law of Asymmetry Convergence: Law of Future Cost
+  Law of Bilateral Governance: "the governance corollary of Axiom III (Law of Future Cost)"
+  Law of Aligned Adjudication: "the governance corollary of Axiom III (Law of Future Cost)"
   Law of Commercial Friction: Law of Transaction Cost Composition
-  Law of The Boundary: "the Boundary Condition (Axiom II), or the Workflow Maturity Gate for the workflow-definition half"
+  Law of The Boundary: "the gate (an Axiom III corollary since v4.0), or the Workflow Maturity Gate for the workflow-definition half"
+  # Retired axiom names (v4.0, 2026-10). Axiom II stopped being specificity and
+  # became investment, and specificity moved into Axiom III with uncertainty.
+  # The Constitution's version history names both inside a vale-off block.
+  Law of Asset Specificity: "Law of Future Cost (specificity is Axiom III since v4.0; Axiom II is the Law of Transaction Investment)"
+  Law of Uncertainty Inflation: "Law of Future Cost (Axiom III since v4.0)"
   Law of Prospective Hindsight: "the Red Team protocol (the framework has three axioms, not six)"
-  n_viable: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
-  n_max: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
+  n_viable: "the specific-exposure reading (the v13 boundary condition retired in Constitution 4.0)"
+  n_max: "the specific-exposure reading (the v13 boundary condition retired in Constitution 4.0)"
   03-field-assets: "practice/ (flattened in the 2026-09 restructure)"
   04-internal-ops: "practice/ (flattened in the 2026-09 restructure)"
   05-learning-plan: 03-learning-plan
@@ -160,16 +165,16 @@ swap:
   Toaster deals: Turnkey deals
   toaster deal: turnkey deal
   toaster deals: turnkey deals
-  Bridge deal: Structural deal
-  Bridge deals: Structural deals
-  bridge deal: structural deal
-  bridge deals: structural deals
-  Bridge motion: implementation-led motion (Structural deal)
-  bridge motion: implementation-led motion (structural deal)
-  Bridge vs. Toaster: Structural vs. Turnkey
-  bridge vs. toaster: structural vs. turnkey
-  Bridge and Toaster: Structural and Turnkey
-  bridge and toaster: structural and turnkey
+  Bridge deal: a deal with specific exposure
+  Bridge deals: deals with specific exposure
+  bridge deal: a deal with specific exposure
+  bridge deals: deals with specific exposure
+  Bridge motion: implementation-led motion
+  bridge motion: implementation-led motion
+  Bridge vs. Toaster: specific exposure vs. Turnkey
+  bridge vs. toaster: specific exposure vs. turnkey
+  Bridge and Toaster: specific exposure and Turnkey
+  bridge and toaster: specific exposure and turnkey
 
   tcg-concept-map\.md: "publishing/README.md, Content pillars (the concept map was deleted in the 2026-09 restructure; it still carried the ILG title, the retired market phases and unsourced statistics)"
   ai-persona\.md: writing-protocols.md
@@ -201,11 +206,11 @@ swap:
   # corollary of Axiom II, the Law of Asset Specificity, which is where
   # Williamson put it. The three states index (Market, Deal at T0, Relationship
   # at T1+) was replaced by the three levels each axiom is stated at.
-  Law of Governance: "the governance corollary of Axiom II (Law of Asset Specificity); governance stopped being an axiom in Constitution v2.0"
+  Law of Governance: "the governance corollary of Axiom III (Law of Future Cost); governance stopped being an axiom in Constitution v2.0"
   Market State: "market level (Constitution v2.0 indexes on the level each axiom is stated at)"
   Deal State: "deal level (Constitution v2.0 indexes on the level each axiom is stated at)"
   Relationship State: "deal level, after signature (Constitution v2.0 has no separate relationship state)"
-  Fit Unverified: "not a search blocker (Constitution v2.1): a trial is verification the buyer runs alone, gated by specificity under Axiom II"
+  Fit Unverified: "not a search blocker (Constitution v2.1): a trial is verification the buyer runs alone, the gate under Axiom III"
   # Constitution v2.0 removed the derivation tiers (primary derivation, bridge
   # concept, clarifying concept) in favour of a flat corollaries list and a
   # derivations table. Recursive Cooperation became the stakes corollary.
@@ -219,5 +224,18 @@ swap:
   # specific deal is allocated before signature, not paid. Three adversarial
   # reviews showed that under uncertainty the adaptation is done after
   # signature and only its allocation can be settled before it.
-  must be paid before signature: "must be allocated before signature (Constitution v3.0: what is settled before signing is who bears the cost and when, not the spending of it)"
-  paid before signature: "allocated before signature (Constitution v3.0)"
+  must be paid before signature: "must be allocated before the investment is sunk (Constitution v3.0 said allocated, and 4.0 anchored it to the investment rather than to signature)"
+  paid before signature: "allocated before the investment is sunk (Constitution 4.0)"
+  # Constitution 4.0 (2026-10). The summed level and its Turnkey and Structural
+  # deal classes retired. Turnkey survives as a market condition; deals outside
+  # it are read by where the sale starts and by specific exposure. Scoped to
+  # the deal-class phrases so that "structural claims", "Structurally
+  # motivated" and CFIR's "Structural Characteristics" stay legal.
+  Structural deals?: "a deal with specific exposure, or a deal outside Turnkey (Structural retired in Constitution 4.0)"
+  structural deals?: "a deal with specific exposure, or a deal outside Turnkey (Structural retired in Constitution 4.0)"
+  Structural (?:level|population|one-shot|class): "specific exposure, or some cost needing seller investment (Structural retired in Constitution 4.0)"
+  Turnkey deals?: "a deal where every cost is self-serve and nothing specific is sunk (Turnkey is a market condition since Constitution 4.0)"
+  # Seat became decision role in Constitution 4.0: a position that holds a veto
+  # or an evaluation, defined by its relation to the workflow, not its occupant.
+  seats?: "decision role (Constitution 4.0)"
+  Seats?: "Decision role (Constitution 4.0)"

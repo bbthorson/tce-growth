@@ -2,7 +2,7 @@
 title: "Incomplete Contracts and Residual Control Rights"
 layer: theory
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -34,22 +34,22 @@ This is the theoretical layer beneath Williamson's hold-up problem. Williamson e
 - Reducing the space of unspecified states is itself a governance intervention, distinct from reallocating control within that space.
 
 **Supports in TCG:**
-- **Axiom II — Law of Asset Specificity, governance corollary** — the missing theoretical layer. Skin in the game is the TCG prescription. Residual control rights are the mechanism it allocates, and a Mutual Implementation Plan is a residual control instrument.
-- **Axiom II — Law of Asset Specificity** — explains why high asset specificity forces structured intervention rather than standard contracting. The price mechanism cannot govern states no one specified.
+- **Axiom III — Law of Future Cost, governance corollary** — the missing theoretical layer. Skin in the game is the TCG prescription. Residual control rights are the mechanism it allocates, and a Mutual Implementation Plan is a residual control instrument.
+- **Axiom III — Law of Future Cost** — explains why high asset specificity forces structured intervention rather than standard contracting. The price mechanism cannot govern states no one specified.
 - **Williamson Hold-Up** — Grossman-Hart-Moore supplies the formal treatment underneath it.
 - **The Blueprint** — operationalizes the second governance intervention. By mapping the buyer's environment before commercial execution, the Blueprint shrinks the set of unspecified states rather than arguing about who controls them.
 - **The MIP** — operationalizes the first. Phase gates with joint sign-off distribute residual control across both parties, so neither can unilaterally impose an outcome when an unmapped constraint appears.
 
 ---
 
-## Extension: allocation before signature, adaptation after (2026-09)
+## Extension: allocation before the investment is sunk, adaptation after (2026-09)
 
-Constitution 3.0 changed one word in Axiom II's second clause, from *paid* to *allocated*, and this is the evidence behind it.
+Constitution 3.0 changed one word in Axiom II's second clause, from *paid* to *allocated*, and this is the evidence behind it. Constitution 4.0 moved the clause to Axiom III and anchored it to before the investment is sunk rather than to signature.
 
 **The empirical record on contract completeness.** Crocker and Reynolds found that Air Force engine procurement contracts were written more incompletely as technological uncertainty rose, deliberately, because drafting contingencies that would be obsolete by execution cost more than resolving them later. Bajari and Tadelis formalized the trade-off: fixed-price contracts on complete ex-ante specifications invite opportunistic change orders once adaptation is needed, and cost-plus contracts with deliberately incomplete specifications govern adaptation more cheaply when complexity is high. MacCormack, Verganti and Iansiti found that in fast-moving software environments, early specification freezes correlated negatively with product quality, and teams that deferred the freeze and iterated on feedback outperformed.
 
 **Where front-end definition pays.** Merrow's benchmarks across industrial capital projects, and the Construction Industry Institute's Project Definition Rating Index, show that scope definition before sanction is the strongest predictor of cost and schedule performance where the specification is static and the cost of change steep. Flyvbjerg and Budzier's work on IT projects adds that duration itself compounds tail risk, so lengthening definition cycles in uncertain projects raises exposure rather than lowering it.
 
-**What follows for Axiom II.** Under uncertainty, what can be settled before signature is the allocation of adaptation risk, who bears it, staged how, with what right to stop, which is residual control in Grossman-Hart-Moore's sense. The adaptation itself follows signature, and Strong and Volkoff's finding that misfits in roles, controls and culture surface only in use says why it must. So the share of the arrangement settled before signature rises with specificity, while the share of the work done before signature can fall as uncertainty rises. Where specification is static, the two coincide and front-end loading pays directly. The Blueprint and the MIP divide along this line: the first shrinks the set of unspecified states as far as discovery can reach, the second allocates control over the states it cannot.
+**What follows for Axiom III.** Under uncertainty, what can be settled before the investment is sunk is the allocation of adaptation risk, who bears it, staged how, with what right to stop, which is residual control in Grossman-Hart-Moore's sense. The adaptation itself follows, and Strong and Volkoff's finding that misfits in roles, controls and culture surface only in use says why it must. So the share of the arrangement settled in advance rises with specificity, while the share of the work done in advance can fall as uncertainty rises. Where specification is static, the two coincide and front-end loading pays directly. The Blueprint and the MIP divide along this line: the first shrinks the set of unspecified states as far as discovery can reach, the second allocates control over the states it cannot.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

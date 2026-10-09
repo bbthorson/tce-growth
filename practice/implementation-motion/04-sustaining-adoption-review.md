@@ -2,14 +2,14 @@
 title: "The Sustaining Adoption Review (The Proof)"
 layer: practice
 status: active
-version: 1.1
-operationalizes: [axiom-2, axiom-3]
+version: 1.2
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Sustaining Adoption Review (The Proof)
 
-**Version:** 1.1
+**Version:** 1.2
 
 **Motion:** **Implementation-led**. Fourth of four artifacts, after the MIP.
 
@@ -21,13 +21,13 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 | **Outputs** | A receipted handoff packet, a completed RE-AIM review per cycle, and a renewal posture backed by evidence rather than relationship. |
 | **Next step** | Renewal, expansion, or a documented decision to let the account lapse. |
 | **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under vested compensation ([05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5). |
-| **Reduces** | Post-signature defection and drift (Axiom II). Prevents $\Delta_A$ from resetting at the handoff boundary. |
+| **Reduces** | Post-signature defection and drift (Axiom III). Prevents $\Delta_A$ from resetting at the handoff boundary. |
 
 ---
 
 ## Why this artifact exists
 
-Axiom II's governance corollary decides whether a deal persists, and Axiom III's second clause, that verified uncertainty rebuilds unless it is maintained, states the mechanism this artifact exists to run. The Handoff Rule below is that clause applied at the seam between sales and Customer Success. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
+Axiom III's governance corollary decides whether a deal persists, and its rebuild clause, that exposure to what a party cannot verify rebuilds unless it is maintained, states the mechanism this artifact exists to run. The Handoff Rule below is that clause applied at the seam between sales and Customer Success. The asymmetry assessment the seller produced must transfer intact to Customer Success, or the bilateral asymmetry gap ($\Delta_A$, the combined ignorance on both sides of the relationship) resets to near maximum on the receiving side. The Blueprint is the institutional memory that prevents the **Fumbled Handoff** failure mode.
 
 The first three artifacts drive $\Delta_A$ toward zero before signature. Nothing keeps it there. This document is the maintenance. It is a fill-in template rather than a scored instrument, so it carries no formulas and adds nothing to the uncalibrated-parameter backlog.
 
@@ -85,7 +85,7 @@ RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from 
 
 | Dimension | What it means here | Evidence to record | Status |
 |---|---|---|---|
-| **Reach** | License utilization. Are the seats we sold in the hands of people who log in. | Provisioned vs. active seats: ______ / ______ | [ ] Green [ ] Watch [ ] Red |
+| **Reach** | License utilization. Are the licenses we sold in the hands of people who log in. | Provisioned vs. active licenses: ______ / ______ | [ ] Green [ ] Watch [ ] Red |
 | **Effectiveness** | Movement on the North Star metric, in the customer's own numbers. | Baseline ______ → current ______ | [ ] Green [ ] Watch [ ] Red |
 | **Adoption** | Feature consumption depth. Whether users reach the features that carry the value. | Value-carrying features in real use: ______ | [ ] Green [ ] Watch [ ] Red |
 | **Implementation** | Configuration fidelity. How far the deployment drifted from the supportable path. | Custom branches or workarounds in place: ______ | [ ] Green [ ] Watch [ ] Red |
@@ -95,16 +95,16 @@ RE-AIM (Reach, Effectiveness, Adoption, Implementation, Maintenance) comes from 
 
 ### 2.1 The count re-take
 
-*The [Deal Triage Calculator](../deal-triage-calculator.md) counted three things before the deal was scored. By the first review cycle, all three are known rather than estimated.* Run this once, at the first cycle where deployment is far enough along to know.
+*The [Deal Triage Calculator](../deal-triage-calculator.md) counted three things before the deal was routed. By the first review cycle, all three are known rather than estimated.* Run this once, at the first cycle where deployment is far enough along to know.
 
-| Counted at triage | Scored | Actual | Variance |
+| Counted at triage | Counted | Actual | Variance |
 |---|---|---|---|
 | Integration points | ______ | ______ | ______ |
 | Workflows that change | ______ | ______ | ______ |
 | Undocumented exception paths | ______ | ______ | ______ |
 | **Total** | ______ | ______ | ______ |
 
-The variance is read across a book rather than on this account. One deal scored at 3 against 11 actual is a hard deal. A scorer whose variance runs one direction across five deals is a scoring problem, and the direction says which: consistently under is routing deals away from apparatus, consistently over is routing them toward it. No band and no threshold apply, because a variance of 4 on a deal counting 30 items is not the same finding as a variance of 4 on a deal counting 5. This is the only audit the counting instrument has on itself.
+The variance is read across a book rather than on this account. One deal counted at 3 against 11 actual is a hard deal. A counter whose variance runs one direction across five deals is a counting problem, and the direction says which: consistently under is routing deals away from apparatus, consistently over is routing them toward it. No band and no threshold apply, because a variance of 4 on a deal counting 30 items is not the same finding as a variance of 4 on a deal counting 5. This is the only audit the counting instrument has on itself.
 
 ---
 
@@ -127,7 +127,7 @@ The variance is read across a book rather than on this account. One deal scored 
 
 ## Section 4: Renewal and Reputation Refresh
 
-*Axiom III's second clause after signature: reputation depreciates. What was earned at signature does not carry to renewal without intervening evidence of delivery.*
+*Axiom III's rebuild clause after signature: reputation depreciates. What was earned at signature does not carry to renewal without intervening evidence of delivery.*
 
 The Constitution prescribes **demurrage on credibility**, a standing charge against reputation that forces it to be re-earned rather than accumulated. The trust that closed the deal has been spending down since T-0, and the renewal conversation prices what has been delivered since, not what was promised before.
 
@@ -145,7 +145,7 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 | Tripwire | What it signals | Response |
 |---|---|---|
-| Champion leaves or changes role | Institutional memory of why they bought just walked out | Re-run the handoff packet with the successor. Treat it as a new $\Delta_A$ to close. |
+| Champion leaves or changes role | Institutional memory of why they bought just walked out | Re-run the handoff packet with the successor. A new occupant in a stable decision role reopens the bargaining gap. If the role dissolved with the person, the coalition changed, so re-map it. |
 | Exec sponsor misses two consecutive QBRs | The initiative lost its executive patron | Escalate through the AE. Do not let CS absorb it quietly. |
 | Support tickets rise while usage falls | Users are struggling and then giving up | Adoption intervention, not a support intervention. |
 | Customer stops asking for anything | Usually disengagement, read as satisfaction | Proactive review. Silence is not a green signal. |
@@ -155,13 +155,13 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 - **Green across RE-AIM, commitments met both ways.** Renew and open expansion. The evidence pack does the selling.
 - **Mixed, with the variance named by you before the customer names it.** Renew on the strength of the disclosure. Volunteering a miss is itself a costly signal, because a vendor hiding a problem cannot afford to raise one.
-- **Red on Effectiveness at renewal.** Do not discount to hold the logo. Price addresses the direct cost term ($c$) and this is a value-delivery failure, so the lever does not fit the problem. Either commit to a governed remediation with new gates, or let it lapse honestly and keep the reference.
+- **Red on Effectiveness at renewal.** Do not discount to hold the logo. A discount moves price, which is a transfer between the parties and touches neither the value delivered nor the future loss, and this is a value-delivery failure, so the lever does not fit the problem. Either commit to a governed remediation with new gates, or let it lapse honestly and keep the reference.
 
 ---
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both Axiom III's second clause applied after signature.
+- **Theory:** [TCG Constitution, Axiom III (Law of Future Cost), its governance corollary and its rebuild clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both the rebuild clause applied after signature.
 - **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact audits commitments the MIP created.

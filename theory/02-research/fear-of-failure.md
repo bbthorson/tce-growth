@@ -2,7 +2,7 @@
 title: "Fear of Failure: The Empirical Evidence"
 layer: theory
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-1, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -32,9 +32,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - 17% of large initiatives present existential threat to the organization (McKinsey).
 
 **Supports in TCG:**
-- **Axiom II — Law of Asset Specificity** — empirical scale of $F_{implementation}$. Documented failure rates are why implementation is the dominant cost component in high-specificity deals, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the under-frictioned Structural failure mode measured.
-- **Axiom III — Law of Uncertainty Inflation** — empirical grounding for why $\Delta_A$ multiplies friction rather than reducing value. Also the limit case: buyers leave the market entirely (Akerlof saturation) when failure rates exceed risk tolerance, because no costly signal can credibly reduce a gap that wide.
-- **Akerlof Exit Threshold** — the 40–60% No Decision rate is the threshold being crossed.
+- **Axiom III — Law of Future Cost** — the scale of the future loss buyers believe they face in specific deals. Documented failure rates are what an open policing gap looks like to a buyer about to sink a specific investment, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the unallocated failure mode measured.
+- **Axiom I — Law of Transaction Cost Composition** — the limit case: buyers leave the market entirely (Akerlof saturation) when believed failure rates push a cost past what they will bear, because no costly signal can credibly reduce a gap that wide.
+- **Akerlof saturation** — the 40–60% No Decision rate is the participation threshold being crossed.
 - **Decay Clock** — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
 - **Reputation Depreciation** — 60% renewal regret rate (Gartner 2023) is the failure-mode signal.
 

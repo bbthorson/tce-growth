@@ -2,116 +2,90 @@
 title: "Mathematical Models"
 layer: theory
 status: active
-version: 1.0
+version: 2.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Mathematical Models
 
-**Version:** 1.0
+**Version:** 2.0
 **Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
 
-The Constitution is axioms-first. It states that effective transaction cost rises with the bilateral asymmetry gap, that the bargaining cost rises with committee size, and that urgency decays from a triggering event. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
+The Constitution is axioms-first. It states that each cost has a threshold that keeps the buyer out, that each party goes ahead only when its own share of today's investment is covered by its own return, and that what a party sinks exposes it to what it cannot verify. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
 Nothing here introduces new claims. Every model traces to a term the Constitution already defines. If a model here cannot be traced to an axiom, it does not belong in this file either.
 
 > [!IMPORTANT]
-> **Calibration status.** The functional forms below are specified, not fitted. Parameter defaults are reasoned starting values, not empirical estimates from booked deal data. Section 6 marks which parameters carry literature support and which are placeholders. Use these models to structure judgment, not to forecast.
+> **Calibration status.** The functional forms below are specified, not fitted. Parameter defaults are reasoned starting values, not empirical estimates from booked deal data. [06-calibration.md](./06-calibration.md) marks which parameters carry literature support and which are placeholders. Use these models to structure judgment, not to forecast.
 
 ---
 
-## 1. The Two Representations of Transaction Cost
+## 1. The Two Conditions
 
-Axiom III carries two equations for the same quantity. The Constitution presents both and asserts they are representations of one thing. This section shows why that assertion holds.
+### 1.1 One condition per party
 
-### 1.1 The structural form
+$$S_b = V_{switch}(t) - P - \sum_{k} I^b_k - L_b \qquad S_s = P - C_{deliver} - \sum_{k} I^s_k - L_s$$
 
-$$F_{effective} = \sum_{k} F_k \cdot (1 + \hat{\Delta}_k), \qquad k \in \{search,\; consensus,\; implementation\}$$
+| Symbol | Meaning |
+|---|---|
+| $V_{switch}(t)$ | $V_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying where they are. $V_{next\_best}$ includes building it internally. Section 4 gives the decay. |
+| $P$ | Price over the relationship |
+| $C_{deliver}$ | The seller's cost of delivering against that price |
+| $I^b_k$, $I^s_k$ | What the buyer and the seller invest today against cost $k \in \{search,\; consensus,\; implementation\}$ (Axiom II) |
+| $L_b$, $L_s$ | Each party's expected future loss (Axiom III), section 5 |
 
-This form decomposes cost into three components that arise from distinct conditions and respond to distinct interventions, and amplifies each by the asymmetry inside its own pair of parties. Its value is diagnostic. When a deal stalls, this form tells you which component is binding and therefore which artifact to deploy.
+A deal closes when $S_b > 0$, $S_s > 0$, and no cost sits above its participation threshold (section 6). Recurrence enters through $P$ and $C_{deliver}$ summed over expected renewals, which [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7 writes out with a retention probability and a discount rate.
 
-**The single-multiplier form is what this factors into.** Collecting the sum:
+The seller's condition is the seller surplus model's $S_{seller} = p_{close}(V_{contract} - C_{deliver}) - C_{invest}$ conditional on a close, with $C_{invest}$ split by the cost it pays down and the future loss written out instead of left inside $p_{close}$.
 
-$$\sum_{k} F_k (1 + \hat{\Delta}_k) = F_{base} \cdot (1 + \hat{\Delta}_A), \qquad \hat{\Delta}_A \equiv \frac{\sum_{k} F_k \hat{\Delta}_k}{\sum_{k} F_k}$$
+### 1.2 Units
 
-The identity is exact. The deal-level gap $\hat{\Delta}_A$ is the friction-weighted mean of the three component gaps, which is what lets the reduced form below run on a single scalar. Section 2 gives the three gaps and their instruments. What the scalar cannot represent is stated in section 1.4.
+**Every term is a fraction of annual contract value.** That is what makes the two conditions comparable and what lets investment and exposure be estimated at all: a seller can price its own engineering hours, and a buyer can price the staff time its integration will take. A deal at list price with no other cost has $P = 1$.
 
-### 1.2 The reduced form
+Reading any of these terms in percentage points instead is a unit error and not a second option. A future loss of 0.75 means three quarters of a year's contract value, not three quarters of a percent.
 
-$$y = a \hat{\Delta}_A^2 + c$$
+### 1.3 Price cancels
 
-This form collapses the decomposition into a single convex curve. Its value is argumentative. It shows why the traditional levers fail: because cost grows faster than linearly in uncertainty, cutting the constant term $c$ through discounting cannot offset a large $\Delta_A$.
+Adding the two conditions:
 
-### 1.3 The derivation connecting them
+$$S_b + S_s = V_{switch}(t) - C_{deliver} - \sum_{k} \left(I^b_k + I^s_k\right) - L_b - L_s$$
 
-The structural form leaves one assumption implicit: that base friction is independent of the asymmetry gap. It is not.
+$P$ is gone, because price is a transfer: what leaves the buyer arrives at the seller. Price belongs in both conditions and in neither party's cost of transacting. Three results follow from the accounting rather than from any coefficient.
 
-An uncertain buyer does not simply pay a surcharge on a fixed quantity of work. The uncertainty changes how much work exists. A buyer who cannot verify the seller's claims adds stakeholders to the evaluation, adds security review cycles, adds proof-of-concept stages, and widens scope to cover contingencies they cannot rule out. Each addition raises $F_{consensus}$ and $F_{implementation}$ directly, before any multiplier applies.
+**The three levers.** A seller can move a deal three ways, and only one of them raises the joint surplus.
 
-Write base friction as a function of the gap:
+| Lever | What it moves | Effect on $S_b + S_s$ |
+|---|---|---|
+| Discount | $P$ | None. Surplus moves from seller to buyer one for one. |
+| Guarantee, clawback, hostage | Part of $L_b$ onto the seller | None, unless the commitment changes what the seller does, in which case it also lowers $\pi$ and so the loss itself |
+| Verification | $\pi$ for whichever party cannot verify | Rises. A cost both sides were carrying shrinks. |
 
-$$F_{base}(\hat{\Delta}_A) = c + b \hat{\Delta}_A$$
+A resolved gap can therefore close a deal that no discount could. When the joint surplus is negative, no price makes both conditions positive at once, and only a lever that raises the joint surplus can rescue the deal. When it is positive, a discount can close the deal by moving the split, and so can verification. What stays empirical is whether a given verification costs less than the loss it removes, and the verification's own cost is an investment under Axiom II.
 
-Where $c$ is the irreducible floor (license fees, direct outlays, the deployment work that happens even under perfect information) and $b$ is the rate at which base friction grows per unit of asymmetry.
+### 1.4 Moving investment between parties
 
-Substituting into the structural form:
+Write the work against cost $k$ as $W_k$, and each party's cost of doing a unit of it as $\theta^b_k$ and $\theta^s_k$. Moving a share $w$ of the work from buyer to seller changes the joint surplus by
 
-$$F_{effective} = (c + b\hat{\Delta}_A)(1 + \hat{\Delta}_A) = b\hat{\Delta}_A^2 + (b + c)\hat{\Delta}_A + c$$
+$$\Delta(S_b + S_s) = w\left(\theta^b_k - \theta^s_k\right) - \Delta L_b - \Delta L_s$$
 
-The reduced form is this expression with the middle term dropped and $a$ identified with $b$. The derivation runs on the factored scalar, so it is untouched by the split into three gaps. The two representations describe the same cost. The reduced form is the structural form after you let base friction depend on asymmetry and then discard the linear term.
+The first term is specialization: positive when the seller does the work more cheaply. The second and third are Axiom III, entering with a minus because each condition subtracts its loss. The move can lower the buyer's future loss, by catching misfit in use, which raises the joint surplus. It also raises the seller's, by making the seller's investment specific to this buyer, which lowers it. With equal unit costs and no change in future loss, the move only changes the split. It still closes deals, because it lifts $S_b$ above zero whenever $S_s$ has room to fall.
 
-### 1.4 What the reduced form gives up
-
-Two things. It drops the linear term $(b + c)\hat{\Delta}_A$, which is not small over the operating range, so the reduced form is a two-parameter approximation of a three-parameter expression and a fitted $a$ and $c$ would absorb the discarded term. And it drops the component decomposition, and with it the direction that selects the motion, so it produces a number rather than a diagnosis. What survives is convexity, which is the one property the three-levers argument needs.
-
-**Operating rule.** Diagnose a deal with the structural form. Explain why discounting fails with the reduced form. Never choose an intervention from the reduced form.
-
-### 1.5 Normalizing the gap before substitution
-
-The [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw score on $[2, 10]$. Neither equation accepts that range directly. At a raw score of 10 the structural multiplier $(1 + \Delta_A)$ would inflate base friction elevenfold, which no observed deal supports.
-
-Normalize before substituting:
-
-$$\hat{\Delta}_A = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_A \in [0, 1]$$
-
-This keeps the structural multiplier in $[1, 2]$ and keeps the reduced form's quadratic term bounded by $a$. Use the raw score for the field triage bands in the scorecard. Use the normalized value in either equation. Confusing the two produces cost estimates off by an order of magnitude.
-
-**Each component gap normalizes on its own instrument's range.** The scorecard's $[2, 10]$ is the enforcement pair's range, because that is the pair it measures. The search and bargaining gaps are emitted directly on $[0, 1]$ by the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) as evidenced fractions, so they need no rescaling. Section 2.4 gives all three.
-
-The normalized gap may exceed 1 when asymmetry rebuilds past the instrument's ceiling under the Decay Clock dynamics ($\hat{\Delta}_A(t) = \hat{\Delta}_A(0) + \gamma t$). The scorecard measures a point in time and cannot observe drift beyond its own range.
-
-### 1.6 A note on the coefficient $a$
-
-The derivation identifies $a$ with $b$, the rate at which base friction grows per unit of asymmetry, not with the loss aversion coefficient $\lambda$. The anchor $a \approx 2.25$ borrows $\lambda$'s magnitude as a reason $b$ should be large: buyers add review cycles and contingency scope because they weight losses roughly twice as heavily as gains. That supports the order of magnitude and is not a measurement. [06-calibration.md](./06-calibration.md) records how far the analogy stretches.
-
-### 1.7 The scale of $y$, $c$ and $a$
-
-The reduced form adds $a\hat{\Delta}_A^2$ to $c$, so $a$ carries $c$'s units. **All three are fractions of annual contract value.** A deal at list price with no internal cost has $c = 1$, and the [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is where $a$, $c$ and the payment schedule meet on that scale.
-
-| Stage | Payment $c_m$ | Residual entering, $x_m$ | $a x_m^2$ | Ratio to that stage's payment |
-|---|---|---|---|---|
-| 1. Core integration | 0.25 | 0.750 | 1.266 | 5.06 |
-| 2. Pilot | 0.35 | 0.375 | 0.316 | 0.90 |
-| 3. Full rollout | 0.40 | 0.075 | 0.0127 | 0.032 |
-
-Computed at $x_0 = 1$. Entering the deal, the uncertainty the buyer is asked to carry is worth five times the first payment. By the last gate it is three percent of it. That profile is the staging argument, and it is why gate design should return most of the option value early.
-
-Read the same table in percentage points and the uncertainty term becomes a rounding error at every stage, which inverts the framework's central claim. The percentage reading is a unit error, not a second option. Stating the units makes $a$ wrong in a checkable way: a fitted value would come back in annual contract values per unit of squared normalized gap, and section 6 says what data that needs.
+A forward-deployed engineer is the case where all three terms move. [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries the seller's side.
 
 ---
 
-## 2. The Bilateral Asymmetry Gap
+## 2. The Three Gaps
 
-### 2.1 Definition
+Each of the three costs runs between its own pair of parties, and each pair's uncertainty is measured on its own instrument. The gaps decide the chance of future loss in section 5. They no longer multiply any cost: Constitution 4.0 retired the per-component multiplier.
+
+### 2.1 The implementation gap is a sum
 
 $$\Delta_A = I_{seller} + I_{buyer}$$
 
-The gap is a **sum**, not a difference. Total informational misalignment across the buyer-seller boundary is the seller's ignorance of the buyer's environment plus the buyer's uncertainty about the seller's capability. A deal where both sides are equally blind is not symmetric in any useful sense. It is maximally uninformed on both sides, and $\Delta_A$ must reflect that.
+The gap is a **sum**, not a difference. Total informational misalignment across the buyer-seller boundary is the seller's ignorance of the buyer's environment plus the buyer's uncertainty about the seller's capability. A deal where both sides are equally blind is not symmetric in any useful sense. It is maximally uninformed on both sides, and $\Delta_A$ must reflect that. $\Delta_A = 0$ represents complete informational symmetry.
 
-$\Delta_A = 0$ represents complete informational symmetry.
-
-**This is the enforcement component's gap, the implementation gap in field terms, not the deal's.** Sections 2.2 and 2.3 model its two halves. Section 2.4 gives the other two components' gaps, which have different parties and different instruments, and section 1.1 gives the weighted mean that recovers the deal-level scalar from all three.
+**This is the policing and enforcement cost's gap, the implementation gap in field terms, not the deal's.** It is the only bilateral pair, so it is the only gap with two halves, and the halves matter separately: the buyer's future loss runs on $I_{buyer}$, and the seller's on $I_{seller}$.
 
 ### 2.2 Seller Ignorance
 
@@ -154,31 +128,33 @@ As proof accumulates, buyer uncertainty approaches a floor set by return varianc
 
 $$\lim_{K_{vendor} \to \infty} I_{buyer} = \mu \cdot \frac{\sigma_{ROI}}{\bar{R}}$$
 
-This floor is the model's most useful field implication. No quantity of costly signaling drives buyer uncertainty to zero while the return itself remains volatile. Past a point, the seller stops investing in proof and starts working on the variance of the projected return. The Red Team targets $K_{vendor}$. The MIP targets $\sigma_{ROI}$ by bounding downside through staged gates.
+This floor is the model's most useful field implication, and it is why the chance of future loss in section 5 has a floor above zero. No quantity of costly signaling drives buyer uncertainty to zero while the return itself remains volatile. Past a point, the seller stops investing in proof and starts working on the variance of the projected return. The Red Team targets $K_{vendor}$. The MIP targets $\sigma_{ROI}$ by bounding downside through staged gates.
 
-### 2.4 The three component gaps
+### 2.4 The three gaps and their instruments
 
-Axiom III amplifies each friction component by the asymmetry inside its own pair of parties. The three pairs are different, so the three gaps have different instruments and cannot be read off one score.
+| Gap | Pair | What is unknown | Instrument |
+|---|---|---|---|
+| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, how to reach a seller at all | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), search block |
+| $\hat{\Delta}_{consensus}$ | Each decision role, about its own outcome | What the change does to that role's budget, headcount and standing | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), consensus block |
+| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) |
 
-| Gap | Pair | What is unknown | Instrument | Closed by |
-|---|---|---|---|---|
-| $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, how to reach a seller at all | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), search block | Education, reference architectures, category definition, channel |
-| $\hat{\Delta}_{consensus}$ | The buyer's stakeholders against each other | What each of the others is measured on | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), consensus block | Stakeholder mapping in the Blueprint, then the Red Team workshop |
-| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) | Blueprint, Red Team, MIP |
-
-**Only the enforcement gap is bilateral.** Sections 2.2 and 2.3 model its two halves, $I_{seller}$ and $I_{buyer}$, and section 2.1's sum applies to that pair alone:
-
-$$\hat{\Delta}_{implementation} = \frac{I_{seller} + I_{buyer} - 2}{8}$$
-
-The other two gaps have no seller-side term. A buyer who cannot name the category is not ignorant *of the seller*, and two stakeholders who cannot see each other's objectives are not separated by anything the seller knows and withholds. Each is measured as the fraction of its own instrument's items that remain unevidenced, which lands on $[0, 1]$ with a true zero and needs no rescaling:
+The search and bargaining gaps are measured as the fraction of their own instrument's items that remain unevidenced, which lands on $[0, 1]$ with a true zero:
 
 $$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}_{consensus} = 1 - \frac{e_{consensus}}{n_{consensus}}$$
 
-Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. The bargaining reading is a proxy: the instrument counts stakeholders whose measured objective the seller can read, while Axiom III names each stakeholder's own uncertainty about their outcome. [07-open-questions.md](./07-open-questions.md) item 14 records the gap. An instrument emitting no items at all leaves its gap undefined rather than zero, and a component with no cost carries no weight in the mean either way.
+Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items leaves its gap undefined rather than zero.
 
-**The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the stakeholders' interests actually sit. $\hat{\Delta}_{consensus}$ measures how much of that the room can see. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late. The two terms enter $F_{effective}$ at different places: variance raises the base cost $F_{consensus}$, and the gap amplifies it.
+**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. The current calculator reads a proxy instead, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. [07-open-questions.md](./07-open-questions.md) item 14 records the proxy until the consensus block reads the axiom's gap directly.
 
-**A note on $\beta$.** Section 3.1's $\beta$ is the organizational complexity exponent and belongs to the bargaining base cost. Nothing in this framework weights one side's ignorance against the other's inside a gap. $I_{seller}$ and $I_{buyer}$ are summed unweighted by section 2.1, and any future weighting parameter would be a parameter of the enforcement pair specifically, since it is the only pair with two distinguishable sides.
+**The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the decision roles' interests actually sit, and it sets the size of the bargaining cost. The gap measures what each role cannot yet see about its own exposure, and it feeds the chance of future loss. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late.
+
+### 2.5 Normalizing the scorecard
+
+The [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw implementation gap on $[2, 10]$, two halves each on $[1, 5]$. Every equation in this file takes a normalized gap, so normalize first:
+
+$$\hat{\Delta}_{implementation} = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_{implementation} \in [0, 1]$$
+
+Each half normalizes the same way on its own range, $(h - 1)/4$, which is what section 5 needs when it reads the buyer's half and the seller's half apart. Use the raw score for the scorecard's own triage bands. Use the normalized value everywhere else. Confusing the two produces results off by an order of magnitude, and `models/tcg_models.py` refuses a raw value at the type level.
 
 ---
 
@@ -190,26 +166,28 @@ $$F_{consensus} = \alpha \cdot N^{\beta} \cdot (1 + \text{Var}(I_i))$$
 
 | Symbol | Meaning | Range | Default |
 |---|---|---|---|
-| $N$ | Stakeholders with veto power or evaluation responsibility | $\ge 1$ | measured |
-| $\text{Var}(I_i)$ | Variance in stakeholder incentive alignment | $[0, 1]$ | measured |
-| $\alpha$ | Baseline coordination overhead | $> 0$ | 1.0 |
+| $N$ | Decision roles with veto power or evaluation responsibility | $\ge 1$ | measured |
+| $\text{Var}(I_i)$ | Variance in decision-role incentive alignment | $[0, 1]$ | measured |
+| $\alpha$ | Baseline coordination overhead, the conversion into contract value | $> 0$ | 1.0 |
 | $\beta$ | Organizational complexity exponent | $[1.2, 2.0]$ | 1.35 |
+
+This is the structural form of the bargaining and decision cost the buyer faces before anyone invests against it. $\alpha$ is what converts it into fractions of annual contract value, and its default of 1.0 is a normalizing convention rather than a conversion anyone has measured.
 
 Variance is bounded above by 1 because $I_i$ is bounded on $[-1, 1]$. A computed value above 1 indicates an arithmetic error, not an unusually divided committee.
 
-The exponent $\beta > 1$ reflects that communication channels grow as $N(N-1)/2$ rather than as $N$. Adding the sixth stakeholder to a committee costs more than adding the second.
+The exponent $\beta > 1$ reflects that communication channels grow as $N(N-1)/2$ rather than as $N$. Adding the sixth decision role costs more than adding the second.
 
 ### 3.2 Incentive variance
 
-Let $I_i \in [-1, 1]$ denote stakeholder $i$'s utility from the initiative, where $+1$ means the initiative advances their incentives, 0 means no effect, and $-1$ means it conflicts directly with their measured objectives or operational control.
+Let $I_i \in [-1, 1]$ denote decision role $i$'s utility from the initiative, where $+1$ means the initiative advances its incentives, 0 means no effect, and $-1$ means it conflicts directly with its measured objectives or operational control.
 
 $$\bar{I} = \frac{1}{N}\sum_{i=1}^{N} I_i \qquad \text{Var}(I_i) = \frac{1}{N}\sum_{i=1}^{N}(I_i - \bar{I})^2$$
 
-When every stakeholder holds identical alignment, variance is zero and friction reduces to the structural floor $\alpha N^{\beta}$. Size alone imposes cost even under perfect agreement.
+When every decision role holds identical alignment, variance is zero and the cost reduces to the structural floor $\alpha N^{\beta}$. Size alone imposes cost even under perfect agreement.
 
-**$I_i$ is not directly observable, and the observable proxy is biased downward.** The definition above is the stakeholder's utility from the initiative, meaning the effect on the objectives they are measured on. What a seller can actually watch is the position each stakeholder states in a room containing the others. Stated positions converge under social pressure while measured objectives do not, so variance computed from stated positions understates $\text{Var}(I_i)$, and it understates it most in the polarized committees where the term matters most.
+**$I_i$ is not directly observable, and the observable proxy is biased downward.** The definition above is the role's utility from the initiative, meaning the effect on the objectives it is measured on. What a seller can actually watch is the position each occupant states in a room containing the others. Stated positions converge under social pressure while measured objectives do not, so variance computed from stated positions understates $\text{Var}(I_i)$, and it understates it most in the polarized committees where the term matters most.
 
-Two consequences. Score $I_i$ from what a stakeholder is measured on, never from what they said in the meeting. And read unanimous stated alignment as weak evidence, since a committee where nobody voices dissent is as consistent with suppressed variance as with genuine agreement. This is the quasi-resolution Cyert and March describe, and it is why a saboteur surfaces late rather than early. See [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
+Two consequences. Score $I_i$ from what a role is measured on, never from what its occupant said in the meeting. And read unanimous stated alignment as weak evidence, since a committee where nobody voices dissent is as consistent with suppressed variance as with genuine agreement. This is the quasi-resolution Cyert and March describe, and it is why a saboteur surfaces late rather than early. See [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
 
 ### 3.3 Sensitivity
 
@@ -253,7 +231,7 @@ $$\delta = \frac{\lambda_{inertia}}{1 + \gamma_r E_{external}}$$
 | $E_{external}$ | Magnitude of external catalyst (regulatory mandate, competitive threat, market shift) | $[0, 10]$ | measured |
 | $\gamma_r$ | Responsiveness converting external pressure into internal action | $[0.1, 1.0]$ | 0.5 |
 
-Note that $\gamma_r$ here is the responsiveness factor and is distinct from the $\gamma_k$ of the Constitution's asymmetry drift equation $\hat{\Delta}_k(t) = \hat{\Delta}_k(0) + \gamma_k t$. Both families carry subscripts, and they are told apart by what the subscript names: a friction component, or a mechanism.
+Note that $\gamma_r$ here is the responsiveness factor and is distinct from the $\gamma_k$ of the drift equation in section 5.3. Both families carry subscripts, and they are told apart by what the subscript names: a cost, or a mechanism.
 
 ### 4.3 Boundary behavior
 
@@ -271,7 +249,88 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 
 ---
 
-## 5. Parameter Reference
+## 5. Future Loss
+
+### 5.1 Exposure times the chance it does not come back
+
+$$L_p = Q_p \cdot \pi_p, \qquad Q_p = C^{p}_{invest} - R^{p}_{redeploy}, \qquad p \in \{b, s\}$$
+
+$Q_p$ is the appropriable quasi-rent of Klein, Crawford and Alchian: what party $p$ has sunk, less what it could recover by redeploying it elsewhere. [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 3 defines it for the seller, and the definition reads the same for the buyer, whose non-redeployable investment is the integration built and the workflows rewired to fit this product.
+
+$L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use. It is not a second charge for the investment Axiom II already counted, which is why it sits on the return side: $Q_p$ bounds it because it is the most the other side can extract or a failure can destroy.
+
+### 5.2 The chance of loss
+
+$\pi_p$ rises with the gaps party $p$ cannot close.
+
+| Party | The gaps its loss runs on |
+|---|---|
+| Buyer | Its own half of the implementation gap, $I_{buyer}$: whether the seller delivers and the product fits. The bargaining gap: whether the coalition holds once the investment is sunk. |
+| Seller | Its own half of the implementation gap, $I_{seller}$: the environment it has not mapped. The bargaining gap: the coalition it cannot see. |
+
+The search gap does not appear. It prices today's search cost and decides participation under Axiom I, and once a buyer has chosen, it has stopped mattering to what that buyer loses later.
+
+**The form is a placeholder.** Writing $g_p \in [0, 1]$ for the mean of the normalized gaps in that party's row:
+
+$$\pi_p = \pi_0 + (1 - \pi_0)\, g_p$$
+
+The floor $\pi_0 > 0$ exists because some risk survives any amount of proof, which is section 2.3's floor read as a probability. The straight line between floor and ceiling is chosen, and nothing in the framework claims a curvature. Constitution 3.0 argued for a convex cost of uncertainty, and the argument rested on counting uncertainty twice. Section 7 records it. The mean as the way two gaps combine is also chosen.
+
+### 5.3 Drift
+
+Absent maintenance, each gap rebuilds toward its ceiling:
+
+$$\hat{\Delta}_k(t) = 1 - \left(1 - \hat{\Delta}_k(0)\right) e^{-\gamma_k t}$$
+
+The gap stays on $[0, 1]$, the range every count-based instrument can actually report: a share of unevidenced items cannot exceed all of them. The rate $\gamma_k \ge 0$ is named and not valued.
+
+**Discovery is a separate mechanism.** It is a discrete step down that someone pays for at an artifact boundary, not drift running backwards. A departed champion is the opposite discrete event, the bargaining gap reopening at once. Between the two, the gap relaxes toward its ceiling at $\gamma_k$, and maintenance is whatever holds it down.
+
+### 5.4 Staging
+
+A buyer who commits in stages sinks $Q_m$ at gate $m$ against the residual uncertainty $x_m$ entering it:
+
+$$L_b = \sum_{m} Q_m \, \pi(x_m) \qquad \text{rather than} \qquad Q \, \pi(x_0)$$
+
+Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) carries the residual chain and the reference gates. Its stage equation is this one, read one gate at a time.
+
+---
+
+## 6. Thresholds and Positions
+
+Axiom I reads each cost against two thresholds of its own: $\tau^{self}_k$, below which the buyer can pay the cost down alone, and $\tau^{part}_k$, above which the buyer does not enter the market. Each cost's position between them is
+
+$$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
+
+| Position | Zone |
+|---|---|
+| $r_k \le 0$ | Self-serve |
+| above zero and at most one | Needs seller investment |
+| $r_k > 1$ | Keeps the buyer out |
+
+The sale starts at the largest $r_k$. The three costs are never summed, so they never need a common scale: each is compared against its own thresholds, and $r_k$ is dimensionless.
+
+**The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. Whether $\tau^{part}_k$ rises with the value at stake, so that a buyer bears a higher search cost for a bigger prize, is a structural question and it is open in [07-open-questions.md](./07-open-questions.md).
+
+---
+
+## 7. What Constitution 4.0 retired from this file
+
+Recorded so a reader who meets the old forms in an older analysis knows why they went.
+
+| Form | Why it went |
+|---|---|
+| The per-component multiplier $F_k(1 + \hat{\Delta}_k)$ and the deal-level gap $\hat{\Delta}_A$ | Capped at doubling a cost, so it could not produce the buyer exit Akerlof describes. Exit is now Axiom I's participation threshold, and uncertainty does its other work through the chance of future loss. |
+| The reduced form $y = a\hat{\Delta}_A^2 + c$ | Its convexity came from letting uncertainty raise base cost and then multiply it again. It then dropped the linear term, which is never smaller than the quadratic one on $[0, 1]$. And its $c$ was price, which Axiom I excludes. |
+| The coefficient $a = 2.25$ | Borrowed from loss aversion, which produces a kink at the reference point rather than a convex curve. The verification-beats-discounting argument it supported now follows from section 1.3 without it. |
+| Linear drift $\hat{\Delta}_k(0) + \gamma_k t$ | Unbounded, so it left the range the gaps are defined on. |
+| The summed level $\lVert \mathbf{F} \rVert_1$ and direction shares | Summed and divided scores that were never on a common scale, and the level stood in for specificity. Section 6 replaces both. |
+
+The Deal Triage Calculator was rebuilt on positions and the Milestone Valuation Model on expected loss in the same revision, and none of the retired forms survives in `models/tcg_models.py`.
+
+---
+
+## 8. Parameter Reference
 
 Every parameter in this file, and every threshold and band elsewhere in the framework, lives in [06-calibration.md](./06-calibration.md). It is the single home for them on purpose: two tables of the same values drift, and the separation is what lets the structural claims above be read without any of the numbers.
 
@@ -279,20 +338,21 @@ Nothing in that file is a measurement. Read the provenance column before quoting
 
 ---
 
-## 6. What Would Make These Models Empirical
+## 9. What Would Make These Models Empirical
 
-Five conditions, in [06-calibration.md](./06-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three component gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable and what would test the framework's central dynamic claim.
+Five conditions, in [06-calibration.md](./06-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable.
 
-Until then, treat every output as a structured comparison between deals rather than a quantity. A deal scoring 7.2 is meaningfully worse than one scoring 4.1. Neither number predicts a close date.
+Until then, treat every output as a structured comparison between deals rather than a quantity. A deal whose future loss reads 0.4 is meaningfully more exposed than one reading 0.1. Neither number predicts a close date.
 
 ---
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Axiom III carries both cost representations reconciled in Section 1.
-- [01-motions.md](./01-motions.md) — Motion selection, which consumes the calculator's level and direction rather than these models.
-- [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing $\Delta_A$.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Part III carries the two conditions.
+- [01-motions.md](./01-motions.md) — Motion selection, which consumes the positions in section 6.
+- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's condition in full, including the repeated game.
+- [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing the implementation gap.
 - [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
-- [Milestone Valuation Model](../../practice/milestone-valuation-model.md) — Applies staged uncertainty decay to MIP gate design.
-- [real-options.md](../02-research/real-options.md) — Source for the staging logic behind $\delta$ and milestone gating.
-- [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics (FAR, BCV, RMS, SVI). Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.
+- [Milestone Valuation Model](../../practice/milestone-valuation-model.md) — Applies staged uncertainty to gate design.
+- [real-options.md](../02-research/real-options.md) — Source for the staging logic.
+- [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics. Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

@@ -33,7 +33,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 *From [process-misfit.md](../../theory/02-research/process-misfit.md).*
 
-- The enforcement cost is not a property of the product or of the buyer. It is the distance between them, and distance takes two points to measure.
+- Misfit is not a property of the product or of the buyer. It is the distance between them, and distance takes two points to measure.
 - A demonstration can only fail on functionality and data. The four domains that kill implementations do not appear on a screen.
 - A deficiency asks the buyer to go without. An imposition asks a named person to work differently. Only one of those creates an enemy.
 - Codifying a workflow does not make it standard. It makes it explicit, and explicit is what a package has to match.
@@ -62,6 +62,8 @@ Citable passages, collected from the research files so the theory directory carr
 - "The single largest competitor in complex B2B sales is not a rival firm, but 'No Decision,' the decision to maintain the status quo."
 - "To overcome 1 unit of Risk, the vendor must provide approximately 2.25 units of ROI."
 - "Stop selling the upside and start solving for the fear."
+
+The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coefficient, so do not present it as one.
 
 ## Fear of failure
 
@@ -92,7 +94,7 @@ Citable passages, collected from the research files so the theory directory carr
 *From [channel-collapse.md](../../theory/02-research/channel-collapse.md).*
 
 - "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." (Jevons, 1865)
-- A channel mismatch, using a Jevons-vulnerable channel for a buyer whose binding cost is elsewhere, means the seller is fighting both channel-level congestion and structural irrelevance.
+- A channel mismatch, using a Jevons-vulnerable channel for a buyer whose sale starts at a different cost, means the seller is fighting both channel-level congestion and structural irrelevance.
 
 ## Implementation science
 

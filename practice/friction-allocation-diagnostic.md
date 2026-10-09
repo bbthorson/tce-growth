@@ -2,31 +2,31 @@
 title: "Friction Allocation Diagnostic"
 layer: practice
 status: active
-version: 1.0
+version: 1.1
 operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Friction Allocation Diagnostic
 
-**Version:** 1.0
+**Version:** 1.1
 **Audience:** Sales reps, sales leadership, marketing, anyone designing or evaluating a signal mechanism.
 **Goal:** Check whether a signal mechanism — a sales artifact, an outreach channel, a marketing asset, a third-party validator — actually reduces buyer-side uncertainty, or whether it is cheap talk dressed up as effort.
 
-**Canonical Reference:** [TCG Constitution, Axiom III — Law of Uncertainty Inflation](../theory/01-foundation/00-tcg-constitution.md). The four principles are primary derivations of Axiom III.
+**Canonical Reference:** [TCG Constitution, Axiom III — Law of Future Cost](../theory/01-foundation/00-tcg-constitution.md). The four principles are primary derivations of Axiom III.
 
 | | |
 |---|---|
 | **Inputs** | A signal mechanism: a sales artifact, a channel for outreach, a piece of marketing collateral, an evaluation by a third-party adjudicator (e.g., a ratings firm). |
 | **Outputs** | A pass/fail diagnosis against the four principles, with named violations and prescribed fixes. |
-| **When to run** | (1) Designing a new artifact or process. (2) Diagnosing why an existing signal mechanism isn't producing the expected $\Delta_A$ reduction. (3) Evaluating channels or platforms before committing to them. |
+| **When to run** | (1) Designing a new artifact or process. (2) Diagnosing why an existing signal mechanism isn't closing the gap it was built to close. (3) Evaluating channels or platforms before committing to them. |
 | **Owner** | Whoever is designing or selecting the mechanism (sales, marketing, sales leadership, RevOps). |
 
 ---
 
 ## The four principles
 
-A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when all four principles hold. If even one fails, the signal is debaseable, miscalibrated, misallocated, or unaccountable — and will not deliver durable friction reduction.
+A signal mechanism closes a gap, and so lowers the chance of future loss under Axiom III, only when all four principles hold. If even one fails, the signal is debaseable, miscalibrated, misallocated, or unaccountable — and will not deliver durable friction reduction.
 
 ### Principle 1 — Friction must be non-automatable
 
@@ -70,21 +70,21 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 ### Principle 3 — Friction scales with stakes
 
-**The principle.** The signal cost should match the size of the claim. A small claim requires modest signal; a large claim requires substantial signal. Mismatch fails in both directions — over-frictioned small claims feel disproportionate, under-frictioned large claims feel reckless.
+**The principle.** The signal cost should match the size of the claim. A small claim requires modest signal; a large claim requires substantial signal. Mismatch fails in both directions — over-frictioned small claims feel disproportionate, under-signaled large claims feel reckless.
 
 **Test.** What is the financial / strategic / political stake of the buyer's decision, and what is the cost of the signal you're producing? Are they proportional?
 
 | Stake | Signal cost | Verdict |
 |---|---|---|
 | $50K SaaS deal | 30-min discovery call | Proportional |
-| $5M ERP deal | 30-min discovery call | Wildly under-frictioned |
+| $5M ERP deal | 30-min discovery call | Wildly under-signaled |
 | $50K SaaS deal | Three-month paid pilot | Over-frictioned |
 | $5M ERP deal | Three-month paid pilot | Proportional |
-| Buyer asks for pilot/POC at any stake | Anything less than implementation-led motion | Under-frictioned (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
+| Buyer asks for pilot/POC at any stake | Anything less than implementation-led motion | Under-signaled (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
 
-**Common violations.** A Structural deal sold with Turnkey-grade signals (under-frictioned). A Turnkey deal sold with Structural-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
+**Common violations.** A deal with specific exposure sold with self-serve-grade signals (under-signaled, and headed for the unallocated failure). A deal where nothing specific is sunk sold with governance-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
 
-**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) returns a level and a direction. The signal's weight should scale to the level, and the component it targets should match the direction.
+**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) returns where the sale starts and whether anything specific is sunk. The signal's weight should scale to the stakes and the specific exposure, and the cost it targets should be the one where the sale starts.
 
 ---
 
@@ -105,7 +105,7 @@ A signal mechanism reduces the asymmetry multiplier $(1 + \Delta_A)$ only when a
 
 **Common violations.** Pay-per-send platforms. Volume-based ad networks. Ratings agencies funded by the rated. Reputation systems that don't depreciate (the KLAS "coast on residual brand" pattern). Internal review processes where reviewers face no consequences for approving bad deals.
 
-**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom II: Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md).
+**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom III: Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md).
 
 ---
 
@@ -124,7 +124,7 @@ If any answer is no, redesign before launching.
 
 ### Use case 2 — Diagnosing a failing signal mechanism
 
-When an artifact, channel, or campaign isn't producing the expected results (low reply rates, no $\Delta_A$ reduction, deals stalling), walk through the four principles to identify the failed one:
+When an artifact, channel, or campaign isn't producing the expected results (low reply rates, no gap closing, deals stalling), walk through the four principles to identify the failed one:
 
 | Symptom | Likely violation |
 |---|---|
@@ -157,13 +157,13 @@ The principles look like a list, but they cover the necessary and sufficient con
 | 3 (scales with stakes) | Is the cost calibrated to the claim? |
 | 4 (adjudicator skin) | Does the validation mechanism stay honest over time? |
 
-If all four hold, $\Delta_A$ shrinks. If any one fails, it doesn't — regardless of how well the others hold. They are conditions, not optimizations.
+If all four hold, the gap shrinks. If any one fails, it doesn't — regardless of how well the others hold. They are conditions, not optimizations.
 
 ---
 
 ## Related
 
-- **Theory:** [TCG Constitution — Axiom III (Law of Uncertainty Inflation) and the Friction Allocation Principles](../theory/01-foundation/00-tcg-constitution.md).
+- **Theory:** [TCG Constitution — Axiom III (Law of Future Cost) and the Friction Allocation Principles](../theory/01-foundation/00-tcg-constitution.md).
 - **Channel evaluation:** [channel-collapse.md](../theory/02-research/channel-collapse.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
-- **Adjudicator design:** [Constitution Axiom II — Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md) describes how to design demurrage into adjudicator structures.
+- **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md) describes how to design demurrage into adjudicator structures.
 - **Deal-level scoring:** [Deal Triage Calculator](./deal-triage-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.

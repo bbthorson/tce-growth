@@ -2,14 +2,14 @@
 title: "The Red Team Protocol (The Validator)"
 layer: practice
 status: active
-version: 2.0
+version: 2.1
 operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Red Team Protocol (The Validator)
 
-Version: 2.0  
+Version: 2.1  
 Motion: **Implementation-led**. Second of four artifacts, after the Blueprint.  
 Audience: Technical Evaluators / End Users / Skeptics  
 Goal: To convert "Rational Fear" into "Confidence" and identify the Saboteur.
@@ -174,7 +174,7 @@ Today, we are going to use a method called **'Prospective Hindsight.'** We are g
 
 **Critical Decision:** If the answer reveals that the workflow is undefined or fundamentally broken, **STOP.**  
 
-**Action:** This is **Quadrant III: The Chaos Trap.** Redirect to Consulting to define the SOP before attempting to sell software.
+**Action:** This is **the Chaos Trap**, Level 1 of the [Deal Triage Calculator](../deal-triage-calculator.md)'s workflow maturity gate. Redirect to Consulting to define the SOP before attempting to sell software.
 
 ---
 
@@ -222,7 +222,7 @@ Ready to draft Asset \#3: The Mutual Implementation Plan (MIP)?
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — The Red Team primarily addresses $F_{implementation}$ forecasting and reduces Buyer Uncertainty ($I_{buyer}$) through costly signals satisfying the Single Crossing Property.
+- **Theory:** [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — The Red Team is verification. It reduces Buyer Uncertainty ($I_{buyer}$) through costly signals satisfying the Single Crossing Property, meaning signals only a capable seller can afford to produce, and so lowers the buyer's chance of future loss. A discount would only move price.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Implementation Process / Engaging constructs.
 - **Academic backing:** [costly-signals.md](../../theory/02-research/costly-signals.md), [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) (inverted RE-AIM is the workshop's structure).
 - **Prerequisite:** [01-discovery-contextual-blueprint.md](./01-discovery-contextual-blueprint.md) — You stress-test what discovery surfaced.
