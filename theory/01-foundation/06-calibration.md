@@ -47,7 +47,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
-| Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The theory states the threshold exists. The field instrument places it as a band edge when the calculator is rebuilt. |
+| Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The theory states the threshold exists. The field instrument places it as an edge on each count, section 3.2. |
 | Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. Whether it rises with the value at stake is open. |
 | Floor on the chance of loss | $\pi_0$ | — | **Named, not valued.** That a floor above zero exists is structurally motivated by the return-variance floor in section 2.3 of the math file. No value is offered. |
 | Shape of the chance of loss | — | straight line | **Chosen.** A placeholder between floor and ceiling. No curvature is claimed. |
@@ -66,33 +66,27 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 | Technical overlap weight | $\gamma_{TO}$ | 0.20 | **Chosen.** Field refinement, not core theory. |
 | Responsiveness factor | $\gamma_r$ | 0.5 | **Chosen.** Staging logic follows from Dixit and Pindyck (1994). The value does not. |
 
-**Retiring.** Constitution 4.0 removed the reduced form $y = a\hat{\Delta}_A^2 + c$ from the theory, and with it three parameters. Two are gone from the model already: the convexity exponent and the base friction growth rate $b$. The third stays in the model only until the instrument that still uses it is rebuilt.
-
-| Parameter | Symbol | Value | Provenance |
-|---|---|---|---|
-| Friction-asymmetry coupling | $a$ | 2.25 | **Anchored by analogy, retiring.** Borrowed from the loss aversion coefficient (Tversky and Kahneman 1992), which produces a kink at the reference point rather than a convex curve. Still used by the [Milestone Valuation Model](../../practice/milestone-valuation-model.md) stage equation until that model is rebuilt on expected loss. Do not use it anywhere new. |
+**Retired in Constitution 4.0.** The reduced form $y = a\hat{\Delta}_A^2 + c$ took three parameters with it: the coefficient $a = 2.25$, anchored by analogy to loss aversion, the convexity exponent, and the base friction growth rate $b$. The Deal Triage Calculator's score bands, level range, Structural boundary, addends, divergence modifier and dominance threshold went when the calculator was rebuilt on positions. [02-mathematical-models.md](./02-mathematical-models.md) section 7 records why. None of them is in the model.
 
 ### 3.2 The triage instrument ([Deal Triage Calculator](../../practice/deal-triage-calculator.md))
 
-Every input to this instrument is a count of a named thing. Everything in this table is what converts those counts into scores, and it is the layer where the arbitrariness that counting removed comes back.
+Every input to this instrument is a count of a named thing, and each count is read against two edges of its own. The edges are where the arbitrariness that counting removed comes back. Each is placed on a boundary of the score bands earlier versions used, so that a reader comparing old and new readings can see where the line moved, and that placement is the only argument behind any of them.
+
+| Cost | Self-serve edge | Participation edge | Provenance |
+|---|---|---|---|
+| Search, alternatives to rule out | 4 | 8 | **Chosen.** The top of the old 3-to-4 band and the bottom of the old 8-or-more band. |
+| Consensus, decision roles that can say no plus any formal body | 1 | 7 | **Chosen.** The old single-veto band and the bottom of the old 7-or-more band. |
+| Implementation, integration points plus changed workflows plus undocumented exceptions | 2 | 11 | **Chosen.** The top of the old 0-to-2 band and the bottom of the old 11-or-more band. |
 
 | Parameter | Value | Provenance |
 |---|---|---|
-| Component score range | $[0, 10]$ | **Convention.** Three components on one common scale so they can be summed. |
-| Level range | $[0, 30]$ | **Convention.** Follows from the component range. |
-| Structural boundary | 15 | **Chosen.** Half the range. Carries no evidence. |
-| Search bands | 2 → 1, 3-4 → 3, 5-7 → 6, 8+ → 9 | **Chosen.** Step edges with no source. |
-| Consensus bands | 1 → 1, 2-3 → 3, 4-6 → 6, 7+ → 9 | **Chosen.** Step edges with no source. |
-| Implementation bands | 0-2 → 1, 3-5 → 3, 6-10 → 6, 11+ → 9 | **Chosen.** Step edges with no source. |
-| No-channel addend | +2 | **Chosen.** |
-| Formal-body addend | +1 | **Chosen.** |
-| Divergence modifier | 0 → 1.0, 1-2 → 1.2, 3-5 → 1.5, 6+ → 2.0 | **Chosen.** |
+| Unnamed category, or no channel | Keeps the buyer out | **Structurally motivated.** An unbounded alternative set and an unreachable seller are argued in step 1a. Neither is a count, so neither has an edge. |
+| Formal body | Counts as one veto | **Convention.** A body holds a veto and is not a person, so it joins the position count and not the evidence denominator. |
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |
-| Dominance threshold | 0.50 | **Chosen.** A discontinuity doing real work: 0.49 and 0.51 route differently on no argument. Section 5 records it as a known defect. |
 
 ### 3.2a The market reading ([The Market Reading](../../practice/00-market-reading.md))
 
-The reading reuses every band in section 3.2 and adds one structural count of its own.
+The reading reuses every edge in section 3.2 and adds one structural count of its own.
 
 | Parameter | Value | Provenance |
 |---|---|---|
@@ -105,7 +99,7 @@ The reading reuses every band in section 3.2 and adds one structural count of it
 | Parameter | Value | Provenance |
 |---|---|---|
 | Raw gap range | $[2, 10]$ | **Convention.** Two halves each on $[1, 5]$. |
-| Normalization | $(\Delta_A - 2) / 8$ | **Convention.** Maps the raw range onto $[0, 1]$, which is what both cost equations require. |
+| Normalization | $(\Delta_A - 2) / 8$ | **Convention.** Maps the raw range onto $[0, 1]$, which every equation that takes a gap requires. |
 | Dimension mapping | $f \cdot 4 + 1$ | **Convention.** Puts an unevidenced fraction onto the presentation scale. Carries no information the fraction does not. |
 | Risk band edges | 4.0, 7.0 | **Chosen.** No source. |
 | Commercial hold threshold | 7.0 | **Chosen.** No source. |
@@ -116,6 +110,8 @@ The reading reuses every band in section 3.2 and adds one structural count of it
 |---|---|---|
 | Reference resolution profile | $\mu$ = 0.25, 0.50, 0.80 | **Chosen.** The shape is the argument and the values are illustrative. |
 | Reference payment schedule | 0.25, 0.35, 0.40 of annual contract value | **Chosen.** Illustrative. The constraint that matters is that committed payment stays below value realized at every row. |
+| Reference sunk amounts | 0.10, 0.25, 0.50 of annual contract value | **Chosen.** Illustrative. The shape, small commitments early and large late, is the argument. |
+| Illustrative floor on the chance of loss | 0.05 | **Chosen.** Used only in the worked table. The theory names the floor and does not value it, and nothing in the model ships it as a default. |
 
 ### 3.5 Retrospective measures ([Friction Efficiency Index](../../practice/friction-efficiency-index.md))
 
@@ -151,9 +147,9 @@ Until then, treat every output as a structured comparison between deals inside o
 
 Recorded rather than fixed, because each fix means choosing a shape and that is a decision rather than a repair.
 
-**The bands reintroduce what counting removed.** The instrument counts named things, which fixes the ordinal problem at the input. Section 3.2 then converts those counts to scores through step functions with chosen edges. The counts are observations and the bands are not, so a component score is only as defensible as its band table.
+**The edges reintroduce what counting removed.** The instrument counts named things, which fixes the ordinal problem at the input, and since Constitution 4.0 it no longer converts them to scores. Each count is still read against two chosen edges, so a position is only as defensible as the edges behind it. The step functions are gone and the edges remain.
 
-**The dominance threshold is a cliff.** Two deals at 0.49 and 0.51 receive different instrument sets. Constitution 4.0 removes it from the theory: the sale starts at the largest position $r_k$, and two costs at the same position are run together. It stays in the calculator until the calculator is rebuilt.
+**The zone edges are cliffs.** A count one below an edge and a count one above it land in different zones. The dominance threshold carried the same defect and is gone. The zone edges carry it in a weaker form, because where the sale starts is read from positions, which are continuous, and only the zone label jumps.
 
 **The shape of the chance of loss is not identified.** The straight line between floor and ceiling is a placeholder, and nothing in the framework distinguishes it from any other increasing form. Constitution 3.0 carried the same defect as an unidentified convexity exponent on the retired reduced form.
 

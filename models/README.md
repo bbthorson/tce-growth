@@ -40,16 +40,16 @@ Formula coverage, by canonical home:
 | [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the decay rate, future loss and staging, bounded drift, and each cost's position between its thresholds. |
 | [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [consensus-friction-calculator.md](../practice/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
-| [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation, still on the retired reduced form until the model is rebuilt, and the uncertainty decay chain. |
+| [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
 | [friction-efficiency-index.md](../practice/friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
-| [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three component counts and their bands, both divergence gates and the modifier, the level and direction routing, and the frequency reading. The level, direction and per-component multiplier are retired from the theory and stay here until the calculator is rebuilt on zones. |
-| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by level and frequency, and whether the apparatus the level calls for can be amortized. |
+| [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three counts and their edges, the positions and zones, both gates and the specific-exposure reading, the routing, and the frequency reading. |
+| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, and whether the seller's investment can be amortized. |
 
 ## Nothing here is fitted, and it must stay that way
 
 Every parameter default is a reasoned starting value. `02-mathematical-models.md` states the forms are "specified, not fitted" and exist "to structure judgment, not to forecast," and the Friction Efficiency Index carries a stronger warning still.
 
-- $a = 2.25$ is anchored by analogy to prospect theory's loss aversion coefficient, and Constitution 4.0 retired it from the theory. It survives only for the Milestone Valuation Model's stage equation until that is rebuilt.
+- The calculator's edges are chosen, placed on the boundaries of the score bands earlier versions used.
 - The thresholds, the floor on the chance of future loss, and the drift rates are named and not valued, so the functions take them as arguments and ship no default.
 - $\beta = 1.35$ is chosen inside a motivated range. Only $\beta > 1$ carries literature support.
 - The Friction Efficiency Index weights have no empirical basis at all.

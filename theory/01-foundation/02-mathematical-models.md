@@ -144,7 +144,7 @@ $$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}
 
 Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items leaves its gap undefined rather than zero.
 
-**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. The current calculator reads a proxy instead, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. [07-open-questions.md](./07-open-questions.md) item 14 records the proxy until the calculator is rebuilt.
+**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. The current calculator reads a proxy instead, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. [07-open-questions.md](./07-open-questions.md) item 14 records the proxy until the consensus block reads the axiom's gap directly.
 
 **The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the decision roles' interests actually sit, and it sets the size of the bargaining cost. The gap measures what each role cannot yet see about its own exposure, and it feeds the chance of future loss. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late.
 
@@ -292,7 +292,7 @@ A buyer who commits in stages sinks $Q_m$ at gate $m$ against the residual uncer
 
 $$L_b = \sum_{m} Q_m \, \pi(x_m) \qquad \text{rather than} \qquad Q \, \pi(x_0)$$
 
-Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) carries the residual chain and the reference gates. Its stage equation still runs on the retired reduced form and is rebuilt on this one when the instruments are.
+Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) carries the residual chain and the reference gates. Its stage equation is this one, read one gate at a time.
 
 ---
 
@@ -310,7 +310,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 
 The sale starts at the largest $r_k$. The three costs are never summed, so they never need a common scale: each is compared against its own thresholds, and $r_k$ is dimensionless.
 
-**The thresholds are named, not valued, in the theory.** The field instrument places them as band edges on its counts, chosen when the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) is rebuilt. Whether $\tau^{part}_k$ rises with the value at stake, so that a buyer bears a higher search cost for a bigger prize, is a structural question and it is open in [07-open-questions.md](./07-open-questions.md).
+**The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. Whether $\tau^{part}_k$ rises with the value at stake, so that a buyer bears a higher search cost for a bigger prize, is a structural question and it is open in [07-open-questions.md](./07-open-questions.md).
 
 ---
 
@@ -326,7 +326,7 @@ Recorded so a reader who meets the old forms in an older analysis knows why they
 | Linear drift $\hat{\Delta}_k(0) + \gamma_k t$ | Unbounded, so it left the range the gaps are defined on. |
 | The summed level $\lVert \mathbf{F} \rVert_1$ and direction shares | Summed and divided scores that were never on a common scale, and the level stood in for specificity. Section 6 replaces both. |
 
-The Deal Triage Calculator and the Milestone Valuation Model still run on the level, the shares and the reduced form until they are rebuilt. Their worked examples stay valid against `models/tcg_models.py` in the meantime.
+The Deal Triage Calculator was rebuilt on positions and the Milestone Valuation Model on expected loss in the same revision, and none of the retired forms survives in `models/tcg_models.py`.
 
 ---
 

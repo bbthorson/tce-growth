@@ -30,20 +30,20 @@ Specificity is the level under Axiom II. Uncertainty is the three component gaps
 
 ---
 
-## 2. Four forms, selected by level and frequency
+## 2. Four forms, selected by specific exposure and frequency
 
-Williamson's result is that specificity and frequency together select the governance structure, and that using the wrong one is expensive in a predictable direction.
+Williamson's result is that specificity and frequency together select the governance structure, and that using the wrong one is expensive in a predictable direction. Since Constitution 4.0 the specificity reading is the [Deal Triage Calculator](../../practice/deal-triage-calculator.md)'s exposure: whether the deal sinks anything that only works here.
 
-| Level | Frequency | Governance form | What it looks like commercially |
+| Specific exposure | Frequency | Governance form | What it looks like commercially |
 |---|---|---|---|
-| Below the boundary | Any | **Market** | Standard terms, published pricing, no relationship apparatus. Classical contracting: the document is complete and the parties are strangers. |
-| At or above | One-shot | **Trilateral** | Neither side will build relational machinery for a transaction that happens once, so safeguards come from outside the pair. Fixed scope, external acceptance criteria, escrow, arbitration, a named third party who adjudicates. |
-| At or above | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
-| Far above, and rising | Continuous | **Unified** | One party absorbs the other's function. The buyer builds it internally, or the seller acquires the delivery capability. The transaction stops being a transaction. |
+| None | Any | **Market** | Standard terms, published pricing, no relationship apparatus. Classical contracting: the document is complete and the parties are strangers. |
+| Specific | One-shot | **Trilateral** | Neither side will build relational machinery for a transaction that happens once, so safeguards come from outside the pair. Fixed scope, external acceptance criteria, escrow, arbitration, a named third party who adjudicates. |
+| Specific | Recurrent | **Bilateral** | The parties safeguard each other directly and both keep their autonomy. Mutual commitments, staged gates, symmetric consequence. The [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) is an instrument of this form. |
+| Specific, and rising | Continuous | **Unified** | One party absorbs the other's function. The buyer builds it internally, or the seller acquires the delivery capability. The transaction stops being a transaction. |
 
 **The MIP is bilateral governance.** Its stated purpose is protection against hold-up, which is true and incomplete. Structurally it is a relational contract: it leaves both parties autonomous, it safeguards the relationship rather than the transaction, and its gates are the mechanism by which each repetition earns the next. That is why it works on recurring deals and reads as overhead on one-shot ones.
 
-**The fourth row is a loss condition.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom II's under-frictioned failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
+**The fourth row is a loss condition.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom III's unallocated failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
 
 ---
 

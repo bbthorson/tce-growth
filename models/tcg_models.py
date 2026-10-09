@@ -23,10 +23,9 @@ themselves: 02-mathematical-models.md states the functional forms are
   fractions of annual contract value. Its thresholds, the floor on the chance
   of future loss, and the drift rates are named and not valued, so this module
   takes them as arguments rather than shipping defaults.
-- a = 2.25 is anchored by analogy to prospect theory's loss aversion
-  coefficient. It is not a measurement. Constitution 4.0 retired it from the
-  theory with the reduced form it belonged to, and it survives here only for
-  the Milestone Valuation Model's stage equation until that model is rebuilt.
+- The edges the Deal Triage Calculator reads each count against are chosen,
+  placed on the boundaries of the score bands earlier versions used. They are
+  not measurements.
 - beta = 1.35 is chosen inside a motivated range. Only the fact that beta > 1
   carries literature support; the value does not.
 - The Friction Efficiency Index weights have no empirical basis at all.
@@ -52,8 +51,6 @@ import math
 # Read those columns before quoting any value outside this repository.
 # --------------------------------------------------------------------------
 
-A_RISK_AVERSION = 2.25       # anchored by analogy, not fitted; ACV units
-DOMINANCE_THRESHOLD = 0.50   # chosen; share at which one component dominates
 ALPHA_COORDINATION = 1.0     # normalizing convention
 BETA_COMMITTEE = 1.35        # chosen within [1.2, 2.0]
 GAMMA_TECHNICAL_OVERLAP = 0.20   # chosen field refinement
@@ -152,73 +149,12 @@ def _require_normalized(gap, caller):
     return float(gap)
 
 
-# ==========================================================================
-# practice/deal-triage-calculator.md, the level and the direction.
-# Constitution 4.0 retired both from the theory. They stay here, unchanged,
-# so the calculator's worked examples reproduce until it is rebuilt on zones.
-# ==========================================================================
-
 COMPONENTS = ("search", "consensus", "implementation")
 
-FrictionVector = collections.namedtuple(
-    "FrictionVector", "base effective direction magnitude gap dominant")
 
-
-def _check_components(f_search, f_consensus, f_implementation):
-    values = (f_search, f_consensus, f_implementation)
-    for name, value in zip(COMPONENTS, values):
-        if value < 0:
-            raise ValueError("f_{} cannot be negative".format(name))
-    return values
-
-
-def effective_cost_per_component(f_search, f_consensus, f_implementation,
-                                 gap_search, gap_consensus,
-                                 gap_implementation):
-    """The per-component multiplier, retiring with the Deal Triage Calculator.
-
-        F_effective = sum_k F_k * (1 + gap_k)
-
-    Each component is amplified by the asymmetry inside its own pair of
-    parties, and the three pairs differ: search is the buyer against the
-    market, consensus is the buyer's stakeholders against each other, and only
-    implementation is buyer against seller. Section 2.4 gives the instruments.
-
-    Every gap must be a NormalizedGap. Constitution 4.0 retired the
-    multiplier from the theory: 02-mathematical-models.md section 7.
-    """
-    values = _check_components(f_search, f_consensus, f_implementation)
-    gaps = (_require_normalized(gap_search, "effective_cost_per_component"),
-            _require_normalized(gap_consensus, "effective_cost_per_component"),
-            _require_normalized(gap_implementation,
-                                "effective_cost_per_component"))
-    return sum(f * (1.0 + g) for f, g in zip(values, gaps))
-
-
-def weighted_mean_gap(f_search, f_consensus, f_implementation,
-                      gap_search, gap_consensus, gap_implementation):
-    """The friction-weighted mean of the three gaps, retiring with the calculator.
-
-        gap_A = sum_k F_k gap_k / sum_k F_k
-
-    Constitution 4.0 retired the deal-level gap from the theory. The calculator
-    still reports it until it is rebuilt.
-
-    Undefined when base friction is zero: a deal with no cost has no
-    composition, and returning 0 there would assert symmetry that was never
-    measured.
-    """
-    values = _check_components(f_search, f_consensus, f_implementation)
-    gaps = (_require_normalized(gap_search, "weighted_mean_gap"),
-            _require_normalized(gap_consensus, "weighted_mean_gap"),
-            _require_normalized(gap_implementation, "weighted_mean_gap"))
-    base = sum(values)
-    if base == 0:
-        raise ValueError(
-            "base friction is zero, so the friction-weighted mean gap is "
-            "undefined; a deal with no cost has no composition")
-    return NormalizedGap(sum(f * g for f, g in zip(values, gaps)) / base)
-
+# ==========================================================================
+# theory/01-foundation/02-mathematical-models.md section 2.4
+# ==========================================================================
 
 def component_gap(n_items, n_evidenced):
     """A one-sided component gap, 02-mathematical-models.md section 2.4.
@@ -244,45 +180,6 @@ def component_gap(n_items, n_evidenced):
             "no items in scope, so this component's gap is undefined; "
             "section 2.4 refuses to read that as symmetry")
     return NormalizedGap(1.0 - float(n_evidenced) / n_items)
-
-
-def friction_vector(f_search, f_consensus, f_implementation,
-                    gap_search, gap_consensus, gap_implementation):
-    """Level and direction, retiring with the Deal Triage Calculator.
-
-    Constitution 4.0 replaced both with each cost's position between its own
-    thresholds, threshold_position() below. Until the calculator is rebuilt on
-    zones, its worked examples still run through this function.
-
-    Level is the L1 norm of BASE friction. It is the asset specificity Axiom II
-    bounds, a property of the deal rather than of what anyone currently knows
-    about it, so discovery does not move it.
-
-    Direction is the share of EFFECTIVE cost each component carries. It moves
-    with the work, which is the whole point of amplifying per component: under
-    one multiplier the proportions were fixed and no amount of discovery could
-    change which motion a deal needed.
-
-    `dominant` names the component holding at least DOMINANCE_THRESHOLD of
-    effective cost, or "composed" when none does. The threshold is chosen.
-    """
-    values = _check_components(f_search, f_consensus, f_implementation)
-    gaps = (gap_search, gap_consensus, gap_implementation)
-    base = sum(values)
-    if base == 0:
-        raise ValueError(
-            "base friction is zero, so the vector has no direction")
-    effective = effective_cost_per_component(*(values + gaps))
-    direction = tuple(f * (1.0 + _require_normalized(g, "friction_vector"))
-                      / effective for f, g in zip(values, gaps))
-    dominant = "composed"
-    for name, share in zip(COMPONENTS, direction):
-        if share >= DOMINANCE_THRESHOLD:
-            dominant = name
-    return FrictionVector(
-        base=values, effective=effective, direction=direction,
-        magnitude=base, gap=weighted_mean_gap(*(values + gaps)),
-        dominant=dominant)
 
 
 # ==========================================================================
@@ -972,7 +869,7 @@ def residual_uncertainty(x0, mus):
     Each mu_k applies to what remains rather than to the original gap, which is
     why the reference table's residual compounds downward rather than stepping
     linearly. x_0 is the normalized IMPLEMENTATION gap from the Asymmetry
-    Scorecard, not the deal-level weighted mean: the gates resolve
+    Scorecard, not a mean of the three gaps: the gates resolve
     implementation uncertainty specifically.
 
     A gate written so loosely that no outcome fails it resolves no uncertainty,
@@ -1007,31 +904,31 @@ def residual_schedule(x0, mus):
     return out
 
 
-def stage_surplus(p_m, v_gross_m, x_m, c_m, a=A_RISK_AVERSION):
-    """The stage equation.
+def stage_surplus(v_gross_m, c_m, q_m, x_m, floor, payment_follows_proof=True):
+    """The stage equation, on expected loss.
 
-        S_m = p_m * [V_gross,m - (a * x_m^2 + c_m)]
+        S_m = (1 - pi_m)(V_gross,m - c_m) - pi_m * Q_m
+        pi_m = floor + (1 - floor) * x_m
 
-    p_m comes from your own delivery history in comparable environments,
-    V_gross,m is the incremental value the buyer realizes on completing the
-    stage, x_m is residual uncertainty entering it, and c_m is the payment
-    allocated to it. The bracket is the reduced-form cost of section 1.2 with
-    the stage's own payment as the constant term.
+    The Constitution's future loss L = Q * pi, read one gate at a time.
+    V_gross,m is the value realized on completing the stage, c_m the payment
+    allocated to it, Q_m what the buyer sinks at this stage and cannot recover
+    if it fails, and x_m the residual uncertainty entering it.
 
-    UNITS. v_gross_m, c_m and a are all fractions of annual contract value, per
-    02-mathematical-models.md section 1.7. Passing a payment as 25 rather than
-    0.25 does not scale the answer, it reverses it. The uncertainty term drops
-    to five percent of the first gate's payment where it should be five times
-    that payment, and the model then recommends demanding everything at
-    signature. Nothing here can detect the error, because both readings are
-    arithmetically valid.
+    With payment_follows_proof, the payment is made only when the stage's
+    acceptance criteria are met, which is the model's second design rule. A
+    calendar-triggered payment is made either way, and the stage surplus falls
+    by pi_m * c_m.
 
-    `a` is anchored at 2.25 by analogy and is not fitted.
+    UNITS. Every term is a fraction of annual contract value. The floor is
+    named and not valued, so the caller supplies it.
     """
-    if not 0.0 <= p_m <= 1.0:
-        raise ValueError("a stage probability must lie on [0, 1]")
-    x_m = _require_normalized(x_m, "stage_surplus")
-    return p_m * (v_gross_m - (a * x_m ** 2 + c_m))
+    pi_m = loss_chance([x_m], floor)
+    if q_m < 0:
+        raise ValueError("what a stage sinks cannot be negative")
+    if payment_follows_proof:
+        return (1.0 - pi_m) * (v_gross_m - c_m) - pi_m * q_m
+    return (1.0 - pi_m) * v_gross_m - c_m - pi_m * q_m
 
 
 # ==========================================================================
@@ -1196,39 +1093,24 @@ def cooperation_threshold(temptation, reward, punishment):
 
 
 # ==========================================================================
-# practice/deal-triage-calculator.md (v5.0)
+# practice/deal-triage-calculator.md (v8.0)
 #
-# The instrument counts named things and converts the counts to component
-# scores through chosen bands. It emits a level and a direction rather than a
-# motion label, which is Axioms I and II kept apart.
-#
-# Two properties of the v4.2 model survive because the document still requires
-# them. The gates run before divergence and can skip it entirely, and the
-# divergence result is never added to the level: it multiplies the
-# implementation component instead, because summing size and fit would let a
-# large aligned deal and a small misaligned deal produce the same number.
-#
-# What does not survive is the market stage axis. Its three signals are now
-# three of the four search evidence items, so the information is kept and the
-# taxonomy is retired.
+# The instrument counts named things and reads each count against two edges
+# of its own: below the self-serve edge the buyer pays that cost down alone,
+# above the participation edge the cost keeps the buyer out. The counts are
+# never converted to scores or summed, so they need no common scale. A
+# separate reading says whether the deal sinks anything specific, which with
+# frequency selects the governance form. Constitution 4.0.
 # ==========================================================================
 
 CHAOS_TRAP = "Chaos Trap"
 
-TURNKEY, STRUCTURAL = "Turnkey", "Structural"
-LEVEL_MIN, LEVEL_MAX = 0, 30
-STRUCTURAL_MIN = 15          # 15 to 30 inclusive; half the range, as before
-TURNKEY_MAX = STRUCTURAL_MIN - 1
-
-# Count-to-score bands, from step 1 of the document. Each entry is an upper
-# bound on the count and the score it yields. The edges are chosen, not fitted.
-SEARCH_BANDS = ((2, 1), (4, 3), (7, 6), (None, 9))
-CONSENSUS_BANDS = ((1, 1), (3, 3), (6, 6), (None, 9))
-IMPLEMENTATION_BANDS = ((2, 1), (5, 3), (10, 6), (None, 9))
-COMPONENT_SCORE_MAX = 10
-
-# Divergence modifier on the implementation component, step 2.
-DIVERGENCE_BANDS = ((0, 1.0), (2, 1.2), (5, 1.5), (None, 2.0))
+# The two edges per cost, (self-serve, participation), as counts. Chosen, and
+# placed on the boundaries of the score bands earlier versions used. Declared
+# in 06-calibration.md section 3.2.
+SEARCH_EDGES = (4, 8)
+CONSENSUS_EDGES = (1, 7)
+IMPLEMENTATION_EDGES = (2, 11)
 
 # Gate A: must the product fit a workflow the buyer has already encoded?
 GATE_A_GREENFIELD = "greenfield"
@@ -1237,9 +1119,8 @@ GATE_A_ENCODED = "encoded"
 
 SEARCH_EVIDENCE_ITEMS = 4
 
-# Frequency, Axiom II's second selector. Step 1d. Not a count and not part of
-# the level: it selects the governance form and decides whether the apparatus
-# the level calls for can be amortized at all.
+# Frequency. Step 1d. With the exposure reading it selects the governance
+# form and decides whether the seller's investment can be amortized at all.
 ONE_SHOT, RECURRENT, CONTINUOUS = "one-shot", "recurrent", "continuous"
 FREQUENCIES = (ONE_SHOT, RECURRENT, CONTINUOUS)
 
@@ -1248,33 +1129,39 @@ TRILATERAL = "trilateral"
 BILATERAL = "bilateral"
 UNIFIED_RISK = "bilateral, watching for unified"
 
+TURNKEY = "turnkey"
+KEEPS_OUT = "keeps-out"
+ALLOCATE = "allocate"
+
 TriageResult = collections.namedtuple(
     "TriageResult",
-    "route level deal_class direction dominant vector frequency governance "
-    "flags reason")
+    "route positions zones sale_start specific exposure gaps frequency "
+    "governance flags reason")
 
 
-def governance_form(klass, frequency):
-    """Williamson's selection, on level and frequency. 05-governance-forms.md.
-
-    Below the boundary the form is market governance at any frequency: the
-    parties are strangers and the contract is complete.
-
-    At or above it, a one-shot transaction takes trilateral governance, because
-    neither party will build relational machinery for a single event and the
-    safeguards therefore have to come from outside the pair. A recurrent one
-    takes bilateral governance, where the next repetition is the safeguard and
-    the MIP is the instrument. A continuous relationship stays bilateral and
-    carries a standing question, because rising specificity eventually makes
-    the buyer's own integration beat any contract the two parties can write.
-
-    This answers a different question from the routing: not which instruments
-    run before signature, but what shape the arrangement takes after it.
-    """
+def _check_frequency(frequency):
     if frequency not in FREQUENCIES:
         raise ValueError(
             "frequency is one of {}, not {!r}".format(FREQUENCIES, frequency))
-    if klass == TURNKEY:
+
+
+def governance_form(specific, frequency):
+    """Williamson's selection, on specific exposure and frequency.
+
+    05-governance-forms.md section 2. With nothing specific sunk the form is
+    market governance at any frequency: the parties are strangers and the
+    contract is complete.
+
+    With specific exposure, a one-shot transaction takes trilateral
+    governance, because neither party will build relational machinery for a
+    single event. A recurrent one takes bilateral governance, where the next
+    repetition is the safeguard and the MIP is the instrument. A continuous
+    relationship stays bilateral and carries a standing question, because
+    rising specificity eventually makes the buyer's own integration beat any
+    contract the two parties can write.
+    """
+    _check_frequency(frequency)
+    if not specific:
         return MARKET
     if frequency == ONE_SHOT:
         return TRILATERAL
@@ -1283,55 +1170,42 @@ def governance_form(klass, frequency):
     return BILATERAL
 
 
-def apparatus_is_amortizable(klass, frequency):
-    """Whether the apparatus the level calls for has anything to amortize over.
+def apparatus_is_amortizable(specific, frequency):
+    """Whether the seller's investment has anything to amortize over.
 
-    False only for a Structural one-shot deal, which is the case the document
-    says to escalate rather than decide alone. The level says the deal needs
-    the full chain and the frequency says nothing will pay for it, and both
-    readings are correct. Running a lighter version produces the
-    under-frictioned failure with the cost already sunk.
+    False only for a specific one-shot deal, which the document says to
+    escalate: restructure it as recurring, or decline. Running a lighter
+    version produces the unallocated failure with the cost already sunk.
     """
-    if frequency not in FREQUENCIES:
-        raise ValueError(
-            "frequency is one of {}, not {!r}".format(FREQUENCIES, frequency))
-    return not (klass == STRUCTURAL and frequency == ONE_SHOT)
+    _check_frequency(frequency)
+    return not (specific and frequency == ONE_SHOT)
 
 
-def _band(count, bands, what):
-    if count < 0:
-        raise ValueError("{} cannot be negative".format(what))
-    for upper, value in bands:
-        if upper is None or count <= upper:
-            return value
-    raise AssertionError("bands must end with an open upper bound")
+def search_count(n_alternatives):
+    """n_search, step 1a: named vendors plus build plus do nothing.
 
-
-def search_score(n_alternatives, category_named=True, channel_exists=True):
-    """F_search from a count of alternatives. Step 1a.
-
-    n_alternatives counts every named vendor plus "build it internally" plus
-    "do nothing", so the floor is 2 rather than 0.
-
-    A buyer who cannot name the category scores the maximum rather than the
-    minimum. The alternative set is unbounded, not small, and reading it as a
-    short list is the misreading the document warns about twice: it is the same
-    error the retired market-stage step called reading absence of competition
-    as maturity.
-
-    No channel to the buyer adds 2. A buyer who knows the category, can name
-    five vendors, and sits behind a consortium you have no agreement with is
-    unreachable, and neither education nor a trial touches that cost.
+    The floor is 2, because building it and doing nothing are always options.
     """
     if n_alternatives < 2:
         raise ValueError(
             "the alternative count includes 'build it internally' and 'do "
             "nothing', so it cannot fall below 2")
-    score = 9 if not category_named else _band(
-        n_alternatives, SEARCH_BANDS, "the alternative count")
-    if not channel_exists:
-        score += 2
-    return min(score, COMPONENT_SCORE_MAX)
+    return n_alternatives
+
+
+def search_position(n_alternatives, category_named=True, channel_exists=True):
+    """The search position, step 3.
+
+    A buyer who cannot name the category faces an unbounded alternative set,
+    and a buyer with no path to the seller cannot reach it. Either keeps the
+    buyer out whatever the count, so the position is infinite: the cost sits
+    in the third zone and only category definition or a channel pulls it
+    back into range.
+    """
+    n = search_count(n_alternatives)
+    if not category_named or not channel_exists:
+        return float("inf")
+    return threshold_position(n, *SEARCH_EDGES)
 
 
 def search_gap(items_evidenced):
@@ -1339,31 +1213,29 @@ def search_gap(items_evidenced):
     return component_gap(SEARCH_EVIDENCE_ITEMS, items_evidenced)
 
 
-def consensus_score(n_vetoes, formal_body_required=False):
-    """F_consensus from a count of people who can say no. Step 1b.
-
-    People who attend are not people who can say no. A formal procurement
-    process, security review or board adds 1: a body is not a person and does
-    not belong in the headcount, but it holds a veto and it costs time.
-    """
+def consensus_count(n_vetoes, formal_body_required=False):
+    """n_consensus, step 1b: decision roles that can say no, plus one for a
+    formal procurement process, security review or board."""
     if n_vetoes < 1:
         raise ValueError(
             "a purchase with nobody able to say no is not a purchase; the "
             "veto count starts at 1")
-    score = _band(n_vetoes, CONSENSUS_BANDS, "the veto count")
-    if formal_body_required:
-        score += 1
-    return min(score, COMPONENT_SCORE_MAX)
+    return n_vetoes + (1 if formal_body_required else 0)
+
+
+def consensus_position(n_vetoes, formal_body_required=False):
+    """The consensus position, step 3."""
+    return threshold_position(consensus_count(n_vetoes, formal_body_required),
+                              *CONSENSUS_EDGES)
 
 
 def consensus_gap(n_vetoes, n_with_documented_objective):
-    """The consensus gap. Step 1b.
+    """The consensus gap, a proxy. Step 1b.
 
-    The denominator is the veto count, so the question is what share of the
-    people who can stop this purchase have a written statement of what they are
-    measured on. A position stated in a room containing the others is not
-    evidence: stated positions converge under social pressure and measured
-    objectives do not.
+    The denominator is the roles that can say no, without the formal body,
+    which is not a person. The measured objective is the seller's view of each
+    role, which 07-open-questions.md item 14 records as a proxy for each
+    occupant's own uncertainty about their exposure.
     """
     return component_gap(n_vetoes, n_with_documented_objective)
 
@@ -1380,84 +1252,55 @@ def implementation_count(integration_points, changed_workflows,
     return sum(parts.values())
 
 
-def divergence_modifier(divergent_steps):
-    """The step 2 modifier on the implementation component.
-
-    It multiplies one component and is never added to the level, because size
-    and fit are different quantities. Multiplying is also what makes a small
-    misaligned deal read as implementation-dominant, which is the routing the
-    document calls the Hidden Structural case.
-    """
-    return _band(divergent_steps, DIVERGENCE_BANDS, "the divergent step count")
+def implementation_position(n_impl):
+    """The implementation position, step 3."""
+    return threshold_position(n_impl, *IMPLEMENTATION_EDGES)
 
 
-def implementation_score(n_impl, divergent_steps=0):
-    """F_implementation, after the divergence modifier and the cap. Step 1c."""
-    base = _band(n_impl, IMPLEMENTATION_BANDS, "the implementation count")
-    return min(base * divergence_modifier(divergent_steps),
-               float(COMPONENT_SCORE_MAX))
-
-
-def deal_class(level):
-    """Turnkey or Structural, from the level. Step 3.
-
-    0 to 14 is Turnkey and 15 to 30 is Structural. The threshold sits at half
-    the range, which is where the retired 4-to-20 scale put it, so an archived
-    score multiplied by 1.5 is comparable. It carries no more empirical support
-    here than it did there.
-
-    This is the Axiom II level claim and it answers how much apparatus the deal
-    can carry. It does not select the motion. Direction does that.
-    """
-    if not LEVEL_MIN <= level <= LEVEL_MAX:
-        raise ValueError(
-            "the level runs {} to {}".format(LEVEL_MIN, LEVEL_MAX))
-    return TURNKEY if level <= TURNKEY_MAX else STRUCTURAL
+def exposure_count(integration_points, changed_workflows, divergent_steps):
+    """n_exposure, step 2: what the deal sinks that only works here."""
+    for name, value in (("integration points", integration_points),
+                        ("changed workflows", changed_workflows),
+                        ("divergent steps", divergent_steps)):
+        if value < 0:
+            raise ValueError("{} cannot be negative".format(name))
+    return integration_points + changed_workflows + divergent_steps
 
 
 def triage(workflow_maturity,
            n_alternatives, search_evidence,
            n_vetoes, n_with_documented_objective,
            integration_points, changed_workflows, undocumented_exceptions,
-           items_with_artifact, frequency,
+           items_with_artifact, frequency, gate_b_trialable,
            category_named=True, channel_exists=True,
            formal_body_required=False,
-           gate_a=GATE_A_ENCODED, gate_b_trialable=None, divergent_steps=None,
+           gate_a=GATE_A_ENCODED, divergent_steps=None,
            pilot_requested=False, product_automates_process=True):
     """Run the whole instrument and return a TriageResult.
 
-    Order of operations, which the document fixes and which matters:
+    Order of operations, which the document fixes:
 
-    0. The workflow maturity gate runs before anything is counted. A level 1
-       undefined workflow is a Chaos Trap when the product automates the
-       process, and the route is to stop rather than to score. A count of
-       exception paths means nothing when no path is written down.
-    1. The pilot override then applies at any level: a buyer who asks for a
-       pilot is reporting Structural-level perceived risk regardless of what
-       the counts say. It is the one place the instrument overrides the level
-       rather than only the routing, because the buyer's own read of the risk
-       is evidence the counts missed.
-    2. The three counts, then the two gates, then the divergence modifier.
-    3. Level from base friction, direction from amplified friction, and the
-       governance form from level and frequency together.
-
-    Divergence is counted only when gate A answers "encoded" and gate B answers
-    no. Where a gate passes, the modifier is skipped and the vector routes as
-    counted.
+    0. The workflow maturity gate runs before anything is counted.
+    1. The three counts, their positions, and their gaps.
+    2. The two gates and the specific-exposure reading. Gate B is answered on
+       every deal, because a buyer who can trial and walk away sinks nothing
+       specific. Divergence is counted only when gate A answers "encoded" and
+       gate B fails.
+    3. The overrides: a pilot request, then any cost that keeps the buyer out.
+    4. The two readings: every cost self-serve or not, exposure none or
+       specific. The governance form comes from exposure and frequency.
     """
     flags = []
 
     # --- Step 0: workflow maturity gate --------------------------------
     if workflow_maturity not in (1, 2, 3):
         raise ValueError("workflow maturity is scored 1, 2 or 3")
-    if frequency not in FREQUENCIES:
-        raise ValueError(
-            "frequency is one of {}, not {!r}".format(FREQUENCIES, frequency))
+    _check_frequency(frequency)
     if workflow_maturity == 1:
         if product_automates_process:
             return TriageResult(
-                route=CHAOS_TRAP, level=None, deal_class=None, direction=None,
-                dominant=None, vector=None, frequency=frequency,
+                route=CHAOS_TRAP, positions=None, zones=None, sale_start=None,
+                specific=None, exposure=None, gaps=None, frequency=frequency,
                 governance=None, flags=("chaos-trap",),
                 reason="Step 0: no written process exists and the product "
                        "automates the process. Redirect to consulting or a "
@@ -1466,106 +1309,108 @@ def triage(workflow_maturity,
     elif workflow_maturity == 2:
         flags.append("emergent-workflow-blueprint-must-reconstruct")
 
-    # --- Step 1: the three counts --------------------------------------
-    f_search = search_score(n_alternatives, category_named, channel_exists)
-    f_consensus = consensus_score(n_vetoes, formal_body_required)
+    # --- Step 1: counts, positions, gaps -------------------------------
     n_impl = implementation_count(integration_points, changed_workflows,
                                   undocumented_exceptions)
+    positions = {
+        "search": search_position(n_alternatives, category_named,
+                                  channel_exists),
+        "consensus": consensus_position(n_vetoes, formal_body_required),
+        "implementation": implementation_position(n_impl),
+    }
+    gaps = {"search": search_gap(search_evidence),
+            "consensus": consensus_gap(n_vetoes, n_with_documented_objective),
+            "implementation": component_gap(n_impl, items_with_artifact)
+            if n_impl else None}
+    zones = {k: cost_zone(r) for k, r in positions.items()}
 
-    # --- Step 2: the gates, then the divergence modifier ----------------
+    # --- Step 2: gates and exposure ------------------------------------
     if gate_a not in (GATE_A_GREENFIELD, GATE_A_PRODUCT_ABSORBS,
                       GATE_A_ENCODED):
         raise ValueError("gate A answers greenfield, product-absorbs or encoded")
-    gate_a_passed = gate_a in (GATE_A_GREENFIELD, GATE_A_PRODUCT_ABSORBS)
-    if not gate_a_passed and gate_b_trialable is None:
+    if gate_b_trialable is None:
         raise ValueError(
-            "gate A answered 'encoded', so gate B must be answered before the "
-            "divergence modifier can be applied")
-    gate_b_passed = bool(gate_b_trialable) and not gate_a_passed
-    modifier_governs = not (gate_a_passed or gate_b_passed)
-
-    if modifier_governs:
-        if divergent_steps is None:
-            raise ValueError(
-                "both gates failed, so divergence governs and the divergent "
-                "step count is required")
-        steps = divergent_steps
+            "gate B is answered on every deal: can the buyer trial against "
+            "its own work and walk away without stranding spend or data?")
+    if gate_b_trialable:
+        exposure = 0
+        flags.append("gate-b-passed-nothing-specific")
     else:
         steps = 0
-        flags.append("divergence-skipped-gate-a" if gate_a_passed
-                     else "divergence-skipped-gate-b")
+        if gate_a == GATE_A_ENCODED:
+            if divergent_steps is None:
+                raise ValueError(
+                    "gate A answered 'encoded' and gate B failed, so the "
+                    "divergent step count is required")
+            steps = divergent_steps
+        exposure = exposure_count(integration_points, changed_workflows, steps)
+    specific = exposure > 0
+    governance = governance_form(specific, frequency)
+    if not apparatus_is_amortizable(specific, frequency):
+        flags.append("specific-one-shot-escalate")
 
-    f_implementation = implementation_score(n_impl, steps)
+    def result(route, sale_start, reason, extra=()):
+        return TriageResult(
+            route=route, positions=positions, zones=zones,
+            sale_start=sale_start, specific=specific, exposure=exposure,
+            gaps=gaps, frequency=frequency, governance=governance,
+            flags=tuple(flags) + tuple(extra), reason=reason)
 
-    # --- Step 3: level and direction ------------------------------------
-    gaps = (search_gap(search_evidence),
-            consensus_gap(n_vetoes, n_with_documented_objective),
-            component_gap(n_impl, items_with_artifact))
-    vector = friction_vector(f_search, f_consensus, f_implementation, *gaps)
-    level = vector.magnitude
-    klass = deal_class(level)
-
-    # --- Step 4: overrides, then the vector -----------------------------
+    # --- Step 3: overrides ---------------------------------------------
     if pilot_requested:
-        return TriageResult(
-            route="implementation", level=level, deal_class=STRUCTURAL,
-            direction=vector.direction, dominant=vector.dominant,
-            vector=vector, frequency=frequency,
-            governance=governance_form(STRUCTURAL, frequency),
-            flags=tuple(flags + ["pilot-override"]),
-            reason="Override: the buyer asked for a pilot or proof of "
-                   "concept, which reports Structural-level perceived risk "
-                   "whatever the counts say. Pilots are governed by the Red "
-                   "Team Protocol.")
+        return result(
+            "implementation", ("implementation",),
+            "Override: the buyer asked for a pilot or proof of concept, which "
+            "reports that it cannot verify fit alone, whatever was counted. "
+            "Pilots are governed by the Red Team Protocol.",
+            ("pilot-override",))
 
-    if klass == TURNKEY:
-        if vector.dominant == "implementation" and divergence_modifier(steps) >= 1.5:
-            return TriageResult(
-                route="implementation", level=level, deal_class=klass,
-                direction=vector.direction, dominant=vector.dominant,
-                vector=vector, frequency=frequency,
-                governance=governance_form(klass, frequency),
-                flags=tuple(flags + ["hidden-structural"]),
-                reason="Hidden Structural deal: the level stays Turnkey and "
-                       "the routing does not. The installation is small, so "
-                       "every count is low, and the workflow underneath it "
-                       "matches nothing the product assumes. Level and "
-                       "direction disagree, which is the under-frictioned "
-                       "failure mode the level alone cannot see.")
-        return TriageResult(
-            route="turnkey", level=level, deal_class=klass,
-            direction=vector.direction, dominant=vector.dominant,
-            vector=vector, frequency=frequency,
-            governance=governance_form(klass, frequency), flags=tuple(flags),
-            reason="Turnkey level: the deal cannot carry heavy apparatus, so "
-                   "the gate structure would cost more than it unlocks. "
-                   "Direction is not asked below the boundary, because every "
-                   "share of a small number is still small.")
+    out = tuple(sorted(k for k, z in zones.items() if z == KEEPS_BUYER_OUT))
+    if out:
+        return result(
+            KEEPS_OUT, out,
+            "A cost keeps the buyer out of the market. Pull it back into "
+            "range with the instrument for that cost, or decline. No work on "
+            "the other two reaches it.")
 
-    if vector.dominant == "implementation" and steps == 0 and modifier_governs:
-        flags.append("possible-over-frictioning")
-    if vector.dominant == "consensus":
-        flags.append("consensus-instrument-set-is-thin")
-    if not apparatus_is_amortizable(klass, frequency):
-        flags.append("structural-one-shot-escalate")
+    # --- Step 4: the two readings --------------------------------------
+    if all(z == SELF_SERVE for z in zones.values()):
+        if specific:
+            return result(
+                ALLOCATE, None,
+                "Light sale, heavy contract: every cost is self-serve, and the "
+                "deal still sinks something that only works here. Agree "
+                "staging and stop rights before it is sunk.",
+                ("light-sale-heavy-contract",))
+        return result(
+            TURNKEY, None,
+            "Turnkey: every cost is self-serve and nothing specific is sunk. "
+            "Standard terms and self-service provisioning.")
 
+    start = sale_start(positions)
+    extra = []
+    if not specific:
+        extra.append("heavy-sale-light-contract")
+        if "implementation" in start:
+            extra.append("possible-over-frictioning")
+    elif "implementation" in start:
+        extra.append("full-chain")
+    if "consensus" in start:
+        extra.append("consensus-instrument-set-is-thin")
     reasons = {
-        "search": "Structural and search-dominant: the binding cost is the "
-                  "buyer's inability to find and compare, which education, "
-                  "reference architectures and channel work address.",
-        "consensus": "Structural and consensus-dominant: the binding cost is "
-                     "the buyer's stakeholders being unable to see each "
-                     "other's measured objectives. Note that this is the "
+        "search": "The sale starts at search: the buyer cannot yet find and "
+                  "compare on its own. Education, reference architectures, "
+                  "category definition and channel work.",
+        "consensus": "The sale starts at consensus: the buyer's decision "
+                     "roles cannot reach a decision on their own. This is the "
                      "thinnest instrument set in the repository.",
-        "implementation": "Structural and implementation-dominant: run the "
-                          "Blueprint, Red Team, MIP and Adoption Review in "
-                          "sequence.",
-        "composed": "Structural with no component at half of effective cost. Run "
-                 "the top two in proportion, heaviest first, rather than "
-                 "picking one and calling it the motion.",
+        "implementation": "The sale starts at implementation: the buyer "
+                          "cannot verify that it will work here on its own. "
+                          "Blueprint, Red Team, MIP and Adoption Review.",
     }
-    return TriageResult(
-        route=vector.dominant, level=level, deal_class=klass,
-        direction=vector.direction, dominant=vector.dominant, vector=vector,
-        frequency=frequency, governance=governance_form(klass, frequency),
-        flags=tuple(flags), reason=reasons[vector.dominant])
+    if len(start) == 1:
+        reason = reasons[start[0]]
+    else:
+        reason = ("Two costs sit at the same position, so the sale starts at "
+                  "both and they are run together: " + ", ".join(start) + ".")
+    return result("+".join(start), start, reason, extra)

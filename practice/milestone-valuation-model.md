@@ -2,7 +2,7 @@
 title: "Milestone Valuation Model"
 layer: practice
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Use when:** The Red Team has surfaced the failure modes and you are drafting the MIP's timeline and commercial terms.
 
-**Operationalizes:** Staged Commitment (Axioms II + III). Theory in the [Constitution](../theory/01-foundation/00-tcg-constitution.md), research in [real-options.md](../theory/02-research/real-options.md).
+**Operationalizes:** Staged Commitment, an Axiom III corollary. Theory in the [Constitution](../theory/01-foundation/00-tcg-constitution.md), research in [real-options.md](../theory/02-research/real-options.md).
 
 ---
 
@@ -28,26 +28,30 @@ This model is what separates a phased *project plan* from a phased *commitment*.
 
 ## The stage equation
 
-For each stage $m$, the expected surplus is:
+For each stage $m$, the buyer's expected surplus is:
 
-$$S_m = p_m \cdot \left[ V_{gross,m} - \left(a \cdot x_m^2 + c_m\right) \right]$$
+$$S_m = (1 - \pi_m)\left(V_{gross,m} - c_m\right) - \pi_m \, Q_m$$
 
 | Term | Meaning |
 |---|---|
-| $p_m$ | Probability of achieving stage $m$, from your own delivery history in comparable environments |
 | $V_{gross,m}$ | Incremental value the buyer realizes on completing stage $m$ |
-| $a$ | Risk aversion coefficient, anchored at 2.25, in annual contract values |
+| $c_m$ | Payment allocated to stage $m$, paid only when the stage's acceptance criteria are met |
+| $Q_m$ | What the buyer sinks at stage $m$ that it cannot recover if the stage fails: adaptation, staff time, anything non-refundable |
+| $\pi_m$ | The chance stage $m$ fails, from the residual uncertainty entering it: $\pi_m = \pi_0 + (1 - \pi_0)\,x_m$ |
 | $x_m$ | Residual uncertainty **entering** stage $m$, normalized to $[0, 1]$ |
-| $c_m$ | Payment allocated to stage $m$, as a fraction of annual contract value |
+
+This is the Constitution's future loss, $L = Q \cdot \pi$, read one gate at a time. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 5.2 and 5.4 carry the forms, and the straight line from the floor $\pi_0$ is a placeholder declared as chosen. Your own delivery history in comparable environments is evidence that should lower $x_m$ and the floor, and it enters there rather than as a separate probability.
 
 > [!IMPORTANT]
-> **Everything on the right of the bracket is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $a$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. Mixing the two makes the uncertainty term look like a rounding error and inverts the argument the model exists to make. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 1.7 carries the arithmetic.
+> **Every term is a fraction of annual contract value.** $V_{gross,m}$, $c_m$ and $Q_m$ share one scale, because the equation subtracts them from each other. Write payments as 0.25, never as 25. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 1.2 carries the units.
+
+**The payment sits inside the success term because rule 2 puts it there.** A payment that follows proof is only made when the stage succeeds. A payment triggered by the calendar is made either way, and the stage surplus falls to $(1 - \pi_m)V_{gross,m} - c_m - \pi_m Q_m$. The difference, $\pi_m c_m$, is what the buyer pays for the seller's delivery risk, and it is largest at the first gate.
 
 Uncertainty decays as gates clear, with each stage resolving a fraction of what remains:
 
 $$x_m = x_0 \cdot \prod_{k=1}^{m}(1 - \mu_k)$$
 
-Where $x_0$ is the normalized implementation gap from the [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) and $\mu_k$ is the fraction of remaining uncertainty that stage $k$ resolves. The gates resolve implementation uncertainty specifically, so the scorecard's gap is the right input and the deal-level mean is not.
+Where $x_0$ is the normalized implementation gap from the [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) and $\mu_k$ is the fraction of remaining uncertainty that stage $k$ resolves. The gates resolve implementation uncertainty specifically, so the scorecard's gap is the right input.
 
 ---
 
@@ -80,19 +84,22 @@ Each $\mu_m$ applies to what remains rather than to the original gap, which is w
 
 **Entering and exiting are different columns, and the equation takes the entering one.** A single residual column reads as the value after that row's gate cleared, which is the next row's input rather than its own. The two are separated here because the arithmetic below turns on which one is substituted.
 
-### What the buyer is being asked to swallow
+### Where the specific investment belongs
 
-Reading the uncertainty term against each stage's payment, at a fully open gap ($x_0 = 1$):
+At a fully open gap ($x_0 = 1$), with an illustrative floor of $\pi_0 = 0.05$ and the buyer sinking 0.85 of a year's contract value in total:
 
-| Stage | Entering $x_m$ | $a x_m^2$ | Payment | Uncertainty as a multiple of that payment |
+| Stage | Entering $x_m$ | $\pi_m$ | Sunk $Q_m$ | Expected loss $\pi_m Q_m$ |
 |---|---|---|---|---|
-| 1. Core integration | 0.750 | 1.266 | 0.25 | 5.06 |
-| 2. Pilot | 0.375 | 0.316 | 0.35 | 0.90 |
-| 3. Full rollout | 0.075 | 0.013 | 0.40 | 0.03 |
+| 1. Core integration | 0.750 | 0.763 | 0.10 | 0.076 |
+| 2. Pilot | 0.375 | 0.406 | 0.25 | 0.102 |
+| 3. Full rollout | 0.075 | 0.121 | 0.50 | 0.061 |
+| **Total** | | | **0.85** | **0.238** |
 
-**This table is the argument.** At the first gate the buyer is asked to commit a quarter of a year's contract value against uncertainty priced at five times that. By the last gate the uncertainty is worth three percent of the payment in front of it. The right to stop is worth most when least is known, which is why the refundable component belongs early and why a single signature at the top destroys the option the buyer is actually protecting.
+**This table is the argument.** The same 0.85 sunk all at signature, against the full gap, is an expected loss of 0.85. Staged with the small commitments early and the large one late, it is 0.24, under a third. Run the same three stages in the wrong order, with 0.50 sunk at core integration and 0.10 at rollout, and the loss is 0.49: staging helps, and the order of the commitments decides how much. The right to stop is worth most when least is known, which is why the small, refundable commitments belong early and why a single signature at the top destroys the option the buyer is actually protecting.
 
-It also shows what a flat payment schedule does. Charging 0.33 at every gate would ask for the same money at stage 1, where uncertainty is worth 3.8 times it, as at stage 3, where it is worth four hundredths. The buyer feels that difference whether or not either party has named it.
+The same profile prices payment timing. At the first gate a payment made before proof costs the buyer $\pi_1 c_1 = 0.763 \times 0.25 = 0.19$ of a year's contract value in expected terms. At the last gate the same rule costs $\pi_3 c_3 = 0.121 \times 0.40 = 0.05$. Payment following proof matters most exactly where sellers most want cash up front.
+
+The floor and the sunk amounts are illustrative and [06-calibration.md](../theory/01-foundation/06-calibration.md) records them as chosen. The shape is the argument and the values are not.
 
 ---
 
@@ -104,7 +111,7 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 
 **Check that payment never leads proof.** Walk the table left to right. At every row, committed payment to date should sit below value realized to date. If a row breaks that rule, the buyer is financing the seller's delivery risk, and they will find it during legal review.
 
-**Do not stage a Turnkey deal.** Gate design carries real administrative cost on both sides. Below the Structural boundary the structure destroys more surplus than the option value it preserves. Confirm with the [Deal Triage Calculator](./deal-triage-calculator.md) first.
+**Do not stage a deal that sinks nothing specific.** Gate design carries real administrative cost on both sides. Where the buyer can trial and walk away, $Q_m$ is near zero at every gate, the expected loss staging reduces is near zero too, and the structure destroys more surplus than it preserves. Confirm the exposure reading with the [Deal Triage Calculator](./deal-triage-calculator.md) first.
 
 **Quote the payment schedule in one unit and say which.** A schedule written as "25 / 35 / 40" reads as percent to a buyer and as contract values to this model. Legal review will read it the first way and the model was computed the second way. Write fractions in the model and percentages in the contract, and never carry a number from one into the other without converting it.
 
@@ -116,13 +123,14 @@ It also shows what a flat payment schedule does. Charging 0.33 at every gate wou
 - **Calendar gates.** Payment triggered by date rather than acceptance. Reintroduces unconditional commitment.
 - **Asymmetric consequence.** The buyer is bound at each gate and the seller is not. The buyer's counsel will find this, and it damages more trust than the staging built.
 - **Vanity criteria.** Acceptance conditions written so loosely that no outcome fails them. A gate that cannot fail resolves no uncertainty, so $\mu_m$ is effectively zero regardless of what the plan claims.
-- **Mixed units.** A payment entered as 25 rather than 0.25 makes the uncertainty term five percent of the first gate instead of five times it, and the model then recommends demanding everything up front. This is not a rounding difference. It reverses the conclusion.
+- **Mixed units.** A payment entered as 25 rather than 0.25 swamps every other term, and the model then reads as though value and exposure did not matter. This is not a rounding difference. It reverses the conclusion.
+- **Large commitments early.** A schedule that front-loads the buyer's adaptation sinks the most against the widest gap. The stages exist, and they protect almost nothing.
 
 ---
 
 ## Related
 
 - [real-options.md](../theory/02-research/real-options.md) — Dixit-Pindyck. Why waiting has value and staging recovers it.
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment, an Axiom II corollary.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Staged Commitment, an Axiom III corollary.
 - [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) — The artifact these gates go into.
 - [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — Supplies $x_0$.
