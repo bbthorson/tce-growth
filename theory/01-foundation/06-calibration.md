@@ -48,7 +48,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
 | Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The theory states the threshold exists. The field instrument places it as an edge on each count, section 3.2. |
-| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. Whether it rises with the value at stake is open. |
+| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. It marks the buyer's capacity to get through the cost and does not move with value, per section 6 of the math file. |
 | Floor on the chance of loss | $\pi_0$ | — | **Named, not valued.** That a floor above zero exists is structurally motivated by the return-variance floor in section 2.3 of the math file. No value is offered. |
 | Shape of the chance of loss | — | straight line | **Chosen.** A placeholder between floor and ceiling. No curvature is claimed. |
 | How a party's gaps combine | — | arithmetic mean | **Chosen.** No source. |

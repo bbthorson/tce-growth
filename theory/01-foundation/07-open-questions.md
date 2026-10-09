@@ -30,8 +30,6 @@ This register consolidates. Where a file already carries its own "what this does
 
 **6. The market reading has a draft and no worked case.** Axiom I's motion is chosen across a buyer population, and Axiom II's pursuit corollary decides whether to enter it, which are organizational decisions. Without a reading of the population, the choice of motion is made by imitation, the organization-level failure the Constitution names. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.1 derives what the reading must contain, and [The Market Reading](../../practice/00-market-reading.md) is its first draft: each cost's position across the population, where the sale starts, the exposure reading, the seller's cost to serve by cost, and pursue, restructure or decline. *Settled by:* a worked scenario on two anonymized EHR-integration populations, and a book of deal readings checked against the market reading they sit under.
 
-**30. Whether the participation threshold rises with the value at stake.** Constitution 4.0 gives each cost a threshold above which the buyer stays out of the market. A buyer plausibly bears a higher search cost for a bigger prize, which would make the threshold a function of $V_{switch}$ and put value into Axiom I's gate. *Settled by:* a stated argument either way, then a test across populations entered and declined. [02-mathematical-models.md](./02-mathematical-models.md) section 6.
-
 ---
 
 ## Axiom II, investment
@@ -90,13 +88,14 @@ Constitution 4.0 made investment an axiom of its own, and no entry has been file
 
 ---
 
-## Closed in 4.0
+## Closed since 4.0
 
 - **8. The level conflated specificity with size.** The summed level retired, and specific exposure is now read on its own count, in Step 2 of the [Deal Triage Calculator](../../practice/deal-triage-calculator.md).
 - **16. The coefficient $a$ crossed three boundaries by analogy.** It retired with the reduced form it sat in, and the case for verification over discounting now follows from price cancelling between the two conditions.
 - **25. The equation stopped at signature.** The two conditions carry each party's expected future loss, its rebuild and its staging over gates, and recurrence enters through price and delivery cost summed over renewals. What remains of the time index is item 7.
 - **26. The notation carried the field names.** 4.0 decided to keep the field subscripts, and the Constitution states why: the field names say what a seller experiences and Dahlman's say what the cost is.
 - **13. The research file presented the decomposition as inherited.** [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) now credits Coase with the question, Dahlman with the three costs and Williamson with the split by time, and names what the framework adds.
+- **30. Whether the participation threshold rises with the value at stake.** Settled after 4.0, on 2026-10-09: it does not. The threshold marks the buyer's capacity to get through a cost, and value lives in the buyer's condition, where a bigger prize funds the investment that pulls a cost back under the threshold. [02-mathematical-models.md](./02-mathematical-models.md) section 6 carries the argument and its falsifier.
 
 ---
 
