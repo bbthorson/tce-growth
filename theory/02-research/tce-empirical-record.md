@@ -2,7 +2,7 @@
 title: "The TCE Empirical Record and Its Critiques"
 layer: theory
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -38,8 +38,8 @@ These sources reached the repository through an external review of the framework
 - Subscription pricing was adopted mainly for reasons other than governance.
 
 **Where this bites in TCG:**
-- **Axiom II, Law of Asset Specificity.** Supported. The specificity result is the robust one, and the level, read on base cost from counts, is the framework's answer to the measurement critique.
-- **Axiom III, Law of Uncertainty Inflation.** Exposed. The framework's uncertainty claim sits on the record's weakest result. The counting instruments were built against the measurement critique, and the account of when trust and joint problem-solving substitute for the instruments is not yet written. [07-open-questions.md](../01-foundation/07-open-questions.md) records both.
+- **Axiom III, Law of Future Cost, the specificity half.** Supported for governance form only. The robust result is that specificity predicts which governance structure parties choose, mostly in make-or-buy and procurement settings. It does not establish that specificity raises the cost of transacting, which is why Constitution 4.0 reads specificity as exposure rather than as cost.
+- **Axiom III, Law of Future Cost, the uncertainty half.** Exposed. The framework's uncertainty claim sits on the record's weakest result. The counting instruments were built against the measurement critique, and the account of when trust and joint problem-solving substitute for the instruments is not yet written. [07-open-questions.md](../01-foundation/07-open-questions.md) records both.
 - **The third standing assumption.** Descriptive, not normative, and the Constitution now says so against Ghoshal and Moran. The seat ledger in [08-from-axioms-to-instruments.md](../01-foundation/08-from-axioms-to-instruments.md) records each occupant's reservation and the arrangement's answer to it, which is the cooperative reading built into an instrument.
 - **The coefficient $a$.** List's results are recorded on its row in [06-calibration.md](../01-foundation/06-calibration.md) as evidence against the transfer. Convexity stays as the structural claim and the number stays as an illustration.
 - **The moat in [04-seller-surplus-model.md](../01-foundation/04-seller-surplus-model.md) section 7.2.** Farrell and Klemperer are why the information asset is stated alongside lock-in rather than instead of it.

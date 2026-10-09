@@ -140,12 +140,17 @@ swap:
   net retained revenue: Net Revenue Retention
   Net Retained Revenue: Net Revenue Retention
   Law of Economic Boundaries: Law of Transaction Cost Composition
-  Law of Friction: Law of Uncertainty Inflation
-  Law of Asymmetry Convergence: Law of Uncertainty Inflation
-  Law of Bilateral Governance: "the governance corollary of Axiom II (Law of Asset Specificity)"
-  Law of Aligned Adjudication: "the governance corollary of Axiom II (Law of Asset Specificity)"
+  Law of Friction: Law of Future Cost
+  Law of Asymmetry Convergence: Law of Future Cost
+  Law of Bilateral Governance: "the governance corollary of Axiom III (Law of Future Cost)"
+  Law of Aligned Adjudication: "the governance corollary of Axiom III (Law of Future Cost)"
   Law of Commercial Friction: Law of Transaction Cost Composition
-  Law of The Boundary: "the Boundary Condition (Axiom II), or the Workflow Maturity Gate for the workflow-definition half"
+  Law of The Boundary: "the gate (an Axiom III corollary since v4.0), or the Workflow Maturity Gate for the workflow-definition half"
+  # Retired axiom names (v4.0, 2026-10). Axiom II stopped being specificity and
+  # became investment, and specificity moved into Axiom III with uncertainty.
+  # The Constitution's version history names both inside a vale-off block.
+  Law of Asset Specificity: "Law of Future Cost (specificity is Axiom III since v4.0; Axiom II is the Law of Transaction Investment)"
+  Law of Uncertainty Inflation: "Law of Future Cost (Axiom III since v4.0)"
   Law of Prospective Hindsight: "the Red Team protocol (the framework has three axioms, not six)"
   n_viable: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"
   n_max: "k > k_threshold and F_deployed ~ k (the v13 boundary condition)"

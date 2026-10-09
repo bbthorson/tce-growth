@@ -86,7 +86,7 @@ Whenever you rename an axiom, retire an equation variable, or renumber a directo
 <!-- vale TCG.RetiredTerms = NO -->
 ```yaml
 swap:
-  Law of Friction: Law of Uncertainty Inflation
+  Law of Friction: Law of Future Cost
 ```
 <!-- vale TCG.RetiredTerms = YES -->
 

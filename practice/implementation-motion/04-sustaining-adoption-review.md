@@ -3,7 +3,7 @@ title: "The Sustaining Adoption Review (The Proof)"
 layer: practice
 status: active
 version: 1.1
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -161,7 +161,7 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom II (Law of Asset Specificity), governance corollary, and Axiom III's second clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both Axiom III's second clause applied after signature.
+- **Theory:** [TCG Constitution, Axiom III (Law of Future Cost), its governance corollary and its rebuild clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both the rebuild clause applied after signature.
 - **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension.
 - **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact audits commitments the MIP created.

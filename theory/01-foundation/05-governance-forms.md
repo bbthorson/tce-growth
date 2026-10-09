@@ -3,7 +3,7 @@ title: "Governance Forms"
 layer: theory
 status: active
 version: 1.2
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 

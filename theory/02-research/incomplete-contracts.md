@@ -2,7 +2,7 @@
 title: "Incomplete Contracts and Residual Control Rights"
 layer: theory
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -34,8 +34,8 @@ This is the theoretical layer beneath Williamson's hold-up problem. Williamson e
 - Reducing the space of unspecified states is itself a governance intervention, distinct from reallocating control within that space.
 
 **Supports in TCG:**
-- **Axiom II — Law of Asset Specificity, governance corollary** — the missing theoretical layer. Skin in the game is the TCG prescription. Residual control rights are the mechanism it allocates, and a Mutual Implementation Plan is a residual control instrument.
-- **Axiom II — Law of Asset Specificity** — explains why high asset specificity forces structured intervention rather than standard contracting. The price mechanism cannot govern states no one specified.
+- **Axiom III — Law of Future Cost, governance corollary** — the missing theoretical layer. Skin in the game is the TCG prescription. Residual control rights are the mechanism it allocates, and a Mutual Implementation Plan is a residual control instrument.
+- **Axiom III — Law of Future Cost** — explains why high asset specificity forces structured intervention rather than standard contracting. The price mechanism cannot govern states no one specified.
 - **Williamson Hold-Up** — Grossman-Hart-Moore supplies the formal treatment underneath it.
 - **The Blueprint** — operationalizes the second governance intervention. By mapping the buyer's environment before commercial execution, the Blueprint shrinks the set of unspecified states rather than arguing about who controls them.
 - **The MIP** — operationalizes the first. Phase gates with joint sign-off distribute residual control across both parties, so neither can unilaterally impose an outcome when an unmapped constraint appears.

@@ -31,10 +31,10 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Mechanism design solutions require: hostages (credible commitments), deep quality measurement, and demurrage on reputation.
 
 **Supports in TCG:**
-- **Axiom III — Law of Uncertainty Inflation** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
+- **Axiom III — Law of Future Cost** — channel-level instantiation. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
 - **Friction Allocation Principles** — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
 - **Jevons Vulnerability** — direct.
-- **Axiom II — Law of Asset Specificity, governance corollary** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
+- **Axiom III — Law of Future Cost, governance corollary** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
 - **Reputation Depreciation** — demurrage on reputation is the channel-level prescription.
 - **Friction vector direction** ([01-motions.md](../01-foundation/01-motions.md)) — Jevons vulnerability is highest where the search component dominates, because that is where a channel is the instrument.
 

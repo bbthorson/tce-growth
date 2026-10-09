@@ -35,7 +35,7 @@ The last five sources reached the repository through an external review in 2026-
 - **Consensus Friction model** — direct theoretical basis for $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md). The exponent $\beta > 1$ follows from channel growth, and the variance term follows from goal heterogeneity.
 - **The Red Team Protocol** — operationalizes variance reduction. Forcing stakeholders to state failure modes aloud converts quasi-resolution into explicit trade-off, which is the only mechanism that lowers $\text{Var}(I_i)$ before signature.
 - **The Saboteur** (CFIR field mapping) — the buying center model explains why a saboteur is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
-- **Axiom II — Law of Asset Specificity, governance corollary** — intra-organizational alignment is a cooperation condition applied inside the buyer, not only across the buyer-seller boundary.
+- **Axiom III — Law of Future Cost, governance corollary** — intra-organizational alignment is a cooperation condition applied inside the buyer, not only across the buyer-seller boundary.
 
 ---
 
