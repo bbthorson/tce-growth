@@ -124,7 +124,7 @@ Weakest layer in the framework, and the only one whose parameters have no argume
 | Committee-size correction | $N^{0.5}$ | **Structurally motivated.** Direction follows from the bargaining cost rising in $N$. The exponent is chosen. |
 | Provisioning guard | +1 | **Convention.** Prevents division by zero. |
 | Change-order weight | 0.25 | **Chosen.** No source. |
-| Buyer commitment reference | 0.5 | **Convention** until twenty closed Structural deals exist, then a trailing median. |
+| Buyer commitment reference | 0.5 | **Convention** until twenty closed deals with specific exposure exist, then a trailing median. |
 | Minimum credible edge cases | 8 | **Chosen.** No source. |
 
 ---

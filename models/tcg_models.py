@@ -67,7 +67,7 @@ RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
 
 # Friction Efficiency Index composite weights, in FAR / BCV / RMS / SVI order.
 FEI_WEIGHTS = (0.35, 0.25, 0.25, 0.15)
-BCV_REF_DEFAULT = 0.5  # convention until twenty closed Structural deals exist
+BCV_REF_DEFAULT = 0.5  # convention until twenty closed deals with specific exposure exist
 
 
 # ==========================================================================
@@ -744,7 +744,7 @@ def risk_mitigation_score(n_identified, n_unresolved):
     surfacing two edge cases and closing both scores 1.00; one surfacing forty
     and closing thirty-five scores 0.875. The lazier workshop wins. Report
     n_identified next to the score every time and treat a low count as the
-    finding: below roughly eight on a genuine Structural deal the workshop did
+    finding: below roughly eight on a deal with specific exposure the workshop did
     not do its job, and the score carries no information however high it is.
     """
     if n_identified < 0 or n_unresolved < 0:
@@ -795,8 +795,8 @@ def scope_variance_index(t_actual, t_scoped, c_orders):
 def normalize_bcv(bcv, bcv_ref=BCV_REF_DEFAULT):
     """Section 5. BCV_hat = min(BCV / BCV_ref, 1).
 
-    BCV_ref is the trailing median across your last twenty closed Structural
-    deals. Until twenty exist, the default of 0.5 applies and every reported
+    BCV_ref is the trailing median across your last twenty closed deals
+    with specific exposure. Until twenty exist, the default of 0.5 applies and every reported
     figure is marked provisional.
     """
     if bcv < 0:

@@ -26,9 +26,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Re-anchoring the reference point via Cost of Inaction converts the "Safe No" into a loss frame.
 
 **Supports in TCG:**
-- **Axiom III — Law of Future Cost** — explains *why* $\Delta_A$ multiplies friction rather than reducing value. Asymmetry inflates the perceived downside via loss aversion. This is represented by the transaction cost equation $y = a\hat{\Delta}_A^2 + c$, where the risk aversion coefficient $a$ is anchored to the loss aversion coefficient ($\lambda \approx 2.25$). The anchor is an analogy and not an inheritance: $\lambda$ is measured and dimensionless, and $a$ is unfitted and carries units of annual contract value.
+- **Axiom III — Law of Future Cost** — explains why a buyer weighs a possible future loss more heavily than a matching gain, measured from the status quo. Constitution 4.0 retired the reduced form that borrowed $\lambda$ for a risk coefficient ([02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 7): loss aversion produces a kink at the reference point rather than a curve, and $\lambda$ is measured and dimensionless where the borrowed coefficient was neither.
 - **Friction Allocation Principles** — risk-mitigation tactics (fixed-price scope, paid pilots) are how friction is structured to address loss aversion.
 - **Decay Clock** — value decay over time corresponds to the buyer's reference point shifting back toward status quo as urgency fades.
-- **Akerlof Exit Threshold** — loss aversion + status quo bias explain why buyers tolerate suboptimal incumbents rather than switching.
+- **Akerlof saturation** — loss aversion + status quo bias explain why buyers tolerate suboptimal incumbents rather than switching.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

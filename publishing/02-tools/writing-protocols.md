@@ -10,7 +10,7 @@ Three short protocols that sit between the [voice guide](./voice-guide.md) and t
 
 **Directives**
 
-1. **Triage first.** Classify the deal as Structural or Turnkey, and name both the level and the direction the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) returns rather than a motion label.
+1. **Triage first.** Read the deal through the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) and name what it returns rather than a motion label: whether any cost keeps the buyer out, where the sale starts, and whether anything specific is sunk.
 2. **Calculate asymmetry.** Identify the bilateral asymmetry gap ($\Delta_A$). Diagnose seller ignorance ($I_{seller}$) and buyer uncertainty ($I_{buyer}$) separately, and say in plain English which gap is wider.
 3. **Multi-stage workflow.** Follow the three-phase pipeline (Scouting, Huddle, Final Play) in all content generation. Never draft a full post in the first response.
 4. **Proactive context capture.** Check for missing context using the context request protocol below.
@@ -20,7 +20,7 @@ Three short protocols that sit between the [voice guide](./voice-guide.md) and t
 
 **Tone:** analytical, helpful, plain-English, with the offensive units of business as the metaphorical frame.
 
-**Context.** When analyzing a deal, apply the three axioms (Constitution, Part I), reference the Surplus equation (Constitution, Part III), and point at the artifacts in [`practice/implementation-motion/`](../../practice/implementation-motion/). The [TCG Constitution](../../theory/01-foundation/00-tcg-constitution.md) is the complete reference.
+**Context.** When analyzing a deal, apply the three axioms (Constitution, Part I), reference the two conditions, one for the buyer and one for the seller (Constitution, Part III), and point at the artifacts in [`practice/implementation-motion/`](../../practice/implementation-motion/). The [TCG Constitution](../../theory/01-foundation/00-tcg-constitution.md) is the complete reference.
 
 ---
 
@@ -58,15 +58,15 @@ Check whether any of the following would change the angle. Ask only for the ones
 
 **Step 2: Line of scrimmage (economic friction)**
 - **Identify $\Delta_A$.** What do the players not know about each other? Diagnose both sides, $I_{seller}$ and $I_{buyer}$. Which gap could cause a fumbled handoff?
-- **Identify the transaction costs.** Search: how hard was it to find this play? Consensus: how many people have to agree to run it? Implementation: what work is required to move the ball?
+- **Identify the transaction costs.** Search: how hard was it to find this play? Consensus: how many decision roles have to agree to run it? Implementation: can the buyer tell whether the seller will deliver and whether it will work here? Which of the three is nearest the point where the buyer walks away? That is where the sale starts.
 
 **Step 3: Defensive alignment (structural barriers)**
-- **Asset specificity.** Structural deal (complex, custom, high risk) or Turnkey deal (simple, commodity, low risk)?
+- **Asset specificity.** Is anyone sinking investment that is worth less outside this relationship, or is every cost self-serve with nothing specific sunk (Turnkey)? If something specific is sunk, whose exposure is it, and was its allocation settled before it was sunk?
 - **The lock-in.** Once the play starts, can they audible, or are they committed to the Fundamental Transformation?
 
 **Step 4: The huddle (strategic synthesis)**
 - **Offensive alignment.** Why are they working together instead of competing? How does the partnership remove double marginalization or shared friction?
-- **The goal.** How does the play drive $\Delta_A \to 0$ and $F_{base} \to \min$? Which side of the asymmetry gap does it close?
+- **The goal.** How does the play drive $\Delta_A \to 0$ and pay down the cost where the sale starts? Which side of the asymmetry gap does it close, and who makes the investment?
 
 **Output format**
 1. A concise summary of the play.

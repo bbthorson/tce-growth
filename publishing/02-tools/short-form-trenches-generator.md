@@ -8,7 +8,7 @@ This generator is designed for a multi-stage dialogue. **Do not jump to Phase 3 
 ### Phase 1: The Scouting Report (Analysis)
 - Perform the analysis using the trenches analysis protocol in [writing-protocols.md](./writing-protocols.md).
 - Present 2-3 specific "Angles" or "Perspectives" as bullet points.
-- Identify the core economic friction ($\Delta_A$, $F_{base}$, or $\delta$) for each angle.
+- Identify the core economic friction for each angle: the gap $\Delta_A$, the cost nearest its threshold, or value decay $\delta$.
 
 ### Phase 2: The Huddle (Dialogue)
 - Ask the user: "Which of these angles hits the right note for your audience?"
@@ -44,7 +44,7 @@ This generator is designed for a multi-stage dialogue. **Do not jump to Phase 3 
 ### 4. Possible Audibles / RPO
 *Dynamic flexibility and TCG fundamentals.*
 - Admit where the "scouting report" might be wrong.
-- Return to core TCG theory (e.g., "If $\Delta_A$ doesn't drop, this play results in a sack — friction amplifies and the Decay Clock wins").
+- Return to core TCG theory (e.g., "If $\Delta_A$ doesn't drop, this play results in a sack. The gap rebuilds, the chance of a future loss climbs, and the Decay Clock wins").
 - End with a tactical takeaway for the reader (The Alibi of Rigor).
 
 ---

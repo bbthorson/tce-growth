@@ -2,7 +2,7 @@
 
 **The Event:** Healthcare Triangle (HCTI), a cloud-transformation microcap, has signed a definitive agreement to acquire **Teyame AI** for **$50 million**.  
 
-## The Friction ($\Delta_A$ & $F_{base}$)
+## The Friction ($\Delta_A$ and the three costs)
 - **Bilateral Asymmetry ($\Delta_A$):** HCTI’s market cap is roughly $16M, yet they are acquiring a $50M asset. For the market, this creates a massive asymmetry gap — high uncertainty on both sides about how a microcap can govern and integrate a "whale" that is triple its own size without a "fumbled handoff."
 - **Transaction Costs ($TC$):** The **Search & Information Costs** for HCTI to find and vet Teyame AI in the European/LATAM markets must have been astronomical. Furthermore, the **Consensus Costs** (getting shareholders to agree to this level of leverage) are the primary "Defensive Line" here.
 

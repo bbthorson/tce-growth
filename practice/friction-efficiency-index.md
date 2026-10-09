@@ -2,17 +2,17 @@
 title: "Friction Efficiency Index"
 layer: practice
 status: active
-operationalizes: [axiom-2]
+operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Friction Efficiency Index
 
-**Purpose:** To measure whether an organization is spending its implementation effort before signature or after it, and to benchmark that allocation across a book of Structural deals.
+**Purpose:** To measure whether an organization is spending its implementation effort before signature or after it, and to benchmark that allocation across a book of deals with specific exposure.
 
-**Use when:** Reviewing a closed cohort of Structural deals quarterly. This is a retrospective management instrument, not a per-deal gate.
+**Use when:** Reviewing a closed cohort of deals with specific exposure quarterly. This is a retrospective management instrument, not a per-deal gate.
 
-**Operationalizes:** Axiom II's scaling requirement ($F_{deployed} \sim k$) and Friction Allocation Principle 3 (friction scales with stakes). It measures execution of the motion rather than a term in the Surplus equation.
+**Operationalizes:** Axiom II's split of investment between the parties, Axiom III's clause that allocation is settled before the specific investment is sunk, and Friction Allocation Principle 3 (friction scales with stakes). It measures execution of the motion rather than a term in the two conditions.
 
 > [!IMPORTANT]
 > **Why this lives in `practice/` and not `theory/`.** Every model in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) supplies a functional form for a variable the Constitution already names, and that file states it introduces no new claims. The measures below do something different: they score how well an organization ran the motion. They are observations about execution, not derivations from the axioms, and placing them in the foundation would break the axioms-first rule.
@@ -30,9 +30,9 @@ $$\text{FAR} = \frac{H_{pre}}{H_{pre} + H_{post}}$$
 
 Where $H_{pre}$ is solutions-engineering and implementation hours logged before contract signature, and $H_{post}$ is the same functions' hours from signature through go-live.
 
-**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which is the under-frictioned Structural failure mode. Above 0.75, either the deal was a Turnkey deal that received implementation-chain treatment, or pre-sale work is being performed that the buyer never asked for.
+**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which risks the unallocated failure mode. Above 0.75, either a deal where every cost was self-serve received implementation-chain treatment, or pre-sale work is being performed that the buyer never asked for.
 
-**FAR is blind to scale.** An engagement spending 10 pre-sale and 5 post-sale hours scores identically to one spending 1,000 and 500. Always report FAR alongside $H_{pre} + H_{post}$, because the ratio only becomes meaningful once total effort is proportional to the deal's asset specificity. A high FAR on a trivial hour count means the deal was small, not that the motion was well run.
+**FAR is blind to scale.** An engagement spending 10 pre-sale and 5 post-sale hours scores identically to one spending 1,000 and 500. Always report FAR alongside $H_{pre} + H_{post}$, because the ratio only becomes meaningful once total effort is proportional to the deal's specific exposure. A high FAR on a trivial hour count means the deal was small, not that the motion was well run.
 
 ---
 
@@ -44,7 +44,7 @@ $$\text{BCV} = \frac{S_{dept}}{(D_{prov} + 1) \cdot N^{0.5}}$$
 
 Where $S_{dept}$ is the count of departments that supplied a named participant to Blueprint or Red Team sessions, $D_{prov}$ is calendar days from the request to the first delivered artifact or confirmed attendee, and $N$ is total committee size.
 
-**The $N^{0.5}$ denominator is a correction, not decoration.** The canvas form of this metric was $S_{dept} / (D_{prov} + 1)$, which rewards engaging more departments. That inverts Axiom III. The consensus model treats stakeholder count as a cost driver, where $F_{consensus} = \alpha N^{\beta}(1 + \text{Var})$ rises with $N$. Uncorrected, an organization could raise its score by dragging more people into rooms, which the [Consensus Friction Calculator](./consensus-friction-calculator.md) correctly scores as worse. Dividing by $\sqrt{N}$ measures mobilization speed per unit of coordination burden rather than raw breadth.
+**The $N^{0.5}$ denominator is a correction, not decoration.** The canvas form of this metric was $S_{dept} / (D_{prov} + 1)$, which rewards engaging more departments. That inverts Axiom I. The consensus model treats the count of decision roles as a cost driver, where $F_{consensus} = \alpha N^{\beta}(1 + \text{Var})$ rises with $N$. Uncorrected, an organization could raise its score by dragging more people into rooms, which the [Consensus Friction Calculator](./consensus-friction-calculator.md) correctly scores as worse. Dividing by $\sqrt{N}$ measures mobilization speed per unit of coordination burden rather than raw breadth.
 
 **What BCV actually detects.** Speed of resource commitment is a costly signal in Spence's sense. A buyer who convenes four departments in three days has spent real internal capital and cannot cheaply fake it. A buyer who takes six weeks to produce one attendee is signalling that this project sits below the line on their priority list, whatever they say on calls.
 
@@ -62,7 +62,7 @@ $$\text{RMS} = 1 - \frac{N_{unresolved}}{N_{identified}}$$
 
 **RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is the superficial Red Team failure the [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) exists to prevent, and a metric that rewards it will produce it.
 
-Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine Structural deal, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
+Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine deal with specific exposure, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
 
 ---
 
@@ -86,7 +86,7 @@ The weights sum to 1.00, so FEI is bounded on $[0, 100]$ once both normalization
 
 $$\widehat{\text{BCV}} = \min\left(\frac{\text{BCV}}{\text{BCV}_{ref}}, 1\right) \qquad \widehat{\text{SVI}} = \min(\text{SVI}, 1)$$
 
-$\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Structural deals. Until twenty deals exist, set $\text{BCV}_{ref} = 0.5$ and mark every reported figure as provisional. SVI caps at 1 because a 100 percent schedule overrun is already a total scoping failure, and allowing the term to run higher would let one catastrophic project dominate a cohort average.
+$\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed deals with specific exposure. Until twenty deals exist, set $\text{BCV}_{ref} = 0.5$ and mark every reported figure as provisional. SVI caps at 1 because a 100 percent schedule overrun is already a total scoping failure, and allowing the term to run higher would let one catastrophic project dominate a cohort average.
 
 | FEI | Reading | Action |
 |---|---|---|
@@ -102,17 +102,17 @@ $\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed Str
 
 Each was found by evaluating the formulas in [`models/tcg_models.py`](../models/tcg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
 
-**The composite is monotonic in FAR, and section 1 says it should not be.** Section 1 states that above 0.75 the organization is either treating a Turnkey deal as Structural or performing pre-sale work nobody asked for. Section 5 then weights FAR at 0.35 with no band. Holding the other three components fixed, a FAR of 0.70 scores 81.50 and a FAR of 1.00 scores 92.00. The composite rewards the state section 1 names as a failure. A fix means giving FAR a band-shaped contribution, which requires choosing how steeply to penalize each side of the band.
+**The composite is monotonic in FAR, and section 1 says it should not be.** Section 1 states that above 0.75 the organization is either running the implementation chain on a deal where every cost is self-serve or performing pre-sale work nobody asked for. Section 5 then weights FAR at 0.35 with no band. Holding the other three components fixed, a FAR of 0.70 scores 81.50 and a FAR of 1.00 scores 92.00. The composite rewards the state section 1 names as a failure. A fix means giving FAR a band-shaped contribution, which requires choosing how steeply to penalize each side of the band.
 
 **Red Team credibility is ungated in the composite.** Section 3 states that below roughly eight identified edge cases the score carries no information however high it is. Section 5 consumes RMS anyway. A workshop finding two cases and closing both scores 1.000 and reaches a composite of 86.50. One finding forty and closing thirty-five scores 0.875 and reaches 83.38. The shallower workshop wins by three points, which is the failure section 3 predicts and section 5 builds.
 
-**Half of any book caps out on Buyer Commitment Velocity.** $\text{BCV}_{ref}$ is the trailing median across the last twenty closed Structural deals, and $\widehat{\text{BCV}} = \min(\text{BCV}/\text{BCV}_{ref}, 1)$. A median splits its own population in half by definition, so half of all deals sit at exactly 1.000 on a component weighted 0.25. The component discriminates across one half of the book and not at all across the other.
+**Half of any book caps out on Buyer Commitment Velocity.** $\text{BCV}_{ref}$ is the trailing median across the last twenty closed deals with specific exposure, and $\widehat{\text{BCV}} = \min(\text{BCV}/\text{BCV}_{ref}, 1)$. A median splits its own population in half by definition, so half of all deals sit at exactly 1.000 on a component weighted 0.25. The component discriminates across one half of the book and not at all across the other.
 
 ---
 
 ## 7. What would make this empirical
 
-The same three conditions that govern [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) Section 6 apply, plus one specific to this instrument:
+The conditions in [06-calibration.md](../theory/01-foundation/06-calibration.md) section 4 that govern the theory's models apply here too. This instrument also needs four of its own:
 
 1. **Hours are logged by phase** in the professional services system, split at signature rather than reconstructed afterward.
 2. **Edge cases are recorded as structured Red Team output** rather than narrative notes, which is what makes $N_{identified}$ countable at all.

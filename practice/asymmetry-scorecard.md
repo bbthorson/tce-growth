@@ -2,7 +2,7 @@
 title: "The Bilateral Asymmetry Scorecard"
 layer: practice
 status: active
-version: 3.0
+version: 3.1
 operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
@@ -14,11 +14,11 @@ Owner: Sales Manager and Rep
 Frequency: Weekly forecast call
 **Purpose:** To measure the implementation component's gap by counting what neither side has evidence for, and to route the deal to whichever artifact closes the wider half.
 
-- **Theory:** Per Axiom III, the implementation component is amplified by $\hat{\Delta}_{implementation}$, and that gap is bilateral: $\Delta_A = I_{seller} + I_{buyer}$. The gap is a **sum**, not a difference.
+- **Theory:** Per Axiom III, what a party cannot verify decides the chance that its specific investment does not come back. The implementation gap is the one bilateral gap: $\Delta_A = I_{seller} + I_{buyer}$. The gap is a **sum**, not a difference. The buyer's future loss runs on its half, and the seller's on its own.
 - **Rule:** Above 7.0, place a commercial hold. Do not issue pricing into a gap that wide.
 
 > [!IMPORTANT]
-> **This instrument measures one component, not the deal.** Axiom III amplifies each friction component by the asymmetry inside its own pair of parties, and three components mean three pairs. Search asymmetry is the buyer against the market. Consensus asymmetry is the buyer's stakeholders against each other. This scorecard measures the third pair, seller against buyer, which is the implementation component and the only bilateral one. Substituting its output for the deal-level gap $\hat{\Delta}_A$ treats one pair's gap as though it governed all three, and it is the substitution that was standard practice before v17.0. The [Deal Triage Calculator](./deal-triage-calculator.md) emits the other two.
+> **This instrument measures one cost's gap, not the deal.** Under Axiom III each of the three costs runs between its own pair of parties, and three costs mean three gaps. The search gap is the buyer against the market. The bargaining gap is each decision role's uncertainty about its own outcome. This scorecard measures the third pair, seller against buyer, which is the implementation gap and the only bilateral one. Its output does not stand in for the other two, and the [Deal Triage Calculator](./deal-triage-calculator.md) emits them.
 
 > [!IMPORTANT]
 > **Version 3.0 counts. Version 2 rated.** Every dimension below used to be rated 1 to 5 on a rubric, and the models downstream raise their inputs to powers, which is not a defensible operation on an ordinal rating. Each dimension is now a pair of counts: how many items are in scope, and how many of those have evidence behind them. The dimension score is derived from the fraction, and the derivation is stated so the output scale is unchanged.
@@ -50,7 +50,7 @@ What we still do not know about their environment. The [Contextual Blueprint](./
 
 $$I_{seller} = \frac{1}{4}\sum_{k=1}^{4} S_k \qquad I_{seller} \in [1, 5]$$
 
-**S4 is the dimension that gets scored wrong, and it fails in a specific direction.** A rep who has found no casualty records zero items in scope and leaves the dimension blank, which reads as an absence of information rather than as a low score. That is the correct handling. A rep who instead writes "nobody loses anything" and scores 1 has asserted the highest-confidence claim on the card from the weakest evidence available, which is that nobody has mentioned it. In a Structural deal, a change that costs nobody anything is the rarer finding than a casualty nobody has named yet.
+**S4 is the dimension that gets scored wrong, and it fails in a specific direction.** A rep who has found no casualty records zero items in scope and leaves the dimension blank, which reads as an absence of information rather than as a low score. That is the correct handling. A rep who instead writes "nobody loses anything" and scores 1 has asserted the highest-confidence claim on the card from the weakest evidence available, which is that nobody has mentioned it. In a deal outside Turnkey, a change that costs nobody anything is the rarer finding than a casualty nobody has named yet.
 
 **Seller Ignorance score:** ______
 
@@ -85,9 +85,9 @@ The sum is deliberate and it corrects a documented error. An earlier version com
 
 | $\Delta_A$ | Classification | What it means | Required action |
 |---|---|---|---|
-| **2.0 to 4.0** | Low | Low technical and political risk. Standard procurement path is viable. Often a Turnkey profile. | Proceed. Lightweight MIP is sufficient. Confirm against the [Deal Triage Calculator](./deal-triage-calculator.md) that the implementation instruments are warranted at all. |
+| **2.0 to 4.0** | Low | Low technical and political risk. Standard procurement path is viable. Often a deal where every cost is self-serve. | Proceed. Lightweight MIP is sufficient. Confirm against the [Deal Triage Calculator](./deal-triage-calculator.md) that the implementation instruments are warranted at all. |
 | **4.0 to 7.0** | Moderate | Real gaps exist that will surface during deployment rather than before it. | Run an explicit Blueprint alignment phase. Hold final pricing until S2 and B3 are each at 2 or below. |
-| **7.0 to 10.0** | High | Structural profile with severe stall and post-signature failure risk. | Commercial hold. Red Team architectural audit and workflow discovery before any contract terms are issued. |
+| **7.0 to 10.0** | High | Severe stall and post-signature failure risk, usually on a deal with specific exposure. | Commercial hold. Red Team architectural audit and workflow discovery before any contract terms are issued. |
 
 ### Routing: which half is wider
 
@@ -99,11 +99,11 @@ The sum sets the risk. The balance sets the next action.
 
 ### Feeding the equations
 
-The raw gap on $[2, 10]$ does not substitute directly into the cost equations. Normalize first:
+The raw gap on $[2, 10]$ does not substitute directly into any equation. Normalize first:
 
 $$\hat{\Delta}_{implementation} = \frac{\Delta_A - 2}{8}, \qquad \hat{\Delta}_{implementation} \in [0, 1]$$
 
-Use the raw score for the bands above. Use the normalized value as the implementation component's amplifier in $F_{effective}$, and as $x_0$ in the [Milestone Valuation Model](./milestone-valuation-model.md), whose gates resolve implementation uncertainty specifically. See [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 1.5 and 2.4.
+Use the raw score for the bands above. Use the normalized value in the chance of future loss, and as $x_0$ in the [Milestone Valuation Model](./milestone-valuation-model.md), whose gates resolve implementation uncertainty specifically. It does not multiply any cost. Each half also normalizes on its own, as $(h - 1)/4$, because the buyer's loss reads $I_{buyer}$ and the seller's reads $I_{seller}$. See [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.5 and 5.2.
 
 **The normalized gap is the mean of the two unevidenced fractions.** Substituting $S_k = 1 + 4f_k$ through both halves:
 
@@ -111,7 +111,7 @@ $$\hat{\Delta}_{implementation} = \frac{\bar{f}_{seller} + \bar{f}_{buyer}}{2}$$
 
 The whole 1-to-5 presentation cancels. A deal where the seller has evidence for half of what they need and the buyer for a quarter has a normalized gap of 0.625, and that number is a share of unevidenced items rather than an average of ratings. It is worth checking the arithmetic this way when a score looks wrong: the presentation scale exists for the field bands and carries no information the fractions do not.
 
-**Do not substitute this value for $\hat{\Delta}_A$.** The deal-level gap is the friction-weighted mean of all three components' gaps, and the other two come from the Deal Triage Calculator.
+**Do not substitute this value for the other two gaps.** The bargaining gap comes from the Deal Triage Calculator and also feeds each party's chance of loss. The search gap does not feed it at all.
 
 ---
 
@@ -127,7 +127,7 @@ The whole 1-to-5 presentation cancels. A deal where the seller has evidence for 
 
 ## Related
 
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Axiom III defines the three component gaps. This card measures the implementation one.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) — Axiom III defines the three gaps and the future loss they feed. This card measures the implementation one.
 - [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — Functional forms for $I_{seller}$ and $I_{buyer}$, the normalization rule, and the three-gap table in section 2.4.
 - [Deal Triage Calculator](./deal-triage-calculator.md) — Emits the search and consensus gaps, and a provisional implementation gap this card supersedes.
 - [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) — Reduces $I_{seller}$.

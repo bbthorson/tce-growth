@@ -23,8 +23,8 @@ Five recurring arguments. Every public piece advances at least one, and each tra
 
 | Pillar | Claim | Axiom |
 |---|---|---|
-| The game has changed | The dominant transaction costs moved from external (search, evaluation) to internal (consensus, implementation). Most go-to-market teams still run plays designed for the old defense. | I |
-| Risk mitigation over features | In high-specificity markets the buyer purchases de-risked transformation. The advantage goes to whoever can credibly absorb implementation risk. | II |
+| The game has changed | Where the sale starts has moved from the external cost (search, evaluation) to the internal ones (consensus, implementation). Most go-to-market teams still run plays designed for the old defense. | I |
+| Risk mitigation over features | In high-specificity markets the buyer purchases de-risked transformation. The advantage goes to whoever can credibly absorb implementation risk. | III |
 | Governance over contracts | High asset specificity plus bounded rationality yields incomplete contracts. Durable relationships need governance structures, not just legal agreements. | III |
-| Legitimate versus opportunistic lock-in | Switching costs are earned through value creation or manufactured through data control. Regulation is removing the second option. | I |
-| Implementation as the moat | Implementation capacity, not features or pricing or compliance, is the durable differentiator. | I, III |
+| Legitimate versus opportunistic lock-in | Switching costs are earned through value creation or manufactured through data control. Regulation is removing the second option. | III |
+| Implementation as the moat | Implementation capacity, not features or pricing or compliance, is the durable differentiator, because the investment a motion demands is also its defense against entry. | I, II |

@@ -67,7 +67,7 @@ Twelve rows. Each carries a count, the source that supplied it, and a fill statu
 | S2 | Search | Alternatives a typical buyer enumerates: named vendors, plus build, plus do nothing | | |
 | S3 | Search | Whether published material lets a buyer compare those alternatives | | |
 | S4 | Search | Whether this seller holds a path to the population today: a vendor program, a marketplace, a purchasing consortium, a channel | | |
-| B1 | Bargaining | Seats the reference workflow carries at a typical buyer | | |
+| B1 | Bargaining | Decision roles the reference workflow carries at a typical buyer | | |
 | B2 | Bargaining | Whether a formal body sits over them: procurement, security review, a committee | | |
 | E1 | Enforcement | Touchpoints, counted by type | | |
 | E2 | Enforcement | Procedures a typical buyer changes at go-live | | |
@@ -76,7 +76,7 @@ Twelve rows. Each carries a count, the source that supplied it, and a fill statu
 | E5 | Enforcement | Who codified the workflow, from Step 1 | | |
 | F1 | Frequency | The population's typical reading: one-shot, recurrent or continuous | | |
 
-**Deriving B1 before any buyer is met.** The seats that police a touchpoint follow its type. Writeback brings whoever owns the record and whoever polices it, in a health system the clinical informatics and compliance seats. Enrollment brings whoever owns the operation the trigger sits in. Foundational sync brings whoever owns master data. Shared context brings security. Add whoever pays. A seat list derived this way is Inferred until deal readings confirm it, and the derivation is what lets the row be filled at all before the first conversation.
+**Deriving B1 before any buyer is met.** The decision roles that police a touchpoint follow its type. Writeback brings whoever owns the record and whoever polices it, in a health system the clinical informatics and compliance roles. Enrollment brings whoever owns the operation the trigger sits in. Foundational sync brings whoever owns master data. Shared context brings security. Add whoever pays. A decision-role list derived this way is Inferred until deal readings confirm it, and the derivation is what lets the row be filled at all before the first conversation.
 
 **Reading the counts.** Each cost is read against the same two edges the [Deal Triage Calculator](./deal-triage-calculator.md) uses, and [06-calibration.md](../theory/01-foundation/06-calibration.md) section 3.2 declares them as chosen. The counts are never converted to scores or summed.
 
@@ -121,7 +121,7 @@ Take the cost where the sale starts, both when two tie, and any cost that keeps 
 | Component | Map | Test | Stage | Maintain | Missing, 0 to 4 |
 |---|---|---|---|---|---|
 | Search | Define what the buyer chooses between | Produce proof that travels without the seller | A path with a stake, or a trial where specificity is low | Refresh the proof as the category drifts | |
-| Bargaining | Map each seat's exposure, one to one | Collect positions apart, then hear them together | Written decision criteria and sequence | Re-read seats at every occupant change | |
+| Bargaining | Map each decision role's exposure, one to one | Collect positions apart, then hear them together | Written decision criteria and sequence | Re-read decision roles at every occupant change | |
 | Enforcement | Map the buyer's environment step by step | Prove capability in their environment at the seller's cost | Gate mutual commitments with a right to stop | Re-map as the environment drifts | |
 
 Cost to serve is a count of capabilities and not a sum of money, because the seller-surplus arithmetic needs contract values this reading does not have. Two organizations with identical missing counts can face different bills, and the count says only which cost each is built to pay.
@@ -154,7 +154,7 @@ The instrument earns its place if the readings differ between a saturated popula
 | S2 | [MISSING] | [MISSING] | Saturated enumerates many, which may push search past its participation edge through entry alone. Novel cannot enumerate. |
 | S3 | [MISSING] | [MISSING] | Saturated has comparison material. Whether it lets buyers rank on evidence, or has pooled into unverifiable claims, is register item 27's question. |
 | S4 | [MISSING] | [MISSING] | Both depend on the seller's vendor-program status. |
-| B1 | [MISSING] | [MISSING] | Same touchpoint types produce the same seats. Writeback brings the record owner and compliance in both. |
+| B1 | [MISSING] | [MISSING] | Same touchpoint types produce the same decision roles. Writeback brings the record owner and compliance in both. |
 | B2 | [MISSING] | [MISSING] | A health system puts a formal body over both. |
 | E1 to E4 | [MISSING] | [MISSING] | Saturated has standardized touchpoints and lower divergence. Novel has fewer touchpoints and higher divergence, because no reference has converged. |
 | E5 | [MISSING] | [MISSING] | Saturated is codified by convention or standard. Novel is codified by each buyer. |
@@ -170,7 +170,7 @@ If both populations start the sale at the same cost with the same zones, the ins
 
 Every deal reading in the population converts rows from Inferred or Unknown to Known, and the ledger is the seller's accumulated insight about the market. Re-run this reading when the unfilled fraction moves, when the book of deal readings disagrees with it, and once a year regardless, because categories drift.
 
-Adjacent markets inherit fill through the spine. A workflow that shares typed touchpoints with one the seller already serves starts with those rows Known, and the share of its ledger inherited that way is the seller's redeployable value, per [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) section 7.5. The inheritance transfers on the enforcement rows more reliably than on the bargaining rows, because seats and policing are local to the population even when the touchpoint types are not.
+Adjacent markets inherit fill through the spine. A workflow that shares typed touchpoints with one the seller already serves starts with those rows Known, and the share of its ledger inherited that way is the seller's redeployable value, per [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) section 7.5. The inheritance transfers on the enforcement rows more reliably than on the bargaining rows, because decision roles and policing are local to the population even when the touchpoint types are not.
 
 ---
 
@@ -178,7 +178,7 @@ Adjacent markets inherit fill through the spine. A workflow that shares typed to
 
 - **No threshold on the unfilled fraction.** It is reported. A line will need data from populations that were entered and populations that were declined.
 - **The edges are chosen.** The counts are observations and the edges are not, and the calibration page says so for every edge.
-- **A typical buyer hides dispersion.** A population whose members carry two different seat structures around the same workflow is two markets, and the typical-buyer counts will average them into one. When the deal readings disagree with each other more than with the market reading, split the population.
+- **A typical buyer hides dispersion.** A population whose members carry two different decision-role structures around the same workflow is two markets, and the typical-buyer counts will average them into one. When the deal readings disagree with each other more than with the market reading, split the population.
 - **Cost to serve counts capabilities and not money.** The count says which cost an organization is built to pay. It does not say what building the missing one would cost, and the seller-surplus arithmetic does not run without contract values.
 - **The gaps are not read here.** A population whose buyers are uniformly uncertain about one component carries a future loss this reading cannot see, and the first deal readings will show it.
 - **The scenario is unfilled.** Step 7 carries predictions and no data.

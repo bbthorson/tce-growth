@@ -23,7 +23,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Adverse selection (before signing).** The buyer cannot distinguish a capable vendor from an incapable one, so they discount price toward the average. This is the failure costly signals solve.
 - **Moral hazard (after signing).** Effort becomes unobservable once work begins, on both sides. The seller can under-resource delivery; the buyer can under-resource adoption. This is the failure governance solves, not signals.
 
-Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$ measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the Blueprint and Red Team map stakeholder incentives rather than simply proving vendor capability.
+Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$, the implementation gap, measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the Blueprint and Red Team map stakeholder incentives rather than simply proving vendor capability.
 
 **Key claims:**
 - Information asymmetry without signals collapses markets to average (lemons) quality.
@@ -36,12 +36,12 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 - When all signals become production-cheap, the channel reaches a babbling equilibrium (Crawford-Sobel).
 
 **Supports in TCG:**
-- **Axiom III — Law of Future Cost** — direct theoretical basis. Friction is the signal, asymmetry is the noise.
+- **Axiom III — Law of Future Cost** — direct theoretical basis for why only costly evidence lowers the chance of future loss. Friction is the signal, asymmetry is the noise.
 - **Friction Allocation Principles** — all four principles derive from the Single Crossing Property.
 - **Single Crossing Property** — direct.
-- **Akerlof Exit Threshold** — direct.
+- **Akerlof saturation** (Axiom I failure mode) — direct.
 - **Jevons Vulnerability** — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
-- **Axiom III — Law of Future Cost, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the binding constraint, which is what the MIP's mutual resource commitments address.
+- **Axiom III — Law of Future Cost, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the problem to govern, which is what the MIP's mutual resource commitments address.
 - **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
@@ -70,4 +70,4 @@ Removing a proxy without substituting a produced signal does not reduce friction
 **Supports in TCG (proposed):**
 - **Axiom III — Law of Future Cost**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
 - **Friction Allocation Principles**: candidate fifth principle, or a refinement of existing ones. When allocating friction, prefer friction that forces tier-3/tier-4 signal production over friction that merely gates access.
-- **Δ_A in the Fundamental Equation**: tier-4 signals collapse Buyer Uncertainty ($I_{buyer}$) faster than any other mechanism, because the buyer no longer needs to resolve uncertainty before contracting. The seller has priced it.
+- **$I_{buyer}$, the buyer's half of the implementation gap**: tier-4 signals collapse Buyer Uncertainty faster than any other mechanism, because the buyer no longer needs to resolve uncertainty before contracting. The seller has priced it. Axiom III's three-levers corollary counts the guarantee itself as a transfer of future loss from buyer to seller. Its separating effect is what lowers the gap.

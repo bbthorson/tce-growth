@@ -2,12 +2,12 @@
 title: "Glossary and Notation"
 layer: theory
 status: active
-version: 1.0
+version: 1.1
 ---
 
 # Glossary and Notation
 
-**Version:** 1.0
+**Version:** 1.1
 **Purpose:** To supply one place to look up any symbol or term used in this repo, and to say where its canonical definition lives.
 
 ## How to use this file
@@ -18,34 +18,44 @@ Two rules govern what is written here, and they differ by section.
 
 **The notation index is canonical.** Symbols had no home before this file. Several are reused across documents with different meanings, and one collision was serious enough that [02-mathematical-models.md](./02-mathematical-models.md) had to stop mid-derivation to disambiguate it by hand. That is the gap this section closes. When a document introduces a new symbol, add it here in the same commit.
 
+Every symbol below matches Constitution 4.0. Symbols that 4.0 retired are collected at the end of the notation index, so a reader meeting them in an older analysis can find what replaced them.
+
 ---
 
 ## Notation index
 
-### The Surplus equation
+### The two conditions (Axiom II, with Axiom III's losses)
+
+Every term is a fraction of annual contract value, per [02-mathematical-models.md](./02-mathematical-models.md) section 1.2.
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $S$ | Deal Surplus. Must exceed 0 for a deal to close. | [Constitution, Part III](./00-tcg-constitution.md) |
-| $OC_{switching}$ | Opportunity cost of staying with the status quo. Equals $V_{effective}(t) - V_{next\_best}$. | [Constitution, Part III](./00-tcg-constitution.md) |
-| $y$ | Total perceived transaction cost, reduced form. Equals $a\hat{\Delta}_A^2 + c$, in annual contract values. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| $D(t)$ | A deal's trajectory through time, $TC(t) - OC(t)$. Stays below the ceiling only while Axiom II holds. Carries a direction, since its cost term is the friction vector. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $S_b$ | The buyer's condition. $V_{switch}(t) - P - \sum_k I^b_k - L_b$. Must exceed 0 for the buyer to go ahead. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $S_s$ | The seller's condition. $P - C_{deliver} - \sum_k I^s_k - L_s$. Must exceed 0 for the seller to go ahead. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $S_b + S_s$ | The joint surplus. Price cancels from it, because price is a transfer. | [02-mathematical-models.md §1.3](./02-mathematical-models.md) |
+| $V_{switch}(t)$ | The buyer's opportunity cost of staying where they are. Equals $V_{solution} \cdot e^{-\delta t} - V_{next\_best}$. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $P$ | Price over the relationship. Appears in both conditions and in neither party's cost of transacting. **Not the punishment payoff.** | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $C_{deliver}$ | The seller's cost of delivering against that price. Contingent on revenue. | [Constitution, Axiom II](./00-tcg-constitution.md), [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
+| $I^b_k$ | What the buyer invests today against cost $k$. Includes the buyer's adaptation work: integrations built, workflows rewired. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $I^s_k$ | What the seller invests today against cost $k$. The seller's cost of acquiring customers lives here. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $L_b$, $L_s$ | Each party's expected future loss, from Axiom III. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $W_k$ | The work against cost $k$, before it is assigned to either party. | [02-mathematical-models.md §1.4](./02-mathematical-models.md) |
+| $\theta^b_k$, $\theta^s_k$ | Each party's cost of doing one unit of $W_k$. | [02-mathematical-models.md §1.4](./02-mathematical-models.md) |
+| $w$ | The share of $W_k$ moved from buyer to seller. | [02-mathematical-models.md §1.4](./02-mathematical-models.md) |
 
 ### Seller-side terms
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $S_{seller}$ | Seller surplus. Must exceed 0 for the deal to be worth pursuing, independently of $S$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $C_{invest}$ | Pre-signature, deal-specific engineering. Sunk whether or not the deal closes. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $C_{deliver}$ | Post-signature cost to deliver what was sold. Contingent on revenue. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
+| $S_{seller}$ | Seller surplus in the seller surplus model. $S_s$ is the same condition read on a close, with $C_{invest}$ split by cost and the future loss written out. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
+| $C_{invest}$ | The seller's pre-signature, deal-specific engineering. Sunk whether or not the deal closes. The seller's case of $C^{p}_{invest}$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
 | $V_{contract}$ | Contract value the seller receives. **Seller revenue, not buyer cost.** | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $Q$ | Appropriable quasi-rent. The seller's unprotected exposure, $C_{invest} - R_{redeploy}$. | [04-seller-surplus-model.md §3](./04-seller-surplus-model.md) |
-| $R_{redeploy}$ | Value of pre-signature work redeployed to other deals. **Not $R$, the reward payoff.** | [04-seller-surplus-model.md §3](./04-seller-surplus-model.md) |
+| $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$ or $\pi_p$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
+| $R_{redeploy}$ | Value of the seller's pre-signature work redeployed to other deals. The seller's case of $R^{p}_{redeploy}$. **Not $R$, the reward payoff.** | [04-seller-surplus-model.md §3](./04-seller-surplus-model.md) |
 | $p_m$ | Probability of achieving milestone stage $m$. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
 | $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
-| $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
-| $C_{sustain}$ | Ongoing relationship investment per period. Holds $\gamma$ down; distinct from $C_{deliver}$. | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
+| $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. **Not $r_k$, a cost's position.** | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
+| $C_{sustain}$ | Ongoing relationship investment per period. Holds the gaps down, and is distinct from $C_{deliver}$. | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
 | $\rho$ | Discount rate on future periods. **A policy choice, not $\delta_{discount}$.** | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
 
 ### Value terms (second standing assumption)
@@ -54,49 +64,60 @@ Two rules govern what is written here, and they differ by section.
 |---|---|---|
 | $V_{solution}$ | Peak perceived value at the triggering event. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
 | $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
-| $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
-| $k$ | Asset specificity of the deal. | [Constitution, Axiom II](./00-tcg-constitution.md) |
-| $k_{threshold}$ | The Structural / Turnkey boundary ($k = 15$ on a 0 to 30 level). Above it, direction selects the motion. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| $F_{deployed}$ | The friction structure the seller actually deploys. Must scale with $k$. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 
-### Friction terms (Axioms I and III)
+### Costs, thresholds and positions (Axiom I)
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $\mathbf{F}$ | The friction vector. The three components treated as one object. | [01-motions.md §1](./01-motions.md) |
-| $\hat{\mathbf{F}}$ | Direction. Each component's share of effective cost, summing to 1. Selects the motion. | [01-motions.md §1](./01-motions.md) |
-| $\lVert \mathbf{F} \rVert_1$ | Level. Base friction summed. Sets the Turnkey and Structural boundary. Equals $F_{base}$. | [01-motions.md §1](./01-motions.md) |
-| $F_{base}$ | The three cost components summed, before amplification. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| $F_{effective}$ | Friction after amplification. Equals $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors into $F_{base}(1 + \hat{\Delta}_A)$. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| $F_{search}$ | Cost of locating the category and viable vendors. Splits into category search and vendor evaluation. | [01-motions.md](./01-motions.md) |
-| $F_{consensus}$ | Internal buyer alignment plus external bargaining. | [02-mathematical-models.md](./02-mathematical-models.md) |
-| $F_{implementation}$ | Deployment plus sustained change. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $F_k$ | Cost $k$ to the buyer, for $k$ in search, consensus, implementation. The three are never summed. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $F_{search}$ | The search and information cost. Which solutions exist, whether this one fits, and whether the buyer can reach the seller at all. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $F_{consensus}$ | The bargaining and decision cost. Mostly internal, among the decision roles, before any term is negotiated with the seller. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §3](./02-mathematical-models.md) |
+| $F_{implementation}$ | The policing and enforcement cost. Whether the seller will deliver what was promised, and whether it will work here. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $\tau^{self}_k$ | Self-serve threshold for cost $k$. Below it the buyer pays the cost down alone. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $\tau^{part}_k$ | Participation threshold for cost $k$. Above it the buyer does not enter the market. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $r_k$ | Cost $k$'s position between its own two thresholds, $(F_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$. Dimensionless. The sale starts at the largest. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $n_{search}$, $n_{consensus}$, $n_{impl}$ | The calculator's three counts, each read as $F_k$ against its own two edges. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| $n_{exposure}$ | Integration points, changed workflows and divergent steps. Read only where the gate fails, and never added to a cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 
-### Asymmetry terms (Axiom III)
+### Gap terms (Axiom III)
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $\Delta_A$ | Bilateral Asymmetry Gap. A **sum**, not a difference: $I_{seller} + I_{buyer}$. | [02-mathematical-models.md §2.1](./02-mathematical-models.md) |
-| $\hat{\Delta}_A$ | The deal-level gap on $[0, 1]$. The friction-weighted mean of the three component gaps. **Required before substituting into either cost equation.** | [02-mathematical-models.md §1.1](./02-mathematical-models.md) |
-| $\hat{\Delta}_k$ | A component's own gap on $[0, 1]$, for $k$ in search, consensus, implementation. Three different pairs of parties. | [02-mathematical-models.md §2.4](./02-mathematical-models.md) |
-| $\Delta_A^*$ | Akerlof Exit Threshold. Above it the buyer leaves the market entirely. | [costly-signals.md](../02-research/costly-signals.md) |
-| $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. | [02-mathematical-models.md §2.2](./02-mathematical-models.md) |
-| $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. | [02-mathematical-models.md §2.3](./02-mathematical-models.md) |
+| $\hat{\Delta}_k$ | Cost $k$'s own gap on $[0, 1]$. Three different pairs of parties. Feeds the chance of future loss and multiplies no cost. | [02-mathematical-models.md §2.4](./02-mathematical-models.md) |
+| $e_k$, $n_k$ | Items with evidence attached, and items in scope, for the count-based gaps $\hat{\Delta}_{search}$ and $\hat{\Delta}_{consensus}$. | [02-mathematical-models.md §2.4](./02-mathematical-models.md) |
+| $\Delta_A$ | The implementation gap, the one bilateral pair. A **sum**, not a difference: $I_{seller} + I_{buyer}$. | [02-mathematical-models.md §2.1](./02-mathematical-models.md) |
+| $\Delta_A^{raw}$ | The scorecard's raw implementation gap on $[2, 10]$. Normalize to $\hat{\Delta}_{implementation}$ before any equation takes it. | [02-mathematical-models.md §2.5](./02-mathematical-models.md) |
+| $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. The seller's loss runs on it. | [02-mathematical-models.md §2.2](./02-mathematical-models.md) |
+| $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. The buyer's loss runs on it. | [02-mathematical-models.md §2.3](./02-mathematical-models.md) |
+| $\Delta_A^*$ | Akerlof Exit Threshold, the research concept. In the framework, buyer exit is Axiom I's participation threshold. | [costly-signals.md](../02-research/costly-signals.md) |
 | $x_m$ | Residual uncertainty **entering** milestone stage $m$, already normalized. Not a separate quantity from $\hat{\Delta}_{implementation}$, which is where the chain starts. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
+
+### Future loss (Axiom III)
+
+| Symbol | Meaning | Defined in |
+|---|---|---|
+| $L_p$ | Party $p$'s expected future loss, $Q_p \cdot \pi_p$, for $p$ in $b$ (buyer) and $s$ (seller). A shortfall in expected return, not a second charge for the investment. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $Q_p$ | Appropriable quasi-rent. What party $p$ has sunk that is worth less outside this relationship, $C^{p}_{invest} - R^{p}_{redeploy}$. Bounds $L_p$. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $C^{p}_{invest}$ | What party $p$ has sunk in this relationship. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $R^{p}_{redeploy}$ | What party $p$ could recover by redeploying it elsewhere. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $\pi_p$ | The chance party $p$'s exposure does not come back. Rises with the gaps $p$ cannot close. Placeholder form $\pi_0 + (1 - \pi_0)\, g_p$. | [02-mathematical-models.md §5.2](./02-mathematical-models.md) |
+| $\pi_0$ | Floor on the chance of loss, above zero because some risk survives any amount of proof. Named, not valued. | [02-mathematical-models.md §5.2](./02-mathematical-models.md) |
+| $g_p$ | Mean of the normalized gaps in party $p$'s row: its own half of the implementation gap and the bargaining gap. | [02-mathematical-models.md §5.2](./02-mathematical-models.md) |
+| $Q_m$ | Quasi-rent sunk at milestone gate $m$. The staged loss is $\sum_m Q_m \, \pi(x_m)$. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
 
 ### Coefficients and parameters
 
+Every default below is unfitted. [06-calibration.md](./06-calibration.md) carries each value's provenance.
+
 | Symbol | Meaning | Default | Defined in |
 |---|---|---|---|
-| $a$ | Friction-asymmetry coupling. Anchored at 2.25 by analogy, not measurement. | 2.25 | [02-mathematical-models.md §1.6](./02-mathematical-models.md) |
-| $b$ | Rate at which base friction grows per unit of asymmetry. The derivation identifies $a$ with $b$. | measured | [02-mathematical-models.md §1.3](./02-mathematical-models.md) |
-| $c$ | Direct cost. The irreducible floor of licence fees and unavoidable deployment work. | measured | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| $\lambda$ | Loss aversion coefficient from prospect theory. **Not the same quantity as $a$.** | 2.25 | [prospect-theory.md](../02-research/prospect-theory.md) |
-| $\alpha$ | Baseline coordination overhead in the consensus model. | 1.0 | [02-mathematical-models.md §3.1](./02-mathematical-models.md) |
+| $\lambda$ | Loss aversion coefficient from prospect theory. Measured and dimensionless. No live equation in this framework takes it. | 2.25 | [prospect-theory.md](../02-research/prospect-theory.md) |
+| $\alpha$ | Baseline coordination overhead in the consensus model, the conversion into contract value. | 1.0 | [02-mathematical-models.md §3.1](./02-mathematical-models.md) |
 | $\beta$ | Organizational complexity exponent. Above 1 because channels grow as $N(N-1)/2$. | 1.35 | [02-mathematical-models.md §3.1](./02-mathematical-models.md) |
-| $N$ | Stakeholders holding veto power or evaluation responsibility. | measured | [02-mathematical-models.md §3.1](./02-mathematical-models.md) |
-| $I_i$ | Stakeholder $i$'s utility from the initiative, on $[-1, 1]$. | measured | [02-mathematical-models.md §3.2](./02-mathematical-models.md) |
-| $\text{Var}(I_i)$ | Variance in stakeholder incentive alignment, bounded above by 1. | measured | [02-mathematical-models.md §3.2](./02-mathematical-models.md) |
+| $N$ | Decision roles holding veto power or evaluation responsibility. | measured | [02-mathematical-models.md §3.1](./02-mathematical-models.md) |
+| $I_i$ | Decision role $i$'s utility from the initiative, on $[-1, 1]$. | measured | [02-mathematical-models.md §3.2](./02-mathematical-models.md) |
+| $\text{Var}(I_i)$ | Variance in decision-role incentive alignment, bounded above by 1. | measured | [02-mathematical-models.md §3.2](./02-mathematical-models.md) |
 | $TO$ | Technical overlap score on $[1, 5]$. Architectural alignment among technical evaluators. | measured | [02-mathematical-models.md §3.4](./02-mathematical-models.md) |
 | $U_{tech}$, $U_{process}$ | Unmapped technical complexity and unmapped operational variance. | measured | [02-mathematical-models.md §2.2](./02-mathematical-models.md) |
 | $w_t$, $w_p$ | Weights on the two ignorance terms, summing to 1. | 0.6, 0.4 | [02-mathematical-models.md §2.2](./02-mathematical-models.md) |
@@ -112,9 +133,8 @@ Two rules govern what is written here, and they differ by section.
 | Symbol | Meaning | Defined in |
 |---|---|---|
 | $\delta$ | Decay rate of urgency after the triggering event. | [02-mathematical-models.md §4](./02-mathematical-models.md) |
-| $\delta_{discount}$ | A party's discount factor. The weight it places on future payoffs. | [Constitution, Axiom II](./00-tcg-constitution.md) |
-| $\gamma_k$ | Rate at which component $k$'s gap rebuilds per unit time, absent maintenance. Three rates with different drivers. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| $\gamma$ | The deal-level drift rate. The friction-weighted mean of the three $\gamma_k$, and an average rather than a mechanism. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $\delta_{discount}$ | A party's discount factor. The weight it places on future payoffs. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $\gamma_k$ | Rate at which cost $k$'s gap rebuilds toward its ceiling, absent maintenance. Three rates with different drivers. Named, not valued. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | $\gamma_r$ | Responsiveness converting external pressure into internal action. | [02-mathematical-models.md §4.2](./02-mathematical-models.md) |
 | $\gamma_{TO}$ | Weight on the technical overlap term. | 0.20, [02-mathematical-models.md §3.4](./02-mathematical-models.md) |
 | $T$, $R$, $P$ | Temptation, reward, and punishment payoffs in the cooperation condition. | [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) |
@@ -129,25 +149,45 @@ Two rules govern what is written here, and they differ by section.
 | SVI | Scope Variance Index. Scope stability through delivery. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
 | $H_{pre}$, $H_{post}$ | Solutions-engineering and implementation hours before and after signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
 
+### Retired in Constitution 4.0
+
+None of these survives in `models/tcg_models.py`. [02-mathematical-models.md](./02-mathematical-models.md) section 7 records why each went.
+
+<!-- vale TCG.RetiredTerms = NO -->
+| Symbol | What it was | What replaced it |
+|---|---|---|
+| $S$, $OC_{switching}$ | The single Deal Surplus and its opportunity-cost term | $S_b$ and $S_s$, and $V_{switch}(t)$ |
+| $y$ | Reduced-form perceived transaction cost, $a\hat{\Delta}_A^2 + c$ | Nothing. Verification now beats discounting because a discount moves $P$, which cancels, and verification lowers $\pi_p$ |
+| $a$, $b$, $c$ | The coupling anchored at 2.25, the base friction growth rate, and direct cost | Nothing for $a$ and $b$. What $c$ held is price, now $P$ |
+| $D(t)$ | A deal's trajectory, transaction cost against opportunity cost | The two conditions over time |
+| $k$, $k_{threshold}$ | Specificity as a level, and its boundary at 15 of 30 | Specific exposure, read under Axiom III |
+| $F_{deployed}$ | Friction deployed, required to scale with $k$ | The seller's investment $I^s_k$ (Axiom II), and governance only where something specific is sunk (Axiom III) |
+| $\mathbf{F}$, $\hat{\mathbf{F}}$, $\lVert \mathbf{F} \rVert_1$ | The friction vector, its direction shares and its summed level | The positions $r_k$. The sale starts at the largest |
+| $F_{base}$, $F_{effective}$ | Summed cost, and cost after the per-component multiplier $(1 + \hat{\Delta}_k)$ | Nothing. The costs are never summed and the gaps multiply nothing |
+| $\hat{\Delta}_A$ | The deal-level gap, the friction-weighted mean of the three | Nothing. Each gap is read in its own pair, and $\hat{\Delta}_{implementation}$ is the normalized $\Delta_A$ |
+| $\gamma$ (bare) | Deal-level drift, the friction-weighted mean of the $\gamma_k$ | $\gamma_k$ |
+| $\hat{\Delta}_k(0) + \gamma_k t$ | Linear drift, unbounded | Bounded drift toward a ceiling |
+<!-- vale TCG.RetiredTerms = YES -->
+
 ---
 
 ## Symbol disambiguation
 
 Seven groups look alike and mean different things. Each has produced a documented error, required an inline correction somewhere in this repo, or was caught during drafting before it could.
 
-**1. $\gamma$ carries three unrelated meanings, and one of them has three subscripts of its own.** In the Constitution, $\gamma$ is the rate at which an asymmetry gap rebuilds over time, and there is one rate per component: $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$. In the mathematical models the letter appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing, and the two families are told apart by what the subscript names: a component, or a mechanism. A bare $\gamma$ always means deal-level asymmetry drift.
+**1. $\gamma$ carries three unrelated meanings, and one of them has three subscripts of its own.** In the Constitution, $\gamma_k$ is the rate at which a gap rebuilds over time, one rate per cost: $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$. In the mathematical models the letter appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing, and the two families are told apart by what the subscript names: a cost, or a mechanism. Bare $\gamma$, the deal-level average, retired with the deal-level gap.
 
-**2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to the value-decay half of the Decay Clock, a standing assumption. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to Axiom II's cooperation condition. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [04-seller-surplus-model.md §7](./04-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
+**2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to the value-decay half of the Decay Clock, a standing assumption. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to the cooperation condition in Axiom III's frequency corollary. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [04-seller-surplus-model.md §7](./04-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
 
-**3. $\Delta_A$ and $\hat{\Delta}_A$ differ by an order of magnitude, and $\hat{\Delta}_A$ and $\hat{\Delta}_{implementation}$ differ by scope.** The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before either cost equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [02-mathematical-models.md §1.5](./02-mathematical-models.md). Separately, what the scorecard measures is the enforcement component's gap alone, the implementation gap in field terms, because that is the only component whose pair is buyer against seller. $\hat{\Delta}_A$ is the friction-weighted mean across all three. Substituting the scorecard's output for $\hat{\Delta}_A$ treats one pair's gap as though it governed the deal.
+**3. $\Delta_A$ and $\hat{\Delta}_{implementation}$ differ by an order of magnitude, and neither is the deal's gap.** The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before any equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [02-mathematical-models.md §2.5](./02-mathematical-models.md). Separately, what the scorecard measures is the policing and enforcement cost's gap alone, the implementation gap in field terms, because that is the only pair that is buyer against seller. Constitution 4.0 retired the deal-level mean $\hat{\Delta}_A$, so there is no single deal gap to substitute the scorecard's output for. Each party's loss reads its own half.
 
-**4. $a$, $b$, and $\lambda$ are three different quantities that all sit near 2.25, and only two of them carry units.** $\lambda$ is measured (prospect theory) and dimensionless, $b$ is the rate at which base friction grows per unit of asymmetry, and the derivation identifies $a$ with $b$, borrowing $\lambda$'s magnitude as justification rather than measurement. $a$ and $b$ are in annual contract values, per [02-mathematical-models.md §1.7](./02-mathematical-models.md). Do not cite $a$ as though prospect theory established it, and do not add it to a figure quoted in percentage points. The full account is [§1.6](./02-mathematical-models.md).
+**4. Five quantities are written with $I$.** $I^b_k$ and $I^s_k$ are investments today, in contract value, under Axiom II. $I_{buyer}$ and $I_{seller}$ are the two halves of the implementation gap under Axiom III. $I_i$ is one decision role's utility from the initiative, on $[-1, 1]$. A superscript party and a subscript cost mark an investment. A subscript party marks uncertainty. A subscript index marks a role.
 
-**5. $F_{base}$ and $F_{effective}$ differ by the multiplier, and level and direction are read off different ones.** $F_{base}$ is the three components summed. $F_{effective}$ is $\sum_k F_k (1 + \hat{\Delta}_k)$, which factors exactly into $F_{base}(1 + \hat{\Delta}_A)$. A third form appears inside the derivation, where base friction is written as a function of the gap, $F_{base}(\hat{\Delta}_A) = c + b\hat{\Delta}_A$. Level is the $L^1$ norm of base friction and direction is the share of effective cost, which is why discovery rotates a deal without reclassifying it. Quoting a friction figure without saying which form it is makes the number unusable.
+**5. $P$, $r$ and $Q$ each carry two meanings.** $P$ is price in the two conditions and the punishment payoff in the cooperation condition. $r_k$ is a cost's position between its thresholds, and $r_t$ is the probability the relationship is live in period $t$. $Q_p$ is party $p$'s whole quasi-rent and $Q_m$ is the part sunk at gate $m$, while bare $Q$ in the seller surplus model is the seller's $Q_s$. Read the subscript before the letter.
 
-**6. $c$ is a buyer cost and the $C$ terms are seller costs.** Lowercase $c$ is the direct cost the buyer pays, which is the seller's revenue. $C_{invest}$ and $C_{deliver}$ are what the seller spends. They sit on opposite sides of the transaction and a figure quoted without its case is unreadable. $V_{contract}$ has the same hazard: it is seller revenue, not a value the buyer receives.
+**6. The $C$ terms carry their party.** $C_{deliver}$ and bare $C_{invest}$ are what the seller spends. $C^{p}_{invest}$ is what either party sinks, and for the buyer it is the integration built and the workflows rewired. $V_{contract}$ is seller revenue, the price $P$ seen from the seller's side, and not a value the buyer receives. A figure quoted without its party is unreadable.
 
-**7. Three surpluses and two probabilities share letters.** Bare $S$ is the buyer's Deal Surplus from Part III. $S_{seller}$ is the seller's, and the two are independent conditions that must both hold. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes and $p_m$ is the probability a stage completes. This pair was caught while drafting [04-seller-surplus-model.md](./04-seller-surplus-model.md) rather than in use.
+**7. Four surpluses and three probabilities share letters.** $S_b$ and $S_s$ are the two conditions of Part III, and both must hold. $S_{seller}$ is the seller surplus model's form of $S_s$. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes, $p_m$ is the probability a stage completes, and $\pi_p$ is the chance a party's exposure does not come back. The $p_{close}$ and $p_m$ pair was caught while drafting [04-seller-surplus-model.md](./04-seller-surplus-model.md) rather than in use.
 
 ---
 
@@ -155,68 +195,77 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 One line each, then the canonical source. The line identifies the term. The source defines it.
 
-### The three levels
+### The three decisions
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Market level** | Where a seller meets the category. Which cost binds, and therefore which motion. Axiom I. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Workflow level** | Where a seller meets the buyer's operation. How specific the investment is, how much apparatus that needs, and how much of its allocation must be settled before signature. Axiom II. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Deal level** | Where a seller meets the parties. What each cannot verify about their own outcome, before signature and again at renewal. Axiom III. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom I, Law of Transaction Cost Composition** | Should I use the market? The buyer's three costs beyond price, a participation threshold for each, and where the sale starts. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom II, Law of Transaction Investment** | What will it cost me today? Each cost is paid down by investment from either party, and each goes ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom III, Law of Future Cost** | What might it cost me later? Specific investment exposes a party to what it cannot verify, and the allocation is settled before the investment is sunk. | [Constitution, Part I](./00-tcg-constitution.md) |
 
-### The four units
+### Definitions
+
+*Market* and *deal* keep their ordinary meanings and are not Definitions.
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Market** | The buyers who call a problem by one name. The unit Axiom I is read at. | [Constitution, Definitions](./00-tcg-constitution.md) |
-| **Workflow** | The procedure a product changes. A product is an encoded reference workflow. The unit Axiom II is read at. | [Constitution, Definitions](./00-tcg-constitution.md) |
-| **Seat** | A position in the buying coalition defined by its relation to the workflow, not by its occupant. Holds a veto or an evaluation and survives the person in it. | [Constitution, Definitions](./00-tcg-constitution.md) |
-| **Deal** | One buyer's divergence from the reference workflow, with the seats their version carries. The unit Axiom III is read at. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Workflow** | The procedure a product changes. A product is an encoded reference workflow, and the buyer's distance from it is what makes an investment specific under Axiom III. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Decision role** | A position in the buyer's organization holding a veto or an evaluation over the purchase, defined by its relation to the workflow and not by its occupant. An occupant change reopens a gap. A role dissolving changes the coalition. | [Constitution, Definitions](./00-tcg-constitution.md) |
 
 ### Component names
 
-| Coase's name (canonical in theory) | Field name (notation subscript) | What B2B adds |
-|---|---|---|
-| **Search** | search | Reachability. |
-| **Bargaining** | consensus | The buyer is a coalition, so the bargain is n-party and internal. |
-| **Enforcement** | implementation | Specificity. The buyer's own sunk adaptation. |
+Coase (1937) owns the question, whether to use the market at all. Dahlman (1979) supplied the three names, which are canonical in theory prose. The field names stay, and so do the notation subscripts.
 
-### Deal classification
+| Dahlman's name (canonical in theory) | Field name (notation subscript) | What B2B adds |
+|---|---|---|
+| **Search and information** | search | Reachability. |
+| **Bargaining and decision** | consensus | The buyer is a coalition, so most of the bargain is internal, among the decision roles. |
+| **Policing and enforcement** | implementation | The buyer cannot police performance until the product is adapted to its environment, so the question becomes whether it will work here. The buyer's adaptation work is an Axiom II investment against this cost, not the cost itself. |
+
+### Axiom I concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Structural Deal** | A deal whose level reaches the boundary. Level 15 to 30. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Turnkey Deal** | A low-specificity deal that a velocity motion serves better. Level below 15. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Chaos Trap** | A buyer with no documented workflow, in any market. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
-| **Level** | The friction vector's $L^1$ length, on base friction. Sets the Turnkey and Structural boundary. | [01-motions.md](./01-motions.md) |
-| **Frequency** | How often the same two parties transact. One-shot, recurrent, or continuous. Selects the governance form. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Governance Form** | The shape of the arrangement after signature. Market, trilateral, bilateral, or unified. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of transaction cost. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Direction** | Each component's share of effective cost. Selects the instruments. Dominant at 0.50. | [01-motions.md](./01-motions.md) |
-| **Count Variance** | Scored count against actual count, taken at the Adoption Review. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Boundary Condition** | The test every deal passes before heavy apparatus is justified. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-
-### Axiom III concepts
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce $\Delta_A$. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-| **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
-| **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| **Akerlof Exit Threshold** | The asymmetry level beyond which the buyer stops participating in the market. | [costly-signals.md](../02-research/costly-signals.md) |
-| **Jevons Vulnerability** | A channel whose binding constraint is production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
-| **Decay Clock** | The two time dynamics that erode deal viability before close. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility carries demurrage and must be re-earned. Axiom III's second clause after signature. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Participation threshold** | The point on one cost above which the buyer does not enter the market, whatever the other two read. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| **Self-serve threshold** | The point on one cost below which the buyer pays it down alone. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| **Position and zone** | Where a cost sits between its own two thresholds, read as self-serve, needs investment, or keeps the buyer out. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| **Where the sale starts** | The cost nearest its own participation threshold, the largest position. Two at the same position are run together. Names the motion. | [Constitution, Axiom I](./00-tcg-constitution.md), [01-motions.md](./01-motions.md) |
+| **Turnkey** | A market condition: every cost self-serve and nothing specific sunk. It erodes through entry. | [Constitution, Axiom I corollaries](./00-tcg-constitution.md) |
+| **Chaos Trap** | A buyer with no documented workflow, where the product automates the process. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
+| **Akerlof Exit Threshold** | The research form of buyer exit under adverse selection. The framework states exit as the participation threshold. | [costly-signals.md](../02-research/costly-signals.md) |
+| **Jevons Vulnerability** | A channel whose filtering ran on production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
 
 ### Axiom II concepts
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Stakes corollary** | Every party holding exposed rent, or adjudicating it, needs a stake, including the seller's own agents and the channel. Axiom II. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
-| **Williamson Hold-Up** | Once asset-specific investment is sunk, either party can extract its value. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
+| **The two conditions** | One per party, $S_b$ and $S_s$. A deal happens when both are positive and no cost keeps the buyer out. | [Constitution, Part III](./00-tcg-constitution.md) |
+| **Price as a transfer** | Price cancels when the two conditions are added, so it is not a transaction cost. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
+| **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of what transacting costs. | [05-governance-forms.md](./05-governance-forms.md) |
+| **Cost to serve is directional** | The seller's investment falls on whichever cost it pays down, so two markets with the same cost of sale can demand it in different places. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
+| **Pursuit** | The seller's condition asked of a population: whether buyers' contract value and frequency can recover the investment their costs demand. | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
+
+### Axiom III concepts
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Specific exposure** | Whether a deal sinks anything worth less outside this relationship. The calculator reads it as none or specific. | [Constitution, Axiom III](./00-tcg-constitution.md), [Deal Triage Calculator, Step 2](../../practice/deal-triage-calculator.md) |
+| **Appropriable quasi-rent** | What a party has sunk less what it could recover elsewhere. Whoever sinks it is the exposed party. | [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) |
+| **The gate** | Where nothing specific is sunk and a trial verifies fit, market terms hold. Apparatus below it is over-frictioning. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Frequency** | How often the same two parties transact. One-shot, recurrent, or continuous. With specific exposure, selects the governance form. | [05-governance-forms.md](./05-governance-forms.md) |
+| **Governance Form** | The shape of the arrangement that holds the deal. Market, trilateral, bilateral, or unified. | [05-governance-forms.md](./05-governance-forms.md) |
+| **Stakes corollary** | Every party holding exposed rent, or adjudicating it, needs a stake, including the seller's own agents and the channel. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Williamson Hold-Up** | Once asset-specific investment is sunk, the other party can extract its value. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
 | **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
-| **Staged Commitment** | Why bilateral commitments must be staged rather than merely mutual. | [Constitution, Part I corollaries](./00-tcg-constitution.md) |
+| **Staged Commitment** | Why commitment to a specific investment must be staged, with a right to stop at each gate. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
 | **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Handoff Rule** | The Blueprint must reach Customer Success intact, or $\Delta_A$ resets on the receiving side. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **Three levers** | Discount, take risk back, or verify. Only verification raises the joint surplus. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce a gap. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
+| **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility must be re-earned. The rebuild clause after signature. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Decay Clock** | Value decaying from the trigger while the gaps rebuild, both pushing the conditions toward zero. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
+| **Handoff Rule** | The Blueprint must reach Customer Success intact, or the implementation gap $\Delta_A$ resets on the receiving side. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
 
 ### Artifact vocabulary
 
@@ -224,8 +273,9 @@ One line each, then the canonical source. The line identifies the term. The sour
 |---|---|---|
 | **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
 | **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/implementation-motion/02-validation-red-team-protocol.md) |
-| **Mutual Implementation Plan (MIP)** | The governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Mutual Implementation Plan (MIP)** | The bilateral governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
 | **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **Count Variance** | The triage counts re-taken at the Adoption Review against the counts taken at triage. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [05-governance-forms.md](./05-governance-forms.md) section 5 |
 
 ### External frameworks
@@ -236,17 +286,42 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **RE-AIM** | Five-dimension framework for post-sale success measurement. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 | **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 
+### Retired terms
+
+Kept so older analyses stay readable. Do not use these in new writing.
+
+<!-- vale TCG.RetiredTerms = NO -->
+| Retired term | Use instead |
+|---|---|
+| Law of Asset Specificity (Axiom II until 4.0) | Axiom III, Law of Future Cost. Axiom II is now the Law of Transaction Investment |
+| Law of Uncertainty Inflation (Axiom III until 4.0) | Axiom III, Law of Future Cost |
+| Market level, workflow level, deal level | The three decisions, in time order |
+| Market and deal as Definitions | Ordinary words. Only workflow and decision role are Definitions |
+| Seat, seat map, seat ledger | Decision role, decision-role map, decision-role ledger |
+| Coase's names: search, bargaining, enforcement | Dahlman's names: search and information, bargaining and decision, policing and enforcement |
+| Structural deal | A deal with specific exposure, or a deal outside Turnkey, by meaning |
+| Turnkey deal, as a level below 15 | Turnkey, a market condition |
+| Level, magnitude, the 0 to 30 sum | How much seller investment the deal needs (Axiom II), or specific exposure (Axiom III), by meaning |
+| Direction, shares, dominant component, dominance threshold, Composed | Where the sale starts. Ties are run together |
+| The cost that binds | The cost nearest its own participation threshold |
+| Boundary Condition | The gate |
+| Amplification, the per-component multiplier | Nothing. Gaps feed the chance of future loss |
+| The Surplus equation | The two conditions |
+| Under-frictioned | Unallocated |
+| Mis-composed | Mis-sequenced (a deal) or imitation (an organization) |
+<!-- vale TCG.RetiredTerms = YES -->
+
 ---
 
 ## Maintaining this file
 
 - **New symbol introduced anywhere:** add a row to the notation index in the same commit.
 - **New concept that two or more directories reference:** add a row to the term index, pointing at its canonical home. Do not define it here. A term used in one file belongs in that file and not here.
-- **A term is renamed or retired:** update the row, and add the old name to the retired-terms lint rule if this repo has one, so the rename cannot drift back.
+- **A term is renamed or retired:** move the row to the retired table, and add the old name to the retired-terms lint rule, so the rename cannot drift back.
 - **An entry disagrees with its source:** the source wins. Fix the entry.
 
 ## Related
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the corollaries most term entries point to.
 - [02-mathematical-models.md](./02-mathematical-models.md) supplies the functional forms. [06-calibration.md](./06-calibration.md) carries every parameter and its provenance.
-- [01-motions.md](./01-motions.md) derives the motions and carries the incumbent-vocabulary map in section 10.
+- [01-motions.md](./01-motions.md) derives the motions from where the sale starts and carries the incumbent-vocabulary map.

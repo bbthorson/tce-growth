@@ -2,24 +2,24 @@
 title: 'Project \[Customer Name\]: Contextual Blueprint'
 layer: practice
 status: active
-version: 2.0
+version: 2.1
 operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Project \[Customer Name\]: Contextual Blueprint
 
-**Version:** 2.0 
+**Version:** 2.1 
 
 **Motion:** **Implementation-led**. First of four artifacts. 
 
 **Audience:** Economic Buyer / Champion 
 
-**Goal:** To disqualify Turnkey deals and validate the Structural deal.
+**Goal:** To disqualify deals where every cost is self-serve, and to establish what this deal sinks that only works here.
 
 | | |
 |---|---|
-| **Inputs** | Structural classification (score ≥ 10) from [Deal Triage Calculator](../deal-triage-calculator.md); initial qualification call complete. |
+| **Inputs** | An implementation-led routing from the [Deal Triage Calculator](../deal-triage-calculator.md); initial qualification call complete. |
 | **Outputs** | Filled Blueprint covering Catalyst, Complexity, Stakeholder DNA, Reciprocity Gate, Negative Capability. A green/yellow/red verdict. |
 | **Next step** | Green → [Red Team Protocol](./02-validation-red-team-protocol.md). Yellow → assign homework to champion. Red → disqualify. |
 | **Owner** | AE (with sales manager validation). |
@@ -131,13 +131,13 @@ We use this Blueprint to map your specific environment—your politics, your dat
 
 - **Green Light:** Catalyst is a "Crisis" \+ Skeptic is identified \+ Artifacts provided. \-\> *Move to Red Team Workshop.*  
 - **Yellow Light:** Catalyst is weak, but Champion is strong. \-\> *Assign "Homework" to Champion to quantify cost of status quo.*  
-- **Red Light:** "Graveyard" shows cultural toxicity \+ No Skeptic identified. \-\> *Disqualify, or downgrade to the Turnkey motion.*
+- **Red Light:** "Graveyard" shows cultural toxicity \+ No Skeptic identified. \-\> *Disqualify, or re-count in the Deal Triage Calculator and route to standard terms if every cost reads self-serve.*
 
 ---
 
 ## Related
 
-- **Theory:** [TCG Constitution, Axiom III](../../theory/01-foundation/00-tcg-constitution.md) — The Blueprint primarily addresses $F_{consensus}$ and reduces Seller Ignorance ($I_{seller}$). It is one of the four mechanisms by which $\Delta_A$ shrinks.
+- **Theory:** [TCG Constitution, Axioms II and III](../../theory/01-foundation/00-tcg-constitution.md) — The Blueprint is seller investment against the bargaining and policing costs (Axiom II). It reduces Seller Ignorance ($I_{seller}$), which lowers the seller's chance of future loss, and it reads how far the buyer's workflow sits from the reference, which is what makes an investment specific (Axiom III).
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md) — Inner Setting / Individuals constructs mapped to Blueprint sections.
-- **Prerequisite:** The [Deal Triage Calculator](../deal-triage-calculator.md) reads the deal at level 15 or above and implementation-dominant, or flags it Hidden Structural at a lower level.
+- **Prerequisite:** The [Deal Triage Calculator](../deal-triage-calculator.md) routes the deal to implementation-led: the sale starts at implementation, or the buyer asked for a pilot.
 - **Next step:** [02-validation-red-team-protocol.md](./02-validation-red-team-protocol.md) — Stress-tests the implementation plan surfaced here.

@@ -29,8 +29,8 @@ This generator is designed for a multi-stage dialogue. **Do not draft the full b
 
 ### 2. The Theory (The Chalkboard)
 - Deconstruct the problem using **Axioms of TCG**.
-- Reference specific theories: **Coase**, **Williamson**, **Kahneman & Tversky**.
-- Use the **Fundamental Equation** to show why the current system is failing.
+- Reference specific theories: **Coase**, **Dahlman**, **Williamson**, **Kahneman & Tversky**.
+- Use the **two conditions** (Constitution, Part III) to show whose condition fails, the buyer's or the seller's, and why the current system is failing.
 
 ### 3. The Perspective (The Offensive Strategy)
 - Reframe the relationship as a **Bilateral Offensive Unit**.
