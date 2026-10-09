@@ -11,7 +11,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Sources:**
 - Coase, R.H. (1937). "The Nature of the Firm." *Economica*, 4(16), 386–405.
 - Coase, R.H. (1960). "The Problem of Social Cost." *Journal of Law and Economics*, 3, 1–44.
-- Dahlman, C.J. (1979). "The Problem of Externality." *Journal of Law and Economics*, 22(1). Page range to be verified against the journal record before any is quoted. Groups the costs of using a market into three classes, search and information, bargaining and decision, and policing and enforcement, and argues they share one root in imperfect information.
+- Dahlman, C.J. (1979). "The Problem of Externality." *Journal of Law and Economics*, 22(1), 141–162. [Chicago Unbound](https://chicagounbound.uchicago.edu/jle/vol22/iss1/7/). Groups the costs of using a market into three classes, search and information, bargaining and decision, and policing and enforcement, and argues they share one root in imperfect information.
 - Williamson, O.E. (1979). "Transaction-Cost Economics: The Governance of Contractual Relations." *Journal of Law and Economics*, 22(2), 233–261.
 - Williamson, O.E. (1985). *The Economic Institutions of Capitalism*. Free Press.
 - Williamson, O.E. (2009). Nobel Prize Lecture: "Transaction Cost Economics: The Natural Progression."
