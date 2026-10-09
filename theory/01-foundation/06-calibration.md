@@ -48,7 +48,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
 | Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The theory states the threshold exists. The field instrument places it as an edge on each count, section 3.2. |
-| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. Whether it rises with the value at stake is open. |
+| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. It marks the buyer's capacity to get through the cost and does not move with value, per section 6 of the math file. |
 | Floor on the chance of loss | $\pi_0$ | — | **Named, not valued.** That a floor above zero exists is structurally motivated by the return-variance floor in section 2.3 of the math file. No value is offered. |
 | Shape of the chance of loss | — | straight line | **Chosen.** A placeholder between floor and ceiling. No curvature is claimed. |
 | How a party's gaps combine | — | arithmetic mean | **Chosen.** No source. |
@@ -119,8 +119,8 @@ Weakest layer in the framework, and the only one whose parameters have no argume
 
 | Parameter | Value | Provenance |
 |---|---|---|
-| Composite weights | 0.35, 0.25, 0.25, 0.15 | **Chosen.** No source. |
-| Friction allocation target band | 0.60-0.75 | **Chosen.** No source. |
+| Composite weights | 0.35, 0.25, 0.25, 0.15 | **Chosen.** No source. In order ACR, BCV, RMS, SVI. Allocation coverage inherited the weight the effort ratio carried. |
+| What makes an allocation | Risk bearer, gate and right to stop, all three | **Chosen.** Mirrors what a Mutual Implementation Plan gate writes down. |
 | Committee-size correction | $N^{0.5}$ | **Structurally motivated.** Direction follows from the bargaining cost rising in $N$. The exponent is chosen. |
 | Provisioning guard | +1 | **Convention.** Prevents division by zero. |
 | Change-order weight | 0.25 | **Chosen.** No source. |
@@ -153,7 +153,7 @@ Recorded rather than fixed, because each fix means choosing a shape and that is 
 
 **The shape of the chance of loss is not identified.** The straight line between floor and ceiling is a placeholder, and nothing in the framework distinguishes it from any other increasing form. Constitution 3.0 carried the same defect as an unidentified convexity exponent on the retired reduced form.
 
-**The Friction Efficiency Index composite carries three defects of its own**, recorded in section 6 of that file. They are defects in the measure rather than in its parameters, so they are not repeated here.
+**The Friction Efficiency Index composite carries two open defects of its own**, recorded in section 6 of that file. They are defects in the measure rather than in its parameters, so they are not repeated here.
 
 ---
 

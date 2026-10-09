@@ -8,7 +8,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 # Friction Efficiency Index
 
-**Purpose:** To measure whether an organization is spending its implementation effort before signature or after it, and to benchmark that allocation across a book of deals with specific exposure.
+**Purpose:** To measure whether an organization settles the allocation of each specific investment before it is sunk, and how its effort and its buyers' commitment ran, across a book of deals with specific exposure.
 
 **Use when:** Reviewing a closed cohort of deals with specific exposure quarterly. This is a retrospective management instrument, not a per-deal gate.
 
@@ -18,11 +18,25 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 > **Why this lives in `practice/` and not `theory/`.** Every model in [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) supplies a functional form for a variable the Constitution already names, and that file states it introduces no new claims. The measures below do something different: they score how well an organization ran the motion. They are observations about execution, not derivations from the axioms, and placing them in the foundation would break the axioms-first rule.
 
 > [!WARNING]
-> **Calibration status: none.** Every threshold, weight, and coefficient on this page is a reasoned starting value. None is fitted to booked deal data. Use these numbers to compare deals within your own book. Do not quote them externally as benchmarks, and do not report the composite index to a board as a performance figure until Section 7 conditions are met. Section 6 records three defects in the composite that are known and unfixed.
+> **Calibration status: none.** Every threshold, weight, and coefficient on this page is a reasoned starting value. None is fitted to booked deal data. Use these numbers to compare deals within your own book. Do not quote them externally as benchmarks, and do not report the composite index to a board as a performance figure until Section 7 conditions are met. Section 6 records two defects in the composite that are known and unfixed, and one that allocation coverage resolved.
 
 ---
 
-## 1. Friction Allocation Ratio (FAR)
+## 1. Allocation Coverage Ratio (ACR)
+
+The share of a deal's specific investment that was sunk only after an allocation covering it had been agreed.
+
+$$\text{ACR} = \frac{n_{allocated}}{n_{exposure}}$$
+
+Where $n_{exposure}$ is the deal's exposure count from Step 2 of the [Deal Triage Calculator](./deal-triage-calculator.md), integration points plus workflows that change plus divergent steps, re-taken at the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). $n_{allocated}$ counts the items whose work began only after a written allocation covered them. **An allocation covers an item when it names all three:** who bears that item's adaptation risk, the gate the item sits behind, and a right to stop at that gate. Two of the three is not an allocation. These are the three things a [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) gate writes down, so the plan is where the count is read.
+
+**Higher is better, and there is no band.** An ACR of 1.0 means nothing specific was sunk before someone agreed who carries it. Axiom III asks for exactly that, so no point short of 1.0 is a target to stop at.
+
+**ACR is undefined when nothing specific was sunk.** A deal with an exposure count of zero, or one where the buyer could trial and walk away, has nothing to allocate, and it belongs outside the cohort this index reads.
+
+**Why this is the target and effort is not.** Earlier versions scored the share of implementation effort spent before signature, with a reference band of 0.60 to 0.75. Constitution 3.0 established that what must come before the investment is sunk is the *allocation*: who bears which adaptation risk, staged how, with what right to stop. The work done in advance can rightly fall as uncertainty rises, because misfits in roles, controls and culture surface only in use. A target on pre-signature effort rewarded forcing discovery that only use can do.
+
+### 1.1 Friction Allocation Ratio (FAR), as description
 
 The share of total implementation effort spent before signature.
 
@@ -30,9 +44,9 @@ $$\text{FAR} = \frac{H_{pre}}{H_{pre} + H_{post}}$$
 
 Where $H_{pre}$ is solutions-engineering and implementation hours logged before contract signature, and $H_{post}$ is the same functions' hours from signature through go-live.
 
-**Reference band: 0.60 to 0.75.** Below 0.60, the organization is discovering the buyer's environment after it has committed to a delivery date, which risks the unallocated failure mode. Above 0.75, either a deal where every cost was self-serve received implementation-chain treatment, or pre-sale work is being performed that the buyer never asked for.
+**FAR has no target and no weight in the composite.** It says where the effort went, which is worth knowing beside ACR: a high ACR on a low FAR is a deal that allocated well and did its discovery in use, which Axiom III permits, and a low ACR on a high FAR is a deal that worked hard in advance and still sank investment nobody had agreed to carry.
 
-**FAR is blind to scale.** An engagement spending 10 pre-sale and 5 post-sale hours scores identically to one spending 1,000 and 500. Always report FAR alongside $H_{pre} + H_{post}$, because the ratio only becomes meaningful once total effort is proportional to the deal's specific exposure. A high FAR on a trivial hour count means the deal was small, not that the motion was well run.
+**FAR is blind to scale.** An engagement spending 10 pre-sale and 5 post-sale hours scores identically to one spending 1,000 and 500. Always report FAR alongside $H_{pre} + H_{post}$. A high FAR on a trivial hour count means the deal was small, not that the motion was well run.
 
 ---
 
@@ -80,7 +94,7 @@ Two properties to hold in mind when reading it. The absolute value penalizes ear
 
 ## 5. The composite index
 
-$$\text{FEI} = 100 \cdot \left(0.35 \cdot \text{FAR} + 0.25 \cdot \widehat{\text{BCV}} + 0.25 \cdot \text{RMS} + 0.15 \cdot (1 - \widehat{\text{SVI}})\right)$$
+$$\text{FEI} = 100 \cdot \left(0.35 \cdot \text{ACR} + 0.25 \cdot \widehat{\text{BCV}} + 0.25 \cdot \text{RMS} + 0.15 \cdot (1 - \widehat{\text{SVI}})\right)$$
 
 The weights sum to 1.00, so FEI is bounded on $[0, 100]$ once both normalizations are applied. The canvas specified this formula without defining them, which left it uncomputable. Both are supplied here:
 
@@ -90,19 +104,19 @@ $\text{BCV}_{ref}$ is the trailing median BCV across your last twenty closed dea
 
 | FEI | Reading | Action |
 |---|---|---|
-| **Above 75** | Friction is front-loaded and discovery is closing risk before signature. | Maintain. Check that $H_{pre} + H_{post}$ is proportional to deal size. |
-| **50 to 75** | Mixed. Usually strong FAR with weak RMS, meaning hours are spent early but not on finding failure modes. | Audit Red Team facilitation before adding pre-sale hours. |
-| **Below 50** | Effort is landing after signature. Expect clawbacks and post-signature scope fights. | Treat as a motion-compliance problem, not a rep-skill problem. |
+| **Above 75** | Specific investment is allocated before it is sunk, and discovery is closing risk. | Maintain. Check that $H_{pre} + H_{post}$ is proportional to deal size. |
+| **50 to 75** | Mixed. Usually strong ACR with weak RMS, meaning the allocation is written but the Red Team is not finding failure modes. | Audit Red Team facilitation before adding pre-sale hours. |
+| **Below 50** | Specific investment is being sunk before anyone agreed who carries it. Expect clawbacks and post-signature scope fights. | Treat as a motion-compliance problem, not a rep-skill problem. |
 
-**Read the four components before the composite.** Any weighted index can hide an offsetting pair, and the common one here is a high FAR carrying a low RMS: the organization spends heavily before signature and still fails to surface failure modes, which produces a respectable FEI on top of an expensive, shallow process. The composite is for tracking one organization's direction over time. The components are what tell you where to intervene.
+**Read the four components before the composite.** Any weighted index can hide an offsetting pair, and the common one here is a high ACR carrying a low RMS: every gate is written down and the workshop still fails to surface failure modes, which produces a respectable FEI on top of a well-documented, shallow process. The composite is for tracking one organization's direction over time. The components are what tell you where to intervene.
 
 ---
 
-## 6. Three defects in the composite, recorded
+## 6. Defects in the composite, recorded
 
-Each was found by evaluating the formulas in [`models/tcg_models.py`](../models/tcg_models.py) rather than by reading them. None is fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
+Each was found by evaluating the formulas in [`models/tcg_models.py`](../models/tcg_models.py) rather than by reading them. The two still open are not fixed here, because each fix requires choosing a shape or a weight rather than correcting arithmetic, and that is a decision rather than a repair.
 
-**The composite is monotonic in FAR, and section 1 says it should not be.** Section 1 states that above 0.75 the organization is either running the implementation chain on a deal where every cost is self-serve or performing pre-sale work nobody asked for. Section 5 then weights FAR at 0.35 with no band. Holding the other three components fixed, a FAR of 0.70 scores 81.50 and a FAR of 1.00 scores 92.00. The composite rewards the state section 1 names as a failure. A fix means giving FAR a band-shaped contribution, which requires choosing how steeply to penalize each side of the band.
+**Resolved: the composite was monotonic in FAR.** Earlier versions weighted FAR at 0.35 with no band while naming a FAR above 0.75 as a failure, so the composite rewarded the state it warned against. ACR took FAR's weight. More allocation is better all the way to 1.0, so a monotonic weight is now the right shape, and FAR carries no weight at all.
 
 **Red Team credibility is ungated in the composite.** Section 3 states that below roughly eight identified edge cases the score carries no information however high it is. Section 5 consumes RMS anyway. A workshop finding two cases and closing both scores 1.000 and reaches a composite of 86.50. One finding forty and closing thirty-five scores 0.875 and reaches 83.38. The shallower workshop wins by three points, which is the failure section 3 predicts and section 5 builds.
 
@@ -117,7 +131,7 @@ The conditions in [06-calibration.md](../theory/01-foundation/06-calibration.md)
 1. **Hours are logged by phase** in the professional services system, split at signature rather than reconstructed afterward.
 2. **Edge cases are recorded as structured Red Team output** rather than narrative notes, which is what makes $N_{identified}$ countable at all.
 3. **Change orders are dated and attributed** to a root cause: unmapped environment, buyer-initiated expansion, or seller estimation error. Only the first two are scope variance in the sense modelled here.
-4. **The 0.60 to 0.75 FAR band is tested against realized outcomes.** Regress FAR against 90-day launch success across a cohort. If the band is real, it appears as a plateau. If it does not appear, the band was an assumption and should be removed rather than defended.
+4. **ACR is tested against realized outcomes.** Regress 90-day launch success and first-renewal retention on ACR, stratified by the exposure count. If allocation is what Axiom III says it is, ACR predicts both better than FAR does at equal exposure. If FAR predicts better, the theory's allocation clause is in trouble, and [07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 7 is where to record it.
 
 Until then, treat every output as a structured comparison between deals in your own book. A cohort scoring 71 is meaningfully better run than one scoring 46. Neither number is a benchmark against another company.
 
@@ -127,11 +141,11 @@ Until then, treat every output as a structured comparison between deals in your 
 
 | Parameter | Symbol | Default | Provenance |
 |---|---|---|---|
-| FAR target band | — | 0.60–0.75 | **Chosen.** No source. Test per Section 7.4. |
+| What makes an allocation | — | Risk bearer, gate and right to stop, all three | **Chosen.** Mirrors what a Mutual Implementation Plan gate writes down. Test per Section 7.4. |
 | Committee-size correction | $N^{0.5}$ | 0.5 exponent | **Structurally motivated.** Direction follows from $F_{consensus}$ rising in $N$. The exponent is chosen. |
 | Provisioning guard | $D_{prov} + 1$ | 1 | **Convention.** Prevents division by zero. |
 | Change-order weight | — | 0.25 | **Chosen.** No source. |
-| FEI component weights | — | 0.35 / 0.25 / 0.25 / 0.15 | **Chosen.** Sum to 1.00 by construction. No empirical basis for the split. |
+| FEI component weights | — | 0.35 / 0.25 / 0.25 / 0.15, for ACR, BCV, RMS and SVI | **Chosen.** Sum to 1.00 by construction. No empirical basis for the split. ACR inherited FAR's weight. |
 | BCV reference | $\text{BCV}_{ref}$ | trailing median, or 0.5 | **Convention.** Self-referential to your own book by design. |
 | Minimum credible edge-case count | $N_{identified}$ | 8 | **Chosen.** Field heuristic for detecting a shallow Red Team. |
 

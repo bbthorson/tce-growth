@@ -65,7 +65,7 @@ GAMMA_RESPONSIVENESS = 0.5   # chosen
 # practice/asymmetry-scorecard.md part 3.
 RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
 
-# Friction Efficiency Index composite weights, in FAR / BCV / RMS / SVI order.
+# Friction Efficiency Index composite weights, in ACR / BCV / RMS / SVI order.
 FEI_WEIGHTS = (0.35, 0.25, 0.25, 0.15)
 BCV_REF_DEFAULT = 0.5  # convention until twenty closed deals with specific exposure exist
 
@@ -660,41 +660,55 @@ def sale_start(positions):
 # that page is a reasoned starting value; none is fitted to booked deal data.
 # ==========================================================================
 
+def allocation_coverage_ratio(n_allocated, n_exposure):
+    """ACR, section 1. The index's target.
+
+        ACR = n_allocated / n_exposure
+
+    n_exposure is the deal's exposure count from the Deal Triage Calculator,
+    re-taken at the Adoption Review. n_allocated counts the items whose work
+    began only after a written allocation covered them, naming who bears the
+    item's adaptation risk, the gate it sits behind and a right to stop there.
+
+    Higher is better and there is no band: Axiom III asks that nothing
+    specific be sunk before someone agreed who carries it. Undefined when
+    nothing specific was sunk, because such a deal has nothing to allocate
+    and sits outside the cohort the index reads.
+    """
+    if n_allocated < 0 or n_exposure < 0:
+        raise ValueError("counts cannot be negative")
+    if n_allocated > n_exposure:
+        raise ValueError(
+            "{} items allocated but only {} specific items were sunk".format(
+                n_allocated, n_exposure))
+    if n_exposure == 0:
+        raise ValueError(
+            "nothing specific was sunk, so there is nothing to allocate and "
+            "the deal sits outside the cohort this index reads")
+    return n_allocated / n_exposure
+
+
 def friction_allocation_ratio(h_pre, h_post):
-    """FAR, section 1.
+    """FAR, section 1.1. Descriptive, with no target and no weight.
 
         FAR = H_pre / (H_pre + H_post)
 
-    The share of total implementation effort spent before signature. Reference
-    band 0.60 to 0.75. Below 0.60 the organization is discovering the buyer's
-    environment after committing to a delivery date. Above 0.75, either a
-    Turnkey deal received implementation-chain treatment, or pre-sale work is being performed
-    that the buyer never asked for.
+    The share of total implementation effort spent before signature. It says
+    where the effort went. Constitution 3.0 established that what must come
+    before the investment is sunk is the allocation, not the work, so a target
+    on this ratio rewarded forcing discovery that only use can do, and the
+    composite no longer carries it.
 
     FAR is blind to scale. An engagement spending 10 pre-sale and 5 post-sale
     hours scores identically to one spending 1,000 and 500, so always report it
-    alongside the total. A high FAR on a trivial hour count means the deal was
-    small, not that the motion was well run.
+    alongside the total.
     """
     if h_pre < 0 or h_post < 0:
         raise ValueError("logged hours cannot be negative")
     total = h_pre + h_post
     if total == 0:
-        raise ValueError(
-            "FAR is undefined with no logged hours; the ratio only becomes "
-            "meaningful once total effort is proportional to the deal's asset "
-            "specificity")
+        raise ValueError("FAR is undefined with no logged hours")
     return h_pre / total
-
-
-def far_in_band(far):
-    """Whether FAR sits inside the reference band of 0.60 to 0.75.
-
-    Section 6.4 records that the band itself is untested: it should be
-    regressed against realized 90-day launch success, and removed rather than
-    defended if no plateau appears.
-    """
-    return 0.60 <= far <= 0.75
 
 
 def buyer_commitment_velocity(s_dept, d_prov, n):
@@ -818,28 +832,27 @@ def normalize_svi(svi):
     return min(svi, 1.0)
 
 
-def friction_efficiency_index(far, bcv, rms, svi, bcv_ref=BCV_REF_DEFAULT):
+def friction_efficiency_index(acr, bcv, rms, svi, bcv_ref=BCV_REF_DEFAULT):
     """The composite, section 5.
 
-        FEI = 100 * (0.35*FAR + 0.25*BCV_hat + 0.25*RMS + 0.15*(1 - SVI_hat))
+        FEI = 100 * (0.35*ACR + 0.25*BCV_hat + 0.25*RMS + 0.15*(1 - SVI_hat))
 
     The weights sum to 1.00 by construction, so the index is bounded on
     [0, 100] once both normalizations are applied. They have no empirical
-    basis: the parameter reference states the split is chosen.
+    basis: the parameter reference states the split is chosen. ACR inherited
+    the weight the effort ratio carried.
 
     Read the four components before the composite. Any weighted index can hide
-    an offsetting pair, and the common one here is a high FAR carrying a low
-    RMS, which produces a respectable score on top of an expensive, shallow
-    process. The composite tracks one organization's direction over time. The
-    components tell you where to intervene.
+    an offsetting pair, and the common one here is a high ACR carrying a low
+    RMS: every gate written down and the workshop still shallow.
     """
-    if not 0.0 <= far <= 1.0:
-        raise ValueError("FAR is a ratio on [0, 1]")
+    if not 0.0 <= acr <= 1.0:
+        raise ValueError("ACR is a ratio on [0, 1]")
     if not 0.0 <= rms <= 1.0:
         raise ValueError("RMS is bounded on [0, 1]")
-    w_far, w_bcv, w_rms, w_svi = FEI_WEIGHTS
+    w_acr, w_bcv, w_rms, w_svi = FEI_WEIGHTS
     return 100.0 * (
-        w_far * far
+        w_acr * acr
         + w_bcv * normalize_bcv(bcv, bcv_ref)
         + w_rms * rms
         + w_svi * (1.0 - normalize_svi(svi))
@@ -847,11 +860,11 @@ def friction_efficiency_index(far, bcv, rms, svi, bcv_ref=BCV_REF_DEFAULT):
 
 
 def fei_band(fei):
-    """Reading from the composite table: front-loaded, mixed or late."""
+    """Reading from the composite table: allocated, mixed or late."""
     if not 0.0 <= fei <= 100.0:
         raise ValueError("FEI is bounded on [0, 100]")
     if fei > 75.0:
-        return "front-loaded"
+        return "allocated"
     if fei >= 50.0:
         return "mixed"
     return "late"
