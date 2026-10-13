@@ -158,7 +158,8 @@ swap:
   04-internal-ops: "practice/ (flattened in the 2026-09 restructure)"
   05-learning-plan: 03-learning-plan
   06-tools: 02-tools
-  02-cases: 01-cases
+  02-cases: "publishing/02-tools/ (the cases folder was removed on 2026-10-13)"
+  01-cases: "publishing/02-tools/ (the cases folder was removed on 2026-10-13)"
   00-foundation: 01-foundation
   01-research: 02-research
   Toaster deal: Turnkey deal

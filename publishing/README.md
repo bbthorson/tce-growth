@@ -1,12 +1,8 @@
 # Publishing
 
-**Function:** turn the TCG framework into public writing. This is where the [theory](../theory/) and lessons from [practice](../practice/) become LinkedIn posts, long-form essays, and case analyses for external audiences.
+**Function:** turn the TCG framework into public writing. This is where the [theory](../theory/) and lessons from [practice](../practice/) become LinkedIn posts and long-form essays for external audiences.
 
 ## What's in here
-
-### [01-cases/](./01-cases/)
-
-Applied analyses of real deals and market events through the TCG lens. Each follows the trenches analysis protocol in [writing-protocols.md](./02-tools/writing-protocols.md). These are working scouting reports, raw material for posts, talks, and internal discussion.
 
 ### [02-tools/](./02-tools/)
 
