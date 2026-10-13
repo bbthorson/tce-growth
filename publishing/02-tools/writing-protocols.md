@@ -1,6 +1,6 @@
 # Writing Protocols
 
-Three short protocols that sit between the [voice guide](./voice-guide.md) and the generators. The first configures an LLM to analyze deals in this framework's terms. The second is the pre-flight check before drafting anything. The third is the four-step deconstruction that every case in [`../01-cases/`](../01-cases/) follows.
+Three short protocols that sit between the [voice guide](./voice-guide.md) and the generators. The first configures an LLM to analyze deals in this framework's terms. The second is the pre-flight check before drafting anything. The third is the four-step deconstruction of a specific deal or market event.
 
 ---
 

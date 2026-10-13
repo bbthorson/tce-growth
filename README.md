@@ -30,7 +30,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 |---|---|---|
 | **[theory/](./theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the TCG framework. Academic papers, axioms, definitions. |
 | **[practice/](./practice/)** | `practice/` + `practice/implementation-motion/` | Operationalize the theory. The instruments the axioms name, and the measurement tools the tests assert. |
-| **[publishing/](./publishing/)** | `publishing/01-cases/` + `publishing/02-tools/` | Turn the framework into public writing. Case analyses, voice guides, content generators. |
+| **[publishing/](./publishing/)** | `publishing/02-tools/` | Turn the framework into public writing. Voice guide, writing protocols, content generators. |
 | **[models/](./models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
 | **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
 
@@ -105,8 +105,13 @@ Turnkey is a market condition, not a deal class: every cost low enough for the b
 
 ## Contributing
 
+After cloning, turn on the pre-commit hook so the link, frontmatter, model and style checks run on every commit:
+
+```bash
+git config core.hooksPath .githooks
+```
+
 This is a living document. As you work:
-- Add new applied analyses to [publishing/01-cases/](./publishing/01-cases/) using the trenches protocol.
 - Refine field assets in [practice/](./practice/) based on what works.
 - Update research with new evidence; the [provenance audit](./theory/02-research/audits/citation-provenance-audit.md) tracks source quality.
 

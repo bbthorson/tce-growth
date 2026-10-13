@@ -75,7 +75,7 @@ The "it's not X, it's Y" construction can sound canned and pat. Use sparingly. W
 
 ### 5. Active Voice
 
-Active verbs, named actors. "HTD will map the workflow" beats "the workflow will be mapped." This is especially important in proposals and prescriptions — passive language hides who is responsible.
+Active verbs, named actors. "The seller will map the workflow" beats "the workflow will be mapped." This is especially important in proposals and prescriptions — passive language hides who is responsible.
 
 ### 6. Forensic but Friendly
 

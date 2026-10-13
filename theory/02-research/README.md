@@ -35,5 +35,5 @@ Each research entry follows a standard shape:
 |---|---|
 | Canonical citations, abstracts, source links | **`theory/02-research/`** (this directory) |
 | Theoretical synthesis of these papers | [`../01-foundation/00-tcg-constitution.md`](../01-foundation/00-tcg-constitution.md) |
-| Applied analysis of a specific deal/event | [`../../publishing/01-cases/`](../../publishing/01-cases/) |
+| Applied analysis of a specific deal/event | Not kept in the repo. The trenches protocol in [`../../publishing/02-tools/writing-protocols.md`](../../publishing/02-tools/writing-protocols.md) is how to run one |
 | Published or polished commentary | [`../../publishing/02-tools/style-references/`](../../publishing/02-tools/style-references/) |

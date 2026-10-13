@@ -2,7 +2,7 @@
 
 **Content generation and AI personas for writing about TCG publicly.** A voice guide, three short protocols, two multi-phase content generators, and a library of published examples used as style references.
 
-Parent: [publishing/](../) · Sibling: [01-cases/](../01-cases/)
+Parent: [publishing/](../)
 
 This is *not* where the instruments live (see [`../../practice/`](../../practice/)). This is the writer's toolkit.
 
@@ -12,7 +12,7 @@ This is *not* where the instruments live (see [`../../practice/`](../../practice
 
 - **[voice-guide.md](./voice-guide.md)**: the "Conversational Intellectual" voice. Four linguistic rules plus the constraint checklist the linter enforces.
 - **[source-quotes.md](./source-quotes.md)**: citable passages from every research file, grouped by source. Numbers are not here. They live in the provenance audit with their verification status.
-- **[writing-protocols.md](./writing-protocols.md)**: three protocols in one file. The AI persona for an LLM acting as a CSO-level deal analyst, the context request check run before drafting, and the four-step trenches analysis that every case in [`../01-cases/`](../01-cases/) follows.
+- **[writing-protocols.md](./writing-protocols.md)**: three protocols in one file. The AI persona for an LLM acting as a CSO-level deal analyst, the context request check run before drafting, and the four-step trenches analysis for a specific deal or market event.
 
 ### Generators (multi-phase content workflows)
 
@@ -40,4 +40,4 @@ writing-protocols.md          (pre-flight context check)
 style-references/             (sanity-check against published examples)
 ```
 
-For trenches and case analyses specifically, the output drops into [`../01-cases/`](../01-cases/).
+A trenches analysis is working material and is not kept here. If it becomes a published post, the final text goes in [`style-references/short-form-posts/`](./style-references/short-form-posts/).
