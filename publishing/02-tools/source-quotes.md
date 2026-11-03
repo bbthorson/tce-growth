@@ -44,7 +44,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 - The proposal is evaluated once per stakeholder, against a different objective each time, and it must survive all of them.
 - A saboteur is usually not irrational. They are optimizing a scorecard the seller never read.
-- Committee size sets the floor on the bargaining cost. Goal conflict sets the ceiling.
+- Committee size sets the least the bargaining cost can be. Goal conflict sets how high it goes.
 
 ## Costly signals
 
@@ -102,3 +102,58 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 
 - "Customer Resistance is reframed. It is no longer a barrier to the sale; it is **Implementation Data**."
 - "A highly effective drug that no one can afford (low Reach) or a complex exercise regimen that no hospital can staff (low Adoption) has a net public health impact of zero."
+
+## Integration touchpoints
+
+*From [integration-touchpoints.md](../../theory/02-research/integration-touchpoints.md).*
+
+- The standards question is downstream of the workflow question. Name the workflow, and the touchpoints follow.
+- Almost any workflow can be reached by some route. A failed integration sale usually had a light value proposition, not a blocked door.
+- Integration depth follows value. Buyers build deeper touchpoints only for products worth more to them.
+- The minimum viable integration is the smallest set of touchpoints that lets the buyer verify value.
+
+## The transaction cost record
+
+*From [tce-empirical-record.md](../../theory/02-research/tce-empirical-record.md).*
+
+- Specificity predicts governance. Uncertainty mostly does not.
+- Governance designed around opportunism can produce the opportunism it assumes. Build the arrangement honest parties can say yes to.
+- Buyers under-price lock-in at signing and pay for it later.
+
+## Buyer cost neighbors
+
+*From [buyer-cost-neighbors.md](../../theory/02-research/buyer-cost-neighbors.md).*
+
+- Most of TCG is synthesis. The assembly is the contribution.
+- The costs add. A prohibitive one is not bought back by savings on the others.
+- Price is a transfer. That is standard economics and not yet standard sales practice.
+
+## Cost floors
+
+*From [information-environment.md](../../theory/02-research/information-environment.md).*
+
+- Part of every cost is set by the market, not the deal. No seller lowers it within one deal at a return that deal repays.
+- A seller's message loses value every time another seller sends one.
+- A new vendor inherits its category's reputation, including the part it did not earn.
+- Platforms, certifiers and standards lower cost floors because they collect the return across many deals.
+- A seller chooses its cost floors when it chooses where to sell.
+
+## Value and persuasion
+
+*From [value-and-persuasion.md](../../theory/02-research/value-and-persuasion.md).*
+
+- The seller cannot make a given offer worth more to this buyer. It can help the buyer see what the offer is worth, honestly or not.
+- Evidence that narrows the buyer's range lowers the search cost. A claim that moves the estimate without narrowing the range is persuasion.
+- Persuasion is punished only when delivery makes the gap visible.
+- Changing the offer changes value. That is a product decision, even when it is made inside a deal.
+
+## Adversarial review
+
+*From [adversarial-review-2026-11.md](../../theory/02-research/adversarial-review-2026-11.md).*
+
+- A discount moves surplus between the parties. Verification adds to it only when it lowers a loss by more than it costs.
+- Information that changes no decision only moves wealth between the parties.
+- Contracts can solve hold-up without hostages, through options and renegotiation design. Hostages are one remedy among several.
+- A seller that absorbs all of the buyer's effort also removes the buyer's commitment.
+
+The adversarial review's own statistics are vendor material or unverified, and none belongs in public writing until its primary is opened. The provenance audit lists them.

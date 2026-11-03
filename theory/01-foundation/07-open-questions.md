@@ -2,14 +2,14 @@
 title: "Open Questions"
 layer: theory
 status: active
-version: 1.2
+version: 1.3
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Open Questions
 
-**Version:** 1.2
+**Version:** 1.3
 **Purpose:** To record, in one place, where the theory is under-developed now that the axioms are fixed. Each entry says what the framework claims, what it lacks, and what would settle it. Entries are grouped by the axiom they weaken.
 
 This register consolidates. Where a file already carries its own "what this does not settle" section, the entry here points at it rather than restating it. An entry leaves this file when the work is done or when the claim is withdrawn, and either exit is recorded in the Constitution's version history. Item numbers are stable, because other files cite them, so a closed number is not reused. The items Constitution 4.0 closed are listed at the end.
@@ -30,11 +30,19 @@ This register consolidates. Where a file already carries its own "what this does
 
 **6. The market reading has a draft and no worked case.** Axiom I's motion is chosen across a buyer population, and Axiom II's pursuit corollary decides whether to enter it, which are organizational decisions. Without a reading of the population, the choice of motion is made by imitation, the organization-level failure the Constitution names. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.1 derives what the reading must contain, and [The Market Reading](../../practice/00-market-reading.md) is its first draft: each cost's position across the population, where the sale starts, the exposure reading, the seller's cost to serve by cost, and pursue, restructure or decline. *Settled by:* a worked scenario on two anonymized EHR-integration populations, and a book of deal readings checked against the market reading they sit under.
 
+**37. Whether a transaction-cost cutoff is a wall or a penalty.** Axiom I says ease on one cost never buys back another above its threshold. Two-stage choice research supports a screen followed by trade-offs (Gensch 1987, Gilbride and Allenby 2004), but Swait (2001) estimates stated cutoffs as penalties and finds respondents breach them when another attribute compensates. If buyers breach a cost threshold the same way, the gate becomes a steep penalty and the non-compensatory rule weakens. *Settled by:* stated cost thresholds elicited before a decision, then a constrained choice model of the kind Swait fits, estimated on what the same buyers did. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
+
+**43. Buyer-side lock-in may hold a Turnkey market without any of the four named protections.** The Turnkey corollary says a standard, a network effect, a dominant brand or a staked channel holds the search cost down as entrants arrive. Procedural switching costs (Burnham, Frels and Mahajan 2003) are specific investment users sink after adoption, so "nothing specific sunk" holds at entry and fails later, and Axiom III then protects the incumbent. Interactive decision aids and AI buying agents may also move the cost of entry onto the seller's discoverability rather than the buyer's search (Häubl and Trifts 2000), which item 35 already asks. *Settled by:* incumbent self-serve retention and trial conversion against entrant density across software categories, split by how much configuration a user sinks. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
+
 ---
 
 ## Axiom II, investment
 
-Constitution 4.0 made investment an axiom of its own, and no entry has been filed against it yet. Items 7 to 13 were filed here when Axiom II carried specificity, and they now sit under Axiom III with their numbers unchanged.
+Constitution 4.0 made investment an axiom of its own. Items 7 to 13 were filed here when Axiom II carried specificity, and they now sit under Axiom III with their numbers unchanged. Item 34, on reading a cost floor, sits under cross-cutting.
+
+**38. The bargaining cost floor mixes statute with internal policy.** The cost floor corollary puts the buyer's institutions under bargaining and decision. Statute fits: state privacy law cut hospital EMR adoption and network effects in a way no single deal could undo (Miller and Tucker 2009, Adjerid et al. 2016). Internal procurement policy may not: private buyers set aside competitive bidding for complex projects (Bajari, McMillan and Tadelis 2009), and suppliers work around a buyer's internal barriers inside one deal (Tuli, Kohli and Bharadwaj 2007). *Settled by:* splitting the floor into external rules and internal policy, then testing whether sponsors waive internal policy as project complexity rises, and whether any seller ever moves the external part within one deal. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
+
+**39. Seller absorption of the buyer's investment may have a ceiling.** Axiom II's falsifier assumes that the more of the buyer's investment the seller absorbs, the more often a deal closes. Three findings point the other way past some share: labor raises the builder's valuation (Norton, Mochon and Ariely 2012), sunk effort raises the commitment to finish (Arkes and Blumer 1985), and user participation drives later system use (Sabherwal, Jeyaraj and Chowa 2006). Under Axiom III the buyer's own investment is also its hostage, so full absorption removes it. *Settled by:* close rate and twelve-month use by absorption share, comparing a fully seller-funded pilot, a co-invested pilot and buyer-borne implementation. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
 
 ---
 
@@ -61,6 +69,10 @@ Constitution 4.0 made investment an axiom of its own, and no entry has been file
 **19. Axiom III's uncertainty half inherits the weakest empirical result in transaction cost economics.** Meta-analyses of the record (David and Han 2004, Carter and Hodgson 2006, Geyskens, Steenkamp and Kumar 2006) find that specificity predicts governance reliably, that uncertainty predicts it weakly and inconsistently, with trust and joint problem-solving often substituting for formal safeguards, and that specificity is usually measured with subjective scales. Axiom III now carries both results: its specificity half sits on the strong one and its uncertainty half on the weak one. The counting instruments were built against the measurement critique. *Settled by:* counts validated against outcomes across a book of deals, and a stated account of when relational norms substitute for the instruments. [tce-empirical-record.md](../02-research/tce-empirical-record.md).
 
 **33. Who drifts first after signature.** The hostages corollary runs in both directions and makes no claim about which party's incentives move first, buyer or seller, or whether it depends on which side sank more. *Settled by:* a book of post-signature relationships coded for which party's conduct changed first, against each side's sunk specific investment.
+
+**40. Contracts can solve hold-up without hostages.** The hostages corollary says that under full information only something the other side loses protects a party. Renegotiation design (Aghion, Dewatripont and Rey 1994) and simple option contracts (Nöldeke and Schmidt 1995) induce efficient specific investment when information is observable to both parties and unverifiable to a court, which is the corollary's own setting. When investment is cooperative, ex ante contracts may be worth nothing (Che and Hausch 1999), and fixed-price software contracts are often renegotiated after the fact (Banerjee and Duflo 2000), which bears on item 7. *Settled by:* placing option contracts and renegotiation design among the governance forms, then comparing dispute and termination rates for option, hostage, fixed-price and time-and-materials contracts in high-specificity software deals. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
+
+**41. Liability may do what the framework credits to verification.** The levers table in [02-mathematical-models.md](./02-mathematical-models.md) section 1.3 says verification raises the joint surplus by lowering $\pi_p$. In a laboratory credence-goods market, liability drove efficiency and verifiability had a minor effect (Dulleck, Kerschbamer and Sutter 2011). If enterprise software behaves the same way, hostages and outcome liability carry more weight than verification. *Settled by:* deals matched on specificity, comparing outcome-liability terms with verification pilots on realized value and renewal. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
 
 ---
 
@@ -91,6 +103,8 @@ Constitution 4.0 made investment an axiom of its own, and no entry has been file
 **35. Whether AI buying agents break the link between entry and the search cost floor.** The Turnkey corollary says entry raises the search cost. Agents that search, negotiate and transact for a buyer could screen vendors so that more entrants need no more buyer effort (Shahidi et al. 2025). Turnkey erosion would then run through pooled policing signals rather than search. *Settled by:* buyer search effort per purchase tracked against vendor count in categories where agent-mediated buying is common and where it is not.
 
 **36. A market whose cost floor sits above the participation threshold.** The cost floor corollary implies markets where no seller can win a deal on its own effort, because the part of a cost the market sets already keeps the buyer out. Nothing says how to recognize one before entering it, or which shared investment would open it. *Settled by:* a stated test on the market reading, and cases where a marketplace, certification or standard opened a market that deal-level effort had not.
+
+**42. Health tech may be a biased home case.** Health tech has statutory cost floors, a buyer split across clinicians, patients, administrators, payers and regulators (Herzlinger 2006), and outcomes that are hard to attribute. Under fee-for-service a tool that removes duplicate tests cuts the hospital's billed revenue, which is a negative $V_{switch}$ and not a cost above its threshold, and EMR adoption raised hospital costs for years outside IT-intensive labor markets (Dranove, Forman, Goldfarb and Greenstein 2014). A framework calibrated there may read value problems as bargaining thresholds and overstate cost floors elsewhere. *Settled by:* a triage step that separates $V_{switch} \le 0$ from $r_k > 1$, and the same readings taken in a commercial B2B software market without statutory floors. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
 
 ---
 

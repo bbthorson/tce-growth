@@ -14,40 +14,45 @@ The theoretical synthesis of these papers lives in the [Constitution](../01-foun
 
 ## How the research builds
 
-The papers in this directory depend on each other in a specific order. Lower-level papers establish foundations the higher-level papers build on.
+The papers in this directory depend on each other in a specific order. Each arrow points from a file to one that should be read after it, so the foundation sits at the left and the files that extend it sit to its right. The numbered list below the diagram gives the reason for each arrow.
 
-```
-                         ┌─────────────────────────┐
-                         │       NRR (Output)       │
-                         │  The composite scorecard │
-                         └────────────┬────────────┘
-                                      │
-                    ┌─────────────────┴─────────────────┐
-                    │                                    │
-         ┌──────────┴──────────┐             ┌──────────┴──────────┐
-         │    CFIR (Pre-Sale)   │             │  RE-AIM (Post-Sale)  │
-         │  Diagnose barriers   │             │  Measure outcomes    │
-         │  Map Inner Setting   │             │  R-E-A-I-M KPIs      │
-         └──────────┬──────────┘             └──────────┬──────────┘
-                    │                                    │
-                    └─────────────────┬─────────────────┘
-                                      │
-              ┌───────────────────────┼───────────────────────┐
-              │                       │                       │
-    ┌─────────┴─────────┐  ┌─────────┴─────────┐  ┌─────────┴─────────┐
-    │  Prospect Theory   │  │   Game Theory      │  │  Costly Signals    │
-    │  Loss aversion     │  │  Shadow of Future  │  │  Friction = Signal │
-    │  Fear > Value      │  │  Nash Equilibrium  │  │  Cheap Talk Problem│
-    └─────────┬─────────┘  └─────────┬─────────┘  └─────────┬─────────┘
-              │                       │                       │
-              └───────────────────────┼───────────────────────┘
-                                      │
-                        ┌─────────────┴─────────────┐
-                        │  Transaction Cost Economics │
-                        │  (The Foundation)           │
-                        │  Three costs → Investment → │
-                        │  Specificity → Future cost  │
-                        └─────────────────────────────┘
+```mermaid
+flowchart LR
+    TCE["1. Transaction Cost Economics<br/>the foundation"]
+
+    CS["2. Costly Signals"]
+    PT["3. Prospect Theory"]
+    GT["4. Game Theory and NRR"]
+    CC["8. Channel Collapse"]
+    IC["9. Incomplete Contracts"]
+    BCD["10. Buying Center Dynamics"]
+    PM["12. Process Misfit"]
+    KCA["13. Quasi-Rents and<br/>Supplier-Side Hold-Up"]
+    ER["15. TCE Empirical Record"]
+    BCN["16. Buyer Cost Neighbors"]
+
+    FF["5. Fear of Failure"]
+    RO["11. Real Options"]
+    VP["18. Value and Persuasion"]
+    IE["17. Information Environment:<br/>Cost Floors"]
+    IT["14. Integration Touchpoints"]
+
+    CFIR["6. CFIR<br/>pre-sale diagnosis"]
+    REAIM["7. RE-AIM<br/>post-sale measurement"]
+
+    ADV["19. Adversarial Review, 2026-11<br/>read last"]
+
+    TCE --> CS & PT & GT & CC & IC & BCD & PM & KCA & ER & BCN
+    IC -.-|read alongside| KCA
+
+    PT --> FF & RO & VP
+    CC --> IE
+    PM --> IT
+
+    CS & PT & BCD & PM --> CFIR
+    GT & CFIR --> REAIM
+
+    ER & BCN --> ADV
 ```
 
 **Order of dependency:**
@@ -64,7 +69,7 @@ Plus the channel-level layer:
 
 8. **[Channel Collapse](./channel-collapse.md)** — Jevons' Paradox applied to outbound. Governance solutions for the channel-level externality problem.
 
-Plus three sources added in Constitution v13. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
+Plus three sources added under the Constitution's earlier numbering, before 4.0. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
 
 9. **[Incomplete Contracts](./incomplete-contracts.md)** — Read after Transaction Cost Economics. Williamson explains why asset specificity creates exposure. Grossman-Hart-Moore explain what determines the outcome once exposure exists, which is the allocation of residual control rights. This is the theory beneath the MIP. Its 2026-09 extension carries the incomplete-contracting and front-end-loading evidence behind the allocation clause, now Axiom III's: allocation is settled before the investment is sunk, while the adaptation follows. Constitution 3.0 changed *paid* to *allocated* when the clause sat in Axiom II.
 10. **[Buying Center Dynamics](./buying-center-dynamics.md)** — Read before CFIR. Establishes that the buyer is a coalition rather than an agent, which is the premise CFIR's Inner Setting analysis depends on. Supplies the structure of $F_{consensus}$.
@@ -92,6 +97,10 @@ Plus the Constitution 5.0 layer, added 2026-11 as the evidence for the 5.0 propo
 17. **[The Information Environment: Cost Floors](./information-environment.md)** — Read after Channel Collapse. The part of each cost set outside the deal, which no seller lowers within one deal at a return the deal repays, and what does lower it. Backs the cost floor corollary.
 18. **[Value and Persuasion](./value-and-persuasion.md)** — Read after Prospect Theory. The split between realizable, recognized and realized value behind the second standing assumption, and the constructed-preferences objection that survives it.
 
+Plus the adversarial layer:
+
+19. **[Adversarial Review, 2026-11](./adversarial-review-2026-11.md)** — Read last. An external review set out to break seven claims. Records what the Constitution already answered, the five objections that survive, about thirty uncited sources, and which of the review's own figures are not fit to cite. Opened open questions 37 to 43.
+
 ---
 
 ## Which sources back which axiom
@@ -100,9 +109,9 @@ Each file's `operationalizes` field carries the same mapping. The Constitution's
 
 | Axiom | The decision | Sources |
 |---|---|---|
-| **I. Composition** | Should I use the market? | [Transaction Cost Economics](./transaction-cost-economics.md) for Coase's question and Dahlman's three costs, [Buying Center Dynamics](./buying-center-dynamics.md), [Channel Collapse](./channel-collapse.md), [Fear of Failure](./fear-of-failure.md), [Integration Touchpoints](./integration-touchpoints.md), [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for the non-compensatory rule against its neighbors |
-| **II. Investment** | What will it cost me today? | [Transaction Cost Economics](./transaction-cost-economics.md) for Williamson's ex ante costs, [Integration Touchpoints](./integration-touchpoints.md) for the adaptation each touchpoint demands, [Process Misfit](./process-misfit.md) for the buyer's four responses to misfit, [The Information Environment](./information-environment.md) for the cost floor corollary, [Value and Persuasion](./value-and-persuasion.md) for adoption effort priced as buyer investment |
-| **III. Future Cost** | What might it cost me later? | Specificity and governance: [Transaction Cost Economics](./transaction-cost-economics.md) for Williamson's ex post costs, [Klein, Crawford and Alchian](./klein-crawford-alchian.md), [Incomplete Contracts](./incomplete-contracts.md), [Process Misfit](./process-misfit.md), [Game Theory and NRR](./game-theory-and-nrr.md), [Real Options](./real-options.md), [Integration Touchpoints](./integration-touchpoints.md). Gaps and verification: [Costly Signals](./costly-signals.md), [Prospect Theory](./prospect-theory.md), [Fear of Failure](./fear-of-failure.md), [Buying Center Dynamics](./buying-center-dynamics.md), [Channel Collapse](./channel-collapse.md), [CFIR](./cfir.md), [RE-AIM](./re-aim-framework.md). The critique: [The TCE Empirical Record](./tce-empirical-record.md). The value assumption: [Value and Persuasion](./value-and-persuasion.md) |
+| **I. Composition** | Should I use the market? | [Transaction Cost Economics](./transaction-cost-economics.md) for Coase's question and Dahlman's three costs, [Buying Center Dynamics](./buying-center-dynamics.md), [Channel Collapse](./channel-collapse.md), [Fear of Failure](./fear-of-failure.md), [Integration Touchpoints](./integration-touchpoints.md), [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for the non-compensatory rule against its neighbors, [Adversarial Review, 2026-11](./adversarial-review-2026-11.md) |
+| **II. Investment** | What will it cost me today? | [Transaction Cost Economics](./transaction-cost-economics.md) for Williamson's ex ante costs, [Integration Touchpoints](./integration-touchpoints.md) for the adaptation each touchpoint demands, [Process Misfit](./process-misfit.md) for the buyer's four responses to misfit, [The Information Environment](./information-environment.md) for the cost floor corollary, [Value and Persuasion](./value-and-persuasion.md) for adoption effort priced as buyer investment, [Adversarial Review, 2026-11](./adversarial-review-2026-11.md) |
+| **III. Future Cost** | What might it cost me later? | Specificity and governance: [Transaction Cost Economics](./transaction-cost-economics.md) for Williamson's ex post costs, [Klein, Crawford and Alchian](./klein-crawford-alchian.md), [Incomplete Contracts](./incomplete-contracts.md), [Process Misfit](./process-misfit.md), [Game Theory and NRR](./game-theory-and-nrr.md), [Real Options](./real-options.md), [Integration Touchpoints](./integration-touchpoints.md). Gaps and verification: [Costly Signals](./costly-signals.md), [Prospect Theory](./prospect-theory.md), [Fear of Failure](./fear-of-failure.md), [Buying Center Dynamics](./buying-center-dynamics.md), [Channel Collapse](./channel-collapse.md), [CFIR](./cfir.md), [RE-AIM](./re-aim-framework.md). The critique: [The TCE Empirical Record](./tce-empirical-record.md). The value assumption: [Value and Persuasion](./value-and-persuasion.md), [Adversarial Review, 2026-11](./adversarial-review-2026-11.md) |
 
 ---
 
