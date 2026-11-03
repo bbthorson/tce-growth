@@ -14,40 +14,45 @@ The theoretical synthesis of these papers lives in the [Constitution](../01-foun
 
 ## How the research builds
 
-The papers in this directory depend on each other in a specific order. Lower-level papers establish foundations the higher-level papers build on.
+The papers in this directory depend on each other in a specific order. Each arrow points from a file to one that should be read after it, so the foundation sits at the left and the files that extend it sit to its right. The numbered list below the diagram gives the reason for each arrow.
 
-```
-                         ┌─────────────────────────┐
-                         │       NRR (Output)       │
-                         │  Renewal and retention   │
-                         └────────────┬────────────┘
-                                      │
-                    ┌─────────────────┴─────────────────┐
-                    │                                    │
-         ┌──────────┴──────────┐             ┌──────────┴──────────┐
-         │    CFIR (Pre-Sale)   │             │  RE-AIM (Post-Sale)  │
-         │  Diagnose barriers   │             │  Measure outcomes    │
-         │  Map Inner Setting   │             │  R-E-A-I-M KPIs      │
-         └──────────┬──────────┘             └──────────┬──────────┘
-                    │                                    │
-                    └─────────────────┬─────────────────┘
-                                      │
-              ┌───────────────────────┼───────────────────────┐
-              │                       │                       │
-    ┌─────────┴─────────┐  ┌─────────┴─────────┐  ┌─────────┴─────────┐
-    │  Prospect Theory   │  │   Game Theory      │  │  Costly Signals    │
-    │  Loss aversion     │  │  Shadow of Future  │  │  Friction = Signal │
-    │  Fear > Value      │  │  Nash Equilibrium  │  │  Cheap Talk Problem│
-    └─────────┬─────────┘  └─────────┬─────────┘  └─────────┬─────────┘
-              │                       │                       │
-              └───────────────────────┼───────────────────────┘
-                                      │
-                        ┌─────────────┴─────────────┐
-                        │  Transaction Cost Economics │
-                        │  (The Foundation)           │
-                        │  Three costs → Investment → │
-                        │  Specificity → Future cost  │
-                        └─────────────────────────────┘
+```mermaid
+flowchart LR
+    TCE["1. Transaction Cost Economics<br/>the foundation"]
+
+    CS["2. Costly Signals"]
+    PT["3. Prospect Theory"]
+    GT["4. Game Theory and NRR"]
+    CC["8. Channel Collapse"]
+    IC["9. Incomplete Contracts"]
+    BCD["10. Buying Center Dynamics"]
+    PM["12. Process Misfit"]
+    KCA["13. Quasi-Rents and<br/>Supplier-Side Hold-Up"]
+    ER["15. TCE Empirical Record"]
+    BCN["16. Buyer Cost Neighbors"]
+
+    FF["5. Fear of Failure"]
+    RO["11. Real Options"]
+    VP["18. Value and Persuasion"]
+    IE["17. Information Environment:<br/>Cost Floors"]
+    IT["14. Integration Touchpoints"]
+
+    CFIR["6. CFIR<br/>pre-sale diagnosis"]
+    REAIM["7. RE-AIM<br/>post-sale measurement"]
+
+    ADV["19. Adversarial Review, 2026-11<br/>read last"]
+
+    TCE --> CS & PT & GT & CC & IC & BCD & PM & KCA & ER & BCN
+    IC -.-|read alongside| KCA
+
+    PT --> FF & RO & VP
+    CC --> IE
+    PM --> IT
+
+    CS & PT & BCD & PM --> CFIR
+    GT & CFIR --> REAIM
+
+    ER & BCN --> ADV
 ```
 
 **Order of dependency:**
