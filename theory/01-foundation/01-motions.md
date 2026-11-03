@@ -15,7 +15,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 > [!IMPORTANT]
 > **This file carries the argument behind Axiom I's first corollary, that the motion is where the sale starts.** The positions and thresholds are stated in the [Constitution](./00-tcg-constitution.md) and given their functional form in [02-mathematical-models.md](./02-mathematical-models.md) section 6. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits them, and [03-glossary-and-notation.md](./03-glossary-and-notation.md) carries the symbols. Section 9 records what this file does not settle, and section 10 is the translation table for readers arriving with Product-Led and Sales-Led in hand.
 
-A sales motion is the instrument set a seller deploys to pay down a buyer's cost of using the market. A seller cannot alter the buyer's willingness to pay, which is a property of the product, and price is a transfer that cancels between the two parties' conditions under Axiom II. So a motion works entirely by lowering one or more of three costs, which take Dahlman's (1979) names in theory and keep the field's names in the notation:
+A sales motion is the instrument set a seller deploys to pay down a buyer's cost of using the market. A seller cannot alter the buyer's realizable value for a given offer, which the product and the buyer's situation set, only what the buyer recognizes of it, and price is a transfer that cancels between the two parties' conditions under Axiom II. So a motion works entirely by lowering one or more of three costs, which take Dahlman's (1979) names in theory and keep the field's names in the notation:
 
 * **Search and information, $F_{search}$:** the buyer cannot discover, compare, or reach a viable solution at acceptable cost.
 * **Bargaining and decision, $F_{consensus}$:** the buyer's decision roles cannot agree, because each is uncertain what the change does to its own budget, headcount and standing. The field calls this the consensus cost.
@@ -39,7 +39,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}, \qquad k \in 
 
 **The sale starts at the largest $r_k$**, the cost nearest the point where it would keep the buyer out. That cost is where the seller's first investment goes, and the motion is named after it. Two costs at the same position are run together.
 
-**Positions, not shares.** Earlier versions summed the three costs into a level and divided each by the total to get a direction. Both operations assumed the three costs sat on one scale, and they never did. A position compares each cost against its own thresholds and never against the other two, so the three are comparable without sharing a scale. It also catches the case shares could not: a cost holding a small share of the total can still sit above its participation threshold and end the deal.
+**Positions, not shares.** Earlier versions summed the three costs into a level and divided each by the total to get a direction. Both operations assumed the three costs sat on one scale, and they never did. A position compares each cost against its own thresholds and never against the other two, so the three are comparable without sharing a scale. It also catches the case shares could not: a cost holding a small share of the total can still sit above its participation threshold and end the deal. Constitution 5.0 states the rule underneath: the costs are non-compensatory. They add, in the buyer's condition and against one capacity where one person or budget pays more than one, but a low position on one never offsets another above its threshold. A small buyer whose one person pays all three approaches a single summed test. A large coalition approaches three separate ones.
 
 The costs are in fractions of annual contract value, per [02-mathematical-models.md](./02-mathematical-models.md) section 1.2. The thresholds are named in the theory and placed as edges on the calculator's counts, and [06-calibration.md](./06-calibration.md) records every edge as chosen.
 
@@ -166,6 +166,8 @@ A seller who runs only self-serve tactics can transact only with buyers whose ev
 
 Addressable market is therefore a property of the motion rather than of the product, and [05-governance-forms.md](./05-governance-forms.md) section 4 carries that argument and its three consequences.
 
+**The market also sets each cost's floor.** Axiom II's cost floor corollary says part of every cost is set outside the deal: the information environment for search, the buyer's institutions for bargaining and the measurement environment for policing. No motion lowers a cost floor deal by deal, because no single deal repays it. So the first decision a seller makes about cost is where to sell. A market whose search cost floor is rising, because message volume has outgrown buyer attention, punishes a search-led motion no matter how well it is run. A seller lowers a cost floor only by investing in something shared across deals, such as a marketplace contract, a certification, an intermediary with a stake or a standard. [information-environment.md](../02-research/information-environment.md) carries the evidence.
+
 ---
 
 ## 7. Two symptoms of the unallocated failure
@@ -189,6 +191,7 @@ Each item points at its entry in [07-open-questions.md](./07-open-questions.md) 
 - **Where the thresholds sit.** Both edges on every count are chosen, placed on the boundaries of the score bands earlier versions used, and [06-calibration.md](./06-calibration.md) records them as chosen. The counts are observations. The edges are not.
 - **Whether the position is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different positions, because the incumbent's adaptation is already sunk. The instrument scores the deal rather than a vendor, which is a decision rather than an oversight: a vendor-scored instrument owes the reader an account of how each vendor wins, and that account does not exist yet. Until it does, an incumbent counting a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
 - **Whether the coupling between costs moves where the sale starts.** Misfit raises the policing cost and creates a bargaining cost at once, so the reading partly depends on when it is taken. Open question 3.
+- **How to read a cost floor apart from the deal's own cost.** The calculator reads each cost's position and cannot yet say how much of it the market set. Open question 34.
 - **Whether the three drift rates behave as one mechanism.** $\gamma_{consensus}$ is the only one with a discrete field event attached, an occupant change. The other two are asserted to be continuous and nothing tests that. Open question 15.
 
 ---

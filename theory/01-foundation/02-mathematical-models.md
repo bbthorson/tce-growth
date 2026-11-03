@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Version:** 2.0
 **Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
 
-The Constitution is axioms-first. It states that each cost has a threshold that keeps the buyer out, that each party goes ahead only when its own share of today's investment is covered by its own return, and that what a party sinks exposes it to what it cannot verify. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
+The Constitution is axioms-first. It states that each cost has a threshold that keeps the buyer out, that each party goes ahead only when its own share of today's investment is covered by its own return, and that what a party sinks exposes it to what it cannot verify or enforce. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
 Nothing here introduces new claims. Every model traces to a term the Constitution already defines. If a model here cannot be traced to an axiom, it does not belong in this file either.
 
@@ -310,7 +310,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 | above zero and at most one | Needs seller investment |
 | $r_k > 1$ | Keeps the buyer out |
 
-The sale starts at the largest $r_k$. The three costs are never summed, so they never need a common scale: each is compared against its own thresholds, and $r_k$ is dimensionless.
+The sale starts at the largest $r_k$. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
 
 **The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. **The participation threshold measures capacity, not affordability, and it does not move with value.** A buyer stays out of a market for one of two reasons. Either a cost exceeds what the deal is worth, or the buyer cannot get through the cost at any price: it cannot name the category, cannot reach a seller, cannot bring its decision roles to a decision, or cannot tell a good seller from a bad one. The first depends on value, and the buyer's condition $S_b$ in section 1 already carries it. The second does not, and it is what $\tau^{part}_k$ marks. A threshold that rose with $V_{switch}$ would restate the buyer's condition inside Axiom I and leave the gate with no claim of its own.
 

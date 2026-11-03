@@ -270,7 +270,7 @@ def panel_1():
         x_ticks=[(0, "0"), (6, "6"), (12, "12"), (18, "18"), (24, "24")],
         y_ticks=[(0, "0"), (40, "40"), (80, "80")],
         body=body,
-        desc="Two exponential decay curves falling from a peak perceived "
+        desc="Two exponential decay curves falling from a peak recognized "
              "value of 100 toward a horizontal floor at 40, the value of the "
              "buyer's next best alternative. The curve driven by "
              "organizational inertia alone reaches the floor in the second "

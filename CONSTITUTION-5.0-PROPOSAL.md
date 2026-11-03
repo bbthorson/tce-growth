@@ -1,6 +1,6 @@
 # Constitution 5.0 Proposal
 
-**Status:** Draft for review. Nothing in `theory/` or `practice/` has changed. Section 8 lists the choices still open.
+**Status:** Applied on 2026-11-02, steps 1 to 6 of section 7. Constitution 5.0 is in force. The frozen `practice/` files point here, so this file stays until the practice rebuild and retires to git history then, which is step 7. Section 8 records the choices.
 **Date:** 2026-11-02
 
 This file follows the precedent of the 4.0 revision proposal: written at the root, reviewed, applied in steps, then retired to git history. It records ten decisions taken in review between 2026-10-27 and 2026-11-02, and turns each into proposed text.
@@ -241,7 +241,7 @@ These change no Constitution text, and the sequence in section 7 depends on them
    - `07-open-questions.md`: items 1, 3, 9 and 20, and the new entries.
 5. **Wording sweep.** "Never summed" appears in `README.md` line 11, `CLAUDE.md` line 46, the Constitution line 81, `02-mathematical-models.md` line 313 and the glossary line 73. Each becomes the non-compensatory statement. The practice instances wait for the rebuild. "Never summed" is a description, not a canonical term, so it gets no `RetiredTerms.yml` entry. A Vale rule could catch its return, and that is a separate choice.
 6. **Equations.** Section 3.1's notation changes the buyer's condition. Edit the Constitution and glossary first, then `models/tcg_models.py`, then rerun `make_figures.py`, then fix any worked example that moved.
-7. **Run the five checks,** then retire this file to git history.
+7. **Run the five checks,** then retire this file to git history once the practice rebuild no longer needs it. The frozen practice files and `deal-triage-calculator.md`'s "never summed" wait for that rebuild.
 
 ---
 
