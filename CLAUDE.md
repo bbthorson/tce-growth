@@ -78,7 +78,7 @@ python3 models/test_tcg_models.py && \
 python3 models/make_figures.py --check && vale .
 ```
 
-They also run in `.githooks/pre-commit`, which is active only after `git config core.hooksPath .githooks`.
+They also run in `.githooks/pre-commit`, which is active only after `git config core.hooksPath .githooks`, and in `.github/workflows/checks.yml` on every pull request and push to `main`.
 
 ## Publishing workflow
 
