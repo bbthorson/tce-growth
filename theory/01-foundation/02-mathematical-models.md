@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Version:** 2.0
 **Purpose:** To specify the functional forms behind the variables the [Constitution](./00-tcg-constitution.md) names but does not compute.
 
-The Constitution is axioms-first. It states that each cost has a threshold that keeps the buyer out, that each party goes ahead only when its own share of today's investment is covered by its own return, and that what a party sinks exposes it to what it cannot verify. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
+The Constitution is axioms-first. It states that each cost has a threshold that keeps the buyer out, that each party goes ahead only when its own share of today's investment is covered by its own return, and that what a party sinks exposes it to what it cannot verify or enforce. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
 Nothing here introduces new claims. Every model traces to a term the Constitution already defines. If a model here cannot be traced to an axiom, it does not belong in this file either.
 
@@ -29,7 +29,7 @@ $$S_b = V_{switch}(t) - P - \sum_{k} I^b_k - L_b \qquad S_s = P - C_{deliver} - 
 
 | Symbol | Meaning |
 |---|---|
-| $V_{switch}(t)$ | $V_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying where they are. $V_{next\_best}$ includes building it internally. Section 4 gives the decay. |
+| $V_{switch}(t)$ | $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying where they are, read on recognized value $\tilde{V}_{solution}$ because that is what the buyer decides on. $V_{next\_best}$ includes building it internally. Section 4 gives the decay. |
 | $P$ | Price over the relationship |
 | $C_{deliver}$ | The seller's cost of delivering against that price |
 | $I^b_k$, $I^s_k$ | What the buyer and the seller invest today against cost $k \in \{search,\; consensus,\; implementation\}$ (Axiom II) |
@@ -217,9 +217,9 @@ Treat $TO$ as a field refinement rather than core theory. The two-term form abov
 
 ### 4.1 Value decay
 
-$$V_{solution}(t) = V_0 \cdot e^{-\delta t}$$
+$$\tilde{V}_{solution}(t) = \tilde{V}_0 \cdot e^{-\delta t}$$
 
-Where $V_0$ is peak perceived value at the triggering event and $t$ is elapsed months. This is the value-decay half of the Decay Clock, the second standing assumption in the Constitution.
+Where $\tilde{V}_0$ is the buyer's recognized value at the triggering event and $t$ is elapsed months. This is the value-decay half of the Decay Clock, the second standing assumption in the Constitution.
 
 ### 4.2 Structural form of the decay rate
 
@@ -310,7 +310,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 | above zero and at most one | Needs seller investment |
 | $r_k > 1$ | Keeps the buyer out |
 
-The sale starts at the largest $r_k$. The three costs are never summed, so they never need a common scale: each is compared against its own thresholds, and $r_k$ is dimensionless.
+The sale starts at the largest $r_k$. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
 
 **The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. **The participation threshold measures capacity, not affordability, and it does not move with value.** A buyer stays out of a market for one of two reasons. Either a cost exceeds what the deal is worth, or the buyer cannot get through the cost at any price: it cannot name the category, cannot reach a seller, cannot bring its decision roles to a decision, or cannot tell a good seller from a bad one. The first depends on value, and the buyer's condition $S_b$ in section 1 already carries it. The second does not, and it is what $\tau^{part}_k$ marks. A threshold that rose with $V_{switch}$ would restate the buyer's condition inside Axiom I and leave the gate with no claim of its own.
 

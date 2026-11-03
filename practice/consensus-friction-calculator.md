@@ -1,12 +1,15 @@
 ---
 title: "Consensus Friction Calculator"
 layer: practice
-status: active
+status: under-review
 operationalizes: [axiom-1]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Consensus Friction Calculator
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 **Purpose:** To estimate how much organizational friction a buying committee will generate, and to decide whether the deal needs a stakeholder map, a joint steering committee, or executive sponsorship.
 

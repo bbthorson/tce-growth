@@ -18,7 +18,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The framework makes two kinds of claim and they carry very different weight.
 
-**Structural claims** say what depends on what. Using the market costs three things, and any one of them can keep the buyer out. The sale starts at the cost nearest its own threshold. Each party goes ahead only when its own share of today's investment is covered by its own return, and price cancels between the two conditions. What a party sinks exposes it to what it cannot verify, and the gaps rebuild unless maintained. Specificity and frequency select the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
+**Structural claims** say what depends on what. Using the market costs three things, and any one of them can keep the buyer out. The sale starts at the cost nearest its own threshold. Each party goes ahead only when its own share of today's investment is covered by its own return, and price cancels between the two conditions. What a party sinks exposes it to what it cannot verify or enforce, and the gaps rebuild unless maintained. The costs are non-compensatory, and each has a cost floor set outside the deal. Specificity and frequency select the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
 
 **Parameters** say how much. Every one of them is a reasoned starting value. None is fitted to booked deal data.
 

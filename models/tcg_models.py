@@ -433,9 +433,10 @@ def decay_rate(lambda_inertia, e_external, gamma_r=GAMMA_RESPONSIVENESS):
 def value_decay(v0, delta, t):
     """Section 4.1, and the value-decay standing assumption.
 
-        V_effective(t) = V_0 * exp(-delta * t)
+        V_effective(t) = V~_0 * exp(-delta * t)
 
-    v0 is peak perceived value at the triggering event and t is elapsed months.
+    v0 is the buyer's recognized value at the triggering event, and t is
+    elapsed months.
     As V decays the buyer's relative preference shifts back toward the next
     best alternative, including building it themselves.
     """
@@ -480,9 +481,12 @@ def asymmetry_drift(gap0, gamma, t):
 def switching_value(v_effective, v_next_best):
     """V_switch(t), section 1.1: the buyer's opportunity cost of staying put.
 
-        V_switch(t) = V_solution * exp(-delta * t) - V_next_best
+        V_switch(t) = V~_solution * exp(-delta * t) - V_next_best
 
-    Pass value_decay(...) as v_effective. V_next_best includes building it.
+    V~_solution is recognized value, the buyer's estimate, because that is
+    what the buyer decides on (Constitution 5.0, standing assumption 2).
+    Pass value_decay(...) of it as v_effective. V_next_best includes
+    building it.
     """
     return v_effective - v_next_best
 

@@ -8,13 +8,13 @@
 
 Buying costs more than money. Finding a solution, getting your own organization to agree, and installing the thing without breaking something are three separate bills, and a buyer pays all three before they see any value. **Transaction Cost Growth is the claim that those three costs, not the product and not the pitch, determine which go-to-market motion a deal can support.**
 
-Each cost is read on its own, never summed with the others.
+Each cost is read against its own threshold. The costs add, but ease on one never buys back another above its threshold.
 
 > **Any one cost can keep a buyer out of the market. Among the costs a buyer will bear, the one nearest that limit is where the sale starts.**
 
 The named motions are named after the cost a seller pays down first, and they are not competing philosophies. A sale that starts at finding and comparing is search-led. One that starts at getting the buyer's own people to decide is consensus-led. One that starts at whether the seller will deliver and the product will work here is implementation-led. Where every cost is low enough for the buyer to pay down alone, and nothing specific is sunk, the market is Turnkey, and Turnkey does not last on its own: the low investment that defines it invites entrants, and entrants raise the search cost. The familiar labels only partly line up. Sales-Led Growth is narrower than search-led, Product-Led Growth overlaps Turnkey without equaling it, and consensus-led has no established name at all, which is a finding rather than an omission. [01-motions.md section 10](./theory/01-foundation/01-motions.md) carries the map. Choosing between these motions as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
 
-Three axioms carry the argument, each answering one decision in time order. Should I use the market: using it costs the buyer three things beyond price, search and information, bargaining and decision, and policing and enforcement. What will it cost me today: each cost is paid down by the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return. What might it cost me later: whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify, and who carries that exposure has to be settled before the investment is sunk.
+Three axioms carry the argument, each answering one decision in time order. Should I use the market: using it costs the buyer three things beyond price, search and information, bargaining and decision, and policing and enforcement. What will it cost me today: each cost is paid down by the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return. What might it cost me later: whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify or enforce, and who carries that exposure has to be settled before the investment is sunk.
 
 Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
@@ -46,7 +46,7 @@ The framework indexes on **decision**. Each axiom answers one, and the three run
 |---|---|---|---|
 | **Should I use the market?** | Whether any cost keeps the buyer out, and which cost the sale starts with | I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
 | **What will it cost me today?** | Who invests against each cost, and whether each party's share fits its return | II | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
-| **What might it cost me later?** | What each party sinks that is specific, what it cannot verify, what arrangement holds it, and what to re-prove at renewal | III | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **What might it cost me later?** | What each party sinks that is specific, what it cannot verify or enforce, what arrangement holds it, and what to re-prove at renewal | III | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
 
 Where nothing specific is sunk and a trial verifies fit, the future cost is near zero and market terms hold. That is the gate, and it sits under Axiom III.
 
@@ -88,7 +88,7 @@ Statements below are canonical. If this table and the [Constitution](./theory/01
 |---|---|---|
 | **I. Law of Transaction Cost Composition** | Should I use the market? | Using the market costs the buyer three things beyond price: search and information, bargaining and decision, and policing and enforcement. A buyer will not use the market while any one of them exceeds what it will bear, and among costs it will bear, their relative size is where the sale starts. |
 | **II. Law of Transaction Investment** | What will it cost me today? | Each of those costs is paid down by an investment from the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return. |
-| **III. Law of Future Cost** | What might it cost me later? | Whatever a party sinks that is worth less outside this relationship exposes it to what it cannot verify later. That exposure is a future cost, it rebuilds unless maintained, and its allocation must be settled before the investment is sunk. |
+| **III. Law of Future Cost** | What might it cost me later? | Whatever a party sinks that is worth less outside this relationship exposes it to what it cannot verify or enforce later. That exposure is a future cost, it rebuilds unless maintained, and its allocation must be settled before the investment is sunk. |
 
 The field calls the three costs *search*, *consensus* and *implementation*, and the notation keeps those subscripts.
 
@@ -117,5 +117,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 4.1 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
-**Last updated:** 2026-10-09
+**Version:** 5.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Last updated:** 2026-11-02

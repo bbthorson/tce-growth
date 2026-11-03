@@ -33,7 +33,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $S_b$ | The buyer's condition. $V_{switch}(t) - P - \sum_k I^b_k - L_b$. Must exceed 0 for the buyer to go ahead. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $S_s$ | The seller's condition. $P - C_{deliver} - \sum_k I^s_k - L_s$. Must exceed 0 for the seller to go ahead. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $S_b + S_s$ | The joint surplus. Price cancels from it, because price is a transfer. | [02-mathematical-models.md §1.3](./02-mathematical-models.md) |
-| $V_{switch}(t)$ | The buyer's opportunity cost of staying where they are. Equals $V_{solution} \cdot e^{-\delta t} - V_{next\_best}$. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $V_{switch}(t)$ | The buyer's opportunity cost of staying where they are. Equals $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, read on recognized value. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $P$ | Price over the relationship. Appears in both conditions and in neither party's cost of transacting. **Not the punishment payoff.** | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $C_{deliver}$ | The seller's cost of delivering against that price. Contingent on revenue. | [Constitution, Axiom II](./00-tcg-constitution.md), [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
 | $I^b_k$ | What the buyer invests today against cost $k$. Includes the buyer's adaptation work: integrations built, workflows rewired. | [Constitution, Axiom II](./00-tcg-constitution.md) |
@@ -62,15 +62,16 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $V_{solution}$ | Peak perceived value at the triggering event. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
-| $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
+| $V_{solution}$ | Realizable value: what the change can be worth to this buyer for a given offer, set by the product and the buyer's situation. Exogenous to the sale. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
+| $\tilde{V}_{solution}$ | Recognized value: the buyer's estimate of realizable value, usually held as a range, at its peak at the triggering event. The seller moves it, and the buyer decides on it. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
+| $V_{effective}(t)$ | Value after decay. Equals $\tilde{V}_{solution} \cdot e^{-\delta t}$. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
 | $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 
 ### Costs, thresholds and positions (Axiom I)
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $F_k$ | Cost $k$ to the buyer, for $k$ in search, consensus, implementation. The three are never summed. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $F_k$ | Cost $k$ to the buyer, for $k$ in search, consensus, implementation. The three are non-compensatory: they add, but ease on one never buys back another above its threshold. Each has a cost floor set outside the deal. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $F_{search}$ | The search and information cost. Which solutions exist, whether this one fits, and whether the buyer can reach the seller at all. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $F_{consensus}$ | The bargaining and decision cost. Mostly internal, among the decision roles, before any term is negotiated with the seller. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §3](./02-mathematical-models.md) |
 | $F_{implementation}$ | The policing and enforcement cost. Whether the seller will deliver what was promised, and whether it will work here. | [Constitution, Axiom I](./00-tcg-constitution.md) |
@@ -164,7 +165,7 @@ None of these survives in `models/tcg_models.py`. [02-mathematical-models.md](./
 | $k$, $k_{threshold}$ | Specificity as a level, and its boundary at 15 of 30 | Specific exposure, read under Axiom III |
 | $F_{deployed}$ | Friction deployed, required to scale with $k$ | The seller's investment $I^s_k$ (Axiom II), and governance only where something specific is sunk (Axiom III) |
 | $\mathbf{F}$, $\hat{\mathbf{F}}$, $\lVert \mathbf{F} \rVert_1$ | The friction vector, its direction shares and its summed level | The positions $r_k$. The sale starts at the largest |
-| $F_{base}$, $F_{effective}$ | Summed cost, and cost after the per-component multiplier $(1 + \hat{\Delta}_k)$ | Nothing. The costs are never summed and the gaps multiply nothing |
+| $F_{base}$, $F_{effective}$ | Summed cost, and cost after the per-component multiplier $(1 + \hat{\Delta}_k)$ | Nothing. No single summed level is read, the costs are non-compensatory, and the gaps multiply nothing |
 | $\hat{\Delta}_A$ | The deal-level gap, the friction-weighted mean of the three | Nothing. Each gap is read in its own pair, and $\hat{\Delta}_{implementation}$ is the normalized $\Delta_A$ |
 | $\gamma$ (bare) | Deal-level drift, the friction-weighted mean of the $\gamma_k$ | $\gamma_k$ |
 | $\hat{\Delta}_k(0) + \gamma_k t$ | Linear drift, unbounded | Bounded drift toward a ceiling |
@@ -202,7 +203,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 |---|---|---|
 | **Axiom I, Law of Transaction Cost Composition** | Should I use the market? The buyer's three costs beyond price, a participation threshold for each, and where the sale starts. | [Constitution, Part I](./00-tcg-constitution.md) |
 | **Axiom II, Law of Transaction Investment** | What will it cost me today? Each cost is paid down by investment from either party, and each goes ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom III, Law of Future Cost** | What might it cost me later? Specific investment exposes a party to what it cannot verify, and the allocation is settled before the investment is sunk. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom III, Law of Future Cost** | What might it cost me later? Specific investment exposes a party to what it cannot verify or enforce, and the allocation is settled before the investment is sunk. | [Constitution, Part I](./00-tcg-constitution.md) |
 
 ### Definitions
 
@@ -220,7 +221,7 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 | Dahlman's name (canonical in theory) | Field name (notation subscript) | What B2B adds |
 |---|---|---|
 | **Search and information** | search | Reachability. |
-| **Bargaining and decision** | consensus | The buyer is a coalition, so most of the bargain is internal, among the decision roles. |
+| **Bargaining and decision** | consensus | The buyer is a coalition. The bargain is internal, among the decision roles, and external, with the seller over terms, which is contracting. |
 | **Policing and enforcement** | implementation | The buyer cannot police performance until the product is adapted to its environment, so the question becomes whether it will work here. The buyer's adaptation work is an Axiom II investment against this cost, not the cost itself. |
 
 ### Axiom I concepts

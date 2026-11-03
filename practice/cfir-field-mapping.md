@@ -1,13 +1,16 @@
 ---
 title: "CFIR-to-Field Asset Mapping"
 layer: practice
-status: active
+status: under-review
 version: 1.1
 operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # CFIR-to-Field Asset Mapping
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 **Purpose:** This document maps the Consolidated Framework for Implementation Research (CFIR) constructs to the TCG field assets. CFIR is the "engineering spec" behind the tools reps use — the academic rigor lives here so the templates stay simple.
 

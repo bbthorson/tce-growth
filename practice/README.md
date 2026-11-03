@@ -1,10 +1,13 @@
 ---
 title: "Practice"
 layer: practice
-status: active
+status: under-review
 ---
 
 # Practice
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 **Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
 
