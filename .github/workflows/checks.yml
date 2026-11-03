@@ -1,0 +1,41 @@
+# Runs the same five checks as .githooks/pre-commit, so commits made where the
+# hook is not active (cloud sessions, fresh clones) are still checked before merge.
+name: checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    env:
+      VALE_VERSION: 3.19.0
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install Vale
+        run: |
+          curl -sSfL "https://github.com/errata-ai/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz" \
+            | tar -xz -C "$RUNNER_TEMP" vale
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+
+      - name: Links and LaTeX
+        run: python3 tools/linting/check_playbook.py
+
+      - name: Frontmatter and version parity
+        run: python3 tools/linting/check_frontmatter.py
+
+      - name: Worked examples reproduce from the models
+        run: python3 models/test_tcg_models.py
+
+      - name: Figures match their equations
+        run: python3 models/make_figures.py --check
+
+      - name: Vale
+        run: vale .
