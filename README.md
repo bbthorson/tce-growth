@@ -8,19 +8,17 @@
 
 Buying costs more than money. Finding a solution, getting your own organization to agree, and installing the thing without breaking something are three separate bills, and a buyer pays all three before they see any value. **Transaction Cost Growth is the claim that those three costs, not the product and not the pitch, determine which go-to-market motion a deal can support.**
 
-Each cost is read against its own threshold. The costs add, but ease on one never buys back another above its threshold.
-
-> **Any one cost can keep a buyer out of the market. Among the costs a buyer will bear, the one nearest that limit is where the sale starts.**
+> **Any one cost can keep a buyer out of the market, and ease on the other two never buys it back. Among the costs a buyer will bear, the one nearest its own threshold is where the sale starts.**
 
 Part of each cost is out of any one seller's reach. Channel noise, the buyer's procurement and compliance rules, and outcomes nobody can attribute are set by the market a seller sells into. That part is the cost's *cost floor*, and it falls only through investment shared across deals, such as a marketplace, a certification or a standard. So the first go-to-market decision is where to sell.
 
-The named motions are named after the cost a seller pays down first, and they are not competing philosophies. A sale that starts at finding and comparing is search-led. One that starts at getting the buyer's own people to decide is consensus-led. One that starts at whether the seller will deliver and the product will work here is implementation-led. Where every cost is low enough for the buyer to pay down alone, and nothing specific is sunk, the market is Turnkey, and Turnkey does not last on its own: the low investment that defines it invites entrants, and entrants raise the search cost. The familiar labels only partly line up. Sales-Led Growth is narrower than search-led, Product-Led Growth overlaps Turnkey without equaling it, and consensus-led has no established name at all, which is a finding rather than an omission. [01-motions.md section 10](./theory/01-foundation/01-motions.md) carries the map. Choosing between these motions as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
+The named motions are named after the cost a seller pays down first, and they are not competing philosophies. A sale that starts at finding and comparing is search-led. One that starts at getting the buyer's own people to decide is consensus-led. One that starts at whether the seller will deliver and the product will work here is implementation-led. Where every cost is low enough for the buyer to pay down alone, the market is Turnkey. The familiar labels only partly line up. Sales-Led Growth is narrower than search-led, Product-Led Growth overlaps Turnkey without equaling it, and consensus-led has no established name at all, which is a finding rather than an omission. [01-motions.md section 10](./theory/01-foundation/01-motions.md) carries the map. Choosing between these motions as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
 
-Three axioms carry the argument, each answering one decision in time order. Should I use the market: using it costs the buyer three things beyond price, search and information, bargaining and decision, and policing and enforcement. What will it cost me today: each cost is paid down by the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return. What might it cost me later: whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify or enforce, and who carries that exposure has to be settled before the investment is sunk.
+Three axioms carry the argument, each answering one decision in time order: should I use the market, what will it cost me today, and what might it cost me later. They are stated [below](#the-three-axioms).
 
 Value sits above the axioms as a standing assumption. What the change can be worth to a buyer, its *realizable value*, is set by the offer and the buyer's situation. Within the sale the seller moves only the buyer's *recognized value*, its estimate of that worth. Evidence the buyer can check narrows the estimate and lowers the search cost. A claim that inflates it is persuasion, and the buyer carries the gap as a future cost until delivery exposes it. A discount moves the surplus. Verification creates it.
 
-Everything in this repository derives from those three, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
+Everything in this repository derives from the axioms, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
 **The numbers are held separately from the claims.** Every coefficient, threshold and band edge sits in [the calibration layer](./theory/01-foundation/06-calibration.md) with an honest provenance status, and none of them is fitted to booked deal data. The framework is coherent rather than confirmed, it says what would confirm it, and it is built so that doubting a number does not require doubting the structure the number sits in.
 
@@ -33,7 +31,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 | Function | Where | What it is |
 |---|---|---|
 | **[theory/](./theory/)** | `theory/01-foundation/` + `theory/02-research/` | Develop and pressure-test the TCG framework. Academic papers, axioms, definitions. |
-| **[practice/](./practice/)** | `practice/` + `practice/implementation-motion/` | Operationalize the theory. The instruments the axioms name, and the measurement tools the tests assert. Frozen at Constitution 4.1 until the rebuild (see below). |
+| **[practice/](./practice/)** | `practice/` + `practice/implementation-motion/` | Operationalize the theory. The instruments the axioms name, and the measurement tools the tests assert. |
 | **[publishing/](./publishing/)** | `publishing/02-tools/` | Turn the framework into public writing. Voice guide, writing protocols, content generators. |
 | **[models/](./models/)** | `models/` | Executable forms of the equations, so a worked example cannot drift from its formula. Python, no dependencies. |
 | **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
@@ -52,10 +50,10 @@ The framework indexes on **decision**. Each axiom answers one, and the three run
 | Decision | What it settles | Axiom | Go here |
 |---|---|---|---|
 | **Should I use the market?** | Whether any cost keeps the buyer out, and which cost the sale starts with | I | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
-| **What will it cost me today?** | Who invests against each cost, whether each party's share fits its return, and which part of each cost is a cost floor no single deal can lower | II | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
-| **What might it cost me later?** | What each party sinks that is specific, what it cannot verify or enforce, what arrangement or hostage holds it, and what to re-prove at renewal | III | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **What will it cost me today?** | Who invests against each cost, and whether each party's share fits its return | II | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
+| **What might it cost me later?** | What each party sinks that is specific, what it cannot verify or enforce, what arrangement holds it, and what to re-prove at renewal | III | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
 
-Where nothing specific is sunk and a trial verifies fit, the future cost is near zero and market terms hold. That is the gate, and it sits under Axiom III. The instruments linked above are frozen at 4.1, as the note above says.
+Where nothing specific is sunk and a trial verifies fit, the future cost is near zero and market terms hold. That is the gate, and it sits under Axiom III.
 
 ## Looking for something specific
 
@@ -67,7 +65,6 @@ Where nothing specific is sunk and a trial verifies fit, the future cost is near
 | Decide whether to invest engineering in a deal | [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
 | Compute a formula, or check one still holds | [models/](./models/) |
 | See which questions the theory has not settled | [07-open-questions.md](./theory/01-foundation/07-open-questions.md) |
-| See why 5.0 changed what it changed | [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) |
 | Write about TCG publicly | [publishing/02-tools/](./publishing/02-tools/) |
 
 **Orientation lives in two places only:** this file, and [the research reading guide](./theory/02-research/00-reading-guide.md). Every other README is a local index of its own directory.
@@ -81,15 +78,13 @@ Where nothing specific is sunk and a trial verifies fit, the future cost is near
 $$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} - \sum_k I^s_k - L_s > 0 \qquad r_k \le 1 \;\; \forall k$$
 
 - **$S_b$, $S_s$** = the buyer's and the seller's surplus. A deal closes only when both are positive. All terms are fractions of annual contract value.
-- **$V_{switch}(t)$** = $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying put, decaying at rate $\delta$ after the triggering event. It is read on recognized value $\tilde{V}_{solution}$, the buyer's estimate, because that is what the buyer decides on. Realizable value $V_{solution}$ is what the offer can actually be worth to this buyer.
+- **$V_{switch}(t)$** = $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying put, decaying at rate $\delta$ after the triggering event. It is read on recognized value, the buyer's estimate, because that is what the buyer decides on.
 - **$P$** = price over the relationship. It appears in both conditions and cancels when they are added, because price is a transfer and not a transaction cost.
 - **$I^b_k$, $I^s_k$** = what the buyer and the seller invest today against cost $k \in \{search, consensus, implementation\}$ (Axiom II)
-- **$L_b$, $L_s$** = each party's expected future loss, its specific exposure times the chance the exposure does not come back (Axiom III). Persuasion that inflates recognized value above realizable value raises $L_b$.
+- **$L_b$, $L_s$** = each party's expected future loss, its specific exposure times the chance the exposure does not come back (Axiom III).
 - **$r_k$** = where cost $k$ sits between the level the buyer can pay down alone and the level that keeps the buyer out. Above 1, the buyer does not enter the market. The sale starts at the largest (Axiom I).
 
-The costs are non-compensatory. They add in the buyer's condition, but ease on one never buys back another above its threshold.
-
-The equations are in [Constitution Part III](./theory/01-foundation/00-tcg-constitution.md). Every threshold behind them is chosen rather than fitted, and [the calibration layer](./theory/01-foundation/06-calibration.md) says so.
+The equations are in [Constitution Part III](./theory/01-foundation/00-tcg-constitution.md).
 
 ### The Three Axioms
 
@@ -103,11 +98,11 @@ Statements below are canonical. If this table and the [Constitution](./theory/01
 
 The field calls the three costs *search*, *consensus* and *implementation*, and the notation keeps those subscripts.
 
-Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**: the part set by the information environment, the buyer's institutions and the measurement environment, which no seller lowers within one deal. Under Axiom III, **hostages govern what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected only by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment.
+Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **hostages govern what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected only by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment.
 
 ### Turnkey, and routing outside it
 
-Turnkey is a market condition, not a deal class: every cost low enough for the buyer to pay down alone, and nothing specific sunk. Outside it, a deal routes on two readings.
+Turnkey is a market condition, not a deal class: every cost low enough for the buyer to pay down alone, and nothing specific sunk. It does not last on its own. The low investment that defines it invites entrants, and entrants raise the search cost. Outside it, a deal routes on two readings.
 
 | | **Nothing specific sunk** | **Something specific sunk** |
 |---|---|---|
