@@ -15,7 +15,7 @@ status: active
 - **Primary named.** The original study is identified, but every working link is secondary (press coverage, an aggregator, a vendor blog). Verify against the original before external use.
 - **Unverified.** No primary source is confirmed. Do not cite externally.
 
-**Last reviewed:** 2026-11-02, for the Constitution 5.0 proposal: three Gartner rows, discrepancy 7 and two untraced figures added. The review before it, on 2026-10-09, found that the 2026-09 restructure moved thirteen figures out of the research files without updating their rows here. Each now reads "previously", the convention this file already used, and none of their provenance statuses changed. A figure marked "previously" is cited nowhere, and its row is kept so that a future citation inherits the trace.
+**Last reviewed:** 2026-11-03, for the adversarial review: its figures listed as untraced and discrepancy 8 added. Before that, 2026-11-02, for the Constitution 5.0 proposal: three Gartner rows, discrepancy 7 and two untraced figures added. The review before it, on 2026-10-09, found that the 2026-09 restructure moved thirteen figures out of the research files without updating their rows here. Each now reads "previously", the convention this file already used, and none of their provenance statuses changed. A figure marked "previously" is cited nowhere, and its row is kept so that a future citation inherits the trace.
 
 ---
 
@@ -132,6 +132,8 @@ The point of a provenance audit is to catch drift between files. Most severe fir
 6. **Buying group size (6 to 10 decision makers, Gartner): resolved.** The figure is Gartner's B2B Buying Journey research. [buying-center-dynamics.md](../buying-center-dynamics.md) cited it directly from 2026-08-28 until the 2026-09 restructure retired the research files' statistics sections, and no file cites it now. The 2026-11 review found that other Gartner documents give 5 to 11 and Forrester counts run higher, so any external use names which definition it follows.
 7. **Gartner's 153%: open.** The 2019 announcement reports buyers 153% more likely to settle for a smaller purchase under contradictory information. A later Gartner article reportedly uses 153% for buyers being less likely to choose a high-quality, low-regret deal when three negative information attributes co-occur. Both are relative changes in likelihood, not rates. Neither primary has been opened. Found 2026-11-02.
 
+8. **Bajari, McMillan and Tadelis's bypass share: open.** The 2026-11 adversarial review reports private buyers negotiating directly in "nearly 50%" of projects in one passage and bypassing open bidding in "82%" in another. The second appears to add direct negotiation to invited-bidder lists. No file cites either number. Open the paper before any file does.
+
 ## Not yet traced
 
 - No-decision rate: 40–60% in enterprise sales (partly channel-level phenomenon). *(moved from channel-collapse.md when the statistics sections were retired, 2026-09; provenance not yet checked)*
@@ -148,6 +150,16 @@ Figures that came up in the Constitution 5.0 review and are cited nowhere yet. E
 
 - Cannon and Homburg (2001): a sample of nearly 500 buying organizations in the US and Germany. Abstract seen.
 - Schiebler, Lee and Brodbeck (2026), a meta-analysis of expectation-disconfirmation in *Journal of the Academy of Marketing Science*, cited qualitatively in [value-and-persuasion.md](../value-and-persuasion.md) and marked unconfirmed there. Not located at the primary.
+
+Figures from the 2026-11 adversarial review, listed so nobody cites them from the review itself. [adversarial-review-2026-11.md](../adversarial-review-2026-11.md) uses none of them as evidence. Each needs its primary opened first:
+
+- Bajari, McMillan and Tadelis (2009): the share of private-sector projects that skip open competitive bidding. The review gives "nearly 50%" and "82%" in different places. Recorded as discrepancy 8.
+- Banerjee and Duflo (2000): the share of fixed-price software contracts renegotiated after the fact, given by the review as almost half.
+- Dulleck, Kerschbamer and Sutter (2011): a laboratory market of 936 participants.
+- Gartner: B2B buyers who purchase through self-service digital commerce are 1.65 times more likely to report purchase regret. Vendor research.
+- Semrush (2026): survey of US B2B buyers on AI use in vendor discovery and shortlisting. Vendor research.
+- OpenView (2024), through secondary blogs: about 67% of B2B SaaS firms above $10M ARR run a hybrid product-led and sales-led motion. Vendor research, secondary.
+- DerivateX (2026): 44% of B2B SaaS companies "functionally invisible" in AI answers. Vendor research.
 
 ## Maintaining this file
 
