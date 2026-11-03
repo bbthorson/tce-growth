@@ -29,7 +29,7 @@ $$S_b = V_{switch}(t) - P - \sum_{k} I^b_k - L_b \qquad S_s = P - C_{deliver} - 
 
 | Symbol | Meaning |
 |---|---|
-| $V_{switch}(t)$ | $V_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying where they are. $V_{next\_best}$ includes building it internally. Section 4 gives the decay. |
+| $V_{switch}(t)$ | $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, the buyer's opportunity cost of staying where they are, read on recognized value $\tilde{V}_{solution}$ because that is what the buyer decides on. $V_{next\_best}$ includes building it internally. Section 4 gives the decay. |
 | $P$ | Price over the relationship |
 | $C_{deliver}$ | The seller's cost of delivering against that price |
 | $I^b_k$, $I^s_k$ | What the buyer and the seller invest today against cost $k \in \{search,\; consensus,\; implementation\}$ (Axiom II) |
@@ -217,9 +217,9 @@ Treat $TO$ as a field refinement rather than core theory. The two-term form abov
 
 ### 4.1 Value decay
 
-$$V_{solution}(t) = V_0 \cdot e^{-\delta t}$$
+$$\tilde{V}_{solution}(t) = \tilde{V}_0 \cdot e^{-\delta t}$$
 
-Where $V_0$ is peak perceived value at the triggering event and $t$ is elapsed months. This is the value-decay half of the Decay Clock, the second standing assumption in the Constitution.
+Where $\tilde{V}_0$ is the buyer's recognized value at the triggering event and $t$ is elapsed months. This is the value-decay half of the Decay Clock, the second standing assumption in the Constitution.
 
 ### 4.2 Structural form of the decay rate
 

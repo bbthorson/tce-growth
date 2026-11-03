@@ -33,7 +33,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $S_b$ | The buyer's condition. $V_{switch}(t) - P - \sum_k I^b_k - L_b$. Must exceed 0 for the buyer to go ahead. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $S_s$ | The seller's condition. $P - C_{deliver} - \sum_k I^s_k - L_s$. Must exceed 0 for the seller to go ahead. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $S_b + S_s$ | The joint surplus. Price cancels from it, because price is a transfer. | [02-mathematical-models.md §1.3](./02-mathematical-models.md) |
-| $V_{switch}(t)$ | The buyer's opportunity cost of staying where they are. Equals $V_{solution} \cdot e^{-\delta t} - V_{next\_best}$. | [Constitution, Axiom II](./00-tcg-constitution.md) |
+| $V_{switch}(t)$ | The buyer's opportunity cost of staying where they are. Equals $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, read on recognized value. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $P$ | Price over the relationship. Appears in both conditions and in neither party's cost of transacting. **Not the punishment payoff.** | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $C_{deliver}$ | The seller's cost of delivering against that price. Contingent on revenue. | [Constitution, Axiom II](./00-tcg-constitution.md), [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
 | $I^b_k$ | What the buyer invests today against cost $k$. Includes the buyer's adaptation work: integrations built, workflows rewired. | [Constitution, Axiom II](./00-tcg-constitution.md) |
@@ -62,8 +62,9 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $V_{solution}$ | Peak perceived value at the triggering event. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
-| $V_{effective}(t)$ | Value after decay. Equals $V_{solution} \cdot e^{-\delta t}$. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
+| $V_{solution}$ | Realizable value: what the change can be worth to this buyer for a given offer, set by the product and the buyer's situation. Exogenous to the sale. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
+| $\tilde{V}_{solution}$ | Recognized value: the buyer's estimate of realizable value, usually held as a range, at its peak at the triggering event. The seller moves it, and the buyer decides on it. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
+| $V_{effective}(t)$ | Value after decay. Equals $\tilde{V}_{solution} \cdot e^{-\delta t}$. | [Constitution, standing assumptions](./00-tcg-constitution.md) |
 | $V_{next\_best}$ | Value of the buyer's next best alternative, including building it themselves. This is the make-or-buy boundary. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 
 ### Costs, thresholds and positions (Axiom I)
