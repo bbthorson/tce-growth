@@ -19,7 +19,7 @@ The papers in this directory depend on each other in a specific order. Lower-lev
 ```
                          ┌─────────────────────────┐
                          │       NRR (Output)       │
-                         │  The composite scorecard │
+                         │  Renewal and retention   │
                          └────────────┬────────────┘
                                       │
                     ┌─────────────────┴─────────────────┐
@@ -64,7 +64,7 @@ Plus the channel-level layer:
 
 8. **[Channel Collapse](./channel-collapse.md)** — Jevons' Paradox applied to outbound. Governance solutions for the channel-level externality problem.
 
-Plus three sources added in Constitution v13. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
+Plus three sources added under the Constitution's earlier numbering, before 4.0. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
 
 9. **[Incomplete Contracts](./incomplete-contracts.md)** — Read after Transaction Cost Economics. Williamson explains why asset specificity creates exposure. Grossman-Hart-Moore explain what determines the outcome once exposure exists, which is the allocation of residual control rights. This is the theory beneath the MIP. Its 2026-09 extension carries the incomplete-contracting and front-end-loading evidence behind the allocation clause, now Axiom III's: allocation is settled before the investment is sunk, while the adaptation follows. Constitution 3.0 changed *paid* to *allocated* when the clause sat in Axiom II.
 10. **[Buying Center Dynamics](./buying-center-dynamics.md)** — Read before CFIR. Establishes that the buyer is a coalition rather than an agent, which is the premise CFIR's Inner Setting analysis depends on. Supplies the structure of $F_{consensus}$.
