@@ -25,7 +25,7 @@ For founders and revenue leaders, with health tech as the home case:
 
 - **Hook, the cost floor.** Some of your cost of sale cannot be lowered by any seller in any one deal. Channel noise, the buyer's procurement and compliance rules, and outcomes nobody can attribute are set by the market you sell into, so the first decision is where to sell.
 - **Thesis, non-compensatory costs.** A buyer pays three costs beyond price: finding and trusting a seller, getting its own organization to agree, and making sure the seller delivers. The deal dies at the cost nearest its own threshold, and effort spent making the other two easier does not rescue it.
-- **Recurring line.** A discount moves the surplus. Verification creates it.
+- **Recurring line.** A discount moves the surplus. Verification creates it. *(Qualified on 2026-11-03 after an adversarial review: a discount can close a deal whose joint surplus is positive, and verification adds surplus only when it lowers a loss by more than it costs. See [adversarial-review-2026-11.md](./theory/02-research/adversarial-review-2026-11.md).)*
 
 Every change below serves one of the three. The PLG-as-market-condition claim stays in the Constitution and is held back from publication until a market where it fits, since health tech has few self-serve categories.
 

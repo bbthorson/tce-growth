@@ -159,7 +159,7 @@ None of these survives in `models/tcg_models.py`. [02-mathematical-models.md](./
 | Symbol | What it was | What replaced it |
 |---|---|---|
 | $S$, $OC_{switching}$ | The single Deal Surplus and its opportunity-cost term | $S_b$ and $S_s$, and $V_{switch}(t)$ |
-| $y$ | Reduced-form perceived transaction cost, $a\hat{\Delta}_A^2 + c$ | Nothing. Verification now beats discounting because a discount moves $P$, which cancels, and verification lowers $\pi_p$ |
+| $y$ | Reduced-form perceived transaction cost, $a\hat{\Delta}_A^2 + c$ | Nothing. A discount moves $P$, which cancels, and verification lowers $\pi_p$, so only verification can rescue a deal whose joint surplus is negative. It adds surplus only when it lowers the loss by more than it costs |
 | $a$, $b$, $c$ | The coupling anchored at 2.25, the base friction growth rate, and direct cost | Nothing for $a$ and $b$. What $c$ held is price, now $P$ |
 | $D(t)$ | A deal's trajectory, transaction cost against opportunity cost | The two conditions over time |
 | $k$, $k_{threshold}$ | Specificity as a level, and its boundary at 15 of 30 | Specific exposure, read under Axiom III |

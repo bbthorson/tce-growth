@@ -47,7 +47,7 @@ The costs are in fractions of annual contract value, per [02-mathematical-models
 
 ## 2. Each cost has its own instrument family
 
-A seller can discount, and a discount moves surplus from seller to buyer one for one without shrinking any cost ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3). What remains is the three costs.
+A seller can discount, and a discount moves surplus from seller to buyer one for one without shrinking any cost ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3). That can close a deal whose joint surplus is already positive, and it cannot rescue one whose joint surplus is negative. What remains is the three costs.
 
 **A motion is therefore defined by which cost the seller pays down first.** There are three costs, so there are three families of instrument, and no more.
 

@@ -16,7 +16,7 @@ The named motions are named after the cost a seller pays down first, and they ar
 
 Three axioms carry the argument, each answering one decision in time order: should I use the market, what will it cost me today, and what might it cost me later. They are stated [below](#start-here-the-three-axioms).
 
-Value sits above the axioms as a standing assumption. What the change can be worth to a buyer, its *realizable value*, is set by the offer and the buyer's situation. Within the sale the seller moves only the buyer's *recognized value*, its estimate of that worth. Evidence the buyer can check narrows the estimate and lowers the search cost. A claim that inflates it is persuasion, and the buyer carries the gap as a future cost until delivery exposes it. A discount moves the surplus. Verification creates it.
+Value sits above the axioms as a standing assumption. What the change can be worth to a buyer, its *realizable value*, is set by the offer and the buyer's situation. Within the sale the seller moves only the buyer's *recognized value*, its estimate of that worth. Evidence the buyer can check narrows the estimate and lowers the search cost. A claim that inflates it is persuasion, and the buyer carries the gap as a future cost until delivery exposes it. A discount moves surplus between the parties. Verification adds to it, but only when it lowers a loss both sides carry by more than the verification costs.
 
 Everything in this repository derives from the axioms, and the derivation is checked rather than asserted: every equation has an implementation in [`models/`](./models/), every worked example is tested against it, and every headline statistic carries a provenance row.
 
