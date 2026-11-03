@@ -15,7 +15,7 @@ status: active
 - **Primary named.** The original study is identified, but every working link is secondary (press coverage, an aggregator, a vendor blog). Verify against the original before external use.
 - **Unverified.** No primary source is confirmed. Do not cite externally.
 
-**Last reviewed:** 2026-10-09. That review found that the 2026-09 restructure moved thirteen figures out of the research files without updating their rows here. Each now reads "previously", the convention this file already used, and none of their provenance statuses changed. A figure marked "previously" is cited nowhere, and its row is kept so that a future citation inherits the trace.
+**Last reviewed:** 2026-11-02, for the Constitution 5.0 proposal: three Gartner rows, discrepancy 7 and two untraced figures added. The review before it, on 2026-10-09, found that the 2026-09 restructure moved thirteen figures out of the research files without updating their rows here. Each now reads "previously", the convention this file already used, and none of their provenance statuses changed. A figure marked "previously" is cited nowhere, and its row is kept so that a future citation inherits the trace.
 
 ---
 
@@ -73,6 +73,9 @@ status: active
 | Personalization effects: 3.2× regret risk (passive), 2.3× decision confidence (active), 1.8× premium likelihood | this audit | Gartner survey of 1,464 B2B and B2C buyers (2025) | **Primary linked** ([press release](https://www.gartner.com/en/newsroom/press-releases/2025-06-03-gartner-survey-reveals-personalization-can-triple-the-likelihood-of-customer-regret-at-key-journey-points)). |
 | 61% of potential B2B deals fall through with No Decision | previously [prospect-theory.md](../prospect-theory.md) | Genius Drive, B2B sales research article | **Primary linked** ([Genius Drive article](https://geniusdrive.com/b2b-sales-research-the-proven-impact-of-value-selling/)). The article does not document its research base. Prefer the JOLT 40 to 60% figure for external use. |
 | 60% of technology buyers involved in renewal decisions regret nearly every purchase | [fear-of-failure.md](../fear-of-failure.md), previously [game-theory-and-nrr.md](../game-theory-and-nrr.md) | Gartner survey of 1,503 respondents at organizations with $50M+ revenue, fielded February to March 2023 | **Primary linked** ([press release, 2023-06-14](https://www.gartner.com/en/newsroom/press-releases/2023-06-14-gartner-survey-reveals-60-percent-of-technology-buyers-involved-in-renewal-decisions-regret-nearly-every-purchase-they-make)). game-theory-and-nrr.md previously paraphrased this as regret "within the first year". Corrected on 2026-08-28. |
+| High-quality but contradictory information makes buyers 153% more likely to settle for a smaller purchase that changes less | this audit, for the Constitution 5.0 proposal | Gartner survey of more than 1,000 B2B customers, announced 2019-07-29 | **Primary named.** Sourced through destinationCRM's coverage. gartner.com returned 403. A later Gartner article reportedly uses a 153% figure in the opposite direction. See discrepancy 7. Not quoted until resolved. |
+| Sensemaking sellers close high-quality, low-regret deals 80% of the time, against 50% for telling and 30% for giving more information | this audit, for the Constitution 5.0 proposal | same Gartner 2019 announcement | **Primary named.** Press coverage only. Sample and instrument unpublished. |
+| Self-service digital purchasers are 1.65 times more likely to report high purchase regret (43% against 26% for rep-led) | this audit, for the Constitution 5.0 proposal | Gartner 2022 B2B Buyer Survey | **Primary named.** Research abstracts seen through a search index. gartner.com returned 403. |
 
 ## AI implementation gap
 
@@ -126,7 +129,8 @@ The point of a provenance audit is to catch drift between files. Most severe fir
 3. **"189% budget overruns on large projects (McKinsey)": resolved.** 189% is the Standish 1994 average overrun on challenged projects. The McKinsey large-project average is 45%. The statistics list in [fear-of-failure.md](../fear-of-failure.md) now attributes 189% to Standish 1994, and the "zombie projects" claim was rewritten to keep the Standish overrun and the McKinsey value shortfall separate. Corrected on 2026-08-28.
 4. **Developer time on technical debt: resolved.** The repo carried 69% of dev time ([fear-of-failure.md](../fear-of-failure.md)) and 44.1 hours per week ([re-aim-framework.md](../re-aim-framework.md)). Both files now carry the CISQ 2022 figure: roughly 33%, or 13.5 hours of a 41-hour week. Corrected on 2026-08-28.
 5. **"45% timeline slippage": resolved.** The McKinsey primary reports 45% budget overrun and 7% schedule overrun. [fear-of-failure.md](../fear-of-failure.md) now states both figures. Corrected on 2026-08-28.
-6. **Buying group size (6 to 10 decision makers, Gartner): resolved.** The figure is Gartner's B2B Buying Journey research. [buying-center-dynamics.md](../buying-center-dynamics.md) cited it directly from 2026-08-28 until the 2026-09 restructure retired the research files' statistics sections, and no file cites it now.
+6. **Buying group size (6 to 10 decision makers, Gartner): resolved.** The figure is Gartner's B2B Buying Journey research. [buying-center-dynamics.md](../buying-center-dynamics.md) cited it directly from 2026-08-28 until the 2026-09 restructure retired the research files' statistics sections, and no file cites it now. The 2026-11 review found that other Gartner documents give 5 to 11 and Forrester counts run higher, so any external use names which definition it follows.
+7. **Gartner's 153%: open.** The 2019 announcement reports buyers 153% more likely to settle for a smaller purchase under contradictory information. A later Gartner article reportedly uses 153% for buyers being less likely to choose a high-quality, low-regret deal when three negative information attributes co-occur. Both are relative changes in likelihood, not rates. Neither primary has been opened. Found 2026-11-02.
 
 ## Not yet traced
 
@@ -139,6 +143,11 @@ Statistics quoted in research entries with no provenance row yet. Add a row when
 
 - Gartner's $299B 2025 SaaS spending forecast (19.2% growth), in [re-aim-framework.md](../re-aim-framework.md).
 - Technical debt consuming 20 to 40% of IT budgets, in [re-aim-framework.md](../re-aim-framework.md).
+
+Figures that came up in the Constitution 5.0 review and are cited nowhere yet. Each needs its primary opened before any file uses it:
+
+- Cannon and Homburg (2001): a sample of nearly 500 buying organizations in the US and Germany. Abstract seen.
+- Schiebler, Lee and Brodbeck (2026), a meta-analysis of expectation-disconfirmation in *Journal of the Academy of Marketing Science*, cited qualitatively in [value-and-persuasion.md](../value-and-persuasion.md) and marked unconfirmed there. Not located at the primary.
 
 ## Maintaining this file
 

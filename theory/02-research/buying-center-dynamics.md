@@ -16,6 +16,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Lu, L., Yuan, Y.C. & McLeod, P.L. (2012). "Twenty-Five Years of Hidden Profiles in Group Decision Making: A Meta-Analysis." *Personality and Social Psychology Review*, 16(1), 54–75.
 - Kuran, T. (1995). *Private Truths, Public Lies: The Social Consequences of Preference Falsification.* Harvard University Press.
 - Jackall, R. (1988). *Moral Mazes: The World of Corporate Managers.* Oxford University Press.
+- Buchanan, J.M. & Tullock, G. (1962). *The Calculus of Consent: Logical Foundations of Constitutional Democracy*. University of Michigan Press. Added in 2026-11 for Constitution 5.0.
 - Arikan, A.T. (2020). "Opportunism Is in the Eye of the Beholder: Antecedents of Subjective Opportunism Judgments." Venue to be verified.
 
 The last five sources reached the repository through an external review in 2026-09. Citations are to be verified against the record before any is quoted.
@@ -31,7 +32,7 @@ The last five sources reached the repository through an external review in 2026-
 - Any member holding veto power is a decision maker regardless of title or seniority.
 
 **Supports in TCG:**
-- **Axiom I — Law of Transaction Cost Composition** — supplies the internal structure of the bargaining and decision cost, $F_{consensus}$. The Constitution names the cost after Dahlman, and the field calls it consensus. Cyert-March and Webster-Wind explain what generates it: most of the bargain is internal, among the decision roles, before any term is negotiated with the seller.
+- **Axiom I — Law of Transaction Cost Composition** — supplies the internal structure of the bargaining and decision cost, $F_{consensus}$. The Constitution names the cost after Dahlman, and the field calls it consensus. Cyert-March and Webster-Wind explain what generates its internal part, the bargain among the decision roles. The external part, the bargain with the seller over terms, is in the 2026-11 extension below.
 - **Consensus Friction model** — direct theoretical basis for $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md). The exponent $\beta > 1$ follows from channel growth, and the variance term follows from goal heterogeneity.
 - **The Red Team Protocol** — operationalizes variance reduction. Forcing stakeholders to state failure modes aloud converts quasi-resolution into explicit trade-off, which is the only mechanism that lowers $\text{Var}(I_i)$ before signature.
 - **The Saboteur** (CFIR field mapping) — the buying center model explains why a saboteur is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
@@ -44,5 +45,15 @@ The last five sources reached the repository through an external review in 2026-
 **The room suppresses what one member knows.** Stasser and Titus showed that groups over-sample information every member already holds and under-sample what one member holds alone, and the meta-analysis by Lu, Yuan and McLeod across twenty-five years of hidden-profile experiments confirms that groups facing distributed private information rarely reach the answer the pooled information supports. Kuran's preference falsification says why the private information is withheld: people misrepresent what they want when the social cost of candor is high. Jackall's ethnography says what the cost is inside a corporation: managers survive on calculated ambiguity, and a written record of a parochial interest is ammunition for a peer.
 
 **What follows for the bargaining instrument.** The premise of the decision-role ledger in [08-from-axioms-to-instruments.md](../01-foundation/08-from-axioms-to-instruments.md) is confirmed: positions stated in a room are not evidence of anyone's exposure. Its first design was wrong in one respect: occupants will state a reservation one to one and will not write it on a document a seller holds and a peer can find, and Arikan adds that a probe of private vulnerability reads as opportunism however it is framed. So the diagnosis is private and the arrangement is shared, objections are collected apart before any room convenes, and Axiom III's bargaining row in the Constitution says so.
+
+---
+
+## Extension: decision rules and contracting (2026-11)
+
+**The theory under the coalition claim.** Buchanan and Tullock analyze how a group chooses its own decision rule. Requiring more members to agree protects each member from decisions that harm it, which they call external cost. It also raises the cost of reaching any decision at all, which rises with the share of the group whose agreement is required. A group picks the rule that minimizes the two together. Webster and Wind say the buyer is a coalition. Buchanan and Tullock say what a coalition's agreement costs and why.
+
+**Exposure raises the required agreement.** Their analysis predicts that a group demands broader agreement when a decision can do more harm. Applied to a purchase, a buyer adds approvers and required reviews when the deal sinks more specific investment. Part of the bargaining cost is therefore a response to Axiom III exposure, which is one way the costs are coupled (open question 3).
+
+**Contracting is the external part of the bargain.** Procurement, legal, security review and the paper process are the buyer's bargain with the seller over terms. The 5.0 proposal folds them into bargaining and decision rather than treating contracting as a fourth cost. Negotiating a term is a cost the buyer pays today, under Axiom II. What the term governs after signature belongs to policing and enforcement, which is Williamson's line between ex ante and ex post costs. The buyer's own rules for this part, spend thresholds and required reviews, are set outside any one deal, which makes them the bargaining cost floor in [information-environment.md](./information-environment.md).
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

@@ -199,20 +199,19 @@ Additions to existing files:
 - Buchanan and Tullock (1962) go into [buying-center-dynamics.md](./theory/02-research/buying-center-dynamics.md).
 - Heide and John go into [transaction-cost-economics.md](./theory/02-research/transaction-cost-economics.md), whose "what the framework adds" section is rewritten against section 4.
 
-**Citation status.** Every source carries the status its research memo recorded: primary, secondary or unconfirmed. Unconfirmed sources are checked at the primary before they enter a file, or they stay out. Among them are Moriarty and Moran (1990), Kent and Allen (1994) and Simonson (2008). The memos sit in the session scratchpad and go into `theory/02-research/` as the files above are written.
+**Citation status.** Every source carries the status its research memo recorded: primary, secondary or unconfirmed. Unconfirmed sources are checked at the primary before they enter a file, or they stay out. Kent and Allen (1994) and Simonson (2008) stayed out. Moriarty and Moran (1990) entered marked secondary. Schiebler, Lee and Brodbeck (2026) entered [value-and-persuasion.md](./theory/02-research/value-and-persuasion.md) marked unconfirmed, cited for no figure, and is listed in the audit as untraced.
 
-**Provenance audit rows** (`citation-provenance-audit.md`), each with an honest status:
+**Provenance audit** (`citation-provenance-audit.md`), done in step 2:
 
-| Statistic | Problem to record |
+| Item | What the audit now records |
 |---|---|
-| Gartner 2019: buyers given high-quality contradictory information "153 percent more likely" to settle for a smaller purchase | A later Gartner article reportedly uses 153% in the opposite direction. It is a relative change, not a rate. Not quoted until resolved. |
-| Gartner 2019: sensemaking 80%, telling 50%, giving 30% high-quality, low-regret deals | Press-release only. Sample and instrument unpublished. |
-| Gartner: six to ten decision makers per complex purchase | Primary not located. Other Gartner documents say 5 to 11. Forrester counts higher. |
-| Gartner 2022: self-service buyers 1.65 times more likely to report high regret | Abstract only. |
-| Gartner 2025 and 2026: 61% then 67% of buyers prefer a rep-free experience | Press-release text only. |
-| Cannon and Homburg 2001: near 500 buying organizations | Abstract seen. Check sample size at the primary. |
-
-Two figures from earlier in review, a 2026 meta-analysis attributed to Schiebler et al. and a JOLT figure of 40 to 60%, need a primary-source check before any file cites them.
+| Gartner 2019: contradictory information makes buyers "153 percent more likely" to settle for a smaller purchase | New row, primary named. Discrepancy 7 records the later opposite-direction use. Not quoted until resolved. |
+| Gartner 2019: sensemaking 80%, telling 50%, giving 30% high-quality, low-regret deals | New row, primary named. Sample and instrument unpublished. |
+| Gartner 2022: self-service buyers 1.65 times more likely to report high regret | New row, primary named. |
+| Gartner: six to ten decision makers | Row already existed, primary linked. Discrepancy 6 gains the 5 to 11 and Forrester spread. |
+| Gartner 2025 and 2026: 61% then 67% prefer a rep-free experience | Row already existed, primary linked. No change. |
+| JOLT: 40 to 60% of pipeline lost to No Decision | Row already existed, primary cited. No change. |
+| Cannon and Homburg 2001 sample, Schiebler et al. 2026 | Added under "Not yet traced". |
 
 ---
 
@@ -254,6 +253,4 @@ Settled on 2026-11-02:
 2. **The name.** *Cost floor* everywhere. Axiom III's floor above zero on $\pi_p$ keeps its wording.
 3. **Placement.** A corollary under Axiom II, a column in Axiom I's table and a row in Part II. The Axiom I statement does not change for it.
 
-Still open:
-
-4. **Whether the hook lives in the Constitution.** The cost floor is the public hook, and the Constitution is axioms-first. The proposal keeps the Constitution's text plain and lets publishing carry the framing.
+4. **The hook stays out of the Constitution.** The cost floor is the public hook, and the Constitution is axioms-first, so its text stays plain and publishing carries the framing.
