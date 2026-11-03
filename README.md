@@ -55,7 +55,7 @@ Find the decision you are making, then open what the row points to. The statemen
 
 The field calls the three costs *search*, *consensus* and *implementation*, and the notation keeps those subscripts.
 
-Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **hostages govern what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected only by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment.
+Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **enforcement governs what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment, or by a right settled in advance, such as an option to renew at a preset price. Either one changes what defection costs at every later boundary, which a one-off discount does not.
 
 ## Looking for something specific
 
