@@ -1,13 +1,16 @@
 ---
 title: "The Deal Triage Calculator"
 layer: practice
-status: active
+status: under-review
 version: 8.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 Version: 8.0
 Goal: Read each of the three costs against its own two thresholds, so that the motion follows from the deal rather than from a label. Whether any cost keeps the buyer out, and where the sale starts, are Axiom I. Whether anything specific is sunk, and what arrangement holds it, are Axiom III. Frequency decides whether the seller's investment can be paid back at all.

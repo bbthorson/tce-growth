@@ -1,13 +1,16 @@
 ---
 title: "The Red Team Protocol (The Validator)"
 layer: practice
-status: active
+status: under-review
 version: 2.1
 operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Red Team Protocol (The Validator)
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 Version: 2.1  
 Motion: **Implementation-led**. Second of four artifacts, after the Blueprint.  

@@ -1,12 +1,15 @@
 ---
 title: "Milestone Valuation Model"
 layer: practice
-status: active
+status: under-review
 operationalizes: [axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Milestone Valuation Model
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 **Purpose:** To design MIP phase gates so that each one resolves a defined tranche of uncertainty, and to structure payments so the buyer never carries more committed cost than the stage has de-risked.
 

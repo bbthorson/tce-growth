@@ -1,13 +1,16 @@
 ---
 title: "The Market Reading"
 layer: practice
-status: active
+status: under-review
 version: 2.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Market Reading
+
+> [!NOTE]
+> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 Version: 2.0
 Goal: Read a buyer population before any buyer is met. Emit each cost's position and zone across that population, where the sale starts, whether the population sinks anything specific, the seller's unfilled fraction, the cost to serve by component, and one of pursue, restructure or decline. The motion an organization builds follows from this reading, and not from the motion that worked for a seller in a different market.
