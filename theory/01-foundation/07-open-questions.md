@@ -44,12 +44,6 @@ Constitution 4.0 made investment an axiom of its own. Items 7 to 13 were filed h
 
 ---
 
-## Standing assumptions
-
-**21. Agency is assumed where it could be derived.** The third standing assumption houses vesting and channel stakes. The neater route, that the seller is also a buying center with its own bargaining cost and the representative holds one of its decision roles, would derive them from Axioms I and III instead. The route is sketched in conversation and nowhere in the repository. *Settled by:* writing the derivation and testing whether it survives.
-
----
-
 ## Cross-cutting
 
 **23. Axioms I and II have no figure.** The Constitution plots value decay under the second standing assumption and drift under Axiom III. Where the sale starts has no picture, and neither do the two conditions. *Settled by:* a figure sampled from `threshold_position()` in the model for Axiom I, showing three costs each against its own two thresholds, and one sampled from the two conditions for Axiom II.
@@ -85,6 +79,7 @@ On 2026-11-04 the items that only evidence can settle moved to [06-calibration.m
 - **7. The allocation clause had no formula.** Settled in theory on 2026-11-04. [02-mathematical-models.md](./02-mathematical-models.md) section 5.6 derives the allocation required from the bond condition, which showed it rises with the imbalance between the two sunk investments rather than with specificity as such, and Constitution 5.1 restates the mechanism. The work done in advance has a placeholder form that falls with the share of misfit only use reveals. The randomized test moved to the calibration list under the same number.
 - **10. Governance form and where the sale starts might interact.** Settled on 2026-11-04. [05-governance-forms.md](./05-governance-forms.md) section 2 says what each form safeguards and checks it against each cost's pair of parties. The forms govern the buyer and the seller, which is the policing pair. A deal whose sale starts at bargaining also needs a safeguard inside the buyer, a staked sponsor and an arrangement each exposed decision role ratifies, because the party that defects there is a role. Search leaves the form unchanged. The falsifier is in that section, and the instrument that reads the internal safeguard belongs to item 2.
 - **14 and 18. The bargaining reading measured the seller's uncertainty, and read one of two quantities.** Merged into item 2 on 2026-11-04, since one instrument settles all three.
+- **21. Agency was assumed where it could be derived.** Settled on 2026-11-04. [05-governance-forms.md](./05-governance-forms.md) section 5 derives the stakes from Axiom III with the decision roles as parties. The seller sinks on its representative's reading, a clawback is a hostage, a safe harbor is an allocated right and an expansion share is the stake at the next boundary, and the stake required is zero below the gate. A channel's stake follows from the fourth Friction Allocation Principle. The third standing assumption stays, narrowed to the premise that the parties are roles, which the bargaining cost needs anyway. The falsifier is in that section.
 - **24. Nothing is instrumented.** Closed on 2026-11-04. Section 4 of [06-calibration.md](./06-calibration.md) is that list, and it now carries the predictions that wait on data.
 
 ---
