@@ -1246,6 +1246,26 @@ def apparatus_is_amortizable(specific, frequency):
     return not (specific and frequency == ONE_SHOT)
 
 
+def frequency_reading(buyer_stake, seller_stake, buyer_quasi_rent,
+                      seller_quasi_rent, omega=OMEGA_RENEGOTIATION):
+    """The variable under the three frequency readings.
+
+    05-governance-forms.md section 1. One-shot when either side has nothing
+    to forfeit at the next boundary. Continuous when the buyer fails the bond
+    condition of 02-mathematical-models.md section 5.5, because its own
+    quasi-rent has outgrown the seller's stake. Recurrent otherwise. The
+    seller failing the condition is its own exposure, not a frequency reading.
+    """
+    if buyer_stake < 0 or seller_stake < 0:
+        raise ValueError("a future stake cannot be negative")
+    if min(buyer_stake, seller_stake) == 0:
+        return ONE_SHOT
+    if not bond_holds(buyer_quasi_rent, seller_quasi_rent, seller_stake,
+                      omega):
+        return CONTINUOUS
+    return RECURRENT
+
+
 def search_count(n_alternatives):
     """n_search, step 1a: named vendors plus build plus do nothing.
 

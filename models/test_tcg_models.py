@@ -1135,6 +1135,24 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertIn("possible-over-frictioning", result.flags)
 
     # --- Governance form -----------------------------------------------
+    def test_frequency_is_one_shot_without_a_stake_on_both_sides(self):
+        """05-governance-forms.md section 1: a sanction needs both stakes."""
+        self.assertEqual(m.frequency_reading(0.0, 0.0, 0.3, 0.3), m.ONE_SHOT)
+        self.assertEqual(m.frequency_reading(0.5, 0.0, 0.3, 0.3), m.ONE_SHOT)
+
+    def test_frequency_is_recurrent_while_the_buyer_stays_bonded(self):
+        self.assertEqual(m.frequency_reading(0.4, 0.4, 0.5, 0.3), m.RECURRENT)
+
+    def test_frequency_is_continuous_once_the_buyer_quasi_rent_outgrows_the_stake(self):
+        self.assertEqual(m.frequency_reading(0.4, 0.1, 1.2, 0.2), m.CONTINUOUS)
+
+    def test_more_seller_stake_moves_a_deal_back_from_continuous(self):
+        self.assertEqual(m.frequency_reading(0.4, 0.5, 1.2, 0.2), m.RECURRENT)
+
+    def test_a_seller_that_sank_first_is_not_a_frequency_reading(self):
+        """The forward-deployed case is the seller's exposure."""
+        self.assertEqual(m.frequency_reading(0.4, 0.1, 0.1, 1.2), m.RECURRENT)
+
     def test_the_four_forms_match_the_document(self):
         self.assertEqual(m.governance_form(False, m.ONE_SHOT), m.MARKET)
         self.assertEqual(m.governance_form(False, m.CONTINUOUS), m.MARKET)

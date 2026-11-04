@@ -322,7 +322,7 @@ $$\pi_p = 1 - \left(1 - \pi^{gap}_p\right)\left(1 - \frac{H_p}{Q_p}\right), \qqu
 
 So $L_p = Q_p \pi_p$ keeps its form and its bound, and $H_p / Q_p$ never exceeds $\omega$. Where the bond condition holds, $H_p = 0$ and $\pi_p$ is the gap form alone, which is what every worked example in the repository assumes.
 
-**The split is a placeholder.** $\omega = 0.5$ is the symmetric split Grossman and Hart (1986) use for the renegotiation, chosen and not fitted, and it describes a renegotiation with nothing allocated in advance. $F_{-p}$ is named and not valued. It is the mutual stake at each boundary that [07-open-questions.md](./07-open-questions.md) item 11 names as the candidate variable under frequency.
+**The split is a placeholder.** $\omega = 0.5$ is the symmetric split Grossman and Hart (1986) use for the renegotiation, chosen and not fitted, and it describes a renegotiation with nothing allocated in advance. $F_{-p}$ is named and not valued. It is also the variable under the three frequency readings, which [05-governance-forms.md](./05-governance-forms.md) section 1 reads off this condition.
 
 *Falsifier.* Among deals where both parties sink specific investment, forced renegotiations and terminations should track the imbalance between the two quasi-rents against the value left in the relationship, and not the total sunk. If they rise with the total at a fixed imbalance, the condition is wrong.
 

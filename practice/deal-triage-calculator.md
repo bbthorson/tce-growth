@@ -117,7 +117,7 @@ This is a seller-side reading and it is provisional. It measures $I_{seller}$ on
 
 ### 1d. Frequency
 
-**A classification, not a count.** Frequency is how often the same two parties transact. With the specific-exposure reading in Step 2, it selects the governance form and decides whether the seller's investment can be amortized at all. See [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md).
+**A classification, not a count.** Frequency is how often the same two parties transact. With the specific-exposure reading in Step 2, it selects the governance form and decides whether the seller's investment can be amortized at all. See [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md). The readings are proxies for each party's stake at the next boundary read against the two quasi-rents, and section 1 of that file gives the boundaries. Nobody can yet measure the stake directly, so classify from the evidence column.
 
 | Reading | Condition | Evidence |
 |---|---|---|
