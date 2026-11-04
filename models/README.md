@@ -43,7 +43,7 @@ Formula coverage, by canonical home:
 | [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
 | [friction-efficiency-index.md](../practice/friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
 | [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three counts and their edges, the positions and zones, both gates and the specific-exposure reading, the routing, and the frequency reading. |
-| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, and whether the seller's investment can be amortized. |
+| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, whether the seller's investment can be amortized, the frequency reading off the bond condition, and the build margin. |
 
 ## Nothing here is fitted, and it must stay that way
 

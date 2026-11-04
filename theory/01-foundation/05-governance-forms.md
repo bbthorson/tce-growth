@@ -71,6 +71,23 @@ Reading it that way makes two things visible that the deal-level reading hides.
 
 **A buyer's build alternative gets cheaper over time on its own.** Their internal capability compounds, tooling improves, and the specificity that made building expensive erodes as patterns standardize. A seller whose only argument is that building is hard is on a losing schedule, and the Decay Clock is the deal-level version of the same pressure.
 
+**When the buyer builds.** The fourth row in section 2 now has a condition. At a renewal the buyer chooses between staying on renegotiated terms and building. Write the build margin, in contract value per year, as
+
+$$M_{build} = C^{b}_{run} + k_{build} + \left(\tilde{V}_{solution} - V_{build}\right) - P$$
+
+$C^{b}_{run}$ is what running the function in-house would cost the buyer each year. $k_{build}$ is the build and the migration, annualized over the buyer's horizon. The bracket is whatever value the buyer's own version would lack. A positive margin means paying the seller is cheaper than building before any hold-up. A buyer whose margin has fallen to zero builds whatever the governance, which is ordinary make-or-buy and the schedule the paragraph above describes.
+
+While the buyer stays bonded, in section 1's recurrent reading, the seller can take nothing in plain view and the margin alone decides. Once the buyer fails the bond condition, in the continuous reading, the seller can take up to $H_b$ at each boundary ([02-mathematical-models.md](./02-mathematical-models.md) section 5.5). The buyer builds when what it stands to lose that way exceeds the margin:
+
+$$H_b > M_{build}$$
+
+- **The build margin caps the seller's take.** A seller that takes less keeps the account, and one that takes more teaches the buyer to build. The seller does not see the buyer's build alternative, so it usually finds the line by crossing it, which is the platform-team announcement section 7 describes.
+- **This is the latest the buyer builds, not the earliest.** Refusing to adapt, or moving the best people to a newer account, costs the buyer more than it saves the seller, and $H_b$ counts only what the seller gains. The buyer's loss can cross the margin first.
+- **Rising specificity works against the seller on both sides.** It raises $Q_b$ and with it $H_b$. As patterns standardize it also lowers $k_{build}$. That is the fourth row's "specific, and rising" stated as two terms.
+- **The seller's defences are the bond terms.** It can raise its own stake and quasi-rent, allocate a right that limits what renegotiation can take, such as a cap on the renewal price, or keep its price under the margin.
+
+*Falsifier.* Among bonded accounts, a move in-house should follow a build alternative becoming cheaper than the price. Among accounts past the bond condition, it should also follow forced renegotiations and refusals to adapt. If both groups go in-house at the same rate and after the same triggers, the bond condition adds nothing to make-or-buy.
+
 ---
 
 ## 4. Addressable market is a property of the motion
@@ -126,7 +143,7 @@ The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits fou
 
 ## 7. What this does not settle
 
-- **Where the continuous boundary sits.** The fourth row says unified governance eventually wins on rising specificity in a continuous relationship. It does not say at what degree of specificity, and there is no instrument that reads it. A seller currently learns they crossed it when the buyer announces a platform team.
+- **Where the continuous boundary sits.** Section 3 now states it: the buyer builds once what the seller can take at a boundary exceeds the buyer's build margin. No instrument reads the margin yet. A seller currently learns it crossed the line when the buyer announces a platform team.
 - **How to measure the stake at a boundary.** Section 1 now reads the three readings as regions of each party's stake at the next boundary against the two quasi-rents, which settled open question 11 on 2026-11-04. The stake $F_p$ is named and not valued, so the field still classifies from the evidence column. Constitution 2.4 proposed the buyer's cost of exit at the next boundary and 3.0 withdrew it: contractual exit is a thin layer over procedural, technical and human switching cost (Burnham, Frels and Mahajan 2003), and lowering it one-sidedly hands the seller's sunk investment to the buyer (MacLeod and Malcomson 1989).
 - **Whether the recurrence claim survives a category that never had a one-shot form.** Software sold as a subscription from the beginning offers no before-and-after, so the test in section 5 runs only on categories that made the transition, or has to vary the mutual stake inside one.
 - **What two restatements gave up.** Until 2.4 this section claimed that subscription won because it made specific software governable. Until 3.0 it claimed the buyer's cheap exit was the governing variable. The first fell to software economics and the second to relational-contracting theory, and [tce-empirical-record.md](../02-research/tce-empirical-record.md) records both.

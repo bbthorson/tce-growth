@@ -1135,6 +1135,21 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertIn("possible-over-frictioning", result.flags)
 
     # --- Governance form -----------------------------------------------
+    def test_a_bonded_buyer_builds_only_when_building_is_cheaper(self):
+        """05-governance-forms.md section 3: no hold-up, the margin decides."""
+        self.assertFalse(m.buyer_builds(m.build_margin(0.7, 0.3, 0.1, 1.0), 0.0))
+        self.assertTrue(m.buyer_builds(m.build_margin(0.5, 0.2, 0.0, 1.0), 0.0))
+
+    def test_hold_up_past_the_margin_sends_the_buyer_in_house(self):
+        margin = m.build_margin(0.7, 0.3, 0.1, 1.0)
+        holdup = m.holdup_loss(1.2, 0.2, 0.1)
+        self.assertAlmostEqual(margin, 0.1)
+        self.assertAlmostEqual(holdup, 0.4)
+        self.assertTrue(m.buyer_builds(margin, holdup))
+
+    def test_a_seller_that_takes_less_than_the_margin_keeps_the_account(self):
+        self.assertFalse(m.buyer_builds(0.3, 0.2))
+
     def test_frequency_is_one_shot_without_a_stake_on_both_sides(self):
         """05-governance-forms.md section 1: a sanction needs both stakes."""
         self.assertEqual(m.frequency_reading(0.0, 0.0, 0.3, 0.3), m.ONE_SHOT)

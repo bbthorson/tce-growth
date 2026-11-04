@@ -1266,6 +1266,31 @@ def frequency_reading(buyer_stake, seller_stake, buyer_quasi_rent,
     return RECURRENT
 
 
+def build_margin(run_cost, annualized_build, value_shortfall, price):
+    """How much cheaper paying the seller is than building, 05 section 3.
+
+        M_build = C_run + k_build + (V_solution - V_build) - P
+
+    In contract value per year. Positive means buying wins before hold-up.
+    """
+    if run_cost < 0 or annualized_build < 0:
+        raise ValueError("a cost cannot be negative")
+    return run_cost + annualized_build + value_shortfall - price
+
+
+def buyer_builds(margin, holdup):
+    """The fourth governance row's condition, 05-governance-forms.md section 3.
+
+    The buyer builds once what the seller can take at a boundary exceeds the
+    build margin. A bonded buyer has no hold-up, so the margin alone decides.
+    This is the latest the buyer builds: H_b counts the seller's gain, and
+    the buyer's loss from a refusal to adapt can be larger.
+    """
+    if holdup < 0:
+        raise ValueError("hold-up cannot be negative")
+    return holdup > margin
+
+
 def search_count(n_alternatives):
     """n_search, step 1a: named vendors plus build plus do nothing.
 

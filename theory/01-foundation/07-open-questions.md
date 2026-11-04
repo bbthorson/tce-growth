@@ -44,7 +44,7 @@ Constitution 4.0 made investment an axiom of its own. Items 7 to 13 were filed h
 
 **10. Governance form and where the sale starts may interact.** The forms are selected by specificity and frequency. Whether a deal whose sale starts at bargaining wants a different safeguard structure from one that starts at policing, with the same specific exposure, is untested, and [05-governance-forms.md](./05-governance-forms.md) section 7 says there is reason to think it does. *Settled by:* stating what each form safeguards and checking it against each cost's pair of parties.
 
-**12. The unified-governance boundary has no instrument.** The fourth governance row says the buyer eventually builds it. Nothing reads when. *Settled by:* an instrument that reads the buyer's build alternative, which is $V_{next\_best}$ made observable.
+**12. The unified-governance boundary has a condition and no instrument.** The fourth governance row says the buyer eventually builds it. [05-governance-forms.md](./05-governance-forms.md) section 3 now says when: once the buyer fails the bond condition, it builds when what the seller can take at a boundary exceeds the buyer's build margin, its own running cost plus the annualized build and migration plus any value its version would lack, less the price. Nothing reads the margin. *Settled by:* a build-alternative reading at the renewal, which is $V_{next\_best}$ made observable: the buyer's in-house team on the adjacent function, its own build estimate where it has one, and the bond reading from section 1. Its home is the renewal evidence pack in the [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md), when the practice layer is rebuilt for 5.0.
 
 ---
 
