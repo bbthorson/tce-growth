@@ -55,6 +55,22 @@ Williamson's result is that specificity and frequency together select the govern
 
 **The fourth row is a loss condition.** When specificity keeps rising on a continuous relationship, unified governance eventually beats any contract the two parties can write. For the seller, that means the buyer builds it. Axiom III's unallocated failure mode describes the symptom. This row describes when it becomes rational rather than merely likely.
 
+**What each form safeguards, and where the sale starts.** All four forms govern one pair: the buyer and the seller. Market governance leaves each free to walk. Trilateral governance puts a third party between them, bilateral governance has each sanction the other at the boundary, and unified governance merges them. The Constitution's gap table in Axiom III says each cost runs between its own pair of parties, so a form protects a deal only against the hazard that runs between the pair it governs.
+
+- **Policing and enforcement** runs between the buyer and the seller: the seller's uncertainty about the buyer's environment, and the buyer's about the seller's capability in it. That is the pair the forms govern, so a deal whose sale starts here takes the form section 2 selects, and nothing more.
+- **Bargaining and decision** has an external part, the buyer's bargain with the seller over terms, which the forms reach. Its internal part runs between the decision roles inside the buyer. The future loss it feeds is whether the coalition holds once the investment is sunk, and the party that defects there is a decision role, not the buyer firm. No buyer-seller form reaches it. Non-renewal sanctions the wrong party, and a Mutual Implementation Plan binds the signatory, not the role whose budget the change cuts. So a deal whose sale starts here needs the form section 2 selects and a safeguard inside the buyer as well.
+- **Search and information** runs between the buyer and the market. Once the buyer has chosen, it stops mattering to what anyone loses later (Axiom III), so where a sale starts at search the form follows the exposure the other two costs leave. A channel or marketplace that stands between the buyer and the market is an adjudicator that needs a stake under Axiom III, and not a governance form for the transaction.
+
+**The safeguard inside the buyer.** It applies Axiom III's rule that every party holding exposed rent needs a stake, with the decision roles as the parties. It has three parts.
+
+1. **An adjudicator with authority over the roles, holding a stake.** The buyer's own hierarchy settles disputes between its decision roles by fiat, which makes the sponsor the third party in a trilateral structure inside the buyer. A sponsor with nothing riding on the outcome is the adjudicator with no exposure that the corollary warns against. Whether the mandate still stands is what open question 29 asks the deal reading to track.
+2. **An arrangement each exposed role ratifies.** Each role's reservation is answered in the arrangement record and accepted by the role's occupant, which is the shared half of the bargaining instrument open question 2 still owes.
+3. **Commitments written against roles, not people.** A departed champion reopens the bargaining gap at once. A safeguard tied to the role survives an occupant change and is re-ratified by the successor. One tied to the person leaves with them.
+
+The bond logic carries over. A role that bears the change's cost in budget or headcount stays bonded when what it gains from the change, staged with adoption, covers what it loses, and it defects when the change only costs it.
+
+*Falsifier.* At equal specific exposure and frequency, deals whose sale started at bargaining and were governed only between buyer and seller should drift after signature more than those with a staked sponsor and role-level ratification, and deals whose sale started at policing should show no such difference. If the bargaining-start deals governed by a Mutual Implementation Plan alone drift no more than the policing-start deals, the forms need no addition.
+
 ---
 
 ## 3. The make-or-buy boundary was already in the equation
@@ -147,7 +163,7 @@ The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits fou
 - **How to measure the stake at a boundary.** Section 1 now reads the three readings as regions of each party's stake at the next boundary against the two quasi-rents, which settled open question 11 on 2026-11-04. The stake $F_p$ is named and not valued, so the field still classifies from the evidence column. Constitution 2.4 proposed the buyer's cost of exit at the next boundary and 3.0 withdrew it: contractual exit is a thin layer over procedural, technical and human switching cost (Burnham, Frels and Mahajan 2003), and lowering it one-sidedly hands the seller's sunk investment to the buyer (MacLeod and Malcomson 1989).
 - **Whether the recurrence claim survives a category that never had a one-shot form.** Software sold as a subscription from the beginning offers no before-and-after, so the test in section 5 runs only on categories that made the transition, or has to vary the mutual stake inside one.
 - **What two restatements gave up.** Until 2.4 this section claimed that subscription won because it made specific software governable. Until 3.0 it claimed the buyer's cheap exit was the governing variable. The first fell to software economics and the second to relational-contracting theory, and [tce-empirical-record.md](../02-research/tce-empirical-record.md) records both.
-- **How governance form interacts with where the sale starts.** The forms are selected by specific exposure and frequency. Whether a deal that starts at consensus wants a different safeguard structure from one that starts at implementation, at identical exposure, is untested, and there is reason to think it does: the parties who need safeguarding are not the same parties.
+- **How the safeguard inside the buyer is read.** Section 2 now says a deal whose sale starts at bargaining needs a safeguard inside the buyer beside the buyer-seller form, which settled open question 10 on 2026-11-04. No instrument yet reads whether a deal has one. The decision-role ledger owed under open question 2 is its home.
 
 ---
 
