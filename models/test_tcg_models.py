@@ -241,6 +241,33 @@ class TestFutureLoss(unittest.TestCase):
     def test_a_bonded_party_keeps_the_gap_chance(self):
         self.assertEqual(m.loss_chance_with_holdup(0.3, 0.0, 0.8), 0.3)
 
+    # Section 5.6, what to settle in advance and what to do in advance.
+
+    def test_the_allocation_share_rises_with_the_imbalance_toward_the_split(self):
+        low = m.allocated_share(0.4, 0.2, 0.0)
+        high = m.allocated_share(1.0, 0.2, 0.0)
+        self.assertLess(low, high)
+        self.assertLess(high, m.OMEGA_RENEGOTIATION)
+
+    def test_parties_sinking_evenly_need_nothing_allocated(self):
+        self.assertEqual(m.allocated_share(0.8, 0.8, 0.0), 0.0)
+
+    def test_advance_discovery_falls_with_what_only_use_reveals(self):
+        g = m.NormalizedGap(0.6)
+        static = m.advance_discovery_share(0.8, g, 0.05, 0.0, 1.0)
+        uncertain = m.advance_discovery_share(0.8, g, 0.05, 0.6, 1.0)
+        self.assertGreater(static, uncertain)
+        self.assertEqual(m.advance_discovery_share(0.8, g, 0.05, 1.0, 1.0), 0.0)
+
+    def test_advance_discovery_rises_with_the_quasi_rent(self):
+        g = m.NormalizedGap(0.6)
+        self.assertLess(m.advance_discovery_share(0.2, g, 0.05, 0.3, 1.0),
+                        m.advance_discovery_share(0.9, g, 0.05, 0.3, 1.0))
+
+    def test_a_static_specification_with_much_at_stake_is_defined_in_full(self):
+        self.assertEqual(m.advance_discovery_share(
+            5.0, m.NormalizedGap(0.8), 0.05, 0.0, 1.0), 1.0)
+
     def test_staging_loses_less_than_committing_everything_up_front(self):
         """Section 5.4: the large commitments come late, against small
         residuals, so the staged loss is smaller."""

@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 5.0
+version: 5.1
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 5.0
+**Version:** 5.1
 **Purpose:** To state the three claims from which everything else in this repository derives, each answering one decision a party to a deal must make, each in time order, and each falsifiable on its own.
 
 Version history is at the end of this document.
@@ -152,7 +152,7 @@ What turns exposure into cost is what the exposed party cannot verify, and what 
 
 The search gap mostly prices today's cost and decides participation under Axiom I. The other two decide the future loss. The buyer's loss runs on the policing gap, whether the seller delivers and the product fits, and on the bargaining gap, whether the coalition holds once the investment is sunk. The seller's loss runs on what it could not map of the buyer's environment and coalition. The bargaining gap is not a conflict of interest that proof could close. Two decision roles with perfect knowledge of each other and opposed interests still disagree. What proof can close is each role's uncertainty about its own exposure.
 
-What can be settled before the investment is sunk is the allocation, and not the adaptation itself. Under uncertainty, parties write deliberately incomplete contracts and adapt afterward (Crocker and Reynolds 1993, Bajari and Tadelis 2001), and the misfits that decide whether a system is used, in roles, controls and culture, surface only in use (Strong and Volkoff 2010). So the share of the arrangement settled in advance rises with specificity, who bears which adaptation risk, staged how, with what right to stop, while the share of the work done in advance can fall as uncertainty rises. Discovery cannot reach what only use reveals, and forcing it produces the over-frictioned failure. [incomplete-contracts.md](../02-research/incomplete-contracts.md) carries the evidence.
+What can be settled before the investment is sunk is the allocation, and not the adaptation itself. Under uncertainty, parties write deliberately incomplete contracts and adapt afterward (Crocker and Reynolds 1993, Bajari and Tadelis 2001), and the misfits that decide whether a system is used, in roles, controls and culture, surface only in use (Strong and Volkoff 2010). So the share of the arrangement settled in advance, who bears which adaptation risk, staged how, with what right to stop, rises with the imbalance between what the two parties have sunk, net of what each stands to lose at the next boundary. Specificity raises it when one side sinks alone, and two parties sinking evenly need less settled than one sinking alone. The share of the work done in advance can fall as uncertainty rises. [02-mathematical-models.md](./02-mathematical-models.md) sections 5.5 and 5.6 give both forms. Discovery cannot reach what only use reveals, and forcing it produces the over-frictioned failure. [incomplete-contracts.md](../02-research/incomplete-contracts.md) carries the evidence.
 
 What the allocation assigns is residual control (Grossman and Hart 1986, Hart and Moore 1990). Contracts on specific transactions are incomplete as a structural matter, so states arise that nobody specified. What governs those states is the pre-agreed allocation of the right to decide, and a party who expects to be held up in them declines to sink the investment at all. That is why more legal review does not move a stalled specific deal.
 
@@ -273,11 +273,12 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 5.0.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 5.1.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 <!-- vale TCG.RetiredTerms = NO -->
 | Version | Date | Change |
 |---|---|---|
+| 5.1 | 2026-11 | Axiom III's mechanism states what the share of the arrangement settled in advance rises with: the imbalance between what the two parties have sunk, net of what each stands to lose at the next boundary, and not specificity as such. Two parties sinking evenly need less settled than one sinking alone. The math file gains the bond condition for joint exposure and forms for the allocation required and the work done in advance, and the governance-forms file reads the frequency readings and the build boundary off the bond condition. The axiom statements are unchanged. |
 | 5.0 | 2026-11 | The second standing assumption splits value three ways. Realizable value is set by the offer and the buyer's situation and is exogenous to the sale, recognized value is the buyer's estimate, which the seller moves, and realized value is what the buyer captures after go-live. The buyer's condition is read on recognized value, and the gap is exposure under Axiom III. Axiom I's costs become non-compensatory: they add, in the buyer's condition and against one capacity where one payer carries more than one, but ease on one never buys back another above its threshold, which replaces "never summed". Contracting is named as the buyer's bargain with the seller over terms, inside bargaining and decision. Axiom II gains the cost floor corollary, the part of each cost set outside the deal, and Axiom I's table names each cost floor. Axiom III widens from what a party cannot verify to what it cannot verify or enforce, and gains the enforcement corollary, which names hostages and rights allocated in advance as the remedies for hold-up under full information, with the unhostaged failure mode. Open question 20 closes, and items 32 to 36 open in 07-open-questions.md. Follows the 5.0 proposal and three new research files. |
 | 4.1 | 2026-10 | The three-levers corollary names a guarantee's selection effect. Taking risk back is part transfer and part verification: the transfer moves future loss without shrinking it, and what the offer reveals about which seller can afford it lowers $\pi$, alongside the incentive effect 4.0 already named. Resolves the conflict with the risk-transfer extension in costly-signals.md, which now states the two limits on that separation. No axiom changed. |
 | 4.0 | 2026-10 | The axioms are restated as three decisions in time order: whether to use the market, what it costs today, what it might cost later. Axiom I takes Dahlman's names for the three costs, gains a participation threshold per cost, and replaces "the one that binds selects the motion" with where the sale starts. Policing and enforcement returns to Dahlman's meaning, and the buyer's adaptation work becomes an investment. Axiom II, formerly the Law of Asset Specificity, becomes the Law of Transaction Investment: two conditions, one per party, in which price cancels as a transfer. Axiom III, formerly the Law of Uncertainty Inflation, becomes the Law of Future Cost and takes specificity, the gate and the governance corollaries, with allocation anchored to before the investment is sunk rather than to signature. Turnkey becomes a market condition that erodes through entry, and Structural is retired. The summed level, direction shares, the per-component multiplier and the reduced form $y = a\hat{\Delta}_A^2 + c$ retire from the Constitution. Seat becomes decision role, and market and deal stop being Definitions. Follows three adversarial reviews, recorded in the revision proposal in git history. |

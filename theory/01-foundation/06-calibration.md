@@ -55,6 +55,9 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 | Renegotiation split | $\omega$ | 0.5 | **Chosen.** `OMEGA_RENEGOTIATION`. The symmetric split Grossman and Hart (1986) use, with nothing allocated in advance. Section 5.5 of the math file. |
 | Future stake at a boundary | $F_{-p}$ | — | **Named, not valued.** What forcing a renegotiation costs the side that forces it. |
 | How hold-up and a failed fit combine | — | independent | **Chosen.** Hold-up counts only where the fit did not fail. |
+| Shape of discovery cost | — | quadratic | **Chosen.** Diminishing returns to discovery before sinking. Section 5.6 of the math file. |
+| Discovery cost scale | $c$ | — | **Named, not valued.** |
+| Share of the gap only use reveals | $\rho$ | — | **Named, not valued.** Near zero for a static specification. |
 | Drift ceiling | — | 1 | **Convention.** The top of the range every count-based gap is defined on. |
 | Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | — | **Named, not valued.** |
 | Technical weight | $w_t$ | 0.6 | **Chosen.** No source. |
@@ -161,6 +164,8 @@ These were open questions in [07-open-questions.md](./07-open-questions.md). Eac
 **39. Seller absorption of the buyer's investment may have a ceiling.** Axiom II's falsifier assumes that the more of the buyer's investment the seller absorbs, the more often a deal closes. Three findings point the other way past some share: labor raises the builder's valuation (Norton, Mochon and Ariely 2012), sunk effort raises the commitment to finish (Arkes and Blumer 1985), and user participation drives later system use (Sabherwal, Jeyaraj and Chowa 2006). Under Axiom III the buyer's own investment is also its hostage, so full absorption removes it. Allocated rights, the corollary's other remedy, could stand in for that hostage: a buyer that sinks nothing can still be held by a priced right to stop. Such a right protects the seller against the buyer walking away and does nothing for the commitment and use effects above, so if those effects are real the ceiling holds even when the seller is protected. *Settled by:* close rate and twelve-month use by absorption share, comparing a fully seller-funded pilot, a co-invested pilot and buyer-borne implementation. [adversarial-review-2026-11.md](../02-research/adversarial-review-2026-11.md).
 
 **Axiom III, future cost.**
+
+**7. Whether allocation and advance work follow section 5.6.** [02-mathematical-models.md](./02-mathematical-models.md) section 5.6 derives the allocation required from the bond condition and gives the work done in advance a placeholder form. *Settled by:* the test three reviews proposed, extended by the imbalance. Stratify deals by the exposure count and by the imbalance between the parties' sunk investments, randomize front-loaded against modular protocols, and read win rate, deployment and retention together, so that decision paralysis and emergent misfit each have a signature. The forms predict that modular protocols win where much of the misfit surfaces only in use and lose little where the specification is static, and that a deal sunk with its allocation requirement uncovered drifts whatever the protocol. [incomplete-contracts.md](../02-research/incomplete-contracts.md) carries the evidence.
 
 **15. The drift rates are asserted, not derived.** $\gamma_{search}$, $\gamma_{consensus}$ and $\gamma_{implementation}$ are named and not valued. Only the bargaining rate has a discrete field event attached, a departed champion. The other two are asserted continuous. *Settled by:* logging the three gaps at every artifact boundary, which is item 1 above.
 

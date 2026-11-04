@@ -39,7 +39,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 Each has a README listing what is inside it. For `tools/` it is [tools/linting/README.md](./tools/linting/README.md).
 
 > [!NOTE]
-> **The practice layer is frozen.** Constitution 5.0 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the 5.0 axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step. It retires to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
+> **The practice layer is frozen.** Constitution 5.1 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the 5.0 axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step. It retires to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
 
 ---
 
@@ -124,5 +124,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 5.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 5.1 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-11-03

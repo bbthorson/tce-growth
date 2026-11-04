@@ -642,6 +642,51 @@ def loss_chance_with_holdup(gap_chance, holdup, own_quasi_rent):
     return 1.0 - (1.0 - gap_chance) * (1.0 - holdup / own_quasi_rent)
 
 
+def allocation_required(own_quasi_rent, other_quasi_rent, other_future_stake,
+                        omega=OMEGA_RENEGOTIATION):
+    """What has to be settled before party p sinks, section 5.6.
+
+        A_p = max(0, omega * Q_p - (1 - omega) * Q_other - F_other)
+
+    The hold-up the bond leaves uncovered, read at the moment of sinking.
+    """
+    return holdup_loss(own_quasi_rent, other_quasi_rent, other_future_stake,
+                       omega)
+
+
+def allocated_share(own_quasi_rent, other_quasi_rent, other_future_stake,
+                    omega=OMEGA_RENEGOTIATION):
+    """alpha_p = A_p / Q_p, section 5.6. Rises with the imbalance, up to omega."""
+    if own_quasi_rent == 0:
+        return 0.0
+    return allocation_required(own_quasi_rent, other_quasi_rent,
+                               other_future_stake, omega) / own_quasi_rent
+
+
+def advance_discovery_share(quasi_rent_value, gap, floor, use_share,
+                            cost_scale):
+    """Share of the gap worth closing before sinking, section 5.6.
+
+        x* = min(1, Q (1 - floor)(1 - rho) g / c),  sigma = (1 - rho) x*
+
+    A placeholder: the quadratic cost of discovery is chosen, and the floor,
+    rho (the share only use reveals) and c are named and not valued, so the
+    caller supplies them.
+    """
+    g = _require_normalized(gap, "advance_discovery_share")
+    if quasi_rent_value < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if not 0.0 <= floor < 1.0:
+        raise ValueError("the floor lies on [0, 1)")
+    if not 0.0 <= use_share <= 1.0:
+        raise ValueError("the share only use reveals lies on [0, 1]")
+    if cost_scale <= 0:
+        raise ValueError("discovery has a positive cost scale")
+    x = min(1.0, quasi_rent_value * (1.0 - floor) * (1.0 - use_share) * g
+            / cost_scale)
+    return (1.0 - use_share) * x
+
+
 def staged_loss(stage_quasi_rents, stage_residuals, floor):
     """Expected loss across gates, section 5.4.
 

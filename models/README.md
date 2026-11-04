@@ -37,7 +37,7 @@ Formula coverage, by canonical home:
 
 | Document | What the module implements |
 |---|---|
-| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the decay rate, future loss and staging, the bond condition and hold-up, bounded drift, and each cost's position between its thresholds. |
+| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the decay rate, future loss and staging, the bond condition and hold-up, the allocation required and the work done in advance, bounded drift, and each cost's position between its thresholds. |
 | [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [consensus-friction-calculator.md](../practice/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
 | [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |

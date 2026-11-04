@@ -326,6 +326,32 @@ So $L_p = Q_p \pi_p$ keeps its form and its bound, and $H_p / Q_p$ never exceeds
 
 *Falsifier.* Among deals where both parties sink specific investment, forced renegotiations and terminations should track the imbalance between the two quasi-rents against the value left in the relationship, and not the total sunk. If they rise with the total at a fixed imbalance, the condition is wrong.
 
+### 5.6 What to settle in advance, and what to do in advance
+
+Axiom III says a specific deal's allocation must be settled before the investment is sunk, and that the work done in advance can fall as uncertainty rises. This section gives each half a form.
+
+**The allocation required.** An allocation is adequate when, at the moment party $p$ sinks its investment, the other side can take nothing in plain view. The bond covers part of $p$'s quasi-rent through what the other side has sunk and stands to lose (section 5.5). What the bond leaves uncovered has to be settled in advance, by a hostage or by a right:
+
+$$A_p = \max\left(0,\; \omega\, Q_p - (1 - \omega)\, Q_{-p} - F_{-p}\right), \qquad \alpha_p = \frac{A_p}{Q_p}$$
+
+$A_p$ is the hold-up loss $H_p$ read at the moment of sinking. $\alpha_p$ is the share of $p$'s quasi-rent that needs an allocation, and it never exceeds $\omega$.
+
+- **The requirement rises with the imbalance, and not with specificity as such.** At a fixed $Q_{-p}$ and $F_{-p}$, $\alpha_p$ rises with $Q_p$ toward $\omega$, which is the axiom's earlier claim in the case where one party sinks alone. When both sink evenly, $\alpha_p$ falls toward zero and the bond does the work. Constitution 5.1 states the mechanism this way.
+- **Staging keeps the requirement small.** Read at each gate on the quasi-rents sunk so far, $A_p$ stays near zero while the two sides' investments grow together, which is what [05-governance-forms.md](./05-governance-forms.md) section 5 means by the two stakes growing together. A gate where one side sinks alone is the gate that needs the allocation.
+- **Allocation answers hold-up, and not a failed fit.** The fit term $Q_p \pi^{gap}_p$ is lowered by verification and by staging (section 5.4), and moved by a guarantee.
+
+The Friction Efficiency Index's allocation coverage ratio reads whether an allocation was made. $\alpha_p$ says how much was needed.
+
+**The work done in advance.** Discovery before sinking lowers the gap a party carries into the investment, but only the part discovery can reach. Write $\rho$ for the share of the gap that surfaces only in use. It is near zero where the specification is static and rises with technological and organizational uncertainty (Crocker and Reynolds 1993, Strong and Volkoff 2010). Closing a fraction $x$ of the reachable part lowers the party's mean gap by $x(1 - \rho) g_p$, and its expected loss by $Q_p (1 - \pi_0)(1 - \rho)\, g_p\, x$. If discovery's cost rises with the square of $x$ at a scale $c$, the share of the gap worth closing before sinking is
+
+$$x^* = \min\left(1,\; \frac{Q_p (1 - \pi_0)(1 - \rho)\, g_p}{c}\right), \qquad \sigma_p = (1 - \rho)\, x^*$$
+
+$\sigma_p$ is the share of the gap closed in advance. It rises with $Q_p$, because a larger quasi-rent makes the loss worth more to avoid. It falls with $\rho$, because more of the gap lies beyond discovery's reach and each unit of discovery buys less. The rest is closed after sinking, in stages, which keeps the option to stop that Dixit and Pindyck (1994) price.
+
+**The two halves come apart.** Uncertainty does not enter $\alpha_p$, and $\sigma_p$ falls as $\rho$ rises. So a deal that is specific and uncertain settles more and does less before anything is sunk, which is a minimum viable integration with a staged remainder. Where $\rho$ is near zero both rise with $Q_p$, and front-end definition pays directly (Merrow 2011).
+
+**Placeholders.** The quadratic cost of discovery is chosen. $c$ and $\rho$ are named and not valued. $A_p$ inherits $\omega$ from section 5.5.
+
 ---
 
 ## 6. Thresholds and Positions
