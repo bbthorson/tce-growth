@@ -148,7 +148,7 @@ Section 3 defines $Q = C_{invest} - R_{redeploy}$ as the seller's exposure: work
 
 In the repeated game the same quantity does the opposite job. Work that cannot be redeployed means the seller loses badly if the relationship ends, which is a credible bond rather than a liability. Mutual specific investment is the joint-ownership remedy in [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md): neither party defects when both have sunk something they cannot recover.
 
-So a forward-deployed motion raises the seller's temptation $T$ and the seller's bond $Q$ at the same time. **The relationship is healthy while $Q$ grows at least as fast as $T$.** That is the condition to watch, and it is why the defensible account of the motion is not that the buyer is locked in but that both parties now have more to lose.
+So a forward-deployed motion raises the seller's temptation $T$ and the seller's bond $Q$ at the same time. **The relationship is healthy while $Q$ grows at least as fast as $T$.** [02-mathematical-models.md](./02-mathematical-models.md) section 5.5 states it exactly: each side is safe from hold-up while the other side's quasi-rent, plus what forcing a renegotiation would cost it, covers its share of the joint quasi-rent. That is the condition to watch, and it is why the defensible account of the motion is not that the buyer is locked in but that both parties now have more to lose.
 
 ### 7.4 The leading indicator
 

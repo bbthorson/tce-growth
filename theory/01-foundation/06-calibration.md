@@ -52,6 +52,9 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 | Floor on the chance of loss | $\pi_0$ | — | **Named, not valued.** That a floor above zero exists is structurally motivated by the return-variance floor in section 2.3 of the math file. No value is offered. |
 | Shape of the chance of loss | — | straight line | **Chosen.** A placeholder between floor and ceiling. No curvature is claimed. |
 | How a party's gaps combine | — | arithmetic mean | **Chosen.** No source. |
+| Renegotiation split | $\omega$ | 0.5 | **Chosen.** `OMEGA_RENEGOTIATION`. The symmetric split Grossman and Hart (1986) use, with nothing allocated in advance. Section 5.5 of the math file. |
+| Future stake at a boundary | $F_{-p}$ | — | **Named, not valued.** What forcing a renegotiation costs the side that forces it. |
+| How hold-up and a failed fit combine | — | independent | **Chosen.** Hold-up counts only where the fit did not fail. |
 | Drift ceiling | — | 1 | **Convention.** The top of the range every count-based gap is defined on. |
 | Component drift rates | $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$ | — | **Named, not valued.** |
 | Technical weight | $w_t$ | 0.6 | **Chosen.** No source. |

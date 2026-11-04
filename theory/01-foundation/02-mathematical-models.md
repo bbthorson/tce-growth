@@ -296,6 +296,36 @@ $$L_b = \sum_{m} Q_m \, \pi(x_m) \qquad \text{rather than} \qquad Q \, \pi(x_0)$
 
 Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) carries the residual chain and the reference gates. Its stage equation is this one, read one gate at a time.
 
+### 5.5 Joint exposure and the bond condition
+
+Section 5.2 reads the chance of loss off the gaps a party cannot close, which is the hidden-information half of Axiom III. The other half is hold-up in plain view. At a renewal, or in a state the contract did not foresee, one side forces a renegotiation and the other can watch it happen and cannot stop it (Wathne and Heide 2000). What decides whether that pays is both quasi-rents at once.
+
+**The renegotiation.** If the two parties part at a boundary, each loses what it sank and cannot redeploy, so continuing is worth $Q_b + Q_s$ more to the pair than parting. Where the contract is silent, the pair splits that amount when it renegotiates. Write $\omega$ for the share the other side, $-p$, captures. Party $p$ expected to recover its whole quasi-rent and recovers $(1 - \omega)(Q_p + Q_{-p})$, so the most the other side can take from it is $\omega Q_p - (1 - \omega) Q_{-p}$.
+
+Forcing the renegotiation also costs the other side something: the future surplus it puts at risk by souring the relationship, $F_{-p}$, read in contract value off the repeated game in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7. It forces the renegotiation only when the gain exceeds that cost, so party $p$'s hold-up loss is
+
+$$H_p = \max\left(0,\; \omega\, Q_p - (1 - \omega)\, Q_{-p} - F_{-p}\right)$$
+
+**The bond condition.** Mutual exposure is a bond for party $p$, rather than a liability, when $H_p = 0$:
+
+$$\omega\, Q_p \;\le\; (1 - \omega)\, Q_{-p} + F_{-p}$$
+
+With an even split, $\omega = 0.5$, this reads $Q_p - Q_{-p} \le 2F_{-p}$. It always holds for the party that sank less. So the pair is bonded in both directions when the gap between the two quasi-rents is no larger than twice what forcing a renegotiation would cost the party that sank less. Three things follow.
+
+- **The imbalance creates the hazard, and the level does not.** Raising both quasi-rents together keeps the bond. Raising one alone breaks it once the difference outgrows the other side's future stake. The seller surplus model's rule that the relationship is healthy while the seller's quasi-rent keeps pace with its temptation is this condition read from the buyer's side.
+- **The two enforcement remedies act on different terms.** A hostage raises $Q_{-p}$, through a bond or a reciprocal specific investment, or raises $F_{-p}$, through fees staged against delivery or the seller's referenceability. A right allocated in advance changes the renegotiation itself. An option to renew at a preset price or a priced right to stop fixes where it starts, which in this form lowers $\omega$. A discount moves none of the three terms, which is why it does not answer drift.
+- **Whoever sinks first is exposed first.** In a forward-deployed motion $Q_s$ rises before $Q_b$, so the seller fails the condition until the buyer's own investment catches up. That is the Constitution's reason to settle the allocation before the seller spends.
+
+**How it enters the conditions.** Hold-up and a failed fit are two ways the return falls short, and hold-up matters only in the states where the fit did not fail anyway. Writing $\pi^{gap}_p$ for section 5.2's form:
+
+$$\pi_p = 1 - \left(1 - \pi^{gap}_p\right)\left(1 - \frac{H_p}{Q_p}\right), \qquad L_p = Q_p\,\pi_p = Q_p\,\pi^{gap}_p + \left(1 - \pi^{gap}_p\right) H_p$$
+
+So $L_p = Q_p \pi_p$ keeps its form and its bound, and $H_p / Q_p$ never exceeds $\omega$. Where the bond condition holds, $H_p = 0$ and $\pi_p$ is the gap form alone, which is what every worked example in the repository assumes.
+
+**The split is a placeholder.** $\omega = 0.5$ is the symmetric split Grossman and Hart (1986) use for the renegotiation, chosen and not fitted, and it describes a renegotiation with nothing allocated in advance. $F_{-p}$ is named and not valued. It is the mutual stake at each boundary that [07-open-questions.md](./07-open-questions.md) item 11 names as the candidate variable under frequency.
+
+*Falsifier.* Among deals where both parties sink specific investment, forced renegotiations and terminations should track the imbalance between the two quasi-rents against the value left in the relationship, and not the total sunk. If they rise with the total at a fixed imbalance, the condition is wrong.
+
 ---
 
 ## 6. Thresholds and Positions

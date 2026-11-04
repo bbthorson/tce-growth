@@ -160,7 +160,7 @@ What the allocation assigns is residual control (Grossman and Hart 1986, Hart an
 
 $$L_p = Q_p \cdot \pi_p, \qquad Q_p = C^{p}_{invest} - R^{p}_{redeploy}, \qquad p \in \{b, s\}$$
 
-$L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use, and not a second charge for the investment Axiom II already counted. The quasi-rent $Q_p$ bounds it, because it is the most the other side can extract or a failure can destroy. $\pi_p$ rises with the gaps party $p$ cannot close and has a floor above zero, because some risk survives any amount of proof. Its shape between floor and ceiling is not claimed. Absent maintenance, each gap $\hat{\Delta}_k \in [0, 1]$ rebuilds toward its ceiling:
+$L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use, and not a second charge for the investment Axiom II already counted. The quasi-rent $Q_p$ bounds it, because it is the most the other side can extract or a failure can destroy. $\pi_p$ rises with the gaps party $p$ cannot close and has a floor above zero, because some risk survives any amount of proof. It also rises with what the other side can take in plain view at a renegotiation, which is nothing while the imbalance between the two quasi-rents stays within what forcing the renegotiation would cost the side that sank less ([02-mathematical-models.md](./02-mathematical-models.md) section 5.5). Its shape between floor and ceiling is not claimed. Absent maintenance, each gap $\hat{\Delta}_k \in [0, 1]$ rebuilds toward its ceiling:
 
 $$\hat{\Delta}_k(t) = 1 - \left(1 - \hat{\Delta}_k(0)\right) e^{-\gamma_k t}$$
 

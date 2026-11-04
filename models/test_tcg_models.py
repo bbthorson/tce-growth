@@ -198,6 +198,49 @@ class TestFutureLoss(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.future_loss(0.6, 1.2)
 
+    # Section 5.5, the bond condition.
+
+    def test_equal_quasi_rents_bond_both_sides(self):
+        self.assertEqual(m.holdup_loss(0.6, 0.6, 0.0), 0.0)
+        self.assertTrue(m.bond_holds(0.6, 0.6, 0.0))
+
+    def test_the_imbalance_creates_the_hazard_and_the_level_does_not(self):
+        """Raising both quasi-rents together leaves hold-up unchanged."""
+        self.assertAlmostEqual(m.holdup_loss(0.8, 0.2, 0.0), 0.3)
+        self.assertAlmostEqual(m.holdup_loss(1.4, 0.8, 0.0), 0.3)
+
+    def test_the_side_that_sank_less_is_always_bonded(self):
+        self.assertTrue(m.bond_holds(0.2, 0.8, 0.0))
+
+    def test_an_even_split_bonds_while_the_gap_is_within_twice_the_stake(self):
+        self.assertTrue(m.bond_holds(0.8, 0.2, 0.3))
+        self.assertFalse(m.bond_holds(0.8, 0.2, 0.29))
+
+    def test_a_right_allocated_in_advance_lowers_the_split(self):
+        """An option that fixes where the renegotiation starts, omega to 0."""
+        self.assertEqual(m.holdup_loss(0.8, 0.2, 0.0, omega=0.0), 0.0)
+
+    def test_the_future_stake_has_no_default(self):
+        """06-calibration.md declares F named and not valued."""
+        with self.assertRaises(TypeError):
+            m.holdup_loss(0.8, 0.2)
+
+    def test_hold_up_never_exceeds_the_split_of_the_own_quasi_rent(self):
+        for omega in (0.0, 0.25, 0.5, 1.0):
+            self.assertLessEqual(m.holdup_loss(0.9, 0.0, 0.0, omega),
+                                 omega * 0.9 + 1e-12)
+
+    def test_hold_up_enters_the_chance_only_where_the_fit_held(self):
+        q, gap_chance = 0.8, 0.25
+        h = m.holdup_loss(q, 0.2, 0.0)
+        chance = m.loss_chance_with_holdup(gap_chance, h, q)
+        self.assertAlmostEqual(m.future_loss(q, chance),
+                               q * gap_chance + (1 - gap_chance) * h)
+        self.assertLessEqual(m.future_loss(q, chance), q)
+
+    def test_a_bonded_party_keeps_the_gap_chance(self):
+        self.assertEqual(m.loss_chance_with_holdup(0.3, 0.0, 0.8), 0.3)
+
     def test_staging_loses_less_than_committing_everything_up_front(self):
         """Section 5.4: the large commitments come late, against small
         residuals, so the staged loss is smaller."""
@@ -1217,7 +1260,8 @@ class TestCalibrationDiscipline(unittest.TestCase):
         knobs = ("ALPHA_COORDINATION",
                  "BETA_COMMITTEE", "GAMMA_TECHNICAL_OVERLAP", "W_TECH",
                  "W_PROCESS", "PHI_TECH", "PHI_PROCESS", "NU_VENDOR_DOUBT",
-                 "KAPPA_PROOF_DECAY", "GAMMA_RESPONSIVENESS", "BCV_REF_DEFAULT",
+                 "KAPPA_PROOF_DECAY", "GAMMA_RESPONSIVENESS", "OMEGA_RENEGOTIATION",
+                 "BCV_REF_DEFAULT",
                  "MIN_CREDIBLE_EDGE_CASES", "SEARCH_EVIDENCE_ITEMS")
         edges = ("SEARCH_EDGES", "CONSENSUS_EDGES", "IMPLEMENTATION_EDGES")
         missing = []

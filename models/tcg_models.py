@@ -60,6 +60,7 @@ MU_RETURN_UNCERTAINTY = 1.0  # normalizing convention
 NU_VENDOR_DOUBT = 2.0        # chosen
 KAPPA_PROOF_DECAY = 0.5      # chosen
 GAMMA_RESPONSIVENESS = 0.5   # chosen
+OMEGA_RENEGOTIATION = 0.5    # chosen: symmetric split, nothing allocated
 
 # Raw Bilateral Asymmetry Scorecard range, from
 # practice/asymmetry-scorecard.md part 3.
@@ -592,6 +593,53 @@ def future_loss(quasi_rent_value, chance):
     if not 0.0 <= chance <= 1.0:
         raise ValueError("a chance lies on [0, 1]")
     return quasi_rent_value * chance
+
+
+def holdup_loss(own_quasi_rent, other_quasi_rent, other_future_stake,
+                omega=OMEGA_RENEGOTIATION):
+    """What the other side can take in plain view, section 5.5.
+
+        H_p = max(0, omega * Q_p - (1 - omega) * Q_other - F_other)
+
+    The pair splits the joint quasi-rent when it renegotiates, and the other
+    side forces the renegotiation only when its gain exceeds the future stake
+    it puts at risk. F_other is named and not valued, so it has no default.
+    """
+    if own_quasi_rent < 0 or other_quasi_rent < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if other_future_stake < 0:
+        raise ValueError("a future stake cannot be negative")
+    if not 0.0 <= omega <= 1.0:
+        raise ValueError("the renegotiation split lies on [0, 1]")
+    return max(0.0, omega * own_quasi_rent
+               - (1.0 - omega) * other_quasi_rent - other_future_stake)
+
+
+def bond_holds(own_quasi_rent, other_quasi_rent, other_future_stake,
+               omega=OMEGA_RENEGOTIATION):
+    """The bond condition, section 5.5: mutual exposure protects party p."""
+    # A tolerance, so an imbalance exactly at the boundary reads as bonded.
+    return holdup_loss(own_quasi_rent, other_quasi_rent, other_future_stake,
+                       omega) <= 1e-12
+
+
+def loss_chance_with_holdup(gap_chance, holdup, own_quasi_rent):
+    """The chance of loss with hold-up as a second factor, section 5.5.
+
+        pi_p = 1 - (1 - pi_gap) * (1 - H_p / Q_p)
+
+    Hold-up counts only in the states where the fit did not fail, so
+    Q_p * pi_p = Q_p * pi_gap + (1 - pi_gap) * H_p and L_p keeps its bound.
+    """
+    if not 0.0 <= gap_chance <= 1.0:
+        raise ValueError("a chance lies on [0, 1]")
+    if own_quasi_rent < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if own_quasi_rent == 0 or holdup == 0:
+        return gap_chance
+    if not 0.0 <= holdup <= own_quasi_rent:
+        raise ValueError("hold-up lies between zero and the quasi-rent")
+    return 1.0 - (1.0 - gap_chance) * (1.0 - holdup / own_quasi_rent)
 
 
 def staged_loss(stage_quasi_rents, stage_residuals, floor):
