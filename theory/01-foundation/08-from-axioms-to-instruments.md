@@ -194,4 +194,4 @@ The plan therefore has a cost the seller can read before committing to it. The c
 - [02-mathematical-models.md](./02-mathematical-models.md) — The functional forms behind the positions and the gaps the ledgers track.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side: cost to serve, amortization across repetitions, and the two conditions on post-signature divergence.
 - [05-governance-forms.md](./05-governance-forms.md) — What the Stage verb reallocates, and why recurrence lowers what governing a specific deal costs.
-- [07-open-questions.md](./07-open-questions.md) — Items 2, 4, 6, 14, 18, 27 and 28, which this file derives toward and does not close.
+- [07-open-questions.md](./07-open-questions.md) — Items 2, 4, 6 and 27, which this file derives toward and does not close. Item 28, whether occupants state reservations at the needed rate, waits on data in [06-calibration.md](./06-calibration.md) section 4.1.

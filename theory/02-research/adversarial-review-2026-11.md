@@ -102,7 +102,7 @@ The review's charge that the value split is circular is the objection already fi
 - **An internal inconsistency.** The review gives Bajari, McMillan and Tadelis's share of private projects that skip open bidding as "nearly 50%" in one place and "82%" in another. The second seems to add direct negotiation and invited lists together. Open the paper before using either.
 - **Mismatched links.** The link for Zhang et al.'s trusted-third-party model points to a different paper. The "Hauser et al." citation reuses Gilbride and Allenby's link. The link for Dane and Pratt (2007) points to a supplier-selection paper by other authors. Mora Cortez et al. (2026) in *Industrial Marketing Management* could not be confirmed.
 - **An unsupported share.** The review says prior work anticipates 70 to 90% of TCG's assembly and gives no basis. Its list of prior art is useful, and several entries are already cited here: Liang and Huang, Teo and Yu, Barzel, Bakos and Burnham. Malone, Yates and Benjamin (1987) and Bunn (1993) were new, and [buyer-cost-neighbors.md](./buyer-cost-neighbors.md) now carries both with the prediction that separates each from TCG.
-- **Unfalsifiability charges already on file.** The review's claim that thresholds are latent and that cost floors can be redrawn after the fact repeats open questions 24 and 34.
+- **Unfalsifiability charges already on file.** The review's claim that thresholds are latent and that cost floors can be redrawn after the fact repeats open question 34 and the calibration list in [06-calibration.md](../01-foundation/06-calibration.md) section 4.
 
 ---
 
