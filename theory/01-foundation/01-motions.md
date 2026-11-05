@@ -168,6 +168,16 @@ Addressable market is therefore a property of the motion rather than of the prod
 
 **The market also sets each cost's floor.** Axiom II's cost floor corollary says part of every cost is set outside the deal: the information environment for search, the buyer's institutions for bargaining and the measurement environment for policing. No motion lowers a cost floor deal by deal, because no single deal repays it. So the first decision a seller makes about cost is where to sell. A market whose search cost floor is rising, because message volume has outgrown buyer attention, punishes a search-led motion no matter how well it is run. A seller lowers a cost floor only by investing in something shared across deals, such as a marketplace contract, a certification, an intermediary with a stake or a standard. [information-environment.md](../02-research/information-environment.md) carries the evidence.
 
+**A market whose floor keeps buyers out.** Where a cost floor sits above the participation threshold, no seller wins on its own effort. The market reading can see it before entry, because the stall belongs to the market rather than to any seller: buyers name the problem and buy from no one, they stop at the same cost whichever seller they meet, and deal-level effort moves no seller's conversion. A buyer who chose a competitor is a lost deal. A buyer who chose nobody is this case.
+
+| Cost | What the market looks like | What opens it |
+|---|---|---|
+| Search | Buyers cannot name the category, or no signal a good seller can afford tells sellers apart, which is Akerlof saturation in [02-mathematical-models.md](./02-mathematical-models.md) section 5.8 | Category definition, a marketplace, a channel with a stake, a certification |
+| Bargaining | The buyer's rules require approvals no single deal can win | A pre-approved contract vehicle, standard terms, a purchasing consortium |
+| Policing | Outcomes cannot be measured or attributed to the seller, so nobody can verify delivery | A standard, a certification, independent measurement, a mandate |
+
+**Who pays to open it.** By the cost floor corollary, the return on lowering a floor is shared by every deal on it. A single seller funds the shared investment only when its own share of the deals the investment unlocks repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a coalition of sellers, or a platform. That predicts who opens such markets, the dominant seller or an outsider, and rarely a seller in the middle. The certified-API requirement under the 21st Century Cures Act, item 34 in [07-open-questions.md](./07-open-questions.md), is the regulator lowering the policing floor across every deal at once.
+
 ---
 
 ## 7. Two symptoms of the unallocated failure

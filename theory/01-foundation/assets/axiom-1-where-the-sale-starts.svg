@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="figtitle figdesc">
+<title id="figtitle">Axiom I: each cost against its own thresholds</title>
+<desc id="figdesc">Three horizontal bars, one per cost, each ending at that cost's position between its own self-serve threshold at zero and its participation threshold at one. Search sits at 0.25, policing at 0.44 and bargaining at 0.83, all in the zone that needs seller investment. The sale starts at bargaining, the cost nearest its participation threshold. Past one, a shaded zone marks where a cost keeps the buyer out whatever the other two read.</desc>
+<style>
+  :root {
+    --ink: #16181d;
+    --muted: #5d636e;
+    --axis: #333740;
+    --grid: #e3e5ea;
+    --bg: #ffffff;
+    --panel: #f7f8fa;
+    --primary: #1f5f8b;
+    --primary-fill: rgba(31, 95, 139, 0.13);
+    --alert: #a4373a;
+    --alert-fill: rgba(164, 55, 58, 0.11);
+    --good: #1d6f52;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e9ebef;
+      --muted: #a2a9b5;
+      --axis: #99a0ac;
+      --grid: #2f333b;
+      --bg: #14161a;
+      --panel: #1b1e24;
+      --primary: #7fb6dd;
+      --primary-fill: rgba(127, 182, 221, 0.17);
+      --alert: #e58e90;
+      --alert-fill: rgba(229, 142, 144, 0.15);
+      --good: #6cc39c;
+    }
+  }
+  .bg { fill: var(--bg); }
+  .panel { fill: var(--panel); }
+  .axis { stroke: var(--axis); stroke-width: 1.4; fill: none; }
+  .grid { stroke: var(--grid); stroke-width: 1; fill: none; }
+  .curve { fill: none; stroke-width: 2.6; stroke-linejoin: round;
+           stroke-linecap: round; }
+  .primary { stroke: var(--primary); }
+  .alert { stroke: var(--alert); }
+  .good { stroke: var(--good); }
+  .dashed { stroke-dasharray: 7 5; }
+  .thin { stroke-width: 1.6; }
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+         "Helvetica Neue", Arial, sans-serif; fill: var(--ink); }
+  .title { font-size: 19px; font-weight: 650; }
+  .subtitle { font-size: 12.5px; fill: var(--muted); }
+  .axis-label { font-size: 13px; fill: var(--muted); }
+  .tick { font-size: 11.5px; fill: var(--muted); }
+  .note { font-size: 12.5px; font-weight: 600; }
+  .note-muted { font-size: 12px; fill: var(--muted); }
+</style>
+  <rect class="bg" x="0" y="0" width="760" height="470"/>
+  <rect class="panel" x="78" y="92" width="648" height="304"/>
+  <text class="title" x="78" y="34">Axiom I: each cost against its own thresholds</text>
+  <text class="subtitle" x="78" y="55">Parameters are reasoned starting values, not fitted to deal data. Read the shape, not the numbers.</text>
+  <line class="grid" x1="254.73" y1="92" x2="254.73" y2="396"/>
+  <text class="tick" x="254.73" y="416" text-anchor="middle">0</text>
+  <line class="grid" x1="549.27" y1="92" x2="549.27" y2="396"/>
+  <text class="tick" x="549.27" y="416" text-anchor="middle">1</text>
+  <line class="grid" x1="78" y1="168" x2="726" y2="168"/>
+  <text class="tick" x="68" y="172" text-anchor="end">Search</text>
+  <line class="grid" x1="78" y1="252.44" x2="726" y2="252.44"/>
+  <text class="tick" x="68" y="256.44" text-anchor="end">Bargaining</text>
+  <line class="grid" x1="78" y1="336.89" x2="726" y2="336.89"/>
+  <text class="tick" x="68" y="340.89" text-anchor="end">Policing</text>
+  <path class="axis" d="M78 92 L78 396 L726 396"/>
+  <rect x="549.27" y="92" width="176.73" height="304" fill="var(--alert-fill)"/>
+  <line class="axis" x1="254.73" y1="92" x2="254.73" y2="396"/>
+  <line class="curve alert thin" x1="549.27" y1="92" x2="549.27" y2="396"/>
+  <text class="note-muted" x="166.36" y="115.64" text-anchor="middle">Self-serve</text>
+  <text class="note-muted" x="402" y="115.64" text-anchor="middle">Needs seller investment</text>
+  <text class="note-muted" x="637.64" y="115.64" text-anchor="middle">Keeps the buyer out</text>
+  <path class="curve primary" d="M78 168 L328.36 168"/>
+  <circle cx="328.36" cy="168" r="4.2" fill="var(--primary)"/>
+  <text class="note" x="340.15" y="158" text-anchor="start">0.25</text>
+  <path class="curve alert" d="M78 252.44 L500.18 252.44"/>
+  <circle cx="500.18" cy="252.44" r="4.2" fill="var(--alert)"/>
+  <text class="note" x="511.96" y="242.44" text-anchor="start">0.83</text>
+  <path class="curve primary" d="M78 336.89 L385.64 336.89"/>
+  <circle cx="385.64" cy="336.89" r="4.2" fill="var(--primary)"/>
+  <text class="note" x="397.42" y="326.89" text-anchor="start">0.44</text>
+  <text class="note" x="488.4" y="274.44" text-anchor="end">The sale starts here</text>
+  <text class="axis-label" x="402" y="448" text-anchor="middle">Position between the cost's self-serve and participation thresholds</text>
+  <text class="axis-label" x="0" y="0" text-anchor="middle" transform="translate(22 244) rotate(-90)"></text>
+</svg>

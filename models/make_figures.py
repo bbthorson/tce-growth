@@ -44,7 +44,7 @@ PAD_L, PAD_R, PAD_T, PAD_B = 78, 34, 92, 74
 PLOT_W = W - PAD_L - PAD_R
 PLOT_H = H - PAD_T - PAD_B
 
-# One theme block, shared by all three figures. The light palette is defined on
+# One theme block, shared by every figure. The light palette is defined on
 # bare :root so it is never the case that a colour exists only inside a media
 # query; the dark block redefines the same tokens and nothing else.
 THEME = """
@@ -287,6 +287,139 @@ def _first_crossing(series, level):
 
 
 # ==========================================================================
+# Axiom I. Each cost against its own two thresholds.
+# ==========================================================================
+
+def panel_axiom_1():
+    """r_k = (F_k - tau_self_k) / (tau_part_k - tau_self_k), one row per cost.
+
+    One illustrative deal read through the calculator's own counts and edges:
+    five alternatives, five vetoes and a formal body, six implementation
+    counts. Each cost is read against its own thresholds, never against the
+    others, and the sale starts at the largest position.
+    """
+    positions = {
+        "search": m.search_position(5),
+        "consensus": m.consensus_position(5, formal_body_required=True),
+        "implementation": m.implementation_position(6),
+    }
+    start = m.sale_start(positions)
+    rows = {"search": 3, "consensus": 2, "implementation": 1}
+    x_lo, x_hi = -0.6, 1.6
+
+    axes = Axes((x_lo, x_hi), (0.3, 3.9))
+    body = [
+        '  <rect x="{}" y="{}" width="{}" height="{}" fill="var(--alert-fill)"/>'
+        .format(_n(axes.px(1.0)), _n(PAD_T), _n(axes.px(x_hi) - axes.px(1.0)),
+                _n(PLOT_H)),
+        axes.vline(0.0, "axis"),
+        axes.vline(1.0, "curve alert thin"),
+        axes.label(-0.3, 3.62, "Self-serve", "note-muted", anchor="middle"),
+        axes.label(0.5, 3.62, "Needs seller investment", "note-muted",
+                   anchor="middle"),
+        axes.label(1.3, 3.62, "Keeps the buyer out", "note-muted",
+                   anchor="middle"),
+    ]
+    for cost, row in rows.items():
+        r = positions[cost]
+        css = "alert" if cost in start else "primary"
+        body.append(axes.path([(x_lo, row), (r, row)], css))
+        body.append(axes.dot(r, row, css))
+        body.append(axes.label(r + 0.04, row, "{:.2f}".format(r), "note",
+                               dy=-10))
+    top = rows[start[0]]
+    body.append(axes.label(positions[start[0]] - 0.04, top,
+                           "The sale starts here", "note", anchor="end",
+                           dy=22))
+    return _frame(
+        title="Axiom I: each cost against its own thresholds",
+        subtitle=UNFITTED,
+        axes=axes,
+        x_label="Position between the cost's self-serve and participation "
+                "thresholds",
+        y_label="",
+        x_ticks=[(0, "0"), (1, "1")],
+        y_ticks=[(3, "Search"), (2, "Bargaining"), (1, "Policing")],
+        body=body,
+        desc="Three horizontal bars, one per cost, each ending at that cost's "
+             "position between its own self-serve threshold at zero and its "
+             "participation threshold at one. Search sits at 0.25, policing "
+             "at 0.44 and bargaining at 0.83, all in the zone that needs "
+             "seller investment. The sale starts at bargaining, the cost "
+             "nearest its participation threshold. Past one, a shaded zone "
+             "marks where a cost keeps the buyer out whatever the other two "
+             "read.")
+
+
+# ==========================================================================
+# Axiom II. The two conditions as a price window.
+# ==========================================================================
+
+def panel_axiom_2():
+    """S_b(P) and S_s(P) against price, before and after verification.
+
+    A deal exists at any price where both conditions are positive. The
+    illustrative deal has no such price: the buyer's ceiling and the seller's
+    floor meet at 55. A discount moves along the price axis and cannot open
+    it. Verification lowers both future losses, L_b from 20 to 8 and L_s
+    from 10 to 4, which raises one line and lowers the other's floor, and
+    the window opens from 49 to 67. Units are arbitrary.
+    """
+    v_switch, c_deliver = 100.0, 30.0
+    i_b, i_s = (10.0, 5.0, 10.0), (5.0, 5.0, 5.0)
+    before, after = (20.0, 10.0), (8.0, 4.0)
+    prices = [30.0 + p for p in range(0, 61)]
+
+    def lines(losses):
+        buyer = [(p, m.buyer_condition(v_switch, p, i_b, losses[0]))
+                 for p in prices]
+        seller = [(p, m.seller_condition(p, c_deliver, i_s, losses[1]))
+                  for p in prices]
+        return buyer, seller
+
+    b0, s0 = lines(before)
+    b1, s1 = lines(after)
+    low = c_deliver + sum(i_s) + after[1]
+    high = v_switch - sum(i_b) - after[0]
+
+    axes = Axes((30, 90), (-30, 70))
+    body = [
+        '  <rect x="{}" y="{}" width="{}" height="{}" '
+        'fill="var(--primary-fill)"/>'.format(
+            _n(axes.px(low)), _n(PAD_T), _n(axes.px(high) - axes.px(low)),
+            _n(PLOT_H)),
+        axes.hline(0.0, "axis"),
+        axes.path(b0, "primary dashed"),
+        axes.path(s0, "alert dashed"),
+        axes.path(b1, "primary"),
+        axes.path(s1, "alert"),
+        axes.label((low + high) / 2, -24, "Both say yes", "note",
+                   anchor="middle"),
+    ]
+    body += _legend([
+        ("primary", "", "Buyer's condition"),
+        ("alert", "", "Seller's condition"),
+        ("primary", "dashed", "Dashed: before verification, no price works"),
+    ], PAD_L + 18, PAD_T + 22)
+    return _frame(
+        title="Axiom II: a deal needs a price both sides accept",
+        subtitle=UNFITTED,
+        axes=axes,
+        x_label="Price",
+        y_label="Each party's surplus",
+        x_ticks=[(40, "40"), (55, "55"), (70, "70"), (85, "85")],
+        y_ticks=[(-20, "-20"), (0, "0"), (20, "20"), (40, "40")],
+        body=body,
+        desc="The buyer's surplus falls as price rises and the seller's "
+             "rises with it. Before verification the two lines cross zero at "
+             "the same price, 55, so no price leaves both positive and a "
+             "discount only moves the deal along the axis. After "
+             "verification lowers each side's expected future loss, the "
+             "buyer's line shifts up and the seller's floor shifts down, and "
+             "a shaded window from 49 to 67 opens where both say yes.")
+
+
+# ==========================================================================
 # Panel 3 — Axiom III. Asymmetry drift after signature.
 # ==========================================================================
 
@@ -353,6 +486,8 @@ def panel_3():
 
 FIGURES = {
     "value-decay.svg": panel_1,
+    "axiom-1-where-the-sale-starts.svg": panel_axiom_1,
+    "axiom-2-price-window.svg": panel_axiom_2,
     "axiom-3-asymmetry-drift.svg": panel_3,
 }
 

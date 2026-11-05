@@ -63,7 +63,7 @@ What would make the models empirical is already written down, in section 6 of `0
 
 ## The figures
 
-`theory/01-foundation/assets/` holds three SVGs, one per axiom, replacing hand-made PNGs that depicted a potential-well curve no equation in the repository produced.
+`theory/01-foundation/assets/` holds four SVGs: value decay under the second standing assumption, each cost's position between its thresholds for Axiom I, the two conditions as a price window for Axiom II, and drift for Axiom III. They replaced hand-made PNGs that depicted a potential-well curve no equation in the repository produced.
 
 Each is sampled from `tcg_models.py`, so a coefficient change moves the picture or fails the check. The SVG is written by hand rather than by a plotting library so the check runs anywhere Python does, the output is byte-for-byte reproducible, and the `prefers-color-scheme` block is authored directly rather than injected by post-processing. The old PNGs glared in dark mode.
 
