@@ -37,7 +37,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}, \qquad k \in 
 | above zero and at most one | Bearable, with seller investment |
 | $r_k > 1$ | Keeps the buyer out, whatever the other two read |
 
-**The sale starts at the largest $r_k$**, the cost nearest the point where it would keep the buyer out. That cost is where the seller's first investment goes, and the motion is named after it. Two costs at the same position are run together.
+**The sale starts at the largest $r_k$**, the cost nearest the point where it would keep the buyer out. That cost is where the seller's first investment goes, and the motion is named after it. *Starts* means the first seller investment, not the first stage of the buyer's process. Every buyer moves through the same stages, and the motion names the job that decides whether this one gets through them (section 9). Two costs at the same position are run together.
 
 **Positions, not shares.** Earlier versions summed the three costs into a level and divided each by the total to get a direction. Both operations assumed the three costs sat on one scale, and they never did. A position compares each cost against its own thresholds and never against the other two, so the three are comparable without sharing a scale. It also catches the case shares could not: a cost holding a small share of the total can still sit above its participation threshold and end the deal. Constitution 5.0 states the rule underneath: the costs are non-compensatory. They add, in the buyer's condition and against one capacity where one person or budget pays more than one, but a low position on one never offsets another above its threshold. A small buyer whose one person pays all three approaches a single summed test. A large coalition approaches three separate ones.
 
@@ -182,7 +182,32 @@ Self-serve tactics carry a lower cost of sale, and a representative paid on book
 
 ---
 
-## 9. What this does not settle
+## 9. Stages are fixed, and the jobs vary
+
+Every buyer moves through the same stages: awareness, consideration, purchase, and after it renewal, which runs consideration again against challengers. The stages are the buyer's order of decision, and they do not vary by market. What varies is which costs the buyer cannot get through alone. Each such cost is a job the buyer needs done, and the seller staffs the job at whichever stage it arises.
+
+| Job | What the buyer needs done | Where it usually arises |
+|---|---|---|
+| Search | Name the problem, find the alternatives and compare them | Awareness and consideration |
+| Bargaining | Bring its own decision roles to agreement, and settle terms with the seller | Consideration and purchase |
+| Policing | Check that the product will fit and the seller will deliver, then make it fit | Consideration, as proof, and after purchase, as implementation |
+| Maintenance | Keep what was verified current, and catch the fit drifting apart | After purchase and at renewal |
+
+The buyer does a self-serve job alone, from published material or a trial. A job that needs investment is staffed. A job above its threshold makes the deal unviable until someone brings it into range. All three costs matter, and search is the one that stops the stages from starting. A buyer who cannot get through search never reaches consideration, so its other two costs are never read. The other two stall a buyer who is already moving.
+
+**What the standard organization gets wrong.** It gives each stage one owner and assumes each stage has one job: business development for search, the account executive for bargaining, the solutions engineer for policing. A deal that starts at policing needs the policing job done during consideration, and the standard organization sends its engineer to the demo as support for the account executive rather than as the owner of the job deciding the deal. Staffing by where the sale starts means deploying each job at the stage the market's positions put it, with the owner of the deciding job leading the stage where it arises.
+
+**Whether the owner travels.** Two pressures pull opposite ways. Handing off keeps a scarce specialist from being tied up in one long deal. And each handoff is a seam where what one owner learned fails to travel, so the seller's gap reopens at once, the same discrete event a departed champion is on the buyer's side. A long deal adds a third pressure: discovery drifts. What the seller learned of the buyer's environment early goes stale over the cycle, and the fit itself drifts as the buyer changes ([02-mathematical-models.md](./02-mathematical-models.md) section 5.3). So keeping one owner throughout does not keep the discovery fresh, and in a long deal early discovery decays whoever holds it.
+
+Section 5.6 of the same file resolves it. Do the work that decides viability early and keep it bounded, settle the allocation, and time the full discovery to just before the investment is sunk. The specialist then works the deal twice, at the proof and at the sinking, and hands off between the two through an artifact that carries what was learned, the Contextual Blueprint, rather than staying in the deal throughout. Where the cycle is short against the drift, one owner carrying the job from proof through implementation costs little and removes the seam.
+
+**Account management is the maintenance job.** After purchase the jobs repeat in small. At renewal the buyer reconsiders, and account management, a seller investment funded while the renewal margin covers it ([02-mathematical-models.md](./02-mathematical-models.md) section 5.7), holds the gaps down between renewals.
+
+*Falsifier.* At equal positions, deals whose sale starts at policing and whose policing owner led during consideration should convert and launch no better than deals where the engineer arrived at the demo as support. And in long cycles, deals whose full discovery was re-run just before the investment was sunk should show as many divergent steps after go-live as deals whose discovery was done only early. Either finding would mean the stages carry the work and the jobs do not.
+
+---
+
+## 10. What this does not settle
 
 Each item points at its entry in [07-open-questions.md](./07-open-questions.md) where one exists.
 
@@ -196,7 +221,7 @@ Each item points at its entry in [07-open-questions.md](./07-open-questions.md) 
 
 ---
 
-## 10. The incumbent vocabulary
+## 11. The incumbent vocabulary
 
 Everyone arriving here knows what Product-Led Growth means. This section says where it and its neighbours land, and where they mislead. Nothing here is used to decide anything.
 
