@@ -427,6 +427,12 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 | above zero and at most one | Needs seller investment |
 | $r_k > 1$ | Keeps the buyer out |
 
+**The buyer reads its own positions.** Write $\tilde{F}_k$ for the recognized cost, the buyer's estimate of $F_k$ before it meets the seller, and read it against the same thresholds:
+
+$$\tilde{r}_k = \frac{\tilde{F}_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
+
+The buyer enters, and begins discovery, only while every $\tilde{r}_k \le 1$. Before it meets any seller, $\tilde{F}_k$ is the category prior, what buyers in the market believe the cost is. The seller moves $\tilde{F}_k$ toward $F_k$ only with evidence the buyer can check, which is search work, and discovery closes the two readings together. The positions below are $r_k$ after entry and $\tilde{r}_k$ before it.
+
 The sale starts at the largest $r_k$, as read at a stated moment. Before fit is verified, the implementation and consensus positions are lower bounds by section 3.5, so a reading taken early can name a start that discovery moves. A misrepresented fit hides the start in exactly this way. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
 
 **The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. **The participation threshold measures capacity, not affordability, and it does not move with value.** A buyer stays out of a market for one of two reasons. Either a cost exceeds what the deal is worth, or the buyer cannot get through the cost at any price: it cannot name the category, cannot reach a seller, cannot bring its decision roles to a decision, or cannot tell a good seller from a bad one. The first depends on value, and the buyer's condition $S_b$ in section 1 already carries it. The second does not, and it is what $\tau^{part}_k$ marks. A threshold that rose with $V_{switch}$ would restate the buyer's condition inside Axiom I and leave the gate with no claim of its own.

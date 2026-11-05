@@ -291,23 +291,28 @@ def _first_crossing(series, level):
 # ==========================================================================
 
 def panel_axiom_1():
-    """r_k = (F_k - tau_self_k) / (tau_part_k - tau_self_k), one row per cost.
+    """r_k and the recognized position, one row per cost.
 
     One illustrative deal read through the calculator's own counts and edges:
     five alternatives, five vetoes and a formal body, six implementation
-    counts. Each cost is read against its own thresholds, never against the
-    others, and the sale starts at the largest position.
+    counts. The buyer knows its own search and its own coalition, but it
+    expects thirteen implementation counts, which puts its recognized policing
+    position past the participation threshold. It declines discovery on that
+    expectation, though the cost itself sits well inside the zone a seller can
+    pay down. Lowering the cost is half the seller's work. Showing it is the
+    other half.
     """
-    positions = {
+    actual = {
         "search": m.search_position(5),
         "consensus": m.consensus_position(5, formal_body_required=True),
         "implementation": m.implementation_position(6),
     }
-    start = m.sale_start(positions)
+    recognized = dict(actual,
+                      implementation=m.implementation_position(13))
     rows = {"search": 3, "consensus": 2, "implementation": 1}
     x_lo, x_hi = -0.6, 1.6
 
-    axes = Axes((x_lo, x_hi), (0.3, 3.9))
+    axes = Axes((x_lo, x_hi), (0.0, 3.9))
     body = [
         '  <rect x="{}" y="{}" width="{}" height="{}" fill="var(--alert-fill)"/>'
         .format(_n(axes.px(1.0)), _n(PAD_T), _n(axes.px(x_hi) - axes.px(1.0)),
@@ -321,18 +326,27 @@ def panel_axiom_1():
                    anchor="middle"),
     ]
     for cost, row in rows.items():
-        r = positions[cost]
-        css = "alert" if cost in start else "primary"
-        body.append(axes.path([(x_lo, row), (r, row)], css))
-        body.append(axes.dot(r, row, css))
-        body.append(axes.label(r + 0.04, row, "{:.2f}".format(r), "note",
-                               dy=-10))
-    top = rows[start[0]]
-    body.append(axes.label(positions[start[0]] - 0.04, top,
-                           "The sale starts here", "note", anchor="end",
-                           dy=22))
+        r, rr = actual[cost], recognized[cost]
+        body.append(axes.path([(x_lo, row), (r, row)], "primary"))
+        body.append(axes.dot(r, row, "primary"))
+        body.append(axes.label(r, row, "{:.2f}".format(r), "note",
+                               anchor="middle", dy=-12))
+        if rr != r:
+            body.append(axes.path([(r, row), (rr, row)], "alert dashed thin"))
+            body.append(
+                '  <circle cx="{}" cy="{}" r="5.2" fill="var(--panel)" '
+                'stroke="var(--alert)" stroke-width="2.2"/>'.format(
+                    _n(axes.px(rr)), _n(axes.py(row))))
+            body.append(axes.label(rr, row, "{:.2f}".format(rr), "note",
+                                   anchor="middle", dy=-12))
+            body.append(axes.label(rr, row, "The buyer expects this, and "
+                                   "opts out", "note", anchor="end", dy=24))
+    body += _legend([
+        ("primary", "", "The cost as it is"),
+        ("alert", "dashed", "The cost as the buyer expects it"),
+    ], PAD_L + 14, PAD_T + PLOT_H - 34)
     return _frame(
-        title="Axiom I: each cost against its own thresholds",
+        title="Axiom I: the buyer decides on the cost it expects",
         subtitle=UNFITTED,
         axes=axes,
         x_label="Position between the cost's self-serve and participation "
@@ -343,12 +357,12 @@ def panel_axiom_1():
         body=body,
         desc="Three horizontal bars, one per cost, each ending at that cost's "
              "position between its own self-serve threshold at zero and its "
-             "participation threshold at one. Search sits at 0.25, policing "
-             "at 0.44 and bargaining at 0.83, all in the zone that needs "
-             "seller investment. The sale starts at bargaining, the cost "
-             "nearest its participation threshold. Past one, a shaded zone "
-             "marks where a cost keeps the buyer out whatever the other two "
-             "read.")
+             "participation threshold at one. Search sits at 0.25, "
+             "bargaining at 0.83 and policing at 0.44, all within reach of "
+             "seller investment. A hollow marker shows the buyer expecting "
+             "policing at 1.22, past the threshold in the shaded zone, so it "
+             "opts out of discovery though the cost itself was within "
+             "reach.")
 
 
 # ==========================================================================

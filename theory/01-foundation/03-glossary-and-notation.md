@@ -78,6 +78,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $\tau^{self}_k$ | Self-serve threshold for cost $k$. Below it the buyer pays the cost down alone. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $\tau^{part}_k$ | Participation threshold for cost $k$. Above it the buyer does not enter the market. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $r_k$ | Cost $k$'s position between its own two thresholds, $(F_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$. Dimensionless. The sale starts at the largest. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $\tilde{F}_k$, $\tilde{r}_k$ | Recognized cost and its position: the buyer's estimate of cost $k$ before it meets the seller, read against the same thresholds. Participation and the decision to begin discovery are made on $\tilde{r}_k$. Before any seller is met it is the category prior. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $n_{search}$, $n_{consensus}$, $n_{impl}$ | The calculator's three counts, each read as $F_k$ against its own two edges. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | $n_{exposure}$ | Integration points, changed workflows and divergent steps. Read only where the gate fails, and never added to a cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 
