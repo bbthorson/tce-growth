@@ -1378,6 +1378,21 @@ def consensus_count(n_vetoes, formal_body_required=False):
     return n_vetoes + (1 if formal_body_required else 0)
 
 
+def coalition_after_exposure(mapped_roles, imposed_roles, rule_approvers=0):
+    """N read after exposure, 02-mathematical-models.md section 3.5.
+
+    The roles that can say no are the ones mapped so far plus every role a
+    divergent step imposes on, counted once, plus the approvers the buyer's
+    own rules require at this exposure. A deficiency the buyer works around
+    adds no role, so only impositions are passed in. Every term is a count,
+    so the coupling adds no parameter. Before fit is verified the result is a
+    lower bound.
+    """
+    if rule_approvers < 0:
+        raise ValueError("the buyer's rules cannot remove an approver")
+    return len(set(mapped_roles) | set(imposed_roles)) + rule_approvers
+
+
 def consensus_position(n_vetoes, formal_body_required=False):
     """The consensus position, step 3."""
     return threshold_position(consensus_count(n_vetoes, formal_body_required),
@@ -1389,7 +1404,7 @@ def consensus_gap(n_vetoes, n_with_documented_objective):
 
     The denominator is the roles that can say no, without the formal body,
     which is not a person. The measured objective is the seller's view of each
-    role, which 07-open-questions.md item 14 records as a proxy for each
+    role, which 07-open-questions.md item 2 records as a proxy for each
     occupant's own uncertainty about their exposure.
     """
     return component_gap(n_vetoes, n_with_documented_objective)

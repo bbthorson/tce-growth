@@ -211,6 +211,22 @@ The term exists because incentive variance under-captures a specific and common 
 
 Treat $TO$ as a field refinement rather than core theory. The two-term form above is what the axioms require. The three-term form is what practitioners need to avoid a predictable blind spot.
 
+### 3.5 The count is read after exposure
+
+$N$ is not fixed before the policing reading. Two mechanisms add decision roles as the deal's specific exposure grows, and both run from Axiom III exposure into this count.
+
+$$N = \left| R_0 \cup R_{imp} \right| + N_{rules}(n_{exposure})$$
+
+| Symbol | Meaning |
+|---|---|
+| $R_0$ | The roles mapped so far that can say no |
+| $R_{imp}$ | The roles a divergent step imposes on. An imposition forces a practice on whoever runs the step, and that role objects. A deficiency the buyer accepts or works around adds exposure and no veto (Strong and Volkoff 2010, in [process-misfit.md](../02-research/process-misfit.md)) |
+| $N_{rules}$ | The approvers and formal reviews the buyer's own rules require at this deal's size and specific exposure: a spend threshold, a security review above a data class, a board above a commitment. A group demands broader agreement when a decision can do more harm (Buchanan and Tullock 1962), and these rules are how a buyer writes that down. They are the bargaining cost floor, set outside the deal and triggered by it |
+
+Every term is a count read off the buyer, so the coupling adds no parameter. The union keeps a role that is already counted from being counted twice. The coupling also runs back. Each role added brings requirements, and a requirement the product does not meet is a new divergent step, which may impose on a further role. The loop is named and not modeled, and the count stops when a pass adds no role. A larger coalition costs more by the convexity in section 3.3, so the feedback raises the cost faster than the count.
+
+**The count is dated.** $R_{imp}$ and $n_{exposure}$ are counted on the divergence found so far. Before fit is verified on the buyer's own workflow, both the implementation position and $N$ are lower bounds, and section 6 reads the start on that basis.
+
 ---
 
 ## 4. Urgency Decay
@@ -366,7 +382,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 | above zero and at most one | Needs seller investment |
 | $r_k > 1$ | Keeps the buyer out |
 
-The sale starts at the largest $r_k$. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
+The sale starts at the largest $r_k$, as read at a stated moment. Before fit is verified, the implementation and consensus positions are lower bounds by section 3.5, so a reading taken early can name a start that discovery moves. A misrepresented fit hides the start in exactly this way. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
 
 **The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. **The participation threshold measures capacity, not affordability, and it does not move with value.** A buyer stays out of a market for one of two reasons. Either a cost exceeds what the deal is worth, or the buyer cannot get through the cost at any price: it cannot name the category, cannot reach a seller, cannot bring its decision roles to a decision, or cannot tell a good seller from a bad one. The first depends on value, and the buyer's condition $S_b$ in section 1 already carries it. The second does not, and it is what $\tau^{part}_k$ marks. A threshold that rose with $V_{switch}$ would restate the buyer's condition inside Axiom I and leave the gate with no claim of its own.
 

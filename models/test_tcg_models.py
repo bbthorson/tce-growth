@@ -1029,6 +1029,19 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertGreater(m.consensus_position(3, True),
                            m.consensus_position(3, False))
 
+    def test_an_imposition_adds_a_role_only_once(self):
+        mapped = {"clinical lead", "IT", "finance"}
+        self.assertEqual(m.coalition_after_exposure(mapped, {"IT"}), 3)
+        self.assertEqual(
+            m.coalition_after_exposure(mapped, {"IT", "billing"}), 4)
+
+    def test_exposure_triggered_reviews_add_to_the_count(self):
+        self.assertEqual(
+            m.coalition_after_exposure({"IT"}, {"billing"}, rule_approvers=2),
+            4)
+        with self.assertRaises(ValueError):
+            m.coalition_after_exposure({"IT"}, set(), rule_approvers=-1)
+
     def test_a_purchase_nobody_can_stop_is_not_a_purchase(self):
         with self.assertRaises(ValueError):
             m.consensus_count(0)
