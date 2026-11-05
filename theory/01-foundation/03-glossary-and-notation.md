@@ -136,6 +136,8 @@ Every default below is unfitted. [06-calibration.md](./06-calibration.md) carrie
 | $\delta$ | Decay rate of urgency after the triggering event. | [02-mathematical-models.md §4](./02-mathematical-models.md) |
 | $\delta_{discount}$ | A party's discount factor. The weight it places on future payoffs. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | $\gamma_k$ | Rate at which cost $k$'s gap rebuilds toward its ceiling, absent maintenance. Three rates with different drivers. Named, not valued. | [Constitution, Axiom III](./00-tcg-constitution.md) |
+| $\eta_k$ | Rate at which maintenance pulls cost $k$'s gap down, in proportion to its size. Account management is the seller's. Named, not valued. | [02-mathematical-models.md §5.3, §5.7](./02-mathematical-models.md) |
+| $\psi_b$, $\psi_s$ | Rates at which the buyer's and the seller's changes open divergent steps after go-live. Fit drift, apart from stale verification. Named, not valued. | [02-mathematical-models.md §5.3](./02-mathematical-models.md) |
 | $\gamma_r$ | Responsiveness converting external pressure into internal action. | [02-mathematical-models.md §4.2](./02-mathematical-models.md) |
 | $\gamma_{TO}$ | Weight on the technical overlap term. | 0.20, [02-mathematical-models.md §3.4](./02-mathematical-models.md) |
 | $T$, $R$, $P$ | Temptation, reward, and punishment payoffs in the cooperation condition. | [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) |

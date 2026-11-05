@@ -136,7 +136,7 @@ After a forward-deployed engagement the incumbent's $I_{seller}$ approaches zero
 
 That is an information asset rather than a hostage. The buyer is not trapped, the alternative is genuinely more expensive, and the buyer can verify the comparison themselves. It also produces the renewal behaviour the lock-in story predicts, without raising $T$.
 
-**It decays at a rate the Constitution already names.** Absent maintenance, $\hat{\Delta}_k(t) = 1 - (1 - \hat{\Delta}_k(0))e^{-\gamma_k t}$, relaxing toward its ceiling. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
+**It decays at a rate the Constitution already names.** Absent maintenance, $\hat{\Delta}_k(t) = 1 - (1 - \hat{\Delta}_k(0))e^{-\gamma_k t}$, relaxing toward its ceiling. The rate that runs on staff turnover, workflow change, and systems the seller never saw installed is $\gamma_{implementation}$ specifically, which is the component an incumbent's advantage actually sits in. $C_{sustain}$ is the spend that holds it down, and section 5.7 of [02-mathematical-models.md](./02-mathematical-models.md) says how much of it a seller funds. Net Revenue Retention is therefore not a separate mechanism. It is the asymmetry drift equation run past signature, on one component of three.
 
 The erosion is invisible until a challenger appears, which is the same structure as Reputation Depreciation under Axiom III. A seller who stops paying $C_{sustain}$ keeps the revenue and loses the moat, and learns which happened at the renewal after next.
 
@@ -172,7 +172,7 @@ Four consequences.
 ## Open questions
 
 - **$p_{close}$ needs an estimator.** The nearest available approach is retrospective scoring of closed deals, which carries hindsight bias and would be recorded with that status rather than presented as clean.
-- **$C_{sustain}$ has no budget owner.** The framework assigns no department to it, and a variable with no owner drifts.
+- **$C_{sustain}$ has an owner and no estimate.** It is account management, a seller function, and [02-mathematical-models.md](./02-mathematical-models.md) section 5.7 states when the seller funds it: while the margin at the next boundary covers the cost of keeping pace with the rebuild. Its cost per unit of maintenance is named and not valued.
 - **$R_{redeploy}$ needs a scoring method.** Redeployability is the term that separates a good forward-deployed engagement from an expensive one. Section 7.5 proposes one, the inherited fill of an adjacent market's ledger, and nothing has tested it.
 
 ---

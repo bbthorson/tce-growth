@@ -296,11 +296,25 @@ The floor $\pi_0 > 0$ exists because some risk survives any amount of proof, whi
 
 ### 5.3 Drift
 
-Absent maintenance, each gap rebuilds toward its ceiling:
+Two things drift after go-live, and they answer to different tools.
+
+**What was verified goes stale.** Nothing has to change for this. The evidence ages, the people who saw it move on, and absent maintenance each gap rebuilds toward its ceiling:
 
 $$\hat{\Delta}_k(t) = 1 - \left(1 - \hat{\Delta}_k(0)\right) e^{-\gamma_k t}$$
 
-The gap stays on $[0, 1]$, the range every count-based instrument can actually report: a share of unevidenced items cannot exceed all of them. The rate $\gamma_k \ge 0$ is named and not valued.
+The gap stays on $[0, 1]$, the range every count-based instrument can actually report: a share of unevidenced items cannot exceed all of them. The rate $\gamma_k \ge 0$ is named and not valued. Maintenance is re-verification, usage evidence, outcome reviews and references kept current, and it pulls the gap down at a rate $\eta_k$ in proportion to its size:
+
+$$\frac{d\hat{\Delta}_k}{dt} = \gamma_k\left(1 - \hat{\Delta}_k\right) - \eta_k \hat{\Delta}_k \qquad \hat{\Delta}^*_k = \frac{\gamma_k}{\gamma_k + \eta_k}$$
+
+The gap moves toward $\hat{\Delta}^*_k$ at rate $\gamma_k + \eta_k$, from wherever it starts. With $\eta_k = 0$ this is the unmaintained curve, which ends at the ceiling, where the incumbent knows no more than a challenger. Any maintenance holds it below. That is the condition between the two curves in the Constitution's drift figure, and section 5.7 says how much maintenance a seller funds. The proportional form is chosen.
+
+**The fit itself drifts.** Each party changes: the buyer its workflow, its roles and the rules it works under, the seller its product, its releases and its team. Each change can open a divergent step that did not exist at go-live, at rates $\psi_b$ and $\psi_s$, named and not valued. This is not a gap. Perfect knowledge of a misfit does not remove it, so re-verification does not reach it. It raises $n_{exposure}$ and, through section 3.5, the coalition, so the implementation and consensus positions at the next renewal rise even while every gap is held down. Three tools reach it.
+
+- **Notice of change.** Each side commits to tell the other before it changes the product or the workflow. It does not lower $\psi$. It turns the other side's change into a dated event either can plan around, rather than a divergence discovered at renewal.
+- **Re-adaptation.** Closing a divergent step is an investment under Axiom II, paid by whoever the arrangement says pays it.
+- **A change process allocated before either side changes.** Who pays to adapt is the dispute fit drift creates, and it is cheapest to settle before anyone has moved. This is Axiom III's enforcement remedy applied after go-live, the Mutual Implementation Plan continued past it.
+
+The seller can lower $\psi_s$ directly, through stability and deprecation commitments. It lowers $\psi_b$ only through configuration the buyer owns, which absorbs the buyer's change without opening a divergent step.
 
 **Discovery is a separate mechanism.** It is a discrete step down that someone pays for at an artifact boundary, not drift running backwards. A departed champion is the opposite discrete event, the bargaining gap reopening at once. Between the two, the gap relaxes toward its ceiling at $\gamma_k$, and maintenance is whatever holds it down.
 
@@ -367,6 +381,37 @@ $\sigma_p$ is the share of the gap closed in advance. It rises with $Q_p$, becau
 **The two halves come apart.** Uncertainty does not enter $\alpha_p$, and $\sigma_p$ falls as $\rho$ rises. So a deal that is specific and uncertain settles more and does less before anything is sunk, which is a minimum viable integration with a staged remainder. Where $\rho$ is near zero both rise with $Q_p$, and front-end definition pays directly (Merrow 2011).
 
 **Placeholders.** The quadratic cost of discovery is chosen. $c$ and $\rho$ are named and not valued. $A_p$ inherits $\omega$ from section 5.5.
+
+### 5.7 Account management is the seller's maintenance
+
+Account management is a seller function and a seller investment, justified by the seller's condition like any other. It is $C_{sustain}$ in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7, and what it protects is the seller's margin at the next boundary, its stake $F_s$ from section 5.5. Write its cost as $c_\eta$ per unit of $\eta$ each period, and read the chance the buyer does not renew as rising with the held gap on the form of section 5.2. The seller then funds the rate that maximizes $F_s\left(1 - \pi(\hat{\Delta}^*)\right) - c_\eta \eta$:
+
+$$\eta^* = \sqrt{\frac{(1 - \pi_0)\, F_s\, \gamma}{c_\eta}} - \gamma, \qquad \eta^* > 0 \;\text{ only when }\; (1 - \pi_0)\, F_s > c_\eta\, \gamma$$
+
+- **Below a threshold the seller funds none.** Where the margin at stake does not cover the cost of keeping pace with the rebuild, the account is unmaintained. Pooled or automated customer success below some contract value follows rather than being assumed.
+- **With no stake there is no maintenance.** At $F_s = 0$, a one-shot deal by section 1 of [05-governance-forms.md](./05-governance-forms.md), the seller maintains nothing, and the account follows the unmaintained curve.
+- **Spend rises slower than the stake.** Here as its square root.
+- **Fast drift can make maintenance not worth funding.** $\eta^*$ rises with $\gamma$ and then falls, to zero at $\gamma = (1 - \pi_0) F_s / c_\eta$. With no drift there is nothing to maintain, and with very fast drift no affordable rate holds the gap. Past the peak the seller does better to lower $\gamma$ than to chase it.
+
+The threshold and the zero at no stake follow from any maintenance cost that is positive at the margin. The rise and fall in $\gamma$ follows from the two limits. The square root is illustrative, from the proportional, linear and straight-line forms, and $c_\eta$ is named and not valued.
+
+Fit drift is weighed against the same stake. Re-adaptation and an allocated change process are seller investments when the arrangement puts them on the seller, and the seller funds them while the margin they protect covers them. The account manager holds a decision role inside the seller, so by [05-governance-forms.md](./05-governance-forms.md) section 5 its pay needs a stake at the renewal it maintains. The buyer maintains its own side, the owner of its workflow, out of its own condition, and that is not account management.
+
+### 5.8 Separation in a market
+
+A costly signal $s$ tells a good seller from a bad one when the good seller can afford it and the bad one cannot, against $B$, the premium a seller earns by being told apart from the pool (Spence 1973):
+
+$$c_{good}(s) < B < c_{bad}(s)$$
+
+Separation is a condition a market crosses in both directions, not a resting point.
+
+- **Entry pools.** Entrants copy the signals that automate, which pulls $c_{bad}$ toward $c_{good}$, the first Friction Allocation Principle failing, and the condition fails. This is the Turnkey corollary's route out of the condition.
+- **Pooling pays for re-separation.** While the pool holds, buyers judge every seller by the category's average, and misfits discovered after sinking pull that average down further (the cost floor corollary). Both raise $B$, which pays for a costlier signal or a shared institution, a certification, a standard or a staked channel, that restores the condition.
+- **Saturation ends it.** When no signal a good seller can afford clears the bad seller's cost, the buyer exits. That is the Akerlof saturation failure mode.
+
+The structure is section 5.3's at the level of a category: entry and misrepresentation rebuild what buyers cannot tell apart, and costly signals and shared institutions hold it down. The two are kept separate on purpose. At the deal level one seller chooses $\eta$. At the market level the shared institutions benefit every seller in the pool, so by the cost floor corollary no one seller funds them at a return its own deals repay, and the category is maintained less than any seller in it would choose.
+
+**The search cost responds to information by its verifiability.** Information the buyer can check narrows its range and lowers $F_{search}$. Information it cannot check takes attention without narrowing anything and raises it. Only the signs are claimed. This is the second standing assumption's line between evidence and persuasion, read together with the cost floor corollary's message volume.
 
 ---
 

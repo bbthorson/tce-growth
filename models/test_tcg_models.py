@@ -567,14 +567,48 @@ class TestUrgencyDecay(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.asymmetry_drift(m.NormalizedGap(0.5), -0.1, 1.0)
 
-    def test_maintenance_holds_the_drift_rate_down(self):
-        """04-seller-surplus-model.md section 7.2: C_sustain is the spend that
-        holds gamma down, and Net Revenue Retention is this equation run past
-        signature."""
+    def test_maintenance_holds_the_gap_below_the_ceiling(self):
+        """Section 5.3: a maintained gap settles at gamma / (gamma + eta),
+        and with no maintenance it is the unmaintained curve."""
         start = m.normalize_gap(2.0)
-        unmaintained = m.asymmetry_drift(start, gamma=0.08, t=24.0)
-        maintained = m.asymmetry_drift(start, gamma=0.02, t=24.0)
-        self.assertLess(maintained, unmaintained)
+        self.assertAlmostEqual(m.maintained_gap_level(0.06, 0.24), 0.2)
+        self.assertAlmostEqual(m.maintained_gap_level(0.06, 0.0), 1.0)
+        for t in (0.0, 6.0, 24.0):
+            self.assertAlmostEqual(m.maintained_gap(start, 0.06, 0.0, t),
+                                   m.asymmetry_drift(start, 0.06, t))
+        self.assertAlmostEqual(m.maintained_gap(start, 0.06, 0.24, 500.0),
+                               0.2)
+        self.assertLess(m.maintained_gap(start, 0.06, 0.24, 24.0),
+                        m.asymmetry_drift(start, 0.06, 24.0))
+
+    def test_maintenance_cannot_run_backwards(self):
+        with self.assertRaises(ValueError):
+            m.maintained_gap_level(0.06, -0.1)
+
+    def test_no_stake_funds_no_maintenance(self):
+        """Section 5.7: with nothing at the next boundary, a one-shot deal,
+        the seller funds no account management."""
+        self.assertEqual(m.maintenance_funded(0.0, 0.1, 0.05, 1.0), 0.0)
+
+    def test_below_the_threshold_the_seller_funds_none(self):
+        """Funded only while (1 - pi0) F_s exceeds c_eta gamma."""
+        self.assertEqual(m.maintenance_funded(0.05, 0.0, 0.1, 1.0), 0.0)
+        self.assertGreater(m.maintenance_funded(0.5, 0.0, 0.1, 1.0), 0.0)
+
+    def test_maintenance_rises_slower_than_the_stake(self):
+        low = m.maintenance_funded(1.0, 0.0, 0.05, 1.0) + 0.05
+        high = m.maintenance_funded(4.0, 0.0, 0.05, 1.0) + 0.05
+        self.assertAlmostEqual(high / low, 2.0)
+
+    def test_fast_drift_makes_maintenance_not_worth_funding(self):
+        """eta* rises with gamma, peaks at K/4 and is zero from K on."""
+        k = 1.0  # (1 - pi0) F_s / c_eta
+        rates = [m.maintenance_funded(1.0, 0.0, g, 1.0)
+                 for g in (0.05, 0.25, 0.6, 1.0)]
+        self.assertLess(rates[0], rates[1])
+        self.assertGreater(rates[1], rates[2])
+        self.assertEqual(rates[3], 0.0)
+        self.assertAlmostEqual(rates[1], k / 4)
 
 
 # ==========================================================================

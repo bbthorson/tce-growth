@@ -181,7 +181,7 @@ The plan therefore has a cost the seller can read before committing to it. The c
 - **Whether Test is a distinct row for bargaining**, per section 4.
 - **Section 2.3 is a conjecture** with a stated falsifier and no test.
 - **The five touchpoint types are asserted general.** They are shown on three systems of record and tested on none.
-- **Equilibrium is not treated here.** [07-open-questions.md](./07-open-questions.md) item 27 records that the gaps have drift rates and no equilibrium statement.
+- **Equilibrium is stated, and no instrument reads it.** [02-mathematical-models.md](./02-mathematical-models.md) sections 5.3, 5.7 and 5.8 give the maintained gap, the account management a seller funds and the separating condition for a market. Nothing here reads the maintenance rate or fit drift after go-live, which belongs to the Sustaining Adoption Review in the practice rebuild.
 - **Whether occupants will state reservations one to one at the rate the metric needs.** An external review established that they will not write personal exposure on a shared instrument, which is why the bargaining ledger split. Whether they will say it privately often enough for the gap to be counted, and whether the shared arrangement record gets ratified, is the decision-role map's first field test.
 - **The instruments themselves.** This file derives what each must do. [The Market Reading](../../practice/00-market-reading.md) is the first built from it. The deal reading, the plan and the three ledgers do not yet exist in the form derived here.
 

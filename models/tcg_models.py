@@ -465,10 +465,66 @@ def asymmetry_drift(gap0, gamma, t):
     if gamma < 0:
         raise ValueError(
             "gamma cannot be negative; discovery is a separate step down, and "
-            "maintenance holds gamma down rather than reversing it")
+            "maintenance is its own rate, eta, in maintained_gap")
     if t < 0:
         raise ValueError("elapsed time cannot be negative")
     return NormalizedGap(1.0 - (1.0 - gap0) * math.exp(-gamma * t))
+
+
+def maintained_gap_level(gamma, eta):
+    """Where a maintained gap settles, 02-mathematical-models.md section 5.3.
+
+        d gap/dt = gamma (1 - gap) - eta gap,  so  gap* = gamma / (gamma + eta)
+
+    Maintenance is re-verification, proportional to the gap, which is a chosen
+    form. With eta = 0 the gap settles at the ceiling. It reaches only stale
+    verification: fit drifting apart is not a gap and no eta closes it.
+    """
+    if gamma < 0 or eta < 0:
+        raise ValueError("neither the rebuild nor maintenance runs backwards")
+    if gamma + eta == 0:
+        raise ValueError("with no rebuild and no maintenance the gap stays "
+                         "where it starts; use the starting gap")
+    return NormalizedGap(gamma / (gamma + eta))
+
+
+def maintained_gap(gap0, gamma, eta, t):
+    """A maintained gap over time, 02-mathematical-models.md section 5.3.
+
+        gap(t) = gap* + (gap(0) - gap*) * exp(-(gamma + eta) t)
+
+    With eta = 0 this is asymmetry_drift.
+    """
+    gap0 = _require_normalized(gap0, "maintained_gap")
+    if t < 0:
+        raise ValueError("elapsed time cannot be negative")
+    level = maintained_gap_level(gamma, eta)
+    return NormalizedGap(level + (gap0 - level) * math.exp(-(gamma + eta) * t))
+
+
+def maintenance_funded(stake, floor, gamma, cost_scale):
+    """The maintenance rate a seller funds, 02-mathematical-models.md 5.7.
+
+        eta* = sqrt((1 - pi0) F_s gamma / c_eta) - gamma,  or 0 below that
+
+    Account management is the seller's maintenance, justified by its own
+    condition: it protects the margin at the next boundary, F_s. The seller
+    funds none where (1 - pi0) F_s <= c_eta gamma, and none at all with no
+    stake. The square root is illustrative, from the proportional, linear and
+    straight-line forms; the threshold and the zero at no stake are not.
+    """
+    if stake < 0:
+        raise ValueError("the stake at the next boundary cannot be negative")
+    if not 0.0 <= floor < 1.0:
+        raise ValueError("the floor on the chance of loss lies in [0, 1)")
+    if gamma < 0:
+        raise ValueError("the rebuild rate cannot be negative")
+    if cost_scale <= 0:
+        raise ValueError("maintenance has a positive cost per unit")
+    protected = (1.0 - floor) * stake
+    if protected <= cost_scale * gamma:
+        return 0.0
+    return math.sqrt(protected * gamma / cost_scale) - gamma
 
 
 # ==========================================================================

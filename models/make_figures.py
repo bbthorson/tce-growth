@@ -298,9 +298,10 @@ def panel_3():
     engagement the incumbent's implementation gap approaches zero while a
     challenger starts near the ceiling. The incumbent's advantage is the
     vertical distance between the two, and it erodes at gamma_implementation
-    unless C_sustain holds that rate down. Constitution 4.0 bounds the drift at
-    the ceiling, so the unmaintained curve bends toward the challenger rather
-    than crossing it.
+    unless C_sustain, account management, pulls it down at rate eta. Both
+    curves run on the same gamma. The unmaintained one bends toward the
+    challenger at the ceiling and never crosses it. The maintained one levels
+    off at gamma / (gamma + eta), 02-mathematical-models.md section 5.3.
 
     The component matters. Drift runs at a separate rate per cost,
     and the drivers this curve runs on, staff turnover, workflow change and
@@ -314,7 +315,7 @@ def panel_3():
 
     unmaintained = [(t, float(m.asymmetry_drift(start, 0.06, t)))
                     for t in months]
-    maintained = [(t, float(m.asymmetry_drift(start, 0.008, t)))
+    maintained = [(t, float(m.maintained_gap(start, 0.06, 0.24, t)))
                   for t in months]
 
     axes = Axes((0, 36), (0, 1.15))
@@ -328,7 +329,7 @@ def panel_3():
         axes.path(maintained, "good"),
         axes.label(26.5, float(m.asymmetry_drift(start, 0.06, 26.5)) + 0.075,
                    "Without sustaining spend", "note", anchor="middle"),
-        axes.label(20.0, float(m.asymmetry_drift(start, 0.008, 20.0)) + 0.075,
+        axes.label(20.0, float(m.maintained_gap(start, 0.06, 0.24, 20.0)) + 0.075,
                    "With sustaining spend", "note", anchor="middle"),
         axes.dot(0, float(start), "good"),
         axes.label(1.2, float(start) - 0.055, "At go-live", "note-muted"),
@@ -346,8 +347,8 @@ def panel_3():
              "at go-live, plotted against a horizontal line marking where a "
              "challenger begins. The unmaintained curve bends toward the "
              "challenger line and nearly reaches it within three years, "
-             "closing the incumbent advantage. The maintained curve rises far "
-             "more slowly and stays well below it.")
+             "closing the incumbent advantage. The maintained curve levels off "
+             "well below it, where maintenance matches the rebuild.")
 
 
 FIGURES = {
