@@ -211,6 +211,22 @@ The term exists because incentive variance under-captures a specific and common 
 
 Treat $TO$ as a field refinement rather than core theory. The two-term form above is what the axioms require. The three-term form is what practitioners need to avoid a predictable blind spot.
 
+### 3.5 The count is read after exposure
+
+$N$ is not fixed before the policing reading. Two mechanisms add decision roles as the deal's specific exposure grows, and both run from Axiom III exposure into this count.
+
+$$N = \left| R_0 \cup R_{imp} \right| + N_{rules}(n_{exposure})$$
+
+| Symbol | Meaning |
+|---|---|
+| $R_0$ | The roles mapped so far that can say no |
+| $R_{imp}$ | The roles a divergent step imposes on. An imposition forces a practice on whoever runs the step, and that role objects. A deficiency the buyer accepts or works around adds exposure and no veto (Strong and Volkoff 2010, in [process-misfit.md](../02-research/process-misfit.md)) |
+| $N_{rules}$ | The approvers and formal reviews the buyer's own rules require at this deal's size and specific exposure: a spend threshold, a security review above a data class, a board above a commitment. A group demands broader agreement when a decision can do more harm (Buchanan and Tullock 1962), and these rules are how a buyer writes that down. They are the bargaining cost floor, set outside the deal and triggered by it |
+
+Every term is a count read off the buyer, so the coupling adds no parameter. The union keeps a role that is already counted from being counted twice. The coupling also runs back. Each role added brings requirements, and a requirement the product does not meet is a new divergent step, which may impose on a further role. The loop is named and not modeled, and the count stops when a pass adds no role. A larger coalition costs more by the convexity in section 3.3, so the feedback raises the cost faster than the count.
+
+**The count is dated.** $R_{imp}$ and $n_{exposure}$ are counted on the divergence found so far. Before fit is verified on the buyer's own workflow, both the implementation position and $N$ are lower bounds, and section 6 reads the start on that basis.
+
 ---
 
 ## 4. Urgency Decay
@@ -280,11 +296,25 @@ The floor $\pi_0 > 0$ exists because some risk survives any amount of proof, whi
 
 ### 5.3 Drift
 
-Absent maintenance, each gap rebuilds toward its ceiling:
+Two things drift after go-live, and they answer to different tools.
+
+**What was verified goes stale.** Nothing has to change for this. The evidence ages, the people who saw it move on, and absent maintenance each gap rebuilds toward its ceiling:
 
 $$\hat{\Delta}_k(t) = 1 - \left(1 - \hat{\Delta}_k(0)\right) e^{-\gamma_k t}$$
 
-The gap stays on $[0, 1]$, the range every count-based instrument can actually report: a share of unevidenced items cannot exceed all of them. The rate $\gamma_k \ge 0$ is named and not valued.
+The gap stays on $[0, 1]$, the range every count-based instrument can actually report: a share of unevidenced items cannot exceed all of them. The rate $\gamma_k \ge 0$ is named and not valued. Maintenance is re-verification, usage evidence, outcome reviews and references kept current, and it pulls the gap down at a rate $\eta_k$ in proportion to its size:
+
+$$\frac{d\hat{\Delta}_k}{dt} = \gamma_k\left(1 - \hat{\Delta}_k\right) - \eta_k \hat{\Delta}_k \qquad \hat{\Delta}^*_k = \frac{\gamma_k}{\gamma_k + \eta_k}$$
+
+The gap moves toward $\hat{\Delta}^*_k$ at rate $\gamma_k + \eta_k$, from wherever it starts. With $\eta_k = 0$ this is the unmaintained curve, which ends at the ceiling, where the incumbent knows no more than a challenger. Any maintenance holds it below. That is the condition between the two curves in the Constitution's drift figure, and section 5.7 says how much maintenance a seller funds. The proportional form is chosen.
+
+**The fit itself drifts.** Each party changes: the buyer its workflow, its roles and the rules it works under, the seller its product, its releases and its team. Each change can open a divergent step that did not exist at go-live, at rates $\psi_b$ and $\psi_s$, named and not valued. This is not a gap. Perfect knowledge of a misfit does not remove it, so re-verification does not reach it. It raises $n_{exposure}$ and, through section 3.5, the coalition, so the implementation and consensus positions at the next renewal rise even while every gap is held down. Three tools reach it.
+
+- **Notice of change.** Each side commits to tell the other before it changes the product or the workflow. It does not lower $\psi$. It turns the other side's change into a dated event either can plan around, rather than a divergence discovered at renewal.
+- **Re-adaptation.** Closing a divergent step is an investment under Axiom II, paid by whoever the arrangement says pays it.
+- **A change process allocated before either side changes.** Who pays to adapt is the dispute fit drift creates, and it is cheapest to settle before anyone has moved. This is Axiom III's enforcement remedy applied after go-live, the Mutual Implementation Plan continued past it.
+
+The seller can lower $\psi_s$ directly, through stability and deprecation commitments. It lowers $\psi_b$ only through configuration the buyer owns, which absorbs the buyer's change without opening a divergent step.
 
 **Discovery is a separate mechanism.** It is a discrete step down that someone pays for at an artifact boundary, not drift running backwards. A departed champion is the opposite discrete event, the bargaining gap reopening at once. Between the two, the gap relaxes toward its ceiling at $\gamma_k$, and maintenance is whatever holds it down.
 
@@ -295,6 +325,93 @@ A buyer who commits in stages sinks $Q_m$ at gate $m$ against the residual uncer
 $$L_b = \sum_{m} Q_m \, \pi(x_m) \qquad \text{rather than} \qquad Q \, \pi(x_0)$$
 
 Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) carries the residual chain and the reference gates. Its stage equation is this one, read one gate at a time.
+
+### 5.5 Joint exposure and the bond condition
+
+Section 5.2 reads the chance of loss off the gaps a party cannot close, which is the hidden-information half of Axiom III. The other half is hold-up in plain view. At a renewal, or in a state the contract did not foresee, one side forces a renegotiation and the other can watch it happen and cannot stop it (Wathne and Heide 2000). What decides whether that pays is both quasi-rents at once.
+
+**The renegotiation.** If the two parties part at a boundary, each loses what it sank and cannot redeploy, so continuing is worth $Q_b + Q_s$ more to the pair than parting. Where the contract is silent, the pair splits that amount when it renegotiates. Write $\omega$ for the share the other side, $-p$, captures. Party $p$ expected to recover its whole quasi-rent and recovers $(1 - \omega)(Q_p + Q_{-p})$, so the most the other side can take from it is $\omega Q_p - (1 - \omega) Q_{-p}$.
+
+Forcing the renegotiation also costs the other side something: the future surplus it puts at risk by souring the relationship, $F_{-p}$, read in contract value off the repeated game in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7. It forces the renegotiation only when the gain exceeds that cost, so party $p$'s hold-up loss is
+
+$$H_p = \max\left(0,\; \omega\, Q_p - (1 - \omega)\, Q_{-p} - F_{-p}\right)$$
+
+**The bond condition.** Mutual exposure is a bond for party $p$, rather than a liability, when $H_p = 0$:
+
+$$\omega\, Q_p \;\le\; (1 - \omega)\, Q_{-p} + F_{-p}$$
+
+With an even split, $\omega = 0.5$, this reads $Q_p - Q_{-p} \le 2F_{-p}$. It always holds for the party that sank less. So the pair is bonded in both directions when the gap between the two quasi-rents is no larger than twice what forcing a renegotiation would cost the party that sank less. Three things follow.
+
+- **The imbalance creates the hazard, and the level does not.** Raising both quasi-rents together keeps the bond. Raising one alone breaks it once the difference outgrows the other side's future stake. The seller surplus model's rule that the relationship is healthy while the seller's quasi-rent keeps pace with its temptation is this condition read from the buyer's side.
+- **The two enforcement remedies act on different terms.** A hostage raises $Q_{-p}$, through a bond or a reciprocal specific investment, or raises $F_{-p}$, through fees staged against delivery or the seller's referenceability. A right allocated in advance changes the renegotiation itself. An option to renew at a preset price or a priced right to stop fixes where it starts, which in this form lowers $\omega$. A discount moves none of the three terms, which is why it does not answer drift.
+- **Whoever sinks first is exposed first.** In a forward-deployed motion $Q_s$ rises before $Q_b$, so the seller fails the condition until the buyer's own investment catches up. That is the Constitution's reason to settle the allocation before the seller spends.
+
+**How it enters the conditions.** Hold-up and a failed fit are two ways the return falls short, and hold-up matters only in the states where the fit did not fail anyway. Writing $\pi^{gap}_p$ for section 5.2's form:
+
+$$\pi_p = 1 - \left(1 - \pi^{gap}_p\right)\left(1 - \frac{H_p}{Q_p}\right), \qquad L_p = Q_p\,\pi_p = Q_p\,\pi^{gap}_p + \left(1 - \pi^{gap}_p\right) H_p$$
+
+So $L_p = Q_p \pi_p$ keeps its form and its bound, and $H_p / Q_p$ never exceeds $\omega$. Where the bond condition holds, $H_p = 0$ and $\pi_p$ is the gap form alone, which is what every worked example in the repository assumes.
+
+**The split is a placeholder.** $\omega = 0.5$ is the symmetric split Grossman and Hart (1986) use for the renegotiation, chosen and not fitted, and it describes a renegotiation with nothing allocated in advance. $F_{-p}$ is named and not valued. It is also the variable under the three frequency readings, which [05-governance-forms.md](./05-governance-forms.md) section 1 reads off this condition.
+
+*Falsifier.* Among deals where both parties sink specific investment, forced renegotiations and terminations should track the imbalance between the two quasi-rents against the value left in the relationship, and not the total sunk. If they rise with the total at a fixed imbalance, the condition is wrong.
+
+### 5.6 What to settle in advance, and what to do in advance
+
+Axiom III says a specific deal's allocation must be settled before the investment is sunk, and that the work done in advance can fall as uncertainty rises. This section gives each half a form.
+
+**The allocation required.** An allocation is adequate when, at the moment party $p$ sinks its investment, the other side can take nothing in plain view. The bond covers part of $p$'s quasi-rent through what the other side has sunk and stands to lose (section 5.5). What the bond leaves uncovered has to be settled in advance, by a hostage or by a right:
+
+$$A_p = \max\left(0,\; \omega\, Q_p - (1 - \omega)\, Q_{-p} - F_{-p}\right), \qquad \alpha_p = \frac{A_p}{Q_p}$$
+
+$A_p$ is the hold-up loss $H_p$ read at the moment of sinking. $\alpha_p$ is the share of $p$'s quasi-rent that needs an allocation, and it never exceeds $\omega$.
+
+- **The requirement rises with the imbalance, and not with specificity as such.** At a fixed $Q_{-p}$ and $F_{-p}$, $\alpha_p$ rises with $Q_p$ toward $\omega$, which is the axiom's earlier claim in the case where one party sinks alone. When both sink evenly, $\alpha_p$ falls toward zero and the bond does the work. Constitution 5.1 states the mechanism this way.
+- **Staging keeps the requirement small.** Read at each gate on the quasi-rents sunk so far, $A_p$ stays near zero while the two sides' investments grow together, which is what [05-governance-forms.md](./05-governance-forms.md) section 5 means by the two stakes growing together. A gate where one side sinks alone is the gate that needs the allocation.
+- **Allocation answers hold-up, and not a failed fit.** The fit term $Q_p \pi^{gap}_p$ is lowered by verification and by staging (section 5.4), and moved by a guarantee.
+
+The Friction Efficiency Index's allocation coverage ratio reads whether an allocation was made. $\alpha_p$ says how much was needed.
+
+**The work done in advance.** Discovery before sinking lowers the gap a party carries into the investment, but only the part discovery can reach. Write $\rho$ for the share of the gap that surfaces only in use. It is near zero where the specification is static and rises with technological and organizational uncertainty (Crocker and Reynolds 1993, Strong and Volkoff 2010). Closing a fraction $x$ of the reachable part lowers the party's mean gap by $x(1 - \rho) g_p$, and its expected loss by $Q_p (1 - \pi_0)(1 - \rho)\, g_p\, x$. If discovery's cost rises with the square of $x$ at a scale $c$, the share of the gap worth closing before sinking is
+
+$$x^* = \min\left(1,\; \frac{Q_p (1 - \pi_0)(1 - \rho)\, g_p}{c}\right), \qquad \sigma_p = (1 - \rho)\, x^*$$
+
+$\sigma_p$ is the share of the gap closed in advance. It rises with $Q_p$, because a larger quasi-rent makes the loss worth more to avoid. It falls with $\rho$, because more of the gap lies beyond discovery's reach and each unit of discovery buys less. The rest is closed after sinking, in stages, which keeps the option to stop that Dixit and Pindyck (1994) price.
+
+**The two halves come apart.** Uncertainty does not enter $\alpha_p$, and $\sigma_p$ falls as $\rho$ rises. So a deal that is specific and uncertain settles more and does less before anything is sunk, which is a minimum viable integration with a staged remainder. Where $\rho$ is near zero both rise with $Q_p$, and front-end definition pays directly (Merrow 2011).
+
+**Placeholders.** The quadratic cost of discovery is chosen. $c$ and $\rho$ are named and not valued. $A_p$ inherits $\omega$ from section 5.5.
+
+### 5.7 Account management is the seller's maintenance
+
+Account management is a seller function and a seller investment, justified by the seller's condition like any other. It is $C_{sustain}$ in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7, and what it protects is the seller's margin at the next boundary, its stake $F_s$ from section 5.5. Write its cost as $c_\eta$ per unit of $\eta$ each period, and read the chance the buyer does not renew as rising with the held gap on the form of section 5.2. The seller then funds the rate that maximizes $F_s\left(1 - \pi(\hat{\Delta}^*)\right) - c_\eta \eta$:
+
+$$\eta^* = \sqrt{\frac{(1 - \pi_0)\, F_s\, \gamma}{c_\eta}} - \gamma, \qquad \eta^* > 0 \;\text{ only when }\; (1 - \pi_0)\, F_s > c_\eta\, \gamma$$
+
+- **Below a threshold the seller funds none.** Where the margin at stake does not cover the cost of keeping pace with the rebuild, the account is unmaintained. Pooled or automated customer success below some contract value follows rather than being assumed.
+- **With no stake there is no maintenance.** At $F_s = 0$, a one-shot deal by section 1 of [05-governance-forms.md](./05-governance-forms.md), the seller maintains nothing, and the account follows the unmaintained curve.
+- **Spend rises slower than the stake.** Here as its square root.
+- **Fast drift can make maintenance not worth funding.** $\eta^*$ rises with $\gamma$ and then falls, to zero at $\gamma = (1 - \pi_0) F_s / c_\eta$. With no drift there is nothing to maintain, and with very fast drift no affordable rate holds the gap. Past the peak the seller does better to lower $\gamma$ than to chase it.
+
+The threshold and the zero at no stake follow from any maintenance cost that is positive at the margin. The rise and fall in $\gamma$ follows from the two limits. The square root is illustrative, from the proportional, linear and straight-line forms, and $c_\eta$ is named and not valued.
+
+Fit drift is weighed against the same stake. Re-adaptation and an allocated change process are seller investments when the arrangement puts them on the seller, and the seller funds them while the margin they protect covers them. The account manager holds a decision role inside the seller, so by [05-governance-forms.md](./05-governance-forms.md) section 5 its pay needs a stake at the renewal it maintains. The buyer maintains its own side, the owner of its workflow, out of its own condition, and that is not account management.
+
+### 5.8 Separation in a market
+
+A costly signal $s$ tells a good seller from a bad one when the good seller can afford it and the bad one cannot, against $B$, the premium a seller earns by being told apart from the pool (Spence 1973):
+
+$$c_{good}(s) < B < c_{bad}(s)$$
+
+Separation is a condition a market crosses in both directions, not a resting point.
+
+- **Entry pools.** Entrants copy the signals that automate, which pulls $c_{bad}$ toward $c_{good}$, the first Friction Allocation Principle failing, and the condition fails. This is the Turnkey corollary's route out of the condition.
+- **Pooling pays for re-separation.** While the pool holds, buyers judge every seller by the category's average, and misfits discovered after sinking pull that average down further (the cost floor corollary). Both raise $B$, which pays for a costlier signal or a shared institution, a certification, a standard or a staked channel, that restores the condition.
+- **Saturation ends it.** When no signal a good seller can afford clears the bad seller's cost, the buyer exits. That is the Akerlof saturation failure mode.
+
+The structure is section 5.3's at the level of a category: entry and misrepresentation rebuild what buyers cannot tell apart, and costly signals and shared institutions hold it down. The two are kept separate on purpose. At the deal level one seller chooses $\eta$. At the market level the shared institutions benefit every seller in the pool, so by the cost floor corollary no one seller funds them at a return its own deals repay, and the category is maintained less than any seller in it would choose.
+
+**The search cost responds to information by its verifiability.** Information the buyer can check narrows its range and lowers $F_{search}$. Information it cannot check takes attention without narrowing anything and raises it. Only the signs are claimed. This is the second standing assumption's line between evidence and persuasion, read together with the cost floor corollary's message volume.
 
 ---
 
@@ -310,7 +427,13 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 | above zero and at most one | Needs seller investment |
 | $r_k > 1$ | Keeps the buyer out |
 
-The sale starts at the largest $r_k$. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
+**The buyer reads its own positions.** Write $\tilde{F}_k$ for the recognized cost, the buyer's estimate of $F_k$ before it meets the seller, and read it against the same thresholds:
+
+$$\tilde{r}_k = \frac{\tilde{F}_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
+
+The buyer enters, and begins discovery, only while every $\tilde{r}_k \le 1$. Before it meets any seller, $\tilde{F}_k$ is the category prior, what buyers in the market believe the cost is. The seller moves $\tilde{F}_k$ toward $F_k$ only with evidence the buyer can check, which is search work, and discovery closes the two readings together. The positions below are $r_k$ after entry and $\tilde{r}_k$ before it.
+
+The sale starts at the largest $r_k$, as read at a stated moment. Before fit is verified, the implementation and consensus positions are lower bounds by section 3.5, so a reading taken early can name a start that discovery moves. A misrepresented fit hides the start in exactly this way. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
 
 **The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. **The participation threshold measures capacity, not affordability, and it does not move with value.** A buyer stays out of a market for one of two reasons. Either a cost exceeds what the deal is worth, or the buyer cannot get through the cost at any price: it cannot name the category, cannot reach a seller, cannot bring its decision roles to a decision, or cannot tell a good seller from a bad one. The first depends on value, and the buyer's condition $S_b$ in section 1 already carries it. The second does not, and it is what $\tau^{part}_k$ marks. A threshold that rose with $V_{switch}$ would restate the buyer's condition inside Axiom I and leave the gate with no claim of its own.
 

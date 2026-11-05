@@ -60,6 +60,7 @@ MU_RETURN_UNCERTAINTY = 1.0  # normalizing convention
 NU_VENDOR_DOUBT = 2.0        # chosen
 KAPPA_PROOF_DECAY = 0.5      # chosen
 GAMMA_RESPONSIVENESS = 0.5   # chosen
+OMEGA_RENEGOTIATION = 0.5    # chosen: symmetric split, nothing allocated
 
 # Raw Bilateral Asymmetry Scorecard range, from
 # practice/asymmetry-scorecard.md part 3.
@@ -464,10 +465,66 @@ def asymmetry_drift(gap0, gamma, t):
     if gamma < 0:
         raise ValueError(
             "gamma cannot be negative; discovery is a separate step down, and "
-            "maintenance holds gamma down rather than reversing it")
+            "maintenance is its own rate, eta, in maintained_gap")
     if t < 0:
         raise ValueError("elapsed time cannot be negative")
     return NormalizedGap(1.0 - (1.0 - gap0) * math.exp(-gamma * t))
+
+
+def maintained_gap_level(gamma, eta):
+    """Where a maintained gap settles, 02-mathematical-models.md section 5.3.
+
+        d gap/dt = gamma (1 - gap) - eta gap,  so  gap* = gamma / (gamma + eta)
+
+    Maintenance is re-verification, proportional to the gap, which is a chosen
+    form. With eta = 0 the gap settles at the ceiling. It reaches only stale
+    verification: fit drifting apart is not a gap and no eta closes it.
+    """
+    if gamma < 0 or eta < 0:
+        raise ValueError("neither the rebuild nor maintenance runs backwards")
+    if gamma + eta == 0:
+        raise ValueError("with no rebuild and no maintenance the gap stays "
+                         "where it starts; use the starting gap")
+    return NormalizedGap(gamma / (gamma + eta))
+
+
+def maintained_gap(gap0, gamma, eta, t):
+    """A maintained gap over time, 02-mathematical-models.md section 5.3.
+
+        gap(t) = gap* + (gap(0) - gap*) * exp(-(gamma + eta) t)
+
+    With eta = 0 this is asymmetry_drift.
+    """
+    gap0 = _require_normalized(gap0, "maintained_gap")
+    if t < 0:
+        raise ValueError("elapsed time cannot be negative")
+    level = maintained_gap_level(gamma, eta)
+    return NormalizedGap(level + (gap0 - level) * math.exp(-(gamma + eta) * t))
+
+
+def maintenance_funded(stake, floor, gamma, cost_scale):
+    """The maintenance rate a seller funds, 02-mathematical-models.md 5.7.
+
+        eta* = sqrt((1 - pi0) F_s gamma / c_eta) - gamma,  or 0 below that
+
+    Account management is the seller's maintenance, justified by its own
+    condition: it protects the margin at the next boundary, F_s. The seller
+    funds none where (1 - pi0) F_s <= c_eta gamma, and none at all with no
+    stake. The square root is illustrative, from the proportional, linear and
+    straight-line forms; the threshold and the zero at no stake are not.
+    """
+    if stake < 0:
+        raise ValueError("the stake at the next boundary cannot be negative")
+    if not 0.0 <= floor < 1.0:
+        raise ValueError("the floor on the chance of loss lies in [0, 1)")
+    if gamma < 0:
+        raise ValueError("the rebuild rate cannot be negative")
+    if cost_scale <= 0:
+        raise ValueError("maintenance has a positive cost per unit")
+    protected = (1.0 - floor) * stake
+    if protected <= cost_scale * gamma:
+        return 0.0
+    return math.sqrt(protected * gamma / cost_scale) - gamma
 
 
 # ==========================================================================
@@ -592,6 +649,98 @@ def future_loss(quasi_rent_value, chance):
     if not 0.0 <= chance <= 1.0:
         raise ValueError("a chance lies on [0, 1]")
     return quasi_rent_value * chance
+
+
+def holdup_loss(own_quasi_rent, other_quasi_rent, other_future_stake,
+                omega=OMEGA_RENEGOTIATION):
+    """What the other side can take in plain view, section 5.5.
+
+        H_p = max(0, omega * Q_p - (1 - omega) * Q_other - F_other)
+
+    The pair splits the joint quasi-rent when it renegotiates, and the other
+    side forces the renegotiation only when its gain exceeds the future stake
+    it puts at risk. F_other is named and not valued, so it has no default.
+    """
+    if own_quasi_rent < 0 or other_quasi_rent < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if other_future_stake < 0:
+        raise ValueError("a future stake cannot be negative")
+    if not 0.0 <= omega <= 1.0:
+        raise ValueError("the renegotiation split lies on [0, 1]")
+    return max(0.0, omega * own_quasi_rent
+               - (1.0 - omega) * other_quasi_rent - other_future_stake)
+
+
+def bond_holds(own_quasi_rent, other_quasi_rent, other_future_stake,
+               omega=OMEGA_RENEGOTIATION):
+    """The bond condition, section 5.5: mutual exposure protects party p."""
+    # A tolerance, so an imbalance exactly at the boundary reads as bonded.
+    return holdup_loss(own_quasi_rent, other_quasi_rent, other_future_stake,
+                       omega) <= 1e-12
+
+
+def loss_chance_with_holdup(gap_chance, holdup, own_quasi_rent):
+    """The chance of loss with hold-up as a second factor, section 5.5.
+
+        pi_p = 1 - (1 - pi_gap) * (1 - H_p / Q_p)
+
+    Hold-up counts only in the states where the fit did not fail, so
+    Q_p * pi_p = Q_p * pi_gap + (1 - pi_gap) * H_p and L_p keeps its bound.
+    """
+    if not 0.0 <= gap_chance <= 1.0:
+        raise ValueError("a chance lies on [0, 1]")
+    if own_quasi_rent < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if own_quasi_rent == 0 or holdup == 0:
+        return gap_chance
+    if not 0.0 <= holdup <= own_quasi_rent:
+        raise ValueError("hold-up lies between zero and the quasi-rent")
+    return 1.0 - (1.0 - gap_chance) * (1.0 - holdup / own_quasi_rent)
+
+
+def allocation_required(own_quasi_rent, other_quasi_rent, other_future_stake,
+                        omega=OMEGA_RENEGOTIATION):
+    """What has to be settled before party p sinks, section 5.6.
+
+        A_p = max(0, omega * Q_p - (1 - omega) * Q_other - F_other)
+
+    The hold-up the bond leaves uncovered, read at the moment of sinking.
+    """
+    return holdup_loss(own_quasi_rent, other_quasi_rent, other_future_stake,
+                       omega)
+
+
+def allocated_share(own_quasi_rent, other_quasi_rent, other_future_stake,
+                    omega=OMEGA_RENEGOTIATION):
+    """alpha_p = A_p / Q_p, section 5.6. Rises with the imbalance, up to omega."""
+    if own_quasi_rent == 0:
+        return 0.0
+    return allocation_required(own_quasi_rent, other_quasi_rent,
+                               other_future_stake, omega) / own_quasi_rent
+
+
+def advance_discovery_share(quasi_rent_value, gap, floor, use_share,
+                            cost_scale):
+    """Share of the gap worth closing before sinking, section 5.6.
+
+        x* = min(1, Q (1 - floor)(1 - rho) g / c),  sigma = (1 - rho) x*
+
+    A placeholder: the quadratic cost of discovery is chosen, and the floor,
+    rho (the share only use reveals) and c are named and not valued, so the
+    caller supplies them.
+    """
+    g = _require_normalized(gap, "advance_discovery_share")
+    if quasi_rent_value < 0:
+        raise ValueError("a quasi-rent cannot be negative")
+    if not 0.0 <= floor < 1.0:
+        raise ValueError("the floor lies on [0, 1)")
+    if not 0.0 <= use_share <= 1.0:
+        raise ValueError("the share only use reveals lies on [0, 1]")
+    if cost_scale <= 0:
+        raise ValueError("discovery has a positive cost scale")
+    x = min(1.0, quasi_rent_value * (1.0 - floor) * (1.0 - use_share) * g
+            / cost_scale)
+    return (1.0 - use_share) * x
 
 
 def staged_loss(stage_quasi_rents, stage_residuals, floor):
@@ -1198,6 +1347,51 @@ def apparatus_is_amortizable(specific, frequency):
     return not (specific and frequency == ONE_SHOT)
 
 
+def frequency_reading(buyer_stake, seller_stake, buyer_quasi_rent,
+                      seller_quasi_rent, omega=OMEGA_RENEGOTIATION):
+    """The variable under the three frequency readings.
+
+    05-governance-forms.md section 1. One-shot when either side has nothing
+    to forfeit at the next boundary. Continuous when the buyer fails the bond
+    condition of 02-mathematical-models.md section 5.5, because its own
+    quasi-rent has outgrown the seller's stake. Recurrent otherwise. The
+    seller failing the condition is its own exposure, not a frequency reading.
+    """
+    if buyer_stake < 0 or seller_stake < 0:
+        raise ValueError("a future stake cannot be negative")
+    if min(buyer_stake, seller_stake) == 0:
+        return ONE_SHOT
+    if not bond_holds(buyer_quasi_rent, seller_quasi_rent, seller_stake,
+                      omega):
+        return CONTINUOUS
+    return RECURRENT
+
+
+def build_margin(run_cost, annualized_build, value_shortfall, price):
+    """How much cheaper paying the seller is than building, 05 section 3.
+
+        M_build = C_run + k_build + (V_solution - V_build) - P
+
+    In contract value per year. Positive means buying wins before hold-up.
+    """
+    if run_cost < 0 or annualized_build < 0:
+        raise ValueError("a cost cannot be negative")
+    return run_cost + annualized_build + value_shortfall - price
+
+
+def buyer_builds(margin, holdup):
+    """The fourth governance row's condition, 05-governance-forms.md section 3.
+
+    The buyer builds once what the seller can take at a boundary exceeds the
+    build margin. A bonded buyer has no hold-up, so the margin alone decides.
+    This is the latest the buyer builds: H_b counts the seller's gain, and
+    the buyer's loss from a refusal to adapt can be larger.
+    """
+    if holdup < 0:
+        raise ValueError("hold-up cannot be negative")
+    return holdup > margin
+
+
 def search_count(n_alternatives):
     """n_search, step 1a: named vendors plus build plus do nothing.
 
@@ -1240,6 +1434,21 @@ def consensus_count(n_vetoes, formal_body_required=False):
     return n_vetoes + (1 if formal_body_required else 0)
 
 
+def coalition_after_exposure(mapped_roles, imposed_roles, rule_approvers=0):
+    """N read after exposure, 02-mathematical-models.md section 3.5.
+
+    The roles that can say no are the ones mapped so far plus every role a
+    divergent step imposes on, counted once, plus the approvers the buyer's
+    own rules require at this exposure. A deficiency the buyer works around
+    adds no role, so only impositions are passed in. Every term is a count,
+    so the coupling adds no parameter. Before fit is verified the result is a
+    lower bound.
+    """
+    if rule_approvers < 0:
+        raise ValueError("the buyer's rules cannot remove an approver")
+    return len(set(mapped_roles) | set(imposed_roles)) + rule_approvers
+
+
 def consensus_position(n_vetoes, formal_body_required=False):
     """The consensus position, step 3."""
     return threshold_position(consensus_count(n_vetoes, formal_body_required),
@@ -1251,7 +1460,7 @@ def consensus_gap(n_vetoes, n_with_documented_objective):
 
     The denominator is the roles that can say no, without the formal body,
     which is not a person. The measured objective is the seller's view of each
-    role, which 07-open-questions.md item 14 records as a proxy for each
+    role, which 07-open-questions.md item 2 records as a proxy for each
     occupant's own uncertainty about their exposure.
     """
     return component_gap(n_vetoes, n_with_documented_objective)

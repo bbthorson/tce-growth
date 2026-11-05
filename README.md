@@ -39,7 +39,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 Each has a README listing what is inside it. For `tools/` it is [tools/linting/README.md](./tools/linting/README.md).
 
 > [!NOTE]
-> **The practice layer is frozen.** Constitution 5.0 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the 5.0 axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step. It retires to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
+> **The practice layer is frozen.** Constitution 5.2 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the 5.0 axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step. It retires to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
 
 ---
 
@@ -49,13 +49,13 @@ Find the decision you are making, then open what the row points to. The statemen
 
 | Axiom | Decision | Statement | Go here |
 |---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Should I use the market? | Using the market costs the buyer three things beyond price: search and information, bargaining and decision, and policing and enforcement. A buyer will not use the market while any one of them exceeds what it will bear, however low the other two, and among costs it will bear, their relative size is where the sale starts. | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
+| **I. Law of Transaction Cost Composition** | Should I use the market? | Using the market costs the buyer three things beyond price: search and information, bargaining and decision, and policing and enforcement. A buyer will not use the market while any one of them, as the buyer expects it, exceeds what it will bear, however low the other two, and among costs it will bear, their relative size is where the sale starts. | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
 | **II. Law of Transaction Investment** | What will it cost me today? | Each of those costs is paid down by an investment from the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return. | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
 | **III. Law of Future Cost** | What might it cost me later? | Whatever a party sinks that is worth less outside this relationship exposes it to what it cannot verify or enforce later. That exposure is a future cost, it rebuilds unless maintained, and its allocation must be settled before the investment is sunk. | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
 
 The field calls the three costs *search*, *consensus* and *implementation*, and the notation keeps those subscripts.
 
-Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **hostages govern what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected only by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment.
+Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **enforcement governs what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment, or by a right settled in advance, such as an option to renew at a preset price. Either one changes what defection costs at every later boundary, which a one-off discount does not.
 
 ## Looking for something specific
 
@@ -124,5 +124,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 5.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 5.2 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-11-03

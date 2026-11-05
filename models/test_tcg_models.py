@@ -198,6 +198,76 @@ class TestFutureLoss(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.future_loss(0.6, 1.2)
 
+    # Section 5.5, the bond condition.
+
+    def test_equal_quasi_rents_bond_both_sides(self):
+        self.assertEqual(m.holdup_loss(0.6, 0.6, 0.0), 0.0)
+        self.assertTrue(m.bond_holds(0.6, 0.6, 0.0))
+
+    def test_the_imbalance_creates_the_hazard_and_the_level_does_not(self):
+        """Raising both quasi-rents together leaves hold-up unchanged."""
+        self.assertAlmostEqual(m.holdup_loss(0.8, 0.2, 0.0), 0.3)
+        self.assertAlmostEqual(m.holdup_loss(1.4, 0.8, 0.0), 0.3)
+
+    def test_the_side_that_sank_less_is_always_bonded(self):
+        self.assertTrue(m.bond_holds(0.2, 0.8, 0.0))
+
+    def test_an_even_split_bonds_while_the_gap_is_within_twice_the_stake(self):
+        self.assertTrue(m.bond_holds(0.8, 0.2, 0.3))
+        self.assertFalse(m.bond_holds(0.8, 0.2, 0.29))
+
+    def test_a_right_allocated_in_advance_lowers_the_split(self):
+        """An option that fixes where the renegotiation starts, omega to 0."""
+        self.assertEqual(m.holdup_loss(0.8, 0.2, 0.0, omega=0.0), 0.0)
+
+    def test_the_future_stake_has_no_default(self):
+        """06-calibration.md declares F named and not valued."""
+        with self.assertRaises(TypeError):
+            m.holdup_loss(0.8, 0.2)
+
+    def test_hold_up_never_exceeds_the_split_of_the_own_quasi_rent(self):
+        for omega in (0.0, 0.25, 0.5, 1.0):
+            self.assertLessEqual(m.holdup_loss(0.9, 0.0, 0.0, omega),
+                                 omega * 0.9 + 1e-12)
+
+    def test_hold_up_enters_the_chance_only_where_the_fit_held(self):
+        q, gap_chance = 0.8, 0.25
+        h = m.holdup_loss(q, 0.2, 0.0)
+        chance = m.loss_chance_with_holdup(gap_chance, h, q)
+        self.assertAlmostEqual(m.future_loss(q, chance),
+                               q * gap_chance + (1 - gap_chance) * h)
+        self.assertLessEqual(m.future_loss(q, chance), q)
+
+    def test_a_bonded_party_keeps_the_gap_chance(self):
+        self.assertEqual(m.loss_chance_with_holdup(0.3, 0.0, 0.8), 0.3)
+
+    # Section 5.6, what to settle in advance and what to do in advance.
+
+    def test_the_allocation_share_rises_with_the_imbalance_toward_the_split(self):
+        low = m.allocated_share(0.4, 0.2, 0.0)
+        high = m.allocated_share(1.0, 0.2, 0.0)
+        self.assertLess(low, high)
+        self.assertLess(high, m.OMEGA_RENEGOTIATION)
+
+    def test_parties_sinking_evenly_need_nothing_allocated(self):
+        self.assertEqual(m.allocated_share(0.8, 0.8, 0.0), 0.0)
+
+    def test_advance_discovery_falls_with_what_only_use_reveals(self):
+        g = m.NormalizedGap(0.6)
+        static = m.advance_discovery_share(0.8, g, 0.05, 0.0, 1.0)
+        uncertain = m.advance_discovery_share(0.8, g, 0.05, 0.6, 1.0)
+        self.assertGreater(static, uncertain)
+        self.assertEqual(m.advance_discovery_share(0.8, g, 0.05, 1.0, 1.0), 0.0)
+
+    def test_advance_discovery_rises_with_the_quasi_rent(self):
+        g = m.NormalizedGap(0.6)
+        self.assertLess(m.advance_discovery_share(0.2, g, 0.05, 0.3, 1.0),
+                        m.advance_discovery_share(0.9, g, 0.05, 0.3, 1.0))
+
+    def test_a_static_specification_with_much_at_stake_is_defined_in_full(self):
+        self.assertEqual(m.advance_discovery_share(
+            5.0, m.NormalizedGap(0.8), 0.05, 0.0, 1.0), 1.0)
+
     def test_staging_loses_less_than_committing_everything_up_front(self):
         """Section 5.4: the large commitments come late, against small
         residuals, so the staged loss is smaller."""
@@ -497,14 +567,48 @@ class TestUrgencyDecay(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.asymmetry_drift(m.NormalizedGap(0.5), -0.1, 1.0)
 
-    def test_maintenance_holds_the_drift_rate_down(self):
-        """04-seller-surplus-model.md section 7.2: C_sustain is the spend that
-        holds gamma down, and Net Revenue Retention is this equation run past
-        signature."""
+    def test_maintenance_holds_the_gap_below_the_ceiling(self):
+        """Section 5.3: a maintained gap settles at gamma / (gamma + eta),
+        and with no maintenance it is the unmaintained curve."""
         start = m.normalize_gap(2.0)
-        unmaintained = m.asymmetry_drift(start, gamma=0.08, t=24.0)
-        maintained = m.asymmetry_drift(start, gamma=0.02, t=24.0)
-        self.assertLess(maintained, unmaintained)
+        self.assertAlmostEqual(m.maintained_gap_level(0.06, 0.24), 0.2)
+        self.assertAlmostEqual(m.maintained_gap_level(0.06, 0.0), 1.0)
+        for t in (0.0, 6.0, 24.0):
+            self.assertAlmostEqual(m.maintained_gap(start, 0.06, 0.0, t),
+                                   m.asymmetry_drift(start, 0.06, t))
+        self.assertAlmostEqual(m.maintained_gap(start, 0.06, 0.24, 500.0),
+                               0.2)
+        self.assertLess(m.maintained_gap(start, 0.06, 0.24, 24.0),
+                        m.asymmetry_drift(start, 0.06, 24.0))
+
+    def test_maintenance_cannot_run_backwards(self):
+        with self.assertRaises(ValueError):
+            m.maintained_gap_level(0.06, -0.1)
+
+    def test_no_stake_funds_no_maintenance(self):
+        """Section 5.7: with nothing at the next boundary, a one-shot deal,
+        the seller funds no account management."""
+        self.assertEqual(m.maintenance_funded(0.0, 0.1, 0.05, 1.0), 0.0)
+
+    def test_below_the_threshold_the_seller_funds_none(self):
+        """Funded only while (1 - pi0) F_s exceeds c_eta gamma."""
+        self.assertEqual(m.maintenance_funded(0.05, 0.0, 0.1, 1.0), 0.0)
+        self.assertGreater(m.maintenance_funded(0.5, 0.0, 0.1, 1.0), 0.0)
+
+    def test_maintenance_rises_slower_than_the_stake(self):
+        low = m.maintenance_funded(1.0, 0.0, 0.05, 1.0) + 0.05
+        high = m.maintenance_funded(4.0, 0.0, 0.05, 1.0) + 0.05
+        self.assertAlmostEqual(high / low, 2.0)
+
+    def test_fast_drift_makes_maintenance_not_worth_funding(self):
+        """eta* rises with gamma, peaks at K/4 and is zero from K on."""
+        k = 1.0  # (1 - pi0) F_s / c_eta
+        rates = [m.maintenance_funded(1.0, 0.0, g, 1.0)
+                 for g in (0.05, 0.25, 0.6, 1.0)]
+        self.assertLess(rates[0], rates[1])
+        self.assertGreater(rates[1], rates[2])
+        self.assertEqual(rates[3], 0.0)
+        self.assertAlmostEqual(rates[1], k / 4)
 
 
 # ==========================================================================
@@ -959,6 +1063,19 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertGreater(m.consensus_position(3, True),
                            m.consensus_position(3, False))
 
+    def test_an_imposition_adds_a_role_only_once(self):
+        mapped = {"clinical lead", "IT", "finance"}
+        self.assertEqual(m.coalition_after_exposure(mapped, {"IT"}), 3)
+        self.assertEqual(
+            m.coalition_after_exposure(mapped, {"IT", "billing"}), 4)
+
+    def test_exposure_triggered_reviews_add_to_the_count(self):
+        self.assertEqual(
+            m.coalition_after_exposure({"IT"}, {"billing"}, rule_approvers=2),
+            4)
+        with self.assertRaises(ValueError):
+            m.coalition_after_exposure({"IT"}, set(), rule_approvers=-1)
+
     def test_a_purchase_nobody_can_stop_is_not_a_purchase(self):
         with self.assertRaises(ValueError):
             m.consensus_count(0)
@@ -1092,6 +1209,39 @@ class TestDealTriageCalculator(unittest.TestCase):
         self.assertIn("possible-over-frictioning", result.flags)
 
     # --- Governance form -----------------------------------------------
+    def test_a_bonded_buyer_builds_only_when_building_is_cheaper(self):
+        """05-governance-forms.md section 3: no hold-up, the margin decides."""
+        self.assertFalse(m.buyer_builds(m.build_margin(0.7, 0.3, 0.1, 1.0), 0.0))
+        self.assertTrue(m.buyer_builds(m.build_margin(0.5, 0.2, 0.0, 1.0), 0.0))
+
+    def test_hold_up_past_the_margin_sends_the_buyer_in_house(self):
+        margin = m.build_margin(0.7, 0.3, 0.1, 1.0)
+        holdup = m.holdup_loss(1.2, 0.2, 0.1)
+        self.assertAlmostEqual(margin, 0.1)
+        self.assertAlmostEqual(holdup, 0.4)
+        self.assertTrue(m.buyer_builds(margin, holdup))
+
+    def test_a_seller_that_takes_less_than_the_margin_keeps_the_account(self):
+        self.assertFalse(m.buyer_builds(0.3, 0.2))
+
+    def test_frequency_is_one_shot_without_a_stake_on_both_sides(self):
+        """05-governance-forms.md section 1: a sanction needs both stakes."""
+        self.assertEqual(m.frequency_reading(0.0, 0.0, 0.3, 0.3), m.ONE_SHOT)
+        self.assertEqual(m.frequency_reading(0.5, 0.0, 0.3, 0.3), m.ONE_SHOT)
+
+    def test_frequency_is_recurrent_while_the_buyer_stays_bonded(self):
+        self.assertEqual(m.frequency_reading(0.4, 0.4, 0.5, 0.3), m.RECURRENT)
+
+    def test_frequency_is_continuous_once_the_buyer_quasi_rent_outgrows_the_stake(self):
+        self.assertEqual(m.frequency_reading(0.4, 0.1, 1.2, 0.2), m.CONTINUOUS)
+
+    def test_more_seller_stake_moves_a_deal_back_from_continuous(self):
+        self.assertEqual(m.frequency_reading(0.4, 0.5, 1.2, 0.2), m.RECURRENT)
+
+    def test_a_seller_that_sank_first_is_not_a_frequency_reading(self):
+        """The forward-deployed case is the seller's exposure."""
+        self.assertEqual(m.frequency_reading(0.4, 0.1, 0.1, 1.2), m.RECURRENT)
+
     def test_the_four_forms_match_the_document(self):
         self.assertEqual(m.governance_form(False, m.ONE_SHOT), m.MARKET)
         self.assertEqual(m.governance_form(False, m.CONTINUOUS), m.MARKET)
@@ -1217,7 +1367,8 @@ class TestCalibrationDiscipline(unittest.TestCase):
         knobs = ("ALPHA_COORDINATION",
                  "BETA_COMMITTEE", "GAMMA_TECHNICAL_OVERLAP", "W_TECH",
                  "W_PROCESS", "PHI_TECH", "PHI_PROCESS", "NU_VENDOR_DOUBT",
-                 "KAPPA_PROOF_DECAY", "GAMMA_RESPONSIVENESS", "BCV_REF_DEFAULT",
+                 "KAPPA_PROOF_DECAY", "GAMMA_RESPONSIVENESS", "OMEGA_RENEGOTIATION",
+                 "BCV_REF_DEFAULT",
                  "MIN_CREDIBLE_EDGE_CASES", "SEARCH_EVIDENCE_ITEMS")
         edges = ("SEARCH_EDGES", "CONSENSUS_EDGES", "IMPLEMENTATION_EDGES")
         missing = []

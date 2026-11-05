@@ -37,13 +37,13 @@ Formula coverage, by canonical home:
 
 | Document | What the module implements |
 |---|---|
-| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the decay rate, future loss and staging, bounded drift, and each cost's position between its thresholds. |
+| [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the coalition read after exposure, the decay rate, future loss and staging, the bond condition and hold-up, the allocation required and the work done in advance, bounded drift, the maintained gap and the account management a seller funds, and each cost's position between its thresholds. |
 | [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [consensus-friction-calculator.md](../practice/consensus-friction-calculator.md) | The worked example, the risk bands, and the variance rubric bounds. |
 | [milestone-valuation-model.md](../practice/milestone-valuation-model.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
 | [friction-efficiency-index.md](../practice/friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
 | [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | The maturity gate, the three counts and their edges, the positions and zones, both gates and the specific-exposure reading, the routing, and the frequency reading. |
-| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, and whether the seller's investment can be amortized. |
+| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, whether the seller's investment can be amortized, the frequency reading off the bond condition, and the build margin. |
 
 ## Nothing here is fitted, and it must stay that way
 
@@ -63,7 +63,7 @@ What would make the models empirical is already written down, in section 6 of `0
 
 ## The figures
 
-`theory/01-foundation/assets/` holds three SVGs, one per axiom, replacing hand-made PNGs that depicted a potential-well curve no equation in the repository produced.
+`theory/01-foundation/assets/` holds four SVGs: value decay under the second standing assumption, each cost's position between its thresholds for Axiom I, the two conditions as a price window for Axiom II, and drift for Axiom III. They replaced hand-made PNGs that depicted a potential-well curve no equation in the repository produced.
 
 Each is sampled from `tcg_models.py`, so a coefficient change moves the picture or fails the check. The SVG is written by hand rather than by a plotting library so the check runs anywhere Python does, the output is byte-for-byte reproducible, and the `prefers-color-scheme` block is authored directly rather than injected by post-processing. The old PNGs glared in dark mode.
 

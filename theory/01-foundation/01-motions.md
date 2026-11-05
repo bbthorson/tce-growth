@@ -37,7 +37,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}, \qquad k \in 
 | above zero and at most one | Bearable, with seller investment |
 | $r_k > 1$ | Keeps the buyer out, whatever the other two read |
 
-**The sale starts at the largest $r_k$**, the cost nearest the point where it would keep the buyer out. That cost is where the seller's first investment goes, and the motion is named after it. Two costs at the same position are run together.
+**The sale starts at the largest $r_k$**, the cost nearest the point where it would keep the buyer out. That cost is where the seller's first investment goes, and the motion is named after it. *Starts* means the first seller investment, not the first stage of the buyer's process. Every buyer moves through the same stages, and the motion names the job that decides whether this one gets through them (section 9). Until the buyer has entered, the positions it decides on are its own expectations of each cost, the recognized positions $\tilde{r}_k$ in the Constitution, and a seller that has lowered a cost must also show it. Two costs at the same position are run together.
 
 **Positions, not shares.** Earlier versions summed the three costs into a level and divided each by the total to get a direction. Both operations assumed the three costs sat on one scale, and they never did. A position compares each cost against its own thresholds and never against the other two, so the three are comparable without sharing a scale. It also catches the case shares could not: a cost holding a small share of the total can still sit above its participation threshold and end the deal. Constitution 5.0 states the rule underneath: the costs are non-compensatory. They add, in the buyer's condition and against one capacity where one person or budget pays more than one, but a low position on one never offsets another above its threshold. A small buyer whose one person pays all three approaches a single summed test. A large coalition approaches three separate ones.
 
@@ -168,6 +168,18 @@ Addressable market is therefore a property of the motion rather than of the prod
 
 **The market also sets each cost's floor.** Axiom II's cost floor corollary says part of every cost is set outside the deal: the information environment for search, the buyer's institutions for bargaining and the measurement environment for policing. No motion lowers a cost floor deal by deal, because no single deal repays it. So the first decision a seller makes about cost is where to sell. A market whose search cost floor is rising, because message volume has outgrown buyer attention, punishes a search-led motion no matter how well it is run. A seller lowers a cost floor only by investing in something shared across deals, such as a marketplace contract, a certification, an intermediary with a stake or a standard. [information-environment.md](../02-research/information-environment.md) carries the evidence.
 
+**A market whose floor keeps buyers out.** Where a cost floor sits above the participation threshold, no seller wins on its own effort. The market reading can see it before entry, because the stall belongs to the market rather than to any seller: buyers name the problem and buy from no one, they stop at the same cost whichever seller they meet, and deal-level effort moves no seller's conversion. A buyer who chose a competitor is a lost deal. A buyer who chose nobody is this case, or the next one.
+
+**Or the prior keeps them out.** The same sign appears when only the category prior, what buyers believe a cost is before they meet any seller, sits above the threshold while the cost itself does not. The remedy differs. A floor above the threshold takes a shared investment. A prior above it takes a seller showing its own cost with evidence the buyer can check, which one seller can do alone and which separates it from the pool. Telling the two apart needs a reading of the prior beside the floor, which item 34 in [07-open-questions.md](./07-open-questions.md) now asks for.
+
+| Cost | What the market looks like | What opens it |
+|---|---|---|
+| Search | Buyers cannot name the category, or no signal a good seller can afford tells sellers apart, which is Akerlof saturation in [02-mathematical-models.md](./02-mathematical-models.md) section 5.8 | Category definition, a marketplace, a channel with a stake, a certification |
+| Bargaining | The buyer's rules require approvals no single deal can win | A pre-approved contract vehicle, standard terms, a purchasing consortium |
+| Policing | Outcomes cannot be measured or attributed to the seller, so nobody can verify delivery | A standard, a certification, independent measurement, a mandate |
+
+**Who pays to open it.** By the cost floor corollary, the return on lowering a floor is shared by every deal on it. A single seller funds the shared investment only when its own share of the deals the investment unlocks repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a coalition of sellers, or a platform. That predicts who opens such markets, the dominant seller or an outsider, and rarely a seller in the middle. The certified-API requirement under the 21st Century Cures Act, item 34 in [07-open-questions.md](./07-open-questions.md), is the regulator lowering the policing floor across every deal at once.
+
 ---
 
 ## 7. Two symptoms of the unallocated failure
@@ -178,11 +190,36 @@ Axiom III's unallocated failure, specific investment sunk with no staging or sto
 
 ## 8. Why sellers choose the wrong motion
 
-Self-serve tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. By the Constitution's third standing assumption that is expected, and by Axiom III's stakes corollary the remedy is vesting compensation on outcomes that survive signature ([05-governance-forms.md](./05-governance-forms.md) section 5). It is usually read as protection against poor execution on specific deals. It is also the instrument that governs motion selection, and that is the wider claim. At the level of an organization the same mistake is imitation: a motion copied from another market, with the organization built to pay down a cost its buyers do not carry.
+Self-serve tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. That is expected, because the representative holds a decision role inside the seller and acts on its own payoff, and by Axiom III's stakes corollary the remedy is vesting compensation on outcomes that survive signature, needed in proportion to what the seller sinks on the representative's reading ([05-governance-forms.md](./05-governance-forms.md) section 5). It is usually read as protection against poor execution on specific deals. It is also the instrument that governs motion selection, and that is the wider claim. At the level of an organization the same mistake is imitation: a motion copied from another market, with the organization built to pay down a cost its buyers do not carry.
 
 ---
 
-## 9. What this does not settle
+## 9. Stages are fixed, and the jobs vary
+
+Every buyer moves through the same stages: awareness, consideration, purchase, and after it renewal, which runs consideration again against challengers. The stages are the buyer's order of decision, and they do not vary by market. What varies is which costs the buyer cannot get through alone. Each such cost is a job the buyer needs done, and the seller staffs the job at whichever stage it arises.
+
+| Job | What the buyer needs done | Where it usually arises |
+|---|---|---|
+| Search | Name the problem, find the alternatives and compare them | Awareness and consideration |
+| Bargaining | Bring its own decision roles to agreement, and settle terms with the seller | Consideration and purchase |
+| Policing | Check that the product will fit and the seller will deliver, then make it fit | Consideration, as proof, and after purchase, as implementation |
+| Maintenance | Keep what was verified current, and catch the fit drifting apart | After purchase and at renewal |
+
+The buyer does a self-serve job alone, from published material or a trial. A job that needs investment is staffed. A job above its threshold makes the deal unviable until someone brings it into range. Any of the three, as the buyer expects it, can stop the stages from starting. A buyer who cannot get through search never reaches consideration. A buyer through search that expects the bargaining or policing cost past its threshold declines discovery, so the seller never reads costs that would have shown it was wrong. Search is special in two ways: it is paid first, and it is where the buyer forms its expectation of the other two. Showing the buyer the other two costs early, in a form it can check, is part of the search job.
+
+**What the standard organization gets wrong.** It gives each stage one owner and assumes each stage has one job: business development for search, the account executive for bargaining, the solutions engineer for policing. A deal that starts at policing needs the policing job done during consideration, and the standard organization sends its engineer to the demo as support for the account executive rather than as the owner of the job deciding the deal. Staffing by where the sale starts means deploying each job at the stage the market's positions put it, with the owner of the deciding job leading the stage where it arises.
+
+**Whether the owner travels.** Two pressures pull opposite ways. Handing off keeps a scarce specialist from being tied up in one long deal. And each handoff is a seam where what one owner learned fails to travel, so the seller's gap reopens at once, the same discrete event a departed champion is on the buyer's side. A long deal adds a third pressure: discovery drifts. What the seller learned of the buyer's environment early goes stale over the cycle, and the fit itself drifts as the buyer changes ([02-mathematical-models.md](./02-mathematical-models.md) section 5.3). So keeping one owner throughout does not keep the discovery fresh, and in a long deal early discovery decays whoever holds it.
+
+Section 5.6 of the same file resolves it. Do the work that decides viability early and keep it bounded, settle the allocation, and time the full discovery to just before the investment is sunk. The specialist then works the deal twice, at the proof and at the sinking, and hands off between the two through an artifact that carries what was learned, the Contextual Blueprint, rather than staying in the deal throughout. Where the cycle is short against the drift, one owner carrying the job from proof through implementation costs little and removes the seam.
+
+**Account management is the maintenance job.** After purchase the jobs repeat in small. At renewal the buyer reconsiders, and account management, a seller investment funded while the renewal margin covers it ([02-mathematical-models.md](./02-mathematical-models.md) section 5.7), holds the gaps down between renewals.
+
+*Falsifier.* At equal positions, deals whose sale starts at policing and whose policing owner led during consideration should convert and launch no better than deals where the engineer arrived at the demo as support. And in long cycles, deals whose full discovery was re-run just before the investment was sunk should show as many divergent steps after go-live as deals whose discovery was done only early. Either finding would mean the stages carry the work and the jobs do not.
+
+---
+
+## 10. What this does not settle
 
 Each item points at its entry in [07-open-questions.md](./07-open-questions.md) where one exists.
 
@@ -190,13 +227,13 @@ Each item points at its entry in [07-open-questions.md](./07-open-questions.md) 
 - **Whether the largest position is the right rule.** Starting the sale at the cost nearest its participation threshold was agreed as the starting reading in Constitution 4.0, to be revisited once the zones are calibrated. The falsifier is in the Constitution: deals where the first investment went to the largest $r_k$ convert no faster than matched deals where it went elsewhere.
 - **Where the thresholds sit.** Both edges on every count are chosen, placed on the boundaries of the score bands earlier versions used, and [06-calibration.md](./06-calibration.md) records them as chosen. The counts are observations. The edges are not.
 - **Whether the position is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different positions, because the incumbent's adaptation is already sunk. The instrument scores the deal rather than a vendor, which is a decision rather than an oversight: a vendor-scored instrument owes the reader an account of how each vendor wins, and that account does not exist yet. Until it does, an incumbent counting a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
-- **Whether the coupling between costs moves where the sale starts.** Misfit raises the policing cost and creates a bargaining cost at once, so the reading partly depends on when it is taken. Open question 3.
+- **How early a reading can be trusted.** Misfit raises the policing cost and creates a bargaining cost at once, and the Constitution now says the bargaining count is read after exposure and the reading is a lower bound until fit is verified ([02-mathematical-models.md](./02-mathematical-models.md) section 3.5). A seller reading before discovery should expect the start to move toward implementation or consensus, never toward search. Whether induced vetoes appear at the rate the count predicts is a calibration question, item 3 in [06-calibration.md](./06-calibration.md) section 4.1.
 - **How to read a cost floor apart from the deal's own cost.** The calculator reads each cost's position and cannot yet say how much of it the market set. Open question 34.
 - **Whether the three drift rates behave as one mechanism.** $\gamma_{consensus}$ is the only one with a discrete field event attached, an occupant change. The other two are asserted to be continuous and nothing tests that. Open question 15.
 
 ---
 
-## 10. The incumbent vocabulary
+## 11. The incumbent vocabulary
 
 Everyone arriving here knows what Product-Led Growth means. This section says where it and its neighbours land, and where they mislead. Nothing here is used to decide anything.
 

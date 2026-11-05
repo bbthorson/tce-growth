@@ -92,7 +92,7 @@ One decision role decides alone. Above seven, the coalition does not converge wi
 
 $$\hat{\Delta}_{consensus} = 1 - \frac{\text{roles with a documented measured objective}}{\text{roles that can say no}}$$
 
-This is a proxy. Axiom III's bargaining gap is the share of decision roles whose occupant has stated their own exposure, and [07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 14 records the difference until the consensus block reads it directly. What a stakeholder says in a room containing the others is not evidence. Stated positions converge under social pressure and measured objectives do not, so a committee where nobody voices dissent is as consistent with suppressed variance as with agreement. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.2 carries the argument and [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md) the research.
+This is a proxy. Axiom III's bargaining gap is the share of decision roles whose occupant has stated their own exposure, and [07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 2 records the difference until the consensus block reads it directly. What a stakeholder says in a room containing the others is not evidence. Stated positions converge under social pressure and measured objectives do not, so a committee where nobody voices dissent is as consistent with suppressed variance as with agreement. [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.2 carries the argument and [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md) the research.
 
 ### 1c. Implementation
 
@@ -117,7 +117,7 @@ This is a seller-side reading and it is provisional. It measures $I_{seller}$ on
 
 ### 1d. Frequency
 
-**A classification, not a count.** Frequency is how often the same two parties transact. With the specific-exposure reading in Step 2, it selects the governance form and decides whether the seller's investment can be amortized at all. See [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md).
+**A classification, not a count.** Frequency is how often the same two parties transact. With the specific-exposure reading in Step 2, it selects the governance form and decides whether the seller's investment can be amortized at all. See [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md). The readings are proxies for each party's stake at the next boundary read against the two quasi-rents, and section 1 of that file gives the boundaries. Nobody can yet measure the stake directly, so classify from the evidence column.
 
 | Reading | Condition | Evidence |
 |---|---|---|
