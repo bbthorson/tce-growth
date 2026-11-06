@@ -601,6 +601,34 @@ def joint_surplus(v_switch, c_deliver, buyer_investments, seller_investments,
             - _require_loss(seller_loss, "seller"))
 
 
+def holdup_part(gap_chance, holdup):
+    """The part of a future loss the other side takes, section 1.3.
+
+        L_hold = (1 - pi_gap) * H_p
+
+    Hold-up counts only where the fit did not fail, so this is the second
+    term of section 5.5's L_p = Q_p * pi_gap + (1 - pi_gap) * H_p.
+    """
+    if not 0.0 <= gap_chance <= 1.0:
+        raise ValueError("a chance lies on [0, 1]")
+    if holdup < 0:
+        raise ValueError("hold-up cannot be negative")
+    return (1.0 - gap_chance) * holdup
+
+
+def value_created(v_switch, c_deliver, buyer_investments, seller_investments,
+                  buyer_fit_loss, seller_fit_loss):
+    """What the deal creates, section 1.3.
+
+        W = V_switch - C_deliver - sum_k (I_b,k + I_s,k) - L_fit,b - L_fit,s
+
+    Hold-up is a transfer, so only the loss a failed fit destroys enters.
+    The two conditions sum to W less the hold-up each side fears.
+    """
+    return joint_surplus(v_switch, c_deliver, buyer_investments,
+                         seller_investments, buyer_fit_loss, seller_fit_loss)
+
+
 def investment_shift_gain(work_moved, buyer_unit_cost, seller_unit_cost,
                           change_in_buyer_loss=0.0, change_in_seller_loss=0.0):
     """Change in joint surplus from moving work buyer to seller, section 1.4.
