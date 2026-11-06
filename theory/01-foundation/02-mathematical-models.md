@@ -53,13 +53,19 @@ $$S_b + S_s = V_{switch}(t) - C_{deliver} - \sum_{k} \left(I^b_k + I^s_k\right) 
 
 $P$ is gone, because price is a transfer: what leaves the buyer arrives at the seller. Price belongs in both conditions and in neither party's cost of transacting. Three results follow from the accounting rather than from any coefficient.
 
-**The three levers.** A seller can move a deal three ways. A discount never raises the joint surplus, and the other two raise it only by lowering $\pi$.
+**Hold-up is a transfer too.** Section 5.5 splits each party's future loss into the part a failed fit destroys and the part the other side can take at a renegotiation: $L_p = L^{fit}_p + L^{hold}_p$, with $L^{fit}_p = Q_p\,\pi^{gap}_p$ and $L^{hold}_p = (1 - \pi^{gap}_p)\,H_p$. What one side takes, the other receives, so only the fit loss enters what the deal creates. The two conditions as written count the hold-up each side fears and leave out the take the other side plans, so
 
-| Lever | What it moves | Effect on $S_b + S_s$ |
+$$W = V_{switch}(t) - C_{deliver} - \sum_{k} \left(I^b_k + I^s_k\right) - L^{fit}_b - L^{fit}_s, \qquad S_b + S_s = W - L^{hold}_b - L^{hold}_s$$
+
+Where each side expects exactly the take the other plans, that take belongs in the taker's condition, the sum is $W$, and some price closes any deal with $W > 0$. Hold-up then costs both sides through the specific investment a party declines to sink because it keeps only part of its return (Grossman and Hart 1986), which lowers $W$ itself. Where one side fears more than the other plans, the difference is the *hold-up wedge*, the premise's two readings applied to $H$, and a deal with $W > 0$ can fail one side's condition because of it. A posted bond, staged fees or an allocated right close the wedge without changing $W$. A reciprocal specific investment closes it too, but it is itself sunk, so it lowers $W$ unless it is productive. Haggling over the renegotiation also destroys value, and it is not modeled here. Where the bond condition holds, both $H_p$ are zero, the wedge closes, and $S_b + S_s = W$, which is what every worked example assumes.
+
+**The three levers.** A seller can move a deal three ways. A discount never raises what the deal creates, and the other two raise it only by lowering $\pi^{gap}$.
+
+| Lever | What it moves | Effect on $W$ |
 |---|---|---|
 | Discount | $P$ | None. Surplus moves from seller to buyer one for one. |
-| Guarantee, clawback, hostage | Part of $L_b$ onto the seller, and $\pi$ | None for the transfer itself. Rises by as much as the commitment lowers $\pi$, by changing what the seller does or by revealing which sellers can afford to offer it |
-| Verification | $\pi$ for whichever party cannot verify | Rises. A cost both sides were carrying shrinks. |
+| Guarantee, clawback, hostage | Part of $L_b$ onto the seller, $\pi^{gap}$, and $H_p$ | None for the transfer itself. Rises by as much as the commitment lowers $\pi^{gap}$, by changing what the seller does or by revealing which sellers can afford to offer it. A bond or staged fees that lower $H_p$ close the hold-up wedge without changing $W$. A reciprocal specific investment also adds to the other side's $L^{fit}$ |
+| Verification | $\pi^{gap}$ for whichever party cannot verify | Rises. A cost both sides were carrying shrinks. |
 
 **A guarantee is part transfer and part verification.** The transfer moves loss without shrinking it. The selection effect is Spence's: a seller confident of delivering expects to pay little on its guarantee and a weak one expects to pay the full penalty, so the offer itself narrows the buyer's half of the implementation gap. The sorting is clean only when every seller can carry the penalty, because a guarantee also screens on balance sheet, and only when the outcome is the seller's to deliver, because a buyer that under-resources adoption makes the seller pay for its slack. [costly-signals.md](../02-research/costly-signals.md) carries the argument.
 

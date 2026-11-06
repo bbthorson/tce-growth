@@ -245,7 +245,8 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 | Term | Identifier | Canonical source |
 |---|---|---|
 | **The two conditions** | One per party, $S_b$ and $S_s$. A deal happens when both are positive and no cost keeps the buyer out. | [Constitution, Part II](./00-tcg-constitution.md) |
-| **Price as a transfer** | Price cancels when the two conditions are added, so it is not a transaction cost. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
+| **Price as a transfer** | Price cancels when the two conditions are added, so it is not a transaction cost. Its size against the buyer's spend thresholds still sets who must approve. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
+| **Hold-up wedge** | The hold-up one side fears beyond what the other plans to take. The two conditions as written sum to what the deal creates, $W$, less the hold-up feared, so a deal that creates value can fail one side's condition. A bond, staged fees or an allocated right closes it without changing $W$. | [02-mathematical-models.md](./02-mathematical-models.md) section 1.3 |
 | **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of what transacting costs. | [05-governance-forms.md](./05-governance-forms.md) |
 | **Cost to serve is directional** | The seller's investment falls on whichever cost it pays down, so two markets with the same cost of sale can demand it in different places. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | **Pursuit** | The seller's condition asked of a population: whether buyers' contract value and frequency can recover the investment their costs demand. | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |

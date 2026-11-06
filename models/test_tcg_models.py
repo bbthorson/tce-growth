@@ -129,6 +129,35 @@ class TestTwoConditions(unittest.TestCase):
         self.assertGreater(m.joint_surplus(v_switch, c_deliver, i_b, i_s,
                                            0.0, 0.0), 0.0)
 
+    def test_hold_up_is_a_wedge_and_not_value_destroyed(self):
+        """Section 1.3: the conditions sum to W less the hold-up each side
+        fears. A posted bond or allocated right that removes the hold-up closes
+        the wedge and leaves what the deal creates unchanged."""
+        q_b, pi_gap_b, h_b = 0.6, 0.2, 0.15
+        fit_b = q_b * pi_gap_b
+        hold_b = m.holdup_part(pi_gap_b, h_b)
+        args = dict(v_switch=2.0, c_deliver=0.4,
+                    buyer_investments=(0.1, 0.2, 0.3),
+                    seller_investments=(0.0, 0.1, 0.2))
+        w = m.value_created(buyer_fit_loss=fit_b, seller_fit_loss=0.05,
+                            **args)
+        price = 1.0
+        held_up = (m.buyer_condition(args["v_switch"], price,
+                                     args["buyer_investments"],
+                                     fit_b + hold_b)
+                   + m.seller_condition(price, args["c_deliver"],
+                                        args["seller_investments"], 0.05))
+        self.assertAlmostEqual(held_up, w - hold_b)
+        # The same loss through section 5.5's combined chance.
+        pi_b = m.loss_chance_with_holdup(pi_gap_b, h_b, q_b)
+        self.assertAlmostEqual(m.future_loss(q_b, pi_b), fit_b + hold_b)
+        # A posted bond drives H_b to zero at no cost: the sum rises to W.
+        bonded = (m.buyer_condition(args["v_switch"], price,
+                                    args["buyer_investments"], fit_b)
+                  + m.seller_condition(price, args["c_deliver"],
+                                       args["seller_investments"], 0.05))
+        self.assertAlmostEqual(bonded, w)
+
     def test_moving_work_changes_only_the_split_at_equal_cost(self):
         """Section 1.4: equal unit costs and no change in future loss."""
         self.assertEqual(m.investment_shift_gain(10.0, 0.02, 0.02), 0.0)
