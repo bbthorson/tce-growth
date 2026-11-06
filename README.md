@@ -14,7 +14,7 @@ Part of each cost is out of any one seller's reach. Channel noise, the buyer's p
 
 The named motions are named after the cost a seller pays down first, and they are not competing philosophies. A sale that starts at finding and comparing is search-led. One that starts at getting the buyer's own people to decide is consensus-led. One that starts at whether the seller will deliver and the product will work here is implementation-led. A market where the buyer needs no seller help at all is [Turnkey](#turnkey-and-routing-outside-it). The familiar labels only partly line up. Sales-Led Growth is narrower than search-led, Product-Led Growth overlaps Turnkey without equaling it, and consensus-led has no established name at all, which is a finding rather than an omission. [01-motions.md section 10](./theory/01-foundation/01-motions.md) carries the map. Choosing between these motions as though they were strategies is choosing a label before measuring the thing the label is supposed to describe.
 
-Three axioms carry the argument, each answering one decision in time order: should I use the market, what will it cost me today, and what might it cost me later. They are stated [below](#start-here-the-three-axioms).
+Three axioms carry the argument, each answering one question at one level: can a market exist, what has to be paid down at time 0, and what prevents churn and contraction at time 1. One premise sits under all three. The seller can absorb part of each cost the buyer carries, which is what sales and account management are, and each party acts on what it can check. The axioms are stated [below](#start-here-the-three-axioms).
 
 Value sits above the axioms as a standing assumption. What the change can be worth to a buyer, its *realizable value*, is set by the offer and the buyer's situation. Within the sale the seller moves only the buyer's *recognized value*, its estimate of that worth. Evidence the buyer can check narrows the estimate and lowers the search cost. A claim that inflates it is persuasion, and the buyer carries the gap as a future cost until delivery exposes it. A discount moves surplus between the parties. Verification adds to it, but only when it lowers a loss both sides carry by more than the verification costs.
 
@@ -39,23 +39,23 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 Each has a README listing what is inside it. For `tools/` it is [tools/linting/README.md](./tools/linting/README.md).
 
 > [!NOTE]
-> **The practice layer is frozen.** Constitution 5.2 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the 5.0 axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step. It retires to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
+> **The practice layer is frozen.** Constitution 6.0 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the current axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step, and [CONSTITUTION-6.0-PROPOSAL.md](./CONSTITUTION-6.0-PROPOSAL.md) records the 6.0 restatement. Both retire to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
 
 ---
 
 ## Start here: the three axioms
 
-Find the decision you are making, then open what the row points to. The statements are canonical. If this table and the [Constitution](./theory/01-foundation/00-tcg-constitution.md) ever disagree, the Constitution wins.
+Find the question you are asking, then open what the row points to. Each row condenses the statement in the [Constitution](./theory/01-foundation/00-tcg-constitution.md), and if the two ever disagree, the Constitution wins.
 
-| Axiom | Decision | Statement | Go here |
+| Axiom | Question | Statement, condensed | Go here |
 |---|---|---|---|
-| **I. Law of Transaction Cost Composition** | Should I use the market? | Using the market costs the buyer three things beyond price: search and information, bargaining and decision, and policing and enforcement. A buyer will not use the market while any one of them, as the buyer expects it, exceeds what it will bear, however low the other two, and among costs it will bear, their relative size is where the sale starts. | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
-| **II. Law of Transaction Investment** | What will it cost me today? | Each of those costs is paid down by an investment from the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return. | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
-| **III. Law of Future Cost** | What might it cost me later? | Whatever a party sinks that is worth less outside this relationship exposes it to what it cannot verify or enforce later. That exposure is a future cost, it rebuilds unless maintained, and its allocation must be settled before the investment is sunk. | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **I. Law of Transaction Cost Composition** | Can a market exist? | Each side has a limit. A buyer enters only while every cost it expects to carry, after what the seller absorbs, sits below what it will bear, and easing the other two costs does not bring back one above it. A seller enters only while its cost of sale is repaid over the relationship. Part of each cost is set outside any deal. | [Deal Triage Calculator](./practice/deal-triage-calculator.md), then [01-motions.md](./theory/01-foundation/01-motions.md) |
+| **II. Law of Transaction Investment** | What has to be paid down at time 0? | The cost the buyer expects nearest its limit decides whether it proceeds at all, so the seller absorbs that one first, in fact and in what the buyer can see. That cost names the motion. Each party goes ahead only if its own share is covered by its own return. Seller spending adds value only when it is cheaper than the buyer's own work or lowers the cost at time 1, so without retention it is a price cut. | [Contextual Blueprint](./practice/implementation-motion/01-discovery-contextual-blueprint.md), [04-seller-surplus-model.md](./theory/01-foundation/04-seller-surplus-model.md) |
+| **III. Law of Future Cost** | What prevents churn and contraction at time 1? | Whatever a party sinks that pays off only in this relationship exposes it to what it cannot check or stop later. Time 1 is decided at time 0: the parties contract for what they can foresee and plan a standing review for what they cannot, because what was verified goes stale and fit drifts. | [Red Team](./practice/implementation-motion/02-validation-red-team-protocol.md), [MIP](./practice/implementation-motion/03-closing-mutual-implementation-plan.md), [05-governance-forms.md](./theory/01-foundation/05-governance-forms.md), [Sustaining Adoption Review](./practice/implementation-motion/04-sustaining-adoption-review.md) |
 
 The field calls the three costs *search*, *consensus* and *implementation*, and the notation keeps those subscripts.
 
-Two corollaries added in 5.0 carry much of the practical weight. Under Axiom II, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **enforcement governs what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment, or by a right settled in advance, such as an option to renew at a preset price. Either one changes what defection costs at every later boundary, which a one-off discount does not.
+Two corollaries added in 5.0 carry much of the practical weight. Under Axiom I, **every cost has a cost floor**, the part introduced above that no seller lowers within one deal. Under Axiom III, **enforcement governs what verification cannot**: a party that can see the other side refuse to adapt and cannot stop it is protected by something the other side loses by defecting, such as a bond, staged fees or a reciprocal specific investment, or by a right settled in advance, such as an option to renew at a preset price. Either one changes what defection costs at every later boundary, which a one-off discount does not.
 
 ## Looking for something specific
 
@@ -84,9 +84,9 @@ $$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} 
 - **$P$** = price over the relationship. It appears in both conditions and cancels when they are added, because price is a transfer and not a transaction cost.
 - **$I^b_k$, $I^s_k$** = what the buyer and the seller invest today against cost $k \in \{search, consensus, implementation\}$ (Axiom II)
 - **$L_b$, $L_s$** = each party's expected future loss, its specific exposure times the chance the exposure does not come back (Axiom III).
-- **$r_k$** = where cost $k$ sits between the level the buyer can pay down alone and the level that keeps the buyer out. Above 1, the buyer does not enter the market. The sale starts at the largest (Axiom I).
+- **$r_k$** = where cost $k$ sits between the level the buyer can pay down alone and the level that keeps the buyer out. Above 1, the buyer does not enter the market (Axiom I). The sale starts at the largest (Axiom II).
 
-The equations are in [Constitution Part III](./theory/01-foundation/00-tcg-constitution.md).
+The equations are in [Constitution Part II](./theory/01-foundation/00-tcg-constitution.md).
 
 ### Turnkey, and routing outside it
 
@@ -124,5 +124,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 5.2 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Version:** 6.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
 **Last updated:** 2026-11-03

@@ -14,7 +14,7 @@ status: active
 
 The canonical TCG framework. Start here if you're new to TCG.
 
-- [00-tcg-constitution.md](./01-foundation/00-tcg-constitution.md) — Three standing assumptions, three axioms as three decisions in time order, the derivations table, and the two conditions, one per party.
+- [00-tcg-constitution.md](./01-foundation/00-tcg-constitution.md) — Three standing assumptions, the premise, three axioms as three questions at three levels (market, deal, relationship), and the two conditions, one per party.
 - [01-motions.md](./01-foundation/01-motions.md) — The motion as where the sale starts, Turnkey as a market condition, and the map onto incumbent vocabulary.
 - [02-mathematical-models.md](./01-foundation/02-mathematical-models.md) — Functional forms behind the variables in the Constitution.
 - [03-glossary-and-notation.md](./01-foundation/03-glossary-and-notation.md) — Look up any symbol or term, and find where it is canonically defined.

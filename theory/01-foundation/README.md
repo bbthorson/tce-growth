@@ -14,7 +14,7 @@ The three decisions are the framework's primary index: should the buyer use the 
 
 ## Reading order
 
-1. **[00-tcg-constitution.md](./00-tcg-constitution.md)**: three standing assumptions, two definitions, the three axioms as three decisions in time order, the derivations table, and the two conditions, one per party, that tie them together. The value-decay assumption carries one figure and Axiom III carries one, all generated from [`models/`](../../models/README.md). Everything else in the repo traces to this file.
+1. **[00-tcg-constitution.md](./00-tcg-constitution.md)**: three standing assumptions, two definitions, the premise, the three axioms as three questions at three levels (market, deal, relationship), and the two conditions, one per party, that tie them together. Each axiom carries one figure, all generated from [`models/`](../../models/README.md). Everything else in the repo traces to this file.
 2. **[01-motions.md](./01-motions.md)**: derives the motion from where the sale starts, the cost nearest its own participation threshold, says what each motion deploys and why Turnkey is a market condition that erodes through entry, and closes with the map onto Product-Led, Sales-Led and the rest of the incumbent vocabulary. Section 9 records what it does not settle.
 3. **[02-mathematical-models.md](./02-mathematical-models.md)**: *(reference)* functional forms behind the two conditions, the gaps, future loss and the thresholds, and a record of the forms Constitution 4.0 retired.
 4. **[03-glossary-and-notation.md](./03-glossary-and-notation.md)**: *(reference)* every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical.

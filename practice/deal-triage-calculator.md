@@ -285,9 +285,24 @@ Re-count at every artifact boundary and keep the old rows. The sequence of readi
 
 ---
 
+## Reading a stall
+
+Moved here from the Constitution in 6.0, which keeps the short form: the three axioms' questions asked in order. This is the long form. Walk the terms of the two conditions in axiom order and stop at the first that fails.
+
+1. **Is any cost keeping the buyer out?** Pull it back into range or decline. No amount of work on the other two reaches it. If its cost floor is what holds it there, the remedy is an investment shared across deals or another market. (Axiom I.)
+2. **Is the seller working on the cost nearest its threshold?** A cost that started there may not be there now. (Axiom II.)
+3. **Does each party's share of today's investment fit inside its own return?** If not, move investment to the party that does the work more cheaply or whose doing it lowers a future loss, or decline. (Axiom II.)
+4. **Is anything specific being sunk, and was its allocation settled first?** A specific one-shot deal is the case to restructure as recurring or decline, not to run lighter. (Axiom III.)
+5. **Which party cannot verify what, and is it rebuilding faster than discovery closes it?** A departed champion lands in the bargaining gap and no amount of technical proof reaches it. (Axiom III.)
+6. **Does the buyer accept the case and still defer?** They are pricing the right to wait. Stage the commitment rather than re-arguing the return. (Axiom III.)
+7. **Is value decaying faster than the costs fall?** Name a catalyst or close faster. (Second standing assumption.)
+8. **Has any party's stake fallen below the threshold, or has any party stopped re-earning credibility?** The relationship decays regardless of the deal's economics. Check that a standing review was agreed and is being held. (Axiom III.)
+
+---
+
 ## Related
 
-- **Theory:** [TCG Constitution](../theory/01-foundation/00-tcg-constitution.md). Axiom I supplies the thresholds and where the sale starts. Axiom III supplies the specific exposure, the gate and the governance forms.
+- **Theory:** [TCG Constitution](../theory/01-foundation/00-tcg-constitution.md). Axiom I supplies the thresholds, and Axiom II where the sale starts. Axiom III supplies the specific exposure, the gate and the governance forms.
 - **Derivation:** [01-motions.md](../theory/01-foundation/01-motions.md) maps the motions onto where the sale starts.
 - **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.4, 3.1 and 6 consume these counts.
 - **Provenance:** [06-calibration.md](../theory/01-foundation/06-calibration.md) records every edge above as chosen.
