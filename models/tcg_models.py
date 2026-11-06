@@ -563,7 +563,7 @@ def _require_loss(loss, who):
 
 
 def buyer_condition(v_switch, price, buyer_investments, buyer_loss):
-    """The buyer's condition, Constitution Part III and section 1.1.
+    """The buyer's condition, Constitution Part II and section 1.1.
 
         S_b = V_switch(t) - P - sum_k I_b,k - L_b
 
@@ -574,7 +574,7 @@ def buyer_condition(v_switch, price, buyer_investments, buyer_loss):
 
 
 def seller_condition(price, c_deliver, seller_investments, seller_loss):
-    """The seller's condition, Constitution Part III and section 1.1.
+    """The seller's condition, Constitution Part II and section 1.1.
 
         S_s = P - C_deliver - sum_k I_s,k - L_s
 

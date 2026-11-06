@@ -237,6 +237,8 @@ $$\tilde{V}_{solution}(t) = \tilde{V}_0 \cdot e^{-\delta t}$$
 
 Where $\tilde{V}_0$ is the buyer's recognized value at the triggering event and $t$ is elapsed months. This is the value-decay half of the Decay Clock, the second standing assumption in the Constitution.
 
+![Two exponential decay curves falling toward a floor at the value of the next best alternative. Organizational inertia alone reaches the floor in the second month. A named external catalyst holds value above it until the eleventh.](./assets/value-decay.svg)
+
 ### 4.2 Structural form of the decay rate
 
 The Constitution treats $\delta$ as a parameter. It has structure:
@@ -427,7 +429,7 @@ $$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 | above zero and at most one | Needs seller investment |
 | $r_k > 1$ | Keeps the buyer out |
 
-**The buyer reads its own positions.** Write $\tilde{F}_k$ for the recognized cost, the buyer's estimate of $F_k$ before it meets the seller, and read it against the same thresholds:
+**The buyer reads its own positions.** Write $\tilde{F}_k$ for the recognized cost, what the buyer expects $F_k$ to be, and read it against the same thresholds:
 
 $$\tilde{r}_k = \frac{\tilde{F}_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 
@@ -475,7 +477,7 @@ Until then, treat every output as a structured comparison between deals rather t
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Part III carries the two conditions.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Part II carries the two conditions.
 - [01-motions.md](./01-motions.md) — Motion selection, which consumes the positions in section 6.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's condition in full, including the repeated game.
 - [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing the implementation gap.

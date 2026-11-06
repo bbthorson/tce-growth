@@ -16,11 +16,11 @@ A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market
 
 ## Conceptual architecture
 
-**The source of truth is `theory/01-foundation/00-tcg-constitution.md`**: three standing assumptions and three axioms. Each axiom answers one decision, in time order, with a falsifier:
+**The source of truth is `theory/01-foundation/00-tcg-constitution.md`**: three standing assumptions, a premise and three axioms. The premise: buying costs the buyer three things beyond price (search and information, bargaining and decision, policing and enforcement), the seller can absorb part of each (sales before commitment, account management after), and each party acts on what it can check. Each axiom answers one question at one level, with a falsifier:
 
-- **I, Composition. Should I use the market?** Using it costs the buyer three things beyond price: search and information, bargaining and decision, policing and enforcement. Any one can keep the buyer out, and the sale starts at the cost nearest its own threshold.
-- **II, Transaction Investment. What will it cost me today?** Each cost is paid down by the buyer, the seller or both, and each party goes ahead only when its own share is covered by its own return.
-- **III, Future Cost. What might it cost me later?** Whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify or enforce, and who carries that has to be settled before the investment is sunk. Specificity, the gate, and the governance forms live here.
+- **I, Composition. Can a market exist?** Each side has a limit. Any one cost the buyer expects past its threshold keeps it out, however low the other two. A seller stays out where its cost of sale is not repaid over the relationship. Cost floors and Turnkey live here.
+- **II, Transaction Investment. What has to be paid down at time 0?** The cost the buyer expects nearest its threshold decides whether it proceeds, so the seller absorbs it first, and that cost names the motion. Each party goes ahead only when its own share is covered by its own return. Seller spending creates value only when it is cheaper than the buyer's or lowers the cost at time 1.
+- **III, Future Cost. What prevents churn and contraction at time 1?** Whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify or enforce. Contract what can be foreseen, before the investment is sunk, and plan a standing review for what cannot. Specificity, the gate, and the governance forms live here.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 

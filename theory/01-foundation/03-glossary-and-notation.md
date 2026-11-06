@@ -78,7 +78,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $\tau^{self}_k$ | Self-serve threshold for cost $k$. Below it the buyer pays the cost down alone. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $\tau^{part}_k$ | Participation threshold for cost $k$. Above it the buyer does not enter the market. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $r_k$ | Cost $k$'s position between its own two thresholds, $(F_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$. Dimensionless. The sale starts at the largest. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
-| $\tilde{F}_k$, $\tilde{r}_k$ | Recognized cost and its position: the buyer's estimate of cost $k$ before it meets the seller, read against the same thresholds. Participation and the decision to begin discovery are made on $\tilde{r}_k$. Before any seller is met it is the category prior. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $\tilde{F}_k$, $\tilde{r}_k$ | Recognized cost and its position: what the buyer expects cost $k$ to be, read against the same thresholds. Participation and the decision to begin discovery are made on $\tilde{r}_k$. Before any seller is met it is the category prior. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $n_{search}$, $n_{consensus}$, $n_{impl}$ | The calculator's three counts, each read as $F_k$ against its own two edges. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | $n_{exposure}$ | Integration points, changed workflows and divergent steps. Read only where the gate fails, and never added to a cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 
@@ -192,7 +192,7 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 **6. The $C$ terms carry their party.** $C_{deliver}$ and bare $C_{invest}$ are what the seller spends. $C^{p}_{invest}$ is what either party sinks, and for the buyer it is the integration built and the workflows rewired. $V_{contract}$ is seller revenue, the price $P$ seen from the seller's side, and not a value the buyer receives. A figure quoted without its party is unreadable.
 
-**7. Four surpluses and three probabilities share letters.** $S_b$ and $S_s$ are the two conditions of Part III, and both must hold. $S_{seller}$ is the seller surplus model's form of $S_s$. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes, $p_m$ is the probability a stage completes, and $\pi_p$ is the chance a party's exposure does not come back. The $p_{close}$ and $p_m$ pair was caught while drafting [04-seller-surplus-model.md](./04-seller-surplus-model.md) rather than in use.
+**7. Four surpluses and three probabilities share letters.** $S_b$ and $S_s$ are the two conditions of Part II, and both must hold. $S_{seller}$ is the seller surplus model's form of $S_s$. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes, $p_m$ is the probability a stage completes, and $\pi_p$ is the chance a party's exposure does not come back. The $p_{close}$ and $p_m$ pair was caught while drafting [04-seller-surplus-model.md](./04-seller-surplus-model.md) rather than in use.
 
 ---
 
@@ -200,13 +200,13 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 One line each, then the canonical source. The line identifies the term. The source defines it.
 
-### The three decisions
+### The three axioms
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Axiom I, Law of Transaction Cost Composition** | Should I use the market? The buyer's three costs beyond price, a participation threshold for each, and where the sale starts. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom II, Law of Transaction Investment** | What will it cost me today? Each cost is paid down by investment from either party, and each goes ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom III, Law of Future Cost** | What might it cost me later? Specific investment exposes a party to what it cannot verify or enforce, and the allocation is settled before the investment is sunk. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom I, Law of Transaction Cost Composition** | Can a market exist? A participation threshold for each of the buyer's three costs, the seller's limit, and cost floors. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom II, Law of Transaction Investment** | What has to be paid down at time 0? Where the sale starts, which names the motion, and each party going ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom III, Law of Future Cost** | What prevents churn and contraction at time 1? Specific investment exposes a party to what it cannot verify or enforce. What can be foreseen is contracted before the investment is sunk, and a standing review plans for what cannot. | [Constitution, Part I](./00-tcg-constitution.md) |
 
 ### Definitions
 
@@ -244,10 +244,10 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **The two conditions** | One per party, $S_b$ and $S_s$. A deal happens when both are positive and no cost keeps the buyer out. | [Constitution, Part III](./00-tcg-constitution.md) |
+| **The two conditions** | One per party, $S_b$ and $S_s$. A deal happens when both are positive and no cost keeps the buyer out. | [Constitution, Part II](./00-tcg-constitution.md) |
 | **Price as a transfer** | Price cancels when the two conditions are added, so it is not a transaction cost. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
 | **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of what transacting costs. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Cost to serve is directional** | The seller's investment falls on whichever cost it pays down, so two markets with the same cost of sale can demand it in different places. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
+| **Cost to serve is directional** | The seller's investment falls on whichever cost it pays down, so two markets with the same cost of sale can demand it in different places. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | **Pursuit** | The seller's condition asked of a population: whether buyers' contract value and frequency can recover the investment their costs demand. | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
 
 ### Axiom III concepts

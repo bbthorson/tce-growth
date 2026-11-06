@@ -180,6 +180,6 @@ Four consequences.
 ## Related
 
 - **Research:** [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) for quasi-rents and supplier exposure, [real-options.md](../02-research/real-options.md) for staging under irreversibility, [process-misfit.md](../02-research/process-misfit.md) for what drives $C_{deliver}$.
-- **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part III.
+- **Buyer-side model:** [00-tcg-constitution.md](./00-tcg-constitution.md) Part II.
 - **Functional forms:** [02-mathematical-models.md](./02-mathematical-models.md).
 - **Staging in practice:** [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).
