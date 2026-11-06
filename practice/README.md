@@ -7,7 +7,7 @@ status: under-review
 # Practice
 
 > [!NOTE]
-> **Being rebuilt for Constitution 6.1.** The [Deal Triage Calculator](./deal-triage-calculator.md) is rebuilt and active. Every other file derives from Constitution 4.1 and stays as written until its turn in the rebuild. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
+> **Being rebuilt for Constitution 6.1.** The [Market Reading](./00-market-reading.md) and the [Deal Triage Calculator](./deal-triage-calculator.md) are rebuilt and active. Every other file derives from Constitution 4.1 and stays as written until its turn. [The practice rebuild proposal](../PRACTICE-REBUILD-PROPOSAL.md) says which files are rebuilt, merged or archived, and in what order.
 
 **Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
 

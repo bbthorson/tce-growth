@@ -102,9 +102,11 @@ The reading reuses every edge in section 3.2 and adds one structural count of it
 
 | Parameter | Value | Provenance |
 |---|---|---|
-| Ledger rows | 12 | **Chosen.** The rows are argued from the three components and frequency. The count of them is an artifact of that argument, and the unfilled fraction is a share of it. |
+| Ledger rows | 13 | **Chosen.** The rows are argued from value, the three components and frequency. The count of them is an artifact of that argument. |
+| Rows in the unfilled fraction | 8 | **Chosen.** The rows the positions, the exposure reading and the pursue reading use. The rows nearly free to fill stay out, so the fraction cannot fall without research. |
 | Unfilled-fraction threshold | none | **Named, not valued.** The fraction is reported. A line needs data from populations entered and populations declined. |
 | Missing-capability range | 0 to 4 per component | **Convention.** The four activities below Read in the activity grid. |
+| Prior column | Read against the count's edges | **Convention.** The category prior is the buyer's expected cost before it meets any seller, read on the same edges as the deal-level expected count. |
 
 ### 3.3 The asymmetry scorecard ([Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md))
 
