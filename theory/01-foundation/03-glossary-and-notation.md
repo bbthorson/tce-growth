@@ -52,8 +52,8 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $V_{contract}$ | Contract value the seller receives. **Seller revenue, not buyer cost.** | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
 | $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$ or $\pi_p$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
 | $R_{redeploy}$ | Value of the seller's pre-signature work redeployed to other deals. The seller's case of $R^{p}_{redeploy}$. **Not $R$, the reward payoff.** | [04-seller-surplus-model.md §3](./04-seller-surplus-model.md) |
-| $p_m$ | Probability of achieving milestone stage $m$. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
-| $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
+| $p_m$ | Probability of achieving milestone stage $m$. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
+| $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
 | $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. **Not $r_k$, a cost's position.** | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
 | $C_{sustain}$ | Ongoing relationship investment per period. Holds the gaps down, and is distinct from $C_{deliver}$. | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
 | $\rho$ | Discount rate on future periods. **A policy choice, not $\delta_{discount}$.** | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
@@ -93,7 +93,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. The seller's loss runs on it. | [02-mathematical-models.md §2.2](./02-mathematical-models.md) |
 | $I_{buyer}$ | Buyer Uncertainty. Doubt about return variance and vendor capability. The buyer's loss runs on it. | [02-mathematical-models.md §2.3](./02-mathematical-models.md) |
 | $\Delta_A^*$ | Akerlof Exit Threshold, the research concept. In the framework, buyer exit is Axiom I's participation threshold. | [costly-signals.md](../02-research/costly-signals.md) |
-| $x_m$ | Residual uncertainty **entering** milestone stage $m$, already normalized. Not a separate quantity from $\hat{\Delta}_{implementation}$, which is where the chain starts. | [Milestone Valuation Model](../../practice/milestone-valuation-model.md) |
+| $x_m$ | Residual uncertainty **entering** milestone stage $m$, already normalized. Not a separate quantity from $\hat{\Delta}_{implementation}$, which is where the chain starts. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
 
 ### Future loss (Axiom III)
 
@@ -184,7 +184,7 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 **2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to the value-decay half of the Decay Clock, a standing assumption. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to the cooperation condition in Axiom III's frequency corollary. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [04-seller-surplus-model.md §7](./04-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
 
-**3. $\Delta_A$ and $\hat{\Delta}_{implementation}$ differ by an order of magnitude, and neither is the deal's gap.** The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw score on $[2, 10]$ that must be normalized before any equation accepts it. Raw scores drive the scorecard's field triage bands, and normalized values go into equations. The normalization and its rationale live in [02-mathematical-models.md §2.5](./02-mathematical-models.md). Separately, what the scorecard measures is the policing and enforcement cost's gap alone, the implementation gap in field terms, because that is the only pair that is buyer against seller. Constitution 4.0 retired the deal-level mean $\hat{\Delta}_A$, so there is no single deal gap to substitute the scorecard's output for. Each party's loss reads its own half.
+**3. $\Delta_A$ and $\hat{\Delta}_{implementation}$ differ by an order of magnitude, and neither is the deal's gap.** The model's scorecard form produces a raw score on $[2, 10]$ that must be normalized before any equation accepts it. The [Enforcement Ledger](../../practice/enforcement-ledger.md) reports the normalized value directly. The normalization and its rationale live in [02-mathematical-models.md §2.5](./02-mathematical-models.md). Separately, what the scorecard measures is the policing and enforcement cost's gap alone, the implementation gap in field terms, because that is the only pair that is buyer against seller. Constitution 4.0 retired the deal-level mean $\hat{\Delta}_A$, so there is no single deal gap to substitute the scorecard's output for. Each party's loss reads its own half.
 
 **4. Five quantities are written with $I$.** $I^b_k$ and $I^s_k$ are investments today, in contract value, under Axiom II. $I_{buyer}$ and $I_{seller}$ are the two halves of the implementation gap under Axiom III. $I_i$ is one decision role's utility from the initiative, on $[-1, 1]$. A superscript party and a subscript cost mark an investment. A subscript party marks uncertainty. A subscript index marks a role.
 
@@ -277,9 +277,9 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [02-validation-red-team-protocol.md](../../practice/implementation-motion/02-validation-red-team-protocol.md) |
-| **Mutual Implementation Plan (MIP)** | The bilateral governance instrument that distributes decision authority and stages commitment. | [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [Enforcement Ledger, Map](../../practice/enforcement-ledger.md) |
+| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
+| **Mutual Implementation Plan (MIP)** | The bilateral governance instrument that distributes decision authority and stages commitment. | [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
 | **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
 | **Count Variance** | The triage counts re-taken at the Adoption Review against the counts taken at triage. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [05-governance-forms.md](./05-governance-forms.md) section 5 |

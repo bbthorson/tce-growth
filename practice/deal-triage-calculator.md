@@ -116,11 +116,11 @@ An unnamed category or a missing channel puts search in the third row whatever t
 
 **The cost with the largest expected position before the buyer has entered discovery, and the largest measured position after.** Two costs at the same position are run together, and the instrument returns both. Date every reading and say what had been verified when it was taken. Until fit is verified on the buyer's own workflow, the policing and bargaining counts are lower bounds. Keep every old reading, because a reading written after the outcome cannot test the sequencing falsifier.
 
-**The gaps are not read here.** They change no output of this instrument. They are filled during discovery and drive the plan: [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 defines each, the decision-role map reads the bargaining gap, and the [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) reads the policing gap.
+**The gaps are not read here.** They change no output of this instrument. They are filled during discovery and drive the plan: [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 defines each, the decision-role map reads the bargaining gap, and the [Enforcement Ledger](./enforcement-ledger.md) reads the policing gap.
 
 ### 2b. The mandate
 
-**Is there a named executive sponsor, and is capital allocated to this initiative?** Read it apart from the decision roles and re-read it at every occupant change. A mandate that dissolves overrides every role, and its loss usually arrives looking like one person's departure. No mandate routes the deal to the Graveyard check in the [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) before any other investment.
+**Is there a named executive sponsor, and is capital allocated to this initiative?** Read it apart from the decision roles and re-read it at every occupant change. A mandate that dissolves overrides every role, and its loss usually arrives looking like one person's departure. No mandate routes the deal to the previous-attempts check in the [Enforcement Ledger](./enforcement-ledger.md)'s Map stage before any other investment.
 
 ### 2c. What the seller's spending must do, and who pays
 
@@ -187,7 +187,7 @@ Read the governance form off the exposure and the frequency together ([05-govern
 |---|---|---|---|
 | None | Any | **Market** | Standard terms, published pricing, no relationship apparatus. |
 | Specific | One-shot | **Trilateral** | Safeguards from outside the pair: fixed scope, external acceptance criteria, escrow or arbitration, a named third party who adjudicates. |
-| Specific | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md): staged gates with a priced right to stop at each, who carries which adaptation risk, and what each side loses by walking away. |
+| Specific | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./enforcement-ledger.md): staged gates with a priced right to stop at each, who carries which adaptation risk, and what each side loses by walking away. |
 | Specific | Continuous | **Bilateral, watching for unified** | The Mutual Implementation Plan, plus a reading of what the buyer's build alternative now costs, because rising specificity eventually makes integrating beat any contract. |
 
 Where one side sinks far more than the other, contract a hostage, such as fees staged against delivery, or an allocated right, such as an option to renew at a preset price or who owns the integration and the data. For any specific exposure, agree the standing review before anything is sunk, with what each side can invoke from it: a re-scoping, a change process, a right to stop. A review with nothing to invoke is a meeting ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 46).
@@ -209,7 +209,7 @@ Where one side sinks far more than the other, contract a hostage, such as fees s
 | A share in Step 2c that nothing covers | Move work to the party that does it more cheaply, restructure as recurrent, or decline. |
 | The specification is externally fixed by a mandate or a rigid request for proposal | Compete on unit economics, service levels and delivery credibility. Discovery has nothing left to win. |
 | The seller lacks the delivery depth the motion needs | Stop the motion until the capability is real. A Red Team run without it produces false confidence. |
-| The buyer asked for a pilot or proof of concept | Implementation-led, whatever was counted. A buyer requesting a pilot is reporting that it expects a policing cost it cannot verify alone. Pilots run under the [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md). |
+| The buyer asked for a pilot or proof of concept | Implementation-led, whatever was counted. A buyer requesting a pilot is reporting that it expects a policing cost it cannot verify alone. Pilots run under the [Red Team Protocol](./enforcement-ledger.md). |
 
 **Then the two readings.**
 
@@ -223,8 +223,8 @@ Where one side sinks far more than the other, contract a hostage, such as fees s
 | Sale starts at | Motion | Run |
 |---|---|---|
 | Search | **Search-led** | Category definition, commercial teaching, reference architectures, channel work. No instrument file in this repository. |
-| Consensus | **Consensus-led** | The decision-role map from the [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), each occupant one to one, then the [Red Team](./implementation-motion/02-validation-red-team-protocol.md), sized by the [Consensus Friction Calculator](./consensus-friction-calculator.md). No dedicated instrument exists ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 2). Say so rather than substituting the implementation chain because it is the one that exists. |
-| Implementation | **Implementation-led** | In sequence: [Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md), [Red Team](./implementation-motion/02-validation-red-team-protocol.md), [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md), [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
+| Consensus | **Consensus-led** | Map each decision role's exposure one to one, sized by the [Consensus Friction Calculator](./consensus-friction-calculator.md). The bargaining ledger that will carry the map is next in the [practice rebuild](../PRACTICE-REBUILD-PROPOSAL.md). No dedicated instrument exists ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 2). Say so rather than substituting the implementation chain because it is the one that exists. |
+| Implementation | **Implementation-led** | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, then the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
 | A tie | Both, run together | Do not pick one and call it the motion. |
 
 **Possible over-frictioning.** Implementation needs investment and the exposure reads none. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work. Run the instruments that pay down today's cost and skip the governance apparatus.
@@ -266,4 +266,4 @@ Re-count at every artifact boundary and keep the old rows. A deal whose readings
 - **Market level:** [The Market Reading](./00-market-reading.md), read before this one.
 - **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.4, 3.1 and 6 consume these counts.
 - **Provenance:** [06-calibration.md](../theory/01-foundation/06-calibration.md) section 3.2 records every edge as chosen.
-- **Deeper policing gap:** [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) supersedes the seller-side gap once both halves are scored.
+- **Policing gap:** the [Enforcement Ledger](./enforcement-ledger.md) reads both halves.

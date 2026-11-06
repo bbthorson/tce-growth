@@ -144,7 +144,7 @@ This floor is the model's most useful field implication, and it is why the chanc
 |---|---|---|---|
 | $\hat{\Delta}_{search}$ | The buyer against the market | Which category this is, who sells it, how to reach a seller at all | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), search block |
 | $\hat{\Delta}_{consensus}$ | Each decision role, about its own outcome | What the change does to that role's budget, headcount and standing | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), consensus block |
-| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) |
+| $\hat{\Delta}_{implementation}$ | The seller against the buyer | The buyer's environment, and the seller's capability in it | [Enforcement Ledger](../../practice/enforcement-ledger.md) |
 
 The search and bargaining gaps are measured as the fraction of their own instrument's items that remain unevidenced, which lands on $[0, 1]$ with a true zero:
 
@@ -152,13 +152,13 @@ $$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}
 
 Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items leaves its gap undefined rather than zero.
 
-**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. The current calculator reads a proxy instead, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. [07-open-questions.md](./07-open-questions.md) item 14 records the proxy until the consensus block reads the axiom's gap directly.
+**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. Earlier calculators read a proxy, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. The Deal Triage Calculator 9.0 retired it, and [07-open-questions.md](./07-open-questions.md) item 2 records that the decision-role map that reads the gap is not yet built.
 
 **The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the decision roles' interests actually sit, and it sets the size of the bargaining cost. The gap measures what each role cannot yet see about its own exposure, and it feeds the chance of future loss. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late.
 
 ### 2.5 Normalizing the scorecard
 
-The [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) produces a raw implementation gap on $[2, 10]$, two halves each on $[1, 5]$. Every equation in this file takes a normalized gap, so normalize first:
+The [Enforcement Ledger](../../practice/enforcement-ledger.md) reports the policing gap already normalized, as the mean of its two unevidenced fractions. Earlier versions of the field instrument produced a raw gap on $[2, 10]$, two halves each on $[1, 5]$, and the model keeps that form, so a raw score is normalized first:
 
 $$\hat{\Delta}_{implementation} = \frac{\Delta_A^{raw} - 2}{8}, \qquad \hat{\Delta}_{implementation} \in [0, 1]$$
 
@@ -332,7 +332,30 @@ A buyer who commits in stages sinks $Q_m$ at gate $m$ against the residual uncer
 
 $$L_b = \sum_{m} Q_m \, \pi(x_m) \qquad \text{rather than} \qquad Q \, \pi(x_0)$$
 
-Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) carries the residual chain and the reference gates. Its stage equation is this one, read one gate at a time.
+Because the residual falls from gate to gate, the staged loss is smaller whenever the large commitments come late, and a right to stop caps what each gate can lose. The Stage column of the [Enforcement Ledger](../../practice/enforcement-ledger.md) applies it.
+
+**The stage equation.** At gate $m$ the buyer's expected surplus is
+
+$$S_m = (1 - \pi_m)\left(V_{gross,m} - c_m\right) - \pi_m\,Q_m, \qquad \pi_m = \pi_0 + (1 - \pi_0)\,x_m$$
+
+where $V_{gross,m}$ is the value the buyer realizes on completing the stage, $c_m$ the payment for it, paid only when its acceptance criteria are met, and $Q_m$ what the buyer sinks there and cannot recover. All three are fractions of annual contract value. A payment triggered by the calendar is made whether or not the stage succeeds, so the surplus falls by $\pi_m c_m$, which is largest at the first gate.
+
+**The residual chain.** Each stage resolves a share $\mu_k$ of what remains, starting from the normalized policing gap $x_0$:
+
+$$x_m = x_0 \prod_{k=1}^{m}(1 - \mu_k)$$
+
+The reference profile, with each $\mu$ at 0.25, 0.50 and 0.80, leaves 0.75, 0.375 and 0.075 of $x_0$. Each share applies to what remains, so the residual compounds toward zero rather than stepping below it.
+
+**Why the order of commitments matters.** With $x_0$ at 1, an illustrative floor $\pi_0$ of 0.05, and 0.85 of a year's contract value sunk in total:
+
+| Gate | Entering $x_m$ | $\pi_m$ | Sunk $Q_m$ | $\pi_m Q_m$ |
+|---|---|---|---|---|
+| Core integration | 0.750 | 0.763 | 0.10 | 0.076 |
+| Pilot | 0.375 | 0.406 | 0.25 | 0.102 |
+| Full rollout | 0.075 | 0.121 | 0.50 | 0.061 |
+| **Total** | | | **0.85** | **0.238** |
+
+Sunk at once against the full gap, the same 0.85 is an expected loss of 0.85. Staged small first, it is 0.24. In the wrong order, 0.50 first and 0.10 last, it is 0.49. Staging helps, and the order decides how much. The values are illustrative and [06-calibration.md](./06-calibration.md) section 3.4 records them as chosen. The shape is the argument.
 
 ### 5.5 Joint exposure and the bond condition
 
@@ -486,8 +509,8 @@ Until then, treat every output as a structured comparison between deals rather t
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Part II carries the two conditions.
 - [01-motions.md](./01-motions.md) — Motion selection, which consumes the positions in section 6.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's condition in full, including the repeated game.
-- [Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) — Field instrument producing the implementation gap.
+- [Enforcement Ledger](../../practice/enforcement-ledger.md) — Field instrument producing the implementation gap.
 - [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
-- [Milestone Valuation Model](../../practice/milestone-valuation-model.md) — Applies staged uncertainty to gate design.
+- [Enforcement Ledger](../../practice/enforcement-ledger.md) — Its Stage column applies section 5.4 to gate design.
 - [real-options.md](../02-research/real-options.md) — Source for the staging logic.
 - [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics. Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

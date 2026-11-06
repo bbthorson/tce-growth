@@ -183,7 +183,7 @@ swap:
   trenches-analysis-protocol\.md: writing-protocols.md
   01-field-assets: "practice/ (flattened in the 2026-09 restructure)"
   02-internal-ops: "practice/ (flattened in the 2026-09 restructure; the linters are in tools/linting/)"
-  04-incentives-asymmetry-scorecard\.md: asymmetry-scorecard.md
+  04-incentives-asymmetry-scorecard\.md: enforcement-ledger.md
   05-diagnostics-friction-efficiency-index\.md: friction-efficiency-index.md
   02-cfir-field-mapping\.md: practice/cfir-field-mapping.md
   costly-signal-discovery-scripts\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"

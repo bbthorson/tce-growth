@@ -27,7 +27,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Staged Commitment** (Axiom III corollary) — direct theoretical basis. Phase gating is option construction.
 - **Axiom III — Law of Future Cost** — explains a mechanism the Constitution otherwise leaves implicit. Buyer uncertainty does not only raise the chance of future loss, it also raises the value of doing nothing. This is the formal account of why the Safe No beats the Logical Yes.
 - **The MIP** — operationalizes both the staging option and the abandonment option. Gate-contingent payments with defined acceptance criteria give the buyer a priced right to stop.
-- **Milestone Valuation Model** — applies staged uncertainty decay to gate design. See [milestone-valuation-model.md](../../practice/milestone-valuation-model.md).
+- **Staged commitment, the Enforcement Ledger's Stage column** — applies staged uncertainty decay to gate design. See the Stage column of the [Enforcement Ledger](../../practice/enforcement-ledger.md), and [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 5.4.
 - **Akerlof saturation** — real options supplies the complementary explanation. The buyer may exit not because signals failed but because waiting dominates acting.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

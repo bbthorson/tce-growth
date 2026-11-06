@@ -155,7 +155,7 @@ Discovery is a separate, discrete step down, paid for by whoever runs it, and it
 
 ![Two rising curves from a near-zero implementation gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained curve bends toward the challenger line and nearly reaches it within three years. The maintained curve levels off well below it, where maintenance matches the rebuild.](./assets/axiom-3-asymmetry-drift.svg)
 
-A buyer who commits in stages sinks $Q_m$ at gate $m$ against residual uncertainty $x_m$, so the expected loss is $\sum_m Q_m \, \pi(x_m)$ rather than $Q \, \pi(x_0)$. Staging puts the small commitments where the uncertainty is high. When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). The [Milestone Valuation Model](../../practice/milestone-valuation-model.md) is the instrument.
+A buyer who commits in stages sinks $Q_m$ at gate $m$ against residual uncertainty $x_m$, so the expected loss is $\sum_m Q_m \, \pi(x_m)$ rather than $Q \, \pi(x_0)$. Staging puts the small commitments where the uncertainty is high. When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). The Stage column of the [Enforcement Ledger](../../practice/enforcement-ledger.md) is the instrument.
 
 **Corollaries.**
 
@@ -260,7 +260,5 @@ Versions 1.0 to 3.0, and the nineteen revisions made under the earlier name, are
 
 **Field operationalization:**
 - Whether a buyer can enter, where the sale starts, frequency and governance form → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md)
-- Blueprint → [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md)
-- Red Team → [02-validation-red-team-protocol.md](../../practice/implementation-motion/02-validation-red-team-protocol.md)
-- MIP → [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md)
+- Map, Test and Stage (the Blueprint, Red Team and Mutual Implementation Plan) → [enforcement-ledger.md](../../practice/enforcement-ledger.md)
 - Handoff, review and reputation refresh → [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md)

@@ -126,7 +126,7 @@ In a committee of three, aligning incentives produces a modest gain. In a commit
 
 - [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md) — Cyert-March and Webster-Wind. Why the coalition behaves this way.
 - [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — Derivation and sensitivity analysis.
-- [Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) — Where the committee gets mapped.
-- [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) — The variance-reduction instrument.
+- [Contextual Blueprint](./enforcement-ledger.md) — Where the committee gets mapped.
+- [Red Team Protocol](./enforcement-ledger.md) — The variance-reduction instrument.
 - [Deal Triage Calculator](./deal-triage-calculator.md) — Counts the veto holders and the share of them with a documented measured objective, which is this component's gap.
-- [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — The companion measure for $\Delta_A$.
+- [Enforcement Ledger](./enforcement-ledger.md) — The companion measure for $\Delta_A$.
