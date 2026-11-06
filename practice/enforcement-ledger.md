@@ -22,7 +22,7 @@ Goal: On one deal, close the policing gap from both sides and settle the allocat
 | **Owner** | The account executive and solutions engineer, with the buyer's technical lead. The buyer's skeptic judges Test. |
 
 > [!IMPORTANT]
-> **The ledger is the buyer's as much as the seller's,** and a buyer column the seller filled alone is a map of the seller's guesses. The empty cells are the seller's ignorance shown rather than hidden. What the change does to a person's budget, headcount or standing does not go here. It belongs in the private decision-role map of the bargaining ledger.
+> **The ledger is the buyer's as much as the seller's,** and a buyer column the seller filled alone is a map of the seller's guesses. The empty cells are the seller's ignorance shown rather than hidden. What the change does to a person's budget, headcount or standing does not go here. It belongs in the private decision-role map of the [Bargaining Ledger](./bargaining-ledger.md), which this ledger's rows seed.
 
 **Do not run it where nothing specific is sunk.** If the triage's Gate B passed, the buyer verifies by trying, and running this ledger is the over-frictioned failure.
 
@@ -33,7 +33,7 @@ Goal: On one deal, close the policing gap from both sides and settle the allocat
 Three entries above the rows, written before Map and carried to the Adoption Review:
 
 - **The economic event:** the trigger, dated, and the cost of inaction sized in the buyer's own words. If the seller said it to the buyer, it is not evidenced.
-- **The named roles:** the sponsor, the champion, and the skeptic who judges Test, named before Test: the person whose own work or budget the integration lands on. Names only. What the change does to each of them belongs in the bargaining ledger.
+- **The named roles:** the sponsor, the champion, and the skeptic who judges Test, named before Test: the person whose own work or budget the integration lands on. Names only. What the change does to each of them belongs in the [Bargaining Ledger](./bargaining-ledger.md).
 - **The declared limits** (below).
 
 ## The rows

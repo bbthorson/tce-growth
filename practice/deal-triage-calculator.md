@@ -223,7 +223,7 @@ Where one side sinks far more than the other, contract a hostage, such as fees s
 | Sale starts at | Motion | Run |
 |---|---|---|
 | Search | **Search-led** | Category definition, commercial teaching, reference architectures, channel work. No instrument file in this repository. |
-| Consensus | **Consensus-led** | Map each decision role's exposure one to one, sized by the [Consensus Friction Calculator](./consensus-friction-calculator.md). The bargaining ledger that will carry the map is next in the [practice rebuild](../PRACTICE-REBUILD-PROPOSAL.md). No dedicated instrument exists ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 2). Say so rather than substituting the implementation chain because it is the one that exists. |
+| Consensus | **Consensus-led** | The [Bargaining Ledger](./bargaining-ledger.md): each decision role's exposure mapped one to one, an arrangement each exposed role ratifies, and a safeguard inside the buyer. Do not substitute the Enforcement Ledger because it is the more familiar one. |
 | Implementation | **Implementation-led** | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, then the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
 | A tie | Both, run together | Do not pick one and call it the motion. |
 

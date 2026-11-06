@@ -76,11 +76,11 @@ The second row is a cost most frameworks do not name. A hospital chief informati
 
 These are two instruments serving one cost. They are not two motions.
 
-### 2.2 Bargaining has a mature instrument set this repository does not carry
+### 2.2 Bargaining has one instrument here, and a mature practice beside it
 
 The bargaining and decision cost, which the field calls consensus, is worked hard by the wider sales profession. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are instruments for that cost, and they are the incumbent practice for it.
 
-This repository measures the cost and supplies no instruments for it. The [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) produces a number and then prescribes executive sponsorship, which is a single tactic rather than a motion. The cost resists the instruments that work on the other two because its gap sits inside each decision role, about its own outcome, where nothing the seller knows and withholds is causing it. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
+The [Bargaining Ledger](../../practice/bargaining-ledger.md) is this repository's instrument for it: a private map of each decision role's exposure, a shared arrangement each exposed role ratifies, and a safeguard inside the buyer. The incumbent practice runs beside it. The cost resists the instruments that work on the other two because its gap sits inside each decision role, about its own outcome, where nothing the seller knows and withholds is causing it. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
 
 The gap is real and it is the largest one this document surfaces.
 
@@ -106,7 +106,7 @@ The three motions are named after the cost the seller pays down first. Turnkey n
 |---|---|---|---|
 | Every cost self-serve, nothing specific sunk | **Turnkey** | Published pricing, automated provisioning, self-service trial, zero-touch onboarding. Fit verification transfers entirely to the buyer. | None needed. A market in this condition repays no dedicated apparatus. |
 | The sale starts at search | **Search-led** | The two search instruments of section 2.1: teaching where the category is unnamed, channel where the buyer is unreachable. | Present and thin. No instrument file in this repository. |
-| The sale starts at consensus | **Consensus-led** | Mapping each decision role's exposure, champion enablement, bilateral decision criteria. | Absent. Measured by the Consensus Friction Calculator and otherwise served by the incumbent qualification practice, outside this framework. |
+| The sale starts at consensus | **Consensus-led** | Mapping each decision role's exposure, champion enablement, bilateral decision criteria. | The [Bargaining Ledger](../../practice/bargaining-ledger.md), beside the incumbent qualification practice. |
 | The sale starts at implementation | **Implementation-led** | The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map, Test and Stage, the Blueprint, Red Team and Mutual Implementation Plan, then [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md). | Present and developed. |
 | Two costs at the same position | **Run together** | Both instrument sets, neither picked as the motion. | Whatever the two motions supply. |
 
