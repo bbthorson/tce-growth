@@ -133,9 +133,9 @@ The following CFIR constructs are **not yet operationalized** in any field asset
 - [cfir.md](../theory/02-research/cfir.md) — Canonical CFIR reference; the academic basis for this mapping.
 - [re-aim-framework.md](../theory/02-research/re-aim-framework.md) — Companion framework for post-sale measurement.
 - Field artifacts being mapped:
-  - [01-discovery-contextual-blueprint.md](./implementation-motion/01-discovery-contextual-blueprint.md)
-  - [02-validation-red-team-protocol.md](./implementation-motion/02-validation-red-team-protocol.md)
-  - [03-closing-mutual-implementation-plan.md](./implementation-motion/03-closing-mutual-implementation-plan.md)
+  - [Enforcement Ledger, Map](./enforcement-ledger.md)
+  - [Enforcement Ledger, Test](./enforcement-ledger.md)
+  - [Enforcement Ledger, Stage](./enforcement-ledger.md)
   - [04-sustaining-adoption-review.md](./implementation-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
 
 ---

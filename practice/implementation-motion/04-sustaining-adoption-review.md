@@ -20,7 +20,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 | | |
 |---|---|
-| **Inputs** | Signed [MIP](./03-closing-mutual-implementation-plan.md), the filled [Blueprint](./01-discovery-contextual-blueprint.md), and the [Red Team](./02-validation-red-team-protocol.md) risk register. |
+| **Inputs** | Signed [MIP](../enforcement-ledger.md), the filled [Blueprint](../enforcement-ledger.md), and the [Red Team](../enforcement-ledger.md) risk register. |
 | **Outputs** | A receipted handoff packet, a completed RE-AIM review per cycle, and a renewal posture backed by evidence rather than relationship. |
 | **Next step** | Renewal, expansion, or a documented decision to let the account lapse. |
 | **Owner** | CS or Implementation Lead. The AE stays accountable through the first review under vested compensation ([05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5). |
@@ -44,26 +44,16 @@ The first three artifacts drive $\Delta_A$ toward zero before signature. Nothing
 
 The receiving lead confirms each item arrived, in writing. An unchecked box is a known blind spot.
 
-**From the [Blueprint](./01-discovery-contextual-blueprint.md):**
+**From the [Enforcement Ledger](../enforcement-ledger.md):**
 
-- [ ] **The Economic Event.** The trigger, the quantified cost of inaction, and why it had to be now.
-- [ ] **The Political Capital Map.** Sponsor, Beneficiary, Casualty.
-- [ ] **The Sacred Cows.** Which workflow or team is politically protected, and why.
-- [ ] **The Graveyard.** What they tried before and how it failed.
-- [ ] **Stakeholder DNA.** Champion, Sponsor, and the Skeptic who was invited to the Red Team.
-- [ ] **The Negative Capability Declaration.** Every limitation the seller stated before signature. CS must know what was promised NOT to work.
+- [ ] **The deal record.** The economic event, dated and sized in the buyer's words, and the named sponsor, champion and skeptic.
+- [ ] **The declared limits.** Every limitation the seller stated before signature. Customer success must know what was promised not to work.
+- [ ] **Previous attempts,** and how they failed.
+- [ ] **Open rows.** The failure modes still open at signature, and every row marked as surfacing in use, with its risk carrier and change process.
+- [ ] **The gates.** The outcome measure and when it comes due, the resource rows with their owners and hours, the hostages and their trigger dates, and the go or no-go criteria.
+- [ ] **The standing review.** Its cadence and what each side can invoke.
 
-**From the [Red Team](./02-validation-red-team-protocol.md):**
-
-- [ ] **The surfaced failure modes**, and which remain open at signature.
-- [ ] **Skeptic versus adversary classification**, plus the containment strategy for any adversary.
-
-**From the [MIP](./03-closing-mutual-implementation-plan.md):**
-
-- [ ] **The North Star metric** and the date it comes due.
-- [ ] **Both sides' resource commitments**, including the buyer's named admin and committed hours.
-- [ ] **The Resource Expiry Clause** terms and the date they bite.
-- [ ] **Go / No-Go launch criteria.**
+**From the bargaining ledger,** once it exists: the decision roles, what the change does to each, and the arrangement's answer. Until then, the deal team's own notes on the political map, which customer success should treat as unverified.
 
 ### 1.2 The receipt and the transfer test
 
@@ -113,7 +103,7 @@ The variance is read across a book rather than on this account. One deal counted
 
 ## Section 3: The QBR Protocol
 
-*The [MIP](./03-closing-mutual-implementation-plan.md) already requires a QBR and does not define one. This does.*
+*The [MIP](../enforcement-ledger.md) already requires a QBR and does not define one. This does.*
 
 **Attendance.** The customer executive sponsor, whom the MIP commits and whose absence is the earliest reliable churn signal. The customer champion, who owns the operational truth. The CS or Implementation Lead, who owns the review. The AE at the first review, who carries the pre-signature context. And the Casualty from the Blueprint, invited by name, because the stakeholder whose position worsened is the one most able to withdraw cooperation quietly, and the invitation converts a silent adversary into a visible one.
 
@@ -167,6 +157,6 @@ Each of these means credibility is depreciating faster than delivery is refreshi
 - **Theory:** [TCG Constitution, Axiom III (Law of Future Cost), its governance corollary and its rebuild clause](../../theory/01-foundation/00-tcg-constitution.md). This artifact operationalizes the Handoff Rule and reputation depreciation, both the rebuild clause applied after signature.
 - **Academic backing:** [re-aim-framework.md](../../theory/02-research/re-aim-framework.md) for the five dimensions, and [game-theory-and-nrr.md](../../theory/02-research/game-theory-and-nrr.md) for why sustained cooperation requires re-earned trust.
 - **CFIR mapping:** [cfir-field-mapping.md](../cfir-field-mapping.md). Round 5 (Churn) maps to the Maintenance dimension.
-- **Prerequisite:** A signed [MIP](./03-closing-mutual-implementation-plan.md). This artifact audits commitments the MIP created.
+- **Prerequisite:** A signed [MIP](../enforcement-ledger.md). This artifact audits commitments the MIP created.
 - **Comp alignment:** [05-governance-forms.md](../../theory/01-foundation/05-governance-forms.md) section 5. The T+90 review is the natural clawback checkpoint, and the first QBR is where an expansion bonus would vest.
 - **Cohort view:** [friction-efficiency-index.md](../friction-efficiency-index.md) aggregates post-signature effort across closed deals. This artifact governs one account. That one scores the book.

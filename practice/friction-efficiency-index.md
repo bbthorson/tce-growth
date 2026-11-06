@@ -27,11 +27,13 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 ## 1. Allocation Coverage Ratio (ACR)
 
+The [Enforcement Ledger](./enforcement-ledger.md) is now where this ratio is defined and read. The section stays until the rest of this file is archived, in step 5 of the [practice rebuild](../PRACTICE-REBUILD-PROPOSAL.md).
+
 The share of a deal's specific investment that was sunk only after an allocation covering it had been agreed.
 
 $$\text{ACR} = \frac{n_{allocated}}{n_{exposure}}$$
 
-Where $n_{exposure}$ is the deal's exposure count from Step 3 of the [Deal Triage Calculator](./deal-triage-calculator.md), integration points plus workflows that change plus divergent steps, re-taken at the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). $n_{allocated}$ counts the items whose work began only after a written allocation covered them. **An allocation covers an item when it names all three:** who bears that item's adaptation risk, the gate the item sits behind, and a right to stop at that gate. Two of the three is not an allocation. These are the three things a [Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) gate writes down, so the plan is where the count is read.
+Where $n_{exposure}$ is the deal's exposure count from Step 3 of the [Deal Triage Calculator](./deal-triage-calculator.md), integration points plus workflows that change plus divergent steps, re-taken at the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). $n_{allocated}$ counts the items whose work began only after a written allocation covered them. **An allocation covers an item when it names all three:** who bears that item's adaptation risk, the gate the item sits behind, and a right to stop at that gate. Two of the three is not an allocation. These are the three things a [Mutual Implementation Plan](./enforcement-ledger.md) gate writes down, so the plan is where the count is read.
 
 **Higher is better, and there is no band.** An ACR of 1.0 means nothing specific was sunk before someone agreed who carries it. Axiom III asks for exactly that, so no point short of 1.0 is a target to stop at.
 
@@ -77,7 +79,7 @@ $$\text{RMS} = 1 - \frac{N_{unresolved}}{N_{identified}}$$
 
 **This corrects an arithmetic error in the canvas form.** That version read $N_{edge} / (N_{edge} + N_{unresolved})$, which double-counts. Unresolved cases are a subset of identified cases, so they appear in both numerator and denominator. A Red Team that identified ten edge cases and resolved none scored 10/20 = 0.50, reporting half the risk mitigated when in fact none was. The corrected form returns 0.
 
-**RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is the superficial Red Team failure the [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) exists to prevent, and a metric that rewards it will produce it.
+**RMS rewards shallow discovery, and must never be read alone.** A Red Team that surfaces two edge cases and closes both scores 1.00. One that surfaces forty and closes thirty-five scores 0.875. The lazier workshop wins. This is the superficial Red Team failure the [Red Team Protocol](./enforcement-ledger.md) exists to prevent, and a metric that rewards it will produce it.
 
 Report $N_{identified}$ next to RMS every time, and treat a low count as the finding. Below roughly eight identified edge cases on a genuine deal with specific exposure, the workshop did not do its job, and the RMS figure carries no information regardless of how high it is.
 
@@ -160,5 +162,5 @@ Read the provenance column before quoting any figure outside this repository. No
 
 - [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) — The axiom-derived models. This file deliberately sits downstream of them.
 - [Consensus Friction Calculator](./consensus-friction-calculator.md) — Source of the $N$ correction applied to BCV.
-- [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) — Pre-close companion. The scorecard predicts; this index scores the result.
-- [Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) — Where $N_{identified}$ originates.
+- [Enforcement Ledger](./enforcement-ledger.md) — Pre-close companion. The scorecard predicts; this index scores the result.
+- [Red Team Protocol](./enforcement-ledger.md) — Where $N_{identified}$ originates.

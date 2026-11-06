@@ -17,30 +17,27 @@ Each document carries its own header table stating its inputs, outputs, next ste
 
 ## By decision
 
-The Constitution's axioms answer three decisions in time order: whether the buyer will use the market at all, what the deal costs each party today, and what it might cost either of them later. The instruments meet those decisions at different moments. Name the question, then open the instrument.
+The Constitution's axioms answer three questions: whether a market can exist, what has to be paid down at time 0, and what prevents churn and contraction at time 1. The instruments meet those questions at different moments. Name the question, then open the instrument.
 
 | Moment | Your question | Instrument |
 |---|---|---|
 | **Before any buyer** | Where does the sale start across this buyer population, and are we built to pay down that cost? | [00. The Market Reading](./00-market-reading.md) |
 | **Deal** | Can this buyer enter, where does the sale start and what must the seller's spending do, and what must be settled before anything specific is sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
-| **Workflow** | What do I not yet know about their environment, and how specific is the investment? | [01. Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) |
-| **Deal** | How does this implementation fail? | [02. Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) |
-| **Deal** | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) |
+| **Deal, specific exposure** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) |
 
-The Market Reading is the first instrument built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) rather than inherited from earlier practice, and the Deal Triage Calculator 9.0 is the deal reading rebuilt from it for Constitution 6.1. The plan and the three ledgers will follow in phase order. The four artifacts in [`implementation-motion/`](./implementation-motion/) run in order and each gates the next. They are the implementation component's instruments. The Deal Triage Calculator decides whether the sale starts at the implementation cost. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
+The Market Reading, the Deal Triage Calculator and the Enforcement Ledger are built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review in [`implementation-motion/`](./implementation-motion/) runs after it. The Deal Triage Calculator decides whether the sale starts at the implementation cost. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
 
 ---
 
 ## Quantitative instruments
 
-Four instruments convert deal observations into comparable numbers. Three measure a quantity the axioms name and the fourth scores how the motion was run. Each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
+Three instruments convert deal observations into comparable numbers. Two measure a quantity the axioms name and the third scores how the motion was run. Each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
 
 | Instrument | Measures | Run it when |
 |---|---|---|
-| [Bilateral Asymmetry Scorecard](./asymmetry-scorecard.md) | $\Delta_A = I_{seller} + I_{buyer}$, the implementation gap, which feeds the chance of future loss | Weekly, from first qualification onward |
-| [Consensus Friction Calculator](./consensus-friction-calculator.md) | $F_{consensus}$ | After the Blueprint maps the buying committee |
-| [Milestone Valuation Model](./milestone-valuation-model.md) | Staged expected loss and gate payment structure | While drafting the MIP timeline and commercial terms |
+| [Enforcement Ledger](./enforcement-ledger.md) | The policing gap, the mean of the seller's and the buyer's unevidenced fractions, which feeds the chance of future loss | At each stage, from Map onward |
+| [Consensus Friction Calculator](./consensus-friction-calculator.md) | $F_{consensus}$ | After the buying committee is mapped |
 | [Friction Efficiency Index](./friction-efficiency-index.md) | Whether specific investment was allocated before it was sunk, and where the effort went, across a closed cohort | Quarterly, in retrospect. The one instrument that could test Axiom III's allocation clause after the fact. |
 
 ---

@@ -107,7 +107,7 @@ The three motions are named after the cost the seller pays down first. Turnkey n
 | Every cost self-serve, nothing specific sunk | **Turnkey** | Published pricing, automated provisioning, self-service trial, zero-touch onboarding. Fit verification transfers entirely to the buyer. | None needed. A market in this condition repays no dedicated apparatus. |
 | The sale starts at search | **Search-led** | The two search instruments of section 2.1: teaching where the category is unnamed, channel where the buyer is unreachable. | Present and thin. No instrument file in this repository. |
 | The sale starts at consensus | **Consensus-led** | Mapping each decision role's exposure, champion enablement, bilateral decision criteria. | Absent. Measured by the Consensus Friction Calculator and otherwise served by the incumbent qualification practice, outside this framework. |
-| The sale starts at implementation | **Implementation-led** | Four sequenced governance artifacts: [Contextual Blueprint](../../practice/implementation-motion/01-discovery-contextual-blueprint.md), [Red Team Protocol](../../practice/implementation-motion/02-validation-red-team-protocol.md), [Mutual Implementation Plan](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md), [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md). | Present and developed. |
+| The sale starts at implementation | **Implementation-led** | The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map, Test and Stage, the Blueprint, Red Team and Mutual Implementation Plan, then [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md). | Present and developed. |
 | Two costs at the same position | **Run together** | Both instrument sets, neither picked as the motion. | Whatever the two motions supply. |
 
 The names in the second column are the words the Deal Triage Calculator returns.
@@ -136,7 +136,7 @@ Where the sale starts is a reading taken at a moment. Two mechanisms change it, 
 | $F_{consensus}$ | Each decision role's, about its own outcome |
 | $F_{implementation}$ | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability in it. |
 
-The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) measures the third pair alone. The search gap mostly prices today's cost and decides participation. The other two decide what each party can lose once something specific is sunk.
+The [Enforcement Ledger](../../practice/enforcement-ledger.md) measures the third pair alone. The search gap mostly prices today's cost and decides participation. The other two decide what each party can lose once something specific is sunk.
 
 ### 5.2 Drift, departures and categories
 

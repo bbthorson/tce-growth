@@ -32,6 +32,8 @@ This register consolidates. Where a file already carries its own "what this does
 
 **56. The missing-capability count does not measure what the seller limit needs.** The seller's limit rests on a fixed build no single deal repays, net of what the seller could redeploy. The Market Reading counts missing activities 0 to 4, which cannot tell a fixed build from spending repeated in every deal, weighs a template the same as a field team, and ignores whether a capability carries over from an adjacent market. Building or partnering is then Williamson's make-or-buy, which turns on that specificity. Raised by the practice-rebuild review. *Settled by:* a reading that separates fixed from per-deal capabilities and scores how specific each is to this market.
 
+**57. The policing gap routes on fractions that a handful of rows can flip.** The Enforcement Ledger's two halves are shares of rows in scope, so on a deal with few rows one verdict moves a half by a third or more, across the 0.25 routing margin and the 0.625 hold. The band edges were carried by arithmetic from the scorecard's 4.0 and 7.0, and never re-derived for the ledger's rows. Raised by the practice-rebuild review. *Settled by:* a stated row count below which each half is reported as counts and does not route, and band edges read from a book of ledgers.
+
 ---
 
 ## Axiom II, investment

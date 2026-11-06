@@ -383,7 +383,8 @@ class TestComponentGap(unittest.TestCase):
 # ==========================================================================
 
 class TestScorecardDimensions(unittest.TestCase):
-    """asymmetry-scorecard.md v3.0, which counts rather than rates."""
+    """The scorecard form behind the enforcement ledger's policing gap,
+    which counts rather than rates."""
 
     def test_the_endpoints_match_the_retired_rubric(self):
         self.assertAlmostEqual(m.dimension_score(4, 4), 1.0)
@@ -783,7 +784,7 @@ class TestFrictionEfficiencyIndex(unittest.TestCase):
 
 
 # ==========================================================================
-# milestone-valuation-model.md
+# 02-mathematical-models.md section 5.4, staged commitment
 # ==========================================================================
 
 class TestMilestoneValuation(unittest.TestCase):

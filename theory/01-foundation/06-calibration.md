@@ -108,17 +108,18 @@ The reading reuses every edge in section 3.2 and adds one structural count of it
 | Missing-capability range | 0 to 4 per component | **Convention.** The four activities below Read in the activity grid. |
 | Prior column | Read against the count's edges | **Convention.** The category prior is the buyer's expected cost before it meets any seller, read on the same edges as the deal-level expected count. |
 
-### 3.3 The asymmetry scorecard ([Bilateral Asymmetry Scorecard](../../practice/asymmetry-scorecard.md))
+### 3.3 The policing gap ([Enforcement Ledger](../../practice/enforcement-ledger.md))
 
 | Parameter | Value | Provenance |
 |---|---|---|
 | Raw gap range | $[2, 10]$ | **Convention.** Two halves each on $[1, 5]$. |
 | Normalization | $(\Delta_A - 2) / 8$ | **Convention.** Maps the raw range onto $[0, 1]$, which every equation that takes a gap requires. |
 | Dimension mapping | $f \cdot 4 + 1$ | **Convention.** Puts an unevidenced fraction onto the presentation scale. Carries no information the fraction does not. |
-| Risk band edges | 4.0, 7.0 | **Chosen.** No source. |
-| Commercial hold threshold | 7.0 | **Chosen.** No source. |
+| Risk band edges | 0.25 and 0.625 normalized, 4.0 and 7.0 raw | **Chosen.** No source. The ledger reads the normalized form. |
+| Commercial hold threshold | 0.625 normalized, 7.0 raw | **Chosen.** No source. |
+| Routing margin between the halves | 0.25 of a fraction, 1.0 on the raw half scale | **Chosen.** No source. |
 
-### 3.4 Staged commitment ([Milestone Valuation Model](../../practice/milestone-valuation-model.md))
+### 3.4 Staged commitment ([02-mathematical-models.md](./02-mathematical-models.md) section 5.4, applied in the Enforcement Ledger's Stage column)
 
 | Parameter | Value | Provenance |
 |---|---|---|
@@ -189,7 +190,7 @@ These were open questions in [07-open-questions.md](./07-open-questions.md). Eac
 
 **15. The drift rates are asserted, not derived.** $\gamma_{search}$, $\gamma_{consensus}$ and $\gamma_{implementation}$ are named and not valued. Only the bargaining rate has a discrete field event attached, a departed champion. The other two are asserted continuous. *Settled by:* logging the three gaps at every artifact boundary, which is item 1 above.
 
-**17. Reputation depreciation has no rate.** Axiom III's rebuild clause applied after signature has tripwires and no instrument. The [Asymmetry Scorecard](../../practice/asymmetry-scorecard.md) could be re-run at each review and is not. *Settled by:* running it, which section 7.4 of the seller surplus model already proposes.
+**17. Reputation depreciation has no rate.** Axiom III's rebuild clause applied after signature has tripwires and no instrument. The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s policing gap could be re-read at each review and is not. *Settled by:* running it, which section 7.4 of the seller surplus model already proposes.
 
 **19. Axiom III's uncertainty half inherits the weakest empirical result in transaction cost economics.** Meta-analyses of the record (David and Han 2004, Carter and Hodgson 2006, Geyskens, Steenkamp and Kumar 2006) find that specificity predicts governance reliably, that uncertainty predicts it weakly and inconsistently, with trust and joint problem-solving often substituting for formal safeguards, and that specificity is usually measured with subjective scales. Axiom III now carries both results: its specificity half sits on the strong one and its uncertainty half on the weak one. The counting instruments were built against the measurement critique. *Settled by:* counts validated against outcomes across a book of deals, and a stated account of when relational norms substitute for the instruments. [tce-empirical-record.md](../02-research/tce-empirical-record.md).
 

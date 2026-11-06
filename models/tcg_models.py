@@ -63,7 +63,8 @@ GAMMA_RESPONSIVENESS = 0.5   # chosen
 OMEGA_RENEGOTIATION = 0.5    # chosen: symmetric split, nothing allocated
 
 # Raw Bilateral Asymmetry Scorecard range, from
-# practice/asymmetry-scorecard.md part 3.
+# The scorecard form of the policing gap. practice/enforcement-ledger.md now
+# reports the normalized gap directly.
 RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
 
 # Friction Efficiency Index composite weights, in ACR / BCV / RMS / SVI order.
@@ -1052,7 +1053,8 @@ def fei_band(fei):
 
 
 # ==========================================================================
-# practice/milestone-valuation-model.md
+# 02-mathematical-models.md section 5.4, staged commitment, applied in the
+# Stage column of practice/enforcement-ledger.md.
 # ==========================================================================
 
 def residual_uncertainty(x0, mus):

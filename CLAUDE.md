@@ -42,7 +42,7 @@ $$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} 
 - **All terms are fractions of annual contract value** (`02-mathematical-models.md` section 1.2), not percentage points.
 - **$P$** is a transfer, so it cancels when the conditions are added. Hold-up is a transfer too: it drops out of what the deal creates, $W$, and costs through deterred investment and fear the other side does not share. A discount moves the split. Verification lowers a loss both sides carry.
 - **$I^b_k$, $I^s_k$** = what each party invests today against cost $k$ (Axiom II).
-- **$L_p = Q_p \cdot \pi_p$** = each party's expected future loss (Axiom III). The gaps behind $\pi_p$ are normalized to $[0, 1]$. The Asymmetry Scorecard emits a raw gap on $[2, 10]$, so normalize first.
+- **$L_p = Q_p \cdot \pi_p$** = each party's expected future loss (Axiom III). The gaps behind $\pi_p$ are normalized to $[0, 1]$. The Enforcement Ledger reports the policing gap already normalized. The model's raw scorecard form runs on $[2, 10]$, so normalize that first.
 - **$r_k$** = cost $k$'s position between its self-serve and participation thresholds (Axiom I). Above 1 the buyer stays out. The sale starts at the largest. The costs are non-compensatory: they add, but ease on one never buys back another above its threshold.
 
 When diagnosing a stall or editing a prescription, identify which term it addresses.
