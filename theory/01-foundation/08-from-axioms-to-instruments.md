@@ -19,11 +19,11 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 ## 1. Three phases, two levels
 
-The [Constitution](./00-tcg-constitution.md) states three decisions in time order: whether the buyer uses the market at all, what the deal costs each party today, and what it might cost them later. Read in order, they give the three things a reader has to be able to do.
+The [Constitution](./00-tcg-constitution.md) asks three questions at three levels: whether a market can exist, what has to be paid down at time 0, and what prevents churn and contraction at time 1. Read in order, they give the three things a reader has to be able to do.
 
 | Phase | What the reader must be able to do | From | Unit |
 |---|---|---|---|
-| **Determine the state** | Read each cost's position against its own thresholds, where the sale starts, and whether anything specific is sunk, first for a market and then for a deal | Axiom I for the positions, Axiom III for the specific exposure | Market, then deal |
+| **Determine the state** | Read each cost's position against its own thresholds, where the sale starts, and whether anything specific is sunk, first for a market and then for a deal | Axiom I for the positions, Axiom II for where the sale starts, Axiom III for the specific exposure | Market, then deal |
 | **Plan the minimization** | Choose which costs to pay down and which gaps to close, in what order, with what evidence, at what investment by each party, and how much of the allocation to settle before anything specific is sunk | Axioms II and III together | Deal, bounded by the market reading |
 | **Execute with the buyer** | Run the activities the plan orders and re-read where the sale starts at every boundary | Axiom II orders and pays, Axiom III stages and closes | Deal |
 
@@ -77,7 +77,7 @@ Definition is therefore a verifiability variable and belongs to Axiom III. A mat
 
 The three axioms constrain an instrument in three ways, and together they define one.
 
-1. **Axiom I indexes and orders it.** An instrument works on one cost. A motion is the set of instruments for the cost where the sale starts, and an instrument aimed at a cost the buyer already pays down alone leaves the deal where it was.
+1. **Axiom I indexes it, and where the sale starts under Axiom II orders it.** An instrument works on one cost. A motion is the set of instruments for the cost where the sale starts, and an instrument aimed at a cost the buyer already pays down alone leaves the deal where it was.
 2. **Axiom II prices it.** Every instrument is an investment by one party against one cost, and each party goes ahead only while its share is covered by its own return. Moving an instrument from one party to the other changes the total only when the party taking it on does the work more cheaply or lowers a future loss by doing it.
 3. **Axiom III times it and says what it produces.** Where nothing specific is sunk and a trial verifies fit, the set is empty and the buyer verifies by trying. Otherwise the allocation must be settled before the specific investment is sunk, so an instrument set is sequenced, and what it settles early is who bears which adaptation risk and how the commitment is staged. The work of adaptation itself can follow, and under uncertainty it must. What the instrument produces is evidence that closes a named pair's uncertainty about their own outcome, which lowers that party's chance of future loss. The evidence is a signal, and by the Friction Allocation Principles it counts only if it cannot be automated away, is borne by the party making the claim, scales with the size of the claim, and is adjudicated by someone who loses when it is wrong. Fail one and the instrument is cheap talk.
 
@@ -162,7 +162,7 @@ The decision-role map grows the same way with a decision role per row: the role 
 
 The plan is not a fourth document. It is the empty cells across the three ledgers, ordered and bounded.
 
-- **Ordered by where the sale starts.** Axiom I. The cells on the cost nearest its own participation threshold come first, and two costs at the same position are run together. A deal whose sale starts at bargaining works the decision-role ledger's empty cells before the step ledger's, however much the seller would rather run a demonstration. A cost above its participation threshold comes before everything, because no work on the other two reaches it.
+- **Ordered by where the sale starts.** Axiom II. The cells on the cost nearest its own participation threshold come first, and two costs at the same position are run together. A deal whose sale starts at bargaining works the decision-role ledger's empty cells before the step ledger's, however much the seller would rather run a demonstration. A cost above its participation threshold comes before everything, because no work on the other two reaches it.
 - **Bounded by each party's return.** Axiom II. Every cell filled is an investment by one party, so the seller fills cells only while its share stays inside what the relationship can return, and moves a cell to the buyer only where the buyer does it more cheaply. Where nothing specific is sunk and a trial verifies fit, the plan is empty and the buyer verifies by trying.
 - **Allocated before the investment is sunk.** Axiom III. The share of the arrangement settled before anyone sinks the specific investment, who bears which adaptation risk, staged how, with what right to stop, rises with the imbalance between what the two parties sink ([02-mathematical-models.md](./02-mathematical-models.md) section 5.6). What is spent in advance can fall as uncertainty rises, because discovery cannot reach what only use reveals. The minimum viable integration goes live first and the rest is staged, and a plan that tries to resolve every cell in advance produces Axiom III's over-frictioned failure and the buyer fatigue the indecision research in [fear-of-failure.md](../02-research/fear-of-failure.md) describes.
 - **Checked on both sides.** The plan must leave the buyer's condition positive at the moment of decision and the seller's condition positive across the repetitions the frequency allows. A plan that closes the deal and cannot be recovered is the specific one-shot case, Axiom II's unamortizable failure, and the answer is to restructure as recurring or decline rather than to run the plan lighter.
@@ -183,7 +183,7 @@ The plan therefore has a cost the seller can read before committing to it. The c
 - **The five touchpoint types are asserted general.** They are shown on three systems of record and tested on none.
 - **Equilibrium is stated, and no instrument reads it.** [02-mathematical-models.md](./02-mathematical-models.md) sections 5.3, 5.7 and 5.8 give the maintained gap, the account management a seller funds and the separating condition for a market. Nothing here reads the maintenance rate or fit drift after go-live, which belongs to the Sustaining Adoption Review in the practice rebuild.
 - **Whether occupants will state reservations one to one at the rate the metric needs.** An external review established that they will not write personal exposure on a shared instrument, which is why the bargaining ledger split. Whether they will say it privately often enough for the gap to be counted, and whether the shared arrangement record gets ratified, is the decision-role map's first field test.
-- **The instruments themselves.** This file derives what each must do. [The Market Reading](../../practice/00-market-reading.md) is the first built from it. The deal reading, the plan and the three ledgers do not yet exist in the form derived here.
+- **The instruments themselves.** This file derives what each must do. [The Market Reading](../../practice/00-market-reading.md) is the first built from it. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) 9.0 is the deal reading, except the gaps, which change no triage output and are left to the ledgers. The plan and the three ledgers do not yet exist in the form derived here.
 
 ---
 
