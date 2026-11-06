@@ -75,6 +75,8 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 | Coordination overhead | $\alpha$ | 1.0 | **Convention.** Also the conversion of the bargaining cost into contract value, which nobody has measured. |
 | Committee complexity exponent | $\beta$ | 1.35 | **Structurally motivated.** $\beta > 1$ follows from $N(N-1)/2$ channel growth (Cyert and March 1963; Webster and Wind 1972). The value inside $[1.2, 2.0]$ is chosen. |
 | Technical overlap weight | $\gamma_{TO}$ | 0.20 | **Chosen.** Field refinement, not core theory. |
+| Bargaining-cost band edges | 10, 25 | — | **Chosen.** No source. The Bargaining Ledger's low, medium and high readings. |
+| Variance with no casualty met | One more role read as −1 | — | **Convention.** Unanimous stated alignment is weak evidence, so the Bargaining Ledger computes the variance as though the unmet casualty were counted. A fixed floor would let finding a minor casualty lower the reading. |
 | Responsiveness factor | $\gamma_r$ | 0.5 | **Chosen.** Staging logic follows from Dixit and Pindyck (1994). The value does not. |
 
 **Retired in Constitution 4.0.** The reduced form $y = a\hat{\Delta}_A^2 + c$ took three parameters with it: the coefficient $a = 2.25$, anchored by analogy to loss aversion, the convexity exponent, and the base friction growth rate $b$. The Deal Triage Calculator's score bands, level range, Structural boundary, addends, divergence modifier and dominance threshold went when the calculator was rebuilt on positions. [02-mathematical-models.md](./02-mathematical-models.md) section 7 records why. None of them is in the model.

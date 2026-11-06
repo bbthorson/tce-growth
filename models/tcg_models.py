@@ -286,7 +286,7 @@ def buyer_uncertainty_floor(cv_roi, mu=MU_RETURN_UNCERTAINTY):
 
 # ==========================================================================
 # theory/01-foundation/02-mathematical-models.md section 3
-# practice/consensus-friction-calculator.md
+# practice/bargaining-ledger.md, and 02-mathematical-models.md section 3.
 # Consensus friction.
 # ==========================================================================
 
@@ -907,7 +907,7 @@ def buyer_commitment_velocity(s_dept, d_prov, n):
     form was S_dept / (D_prov + 1), which rewards engaging more departments and
     so inverts Axiom III: the consensus model treats stakeholder count as a cost
     driver. Uncorrected, an organization could raise its score by dragging more
-    people into rooms, which the Consensus Friction Calculator correctly scores
+    people into rooms, which the bargaining-cost form correctly scores
     as worse.
 
     The +1 guards against division by zero on same-day response. It is a

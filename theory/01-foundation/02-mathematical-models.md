@@ -203,7 +203,7 @@ $$\frac{\partial F_{consensus}}{\partial N} = \alpha \beta N^{\beta-1}(1 + \text
 
 $$\frac{\partial F_{consensus}}{\partial \text{Var}(I_i)} = \alpha N^{\beta}$$
 
-The return on reducing misalignment scales with $N^{\beta}$. In a committee of three, aligning incentives produces modest gains. In a committee of ten, it produces the largest single reduction available to the seller. This is the quantitative case for running the Red Team workshop on large committees specifically, and it is why the [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) escalates to executive sponsorship above a threshold rather than recommending more meetings.
+The return on reducing misalignment scales with $N^{\beta}$. In a committee of three, aligning incentives produces modest gains. In a committee of ten, it produces the largest single reduction available to the seller. This is the quantitative case for running the Red Team workshop on large committees specifically, and it is why the [Bargaining Ledger](../../practice/bargaining-ledger.md) answers a high reading with a staked sponsor and a ratified arrangement rather than more meetings.
 
 ### 3.4 Field extension: technical overlap
 
@@ -510,7 +510,7 @@ Until then, treat every output as a structured comparison between deals rather t
 - [01-motions.md](./01-motions.md) — Motion selection, which consumes the positions in section 6.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's condition in full, including the repeated game.
 - [Enforcement Ledger](../../practice/enforcement-ledger.md) — Field instrument producing the implementation gap.
-- [Consensus Friction Calculator](../../practice/consensus-friction-calculator.md) — Field instrument producing $F_{consensus}$.
+- [Bargaining Ledger](../../practice/bargaining-ledger.md) — Field instrument producing $F_{consensus}$.
 - [Enforcement Ledger](../../practice/enforcement-ledger.md) — Its Stage column applies section 5.4 to gate design.
 - [real-options.md](../02-research/real-options.md) — Source for the staging logic.
 - [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics. Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

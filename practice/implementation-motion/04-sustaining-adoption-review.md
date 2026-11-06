@@ -53,7 +53,7 @@ The receiving lead confirms each item arrived, in writing. An unchecked box is a
 - [ ] **The gates.** The outcome measure and when it comes due, the resource rows with their owners and hours, the hostages and their trigger dates, and the go or no-go criteria.
 - [ ] **The standing review.** Its cadence and what each side can invoke.
 
-**From the bargaining ledger,** once it exists: the decision roles, what the change does to each, and the arrangement's answer. Until then, the deal team's own notes on the political map, which customer success should treat as unverified.
+**From the [Bargaining Ledger](../bargaining-ledger.md):** the arrangement record, the bond each exposed role holds, any written overrule, and the decision roles with their occupants. The private map passes to the account team that inherits the relationship and to no one else.
 
 ### 1.2 The receipt and the transfer test
 

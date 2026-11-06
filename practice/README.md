@@ -23,10 +23,11 @@ The Constitution's axioms answer three questions: whether a market can exist, wh
 |---|---|---|
 | **Before any buyer** | Where does the sale start across this buyer population, and are we built to pay down that cost? | [00. The Market Reading](./00-market-reading.md) |
 | **Deal** | Can this buyer enter, where does the sale start and what must the seller's spending do, and what must be settled before anything specific is sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
+| **Deal, a coalition** | Whose measure does this change, what does each role need answered, and who inside the buyer holds the decision together? | [Bargaining Ledger](./bargaining-ledger.md) |
 | **Deal, specific exposure** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) |
 
-The Market Reading, the Deal Triage Calculator and the Enforcement Ledger are built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review in [`implementation-motion/`](./implementation-motion/) runs after it. The Deal Triage Calculator decides whether the sale starts at the implementation cost. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
+The Market Reading, the Deal Triage Calculator, the Enforcement Ledger and the Bargaining Ledger are built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review in [`implementation-motion/`](./implementation-motion/) runs after it. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
 
 ---
 
@@ -37,7 +38,7 @@ Three instruments convert deal observations into comparable numbers. Two measure
 | Instrument | Measures | Run it when |
 |---|---|---|
 | [Enforcement Ledger](./enforcement-ledger.md) | The policing gap, the mean of the seller's and the buyer's unevidenced fractions, which feeds the chance of future loss | At each stage, from Map onward |
-| [Consensus Friction Calculator](./consensus-friction-calculator.md) | $F_{consensus}$ | After the buying committee is mapped |
+| [Bargaining Ledger](./bargaining-ledger.md) | The bargaining gap, and $F_{consensus}$ with its band | Whenever the triage reads bargaining as needing investment, and on every deal with specific exposure |
 | [Friction Efficiency Index](./friction-efficiency-index.md) | Whether specific investment was allocated before it was sunk, and where the effort went, across a closed cohort | Quarterly, in retrospect. The one instrument that could test Axiom III's allocation clause after the fact. |
 
 ---

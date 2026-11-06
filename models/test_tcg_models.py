@@ -450,7 +450,8 @@ class TestAsymmetryHalves(unittest.TestCase):
 
 
 # ==========================================================================
-# consensus-friction-calculator.md line 84, the worked example.
+# 02-mathematical-models.md section 3: the worked example the retired
+# Consensus Friction Calculator carried, now applied in bargaining-ledger.md.
 # ==========================================================================
 
 class TestConsensusFriction(unittest.TestCase):
@@ -720,7 +721,7 @@ class TestFrictionEfficiencyIndex(unittest.TestCase):
     def test_bcv_penalizes_committee_size(self):
         """Section 2: the N^0.5 denominator is a correction, not decoration.
         The canvas form rewarded dragging more people into rooms, which the
-        Consensus Friction Calculator correctly scores as worse."""
+        bargaining-cost form correctly scores as worse."""
         four_depts_small_committee = m.buyer_commitment_velocity(4, 3, 4)
         four_depts_large_committee = m.buyer_commitment_velocity(4, 3, 16)
         self.assertGreater(four_depts_small_committee,
