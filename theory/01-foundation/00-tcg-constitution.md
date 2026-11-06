@@ -191,7 +191,7 @@ A deal closes when both conditions hold at the moment of decision and no cost ke
 2. **Is the deal paying down the right cost at time 0?** Is the seller absorbing the cost nearest its threshold, does each party's share fit inside its own return, and does the seller's spending raise what the deal creates, let it go ahead, or only move cost? (Axiom II.)
 3. **Is time 1 contracted and planned?** Was the allocation settled before anything specific was sunk, is a review in place, and is any gap rebuilding faster than discovery closes it? (Axiom III.)
 
-The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) carries the full reading, step by step.
+The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) asks the same three questions of a live deal.
 
 **Failure modes, collected.**
 
@@ -259,7 +259,7 @@ Versions 1.0 to 3.0, and the nineteen revisions made under the earlier name, are
 **Academic backing:** [00-reading-guide.md](../02-research/00-reading-guide.md) maps each research file to the axiom it backs.
 
 **Field operationalization:**
-- Where the sale starts, frequency, governance form and the stall reading → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md)
+- Whether a buyer can enter, where the sale starts, frequency and governance form → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md)
 - Blueprint → [01-discovery-contextual-blueprint.md](../../practice/implementation-motion/01-discovery-contextual-blueprint.md)
 - Red Team → [02-validation-red-team-protocol.md](../../practice/implementation-motion/02-validation-red-team-protocol.md)
 - MIP → [03-closing-mutual-implementation-plan.md](../../practice/implementation-motion/03-closing-mutual-implementation-plan.md)

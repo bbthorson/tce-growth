@@ -39,7 +39,7 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 Each has a README listing what is inside it. For `tools/` it is [tools/linting/README.md](./tools/linting/README.md).
 
 > [!NOTE]
-> **The practice layer is frozen.** Constitution 6.0 is in force, and every file in `practice/` still derives from 4.1. Each one is marked `under-review` and stays as written until the layer is rebuilt from the current axioms. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step, and [CONSTITUTION-6.0-PROPOSAL.md](./CONSTITUTION-6.0-PROPOSAL.md) records the 6.0 restatement. Both retire to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
+> **The practice layer is being rebuilt.** Constitution 6.1 is in force. The [Deal Triage Calculator](./practice/deal-triage-calculator.md) is rebuilt for it and active. Every other file in `practice/` still derives from 4.1, is marked `under-review`, and stays as written until its turn. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step, and [CONSTITUTION-6.0-PROPOSAL.md](./CONSTITUTION-6.0-PROPOSAL.md) records the 6.0 restatement. Both retire to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
 
 ---
 

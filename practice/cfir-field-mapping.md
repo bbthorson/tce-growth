@@ -105,10 +105,10 @@ Two CFIR constructs govern deal triage rather than any single artifact. Both liv
 
 | Calculator Section | CFIR Construct | What It Captures | Rep Sees It As |
 |---|---|---|---|
-| **Step 0: Workflow Maturity Gate** | Compatibility (maturity sense) | Has the buyer defined this process at all? | "Is there an SOP?" |
-| **Step 2 Gate A** | Compatibility (workflow sense) | Is there an encoded workflow for the product to fit, or does the product create the practice? | "Are we replacing something or starting something?" |
-| **Step 2 Gate B** | Trialability | Can the buyer verify fit themselves, cheaply, and walk away? | "Can they just try it?" |
-| **Step 2 divergent steps** | Compatibility (workflow sense) | How many steps in the buyer's workflow have no counterpart in the product's | "How weird is their setup?" |
+| **Step 0b: Workflow maturity** | Compatibility (maturity sense) | Has the buyer defined this process at all? | "Is there an SOP?" |
+| **Step 3a Gate A** | Compatibility (workflow sense) | Is there an encoded workflow for the product to fit, or does the product create the practice? | "Are we replacing something or starting something?" |
+| **Step 3a Gate B** | Trialability | Can the buyer verify fit themselves, cheaply, and walk away? | "Can they just try it?" |
+| **Step 3a divergent steps** | Compatibility (workflow sense) | How many steps in the buyer's workflow have no counterpart in the product's | "How weird is their setup?" |
 
 Gate B is where Trialability does its work, and the reason it belongs in triage rather than in an artifact: a buyer who can measure fit for themselves, and walk away, sinks nothing specific and does not need the seller to prove it. That is Axiom III's gate, and it removes the condition the implementation artifacts exist to satisfy.
 

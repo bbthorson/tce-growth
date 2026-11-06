@@ -1325,12 +1325,13 @@ UNIFIED_RISK = "bilateral, watching for unified"
 
 TURNKEY = "turnkey"
 KEEPS_OUT = "keeps-out"
+UNSHOWN = "unshown"
 ALLOCATE = "allocate"
 
 TriageResult = collections.namedtuple(
     "TriageResult",
-    "route positions zones sale_start specific exposure gaps frequency "
-    "governance flags reason")
+    "route positions expected_positions zones sale_start specific exposure "
+    "frequency governance flags reason")
 
 
 def _check_frequency(frequency):
@@ -1483,15 +1484,16 @@ def consensus_position(n_vetoes, formal_body_required=False):
                               *CONSENSUS_EDGES)
 
 
-def consensus_gap(n_vetoes, n_with_documented_objective):
-    """The consensus gap, a proxy. Step 1b.
+def consensus_gap(n_vetoes, n_stated):
+    """The bargaining gap, 08-from-axioms-to-instruments.md section 2.2.
 
-    The denominator is the roles that can say no, without the formal body,
-    which is not a person. The measured objective is the seller's view of each
-    role, which 07-open-questions.md item 2 records as a proxy for each
-    occupant's own uncertainty about their exposure.
+    The share of decision roles whose occupant has not stated, one to one,
+    what the change does to them. The denominator is the roles that can say
+    no, without any formal body, which is not a person. The decision-role map
+    reads it. The Deal Triage Calculator does not, since no triage output
+    depends on it.
     """
-    return component_gap(n_vetoes, n_with_documented_objective)
+    return component_gap(n_vetoes, n_stated)
 
 
 def implementation_count(integration_points, changed_workflows,
@@ -1521,28 +1523,36 @@ def exposure_count(integration_points, changed_workflows, divergent_steps):
     return integration_points + changed_workflows + divergent_steps
 
 
-def triage(workflow_maturity,
-           n_alternatives, search_evidence,
-           n_vetoes, n_with_documented_objective,
+def triage(workflow_maturity, n_alternatives, n_vetoes,
            integration_points, changed_workflows, undocumented_exceptions,
-           items_with_artifact, frequency, gate_b_trialable,
+           frequency, gate_b_trialable,
            category_named=True, channel_exists=True,
            formal_body_required=False,
            gate_a=GATE_A_ENCODED, divergent_steps=None,
-           pilot_requested=False, product_automates_process=True):
-    """Run the whole instrument and return a TriageResult.
+           pilot_requested=False, product_automates_process=True,
+           expected=None, entered_discovery=True):
+    """Run the whole instrument and return a TriageResult. Version 9.0.
+
+    expected maps any of "search", "consensus" and "implementation" to the
+    count the buyer says it expects, the consensus one including formal
+    bodies. A cost left out is expected as measured.
 
     Order of operations, which the document fixes:
 
     0. The workflow maturity gate runs before anything is counted.
-    1. The three counts, their positions, and their gaps.
-    2. The two gates and the specific-exposure reading. Gate B is answered on
+    1. Each cost's position as measured and as the buyer expects it.
+    3. The two gates and the specific-exposure reading. Gate B is answered on
        every deal, because a buyer who can trial and walk away sinks nothing
        specific. Divergence is counted only when gate A answers "encoded" and
        gate B fails.
-    3. The overrides: a pilot request, then any cost that keeps the buyer out.
-    4. The two readings: every cost self-serve or not, exposure none or
-       specific. The governance form comes from exposure and frequency.
+    4. The overrides: a cost measured past its edge keeps the buyer out, then
+       a cost the buyer only expects past its edge is unshown, then a pilot
+       request. Then the two readings: every cost self-serve or not,
+       exposure none or specific. The sale starts at the largest expected
+       position before the buyer has entered discovery, and the largest
+       measured one after. The governance form comes from exposure and
+       frequency. The overrides that are judgments (a share nothing covers,
+       a fixed specification, missing delivery depth) are not modeled.
     """
     flags = []
 
@@ -1553,8 +1563,9 @@ def triage(workflow_maturity,
     if workflow_maturity == 1:
         if product_automates_process:
             return TriageResult(
-                route=CHAOS_TRAP, positions=None, zones=None, sale_start=None,
-                specific=None, exposure=None, gaps=None, frequency=frequency,
+                route=CHAOS_TRAP, positions=None, expected_positions=None,
+                zones=None, sale_start=None,
+                specific=None, exposure=None, frequency=frequency,
                 governance=None, flags=("chaos-trap",),
                 reason="Step 0: no written process exists and the product "
                        "automates the process. Redirect to consulting or a "
@@ -1563,7 +1574,7 @@ def triage(workflow_maturity,
     elif workflow_maturity == 2:
         flags.append("emergent-workflow-blueprint-must-reconstruct")
 
-    # --- Step 1: counts, positions, gaps -------------------------------
+    # --- Step 1: positions, measured and expected -----------------------
     n_impl = implementation_count(integration_points, changed_workflows,
                                   undocumented_exceptions)
     positions = {
@@ -1572,11 +1583,23 @@ def triage(workflow_maturity,
         "consensus": consensus_position(n_vetoes, formal_body_required),
         "implementation": implementation_position(n_impl),
     }
-    gaps = {"search": search_gap(search_evidence),
-            "consensus": consensus_gap(n_vetoes, n_with_documented_objective),
-            "implementation": component_gap(n_impl, items_with_artifact)
-            if n_impl else None}
+    expected = dict(expected or {})
+    unknown = set(expected) - set(positions)
+    if unknown:
+        raise ValueError("expected counts are for search, consensus and "
+                         "implementation, not {}".format(sorted(unknown)))
+    expected_positions = dict(positions)
+    if "search" in expected:
+        expected_positions["search"] = search_position(
+            expected["search"], category_named, channel_exists)
+    if "consensus" in expected:
+        expected_positions["consensus"] = threshold_position(
+            expected["consensus"], *CONSENSUS_EDGES)
+    if "implementation" in expected:
+        expected_positions["implementation"] = implementation_position(
+            expected["implementation"])
     zones = {k: cost_zone(r) for k, r in positions.items()}
+    expected_zones = {k: cost_zone(r) for k, r in expected_positions.items()}
 
     # --- Step 2: gates and exposure ------------------------------------
     if gate_a not in (GATE_A_GREENFIELD, GATE_A_PRODUCT_ABSORBS,
@@ -1605,27 +1628,37 @@ def triage(workflow_maturity,
 
     def result(route, sale_start, reason, extra=()):
         return TriageResult(
-            route=route, positions=positions, zones=zones,
+            route=route, positions=positions,
+            expected_positions=expected_positions, zones=zones,
             sale_start=sale_start, specific=specific, exposure=exposure,
-            gaps=gaps, frequency=frequency, governance=governance,
+            frequency=frequency, governance=governance,
             flags=tuple(flags) + tuple(extra), reason=reason)
 
-    # --- Step 3: overrides ---------------------------------------------
-    if pilot_requested:
-        return result(
-            "implementation", ("implementation",),
-            "Override: the buyer asked for a pilot or proof of concept, which "
-            "reports that it cannot verify fit alone, whatever was counted. "
-            "Pilots are governed by the Red Team Protocol.",
-            ("pilot-override",))
-
+    # --- Step 4: overrides ---------------------------------------------
     out = tuple(sorted(k for k, z in zones.items() if z == KEEPS_BUYER_OUT))
     if out:
         return result(
             KEEPS_OUT, out,
-            "A cost keeps the buyer out of the market. Pull it back into "
-            "range with the instrument for that cost, or decline. No work on "
-            "the other two reaches it.")
+            "Kept out: a cost is past what the buyer can get through. Pull it "
+            "back into range, invest across deals if its floor holds it, or "
+            "decline. No work on the other two reaches it.")
+
+    unshown = tuple(sorted(k for k, z in expected_zones.items()
+                           if z == KEEPS_BUYER_OUT))
+    if unshown:
+        return result(
+            UNSHOWN, unshown,
+            "Unshown: the cost is within reach and the buyer expects it past "
+            "its edge. Show it with evidence the buyer can check. Nothing "
+            "else reaches a buyer that will not enter discovery.")
+
+    if pilot_requested:
+        return result(
+            "implementation", ("implementation",),
+            "Override: the buyer asked for a pilot or proof of concept, which "
+            "reports that it expects a policing cost it cannot verify alone, "
+            "whatever was counted. Pilots run under the Red Team Protocol.",
+            ("pilot-override",))
 
     # --- Step 4: the two readings --------------------------------------
     if all(z == SELF_SERVE for z in zones.values()):
@@ -1641,7 +1674,7 @@ def triage(workflow_maturity,
             "Turnkey: every cost is self-serve and nothing specific is sunk. "
             "Standard terms and self-service provisioning.")
 
-    start = sale_start(positions)
+    start = sale_start(positions if entered_discovery else expected_positions)
     extra = []
     if not specific:
         extra.append("heavy-sale-light-contract")

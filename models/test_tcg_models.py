@@ -1013,7 +1013,7 @@ class TestSellerSurplus(unittest.TestCase):
 
 
 # ==========================================================================
-# deal-triage-calculator.md v8.0
+# deal-triage-calculator.md v9.0
 # ==========================================================================
 
 class TestDealTriageCalculator(unittest.TestCase):
@@ -1022,10 +1022,9 @@ class TestDealTriageCalculator(unittest.TestCase):
     it checks. The document is the specification."""
 
     DEAL = dict(
-        workflow_maturity=3, n_alternatives=4, search_evidence=4,
-        n_vetoes=4, n_with_documented_objective=1,
+        workflow_maturity=3, n_alternatives=4, n_vetoes=4,
         integration_points=4, changed_workflows=2, undocumented_exceptions=2,
-        items_with_artifact=3, gate_b_trialable=False, divergent_steps=3,
+        gate_b_trialable=False, divergent_steps=3,
         frequency=m.RECURRENT)
 
     def run_deal(self, **changes):
@@ -1109,10 +1108,10 @@ class TestDealTriageCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.consensus_count(0)
 
-    def test_the_consensus_gap_leaves_the_formal_body_out(self):
-        result = self.run_deal(n_vetoes=4, n_with_documented_objective=1,
-                               formal_body_required=True)
-        self.assertAlmostEqual(result.gaps["consensus"], 0.75)
+    def test_the_bargaining_gap_leaves_the_formal_body_out(self):
+        """08 section 2.2: occupants who have stated, of roles that can say
+        no. A formal body is not a person."""
+        self.assertAlmostEqual(m.consensus_gap(4, 1), 0.75)
 
     def test_the_implementation_count_sums_three_named_things(self):
         self.assertEqual(m.implementation_count(4, 2, 2), 8)
@@ -1122,15 +1121,44 @@ class TestDealTriageCalculator(unittest.TestCase):
         result = self.run_deal()
         self.assertNotIn("level", result._fields)
 
-    def test_the_gaps_do_not_move_the_positions(self):
-        """Step 3: the gaps feed future loss, not today's cost."""
-        known = self.run_deal(search_evidence=4, n_with_documented_objective=4,
-                              items_with_artifact=8)
-        unknown = self.run_deal(search_evidence=0,
-                                n_with_documented_objective=0,
-                                items_with_artifact=0)
-        self.assertEqual(known.positions, unknown.positions)
-        self.assertEqual(known.route, unknown.route)
+    def test_the_gaps_are_not_read_at_triage(self):
+        """Step 2a, version 9.0: no output depends on the gaps, so the
+        result carries none and the instrument takes no evidence counts."""
+        self.assertNotIn("gaps", self.run_deal()._fields)
+
+    # --- Step 1d: measured and expected ---------------------------------
+    def test_expected_defaults_to_measured(self):
+        result = self.run_deal()
+        self.assertEqual(result.expected_positions, result.positions)
+
+    def test_a_cost_expected_past_its_edge_is_unshown(self):
+        """Within reach as measured, past the edge as the buyer expects it."""
+        result = self.run_deal(expected={"implementation": 14})
+        self.assertEqual(result.route, m.UNSHOWN)
+        self.assertEqual(result.sale_start, ("implementation",))
+
+    def test_kept_out_comes_before_unshown(self):
+        result = self.run_deal(n_vetoes=9, expected={"implementation": 14})
+        self.assertEqual(result.route, m.KEEPS_OUT)
+
+    def test_unshown_comes_before_a_pilot_request(self):
+        result = self.run_deal(expected={"consensus": 9},
+                               pilot_requested=True)
+        self.assertEqual(result.route, m.UNSHOWN)
+
+    def test_the_sale_starts_on_the_expected_reading_before_entry(self):
+        """Step 2a: largest expected position before discovery, measured
+        after. Measured: implementation 6/9 leads. Expected: consensus 6
+        reads 5/6 and leads."""
+        before = self.run_deal(expected={"consensus": 6},
+                               entered_discovery=False)
+        after = self.run_deal(expected={"consensus": 6})
+        self.assertEqual(before.sale_start, ("consensus",))
+        self.assertEqual(after.sale_start, ("implementation",))
+
+    def test_an_unknown_expected_cost_is_refused(self):
+        with self.assertRaises(ValueError):
+            self.run_deal(expected={"price": 3})
 
     # --- Step 2: exposure ----------------------------------------------
     def test_gate_b_must_be_answered_on_every_deal(self):
@@ -1170,7 +1198,7 @@ class TestDealTriageCalculator(unittest.TestCase):
         result = self.run_deal(n_alternatives=2, n_vetoes=1,
                                integration_points=0, changed_workflows=0,
                                undocumented_exceptions=0,
-                               items_with_artifact=0, pilot_requested=True)
+                               pilot_requested=True)
         self.assertEqual(result.route, "implementation")
         self.assertIn("pilot-override", result.flags)
 
@@ -1182,7 +1210,7 @@ class TestDealTriageCalculator(unittest.TestCase):
     def test_the_unnamed_category_deal_is_no_longer_turnkey(self):
         """The review's case: one decision maker, no integrations, an unnamed
         category. The retired level summed it to 11 and routed it Turnkey."""
-        result = m.triage(3, 2, 0, 1, 1, 0, 0, 0, 0, m.RECURRENT, True,
+        result = m.triage(3, 2, 1, 0, 0, 0, m.RECURRENT, True,
                           category_named=False)
         self.assertEqual(result.route, m.KEEPS_OUT)
         self.assertEqual(result.sale_start, ("search",))
@@ -1190,7 +1218,7 @@ class TestDealTriageCalculator(unittest.TestCase):
     def test_the_trialable_deal_gets_market_governance(self):
         """The review's case: trialable, four vetoes plus security review.
         The retired level scored it 18 and prescribed trilateral governance."""
-        result = m.triage(3, 5, 4, 4, 0, 1, 0, 0, 0, m.ONE_SHOT, True,
+        result = m.triage(3, 5, 4, 1, 0, 0, m.ONE_SHOT, True,
                           formal_body_required=True)
         self.assertEqual(result.governance, m.MARKET)
         self.assertFalse(result.specific)
@@ -1198,13 +1226,13 @@ class TestDealTriageCalculator(unittest.TestCase):
     def test_the_custom_interface_deal_is_a_light_sale_heavy_contract(self):
         """The review's case: one custom interface, one rewired workflow. The
         retired level scored it 3, Turnkey, market terms."""
-        result = m.triage(3, 2, 4, 1, 1, 1, 1, 0, 2, m.RECURRENT, False,
+        result = m.triage(3, 2, 1, 1, 1, 0, m.RECURRENT, False,
                           divergent_steps=0)
         self.assertEqual(result.route, m.ALLOCATE)
         self.assertEqual(result.governance, m.BILATERAL)
 
     def test_every_cost_self_serve_and_nothing_specific_is_turnkey(self):
-        result = m.triage(3, 3, 4, 1, 1, 1, 1, 0, 2, m.RECURRENT, True)
+        result = m.triage(3, 3, 1, 1, 1, 0, m.RECURRENT, True)
         self.assertEqual(result.route, m.TURNKEY)
         self.assertEqual(result.governance, m.MARKET)
 
@@ -1218,15 +1246,13 @@ class TestDealTriageCalculator(unittest.TestCase):
         # consensus 4 -> 0.5; implementation n = 6.5 is not possible, so tie
         # search 6 -> 0.5 against consensus 4 -> 0.5.
         result = self.run_deal(n_alternatives=6, integration_points=1,
-                               changed_workflows=1, undocumented_exceptions=0,
-                               items_with_artifact=1)
+                               changed_workflows=1, undocumented_exceptions=0)
         self.assertEqual(result.sale_start, ("consensus", "search"))
         self.assertEqual(result.route, "consensus+search")
 
     def test_a_consensus_start_says_the_instrument_set_is_thin(self):
         result = self.run_deal(n_vetoes=6, integration_points=1,
-                               changed_workflows=1, undocumented_exceptions=0,
-                               items_with_artifact=1)
+                               changed_workflows=1, undocumented_exceptions=0)
         self.assertEqual(result.route, "consensus")
         self.assertIn("consensus-instrument-set-is-thin", result.flags)
 

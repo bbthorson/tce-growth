@@ -92,6 +92,7 @@ Every input to this instrument is a count of a named thing, and each count is re
 | Parameter | Value | Provenance |
 |---|---|---|
 | Unnamed category, or no channel | Keeps the buyer out | **Structurally motivated.** An unbounded alternative set and an unreachable seller are argued in step 1a. Neither is a count, so neither has an edge. |
+| Expected count | Read against the measured count's edges | **Convention.** The buyer decides on what it expects under Axiom I, and one pair of edges keeps the two readings comparable. |
 | Formal body | Counts as one veto | **Convention.** A body holds a veto and is not a person, so it joins the position count and not the evidence denominator. |
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |
 

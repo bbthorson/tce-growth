@@ -7,7 +7,7 @@ status: under-review
 # Practice
 
 > [!NOTE]
-> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
+> **Being rebuilt for Constitution 6.1.** The [Deal Triage Calculator](./deal-triage-calculator.md) is rebuilt and active. Every other file derives from Constitution 4.1 and stays as written until its turn in the rebuild. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
 
 **Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
 
@@ -22,13 +22,13 @@ The Constitution's axioms answer three decisions in time order: whether the buye
 | Moment | Your question | Instrument |
 |---|---|---|
 | **Before any buyer** | Where does the sale start across this buyer population, and are we built to pay down that cost? | [00. The Market Reading](./00-market-reading.md) |
-| **Deal** | Does any cost keep this buyer out, where does the sale start, and is anything specific being sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
+| **Deal** | Can this buyer enter, where does the sale start and what must the seller's spending do, and what must be settled before anything specific is sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
 | **Workflow** | What do I not yet know about their environment, and how specific is the investment? | [01. Contextual Blueprint](./implementation-motion/01-discovery-contextual-blueprint.md) |
 | **Deal** | How does this implementation fail? | [02. Red Team Protocol](./implementation-motion/02-validation-red-team-protocol.md) |
 | **Deal** | Who commits what, and what happens when a stage fails? | [03. Mutual Implementation Plan](./implementation-motion/03-closing-mutual-implementation-plan.md) |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) |
 
-The Market Reading is the first instrument built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) rather than inherited from earlier practice, and the deal reading, the plan and the three ledgers will follow it in phase order. The four artifacts in [`implementation-motion/`](./implementation-motion/) run in order and each gates the next. They are the implementation component's instruments. The Deal Triage Calculator decides whether the sale starts at the implementation cost. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
+The Market Reading is the first instrument built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) rather than inherited from earlier practice, and the Deal Triage Calculator 9.0 is the deal reading rebuilt from it for Constitution 6.1. The plan and the three ledgers will follow in phase order. The four artifacts in [`implementation-motion/`](./implementation-motion/) run in order and each gates the next. They are the implementation component's instruments. The Deal Triage Calculator decides whether the sale starts at the implementation cost. The search and consensus regions have no instrument files, and the calculator says so when a deal routes to them.
 
 ---
 
