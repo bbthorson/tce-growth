@@ -136,7 +136,7 @@ The following CFIR constructs are **not yet operationalized** in any field asset
   - [Enforcement Ledger, Map](./enforcement-ledger.md)
   - [Enforcement Ledger, Test](./enforcement-ledger.md)
   - [Enforcement Ledger, Stage](./enforcement-ledger.md)
-  - [04-sustaining-adoption-review.md](./implementation-motion/04-sustaining-adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
+  - [Sustaining Adoption Review](./adoption-review.md) — post-signature; reuses the Round 5 (Churn) mapping to the Maintenance dimension above.
 
 ---
 

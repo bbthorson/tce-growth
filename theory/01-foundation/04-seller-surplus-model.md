@@ -154,7 +154,7 @@ So a forward-deployed motion raises the seller's temptation $T$ and the seller's
 
 [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) states that Net Revenue Retention is a lagging indicator, and it lags by a full renewal cycle. Section 7.2 supplies a leading one: the incumbent's asymmetry gap, which erodes continuously and is measurable at any point.
 
-The instrument already exists. The [Enforcement Ledger](../../practice/enforcement-ledger.md) measures the policing gap, and nothing currently re-reads it after signature. Re-running it each QBR would report moat erosion while it is still cheap to reverse. Section 4 of the [Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md) is the natural home, since it already governs what depreciates and must be re-earned.
+The [Enforcement Ledger](../../practice/enforcement-ledger.md) measures the policing gap before signature, and the [Sustaining Adoption Review](../../practice/adoption-review.md) re-reads it at every standing review, counting rows whose evidence has gone stale as unevidenced (section 2.1). Read against the last review, it reports moat erosion while it is still cheap to reverse.
 
 ### 7.5 The information asset at the market level
 

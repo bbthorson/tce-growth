@@ -22,7 +22,7 @@ Goal: Read one deal against the Constitution's three questions, in order. Can th
 | **Owner** | The account executive or pre-sales lead, with a spot-check on the counts by someone who does not carry the deal. |
 
 > [!IMPORTANT]
-> **This instrument counts. It does not rate.** Every input is a number of named things, backed by a list. A number with no list attached is not a count. Counts have a true zero and equal intervals, and each is read against two edges of its own, so the counts are never converted to scores or summed. A count can still be gamed, but a disputed count is an argument about a named item on a list, and the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) re-takes every count. The edges are chosen, so read positions as comparisons between deals in one book ([06-calibration.md](../theory/01-foundation/06-calibration.md)).
+> **This instrument counts. It does not rate.** Every input is a number of named things, backed by a list. A number with no list attached is not a count. Counts have a true zero and equal intervals, and each is read against two edges of its own, so the counts are never converted to scores or summed. A count can still be gamed, but a disputed count is an argument about a named item on a list, and the [Adoption Review](./adoption-review.md) re-takes every count. The edges are chosen, so read positions as comparisons between deals in one book ([06-calibration.md](../theory/01-foundation/06-calibration.md)).
 
 ---
 
@@ -222,12 +222,20 @@ Where one side sinks far more than the other, contract a hostage, such as fees s
 
 | Sale starts at | Motion | Run |
 |---|---|---|
-| Search | **Search-led** | Category definition, commercial teaching, reference architectures, channel work. No instrument file in this repository. |
+| Search | **Search-led** | Category definition, commercial teaching, reference architectures, channel work, run from the [Market Reading](./00-market-reading.md)'s search ledger. |
 | Consensus | **Consensus-led** | The [Bargaining Ledger](./bargaining-ledger.md): each decision role's exposure mapped one to one, an arrangement each exposed role ratifies, and a safeguard inside the buyer. Do not substitute the Enforcement Ledger because it is the more familiar one. |
-| Implementation | **Implementation-led** | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, then the [Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
+| Implementation | **Implementation-led** | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, then the [Adoption Review](./adoption-review.md). |
 | A tie | Both, run together | Do not pick one and call it the motion. |
 
 **Possible over-frictioning.** Implementation needs investment and the exposure reads none. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work. Run the instruments that pay down today's cost and skip the governance apparatus.
+
+---
+
+## Auditing the counts
+
+At each renewal of every recurring deal, including those below the gate, the [Adoption Review](./adoption-review.md) re-counts what this instrument counted: integration points, workflows that change, undocumented exception paths and divergent steps. Whoever owns the triage across the book records each against the count taken here, measured or expected, beside the deal's outcome.
+
+Read the variance across the book, never on one deal. A counter whose variance runs one way deal after deal has a counting problem, and the direction says which. Consistently under routes deals away from the apparatus they needed, and below-the-gate renewals are where that shows. Consistently over routes deals toward apparatus they did not need. No band applies, because a variance of 4 means something different on a deal of 5 items than on one of 30. Deals lost and one-shot deals are never re-counted, so the audit sees only deals that closed and renewed. It audits the counter. Whether the counts predict outcomes needs the outcome logged beside them.
 
 ---
 

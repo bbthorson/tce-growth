@@ -7,7 +7,7 @@ status: under-review
 # Practice
 
 > [!NOTE]
-> **Being rebuilt for Constitution 6.1.** The [Market Reading](./00-market-reading.md) and the [Deal Triage Calculator](./deal-triage-calculator.md) are rebuilt and active. Every other file derives from Constitution 4.1 and stays as written until its turn. [The practice rebuild proposal](../PRACTICE-REBUILD-PROPOSAL.md) says which files are rebuilt, merged or archived, and in what order.
+> **Being rebuilt for Constitution 6.1.** The [Market Reading](./00-market-reading.md), the [Deal Triage Calculator](./deal-triage-calculator.md), the [Bargaining Ledger](./bargaining-ledger.md), the [Enforcement Ledger](./enforcement-ledger.md) and the [Sustaining Adoption Review](./adoption-review.md) are rebuilt and active. Every other file derives from Constitution 4.1 and stays as written until its turn. [The practice rebuild proposal](../PRACTICE-REBUILD-PROPOSAL.md) says which files are rebuilt, merged or archived, and in what order.
 
 **Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
 
@@ -25,9 +25,9 @@ The Constitution's axioms answer three questions: whether a market can exist, wh
 | **Deal** | Can this buyer enter, where does the sale start and what must the seller's spending do, and what must be settled before anything specific is sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
 | **Deal, a coalition** | Whose measure does this change, what does each role need answered, and who inside the buyer holds the decision together? | [Bargaining Ledger](./bargaining-ledger.md) |
 | **Deal, specific exposure** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
-| **Deal, after signature** | Did value land, and have we re-earned the renewal? | [04. Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md) |
+| **Deal, after signature** | Did value land, and have we re-earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) |
 
-The Market Reading, the Deal Triage Calculator, the Enforcement Ledger and the Bargaining Ledger are built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review in [`implementation-motion/`](./implementation-motion/) runs after it. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
+The Market Reading, the Deal Triage Calculator, the Enforcement Ledger, the Bargaining Ledger and the Sustaining Adoption Review are built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
 
 ---
 

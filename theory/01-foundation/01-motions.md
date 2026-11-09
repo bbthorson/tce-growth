@@ -107,7 +107,7 @@ The three motions are named after the cost the seller pays down first. Turnkey n
 | Every cost self-serve, nothing specific sunk | **Turnkey** | Published pricing, automated provisioning, self-service trial, zero-touch onboarding. Fit verification transfers entirely to the buyer. | None needed. A market in this condition repays no dedicated apparatus. |
 | The sale starts at search | **Search-led** | The two search instruments of section 2.1: teaching where the category is unnamed, channel where the buyer is unreachable. | Present and thin. No instrument file in this repository. |
 | The sale starts at consensus | **Consensus-led** | Mapping each decision role's exposure, champion enablement, bilateral decision criteria. | The [Bargaining Ledger](../../practice/bargaining-ledger.md), beside the incumbent qualification practice. |
-| The sale starts at implementation | **Implementation-led** | The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map, Test and Stage, the Blueprint, Red Team and Mutual Implementation Plan, then [Sustaining Adoption Review](../../practice/implementation-motion/04-sustaining-adoption-review.md). | Present and developed. |
+| The sale starts at implementation | **Implementation-led** | The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map, Test and Stage, the Blueprint, Red Team and Mutual Implementation Plan, then [Sustaining Adoption Review](../../practice/adoption-review.md). | Present and developed. |
 | Two costs at the same position | **Run together** | Both instrument sets, neither picked as the motion. | Whatever the two motions supply. |
 
 The names in the second column are the words the Deal Triage Calculator returns.

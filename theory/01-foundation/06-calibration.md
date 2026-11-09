@@ -120,6 +120,7 @@ The reading reuses every edge in section 3.2 and adds one structural count of it
 | Risk band edges | 0.25 and 0.625 normalized, 4.0 and 7.0 raw | **Chosen.** No source. The ledger reads the normalized form. |
 | Commercial hold threshold | 0.625 normalized, 7.0 raw | **Chosen.** No source. |
 | Routing margin between the halves | 0.25 of a fraction, 1.0 on the raw half scale | **Chosen.** No source. |
+| Default standing review cycle | First at the first gate after go-live, then quarterly. Shortened on a divergence without notice or a stale row that failed re-verification, only while the renewal margin covers the extra reviews. Lengthened after two reviews in a row find neither. | **Chosen.** No source. The quarter is the Constitution's example of a review. The rule stands in for a value of $\gamma_k$ with what the reviews observe, and item 15 below still asks for the rate. Applied in the [Sustaining Adoption Review](../../practice/adoption-review.md) section 2.4. |
 
 ### 3.4 Staged commitment ([02-mathematical-models.md](./02-mathematical-models.md) section 5.4, applied in the Enforcement Ledger's Stage column)
 
@@ -154,7 +155,7 @@ The framework becomes predictive rather than organizing when deals are instrumen
 2. **Each party's investment and specific exposure logged in contract value** at signature, with the outcome at each renewal. That makes the chance of loss estimable against the gaps, and it is the estimation problem with a stated unit on both sides.
 3. **Committee size and stakeholder alignment recorded as structured fields** rather than narrative notes, which makes $\beta$ estimable.
 4. **Triggering events dated**, which makes the decay rate observable as the fall in buyer-reported urgency between the event and close.
-5. **Count Variance recorded at every Adoption Review**, which is the only check the counting instrument has on itself and the fastest way to learn whether the bands in section 3.2 are the right shape.
+5. **Count Variance recorded at every renewal, beside the outcome**, on every recurring deal including those below the gate. It audits the counter, and only with the outcome beside it can it show whether the bands in section 3.2 are the right shape. Lost and one-shot deals are never re-counted.
 
 Until then, treat every output as a structured comparison between deals inside one book. A deal whose largest position is 1.4 is meaningfully further from closing than one at 0.8. Neither number predicts a close date.
 
@@ -190,7 +191,7 @@ These were open questions in [07-open-questions.md](./07-open-questions.md). Eac
 
 **7. Whether allocation and advance work follow section 5.6.** [02-mathematical-models.md](./02-mathematical-models.md) section 5.6 derives the allocation required from the bond condition and gives the work done in advance a placeholder form. *Settled by:* the test three reviews proposed, extended by the imbalance. Stratify deals by the exposure count and by the imbalance between the parties' sunk investments, randomize front-loaded against modular protocols, and read win rate, deployment and retention together, so that decision paralysis and emergent misfit each have a signature. The forms predict that modular protocols win where much of the misfit surfaces only in use and lose little where the specification is static, and that a deal sunk with its allocation requirement uncovered drifts whatever the protocol. [incomplete-contracts.md](../02-research/incomplete-contracts.md) carries the evidence.
 
-**15. The drift rates are asserted, not derived.** $\gamma_{search}$, $\gamma_{consensus}$ and $\gamma_{implementation}$ are named and not valued. Only the bargaining rate has a discrete field event attached, a departed champion. The other two are asserted continuous. *Settled by:* logging the three gaps at every artifact boundary, which is item 1 above.
+**15. The drift rates are asserted, not derived.** $\gamma_{search}$, $\gamma_{consensus}$ and $\gamma_{implementation}$ are named and not valued. Only the bargaining rate has a discrete field event attached, a departed champion. The other two are asserted continuous. The [Sustaining Adoption Review](../../practice/adoption-review.md) sets its cycle from what each review finds, which observes the rebuild on one account without valuing it. *Settled by:* logging the three gaps at every artifact boundary, which is item 1 above, and the stale rows each review counts.
 
 **17. Reputation depreciation has no rate.** Axiom III's rebuild clause applied after signature has tripwires and no instrument. The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s policing gap could be re-read at each review and is not. *Settled by:* running it, which section 7.4 of the seller surplus model already proposes.
 
