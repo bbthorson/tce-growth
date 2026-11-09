@@ -1,6 +1,6 @@
 # Practice Rebuild Proposal
 
-**Status:** Accepted 2026-11-06, with choices P1 to P4 taken as proposed. Being applied in the section 5 sequence: steps 1 to 3 are done, and the files they retired are named here without links.
+**Status:** Accepted 2026-11-06, with choices P1 to P4 taken as proposed. Being applied in the section 5 sequence: steps 1 to 4 are done, and the files they retired are named here without links.
 **Date:** 2026-11-06
 
 The 5.0 proposal decided that after the axioms settle, the instrument set is derived fresh from them, at the smallest size they require, and whatever is not derived is archived. The [Deal Triage Calculator](./practice/deal-triage-calculator.md) was rebuilt first, as 9.0. This file sorts the other ten practice files against the same test, and against the instrument set [08-from-axioms-to-instruments.md](./theory/01-foundation/08-from-axioms-to-instruments.md) derives. Archived means removed from the tree and kept in git history, with a line in the practice README saying where each part went.
@@ -45,7 +45,7 @@ A section of an instrument stays only if it passes all three.
 | `01-discovery-contextual-blueprint.md` | 1,082 | Discovery: the catalyst, the complexity map, the stakeholders, the reciprocity gate, the declared limits | Map column of the enforcement ledger, and the first column of the decision-role map | **Rebuild** as the enforcement ledger's Map stage | Its Stakeholder DNA moves to the bargaining ledger, and the catalyst is a value reading under the second standing assumption. |
 | `02-validation-red-team-protocol.md` | 1,532 | Pre-mortem workshop, the skeptic, the signed gap analysis of product limits | Test column of the enforcement ledger | **Rebuild** as the enforcement ledger's Test stage | Its Stakeholder Diagnosis moves to the bargaining ledger. |
 | `03-closing-mutual-implementation-plan.md` | 902 | Contracts the outcome: the north star, the governance structure, go and no-go | Stage column of the enforcement ledger, and the arrangement record | **Rebuild** as the enforcement ledger's Stage stage, absorbing the Milestone Valuation Model | Adds what 6.1 requires at contract: staged gates with a priced right to stop, a hostage or allocated right where one side sinks far more, and the standing review with what each side can invoke. |
-| [04-sustaining-adoption-review.md](./practice/implementation-motion/04-sustaining-adoption-review.md) | 2,224 | Handoff, the adoption review, the business review, renewal | Maintain column, and the standing review | **Rebuild**, kept separate | Different owner and different time: it runs after signature, by customer success. It is where open question 46, the review's specification, gets settled. |
+| [adoption-review.md](./practice/adoption-review.md), was `04-sustaining-adoption-review.md` | 2,224 | Handoff, the adoption review, the business review, renewal | Maintain column, and the standing review | **Rebuild**, kept separate | Different owner and different time: it runs after signature, by customer success. It is where open question 46, the review's specification, gets settled. |
 
 **Result.** Thirteen practice files become six:
 1. the market reading, with the search ledger

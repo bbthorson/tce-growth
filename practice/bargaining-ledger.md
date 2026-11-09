@@ -18,7 +18,7 @@ Goal: On one deal, close the bargaining gap one decision role at a time, and set
 |---|---|
 | **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading. The [Enforcement Ledger](./enforcement-ledger.md)'s rows, where the deal has specific exposure. |
 | **Outputs** | The decision-role map, the bargaining gap, the size of the bargaining cost and its band, the arrangement record, and the safeguard inside the buyer where one is needed. |
-| **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage column or the contract. The map is re-read in the [Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md). |
+| **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage column or the contract. The map is re-read in the [Sustaining Adoption Review](./adoption-review.md). |
 | **Owner** | The account executive, staked on retention as [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5 derives, or a reviewer who is. The map stays with the seller's account team. |
 
 > [!IMPORTANT]

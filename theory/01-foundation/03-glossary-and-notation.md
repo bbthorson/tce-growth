@@ -271,7 +271,7 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 | **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility must be re-earned. The rebuild clause after signature. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
 | **Decay Clock** | Value decaying from the trigger while the gaps rebuild, both pushing the conditions toward zero. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Handoff Rule** | The Blueprint must reach Customer Success intact, or the implementation gap $\Delta_A$ resets on the receiving side. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
+| **Handoff Rule** | Both deal ledgers must reach the account manager intact, or the seller's half of the policing gap reopens on the receiving side. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
 
 ### Artifact vocabulary
 
@@ -280,8 +280,8 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 | **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [Enforcement Ledger, Map](../../practice/enforcement-ledger.md) |
 | **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
 | **Mutual Implementation Plan (MIP)** | The bilateral governance instrument that distributes decision authority and stages commitment. | [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
-| **Sustaining Adoption Review** | The post-signature artifact. Handoff packet, RE-AIM review, QBR protocol, and renewal evidence. | [04-sustaining-adoption-review.md](../../practice/implementation-motion/04-sustaining-adoption-review.md) |
-| **Count Variance** | The triage counts re-taken at the Adoption Review against the counts taken at triage. The instrument's audit on itself. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| **Sustaining Adoption Review** | The Maintain stage of both deal ledgers, after signature: the handoff, the standing review with the rights each finding invokes, and renewal. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
+| **Count Variance** | The triage counts re-taken at renewal against the counts taken at triage, read across a book beside each outcome. It audits the counter. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [05-governance-forms.md](./05-governance-forms.md) section 5 |
 
 ### External frameworks

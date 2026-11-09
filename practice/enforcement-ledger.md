@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Enforcement Ledger
 
 Version: 1.0
-Goal: On one deal, close the policing gap from both sides and settle the allocation before anything specific is sunk. One ledger, one row per workflow step, shared in full with the buyer. It grows a column at each of three stages: **Map**, which the field calls the Blueprint, **Test**, the Red Team, and **Stage**, the Mutual Implementation Plan. Maintain runs after signature in the [Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md).
+Goal: On one deal, close the policing gap from both sides and settle the allocation before anything specific is sunk. One ledger, one row per workflow step, shared in full with the buyer. It grows a column at each of three stages: **Map**, which the field calls the Blueprint, **Test**, the Red Team, and **Stage**, the Mutual Implementation Plan. Maintain runs after signature in the [Sustaining Adoption Review](./adoption-review.md).
 
 **Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), Axiom III: specificity, who cannot check what, contracting what can be foreseen, enforcement, staged commitment and the gate. Axiom II for discovery as spending that lowers the cost at time 1. The derivation is [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5.
 
@@ -18,7 +18,7 @@ Goal: On one deal, close the policing gap from both sides and settle the allocat
 |---|---|
 | **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading with specific exposure, a sale that starts at implementation, or a pilot request. The reference workflow from the [Market Reading](./00-market-reading.md), Step 0. |
 | **Outputs** | The ledger, the policing gap by half and the stage it sends the deal to, signed gates, and the allocation coverage at the first specific investment. |
-| **Next step** | The [Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md), which runs Maintain and the standing review agreed in Stage. |
+| **Next step** | The [Sustaining Adoption Review](./adoption-review.md), which runs Maintain and the standing review agreed in Stage. |
 | **Owner** | The account executive and solutions engineer, with the buyer's technical lead. The buyer's skeptic judges Test. |
 
 > [!IMPORTANT]
@@ -150,7 +150,7 @@ Both halves run over the same rows, so the seller cannot shrink the buyer's half
 
 **Go or no-go.** Launch only when the integration has passed its Test scenario, the agreed share of users is trained, and the executive sponsor has signed off.
 
-**The standing review.** Agree it here, before anything is sunk: what it reads, how often, and what each side can invoke from it, such as a re-scoping, a change process or a right to stop. It runs in the [Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md).
+**The standing review.** Agree it here, before anything is sunk, as the [Sustaining Adoption Review](./adoption-review.md) runs it: the cycle, notice of change (the seller's releases keyed to the touchpoints they touch, and the buyer's changes where it will commit to notice), a change process with a rate card, who re-verifies a stale row, and a step-up, a hostage or renewal-price cap that takes effect if the balance of what each side has sunk breaks the bond condition.
 
 **Done when** every row matches the reference or carries a gated mitigation with an owner on each side.
 
@@ -193,4 +193,4 @@ $n_{exposure}$ counts what either side sinks that only works here: the buyer's d
 - **Derivation:** [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5.
 - **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2, 5.2 and 5.4.
 - **Research:** [costly-signals.md](../theory/02-research/costly-signals.md), [re-aim-framework.md](../theory/02-research/re-aim-framework.md), [real-options.md](../theory/02-research/real-options.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
-- **Before it:** [Deal Triage Calculator](./deal-triage-calculator.md). **After it:** [Sustaining Adoption Review](./implementation-motion/04-sustaining-adoption-review.md).
+- **Before it:** [Deal Triage Calculator](./deal-triage-calculator.md). **After it:** [Sustaining Adoption Review](./adoption-review.md).

@@ -1691,11 +1691,11 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
                   "compare on its own. Education, reference architectures, "
                   "category definition and channel work.",
         "consensus": "The sale starts at consensus: the buyer's decision "
-                     "roles cannot reach a decision on their own. This is the "
-                     "thinnest instrument set in the repository.",
+                     "roles cannot reach a decision on their own. "
+                     "The Bargaining Ledger.",
         "implementation": "The sale starts at implementation: the buyer "
                           "cannot verify that it will work here on its own. "
-                          "Blueprint, Red Team, MIP and Adoption Review.",
+                          "The Enforcement Ledger, then the Adoption Review.",
     }
     if len(start) == 1:
         reason = reasons[start[0]]
