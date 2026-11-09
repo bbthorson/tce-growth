@@ -78,8 +78,9 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $n_k$ | Cost $k$'s demand on its payer, in the payer's own units. The gate reads it. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
 | $\kappa_k$, $\bar{A}_k$, $a_k$ | The payer's capacity for cost $k$'s work, the most demand others can move off it within the deal, and the amount moved. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
 | $c^b_k$, $c^s_k$ | What a unit of cost $k$'s work costs each side. Named, not valued. | [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $G_k$, $h_k$, $\chi_k$ | The seller's belief about cost $k$'s capacity, that belief's hazard, and the share of a gain on cost $k$ the seller keeps against rivals. The next seller dollar goes to the largest $\chi_k h_k / c^s_k$. Named, not valued. | [02-mathematical-models.md §1.5](./02-mathematical-models.md) |
 | $\tau^{self}_k$, $\tau^{part}_k$ | The thresholds, $\kappa_k$ and $\kappa_k + \bar{A}_k$. Chosen default edges stand in until read, and a position on them is evidence neither way. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
-| $r_k$ | Cost $k$'s position, $(n_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$: the share of the movable demand that has to be moved. The sale starts at the largest. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $r_k$ | Cost $k$'s position, $(n_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$: the share of the movable demand that has to be moved. The largest is the tightest cost, where the sale starts. | [Constitution, Axioms I and II](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
 | $\tilde{n}_k$, $\tilde{r}_k$ | Recognized cost and its position: the demand the buyer expects, on which it decides to enter discovery. Before any seller is met it is the category prior. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $n_{search}$, $n_{consensus}$, $n_{impl}$ | The calculator's three counts: the demand $n_k$ for each cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | $n_{exposure}$ | Integration points, changed workflows and divergent steps. Read only where the gate fails, and never added to a cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
@@ -231,7 +232,7 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 | **Participation threshold** | The point on one cost above which the buyer does not enter the market, whatever the other two read. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | **Self-serve threshold** | The point on one cost below which the buyer pays it down alone. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | **Position and zone** | Where a cost sits between its own two thresholds, read as self-serve, needs investment, or keeps the buyer out. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Where the sale starts** | The cost nearest its own participation threshold, the largest position. Two at the same position are run together. Names the motion. | [Constitution, Axiom I](./00-tcg-constitution.md), [01-motions.md](./01-motions.md) |
+| **Where the sale starts** | The tightest cost, the largest position. Two at the same position are run together. Names the motion. Which cost the seller works first follows the allocation rule, whose default is this one. | [Constitution, Axiom II](./00-tcg-constitution.md), [01-motions.md](./01-motions.md) |
 | **Turnkey** | A market condition: every cost self-serve and nothing specific sunk. It erodes through entry. | [Constitution, Axiom I corollaries](./00-tcg-constitution.md) |
 | **Chaos Trap** | A buyer with no documented workflow, where the product automates the process. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
 | **Akerlof Exit Threshold** | The research form of buyer exit under adverse selection. The framework states exit as the participation threshold. | [costly-signals.md](../02-research/costly-signals.md) |
@@ -306,7 +307,8 @@ Kept so older analyses stay readable. Do not use these in new writing.
 | Turnkey deal, as a level below 15 | Turnkey, a market condition |
 | Level, magnitude, the 0 to 30 sum | How much seller investment the deal needs (Axiom II), or specific exposure (Axiom III), by meaning |
 | Direction, shares, dominant component, dominance threshold, Composed | Where the sale starts. Ties are run together |
-| The cost that binds | The cost nearest its own participation threshold |
+| The cost that binds | The tightest cost, where the sale starts |
+| The cost nearest its own threshold | The tightest cost, the largest position |
 | Boundary Condition | The gate |
 | Amplification, the per-component multiplier | Nothing. Gaps feed the chance of future loss |
 | The Surplus equation | The two conditions |

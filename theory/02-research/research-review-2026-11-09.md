@@ -8,6 +8,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 # Research Review, 2026-11-09
 
+<!-- vale TCG.RetiredTerms = NO -->
+<!-- The review quotes Constitution 6.2's terms, which 6.3 retired. -->
+
 **Sources.** Five reviewers each attacked TCG from one side, prior art, each axiom and the whole structure, and recorded how far they read each source: **[read]** for full text, **[abstract]**, or **[secondary]** for another author's summary. Carril and Cao and Lumineau were rechecked at the abstract afterward. Check any figure not marked [read] at the primary before citing it elsewhere.
 
 - *Prior art:* Rindfleisch and Heide (1997), *Journal of Marketing* [read]. Attewell (1992), *Organization Science* [abstract]. Bunn (1993), *Journal of Marketing* [abstract]. Ram and Sheth (1989), *Journal of Consumer Marketing* [secondary]. Wernerfelt (1994), *Marketing Science* [abstract]. Hauser and Wernerfelt (1990), *Journal of Consumer Research* [abstract]. Walton and McKersie (1965), *A Behavioral Theory of Labor Negotiations* [secondary]. Sheth (1973), *Journal of Marketing* [secondary]. Aldrich and Fiol (1994), *Academy of Management Review* [secondary]. Gartner's six B2B buying jobs (2018) [secondary].
@@ -19,7 +22,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Novelty:** the gate is new. Each cost has two thresholds and a position between them, and any one cost past its participation threshold keeps the buyer out. Also new are the gap between the cost a buyer expects and the cost it would actually meet, and the claim that Turnkey erodes as sellers enter. Most of the rest is published work recombined, and three claims understate their prior art.
 - **Soundness:** six defects come before any data, among them units that contradict each other, a cost never linked to the investment against it, a headline rule that moves with chosen edges, and a falsifier that conditions on what happened after treatment.
 - **The evidence:** it narrows every axiom and refutes none outright. Price shows up as a tax on surplus more often than as a wall. "Absorb the cost nearest its threshold first" is optimal only in a special case. Exposure raises the loss when a fit fails, not the chance of churn. And most of the restraint on opportunism runs through trust and norms rather than contract terms.
-- **Overall:** TCG today is a vocabulary with three candidate theorems, none yet tested. Constitution 6.2 answers the first five defects.
+- **Overall:** TCG today is a vocabulary with three candidate theorems, none yet tested. Constitution 6.2 answers the first five defects, and 6.3 restates Axiom II's allocation rule.
 
 **Key claims:**
 - **The gate is the novel core,** and it is worth defending as such. Asking whether the buyer uses the market at all, rather than which governance form it chooses, is the cleanest statement of what TCG adds to transaction cost economics.
@@ -104,6 +107,8 @@ Each was checked against the files before any data, and the first five are answe
 
 ---
 
+<!-- vale TCG.RetiredTerms = YES -->
+
 ## 4. What TCG predicts that its rivals do not
 
 A theory that predicts nothing its rivals do not is a vocabulary. The review found three predictions that would make TCG a theory. None is tested.
@@ -130,11 +135,11 @@ An industrial-organization economist said the conditions were not well defined, 
 
 ## 6. Proposed responses
 
-None of these is applied. Each is listed with the file it would change.
+Each is listed with the file it would change, and those applied say so.
 
 1. **Restate the gate in capacity units** (section 5): the Constitution's Axiom I, [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) sections 1 and 6, and calibration section 3.2. **Applied in Constitution 6.2 on 2026-11-09**, which also closed open question 50.
 2. **State the identity between a cost and the investment against it, and add the summed test to Part II.** Defects D2 and D3. **Applied in 6.2.**
-3. **Replace nearest-threshold-first with the general allocation rule** in Axiom II, keeping the motion as the name of the binding constraint. Withdraw the claim that persuasion leaves the joint condition unchanged.
+3. **Replace nearest-threshold-first with the general allocation rule** in Axiom II, keeping the motion as the name of the binding constraint. Withdraw the claim that persuasion leaves the joint condition unchanged. **Applied in 6.3**, with the general rule in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 1.5.
 4. **Restate Axiom III's exposure as loss given failure,** and add the churn drivers above as scope conditions. Narrow the enforcement corollary to one layer beside trust and norms, and fund account management on lift times margin.
 5. **Fix the falsifiers.** Assign open question 46's arm by intent to treat. Freeze the edges before any test of Axiom II's falsifier. Relabel the no-decision line in fear-of-failure.md, **applied in 6.2**.
 6. **Correct the prior-art record.**
@@ -148,7 +153,7 @@ None of these is applied. Each is listed with the file it would change.
    - learning against rebuild in support effects;
    - funding by lift against margin;
    - specificity between people against workflow distance;
-   - the general allocation rule against nearest-threshold-first.
+   - the general allocation rule against nearest-threshold-first, **filed as open question 61**.
 
 ---
 

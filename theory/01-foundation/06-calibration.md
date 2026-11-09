@@ -18,7 +18,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The framework makes two kinds of claim and they carry very different weight.
 
-**Structural claims** say what depends on what. Using the market costs three things, and any one of them can keep the buyer out. The sale starts at the cost nearest its own threshold. Each party goes ahead only when its own share of today's investment is covered by its own return, and price cancels between the two conditions. What a party sinks exposes it to what it cannot verify or enforce, and the gaps rebuild unless maintained. The costs are non-compensatory, and each has a cost floor set outside the deal. Specificity and frequency select the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
+**Structural claims** say what depends on what. Using the market costs three things, and any one of them can keep the buyer out. The tightest cost names the motion, and seller spending goes where a dollar most raises the chance the buyer goes ahead. Each party goes ahead only when its own share of today's investment is covered by its own return, and price cancels between the two conditions inside a deal. What a party sinks exposes it to what it cannot verify or enforce, and the gaps rebuild unless maintained. The costs are non-compensatory, and each has a cost floor set outside the deal. Specificity and frequency select the governance form. These are the framework, they are argued from mechanism, and they are what a reader is being asked to accept.
 
 **Parameters** say how much. Every one of them is a reasoned starting value. None is fitted to booked deal data.
 
@@ -97,6 +97,7 @@ Every input to this instrument counts a cost's demand on its payer, read against
 | A threshold read from the buyer's record | The largest comparable demand the payer has carried, counted net of what outside parties carried | **Convention.** Biased in both directions, so it supports only the graded test. Staffing or written authority replaces it and supports the step. |
 | Shared payer | What the payer is left carrying of each cost, as a share of its capacity for that work, sums to at most one | **Structurally motivated.** The costs draw on one capacity. That the kinds of work trade against it in a straight line is chosen. |
 | Unit cost of the work, each side | $c^b_k$, $c^s_k$ | **Named, not valued.** In fractions of annual contract value. |
+| Where the next seller dollar goes | The seller's belief about each capacity $G_k$, its hazard $h_k$, and the share of the gain it keeps $\chi_k$ | **Named, not valued.** Until the seller reads them, the instruments order the work by position, any cost past its threshold first, the rule's special case taken as a convention ([02-mathematical-models.md](./02-mathematical-models.md) section 1.5). |
 | Expected count | Read against the measured count's edges | **Convention.** The buyer decides on what it expects under Axiom I, and one pair of edges keeps the two readings comparable. |
 | Formal body | Counts as one veto | **Convention.** A body holds a veto and is not a person, so it joins the position count and not the evidence denominator. |
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |

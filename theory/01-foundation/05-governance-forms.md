@@ -156,7 +156,7 @@ The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits fou
 
 | Output | Question it answers | What moves it |
 |---|---|---|
-| **Where the sale starts** | Which cost does the seller pay down first, and with which instruments? (Axiom I) | Discovery and seller investment. The counts are re-taken at every artifact boundary, and a cost that started nearest its threshold may not stay there. |
+| **Where the sale starts** | Which cost is tightest, and with which instruments? (Axiom II) | Discovery and seller investment. The counts are re-taken at every artifact boundary, and the cost that started tightest may not stay so. |
 | **The three gaps** | What can each pair of parties not yet verify? (Axiom III) | Discovery steps them down. Absent maintenance they rebuild. They move the chance of future loss, never the positions. |
 | **Specific exposure** | Does the deal sink anything worth less outside this relationship, and so need governance at all? (Axiom III) | What the deal sinks. A trial that lets the buyer verify fit and walk away passes the gate and leaves nothing specific. |
 | **Governance form** | What shape should the arrangement take, and can the seller's investment be paid back? (Axiom III) | Frequency, which is partly a commercial choice rather than a finding, and which buys governance only when both parties hold a stake at each boundary. |
@@ -178,7 +178,7 @@ The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits fou
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom III supplies specificity, frequency and the cooperation condition section 5 turns on. Axiom I supplies where the sale starts.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom III supplies specificity, frequency and the cooperation condition section 5 turns on. Axiom II supplies where the sale starts.
 - [01-motions.md](./01-motions.md) — The motions, named by where the sale starts.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — What the seller spends before signature, which is what a one-shot deal has to recover in one transaction.
 - [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Williamson (1979) is the source of the four forms and the frequency dimension.

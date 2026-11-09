@@ -2,7 +2,7 @@
 title: "Motions"
 layer: theory
 status: active
-version: 2.2
+version: 2.3
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
@@ -10,10 +10,10 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # Motions
 
 **Version:** 2.2
-**Purpose:** To derive the motion from where the sale starts under Axiom II, which is the cost nearest its own participation threshold under Axiom I. Then to say what each motion deploys, why Turnkey is a condition of a market rather than a fourth motion, and how the names map onto the vocabulary the industry already uses.
+**Purpose:** To derive the motion from where the sale starts under Axiom II, which is the tightest cost, the largest position under Axiom I. Then to say what each motion deploys, why Turnkey is a condition of a market rather than a fourth motion, and how the names map onto the vocabulary the industry already uses.
 
 > [!IMPORTANT]
-> **This file carries the argument behind Axiom I's first corollary, that the motion is where the sale starts.** The positions and thresholds are stated in the [Constitution](./00-tcg-constitution.md) and given their functional form in [02-mathematical-models.md](./02-mathematical-models.md) section 6. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits them, and [03-glossary-and-notation.md](./03-glossary-and-notation.md) carries the symbols. Section 9 records what this file does not settle, and section 10 is the translation table for readers arriving with Product-Led and Sales-Led in hand.
+> **This file carries the argument behind Axiom II's claim that the motion is where the sale starts.** The positions and thresholds are stated in the [Constitution](./00-tcg-constitution.md) and given their functional form in [02-mathematical-models.md](./02-mathematical-models.md) section 6. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits them, and [03-glossary-and-notation.md](./03-glossary-and-notation.md) carries the symbols. Section 9 records what this file does not settle, and section 10 is the translation table for readers arriving with Product-Led and Sales-Led in hand.
 
 A sales motion is the instrument set a seller deploys to pay down a buyer's cost of using the market. A seller cannot alter the buyer's realizable value for a given offer, which the product and the buyer's situation set, only what the buyer recognizes of it, and price is a transfer that cancels between the two parties' conditions under Axiom II. So a motion works entirely by lowering one or more of three costs, which take Dahlman's (1979) names in theory and keep the field's names in the notation:
 
@@ -29,7 +29,7 @@ The three are separately addressable rather than separately caused. A workflow t
 
 Axiom I reads each cost's demand on the payer who carries it as a position $r_k$ between two thresholds that belong to that payer: its capacity, and its capacity plus what the seller or an outside party can move off it ([02-mathematical-models.md](./02-mathematical-models.md) section 6). At or below zero the cost is self-serve, up to one it needs seller investment, and above one it keeps the buyer out whatever the other two read.
 
-**The sale starts at the largest $r_k$**, the cost nearest the point where it would keep the buyer out. That cost is where the seller's first investment goes, and the motion is named after it. *Starts* means the first seller investment, not the first stage of the buyer's process: every buyer moves through the same stages, and the motion names the job that decides whether this one gets through them (section 9). Before the buyer has entered, it decides on the recognized positions $\tilde{r}_k$, so a seller that has lowered a cost must also show it. Two costs at the same position are run together.
+**The sale starts at the largest $r_k$**, the tightest cost, and the motion is named after it. *Starts* is the buyer's: a buyer expecting any cost past its limit never begins, and the motion names the job that decides whether this one gets through the stages every buyer moves through (section 9). Across a market, the cost tightest for most target buyers is what the seller has to be built to absorb. Which cost the seller works first is a separate rule ([02-mathematical-models.md](./02-mathematical-models.md) section 1.5), and the tightest cost first is its special case, which the instruments use as the default until the seller reads each cost's unit cost, sharpness and spillover to rivals. Before the buyer has entered, it decides on the recognized positions $\tilde{r}_k$, so a seller that has lowered a cost must also show it. Two costs at the same position are run together.
 
 **Positions, not shares.** Earlier versions summed the three costs into a level and divided each by the total to get a direction, which assumed a scale the costs never shared. A position catches what shares could not: a cost with a small share of the total can still end the deal. The costs are non-compensatory because each payer's capacity is specific to it, so a small buyer whose one person carries all three faces one summed test, and a large coalition three. Until a buyer's thresholds are read, the calculator uses default edges that [06-calibration.md](./06-calibration.md) records as chosen.
 
@@ -39,7 +39,7 @@ Axiom I reads each cost's demand on the payer who carries it as a position $r_k$
 
 A seller can discount, and a discount moves surplus from seller to buyer one for one without shrinking any cost ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3). That can close a deal whose joint surplus is already positive, and it cannot rescue one whose joint surplus is negative. What remains is the three costs.
 
-**A motion is therefore defined by which cost the seller pays down first.** There are three costs, so there are three families of instrument, and no more.
+**A motion is therefore defined by which cost is tightest.** There are three costs, so there are three families of instrument, and no more.
 
 | Cost | What the buyer cannot do | What the seller produces |
 |---|---|---|
@@ -47,9 +47,9 @@ A seller can discount, and a discount moves surplus from seller to buyer one for
 | $F_{consensus}$ | Get their own organization to agree | Artifacts that let each decision role see and accept its own outcome |
 | $F_{implementation}$ | Tell whether the seller will deliver and the product will work here | Artifacts that resolve technical and operational uncertainty |
 
-**Where the sale starts gives an order, not a label.** A deal with positions $(0.2,\, 0.8,\, 0.5)$ starts at consensus and runs implementation instruments behind it. Pay the consensus cost down and the order can invert. Both are ordinary deals and neither is a special case.
+**Where the sale starts is a label, and the default order.** A deal with positions $(0.2,\, 0.8,\, 0.5)$ starts at consensus and by default runs implementation instruments behind it. The seller works implementation first where section 1.5's rule says so, as when it absorbs that cost far more cheaply. Pay the consensus cost down and the order can invert. Both are ordinary deals and neither is a special case.
 
-This resolves a question the older framing could not answer. Asking whether consensus work is a separate motion or a phase of an implementation-heavy one assumes motions are exclusive. They never were. Every deal carries all three costs, and what varies is which one sits nearest its threshold now.
+This resolves a question the older framing could not answer. Asking whether consensus work is a separate motion or a phase of an implementation-heavy one assumes motions are exclusive. They never were. Every deal carries all three costs, and what varies is which one is tightest now.
 
 ### 2.1 The two blockers inside search
 
@@ -90,7 +90,7 @@ Positions answer where the sale starts. Two other questions sit beside them, and
 
 ## 4. Four readings, and what each deploys
 
-The three motions are named after the cost the seller pays down first. Turnkey names the condition where no cost needs paying down.
+The three motions are named after the tightest cost. Turnkey names the condition where no cost needs paying down.
 
 | Condition | Name | What the seller deploys | State of the instruments |
 |---|---|---|---|
@@ -114,7 +114,7 @@ Naming the consensus motion beyond its cost is still open. Any name chosen here 
 
 Where the sale starts is a reading taken at a moment. Two mechanisms change it, and they belong to different axioms.
 
-**Investment moves positions.** A seller's investment against a cost pays it down under Axiom II and lowers that cost's position. Pay down the cost where the sale started and another cost becomes nearest its threshold. The calculator re-takes its counts at every artifact boundary for this reason, and the sequence of readings is the record of what the work moved.
+**Investment moves positions.** A seller's investment against a cost pays it down under Axiom II and lowers that cost's position. Pay down the cost where the sale started and another cost becomes the tightest. The calculator re-takes its counts at every artifact boundary for this reason, and the sequence of readings is the record of what the work moved.
 
 **Verification closes gaps.** Each cost runs between its own pair of parties, and each pair's uncertainty is a gap. Under Constitution 4.0 the gaps no longer multiply costs. They feed the chance of future loss under Axiom III, and closing one lowers a loss both sides were carrying.
 
@@ -152,7 +152,7 @@ The per-component multiplier, the summed level, the direction shares and the red
 
 ## 6. What follows for the seller's market
 
-A seller who runs only self-serve tactics can transact only with buyers whose every cost is self-serve. Buyers whose sale starts at a cost that needs investment are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the cost that was nearest to keeping them out.
+A seller who runs only self-serve tactics can transact only with buyers whose every cost is self-serve. Buyers whose sale starts at a cost that needs investment are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the tightest cost.
 
 Addressable market is therefore a property of the motion rather than of the product, and [05-governance-forms.md](./05-governance-forms.md) section 4 carries that argument and its three consequences.
 
@@ -214,7 +214,7 @@ Section 5.6 of the same file resolves it. Do the work that decides viability ear
 Each item points at its entry in [07-open-questions.md](./07-open-questions.md) where one exists.
 
 - **The consensus motion has no instrument file.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) says so out loud when a deal routes there. Building the instrument set is the open work, and naming the motion further before that would produce a label with nothing behind it. Open question 2.
-- **Whether the largest position is the right rule.** Starting the sale at the cost nearest its participation threshold was agreed as the starting reading in Constitution 4.0, to be revisited once the zones are calibrated. The falsifier is in the Constitution: deals where the first investment went to the largest $r_k$ convert no faster than matched deals where it went elsewhere.
+- **Whether the largest position orders the work well enough.** Since Constitution 6.3 the largest position is the special case of the general allocation rule, kept as the default until the seller reads each cost's unit cost, sharpness and spillover to rivals. Open question 61.
 - **Where the thresholds sit.** Since Constitution 6.2 the thresholds belong to the payer and are read for each buyer from staffing, written authority or record. Until they are read, the calculator uses default edges placed on the boundaries of the score bands earlier versions used, and [06-calibration.md](./06-calibration.md) records them as chosen. A position read on the defaults is evidence neither way.
 - **Whether the position is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different positions, because the incumbent's adaptation is already sunk. The instrument scores the deal rather than a vendor, which is a decision rather than an oversight: a vendor-scored instrument owes the reader an account of how each vendor wins, and that account does not exist yet. Until it does, an incumbent counting a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
 - **How early a reading can be trusted.** Misfit raises the policing cost and creates a bargaining cost at once, and the Constitution now says the bargaining count is read after exposure and the reading is a lower bound until fit is verified ([02-mathematical-models.md](./02-mathematical-models.md) section 3.5). A seller reading before discovery should expect the start to move toward implementation or consensus, never toward search. Whether induced vetoes appear at the rate the count predicts is a calibration question, item 3 in [06-calibration.md](./06-calibration.md) section 4.1.
@@ -235,7 +235,7 @@ Everyone arriving here knows what Product-Led Growth means. This section says wh
   repository where an old name is the subject rather than a mistake.
 -->
 
-**The incumbent names do not form a set.** Product-Led Growth is named after the instrument, Sales-Led Growth after the actor, and Implementation-Led Growth after a cost. Only the third names a cost, which is why the obvious extensions, Search-Led and Consensus-Led, had nowhere to sit. This framework names every motion after the cost the seller pays down first, because that is what the theory says a motion is. The set then closes: three costs, three motions, plus one market condition in which no cost needs a seller's investment.
+**The incumbent names do not form a set.** Product-Led Growth is named after the instrument, Sales-Led Growth after the actor, and Implementation-Led Growth after a cost. Only the third names a cost, which is why the obvious extensions, Search-Led and Consensus-Led, had nowhere to sit. This framework names every motion after the tightest cost, because that is what the theory says a motion is. The set then closes: three costs, three motions, plus one market condition in which no cost needs a seller's investment.
 
 | This framework | Closest incumbent term | Relationship |
 |---|---|---|
@@ -255,7 +255,7 @@ Everyone arriving here knows what Product-Led Growth means. This section says wh
 | **Qualification framework** | What must be true before a deal is called committed | MEDDPICC, BANT |
 | **Conversational methodology** | How a perspective gets reframed in the room | Challenger, SPIN |
 
-A team using this framework still needs a qualification standard and a conversational technique. Qualification tells you whether a deal is real. It does not tell you which of three costs sits nearest to keeping the buyer out, and it does not reduce any of them.
+A team using this framework still needs a qualification standard and a conversational technique. Qualification tells you whether a deal is real. It does not tell you which of three costs is tightest, and it does not reduce any of them.
 
 The motions are written out rather than abbreviated, because SLG would mean two things in one conversation and the written names match the words the Deal Triage Calculator returns.
 

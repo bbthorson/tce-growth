@@ -2,12 +2,12 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 6.2
+version: 6.3
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 6.2
+**Version:** 6.3
 **Purpose:** To state the three claims from which everything else in this repository derives. Each answers one question at one level: whether a market can exist, what a deal has to pay down at time 0, and what keeps the relationship from churning or contracting at time 1. Each is falsifiable on its own. A claim that cannot be traced to one of them does not belong here.
 
 > [!IMPORTANT]
@@ -50,7 +50,7 @@ Bargaining covers agreement among the buyer's decision roles (Webster and Wind 1
 
 **The seller can absorb part of each cost.** Sales is the seller absorbing them before the buyer commits, and account management is the seller absorbing them after. A sales organization divides that work by cost: business development absorbs search, the account executive bargaining, the solutions engineer policing, and account management what the relationship costs at time 1 ([01-motions.md](./01-motions.md) section 9).
 
-**Each party acts on what it can check.** So each cost and each value has two readings: what it is, and what a party expects it to be. For a cost, its demand $n_k$ is what the deal asks of the buyer as it is, and $\tilde{n}_k$, the *recognized cost*, is the demand the buyer expects. Before the buyer meets any seller, that expectation is the category's prior. A seller therefore invests twice against a cost: to lower it, and to show it with evidence the buyer can check, such as published terms or a security packet. Only evidence the other side can check changes what the deal is worth to both. A discount changes the split, and persuasion changes only the buyer's reading.
+**Each party acts on what it can check.** So each cost and each value has two readings: what it is, and what a party expects it to be. For a cost, its demand $n_k$ is what the deal asks of the buyer as it is, and $\tilde{n}_k$, the *recognized cost*, is the demand the buyer expects. Before the buyer meets any seller, that expectation is the category's prior. A seller therefore invests twice against a cost: to lower it, and to show it with evidence the buyer can check, such as published terms or a security packet. Only evidence the other side can check raises what the deal is worth to both. A discount changes the split, and persuasion moves the buyer's reading at the deal's expense.
 
 ---
 
@@ -95,7 +95,7 @@ The position is the share of the movable demand that has to be moved. At $r_k \l
 
 ### Axiom II — The Law of Transaction Investment
 
-> What has to be paid down at time 0? Every buyer moves through the same stages: awareness, consideration, purchase and renewal. Moving through them is an investment the buyer makes, and from the first stage it prices all three costs, mispricing those it has not reached. The cost it expects nearest its limit decides whether it proceeds at all. The seller absorbs that one first, in fact and in what the buyer can see, so the buyer will invest in the work that lowers both sides' costs. That cost names the motion. Each party goes ahead only if its own share is covered by its own return. Seller spending earns its cost by doing one of two jobs. It raises what the deal creates when the seller does the work more cheaply than the buyer could, or when the work lowers what the relationship will cost at time 1, as discovery does even when it costs more than the buyer would have spent. It lets a deal that creates value go ahead when it shows the buyer, with evidence the buyer can check, a cost lower or a value higher than the buyer expected, including a catalyst it had not named. Spending that does neither only moves cost from one side to the other, as a discount does. The seller recovers its spending through the first contract, renewal, expansion or the deals the relationship unlocks, and spending that nothing repays is a price cut by another name.
+> What has to be paid down at time 0? Every buyer moves through the same stages: awareness, consideration, purchase and renewal. Moving through them is an investment the buyer makes, and from the first stage it prices all three costs, mispricing those it has not reached. The tightest cost, the one needing the largest share of the help its payer can get, is where the sale starts, and it names the motion. No absorption reaches a cost past the buyer's limit, so while the seller expects one, it lowers that cost's demand, shows it lower, or stops spending on the deal. Otherwise it spends each dollar where it most raises the chance that this buyer goes ahead with it, in fact and in what the buyer can see. Each party goes ahead only if its own share is covered by its own return. Seller spending earns its cost by doing one of two jobs. It raises what the deal creates when the seller does the work more cheaply than the buyer could, or when the work lowers what the relationship will cost at time 1, as discovery does even when it costs more than the buyer would have spent. It lets a deal that creates value go ahead when it shows the buyer, with evidence the buyer can check, a cost lower or a value higher than the buyer expected, including a catalyst it had not named. Spending that does neither moves cost from one side to the other, as a discount does, or changes only the buyer's reading, as persuasion does. The seller recovers its spending through the first contract, renewal, expansion or the deals the relationship unlocks, and spending that nothing repays is a price cut by another name.
 
 *Origin: Williamson (1985), the ex ante costs of a transaction. The seller's side follows [04-seller-surplus-model.md](./04-seller-surplus-model.md).*
 
@@ -107,19 +107,19 @@ $V_{switch}(t) = \tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$ is t
 
 $$S_b + S_s = V_{switch}(t) - C_{deliver} - \sum_k \left(I^b_k + I^s_k\right) - L_b - L_s$$
 
-Price cancels, because price is a transfer. Read on what the deal can produce, the joint condition uses realizable value, and the difference from recognized value is a loss the buyer carries under Axiom III whether or not it priced it at signature. Persuasion moves the buyer's reading, and the joint condition stays where it was. Hold-up is a transfer too, so it drops out of what the deal creates. It costs both sides through the specific investment a party declines to sink, and where one side fears more hold-up than the other plans, the gap can block a deal that creates value ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3).
+Price cancels in each deal's joint condition, because price is a transfer. It still changes which deals occur and, where retention depends on the price path, how long they last: in consumer subscriptions, customers acquired on a discount retain worse (Lewis 2006). Read on what the deal can produce, the joint condition uses realizable value, and the difference from recognized value is a loss the buyer carries under Axiom III whether or not it priced it at signature. Persuasion moves the buyer's reading and not realizable value, so it costs the joint condition what the seller spends on it and can let through a deal that creates nothing. It raises the joint condition only where a convinced buyer adopts harder and realizes more, which is where the second standing assumption fails. Hold-up is a transfer too, so it drops out of what the deal creates. It costs both sides through the specific investment a party declines to sink, and where one side fears more hold-up than the other plans, the gap can block a deal that creates value ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3).
 
 ![The buyer's surplus falls with price and the seller's rises. Before verification both reach zero at the same price, so no price works and a discount only moves along the axis. After verification lowers each side's expected future loss, a window opens where both say yes.](./assets/axiom-2-price-window.svg)
 
-**The motion is where the sale starts.** The sale starts at the cost with the largest $\tilde{r}_k$ before the buyer enters, and the largest $r_k$ once discovery measures it. The motion is named for that cost: search-led, consensus-led or implementation-led. *Starts* means the seller's first investment, since every buyer moves through the same stages. Product-led and sales-led name the seller rather than the cost. Until fit is verified, the reading understates the policing and bargaining costs, so a seller who misrepresents fit hides where the sale starts until the investment is sunk. [01-motions.md](./01-motions.md) carries the map.
+**The motion names the tightest cost.** That is the cost with the largest $\tilde{r}_k$ before the buyer enters, and the largest $r_k$ once discovery measures it. The sale starts there in the buyer's sense, since a buyer expecting any cost past its limit never begins, and the motion is named for it: search-led, consensus-led or implementation-led. Product-led and sales-led name the seller rather than the cost. Across a market, the cost tightest for most target buyers is what the seller has to be built to absorb, which is Axiom I's seller limit. Which cost the seller works first is a separate rule: the next dollar goes where it is likeliest to tip a payer into carrying the rest, per dollar spent and net of what rivals gain. The tightest cost first is its special case, which the instruments use as their default ([02-mathematical-models.md](./02-mathematical-models.md) section 1.5). Until fit is verified, the reading understates the policing and bargaining costs, so a seller who misrepresents fit hides where the sale starts until the investment is sunk. [01-motions.md](./01-motions.md) carries the map.
 
 **Corollaries.**
 
 - **Price is not a transaction cost, though its size against the buyer's spend thresholds sets who must approve.** A deal split or ramped under a threshold removes a decision role's veto without settling its exposure, which Axiom III says returns at renewal.
 - **Forward-deployed engineering works two ways at once.** The seller's engineers adapt their own product at lower cost, and their presence in use catches misfit while it is cheap. It also creates a future cost for the seller, because the engineering is specific to this buyer.
-- **Copying a motion copies another market's costs.** Product-led growth where the costs are not all self-serve leaves the buyer holding a cost it cannot pay down alone, and forward-deployed engineering where policing is not where the sale starts pays for an adaptation nobody needed. Read the other way, the investment a motion demands is its defense against entry.
+- **Copying a motion copies another market's costs.** Product-led growth where the costs are not all self-serve leaves the buyer holding a cost it cannot pay down alone, and forward-deployed engineering where the buyer could carry the policing cost alone pays for an adaptation nobody needed. Read the other way, the investment a motion demands is its defense against entry.
 
-**What would falsify it.** Deals where the seller's first investment went to the cost with the largest $r_k$, recorded before that investment and never revised, convert no faster than deals by the same representative where it went elsewhere. Deals where the seller absorbed part of the buyer's investment close at no higher rate than matched deals where it did not, at equal total cost. And cost of sale spent on discovery and verification predicts net revenue retention no better than cost of sale spent on persuasion.
+**What would falsify it.** With positions and the seller's quoted hours per unit of each cost recorded before the seller invests, and the order assigned or recorded before the investment: among deals with two costs at equal positions, those where the seller first absorbed the cost it moves more cheaply convert no faster than deals by the same representative where it first absorbed the other. Deals where the seller absorbed part of the buyer's investment close at no higher rate than matched deals where it did not, at equal total cost. And cost of sale spent on discovery and verification predicts net revenue retention no better than cost of sale spent on persuasion.
 
 ---
 
@@ -188,7 +188,7 @@ A deal closes when both conditions hold at the moment of decision and no cost ke
 **Reading a stall.** Ask the three questions in order, because each assumes the one before it holds.
 
 1. **Can this market exist?** Is any cost, as this buyer expects it, past its threshold, or are the costs one payer carries past its capacity together, or does the seller's cost of sale in this market exceed what its contracts return? No work on the other costs reaches it. Pull it back into range, invest across deals if a cost floor holds it there, or decline. (Axiom I.)
-2. **Is the deal paying down the right cost at time 0?** Is the seller absorbing the cost nearest its threshold, does each party's share fit inside its own return, and does the seller's spending raise what the deal creates, let it go ahead, or only move cost? (Axiom II.)
+2. **Is the deal paying down the right cost at time 0?** Is any cost past the buyer's limit being lowered or shown rather than worked around, is every other dollar going where it most raises the chance the buyer goes ahead, does each party's share fit inside its own return, and does the seller's spending raise what the deal creates, let it go ahead, or only move cost? (Axiom II.)
 3. **Is time 1 contracted and planned?** Was the allocation settled before anything specific was sunk, is a review in place, and is any gap rebuilding faster than discovery closes it? (Axiom III.)
 
 The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) asks the same three questions of a live deal.
@@ -203,10 +203,10 @@ The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) asks the 
 | I | Turnkey erosion unread | A self-serve motion kept running while entry raises the search cost |
 | I | Akerlof saturation | Telling good sellers from bad costs more than any affordable signal can cover, and the buyer exits |
 | I | Jevons collapse | Channel friction was production cost and fell to zero, the search cost floor rises, and the channel stops separating sellers |
-| II | Mis-sequenced | The seller's first investment went to a cost that was not nearest its threshold |
+| II | Mis-sequenced | Seller spending went around a cost past the buyer's limit, or where a dollar raised the chance of going ahead less than elsewhere |
 | II | Imitation | A motion copied from another market, organization built to pay down a cost its buyers do not carry |
 | II | Under-invested | The buyer is left holding a cost it cannot pay down alone |
-| II | Over-invested | The seller pays down a cost that was not near its threshold |
+| II | Over-invested | The seller pays down a cost the buyer could carry alone |
 | II | Spent as a discount | Seller spending that neither raises what the deal creates nor lets it go ahead, and nothing recovers it |
 | III | Unallocated | Specific investment sunk with no staging or stop rights agreed, buyer signs, fails to deploy, churns |
 | III | Over-frictioned | Governance apparatus on a deal where nothing specific is sunk, buyer chooses a lighter competitor |
@@ -226,11 +226,12 @@ Each mode names one axiom and one place to intervene. A stall matching none of t
 
 ## Version History
 
-**Current version: 6.2.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 6.3.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 <!-- vale TCG.RetiredTerms = NO -->
 | Version | Date | Change |
 |---|---|---|
+| 6.3 | 2026-11 | The research review's third response. The tightest cost is where the sale starts and names the motion. Which cost the seller works first is a separate rule, with the tightest first as its default special case, and Axiom II's first falsifier tests the rule's unit-cost term. Persuasion costs the joint condition what it spends, and price cancels in each deal but changes which deals occur. Open question 61 is filed. |
 | 6.2 | 2026-11 | After the 2026-11-09 research review. The gate reads each cost's demand in its payer's own units, against the payer's capacity and that capacity plus what the seller or others can move off it, read before the outcome. What the work costs is a separate quantity, so no threshold moves with price. Non-compensation follows from capacity specific to each payer, and costs one payer carries are tested together. |
 | 6.1 | 2026-11 | After three adversarial reviews and a convergence check. Seller spending does two jobs, raising what the deal creates or letting it go ahead, and is recovered through the relationship or the deals it unlocks. The seller's limit rests on what it builds before any deal. Hold-up is a transfer, costly through deterred investment and a wedge of unshared fear. Seven falsifiers are restated so each can fail. The practice layer was rebuilt from 6.1 by 2026-11-09, and the 5.0, 6.0 and practice rebuild proposals retired to git history (`git show b5b3386:<file>`). |
 | 6.0 | 2026-11 | The axioms answer three questions at three levels: market, deal at time 0, relationship at time 1. A premise states the three costs, the seller absorbing them, and that each party acts on what it can check. The seller's limit and cost floor move to Axiom I and the motion to Axiom II. Axiom III contracts what can be foreseen and plans a review for what cannot. The derivations table leaves, and the stall reading moves to the Deal Triage Calculator. |
