@@ -120,6 +120,7 @@ The reading reuses every edge in section 3.2 and adds one structural count of it
 | Risk band edges | 0.25 and 0.625 normalized, 4.0 and 7.0 raw | **Chosen.** No source. The ledger reads the normalized form. |
 | Commercial hold threshold | 0.625 normalized, 7.0 raw | **Chosen.** No source. |
 | Routing margin between the halves | 0.25 of a fraction, 1.0 on the raw half scale | **Chosen.** No source. |
+| What makes an allocation | Risk bearer, gate, and a right to stop priced below what continuing would cost, all three | **Chosen.** Mirrors what a signed Stage row writes down. Tested by section 4 item 6. |
 | Default standing review cycle | First at the first gate after go-live, then quarterly. Shortened on a divergence without notice or a stale row that failed re-verification, only while the renewal margin covers the extra reviews. Lengthened after two reviews in a row find neither. | **Chosen.** No source. The quarter is the Constitution's example of a review. The rule stands in for a value of $\gamma_k$ with what the reviews observe, and item 15 below still asks for the rate. Applied in the [Sustaining Adoption Review](../../practice/adoption-review.md) section 2.4. |
 
 ### 3.4 Staged commitment ([02-mathematical-models.md](./02-mathematical-models.md) section 5.4, applied in the Enforcement Ledger's Stage column)
@@ -131,31 +132,18 @@ The reading reuses every edge in section 3.2 and adds one structural count of it
 | Reference sunk amounts | 0.10, 0.25, 0.50 of annual contract value | **Chosen.** Illustrative. The shape, small commitments early and large late, is the argument. |
 | Illustrative floor on the chance of loss | 0.05 | **Chosen.** Used only in the worked table. The theory names the floor and does not value it, and nothing in the model ships it as a default. |
 
-### 3.5 Retrospective measures ([Friction Efficiency Index](../../practice/friction-efficiency-index.md))
-
-Weakest layer in the framework, and the only one whose parameters have no argument behind them at all.
-
-| Parameter | Value | Provenance |
-|---|---|---|
-| Composite weights | 0.35, 0.25, 0.25, 0.15 | **Chosen.** No source. In order ACR, BCV, RMS, SVI. Allocation coverage inherited the weight the effort ratio carried. |
-| What makes an allocation | Risk bearer, gate and right to stop, all three | **Chosen.** Mirrors what a Mutual Implementation Plan gate writes down. |
-| Committee-size correction | $N^{0.5}$ | **Structurally motivated.** Direction follows from the bargaining cost rising in $N$. The exponent is chosen. |
-| Provisioning guard | +1 | **Convention.** Prevents division by zero. |
-| Change-order weight | 0.25 | **Chosen.** No source. |
-| Buyer commitment reference | 0.5 | **Convention** until twenty closed deals with specific exposure exist, then a trailing median. |
-| Minimum credible edge cases | 8 | **Chosen.** No source. |
-
 ---
 
 ## 4. What would make any of this empirical
 
-The framework becomes predictive rather than organizing when deals are instrumented. Five things, in rough order of how much each one buys.
+The framework becomes predictive rather than organizing when deals are instrumented. Six things, in rough order of how much each one buys.
 
 1. **The three component gaps logged separately** at deal open and at every artifact boundary. This makes the drift rates estimable and tests the framework's central dynamic claim, that discovery moves where the sale starts rather than only lowering every cost. A book of deals whose largest position at close sits on the same cost as at open falsifies it.
 2. **Each party's investment and specific exposure logged in contract value** at signature, with the outcome at each renewal. That makes the chance of loss estimable against the gaps, and it is the estimation problem with a stated unit on both sides.
 3. **Committee size and stakeholder alignment recorded as structured fields** rather than narrative notes, which makes $\beta$ estimable.
 4. **Triggering events dated**, which makes the decay rate observable as the fall in buyer-reported urgency between the event and close.
 5. **Count Variance recorded at every renewal, beside the outcome**, on every recurring deal including those below the gate. It audits the counter, and only with the outcome beside it can it show whether the bands in section 3.2 are the right shape. Lost and one-shot deals are never re-counted.
+6. **Allocation coverage read at go-live beside launch and first renewal** across a book, stratified by the exposure count, with solutions and implementation hours logged by phase and split at signature. No instrument records the hours, so they come from the professional services system. If Axiom III's allocation clause holds, coverage predicts both outcomes better than the share of hours spent before signature does, at equal exposure. If the hours predict better, the clause is in trouble, and item 7 below is where to record it.
 
 Until then, treat every output as a structured comparison between deals inside one book. A deal whose largest position is 1.4 is meaningfully further from closing than one at 0.8. Neither number predicts a close date.
 
@@ -228,8 +216,6 @@ Recorded rather than fixed, because each fix means choosing a shape and that is 
 **The zone edges are cliffs.** A count one below an edge and a count one above it land in different zones. The dominance threshold carried the same defect and is gone. The zone edges carry it in a weaker form, because where the sale starts is read from positions, which are continuous, and only the zone label jumps.
 
 **The shape of the chance of loss is not identified.** The straight line between floor and ceiling is a placeholder, and nothing in the framework distinguishes it from any other increasing form. Constitution 3.0 carried the same defect as an unidentified convexity exponent on the retired reduced form.
-
-**The Friction Efficiency Index composite carries two open defects of its own**, recorded in section 6 of that file. They are defects in the measure rather than in its parameters, so they are not repeated here.
 
 ---
 

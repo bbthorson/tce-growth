@@ -401,7 +401,7 @@ $A_p$ is the hold-up loss $H_p$ read at the moment of sinking. $\alpha_p$ is the
 - **Staging keeps the requirement small.** Read at each gate on the quasi-rents sunk so far, $A_p$ stays near zero while the two sides' investments grow together, which is what [05-governance-forms.md](./05-governance-forms.md) section 5 means by the two stakes growing together. A gate where one side sinks alone is the gate that needs the allocation.
 - **Allocation answers hold-up, and not a failed fit.** The fit term $Q_p \pi^{gap}_p$ is lowered by verification and by staging (section 5.4), and moved by a guarantee.
 
-The Friction Efficiency Index's allocation coverage ratio reads whether an allocation was made. $\alpha_p$ says how much was needed.
+The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s allocation coverage ratio reads whether an allocation was made. $\alpha_p$ says how much was needed.
 
 **The work done in advance.** Discovery before sinking lowers the gap a party carries into the investment, but only the part discovery can reach. Write $\rho$ for the share of the gap that surfaces only in use. It is near zero where the specification is static and rises with technological and organizational uncertainty (Crocker and Reynolds 1993, Strong and Volkoff 2010). Closing a fraction $x$ of the reachable part lowers the party's mean gap by $x(1 - \rho) g_p$, and its expected loss by $Q_p (1 - \pi_0)(1 - \rho)\, g_p\, x$. If discovery's cost rises with the square of $x$ at a scale $c$, the share of the gap worth closing before sinking is
 
@@ -498,7 +498,7 @@ Nothing in that file is a measurement. Read the provenance column before quoting
 
 ## 9. What Would Make These Models Empirical
 
-Five conditions, in [06-calibration.md](./06-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable.
+Six conditions, in [06-calibration.md](./06-calibration.md) section 4, in rough order of how much each one buys. The first is logging the three gaps separately at open and at every artifact boundary, which is what makes the drift rates estimable.
 
 Until then, treat every output as a structured comparison between deals rather than a quantity. A deal whose future loss reads 0.4 is meaningfully more exposed than one reading 0.1. Neither number predicts a close date.
 
@@ -513,4 +513,3 @@ Until then, treat every output as a structured comparison between deals rather t
 - [Bargaining Ledger](../../practice/bargaining-ledger.md) — Field instrument producing $F_{consensus}$.
 - [Enforcement Ledger](../../practice/enforcement-ledger.md) — Its Stage column applies section 5.4 to gate design.
 - [real-options.md](../02-research/real-options.md) — Source for the staging logic.
-- [Friction Efficiency Index](../../practice/friction-efficiency-index.md) — Retrospective execution metrics. Deliberately downstream of this file: those measures score how the motion was run rather than deriving from an axiom term.

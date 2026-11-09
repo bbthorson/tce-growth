@@ -643,62 +643,13 @@ class TestUrgencyDecay(unittest.TestCase):
 
 
 # ==========================================================================
-# friction-efficiency-index.md
+# enforcement-ledger.md, allocation coverage.
 # ==========================================================================
 
-class TestFrictionEfficiencyIndex(unittest.TestCase):
-
-    def test_the_composite_weights_sum_to_one(self):
-        """Section 5 states the weights sum to 1.00, which is what bounds the
-        index on [0, 100]. The parameter reference records that the split has
-        no empirical basis."""
-        self.assertAlmostEqual(sum(m.FEI_WEIGHTS), 1.00)
-
-    def test_the_weights_are_the_documented_split(self):
-        self.assertEqual(m.FEI_WEIGHTS, (0.35, 0.25, 0.25, 0.15))
-
-    def test_rms_regression_ten_identified_none_resolved_returns_zero(self):
-        """Section 3's recorded arithmetic error. The canvas form
-        N_edge / (N_edge + N_unresolved) scored 10/20 = 0.50, reporting half
-        the risk mitigated when in fact none was."""
-        self.assertEqual(m.risk_mitigation_score(10, 10), 0.0)
-
-    def test_rms_does_not_reproduce_the_double_counted_value(self):
-        buggy = 10 / (10 + 10)
-        self.assertNotAlmostEqual(m.risk_mitigation_score(10, 10), buggy)
-        self.assertAlmostEqual(buggy, 0.50)
-
-    def test_rms_matches_the_documented_shallow_workshop_examples(self):
-        """Section 3: two surfaced and both closed scores 1.00; forty surfaced
-        and thirty-five closed scores 0.875. The lazier workshop wins, which is
-        why the count must be reported alongside."""
-        self.assertAlmostEqual(m.risk_mitigation_score(2, 0), 1.00)
-        self.assertAlmostEqual(m.risk_mitigation_score(40, 5), 0.875)
-        self.assertFalse(m.rms_is_credible(2))
-        self.assertTrue(m.rms_is_credible(40))
-
-    def test_rms_rejects_more_unresolved_than_identified(self):
-        with self.assertRaises(ValueError):
-            m.risk_mitigation_score(10, 11)
-
-    def test_rms_is_undefined_when_nothing_was_identified(self):
-        with self.assertRaises(ValueError):
-            m.risk_mitigation_score(0, 0)
-
-    def test_far_is_blind_to_scale(self):
-        """Section 1's stated property, which is why the total must be
-        reported alongside the ratio."""
-        small = m.friction_allocation_ratio(10, 5)
-        large = m.friction_allocation_ratio(1000, 500)
-        self.assertAlmostEqual(small, large)
-        self.assertAlmostEqual(small, 2 / 3)
-
-    def test_far_has_no_band(self):
-        """Section 1.1: FAR is description, with no target and no weight."""
-        self.assertFalse(hasattr(m, "far_in_band"))
+class TestAllocationCoverage(unittest.TestCase):
 
     def test_acr_counts_what_was_allocated_before_it_was_sunk(self):
-        """Section 1: three of four exposure items sunk under an allocation."""
+        """Three of four specific items sunk under a signed Stage row."""
         self.assertAlmostEqual(m.allocation_coverage_ratio(3, 4), 0.75)
         self.assertAlmostEqual(m.allocation_coverage_ratio(4, 4), 1.0)
 
@@ -709,79 +660,6 @@ class TestFrictionEfficiencyIndex(unittest.TestCase):
     def test_acr_cannot_allocate_more_than_was_sunk(self):
         with self.assertRaises(ValueError):
             m.allocation_coverage_ratio(5, 4)
-
-    def test_more_allocation_always_scores_higher(self):
-        """Section 6's resolved defect: the composite was monotonic in FAR
-        while calling a high FAR a failure. ACR is better all the way to 1.0,
-        so a monotonic weight is the right shape."""
-        scores = [m.friction_efficiency_index(acr / 10.0, 0.5, 0.8, 0.2)
-                  for acr in range(11)]
-        self.assertEqual(scores, sorted(scores))
-
-    def test_bcv_penalizes_committee_size(self):
-        """Section 2: the N^0.5 denominator is a correction, not decoration.
-        The canvas form rewarded dragging more people into rooms, which the
-        bargaining-cost form correctly scores as worse."""
-        four_depts_small_committee = m.buyer_commitment_velocity(4, 3, 4)
-        four_depts_large_committee = m.buyer_commitment_velocity(4, 3, 16)
-        self.assertGreater(four_depts_small_committee,
-                           four_depts_large_committee)
-
-    def test_bcv_guard_prevents_division_by_zero_on_same_day_response(self):
-        self.assertAlmostEqual(m.buyer_commitment_velocity(4, 0, 4), 2.0)
-
-    def test_svi_penalizes_early_delivery_as_heavily_as_late(self):
-        """Section 4: deliberate. A wrong estimate on the optimistic side
-        produces the same credibility loss as one on the pessimistic side."""
-        early = m.scope_variance_index(t_actual=50, t_scoped=100, c_orders=0)
-        late = m.scope_variance_index(t_actual=150, t_scoped=100, c_orders=0)
-        self.assertAlmostEqual(early, late)
-        self.assertAlmostEqual(early, 0.5)
-
-    def test_svi_change_order_coefficient(self):
-        """One change order is worth about as much scope instability as a
-        25 percent schedule miss."""
-        one_order = m.scope_variance_index(100, 100, 1)
-        quarter_miss = m.scope_variance_index(125, 100, 0)
-        self.assertAlmostEqual(one_order, quarter_miss)
-
-    def test_svi_caps_at_one(self):
-        """Section 5: allowing the term to run higher would let one
-        catastrophic project dominate a cohort average."""
-        self.assertAlmostEqual(m.normalize_svi(3.5), 1.0)
-
-    def test_bcv_normalization_caps_at_one(self):
-        self.assertAlmostEqual(m.normalize_bcv(2.0, bcv_ref=0.5), 1.0)
-        self.assertAlmostEqual(m.normalize_bcv(0.25, bcv_ref=0.5), 0.5)
-
-    def test_the_index_is_bounded_on_zero_to_one_hundred(self):
-        best = m.friction_efficiency_index(acr=1.0, bcv=10.0, rms=1.0, svi=0.0)
-        worst = m.friction_efficiency_index(acr=0.0, bcv=0.0, rms=0.0, svi=5.0)
-        self.assertAlmostEqual(best, 100.0)
-        self.assertAlmostEqual(worst, 0.0)
-
-    def test_the_index_matches_the_weighted_sum_written_out(self):
-        acr, bcv, rms, svi = 0.70, 0.40, 0.80, 0.30
-        expected = 100.0 * (0.35 * acr
-                            + 0.25 * min(bcv / 0.5, 1.0)
-                            + 0.25 * rms
-                            + 0.15 * (1.0 - min(svi, 1.0)))
-        self.assertAlmostEqual(
-            m.friction_efficiency_index(acr, bcv, rms, svi), expected)
-
-    def test_a_high_acr_can_hide_a_low_rms(self):
-        """Section 5's stated failure of the composite: a well-documented,
-        shallow process still produces a respectable score."""
-        shallow = m.friction_efficiency_index(acr=0.75, bcv=0.5, rms=0.10,
-                                              svi=0.10)
-        self.assertGreater(shallow, 50.0)
-        self.assertLess(m.risk_mitigation_score(40, 36), 0.15)
-
-    def test_band_edges_match_the_composite_table(self):
-        self.assertEqual(m.fei_band(75.1), "allocated")
-        self.assertEqual(m.fei_band(75.0), "mixed")
-        self.assertEqual(m.fei_band(50.0), "mixed")
-        self.assertEqual(m.fei_band(49.9), "late")
 
 
 # ==========================================================================
@@ -1392,9 +1270,6 @@ class TestCalibrationDiscipline(unittest.TestCase):
         self.assertEqual(m.NU_VENDOR_DOUBT, 2.0)
         self.assertEqual(m.KAPPA_PROOF_DECAY, 0.5)
         self.assertEqual(m.GAMMA_RESPONSIVENESS, 0.5)
-        self.assertEqual(m.FEI_WEIGHTS, (0.35, 0.25, 0.25, 0.15))
-        self.assertEqual(m.BCV_REF_DEFAULT, 0.5)
-        self.assertEqual(m.MIN_CREDIBLE_EDGE_CASES, 8)
         self.assertEqual((m.RAW_GAP_MIN, m.RAW_GAP_MAX), (2.0, 10.0))
         self.assertEqual(m.SEARCH_EDGES, (4, 8))
         self.assertEqual(m.CONSENSUS_EDGES, (1, 7))
@@ -1425,8 +1300,7 @@ class TestCalibrationDiscipline(unittest.TestCase):
                  "BETA_COMMITTEE", "GAMMA_TECHNICAL_OVERLAP", "W_TECH",
                  "W_PROCESS", "PHI_TECH", "PHI_PROCESS", "NU_VENDOR_DOUBT",
                  "KAPPA_PROOF_DECAY", "GAMMA_RESPONSIVENESS", "OMEGA_RENEGOTIATION",
-                 "BCV_REF_DEFAULT",
-                 "MIN_CREDIBLE_EDGE_CASES", "SEARCH_EVIDENCE_ITEMS")
+                 "SEARCH_EVIDENCE_ITEMS")
         edges = ("SEARCH_EDGES", "CONSENSUS_EDGES", "IMPLEMENTATION_EDGES")
         missing = []
         for name in knobs:

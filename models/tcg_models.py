@@ -28,7 +28,6 @@ themselves: 02-mathematical-models.md states the functional forms are
   not measurements.
 - beta = 1.35 is chosen inside a motivated range. Only the fact that beta > 1
   carries literature support; the value does not.
-- The Friction Efficiency Index weights have no empirical basis at all.
 - The seller-surplus forms have no parameter anchored in published literature.
 
 Outputs rank deals against each other. They do not predict a cycle length, a
@@ -47,7 +46,7 @@ import math
 #
 # Provenance for each of these is in the parameter reference tables of
 # theory/01-foundation/02-mathematical-models.md section 5 and
-# practice/friction-efficiency-index.md.
+# theory/01-foundation/06-calibration.md.
 # Read those columns before quoting any value outside this repository.
 # --------------------------------------------------------------------------
 
@@ -66,10 +65,6 @@ OMEGA_RENEGOTIATION = 0.5    # chosen: symmetric split, nothing allocated
 # The scorecard form of the policing gap. practice/enforcement-ledger.md now
 # reports the normalized gap directly.
 RAW_GAP_MIN, RAW_GAP_MAX = 2.0, 10.0
-
-# Friction Efficiency Index composite weights, in ACR / BCV / RMS / SVI order.
-FEI_WEIGHTS = (0.35, 0.25, 0.25, 0.15)
-BCV_REF_DEFAULT = 0.5  # convention until twenty closed deals with specific exposure exist
 
 
 # ==========================================================================
@@ -837,25 +832,22 @@ def sale_start(positions):
 
 
 # ==========================================================================
-# practice/friction-efficiency-index.md
-# Retrospective execution metrics. Every threshold, weight and coefficient on
-# that page is a reasoned starting value; none is fitted to booked deal data.
+# practice/enforcement-ledger.md, allocation coverage.
 # ==========================================================================
 
 def allocation_coverage_ratio(n_allocated, n_exposure):
-    """ACR, section 1. The index's target.
+    """ACR, the Enforcement Ledger's allocation coverage.
 
         ACR = n_allocated / n_exposure
 
-    n_exposure is the deal's exposure count from the Deal Triage Calculator,
-    re-taken at the Adoption Review. n_allocated counts the items whose work
-    began only after a written allocation covered them, naming who bears the
-    item's adaptation risk, the gate it sits behind and a right to stop there.
+    n_exposure counts what either side sinks that only works here. n_allocated
+    counts the items whose work began only after a signed Stage row covered
+    them, naming who carries the item's adaptation risk, the gate it sits
+    behind and a priced right to stop there.
 
-    Higher is better and there is no band: Axiom III asks that nothing
-    specific be sunk before someone agreed who carries it. Undefined when
-    nothing specific was sunk, because such a deal has nothing to allocate
-    and sits outside the cohort the index reads.
+    Read against the share the deal needed (02-mathematical-models.md
+    section 5.6). Undefined when nothing specific was sunk, because such a
+    deal has nothing to allocate.
     """
     if n_allocated < 0 or n_exposure < 0:
         raise ValueError("counts cannot be negative")
@@ -865,191 +857,8 @@ def allocation_coverage_ratio(n_allocated, n_exposure):
                 n_allocated, n_exposure))
     if n_exposure == 0:
         raise ValueError(
-            "nothing specific was sunk, so there is nothing to allocate and "
-            "the deal sits outside the cohort this index reads")
+            "nothing specific was sunk, so there is nothing to allocate")
     return n_allocated / n_exposure
-
-
-def friction_allocation_ratio(h_pre, h_post):
-    """FAR, section 1.1. Descriptive, with no target and no weight.
-
-        FAR = H_pre / (H_pre + H_post)
-
-    The share of total implementation effort spent before signature. It says
-    where the effort went. Constitution 3.0 established that what must come
-    before the investment is sunk is the allocation, not the work, so a target
-    on this ratio rewarded forcing discovery that only use can do, and the
-    composite no longer carries it.
-
-    FAR is blind to scale. An engagement spending 10 pre-sale and 5 post-sale
-    hours scores identically to one spending 1,000 and 500, so always report it
-    alongside the total.
-    """
-    if h_pre < 0 or h_post < 0:
-        raise ValueError("logged hours cannot be negative")
-    total = h_pre + h_post
-    if total == 0:
-        raise ValueError("FAR is undefined with no logged hours")
-    return h_pre / total
-
-
-def buyer_commitment_velocity(s_dept, d_prov, n):
-    """BCV, section 2.
-
-        BCV = S_dept / ((D_prov + 1) * N^0.5)
-
-    How quickly the buyer mobilizes internal resources once asked. S_dept
-    counts departments that supplied a named participant, D_prov is calendar
-    days from request to first delivered artifact or confirmed attendee, and N
-    is total committee size.
-
-    The N^0.5 denominator is a correction rather than decoration. The canvas
-    form was S_dept / (D_prov + 1), which rewards engaging more departments and
-    so inverts Axiom III: the consensus model treats stakeholder count as a cost
-    driver. Uncorrected, an organization could raise its score by dragging more
-    people into rooms, which the bargaining-cost form correctly scores
-    as worse.
-
-    The +1 guards against division by zero on same-day response. It is a
-    convention, not a modelled quantity.
-    """
-    if s_dept < 0:
-        raise ValueError("department count cannot be negative")
-    if d_prov < 0:
-        raise ValueError("provisioning days cannot be negative")
-    if n < 1:
-        raise ValueError("committee size must be at least 1")
-    return s_dept / ((d_prov + 1.0) * math.sqrt(n))
-
-
-def risk_mitigation_score(n_identified, n_unresolved):
-    """RMS, section 3.
-
-        RMS = 1 - N_unresolved / N_identified
-
-    The share of discovered edge cases closed before signature.
-
-    This form corrects an arithmetic error the document records. The canvas
-    version read N_edge / (N_edge + N_unresolved), which double-counts, because
-    unresolved cases are a subset of identified cases and so appear in both
-    numerator and denominator. A Red Team that identified ten edge cases and
-    resolved none scored 10/20 = 0.50 under that form, reporting half the risk
-    mitigated when in fact none was. This form returns 0.
-
-    RMS rewards shallow discovery and must never be read alone. A workshop
-    surfacing two edge cases and closing both scores 1.00; one surfacing forty
-    and closing thirty-five scores 0.875. The lazier workshop wins. Report
-    n_identified next to the score every time and treat a low count as the
-    finding: below roughly eight on a deal with specific exposure the workshop did
-    not do its job, and the score carries no information however high it is.
-    """
-    if n_identified < 0 or n_unresolved < 0:
-        raise ValueError("edge case counts cannot be negative")
-    if n_unresolved > n_identified:
-        raise ValueError(
-            "unresolved edge cases are a subset of identified ones, so "
-            "{} unresolved of {} identified is impossible".format(
-                n_unresolved, n_identified))
-    if n_identified == 0:
-        raise ValueError(
-            "RMS is undefined when nothing was identified; a Red Team that "
-            "surfaced no edge cases is the finding, not a score of 1.0")
-    return 1.0 - n_unresolved / n_identified
-
-
-MIN_CREDIBLE_EDGE_CASES = 8
-
-
-def rms_is_credible(n_identified):
-    """Whether the edge-case count clears the shallow-Red-Team heuristic."""
-    return n_identified >= MIN_CREDIBLE_EDGE_CASES
-
-
-def scope_variance_index(t_actual, t_scoped, c_orders):
-    """SVI, section 4. Lower is better.
-
-        SVI = |T_actual - T_scoped| / T_scoped + 0.25 * C_orders
-
-    The absolute value penalizes early delivery as heavily as late delivery,
-    which is deliberate: finishing in half the scoped time means the estimate
-    was wrong, and a wrong estimate on the optimistic side produces the same
-    buyer-facing credibility loss as one on the pessimistic side.
-
-    The 0.25 coefficient on change orders is chosen with no source. It encodes
-    a judgment that one change order is worth about as much scope instability
-    as a 25 percent schedule miss.
-    """
-    if t_scoped <= 0:
-        raise ValueError("scoped duration must be positive")
-    if t_actual < 0:
-        raise ValueError("actual duration cannot be negative")
-    if c_orders < 0:
-        raise ValueError("change order count cannot be negative")
-    return abs(t_actual - t_scoped) / t_scoped + 0.25 * c_orders
-
-
-def normalize_bcv(bcv, bcv_ref=BCV_REF_DEFAULT):
-    """Section 5. BCV_hat = min(BCV / BCV_ref, 1).
-
-    BCV_ref is the trailing median across your last twenty closed deals
-    with specific exposure. Until twenty exist, the default of 0.5 applies and every reported
-    figure is marked provisional.
-    """
-    if bcv < 0:
-        raise ValueError("BCV cannot be negative")
-    if bcv_ref <= 0:
-        raise ValueError("the BCV reference must be positive")
-    return min(bcv / bcv_ref, 1.0)
-
-
-def normalize_svi(svi):
-    """Section 5. SVI_hat = min(SVI, 1).
-
-    SVI caps at 1 because a 100 percent schedule overrun is already a total
-    scoping failure, and allowing the term to run higher would let one
-    catastrophic project dominate a cohort average.
-    """
-    if svi < 0:
-        raise ValueError("SVI cannot be negative")
-    return min(svi, 1.0)
-
-
-def friction_efficiency_index(acr, bcv, rms, svi, bcv_ref=BCV_REF_DEFAULT):
-    """The composite, section 5.
-
-        FEI = 100 * (0.35*ACR + 0.25*BCV_hat + 0.25*RMS + 0.15*(1 - SVI_hat))
-
-    The weights sum to 1.00 by construction, so the index is bounded on
-    [0, 100] once both normalizations are applied. They have no empirical
-    basis: the parameter reference states the split is chosen. ACR inherited
-    the weight the effort ratio carried.
-
-    Read the four components before the composite. Any weighted index can hide
-    an offsetting pair, and the common one here is a high ACR carrying a low
-    RMS: every gate written down and the workshop still shallow.
-    """
-    if not 0.0 <= acr <= 1.0:
-        raise ValueError("ACR is a ratio on [0, 1]")
-    if not 0.0 <= rms <= 1.0:
-        raise ValueError("RMS is bounded on [0, 1]")
-    w_acr, w_bcv, w_rms, w_svi = FEI_WEIGHTS
-    return 100.0 * (
-        w_acr * acr
-        + w_bcv * normalize_bcv(bcv, bcv_ref)
-        + w_rms * rms
-        + w_svi * (1.0 - normalize_svi(svi))
-    )
-
-
-def fei_band(fei):
-    """Reading from the composite table: allocated, mixed or late."""
-    if not 0.0 <= fei <= 100.0:
-        raise ValueError("FEI is bounded on [0, 100]")
-    if fei > 75.0:
-        return "allocated"
-    if fei >= 50.0:
-        return "mixed"
-    return "late"
 
 
 # ==========================================================================

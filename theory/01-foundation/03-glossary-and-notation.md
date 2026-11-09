@@ -143,16 +143,11 @@ Every default below is unfitted. [06-calibration.md](./06-calibration.md) carrie
 | $\gamma_{TO}$ | Weight on the technical overlap term. | 0.20, [02-mathematical-models.md §3.4](./02-mathematical-models.md) |
 | $T$, $R$, $P$ | Temptation, reward, and punishment payoffs in the cooperation condition. | [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md) |
 
-### Retrospective measures
+### Allocation coverage
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| ACR | Allocation Coverage Ratio. Share of a deal's specific investment sunk only after an allocation covering it was agreed. The index's target. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
-| FAR | Friction Allocation Ratio. Share of implementation effort spent before signature. Descriptive, with no target. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
-| BCV | Buyer Commitment Velocity. How fast the buyer mobilized. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
-| RMS | Risk Mitigation Score. Share of discovered risk closed before signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
-| SVI | Scope Variance Index. Scope stability through delivery. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
-| $H_{pre}$, $H_{post}$ | Solutions-engineering and implementation hours before and after signature. | [Friction Efficiency Index](../../practice/friction-efficiency-index.md) |
+| ACR | Allocation Coverage Ratio. Share of a deal's specific investment sunk only after a signed Stage row covering it was agreed. | [Enforcement Ledger](../../practice/enforcement-ledger.md) |
 
 ### Retired in Constitution 4.0
 
@@ -288,7 +283,7 @@ Coase (1937) owns the question, whether to use the market at all. Dahlman (1979)
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **CFIR** | Implementation-science framework for reading a buyer's organization pre-sale. | [cfir.md](../02-research/cfir.md), mapped in [cfir-field-mapping.md](../../practice/cfir-field-mapping.md) |
+| **CFIR** | Implementation-science framework for reading a buyer's organization pre-sale. | [cfir.md](../02-research/cfir.md), which says where each construct is read |
 | **RE-AIM** | Five-dimension framework for post-sale success measurement. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 | **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
 
