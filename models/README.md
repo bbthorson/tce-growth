@@ -41,25 +41,24 @@ Formula coverage, by canonical home:
 | [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [Bargaining Ledger](../practice/bargaining-ledger.md) | The bargaining-cost form and its bands, and the worked example the retired Consensus Friction Calculator carried. |
 | [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.4, applied in the [Enforcement Ledger](../practice/enforcement-ledger.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
-| [friction-efficiency-index.md](../practice/friction-efficiency-index.md) | FAR, BCV, RMS, SVI, both normalizations, and the composite. |
+| [Enforcement Ledger](../practice/enforcement-ledger.md), Allocation coverage | The allocation coverage ratio. |
 | [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | Version 9.0. The maturity gate, the three counts and their edges, the positions and zones as measured and as the buyer expects them, the Kept out and Unshown overrides, both gates and the specific-exposure reading, the routing, and the frequency reading. |
 | [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, whether the seller's investment can be amortized, the frequency reading off the bond condition, and the build margin. |
 
 ## Nothing here is fitted, and it must stay that way
 
-Every parameter default is a reasoned starting value. `02-mathematical-models.md` states the forms are "specified, not fitted" and exist "to structure judgment, not to forecast," and the Friction Efficiency Index carries a stronger warning still.
+Every parameter default is a reasoned starting value. `02-mathematical-models.md` states the forms are "specified, not fitted" and exist "to structure judgment, not to forecast."
 
 - The calculator's edges are chosen, placed on the boundaries of the score bands earlier versions used.
 - The thresholds, the floor on the chance of future loss, and the drift rates are named and not valued, so the functions take them as arguments and ship no default.
 - $\beta = 1.35$ is chosen inside a motivated range. Only $\beta > 1$ carries literature support.
-- The Friction Efficiency Index weights have no empirical basis at all.
 - The seller-surplus forms have no parameter anchored in published literature.
 
 `TestCalibrationDiscipline` fails if the module docstring stops saying so, and `test_the_parameter_defaults_match_the_documents` fails if any default is retuned without editing the document it came from.
 
 **Do not fit these to synthetic data.** A previous session evaluated a public "AWS SaaS Sales" dataset for this purpose: 9,994 rows from a fictitious company, with no cycle stages, no stakeholder counts, and no implementation outcomes. Fitting to it produces parameters that look empirical and are not, which would launder invented numbers past the provenance audit. Synthetic data is acceptable only as a test fixture that never produces a published number.
 
-What would make the models empirical is already written down, in section 6 of `02-mathematical-models.md` and section 6 of the Friction Efficiency Index. Those conditions are about logging real deals, not about finding a dataset.
+What would make the models empirical is already written down, in section 6 of `02-mathematical-models.md` and section 4 of `06-calibration.md`. Those conditions are about logging real deals, not about finding a dataset.
 
 ## The figures
 

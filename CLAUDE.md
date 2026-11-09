@@ -14,6 +14,15 @@ A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market
 | `models/` | Executable forms of the equations, the tests that check the worked examples, and the figure generator. Python, no dependencies. |
 | `tools/` | The two linters and the Vale style that keep the other directories consistent. |
 
+## Standing scope decisions
+
+Recorded in the Constitution 5.0 proposal, now in git history (`git show b5b3386:CONSTITUTION-5.0-PROPOSAL.md`, section 6).
+
+- **The math is scaffolding.** It keeps the argument honest and the falsifiers checkable, and it is not shown in public writing.
+- **`06-calibration.md`, `08-from-axioms-to-instruments.md` and `models/` stay only while they help defend a claim.** Code that checks a worked example passes. Simulation with invented coefficients does not.
+- **The audience is founders and revenue leaders, held to academic citation standards.** Health tech supplies the examples, built from public patterns.
+- **Every falsifier is written for others to run.** The author's experience supplies hypotheses, not evidence.
+
 ## Conceptual architecture
 
 **The source of truth is `theory/01-foundation/00-tcg-constitution.md`**: three standing assumptions, a premise and three axioms. The premise: buying costs the buyer three things beyond price (search and information, bargaining and decision, policing and enforcement), the seller can absorb part of each (sales before commitment, account management after), and each party acts on what it can check. Each axiom answers one question at one level, with a falsifier:
@@ -25,7 +34,7 @@ A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 
 Read before editing:
-- **Any `practice/` file**: `practice/cfir-field-mapping.md`, which says which research construct each section operationalizes. The Deal Triage Calculator (`practice/deal-triage-calculator.md`) is referenced by nearly every instrument. It emits each cost's position and zone, where the sale starts, and an exposure reading, and it never sums the costs.
+- **Any `practice/` file**: `practice/README.md`, for the question each instrument answers and the three-question test every section must pass. For the ledgers and the Adoption Review, also `theory/02-research/cfir.md`, section "Where each construct is read", so an edit does not drop a construct. The Deal Triage Calculator (`practice/deal-triage-calculator.md`) is referenced by nearly every instrument. It emits each cost's position and zone, where the sale starts, and an exposure reading, and it never sums the costs.
 - **Any research file**: `theory/02-research/00-reading-guide.md`, which maps each paper to the axiom it backs.
 - **Before extending the theory**: `theory/01-foundation/07-open-questions.md`. An extension should land on a recorded gap or add one.
 

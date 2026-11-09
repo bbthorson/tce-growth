@@ -1,15 +1,12 @@
 ---
 title: "Practice"
 layer: practice
-status: under-review
+status: active
 ---
 
 # Practice
 
-> [!NOTE]
-> **Being rebuilt for Constitution 6.1.** The [Market Reading](./00-market-reading.md), the [Deal Triage Calculator](./deal-triage-calculator.md), the [Bargaining Ledger](./bargaining-ledger.md), the [Enforcement Ledger](./enforcement-ledger.md) and the [Sustaining Adoption Review](./adoption-review.md) are rebuilt and active. Every other file derives from Constitution 4.1 and stays as written until its turn. [The practice rebuild proposal](../PRACTICE-REBUILD-PROPOSAL.md) says which files are rebuilt, merged or archived, and in what order.
-
-**Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
+**Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. A section stays only if it passes three questions: it changes a decision the person using the instrument makes, it is said in one place, and the person can act on it when they use the instrument. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
 
 Each document carries its own header table stating its inputs, outputs, next step, and owner. This README points at them and does not restate them.
 
@@ -27,28 +24,37 @@ The Constitution's axioms answer three questions: whether a market can exist, wh
 | **Deal, specific exposure** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) |
 
-The Market Reading, the Deal Triage Calculator, the Enforcement Ledger, the Bargaining Ledger and the Sustaining Adoption Review are built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
+Every instrument here is built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
 
 ---
 
 ## Quantitative instruments
 
-Three instruments convert deal observations into comparable numbers. Two measure a quantity the axioms name and the third scores how the motion was run. Each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
+Two instruments convert deal observations into comparable numbers, each a quantity the axioms name. Each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
 
 | Instrument | Measures | Run it when |
 |---|---|---|
-| [Enforcement Ledger](./enforcement-ledger.md) | The policing gap, the mean of the seller's and the buyer's unevidenced fractions, which feeds the chance of future loss | At each stage, from Map onward |
+| [Enforcement Ledger](./enforcement-ledger.md) | The policing gap, the mean of the seller's and the buyer's unevidenced fractions, which feeds the chance of future loss. Its allocation coverage reads whether specific investment was allocated before it was sunk. | At each stage, from Map onward, and coverage at go-live |
 | [Bargaining Ledger](./bargaining-ledger.md) | The bargaining gap, and $F_{consensus}$ with its band | Whenever the triage reads bargaining as needing investment, and on every deal with specific exposure |
-| [Friction Efficiency Index](./friction-efficiency-index.md) | Whether specific investment was allocated before it was sunk, and where the effort went, across a closed cohort | Quarterly, in retrospect. The one instrument that could test Axiom III's allocation clause after the fact. |
 
 ---
 
-## Design references
+## The signal check
 
-| Document | What it does |
+[The Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) decides whether one piece of evidence counts, against the four Friction Allocation Principles. The Enforcement Ledger's Test rows and the Market Reading's search ledger run every evidence cell through it.
+
+---
+
+## Archived in the 6.1 rebuild
+
+Each file below is in git history. What it carried that the axioms still need now lives here:
+
+| Archived | Now in |
 |---|---|
-| [CFIR Field Mapping](./cfir-field-mapping.md) | Which research construct each section of each artifact operationalizes. Read it before modifying any artifact here. |
-| [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) | Tests whether a signal mechanism satisfies the four Friction Allocation Principles from Axiom III. Use when designing an artifact or diagnosing a failing signal. |
+| Contextual Blueprint, Red Team Protocol, Mutual Implementation Plan, Milestone Valuation Model, Bilateral Asymmetry Scorecard | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, and its policing gap |
+| Consensus Friction Calculator, and the Blueprint's and Red Team's stakeholder sections | The [Bargaining Ledger](./bargaining-ledger.md) |
+| Friction Efficiency Index | Its allocation coverage ratio, in the Enforcement Ledger, and its test of Axiom III's allocation clause, in [06-calibration.md](../theory/01-foundation/06-calibration.md) section 4. The other three measures and the composite changed no decision on a deal. |
+| CFIR Field Mapping | [cfir.md](../theory/02-research/cfir.md), section "Where each construct is read" |
 
 ---
 

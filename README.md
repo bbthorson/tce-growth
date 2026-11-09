@@ -38,9 +38,6 @@ The repo serves **three functions**, each in its own top-level directory, plus t
 
 Each has a README listing what is inside it. For `tools/` it is [tools/linting/README.md](./tools/linting/README.md).
 
-> [!NOTE]
-> **The practice layer is being rebuilt.** Constitution 6.1 is in force. The [Market Reading](./practice/00-market-reading.md), the [Deal Triage Calculator](./practice/deal-triage-calculator.md), the [Enforcement Ledger](./practice/enforcement-ledger.md), the [Bargaining Ledger](./practice/bargaining-ledger.md) and the [Sustaining Adoption Review](./practice/adoption-review.md) are rebuilt for it and active, and [PRACTICE-REBUILD-PROPOSAL.md](./PRACTICE-REBUILD-PROPOSAL.md) sets the order for the rest. Every other file in `practice/` still derives from 4.1, is marked `under-review`, and stays as written until its turn. [CONSTITUTION-5.0-PROPOSAL.md](./CONSTITUTION-5.0-PROPOSAL.md) records the ten review decisions behind 5.0 and the rebuild step, and [CONSTITUTION-6.0-PROPOSAL.md](./CONSTITUTION-6.0-PROPOSAL.md) records the 6.0 restatement. Both retire to git history once the rebuild lands. Read an instrument's numbers and routing as 4.1 until then.
-
 ---
 
 ## Start here: the three axioms

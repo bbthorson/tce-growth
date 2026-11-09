@@ -23,7 +23,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Adverse selection (before signing).** The buyer cannot distinguish a capable vendor from an incapable one, so they discount price toward the average. This is the failure costly signals solve.
 - **Moral hazard (after signing).** Effort becomes unobservable once work begins, on both sides. The seller can under-resource delivery; the buyer can under-resource adoption. This is the failure governance solves, not signals.
 
-Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$, the implementation gap, measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the Blueprint and Red Team map stakeholder incentives rather than simply proving vendor capability.
+Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$, the implementation gap, measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the [Bargaining Ledger](../../practice/bargaining-ledger.md) maps each decision role's reservation rather than simply proving vendor capability.
 
 **Key claims:**
 - Information asymmetry without signals collapses markets to average (lemons) quality.
@@ -37,12 +37,25 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 
 **Supports in TCG:**
 - **Axiom III — Law of Future Cost** — direct theoretical basis for why only costly evidence lowers the chance of future loss. Friction is the signal, asymmetry is the noise.
-- **Friction Allocation Principles** — all four principles derive from the Single Crossing Property.
+- **Friction Allocation Principles** — the first three derive from the Single Crossing Property, and the fourth from the theory of certification intermediaries. The section below says why there are four.
 - **Single Crossing Property** — direct.
 - **Akerlof saturation** (Axiom I failure mode) — direct.
 - **Jevons Vulnerability** — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
-- **Axiom III — Law of Future Cost, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the problem to govern, which is what the MIP's mutual resource commitments address.
+- **Axiom III — Law of Future Cost, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the problem to govern, which is what the mutual commitments in the [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Stage column address.
 - **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
+
+## Why four principles
+
+Each Friction Allocation Principle answers a different question a receiver needs answered before a signal can move what it believes. The [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) applies them.
+
+| Principle | The question it answers | Where it comes from |
+|---|---|---|
+| 1. The cost cannot be automated away | Does the signal cost a weak sender more than a strong one? | The single crossing property. A cost tools remove falls for every sender alike, and the signal pools. |
+| 2. The claimant bears the cost | Does the cost fall on the party whose quality is in doubt? | The single crossing property again. A cost the receiver pays tells it nothing about the sender. |
+| 3. The cost scales with the claim | Is the cost large enough to separate at this claim's stakes? | Spence's condition read against the premium a seller earns by being told apart, $B$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 5.8. A larger claim raises what a weak seller gains by faking it. |
+| 4. The adjudicator loses when a bad signal passes | Does whoever certifies the signal keep certifying honestly over time? | The theory of certification intermediaries, carried in [information-environment.md](./information-environment.md). An adjudicator with nothing to lose drifts from screening toward extraction. Lizzeri (1999) adds that even an honest certifier gains by coarsening what it reveals to pass or fail, so a staked adjudicator that discloses a grade beats one that does not. |
+
+The first three are conditions on the sender's cost. The fourth is a condition on the institution that carries the signal across time and buyers. Each is necessary: a signal that is too cheap, paid for by the wrong party or vouched for by someone with nothing to lose is cheap talk, which informs only as far as the two sides' interests already agree. The third also fails the other way, and evidence far costlier than the claim needs is waste under Axiom III's gate corollary. The Constitution claims necessity only. Whether the four suffice is untested, and the trust-proxy extension below is the standing candidate for a fifth.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
 

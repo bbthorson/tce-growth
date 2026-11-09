@@ -1,172 +1,108 @@
 ---
 title: "Friction Allocation Diagnostic"
 layer: practice
-status: under-review
-version: 1.1
-operationalizes: [axiom-3]
+status: active
+version: 2.0
+operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Friction Allocation Diagnostic
 
-> [!NOTE]
-> **Frozen for Constitution 5.0.** This file derives from Constitution 4.1. It stays as written until 5.0 is settled, and then the practice layer is rebuilt from the new axioms. See [the 5.0 proposal](../CONSTITUTION-5.0-PROPOSAL.md), section 6.
+Version: 2.0
+Goal: Decide whether one piece of evidence counts as verification, meaning a buyer can rely on it to lower what it cannot check. Evidence that fails is a claim, however much it cost to produce.
 
-**Version:** 1.1
-**Audience:** Sales reps, sales leadership, marketing, anyone designing or evaluating a signal mechanism.
-**Goal:** Check whether a signal mechanism — a sales artifact, an outreach channel, a marketing asset, a third-party validator — actually reduces buyer-side uncertainty, or whether it is cheap talk dressed up as effort.
-
-**Canonical Reference:** [TCG Constitution, Axiom III — Law of Future Cost](../theory/01-foundation/00-tcg-constitution.md). The four principles are primary derivations of Axiom III.
+**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), the Friction Allocation Principles under Axiom III. The diagnostic tests one of the two jobs Axiom II gives seller spending: letting a deal that creates value go ahead with evidence the buyer can check. It does not test the other job, raising what the deal creates, so a discovery workshop can fail here and still earn its cost by lowering the cost at time 1. Why each of the four principles is needed is argued in [costly-signals.md](../theory/02-research/costly-signals.md).
 
 | | |
 |---|---|
-| **Inputs** | A signal mechanism: a sales artifact, a channel for outreach, a piece of marketing collateral, an evaluation by a third-party adjudicator (e.g., a ratings firm). |
-| **Outputs** | A pass/fail diagnosis against the four principles, with named violations and prescribed fixes. |
-| **When to run** | (1) Designing a new artifact or process. (2) Diagnosing why an existing signal mechanism isn't closing the gap it was built to close. (3) Evaluating channels or platforms before committing to them. |
-| **Owner** | Whoever is designing or selecting the mechanism (sales, marketing, sales leadership, RevOps). |
+| **Inputs** | One signal and the claim it supports. A signal is a piece of evidence, an artifact, a channel or a third-party validator. |
+| **Outputs** | Pass, or every principle it fails, each with its fix. |
+| **When to run** | On the evidence for each Test row of the [Enforcement Ledger](./enforcement-ledger.md), on each evidence cell of the [Market Reading](./00-market-reading.md)'s search ledger, and on any artifact, channel or validator before the seller spends on it. |
+| **Grader** | Someone other than whoever produced the signal. In the Enforcement Ledger, the buyer's skeptic. In the search ledger, the buyers who have not met the seller. |
 
 ---
 
-## The four principles
+## What a failure means
 
-A signal mechanism closes a gap, and so lowers the chance of future loss under Axiom III, only when all four principles hold. If even one fails, the signal is debaseable, miscalibrated, misallocated, or unaccountable — and will not deliver durable friction reduction.
+A signal too cheap to separate a strong seller from a weak one is *cheap talk*: anyone can send it, so it says nothing about who sent it. Cheap talk still informs as far as the two sides' interests already agree (Crawford and Sobel 1982), so a failure matters where they diverge: whether the product fits here, whether the seller will deliver, and what the change will cost to run.
 
-### Principle 1 — Friction must be non-automatable
+**Where a failure lands.** In Test, evidence that fails leaves the row without the skeptic's verdict, so the row counts as unevidenced in the buyer's half of the policing gap. In the search ledger, the cell is marked as a claim. For [open question 45](../theory/01-foundation/07-open-questions.md)'s cost-of-sale tagging, a pass would tag the activity as verification and a failure as persuasion, unless it did the other job.
 
-**The principle.** A signal carries information only when its cost cannot be removed by efficiency tools. Production-cost friction is debaseable; expertise, relationship investment, and demonstrated work are not. This is the Single Crossing Property in plain language.
+**Signals screen before signature and are re-earned after it.** A deal that closed on evidence that was sound and current, and then failed, is a governance failure, read in the Enforcement Ledger's Stage column and the [Sustaining Adoption Review](./adoption-review.md).
 
-**Test.** What is the binding constraint on producing this signal?
+---
 
-| Binding constraint | Status |
+## The four tests
+
+Run all four and record every failure. Fix them in this order, because a signal that fails test 1 says nothing however the others come out.
+
+**Whose signal it is.** Where the seller produced the evidence, the seller is the claimant. Where a third party produced it, such as an analyst ranking, a review site or a certification, the third party is the claimant for tests 1 to 3 and the adjudicator for test 4.
+
+### 1. The cost cannot be automated away
+
+**Ask:** what limits how much of this the claimant can produce?
+
+| What limits it | Result |
 |---|---|
-| Production cost (time to draft, money to deploy, tooling) | **Debaseable** — once efficiency tools collapse production cost, signal collapses |
-| Expertise (years of work, technical depth, scars) | Non-debaseable |
-| Relationship capital (who vouches, who introduces) | Non-debaseable |
-| Time and presence (in-person attendance, site visits) | Non-debaseable |
-| Demonstrated work (named customers, audited outcomes, public IP) | Non-debaseable |
+| Production cost: drafting time, sends, tooling | **Fails.** Competitors' tools remove the cost, weak sellers copy the signal, and the category *pools*, meaning buyers can no longer tell sellers apart and judge them all by the average ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.8). |
+| Expertise shown on the buyer's own problem | Passes |
+| A relationship someone stakes, such as a named reference | Passes |
+| Time and presence, such as a site visit | Passes |
+| Demonstrated work: outcomes someone outside the seller audited, work in the buyer's environment | Passes |
 
-**Common violations.** "Best AI" marketing claims. AI-generated personalized cold emails. Vanity metrics chosen for novelty. Badges and certifications with no enforcement. Generic "thought leadership" content optimized for volume.
+**Fix:** move the cost into the doing.
 
-**Fix.** Replace debaseable production-cost effort with non-debaseable demonstration. If your outreach is built on tools that any competitor can also use, the signal is collapsing. Migrate to channels and artifacts where the cost is in the doing, not the producing.
+### 2. The claimant bears the cost
 
----
+**Ask:** walk through the exchange step by step. Who pays for each one?
 
-### Principle 2 — Friction borne by the claimant
+**It fails** when the receiver pays: filtering volume, reading boilerplate, or evaluating a claim it has no means to check. Cold outreach at scale and boilerplate answers to a request for proposal fail here.
 
-**The principle.** The party making the claim pays the cost of producing the signal. When the receiver bears the cost — filtering, evaluating, deciphering — the signal mechanism is broken regardless of how good any individual signal is.
+**Fix:** the claimant does the work first and hands the buyer only a result it can check, such as a security audit commissioned before the first meeting or a gap analysis of the buyer's own workflow.
 
-**Test.** Walk through the actual transaction. Who pays each step?
+### 3. The cost scales with the claim
 
-| Mechanism | Who bears cost |
-|---|---|
-| Seller spends a week on a Blueprint the buyer reviews | Claimant |
-| Seller sends 1,000 cold emails the buyer must filter | Receiver |
-| Seller pays for SOC2 / security audit before approaching the buyer | Claimant |
-| Platform sends notifications the buyer must triage | Receiver |
-| Vendor commissions third-party validation prior to introducing themselves | Claimant |
+**Ask two questions.** What does the buyer sink if the claim is wrong? And would a weak seller gain more by faking this evidence than it would cost to fake? The more the buyer pays and sinks on a claim, the more a weak seller gains by being taken for a strong one, so the evidence has to cost a weak seller more as the stake grows.
 
-**Common violations.** Cold outreach at scale. RFPs where the seller submits boilerplate and the buyer must read everyone's. "Reach out and we'll connect you with a specialist" lead-capture flows. Channels where the platform monetizes sends rather than signal quality.
+**Read the stake from what the caller already has.** For a Test row, the row's own touchpoint and the workflows it changes. For a search-ledger cell, the Market Reading's exposure reading.
 
-**Fix.** Move the cost of signal evaluation to the producer. If your mechanism makes the receiver work harder to evaluate it, redesign so the producer does the work first and presents only the validated outcome.
+**It fails** when a claim the buyer will sink *specific investment* on, meaning spending worth little outside this relationship, rests on evidence a weak seller could match cheaply.
 
----
+**Fix:** a demonstration in the buyer's environment, evidence the skeptic grades in Test, or a guarantee. A guarantee is partly verification, because only a seller confident of delivering can afford to offer one.
 
-### Principle 3 — Friction scales with stakes
+**The opposite mistake is waste.** Where the triage's Gate B passed, meaning the buyer can measure fit itself and walk away, a trial is the signal. A paid pilot there is the over-frictioned failure under Axiom III's gate corollary, and it usually fails test 2 as well.
 
-**The principle.** The signal cost should match the size of the claim. A small claim requires modest signal; a large claim requires substantial signal. Mismatch fails in both directions — over-frictioned small claims feel disproportionate, under-signaled large claims feel reckless.
+**What signals cannot do.** Aim signals at the search cost, the implementation cost, and each decision role's uncertainty about what the change does to its own measure. Where roles want opposed things, proof cannot reconcile them, and the [Bargaining Ledger](./bargaining-ledger.md) answers with terms instead.
 
-**Test.** What is the financial / strategic / political stake of the buyer's decision, and what is the cost of the signal you're producing? Are they proportional?
+### 4. The adjudicator loses when a bad signal passes
 
-| Stake | Signal cost | Verdict |
+**Ask:** who vouches for or filters this signal, and what do they lose if it proves wrong? Where the buyer checks the evidence directly, with nobody between, the test passes.
+
+| What the adjudicator loses | Result | Example |
 |---|---|---|
-| $50K SaaS deal | 30-min discovery call | Proportional |
-| $5M ERP deal | 30-min discovery call | Wildly under-signaled |
-| $50K SaaS deal | Three-month paid pilot | Over-frictioned |
-| $5M ERP deal | Three-month paid pilot | Proportional |
-| Buyer asks for pilot/POC at any stake | Anything less than implementation-led motion | Under-signaled (override applies — see [Deal Triage Calculator](./deal-triage-calculator.md)) |
+| Nothing | **Fails** | A ratings firm or certifier paid by the vendors it rates. A channel paid on referral. A sponsor staked on success judging between the buyer's own roles ([open question 59](../theory/01-foundation/07-open-questions.md)). A seller's manager forecasting a deal above the gate with no stake in what happens after signature. |
+| Reputation only | **Passes while re-earned.** Standing that is not refreshed with evidence of continued delivery depreciates, so weight the signal by how recently it was earned. | An analyst ranking. A review site. |
+| Something direct | Passes | A peer whose relationship rides on the recommendation. A channel paid on a share of what survives signature ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5). |
 
-**Common violations.** A deal with specific exposure sold with self-serve-grade signals (under-signaled, and headed for the unallocated failure). A deal where nothing specific is sunk sold with governance-grade signals (over-frictioned). Generic enterprise sales motion applied to a high-stakes deal without escalating the signal cost. Treating an enterprise buyer like a mid-market buyer because the territory categorization said so.
-
-**Fix.** Match signal weight to stakes. The [Deal Triage Calculator](./deal-triage-calculator.md) returns where the sale starts and whether anything specific is sunk. The signal's weight should scale to the stakes and the specific exposure, and the cost it targets should be the one where the sale starts.
+**Prefer an adjudicator that discloses a grade over one that reports pass or fail.** A certifier does best by revealing only whether quality clears a minimum, so even an honest one tells the buyer less than it knows ([information-environment.md](../theory/02-research/information-environment.md)).
 
 ---
 
-### Principle 4 — Adjudicators bear consequences of their validation
+## Reading a failing signal
 
-**The principle.** Parties that validate or filter signals — channels, platforms, ratings agencies, governance bodies — must lose something when they let bad signals through. Without this, the adjudicator drifts from gatekeeper to extractor.
-
-**Test.** What does the adjudicator lose when their validation turns out wrong?
-
-| Adjudicator type | Skin in the game? |
+| Symptom | Test that failed |
 |---|---|
-| Sales platform paid per email sent, regardless of reply rate | None |
-| Ratings agency paid by vendors being rated | None (conflict of interest) |
-| KLAS / Gartner / Forrester after rating a vendor that underperforms | Mild reputational loss; no direct cost — drift risk |
-| Peer who personally recommended you, when the recommendation goes badly | Relationship cost — real |
-| Platform that takes a percentage of post-sale value (success-fee) | Direct loss |
-| Incumbent vendor whose channel access is revoked for bad delivery | Direct loss |
-
-**Common violations.** Pay-per-send platforms. Volume-based ad networks. Ratings agencies funded by the rated. Reputation systems that don't depreciate (the KLAS "coast on residual brand" pattern). Internal review processes where reviewers face no consequences for approving bad deals.
-
-**Fix.** Either (a) select adjudicators who already have skin in the game — peers, success-fee platforms, hostage-based access — or (b) introduce demurrage so reputation must be continuously re-earned and stale credibility loses weight. See [Constitution Axiom III: Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md).
-
----
-
-## How to use this diagnostic
-
-### Use case 1 — Designing a new artifact or process
-
-When creating any new sales artifact, marketing asset, or process step, run the four principles as a checklist:
-
-- [ ] **P1:** Is the cost non-automatable? What's the binding constraint on production?
-- [ ] **P2:** Does the producer bear the cost, not the receiver?
-- [ ] **P3:** Is the cost proportional to the stakes of the buyer's decision?
-- [ ] **P4:** If there's an adjudicator (a platform, ratings agency, or internal reviewer), do they have skin tied to signal quality?
-
-If any answer is no, redesign before launching.
-
-### Use case 2 — Diagnosing a failing signal mechanism
-
-When an artifact, channel, or campaign isn't producing the expected results (low reply rates, no gap closing, deals stalling), walk through the four principles to identify the failed one:
-
-| Symptom | Likely violation |
-|---|---|
-| Channel reply rates collapsing across the board | **P1** — production cost was the binding constraint, now collapsed (Jevons). |
-| Individual outreach gets ignored despite quality effort | **P1** collapse + **P2** misallocation (receiver overwhelmed by aggregate volume). |
-| Deal feels under-resourced for its size; buyer keeps asking for "more proof" | **P3** — friction below stakes; signals don't feel substantial enough. |
-| Buyer references a rating or certification that turned out to be misleading | **P4** — adjudicator drift; the signal source has lost reliability. |
-| Champion is enthusiastic but the deal still stalls in procurement | Often **P3** — signals strong enough for the champion don't scale to the broader committee. |
-| Deal closes but churns within 90 days | **P3** + **P4** — implementation signal was under-weighted, and the adjudicator (rep's manager forecasting it) had no skin in the post-sale outcome. |
-
-### Use case 3 — Evaluating a channel or platform before commitment
-
-Before investing time in a new outreach channel, platform, or third-party validator, score it against the principles. A channel that fails one or more principles will not produce durable signal — investing there is donating attention to a structure that will drift toward extraction.
-
-Specifically for channel selection, **P1** is the load-bearing test:
-
-- If the binding constraint on volume in this channel is production cost → Jevons-vulnerable, will collapse.
-- If the binding constraint is something else (time, relationships, expertise, demonstrated work) → Jevons-resistant.
-
----
-
-## Why these are the only four
-
-The principles look like a list, but they cover the necessary and sufficient conditions for a signal to carry information:
-
-| Principle | Question it answers |
-|---|---|
-| 1 (non-automatable) | *Does* it carry information? |
-| 2 (claimant pays) | Is the cost on the right party? |
-| 3 (scales with stakes) | Is the cost calibrated to the claim? |
-| 4 (adjudicator skin) | Does the validation mechanism stay honest over time? |
-
-If all four hold, the gap shrinks. If any one fails, it doesn't — regardless of how well the others hold. They are conditions, not optimizations.
+| Reply rates fall across a whole channel | 1. Production cost was the limit, and tools removed it ([channel-collapse.md](../theory/02-research/channel-collapse.md)). |
+| Careful individual work gets ignored | 2, usually with 1. The receiver pays to sort the volume everyone else sends. |
+| The buyer keeps asking for more proof | 3. The evidence is cheap beside what the buyer will sink. |
+| The champion is convinced and procurement or security is not | 3 if the approvers the exposure adds need different evidence. If they want back something the change takes from them, no signal answers it, and the Bargaining Ledger does. |
+| The buyer balks at a pilot for a product it could try alone | 3, the waste direction. |
+| A rating or certification the buyer relied on proved wrong | 4. |
 
 ---
 
 ## Related
 
-- **Theory:** [TCG Constitution — Axiom III (Law of Future Cost) and the Friction Allocation Principles](../theory/01-foundation/00-tcg-constitution.md).
-- **Channel evaluation:** [channel-collapse.md](../theory/02-research/channel-collapse.md) describes when production cost is the binding constraint, making the channel vulnerable to Principle 1 failure.
-- **Adjudicator design:** [Constitution Axiom III — Reputation Depreciation](../theory/01-foundation/00-tcg-constitution.md) describes how to design demurrage into adjudicator structures.
-- **Deal-level scoring:** [Deal Triage Calculator](./deal-triage-calculator.md) — Principle 3 (scales with stakes) is operationalized by classifying deals first.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md), Axiom III's corollaries, for the principles, the gate and the three levers.
+- [costly-signals.md](../theory/02-research/costly-signals.md), for why each principle is needed, and the trust-proxy extension that is the standing candidate for a fifth.

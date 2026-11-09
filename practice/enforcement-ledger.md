@@ -17,7 +17,7 @@ Goal: On one deal, close the policing gap from both sides and settle the allocat
 | | |
 |---|---|
 | **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading with specific exposure, a sale that starts at implementation, or a pilot request. The reference workflow from the [Market Reading](./00-market-reading.md), Step 0. |
-| **Outputs** | The ledger, the policing gap by half and the stage it sends the deal to, signed gates, and the allocation coverage at the first specific investment. |
+| **Outputs** | The ledger, the policing gap by half and the stage it sends the deal to, signed gates, and the allocation coverage at go-live. |
 | **Next step** | The [Sustaining Adoption Review](./adoption-review.md), which runs Maintain and the standing review agreed in Stage. |
 | **Owner** | The account executive and solutions engineer, with the buyer's technical lead. The buyer's skeptic judges Test. |
 
@@ -77,7 +77,7 @@ Start from the reference workflow, one row per step, with the columns the seller
 | Result | What happened |
 | Verdict | The skeptic's: resolved, mitigated with evidence that the mitigation works, or a product limit acknowledged in writing |
 
-**Evidence counts only if the buyer can check it.** Demonstration in the buyer's environment or a comparable one, or a gap analysis the buyer signs, passes. A sales claim nobody challenged counts against, and a matching row needs the skeptic's confirmation that the product handles it as the buyer assumed. Each artifact has to pass the [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md).
+**Evidence counts only if it passes the [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md).** A sales claim nobody challenged counts against, and a matching row needs the skeptic's confirmation that the product handles it as the buyer assumed.
 
 **Classify what is not resolved.**
 
@@ -182,7 +182,7 @@ $n_{exposure}$ counts what either side sinks that only works here: the buyer's d
 | Hostages and allocated rights | |
 | Outcome measure | |
 | Standing review: cadence and what each side can invoke | |
-| Allocation coverage at the first specific investment | |
+| Allocation coverage at go-live | |
 | Date, and by whom | |
 
 ---

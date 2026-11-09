@@ -148,7 +148,7 @@ On pursue, write the search ledger. It lives at the market and is reused by ever
 | Building it internally | | | | |
 | Doing nothing | | | | |
 
-**Done when** three buyers from the population who have not met the seller can, from the ledger alone, say which alternatives cover which steps and how to reach the seller. Each evidence cell has to pass the [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md), and the comparison as a whole needs an adjudicator other than this seller with a stake in its accuracy, or it is a claim. Where Step 3 read a prior past its edge, the evidence that shows this seller's own bargaining or policing cost goes here too: published terms, a security packet, implementation timelines with references.
+**Done when** three buyers from the population who have not met the seller can, from the ledger alone, say which alternatives cover which steps and how to reach the seller. Each evidence cell has to pass the [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md), or it is marked as a claim. Where Step 3 read a prior past its edge, evidence of this seller's own bargaining or policing cost goes here too, such as published terms, an audited security report or implementation timelines with named references. It is the one kind of cell this seller may fill, and only with evidence a third party produced or a buyer can check.
 
 **Maintain it.** Append entrants as they arrive, and re-test the evidence when cheap signals start to swamp costly ones.
 
