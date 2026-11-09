@@ -42,7 +42,7 @@ Formula coverage, by canonical home:
 | [Bargaining Ledger](../practice/bargaining-ledger.md) | The bargaining-cost form and its bands, and the worked example the retired Consensus Friction Calculator carried. |
 | [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.4, applied in the [Enforcement Ledger](../practice/enforcement-ledger.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
 | [Enforcement Ledger](../practice/enforcement-ledger.md), Allocation coverage | The allocation coverage ratio. |
-| [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | Version 9.0. The maturity gate, the three counts and their edges, the positions and zones as measured and as the buyer expects them, the Kept out and Unshown overrides, both gates and the specific-exposure reading, the routing, and the frequency reading. |
+| [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | Version 9.1. The maturity gate, the three counts and their edges, the positions and zones as measured and as the buyer expects them, the Kept out and Unshown overrides, both gates and the specific-exposure reading, the routing, and the frequency reading. |
 | [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, whether the seller's investment can be amortized, the frequency reading off the bond condition, and the build margin. |
 
 ## Nothing here is fitted, and it must stay that way

@@ -81,7 +81,7 @@ $$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} 
 - **$P$** = price over the relationship. It appears in both conditions and cancels when they are added, because price is a transfer and not a transaction cost.
 - **$I^b_k$, $I^s_k$** = what the buyer and the seller invest today against cost $k \in \{search, consensus, implementation\}$ (Axiom II)
 - **$L_b$, $L_s$** = each party's expected future loss, its specific exposure times the chance the exposure does not come back (Axiom III).
-- **$r_k$** = where cost $k$ sits between the level the buyer can pay down alone and the level that keeps the buyer out. Above 1, the buyer does not enter the market (Axiom I). The sale starts at the largest (Axiom II).
+- **$r_k$** = where cost $k$'s demand on the people who carry it sits between what they handle without help and their capacity. Above 1, the buyer does not enter the market (Axiom I). The sale starts at the largest (Axiom II).
 
 The equations are in [Constitution Part II](./theory/01-foundation/00-tcg-constitution.md).
 
@@ -121,5 +121,5 @@ This is a living document. As you work:
 
 ---
 
-**Version:** 6.1 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
-**Last updated:** 2026-11-03
+**Version:** 6.2 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
+**Last updated:** 2026-11-09

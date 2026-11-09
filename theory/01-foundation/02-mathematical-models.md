@@ -35,7 +35,7 @@ $$S_b = V_{switch}(t) - P - \sum_{k} I^b_k - L_b \qquad S_s = P - C_{deliver} - 
 | $I^b_k$, $I^s_k$ | What the buyer and the seller invest today against cost $k \in \{search,\; consensus,\; implementation\}$ (Axiom II) |
 | $L_b$, $L_s$ | Each party's expected future loss (Axiom III), section 5 |
 
-A deal closes when $S_b > 0$, $S_s > 0$, and no cost sits above its participation threshold (section 6). Recurrence enters through $P$ and $C_{deliver}$ summed over expected renewals, which [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7 writes out with a retention probability and a discount rate.
+A deal closes when $S_b > 0$, $S_s > 0$, no cost sits above its participation threshold, and no payer carries more than its capacity across the costs it carries (section 6). Recurrence enters through $P$ and $C_{deliver}$ summed over expected renewals, which [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7 writes out with a retention probability and a discount rate.
 
 The seller's condition is the seller surplus model's $S_{seller} = p_{close}(V_{contract} - C_{deliver}) - C_{invest}$ conditional on a close, with $C_{invest}$ split by the cost it pays down and the future loss written out instead of left inside $p_{close}$.
 
@@ -43,7 +43,7 @@ The seller's condition is the seller surplus model's $S_{seller} = p_{close}(V_{
 
 **Every term is a fraction of annual contract value.** That is what makes the two conditions comparable and what lets investment and exposure be estimated at all: a seller can price its own engineering hours, and a buyer can price the staff time its integration will take. A deal at list price with no other cost has $P = 1$.
 
-Reading any of these terms in percentage points instead is a unit error and not a second option. A future loss of 0.75 means three quarters of a year's contract value, not three quarters of a percent.
+Reading any of these terms in percentage points instead is a unit error and not a second option. A future loss of 0.75 means three quarters of a year's contract value, not three quarters of a percent. The gate is the exception: it reads demand in each payer's own units (section 6).
 
 ### 1.3 Price cancels
 
@@ -148,9 +148,9 @@ This floor is the model's most useful field implication, and it is why the chanc
 
 The search and bargaining gaps are measured as the fraction of their own instrument's items that remain unevidenced, which lands on $[0, 1]$ with a true zero:
 
-$$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{n_{search}}, \qquad \hat{\Delta}_{consensus} = 1 - \frac{e_{consensus}}{n_{consensus}}$$
+$$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{m_{search}}, \qquad \hat{\Delta}_{consensus} = 1 - \frac{e_{consensus}}{m_{consensus}}$$
 
-Where $n_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items leaves its gap undefined rather than zero.
+Where $m_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items leaves its gap undefined rather than zero.
 
 **The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. Earlier calculators read a proxy, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. The Deal Triage Calculator 9.0 retired it, and [07-open-questions.md](./07-open-questions.md) item 2 records that the decision-role map that reads the gap is not yet built.
 
@@ -179,7 +179,7 @@ $$F_{consensus} = \alpha \cdot N^{\beta} \cdot (1 + \text{Var}(I_i))$$
 | $\alpha$ | Baseline coordination overhead, the conversion into contract value | $> 0$ | 1.0 |
 | $\beta$ | Organizational complexity exponent | $[1.2, 2.0]$ | 1.35 |
 
-This is the structural form of the bargaining and decision cost the buyer faces before anyone invests against it. $\alpha$ is what converts it into fractions of annual contract value, and its default of 1.0 is a normalizing convention rather than a conversion anyone has measured.
+This is the structural form of the bargaining and decision cost with nothing moved yet (section 6). $N$ is wider than the gate's consensus demand, since evaluators add coordination work without holding a veto. $\alpha$ is what converts it into fractions of annual contract value, and its default of 1.0 is a normalizing convention rather than a conversion anyone has measured.
 
 Variance is bounded above by 1 because $I_i$ is bounded on $[-1, 1]$. A computed value above 1 indicates an arithmetic error, not an unusually divided committee.
 
@@ -442,33 +442,46 @@ Separation is a condition a market crosses in both directions, not a resting poi
 
 The structure is section 5.3's at the level of a category: entry and misrepresentation rebuild what buyers cannot tell apart, and costly signals and shared institutions hold it down. The two are kept separate on purpose. At the deal level one seller chooses $\eta$. At the market level the shared institutions benefit every seller in the pool, so by the cost floor corollary no one seller funds them at a return its own deals repay, and the category is maintained less than any seller in it would choose.
 
-**The search cost responds to information by its verifiability.** Information the buyer can check narrows its range and lowers $F_{search}$. Information it cannot check takes attention without narrowing anything and raises it. Only the signs are claimed. This is the second standing assumption's line between evidence and persuasion, read together with the cost floor corollary's message volume.
+**The search cost responds to information by its verifiability.** Information the buyer can check narrows its range and lowers $\tilde{n}_{search}$, the demand the buyer expects. Information it cannot check takes attention without narrowing anything and raises it. Only the signs are claimed. This is the second standing assumption's line between evidence and persuasion, read together with the cost floor corollary's message volume.
 
 ---
 
 ## 6. Thresholds and Positions
 
-Axiom I reads each cost against two thresholds of its own: $\tau^{self}_k$, below which the buyer can pay the cost down alone, and $\tau^{part}_k$, above which the buyer does not enter the market. Each cost's position between them is
+Each cost's demand $n_k$ is what the deal asks of the payer who carries it, in the payer's own units. The payer carries up to its capacity $\kappa_k$ alone, and the seller or an outside party can move up to $\bar{A}_k$ off it within the deal:
 
-$$r_k = \frac{F_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
+$$\tau^{self}_k = \kappa_k \qquad \tau^{part}_k = \kappa_k + \bar{A}_k \qquad r_k = \frac{n_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 
-| Position | Zone |
-|---|---|
-| $r_k \le 0$ | Self-serve |
-| above zero and at most one | Needs seller investment |
-| $r_k > 1$ | Keeps the buyer out |
+The position is the share of the movable demand that has to be moved: self-serve at zero or below, bearable up to one, and above one the buyer is out, since moving everything movable leaves more than the payer can carry.
 
-**The buyer reads its own positions.** Write $\tilde{F}_k$ for the recognized cost, what the buyer expects $F_k$ to be, and read it against the same thresholds:
+| Cost | Payer | Demand $n_k$ | Capacity $\kappa_k$ | Movable $\bar{A}_k$ |
+|---|---|---|---|---|
+| Search | The evaluators | Alternatives to rule out, counting building it and doing nothing | Alternatives the team can take to a written comparison in the decision window | Alternatives an outside comparison the buyer can check rules out |
+| Consensus | The sponsor | Decision roles with a veto, plus formal bodies | Roles it can bring to a decision at this contract value without escalating, under the written delegation of authority | Formal bodies a channel or prior clearance satisfies, such as a pre-approved vendor list. A person's veto cannot be moved. |
+| Implementation | The technical owners | Integration points | Integration points its staff can build in the delivery window | Points the seller's engineers or an integrator build |
+| Implementation | The operating owners | Changed workflows and undocumented exception paths | Changes its people can take on in the window | Exception paths a seller or consultant handles. A changed workflow cannot be moved. |
 
-$$\tilde{r}_k = \frac{\tilde{F}_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
+Assign each cost to a payer before the outcome. Where a cost falls on two payers, read each part against its own and take the larger position.
 
-The buyer enters, and begins discovery, only while every $\tilde{r}_k \le 1$. Before it meets any seller, $\tilde{F}_k$ is the category prior, what buyers in the market believe the cost is. The seller moves $\tilde{F}_k$ toward $F_k$ only with evidence the buyer can check, which is search work, and discovery closes the two readings together. The positions below are $r_k$ after entry and $\tilde{r}_k$ before it.
+**What a reading can test.** A capacity read from what the payer can show, its staffing or its written authority, supports the step at one. A capacity read from its record on a comparable purchase, counted net of what outside parties carried, is biased both ways and supports only the graded claim that entry falls as the position rises. Positions on the default edges in [06-calibration.md](./06-calibration.md) section 3.2 are evidence neither way. Read both thresholds of a cost from the same source.
 
-The sale starts at the largest $r_k$, as read at a stated moment. Before fit is verified, the implementation and consensus positions are lower bounds by section 3.5, so a reading taken early can name a start that discovery moves. A misrepresented fit hides the start in exactly this way. Positions are compared against their own thresholds, never against each other, so they never need a common scale, and $r_k$ is dimensionless. The costs themselves are non-compensatory: they add in the buyer's condition, as $\sum_k I^b_k$, and against one capacity where one payer carries more than one of them, but a low $r_k$ never offsets one above 1.
+**The buyer reads its own positions.** $\tilde{r}_k$ is the same position read on $\tilde{n}_k$, the demand the buyer expects, and the buyer enters discovery only while every $\tilde{r}_k \le 1$ and every shared payer passes. Before it meets a seller, $\tilde{n}_k$ is the category prior, and only evidence the buyer can check moves it toward $n_k$. The sale starts at the largest $r_k$ at a stated moment, and before fit is verified the implementation and consensus positions are lower bounds by section 3.5.
 
-**The thresholds are named, not valued, in the theory.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) places them as edges on its counts, and [06-calibration.md](./06-calibration.md) section 3.2 records each as chosen. **The participation threshold measures capacity, not affordability, and it does not move with value.** A buyer stays out of a market for one of two reasons. Either a cost exceeds what the deal is worth, or the buyer cannot get through the cost at any price: it cannot name the category, cannot reach a seller, cannot bring its decision roles to a decision, or cannot tell a good seller from a bad one. The first depends on value, and the buyer's condition $S_b$ in section 1 already carries it. The second does not, and it is what $\tau^{part}_k$ marks. A threshold that rose with $V_{switch}$ would restate the buyer's condition inside Axiom I and leave the gate with no claim of its own.
+**Non-compensation.** Capacity is specific to its payer: knowledge, authority and skill do not move between payers even where nobody bargains over them, and inside one firm capacity moves only by order, which is itself work for the sponsor (Milgrom and Roberts 1988). So ease on one payer never buys back another above its threshold. Costs one payer carries draw on one capacity, and with everything movable moved:
 
-A bigger prize still changes what a buyer will bear, by a different route. It funds the investment that pulls a cost back under the threshold: an analyst firm that names the category, an integrator that bounds the delivery risk, a consultant that runs the decision. That investment is $I^b_k$ under Axiom II, and it lowers $F_k$ without moving $\tau^{part}_k$. *What would falsify this:* across populations entered and declined, high-stakes buyers entering a market whose cost sits past its threshold at a higher rate than low-stakes buyers without bringing in that help. Entry that rises with the stake only alongside outside help supports the reading.
+$$\sum_{k \in K_p} \frac{\left(n_k - \bar{A}_k\right)^+}{\kappa_k} \le 1 \qquad \text{for each payer } p \text{ carrying the costs } K_p$$
+
+For one cost this is $r_k \le 1$. That the kinds of work trade against one capacity in a straight line is chosen.
+
+**What the work costs.** In fractions of annual contract value,
+
+$$F_k = c^b_k \left(n_k - a_k\right) + c^s_k \, a_k \qquad 0 \le a_k \le \bar{A}_k$$
+
+where $a_k$ is the demand moved and $c^b_k$ and $c^s_k$ are what a unit of the work costs each side, named and not valued. The two terms are the investments $I^b_k$ and $I^s_k$ in section 1, the seller does the work more cheaply where $c^s_k < c^b_k$, and section 3.1's form is $F_{consensus}$ with nothing moved. The gate and the conditions share no quantity, so price never moves a threshold, though it can add demand, as a spend threshold adds an approver, and can make it worth moving more.
+
+A cost keeps a buyer out by either route: its demand passes the participation threshold, which the gate reads, or the work costs more than the deal is worth, which $S_b$ reads. When the US simplified acquisition threshold rose, buyers bunched under it and dropped some purchases above it (Carril 2021), which moved demand and cost together and so does not separate the routes. Bunching that scales with each purchase's surplus would be $S_b$, and bunching that ignores surplus and moves with the contracting office's staffing would be the gate.
+
+*What would falsify the gate.* With capacity read from staffing or written authority, buyers whose demand passes the participation threshold enter as often as matched buyers within it, or deals blocked by one payer past its threshold are rescued by lowering a cost another payer carries. With capacity read from a record, entry does not fall as the position rises.
 
 ---
 

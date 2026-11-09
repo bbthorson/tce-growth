@@ -912,6 +912,86 @@ class TestDealTriageCalculator(unittest.TestCase):
         args.update(changes)
         return m.triage(**args)
 
+    # --- Step 1: each payer's thresholds, Constitution 6.2 -------------
+    def test_default_edges_read_the_example_deal(self):
+        """On the default edges consensus reads 0.5 and implementation 0.67,
+        so the sale starts at implementation."""
+        r = self.run_deal()
+        self.assertAlmostEqual(r.positions["consensus"], 0.5)
+        self.assertAlmostEqual(r.positions["implementation"], 6 / 9)
+        self.assertEqual(r.sale_start, ("implementation",))
+
+    def test_a_read_capacity_can_move_where_the_sale_starts(self):
+        """The same counts against a sponsor who has brought at most four
+        roles to a decision: consensus reads 1.0 and the sale starts there.
+        The order rests on the buyer's thresholds, not on the chosen edges."""
+        r = self.run_deal(thresholds={"consensus": (1, 4)})
+        self.assertAlmostEqual(r.positions["consensus"], 1.0)
+        self.assertEqual(r.sale_start, ("consensus",))
+
+    def test_demand_past_the_payers_capacity_keeps_the_buyer_out(self):
+        r = self.run_deal(thresholds={"consensus": (1, 3)})
+        self.assertEqual(r.route, m.KEEPS_OUT)
+        self.assertEqual(r.sale_start, ("consensus",))
+
+    def test_costs_one_payer_carries_are_tested_together(self):
+        """Section 6. Consensus at (2, 4) and implementation at (4, 8) each
+        read exactly 1, so on separate payers the buyer can enter. On one
+        payer, what is left after everything movable is moved fills its
+        capacity twice over, and the buyer is kept out."""
+        read = {"consensus": (2, 4), "implementation": (4, 8)}
+        separate = self.run_deal(thresholds=read)
+        self.assertAlmostEqual(separate.positions["consensus"], 1.0)
+        self.assertAlmostEqual(separate.positions["implementation"], 1.0)
+        self.assertNotEqual(separate.route, m.KEEPS_OUT)
+        shared = self.run_deal(
+            thresholds=read, shared_payers=[("consensus", "implementation")])
+        self.assertEqual(shared.route, m.KEEPS_OUT)
+        self.assertEqual(shared.sale_start, ("consensus", "implementation"))
+
+    def test_self_carried_demand_draws_on_the_shared_capacity(self):
+        """A cost below its self-serve threshold still takes part of the one
+        capacity: 3 left of a capacity of 4 is three quarters of it."""
+        load = m.shared_payer_load(
+            {"search": 4, "consensus": 1},
+            {"search": (4, 5), "consensus": (2, 3)},
+            ("search", "consensus"))
+        self.assertAlmostEqual(load, 3 / 4)
+
+    def test_a_shared_payer_can_leave_the_buyer_unshown(self):
+        read = {"consensus": (2, 4), "implementation": (4, 8)}
+        r = self.run_deal(
+            n_vetoes=2, integration_points=2, changed_workflows=1,
+            undocumented_exceptions=0, thresholds=read,
+            shared_payers=[("consensus", "implementation")],
+            expected={"consensus": 4, "implementation": 8})
+        self.assertEqual(r.route, m.UNSHOWN)
+
+    def test_read_thresholds_apply_to_the_expected_count(self):
+        """Against the default edges an expected five roles reads 0.67. A
+        sponsor who can carry one alone and four with help reads it 1.33."""
+        r = self.run_deal(thresholds={"consensus": (1, 4)},
+                          expected={"consensus": 5})
+        self.assertEqual(r.route, m.UNSHOWN)
+        self.assertEqual(r.sale_start, ("consensus",))
+
+    def test_the_shared_payer_test_needs_read_thresholds(self):
+        with self.assertRaises(ValueError):
+            self.run_deal(shared_payers=[("consensus", "implementation")])
+
+    def test_the_result_says_which_thresholds_were_read(self):
+        r = self.run_deal(thresholds={"consensus": (1, 4)})
+        self.assertEqual(r.threshold_sources["consensus"], "read")
+        self.assertEqual(r.threshold_sources["search"], "default")
+
+    def test_a_shared_payer_carries_at_least_two_costs(self):
+        with self.assertRaises(ValueError):
+            m.shared_payer_load({"search": 5}, {"search": (4, 8)}, ("search",))
+
+    def test_thresholds_name_only_the_three_costs(self):
+        with self.assertRaises(ValueError):
+            self.run_deal(thresholds={"price": (1, 2)})
+
     # --- Step 0 -------------------------------------------------------
     def test_an_undefined_workflow_stops_before_anything_is_counted(self):
         result = self.run_deal(workflow_maturity=1)

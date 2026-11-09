@@ -26,7 +26,7 @@ Every symbol below matches Constitution 4.0. Symbols that 4.0 retired are collec
 
 ### The two conditions (Axiom II, with Axiom III's losses)
 
-Every term is a fraction of annual contract value, per [02-mathematical-models.md](./02-mathematical-models.md) section 1.2.
+Every term is a fraction of annual contract value, per [02-mathematical-models.md](./02-mathematical-models.md) section 1.2, except the gate's demands and thresholds below.
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
@@ -71,15 +71,17 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $F_k$ | Cost $k$ to the buyer, for $k$ in search, consensus, implementation. The three are non-compensatory: they add, but ease on one never buys back another above its threshold. Each has a cost floor set outside the deal. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $F_k$ | Cost $k$, for $k$ in search, consensus, implementation: what the work on its demand costs, in fractions of annual contract value, $c^b_k(n_k - a_k) + c^s_k a_k$. Non-compensatory, with a cost floor set outside the deal. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
 | $F_{search}$ | The search and information cost. Which solutions exist, whether this one fits, and whether the buyer can reach the seller at all. | [Constitution, Axiom I](./00-tcg-constitution.md) |
 | $F_{consensus}$ | The bargaining and decision cost. Mostly internal, among the decision roles, before any term is negotiated with the seller. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §3](./02-mathematical-models.md) |
 | $F_{implementation}$ | The policing and enforcement cost. Whether the seller will deliver what was promised, and whether it will work here. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $\tau^{self}_k$ | Self-serve threshold for cost $k$. Below it the buyer pays the cost down alone. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $\tau^{part}_k$ | Participation threshold for cost $k$. Above it the buyer does not enter the market. Named, not valued. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $r_k$ | Cost $k$'s position between its own two thresholds, $(F_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$. Dimensionless. The sale starts at the largest. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
-| $\tilde{F}_k$, $\tilde{r}_k$ | Recognized cost and its position: what the buyer expects cost $k$ to be, read against the same thresholds. Participation and the decision to begin discovery are made on $\tilde{r}_k$. Before any seller is met it is the category prior. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| $n_{search}$, $n_{consensus}$, $n_{impl}$ | The calculator's three counts, each read as $F_k$ against its own two edges. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
+| $n_k$ | Cost $k$'s demand on its payer, in the payer's own units. The gate reads it. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $\kappa_k$, $\bar{A}_k$, $a_k$ | The payer's capacity for cost $k$'s work, the most demand others can move off it within the deal, and the amount moved. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $c^b_k$, $c^s_k$ | What a unit of cost $k$'s work costs each side. Named, not valued. | [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $\tau^{self}_k$, $\tau^{part}_k$ | The thresholds, $\kappa_k$ and $\kappa_k + \bar{A}_k$. Chosen default edges stand in until read, and a position on them is evidence neither way. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $r_k$ | Cost $k$'s position, $(n_k - \tau^{self}_k)/(\tau^{part}_k - \tau^{self}_k)$: the share of the movable demand that has to be moved. The sale starts at the largest. | [Constitution, Axiom I](./00-tcg-constitution.md), [02-mathematical-models.md §6](./02-mathematical-models.md) |
+| $\tilde{n}_k$, $\tilde{r}_k$ | Recognized cost and its position: the demand the buyer expects, on which it decides to enter discovery. Before any seller is met it is the category prior. | [Constitution, Axiom I](./00-tcg-constitution.md) |
+| $n_{search}$, $n_{consensus}$, $n_{impl}$ | The calculator's three counts: the demand $n_k$ for each cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 | $n_{exposure}$ | Integration points, changed workflows and divergent steps. Read only where the gate fails, and never added to a cost. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
 
 ### Gap terms (Axiom III)
@@ -87,7 +89,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | Symbol | Meaning | Defined in |
 |---|---|---|
 | $\hat{\Delta}_k$ | Cost $k$'s own gap on $[0, 1]$. Three different pairs of parties. Feeds the chance of future loss and multiplies no cost. | [02-mathematical-models.md §2.4](./02-mathematical-models.md) |
-| $e_k$, $n_k$ | Items with evidence attached, and items in scope, for the count-based gaps $\hat{\Delta}_{search}$ and $\hat{\Delta}_{consensus}$. | [02-mathematical-models.md §2.4](./02-mathematical-models.md) |
+| $e_k$, $m_k$ | Items with evidence attached, and items in scope, for the count-based gaps $\hat{\Delta}_{search}$ and $\hat{\Delta}_{consensus}$. | [02-mathematical-models.md §2.4](./02-mathematical-models.md) |
 | $\Delta_A$ | The implementation gap, the one bilateral pair. A **sum**, not a difference: $I_{seller} + I_{buyer}$. | [02-mathematical-models.md §2.1](./02-mathematical-models.md) |
 | $\Delta_A^{raw}$ | The scorecard's raw implementation gap on $[2, 10]$. Normalize to $\hat{\Delta}_{implementation}$ before any equation takes it. | [02-mathematical-models.md §2.5](./02-mathematical-models.md) |
 | $I_{seller}$ | Seller Ignorance. What the seller has not mapped about the buyer's environment. The seller's loss runs on it. | [02-mathematical-models.md §2.2](./02-mathematical-models.md) |

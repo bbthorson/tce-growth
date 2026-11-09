@@ -47,8 +47,8 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 
 | Parameter | Symbol | Value | Provenance |
 |---|---|---|---|
-| Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The theory states the threshold exists. The field instrument places it as an edge on each count, section 3.2. |
-| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** As above. It marks the buyer's capacity to get through the cost and does not move with value, per section 6 of the math file. |
+| Self-serve threshold, per cost | $\tau^{self}_k$ | — | **Named, not valued.** The payer's capacity $\kappa_k$, with a default edge until read, section 3.2. |
+| Participation threshold, per cost | $\tau^{part}_k$ | — | **Named, not valued.** $\kappa_k + \bar{A}_k$, in the payer's own units, so it does not move with price. |
 | Floor on the chance of loss | $\pi_0$ | — | **Named, not valued.** That a floor above zero exists is structurally motivated by the return-variance floor in section 2.3 of the math file. No value is offered. |
 | Shape of the chance of loss | — | straight line | **Chosen.** A placeholder between floor and ceiling. No curvature is claimed. |
 | How a party's gaps combine | — | arithmetic mean | **Chosen.** No source. |
@@ -83,7 +83,7 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 
 ### 3.2 The triage instrument ([Deal Triage Calculator](../../practice/deal-triage-calculator.md))
 
-Every input to this instrument is a count of a named thing, and each count is read against two edges of its own. The edges are where the arbitrariness that counting removed comes back. Each is placed on a boundary of the score bands earlier versions used, so that a reader comparing old and new readings can see where the line moved, and that placement is the only argument behind any of them.
+Every input to this instrument counts a cost's demand on its payer, read against that payer's own thresholds ([02-mathematical-models.md](./02-mathematical-models.md) section 6). The edges below are population defaults used until those are read. Each sits on a boundary of the score bands earlier versions used, so a reader comparing old and new readings can see where the line moved, and that placement is the only argument behind any of them.
 
 | Cost | Self-serve edge | Participation edge | Provenance |
 |---|---|---|---|
@@ -94,6 +94,9 @@ Every input to this instrument is a count of a named thing, and each count is re
 | Parameter | Value | Provenance |
 |---|---|---|
 | Unnamed category, or no channel | Keeps the buyer out | **Structurally motivated.** An unbounded alternative set and an unreachable seller are argued in step 1a. Neither is a count, so neither has an edge. |
+| A threshold read from the buyer's record | The largest comparable demand the payer has carried, counted net of what outside parties carried | **Convention.** Biased in both directions, so it supports only the graded test. Staffing or written authority replaces it and supports the step. |
+| Shared payer | What the payer is left carrying of each cost, as a share of its capacity for that work, sums to at most one | **Structurally motivated.** The costs draw on one capacity. That the kinds of work trade against it in a straight line is chosen. |
+| Unit cost of the work, each side | $c^b_k$, $c^s_k$ | **Named, not valued.** In fractions of annual contract value. |
 | Expected count | Read against the measured count's edges | **Convention.** The buyer decides on what it expects under Axiom I, and one pair of edges keeps the two readings comparable. |
 | Formal body | Counts as one veto | **Convention.** A body holds a veto and is not a person, so it joins the position count and not the evidence denominator. |
 | Search evidence items | 4 | **Chosen.** The four questions are argued; the count of them is an artifact of that argument. |
@@ -136,7 +139,7 @@ The reading reuses every edge in section 3.2 and adds one structural count of it
 
 ## 4. What would make any of this empirical
 
-The framework becomes predictive rather than organizing when deals are instrumented. Six things, in rough order of how much each one buys.
+The framework becomes predictive rather than organizing when deals are instrumented. Seven things, in rough order of how much each one buys.
 
 1. **The three component gaps logged separately** at deal open and at every artifact boundary. This makes the drift rates estimable and tests the framework's central dynamic claim, that discovery moves where the sale starts rather than only lowering every cost. A book of deals whose largest position at close sits on the same cost as at open falsifies it.
 2. **Each party's investment and specific exposure logged in contract value** at signature, with the outcome at each renewal. That makes the chance of loss estimable against the gaps, and it is the estimation problem with a stated unit on both sides.
@@ -144,6 +147,7 @@ The framework becomes predictive rather than organizing when deals are instrumen
 4. **Triggering events dated**, which makes the decay rate observable as the fall in buyer-reported urgency between the event and close.
 5. **Count Variance recorded at every renewal, beside the outcome**, on every recurring deal including those below the gate. It audits the counter, and only with the outcome beside it can it show whether the bands in section 3.2 are the right shape. Lost and one-shot deals are never re-counted.
 6. **Allocation coverage read at go-live beside launch and first renewal** across a book, stratified by the exposure count, with solutions and implementation hours logged by phase and split at signature. No instrument records the hours, so they come from the professional services system. If Axiom III's allocation clause holds, coverage predicts both outcomes better than the share of hours spent before signature does, at equal exposure. If the hours predict better, the clause is in trouble, and item 7 below is where to record it.
+7. **Each payer's thresholds read at open, before the outcome**, from staffing or written authority, beside whether the buyer entered and bought. That turns the default edges into measurements and tests the gate: entry should fall where demand passes the participation threshold, and not move when a cost another payer carries is lowered.
 
 Until then, treat every output as a structured comparison between deals inside one book. A deal whose largest position is 1.4 is meaningfully further from closing than one at 0.8. Neither number predicts a close date.
 

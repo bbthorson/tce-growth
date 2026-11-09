@@ -100,6 +100,7 @@ Plus the Constitution 5.0 layer, added 2026-11 as the evidence for the 5.0 propo
 Plus the adversarial layer:
 
 19. **[Adversarial Review, 2026-11](./adversarial-review-2026-11.md)** — Read last. An external review set out to break seven claims. Records what the Constitution already answered, the five objections that survive, about thirty uncited sources, and which of the review's own figures are not fit to cite. Opened open questions 37 to 43, which now wait on data in the [calibration list](../01-foundation/06-calibration.md).
+20. **[Research Review, 2026-11-09](./research-review-2026-11-09.md)** — Read after item 19. Tests novelty and each axiom against the literature, with how far each source was read, and records what changed in 6.2.
 
 ---
 

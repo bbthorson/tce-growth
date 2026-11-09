@@ -789,18 +789,21 @@ NEEDS_INVESTMENT = "needs investment"
 KEEPS_BUYER_OUT = "keeps the buyer out"
 
 
-def threshold_position(cost, tau_self, tau_part):
-    """A cost's position between its own two thresholds, section 6.
+def threshold_position(demand, tau_self, tau_part):
+    """A cost's position between its payer's two thresholds, section 6.
 
-        r_k = (F_k - tau_self) / (tau_part - tau_self)
+        r_k = (n_k - tau_self) / (tau_part - tau_self)
 
-    Dimensionless, so the three costs compare without sharing a scale. Both
-    thresholds are named and not valued in the theory.
+    The demand and both thresholds are in the payer's own units, and the
+    thresholds belong to the payer: what it carries without a seller's help,
+    and its capacity. The result is dimensionless, a share of the payer's
+    capacity. Both thresholds are named and not valued in the theory, so the
+    function ships no default.
     """
     if not tau_part > tau_self:
         raise ValueError(
             "the participation threshold must sit above the self-serve one")
-    return (cost - tau_self) / (tau_part - tau_self)
+    return (demand - tau_self) / (tau_part - tau_self)
 
 
 def cost_zone(position):
@@ -1100,10 +1103,12 @@ def cooperation_threshold(temptation, reward, punishment):
 # ==========================================================================
 # practice/deal-triage-calculator.md (v8.0)
 #
-# The instrument counts named things and reads each count against two edges
-# of its own: below the self-serve edge the buyer pays that cost down alone,
-# above the participation edge the cost keeps the buyer out. The counts are
-# never converted to scores or summed, so they need no common scale. A
+# The instrument counts named things, each the demand a cost places on its
+# payer, and reads each count against that payer's two thresholds: its
+# capacity, and its capacity plus what can be moved off it (Constitution 6.2).
+# The defaults below stand in until a buyer's thresholds are read. Counts are
+# never converted to scores, and costs are summed only where one payer
+# carries them. A
 # separate reading says whether the deal sinks anything specific, which with
 # frequency selects the governance form. Constitution 4.0.
 # ==========================================================================
@@ -1142,7 +1147,8 @@ ALLOCATE = "allocate"
 TriageResult = collections.namedtuple(
     "TriageResult",
     "route positions expected_positions zones sale_start specific exposure "
-    "frequency governance flags reason")
+    "frequency governance flags reason threshold_sources",
+    defaults=(None,))
 
 
 def _check_frequency(frequency):
@@ -1244,8 +1250,12 @@ def search_count(n_alternatives):
     return n_alternatives
 
 
-def search_position(n_alternatives, category_named=True, channel_exists=True):
-    """The search position, step 3.
+def search_position(n_alternatives, category_named=True, channel_exists=True,
+                    edges=SEARCH_EDGES):
+    """The search position, step 1d.
+
+    edges is the payer's (self-serve, participation) pair, read from the
+    buyer's staffing or record. It defaults to the chosen population edges.
 
     A buyer who cannot name the category faces an unbounded alternative set,
     and a buyer with no path to the seller cannot reach it. Either keeps the
@@ -1256,7 +1266,7 @@ def search_position(n_alternatives, category_named=True, channel_exists=True):
     n = search_count(n_alternatives)
     if not category_named or not channel_exists:
         return float("inf")
-    return threshold_position(n, *SEARCH_EDGES)
+    return threshold_position(n, *edges)
 
 
 def search_gap(items_evidenced):
@@ -1289,10 +1299,11 @@ def coalition_after_exposure(mapped_roles, imposed_roles, rule_approvers=0):
     return len(set(mapped_roles) | set(imposed_roles)) + rule_approvers
 
 
-def consensus_position(n_vetoes, formal_body_required=False):
-    """The consensus position, step 3."""
+def consensus_position(n_vetoes, formal_body_required=False,
+                       edges=CONSENSUS_EDGES):
+    """The consensus position, step 1d. edges as in search_position."""
     return threshold_position(consensus_count(n_vetoes, formal_body_required),
-                              *CONSENSUS_EDGES)
+                              *edges)
 
 
 def consensus_gap(n_vetoes, n_stated):
@@ -1319,9 +1330,46 @@ def implementation_count(integration_points, changed_workflows,
     return sum(parts.values())
 
 
-def implementation_position(n_impl):
-    """The implementation position, step 3."""
-    return threshold_position(n_impl, *IMPLEMENTATION_EDGES)
+def implementation_position(n_impl, edges=IMPLEMENTATION_EDGES):
+    """The implementation position, step 1d. edges as in search_position."""
+    return threshold_position(n_impl, *edges)
+
+
+def shared_payer_load(demands, thresholds, costs):
+    """The summed test, 02-mathematical-models.md section 6.
+
+        sum over k of (n_k - A_k)+ / kappa_k
+
+    thresholds maps each cost to its (self-serve, participation) pair, which
+    are (kappa_k, kappa_k + A_k): the payer's capacity for that work, and that
+    capacity plus the most the seller or an outside party can move off it.
+    With everything movable moved, what the payer is left carrying of each
+    cost, as a share of its capacity for that work, must sum to at most 1.
+    For one cost this is the position at most 1. That the kinds of work trade
+    in a straight line against one capacity is chosen. A cost the payer
+    cannot carry at all, kappa_k = 0, takes the whole capacity if anything is
+    left of it. Costs on different payers are never summed.
+    """
+    costs = tuple(costs)
+    if len(costs) < 2:
+        raise ValueError("a shared payer carries at least two costs")
+    missing = set(costs) - (set(demands) & set(thresholds))
+    if missing:
+        raise ValueError("no demand or thresholds for {}".format(
+            sorted(missing)))
+    load = 0.0
+    for k in costs:
+        kappa, tau_part = thresholds[k]
+        if kappa < 0 or tau_part < kappa:
+            raise ValueError("capacity cannot be negative, and the "
+                             "participation threshold sits at or above it")
+        left = max(demands[k] - (tau_part - kappa), 0.0)
+        if left == 0.0:
+            continue
+        if kappa == 0:
+            return float("inf")
+        load += left / kappa
+    return load
 
 
 def exposure_count(integration_points, changed_workflows, divergent_steps):
@@ -1341,12 +1389,21 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
            formal_body_required=False,
            gate_a=GATE_A_ENCODED, divergent_steps=None,
            pilot_requested=False, product_automates_process=True,
-           expected=None, entered_discovery=True):
-    """Run the whole instrument and return a TriageResult. Version 9.0.
+           expected=None, entered_discovery=True,
+           thresholds=None, shared_payers=()):
+    """Run the whole instrument and return a TriageResult. Version 9.1.
 
     expected maps any of "search", "consensus" and "implementation" to the
     count the buyer says it expects, the consensus one including formal
     bodies. A cost left out is expected as measured.
+
+    thresholds maps any cost to its payer's (self-serve, participation) pair,
+    read from the buyer before the outcome. A cost left out uses the chosen
+    default edges, and threshold_sources on the result says which each
+    position used: a position on a default is evidence neither way.
+    shared_payers lists groups of costs one payer carries; a group whose
+    load exceeds 1 keeps the buyer out. Every cost in a group needs read
+    thresholds, since the default edges were set one cost at a time.
 
     Order of operations, which the document fixes:
 
@@ -1388,11 +1445,28 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
     # --- Step 1: positions, measured and expected -----------------------
     n_impl = implementation_count(integration_points, changed_workflows,
                                   undocumented_exceptions)
+    edges = {"search": SEARCH_EDGES, "consensus": CONSENSUS_EDGES,
+             "implementation": IMPLEMENTATION_EDGES}
+    thresholds = dict(thresholds or {})
+    if set(thresholds) - set(edges):
+        raise ValueError("thresholds are for search, consensus and "
+                         "implementation, not {}".format(
+                             sorted(set(thresholds) - set(edges))))
+    edges.update(thresholds)
+    sources = {k: ("read" if k in thresholds else "default") for k in edges}
+    for group in shared_payers:
+        unread = [k for k in group if k not in thresholds]
+        if unread:
+            raise ValueError(
+                "the shared-payer test runs only on thresholds read for that "
+                "payer; {} use the default edges".format(sorted(unread)))
     positions = {
         "search": search_position(n_alternatives, category_named,
-                                  channel_exists),
-        "consensus": consensus_position(n_vetoes, formal_body_required),
-        "implementation": implementation_position(n_impl),
+                                  channel_exists, edges["search"]),
+        "consensus": consensus_position(n_vetoes, formal_body_required,
+                                        edges["consensus"]),
+        "implementation": implementation_position(n_impl,
+                                                  edges["implementation"]),
     }
     expected = dict(expected or {})
     unknown = set(expected) - set(positions)
@@ -1402,13 +1476,14 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
     expected_positions = dict(positions)
     if "search" in expected:
         expected_positions["search"] = search_position(
-            expected["search"], category_named, channel_exists)
+            expected["search"], category_named, channel_exists,
+            edges["search"])
     if "consensus" in expected:
         expected_positions["consensus"] = threshold_position(
-            expected["consensus"], *CONSENSUS_EDGES)
+            expected["consensus"], *edges["consensus"])
     if "implementation" in expected:
         expected_positions["implementation"] = implementation_position(
-            expected["implementation"])
+            expected["implementation"], edges["implementation"])
     zones = {k: cost_zone(r) for k, r in positions.items()}
     expected_zones = {k: cost_zone(r) for k, r in expected_positions.items()}
 
@@ -1443,10 +1518,20 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
             expected_positions=expected_positions, zones=zones,
             sale_start=sale_start, specific=specific, exposure=exposure,
             frequency=frequency, governance=governance,
-            flags=tuple(flags) + tuple(extra), reason=reason)
+            flags=tuple(flags) + tuple(extra), reason=reason,
+            threshold_sources=sources)
 
     # --- Step 4: overrides ---------------------------------------------
-    out = tuple(sorted(k for k, z in zones.items() if z == KEEPS_BUYER_OUT))
+    demands = {"search": n_alternatives,
+               "consensus": consensus_count(n_vetoes, formal_body_required),
+               "implementation": n_impl}
+    expected_demands = dict(demands)
+    expected_demands.update(expected)
+    out = set(k for k, z in zones.items() if z == KEEPS_BUYER_OUT)
+    for group in shared_payers:
+        if shared_payer_load(demands, edges, group) > 1.0:
+            out.update(group)
+    out = tuple(sorted(out))
     if out:
         return result(
             KEEPS_OUT, out,
@@ -1454,8 +1539,12 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
             "back into range, invest across deals if its floor holds it, or "
             "decline. No work on the other two reaches it.")
 
-    unshown = tuple(sorted(k for k, z in expected_zones.items()
-                           if z == KEEPS_BUYER_OUT))
+    unshown = set(k for k, z in expected_zones.items()
+                  if z == KEEPS_BUYER_OUT)
+    for group in shared_payers:
+        if shared_payer_load(expected_demands, edges, group) > 1.0:
+            unshown.update(group)
+    unshown = tuple(sorted(unshown))
     if unshown:
         return result(
             UNSHOWN, unshown,
