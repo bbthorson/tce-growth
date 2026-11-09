@@ -27,14 +27,14 @@ Recorded in the Constitution 5.0 proposal, now in git history (`git show b5b3386
 
 **The source of truth is `theory/01-foundation/00-tcg-constitution.md`**: three standing assumptions, a premise and three axioms. The premise: buying costs the buyer three things beyond price (search and information, bargaining and decision, policing and enforcement), the seller can absorb part of each (sales before commitment, account management after), and each party acts on what it can check. Each axiom answers one question at one level, with a falsifier:
 
-- **I, Composition. Can a market exist?** Each side has a limit. Any one cost the buyer expects past its threshold keeps it out, however low the other two. A seller stays out where the deals it wins cannot repay what it must build before the first one. Cost floors and Turnkey live here.
+- **I, Composition. Can a market exist?** Each side has a limit. Any one cost whose demand the buyer expects past its payer's threshold keeps it out, however low the other two. A seller stays out where the deals it wins cannot repay what it must build before the first one. Cost floors and Turnkey live here.
 - **II, Transaction Investment. What has to be paid down at time 0?** The cost the buyer expects nearest its threshold decides whether it proceeds, so the seller absorbs it first, and that cost names the motion. Each party goes ahead only when its own share is covered by its own return. Seller spending earns its cost only by raising what the deal creates (cheaper work, a lower cost at time 1) or by letting a value-creating deal go ahead (evidence the buyer can check).
 - **III, Future Cost. What prevents churn and contraction at time 1?** Whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify or enforce. Contract what can be foreseen, before the investment is sunk, and plan a standing review for what cannot. Specificity, the gate, and the governance forms live here.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 
 Read before editing:
-- **Any `practice/` file**: `practice/README.md`, for the question each instrument answers and the three-question test every section must pass. For the ledgers and the Adoption Review, also `theory/02-research/cfir.md`, section "Where each construct is read", so an edit does not drop a construct. The Deal Triage Calculator (`practice/deal-triage-calculator.md`) is referenced by nearly every instrument. It emits each cost's position and zone, where the sale starts, and an exposure reading, and it never sums the costs.
+- **Any `practice/` file**: `practice/README.md`, for the question each instrument answers and the three-question test every section must pass. For the ledgers and the Adoption Review, also `theory/02-research/cfir.md`, section "Where each construct is read", so an edit does not drop a construct. The Deal Triage Calculator (`practice/deal-triage-calculator.md`) is referenced by nearly every instrument. It emits each cost's position and zone, where the sale starts, and an exposure reading, and it sums costs only where one payer carries them.
 - **Any research file**: `theory/02-research/00-reading-guide.md`, which maps each paper to the axiom it backs.
 - **Before extending the theory**: `theory/01-foundation/07-open-questions.md`. An extension should land on a recorded gap or add one.
 
@@ -48,11 +48,11 @@ All framework claims trace to two conditions, one per party, and a participation
 
 $$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} - \sum_k I^s_k - L_s > 0 \qquad r_k \le 1 \;\; \forall k$$
 
-- **All terms are fractions of annual contract value** (`02-mathematical-models.md` section 1.2), not percentage points.
+- **All terms are fractions of annual contract value** (`02-mathematical-models.md` section 1.2), not percentage points. The gate is the exception: it reads each cost's demand in its payer's own units (section 6).
 - **$P$** is a transfer, so it cancels when the conditions are added. Hold-up is a transfer too: it drops out of what the deal creates, $W$, and costs through deterred investment and fear the other side does not share. A discount moves the split. Verification lowers a loss both sides carry.
 - **$I^b_k$, $I^s_k$** = what each party invests today against cost $k$ (Axiom II).
 - **$L_p = Q_p \cdot \pi_p$** = each party's expected future loss (Axiom III). The gaps behind $\pi_p$ are normalized to $[0, 1]$. The Enforcement Ledger reports the policing gap already normalized. The model's raw scorecard form runs on $[2, 10]$, so normalize that first.
-- **$r_k$** = cost $k$'s position between its self-serve and participation thresholds (Axiom I). Above 1 the buyer stays out. The sale starts at the largest. The costs are non-compensatory: they add, but ease on one never buys back another above its threshold.
+- **$r_k$** = cost $k$'s demand on its payer, read between that payer's capacity and its capacity plus what others can move off it (Axiom I). Above 1 the buyer stays out. The sale starts at the largest. The costs are non-compensatory, and costs one payer carries are tested together.
 
 When diagnosing a stall or editing a prescription, identify which term it addresses.
 

@@ -34,7 +34,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Supports in TCG:**
 - **Axiom III — Law of Future Cost** — the scale of the future loss buyers believe they face in specific deals. Documented failure rates are what an open policing gap looks like to a buyer about to sink a specific investment, and the 17% existential-threat rate is why a buyer facing hold-up risk prefers the "make" alternative (Williamson). This is the unallocated failure mode measured.
 - **Axiom I — Law of Transaction Cost Composition** — the limit case: buyers leave the market entirely (Akerlof saturation) when believed failure rates push a cost past what they will bear, because no costly signal can credibly reduce a gap that wide.
-- **Akerlof saturation** — the 40–60% No Decision rate is the participation threshold being crossed.
+- **Akerlof saturation** — the 40–60% No Decision rate is an outcome, so it cannot show a threshold crossed. A stall can come from expected future loss, a failed buyer condition or demand past capacity.
 - **Decay Clock** — 17% existential threat rate and technical debt servicing (roughly a third of developer time, CISQ 2022) describe how time pressure compounds.
 - **Reputation Depreciation** — 60% renewal regret rate (Gartner 2023) is the failure-mode signal.
 

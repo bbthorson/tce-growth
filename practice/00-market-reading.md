@@ -22,7 +22,7 @@ Goal: Read a buyer population before any buyer is met, and decide whether a mark
 | **Owner** | Whoever chooses the motion. A founder, a chief revenue officer, or the person about to hire for one. |
 
 > [!IMPORTANT]
-> **This instrument counts and it cites.** Every row is a number of named things, and every row carries the source that supplied it and one of three fill statuses. A row without a source is not filled. The counts are read against the same edges the Deal Triage Calculator uses, which [06-calibration.md](../theory/01-foundation/06-calibration.md) section 3.2 declares as chosen, and they are never converted to scores or summed.
+> **This instrument counts and it cites.** Every row is a number of named things, and every row carries the source that supplied it and one of three fill statuses. A row without a source is not filled. A population has no single payer, so the counts are read against the Deal Triage Calculator's default edges, which [06-calibration.md](../theory/01-foundation/06-calibration.md) section 3.2 declares as chosen, and are never converted to scores.
 
 ---
 
@@ -74,7 +74,7 @@ The **prior** column is what buyers in this population believe the count is befo
 
 ## Step 3: Positions, floors and priors
 
-**Positions.** Read each cost against its two edges, once on the count and once on the prior.
+**Positions.** Read each cost against its two population edges, once on the count and once on the prior. Where one person typically evaluates, approves and integrates, also run the triage's shared-payer test on a typical buyer.
 
 | Cost | Count | Self-serve edge | Participation edge | Keeps the buyer out regardless |
 |---|---|---|---|---|

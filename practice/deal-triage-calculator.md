@@ -2,17 +2,17 @@
 title: "The Deal Triage Calculator"
 layer: practice
 status: active
-version: 9.0
+version: 9.1
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
 
-Version: 9.0
+Version: 9.1
 Goal: Read one deal against the Constitution's three questions, in order. Can this buyer enter? What has to be paid down at time 0, and what must the seller's spending do? What has to be settled before anything is sunk, so time 1 does not decay? This is the deal reading that [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 derives. It varies around [the Market Reading](./00-market-reading.md), which is read first.
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions and the buyer's expected reading, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance form and the standing review. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6. The motions are [01-motions.md](../theory/01-foundation/01-motions.md).
+**Canonical reference:** [Constitution 6.2](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions and the buyer's expected reading, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance form and the standing review. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6. The motions are [01-motions.md](../theory/01-foundation/01-motions.md).
 
 | | |
 |---|---|
@@ -22,13 +22,13 @@ Goal: Read one deal against the Constitution's three questions, in order. Can th
 | **Owner** | The account executive or pre-sales lead, with a spot-check on the counts by someone who does not carry the deal. |
 
 > [!IMPORTANT]
-> **This instrument counts. It does not rate.** Every input is a number of named things, backed by a list. A number with no list attached is not a count. Counts have a true zero and equal intervals, and each is read against two edges of its own, so the counts are never converted to scores or summed. A count can still be gamed, but a disputed count is an argument about a named item on a list, and the [Adoption Review](./adoption-review.md) re-takes every count. The edges are chosen, so read positions as comparisons between deals in one book ([06-calibration.md](../theory/01-foundation/06-calibration.md)).
+> **This instrument counts. It does not rate.** Every input is a number of named things, backed by a list. A number with no list attached is not a count. Counts have a true zero and equal intervals, and each is read against its payer's two thresholds, so the counts are never converted to scores, and costs are summed only where one payer carries them. A count can still be gamed, but a disputed count is an argument about a named item on a list, and the [Adoption Review](./adoption-review.md) re-takes every count. The edges are chosen, so read positions as comparisons between deals in one book ([06-calibration.md](../theory/01-foundation/06-calibration.md)).
 
 ---
 
 ## Step 0: Before the deal
 
-**0a. The market reading.** Name the market reading this deal sits under and its verdict. A deal in a market the seller declined, or never read, is one the seller has not decided it can afford, so every routing below is provisional. A book of deal readings that disagrees with its market reading is the evidence the market reading is wrong.
+**0a. The market reading.** Name the market reading this deal sits under and its verdict. A deal in a market the seller declined, or never read, is one the seller has not decided it can afford, so every routing below is provisional. A book of deal counts that disagrees with the market reading's counts is the evidence the market reading is wrong. Positions can differ for another reason, since a deal reads its own payers' thresholds and the market reading reads population edges.
 
 **0b. Workflow maturity.** Classify the buyer's workflow for the problem being solved. A count of exception paths means nothing when no path is written down.
 
@@ -44,7 +44,18 @@ Goal: Read one deal against the Constitution's three questions, in order. Can th
 
 ## Step 1: Can this buyer enter? (Axiom I)
 
-Count each cost twice. The **measured** count $n_k$ is what discovery establishes. The **expected** count $\tilde{n}_k$ is what the buyer says, before discovery, it thinks the cost will take: which vendors it must compare, who must sign, what must integrate. The buyer decides on the expected count. Both are read against the same two edges: below the self-serve edge the buyer pays the cost down alone, and above the participation edge it cannot get through it at any price. [06-calibration.md](../theory/01-foundation/06-calibration.md) section 3.2 records every edge as chosen.
+Count each cost twice. The **measured** count $n_k$ is what discovery establishes. The **expected** count $\tilde{n}_k$ is what the buyer says, before discovery, it thinks the cost will take: which vendors it must compare, who must sign, what must integrate. The buyer decides on the expected count. Each count is the demand the deal places on whoever carries that cost, read against that payer's two thresholds: its capacity, and its capacity plus what the seller or an outside party can move off it ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6 defines both and what can be moved).
+
+**Name the payers and read their thresholds before the outcome.** Implementation has two payers, the technical owners for integration points and the operating owners for changed workflows and exceptions, so read each part against its own and take the larger position.
+
+| Cost | Ask | Source that settles it |
+|---|---|---|
+| Search | How many options can your team take to a written comparison before you decide? | The evaluation plan, or the last comparable purchase's scored shortlist |
+| Consensus | Who can approve this at this contract value without escalating? | The written delegation of authority |
+| Implementation, technical | How many integrations can your staff build in the delivery window? | Named staff free in the window |
+| Implementation, operating | How many process changes can the affected team take on at once? | The team's change calendar |
+
+Staffing or written authority supports the full gate. A buyer's record on a comparable purchase, counted net of what outside parties carried, supports only a graded reading. Until a threshold is read, use the default edge in each table below. A position on a default routes the deal and is not evidence. Record which source each position used.
 
 ### 1a. Search
 
@@ -52,7 +63,7 @@ Count each cost twice. The **measured** count $n_k$ is what discovery establishe
 
 $$n_{search} = (\text{named vendors}) + (\text{build}) + (\text{do nothing})$$
 
-| Edge | $n_{search}$ |
+| Default edge | $n_{search}$ |
 |---|---|
 | Self-serve, $\tau^{self}$ | 4 |
 | Participation, $\tau^{part}$ | 8 |
@@ -66,7 +77,7 @@ $$n_{search} = (\text{named vendors}) + (\text{build}) + (\text{do nothing})$$
 
 $$n_{consensus} = (\text{decision roles with a veto}) + (\text{formal bodies required})$$
 
-| Edge | $n_{consensus}$ |
+| Default edge | $n_{consensus}$ |
 |---|---|
 | Self-serve, $\tau^{self}$ | 1 |
 | Participation, $\tau^{part}$ | 7 |
@@ -81,14 +92,14 @@ $$n_{impl} = (\text{integration points}) + (\text{workflows that change}) + (\te
 
 An integration point is one system that must exchange data with yours. A workflow that changes is one procedure a named group performs differently after go-live. An undocumented exception path is one branch of the workflow with no written handling and no volume attached.
 
-| Edge | $n_{impl}$ |
+| Default edge | $n_{impl}$ |
 |---|---|
 | Self-serve, $\tau^{self}$ | 2 |
 | Participation, $\tau^{part}$ | 11 |
 
 ### 1d. Positions
 
-For each cost, its position between its own two edges, once on each count:
+For each cost, its position between its payer's two thresholds, once on each count:
 
 $$r_k = \frac{n_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k} \qquad \tilde{r}_k = \frac{\tilde{n}_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
 
@@ -106,7 +117,7 @@ $$r_k = \frac{n_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k} \qquad \tilde{
 | At most one | Above one | **Unshown.** The cost is within reach and the buyer does not believe it. | Show the cost with evidence the buyer can check, such as published terms, a security packet or an implementation timeline with references. That is the second job of seller spending under Step 2. |
 | Above one | Any | **Kept out.** | Pull it back into range with the instrument for that cost, invest across deals if its cost floor holds it there, or decline. No work on the other two costs reaches it. |
 
-An unnamed category or a missing channel puts search in the third row whatever the count. The positions are never summed, and ease on one cost never buys back another above its edge.
+An unnamed category or a missing channel puts search in the third row whatever the count. **Where one person or team carries more than one cost,** record it in the decision-role map and test the costs together: for each, take what is left once everything movable is moved, divide by the payer's capacity for that work, and add. A sum above one keeps the buyer out. Run it only on thresholds read for that payer. Costs on different payers are never summed.
 
 ---
 
@@ -246,11 +257,11 @@ Read the variance across the book, never on one deal. A counter whose variance r
 | Market reading, and its verdict | |
 | Workflow maturity (1, 2, 3) | |
 | Alternatives to rule out: measured, expected. Category named, channel exists today | |
-| Search position and zone: measured, expected | |
+| Search position and zone: measured, expected. Thresholds read from staffing, record or default | |
 | Decision roles that can say no, formal bodies and their spend thresholds | |
-| Consensus position and zone: measured, expected | |
+| Consensus position and zone: measured, expected. Thresholds read from staffing, record or default | |
 | Integration points, workflows that change, undocumented exception paths: measured, expected | |
-| Implementation position and zone: measured, expected | |
+| Implementation position and zone: measured, expected. Thresholds read from staffing, record or default. Costs one payer carries, and their summed position | |
 | Step 1d reading per cost (can enter, Unshown, Kept out) | |
 | **Where the sale starts**, dated, with what had been verified | |
 | Mandate: sponsor named, capital allocated | |

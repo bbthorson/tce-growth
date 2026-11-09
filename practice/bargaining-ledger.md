@@ -83,7 +83,9 @@ $N$ is the roles that can say no. Var is the variance of the Direction column ac
 |---|---|---|
 | **Under 10** | Low | One champion can carry it. Fill the map for every role with a veto anyway. |
 | **10 to 25** | Medium | The deal drifts rather than dies. Agree written decision criteria and a decision sequence before pricing. |
-| **Above 25** | High | No decision is the likely outcome, not a competitive loss. Add the safeguard inside the buyer before any specific investment. |
+| **Above 25** | High | A stall is the risk to plan for, more than a competitive loss. Add the safeguard inside the buyer before any specific investment. |
+
+**These bands size the work.** Whether the buyer can get through it at all is the triage's consensus position, which governs where the two disagree.
 
 **Lower the variance, not the headcount.** The return on reducing it scales with $N^{\beta}$. Answering a reservation in the arrangement lowers it, and more meetings do not.
 
