@@ -128,7 +128,9 @@ swap:
   Lane 1: "Turnkey deal (the archetype names replaced the lane numbering in v14.0)"
   Lane 2: "a deal with specific exposure (Structural replaced the lane numbering in v14.0 and retired in Constitution 4.0)"
   independently-arising components: "components arising from distinct conditions (they are not statistically independent)"
-  Their combined level determines which motion: "the sale starts at the cost nearest its own threshold, and the costs are non-compensatory"
+  Their combined level determines which motion: "the sale starts at the tightest cost, and the costs are non-compensatory"
+  nearest its own threshold: "the tightest cost (Constitution 6.3)"
+  nearest its threshold: "the tightest cost (Constitution 6.3)"
   03-learning-plan: "no replacement; the curriculum was removed in v15.0"
   llm-tutor-instructions: "no replacement; the curriculum was removed in v15.0"
   plain-language-part-I-companion: 00-tcg-constitution.md Part I

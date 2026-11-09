@@ -2,17 +2,17 @@
 title: "The Deal Triage Calculator"
 layer: practice
 status: active
-version: 9.1
+version: 9.2
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
 
-Version: 9.1
+Version: 9.2
 Goal: Read one deal against the Constitution's three questions, in order. Can this buyer enter? What has to be paid down at time 0, and what must the seller's spending do? What has to be settled before anything is sunk, so time 1 does not decay? This is the deal reading that [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 derives. It varies around [the Market Reading](./00-market-reading.md), which is read first.
 
-**Canonical reference:** [Constitution 6.2](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions and the buyer's expected reading, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance form and the standing review. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6. The motions are [01-motions.md](../theory/01-foundation/01-motions.md).
+**Canonical reference:** [Constitution 6.3](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions and the buyer's expected reading, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance form and the standing review. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6. The motions are [01-motions.md](../theory/01-foundation/01-motions.md).
 
 | | |
 |---|---|
@@ -126,6 +126,14 @@ An unnamed category or a missing channel puts search in the third row whatever t
 ### 2a. Where the sale starts
 
 **The cost with the largest expected position before the buyer has entered discovery, and the largest measured position after.** Two costs at the same position are run together, and the instrument returns both. Date every reading and say what had been verified when it was taken. Until fit is verified on the buyer's own workflow, the policing and bargaining counts are lower bounds. Keep every old reading, because a reading written after the outcome cannot test the sequencing falsifier.
+
+**The tightest cost orders the work by default.** Where a cost reads past its threshold, no absorption reaches it: lower its demand, show it lower, or stop spending on the deal. Inside the limits, work another cost first only on one of three readings, each dated before the investment ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 1.5):
+
+- **Unit cost.** Quoted hours for each side show the seller moves that cost's demand far more cheaply.
+- **A sharp limit.** A written cap, such as an approval threshold, sits just under what that cost's payer is left carrying.
+- **Spillover.** The tightest cost's paydown would carry over to a named rival's deal, as category education does.
+
+Representatives time deals and concede price to suit their pay (Larkin 2014), so a reason recorded after the investment does not count.
 
 **The gaps are not read here.** They change no output of this instrument. They are filled during discovery and drive the plan: [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 defines each, the decision-role map reads the bargaining gap, and the [Enforcement Ledger](./enforcement-ledger.md) reads the policing gap.
 
@@ -263,7 +271,7 @@ Read the variance across the book, never on one deal. A counter whose variance r
 | Integration points, workflows that change, undocumented exception paths: measured, expected | |
 | Implementation position and zone: measured, expected. Thresholds read from staffing, record or default. Costs one payer carries, and their summed position | |
 | Step 1d reading per cost (can enter, Unshown, Kept out) | |
-| **Where the sale starts**, dated, with what had been verified | |
+| **Where the sale starts**, dated, with what had been verified. Any other cost worked first, with its coded reason and the date | |
 | Mandate: sponsor named, capital allocated | |
 | The job the seller's spending must do | |
 | Seller's share repaid by (first contract, renewal, expansion, unlocked deals, nothing). Buyer's share staffed (yes / no) | |

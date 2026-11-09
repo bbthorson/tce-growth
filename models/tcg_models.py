@@ -823,7 +823,7 @@ def participates(positions):
 
 
 def sale_start(positions):
-    """Where the sale starts, Axiom I: the cost with the largest position.
+    """Where the sale starts, Axiom II: the cost with the largest position.
 
     Returns a tuple, because two costs at the same position are run together
     rather than one being picked. positions maps cost name to r_k.
@@ -1391,7 +1391,7 @@ def triage(workflow_maturity, n_alternatives, n_vetoes,
            pilot_requested=False, product_automates_process=True,
            expected=None, entered_discovery=True,
            thresholds=None, shared_payers=()):
-    """Run the whole instrument and return a TriageResult. Version 9.1.
+    """Run the whole instrument and return a TriageResult. Version 9.2.
 
     expected maps any of "search", "consensus" and "implementation" to the
     count the buyer says it expects, the consensus one including formal

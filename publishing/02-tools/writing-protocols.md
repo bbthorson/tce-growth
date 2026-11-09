@@ -58,7 +58,7 @@ Check whether any of the following would change the angle. Ask only for the ones
 
 **Step 2: Line of scrimmage (economic friction)**
 - **Identify $\Delta_A$.** What do the players not know about each other? Diagnose both sides, $I_{seller}$ and $I_{buyer}$. Which gap could cause a fumbled handoff?
-- **Identify the transaction costs.** Search: how hard was it to find this play? Consensus: how many decision roles have to agree to run it? Implementation: can the buyer tell whether the seller will deliver and whether it will work here? Which of the three is nearest the point where the buyer walks away? That is where the sale starts.
+- **Identify the transaction costs.** Search: how hard was it to find this play? Consensus: how many decision roles have to agree to run it? Implementation: can the buyer tell whether the seller will deliver and whether it will work here? Which of the three is tightest, needing the largest share of the help its payer can get? That is where the sale starts.
 
 **Step 3: Defensive alignment (structural barriers)**
 - **Asset specificity.** Is anyone sinking investment that is worth less outside this relationship, or is every cost self-serve with nothing specific sunk (Turnkey)? If something specific is sunk, whose exposure is it, and was its allocation settled before it was sunk?
