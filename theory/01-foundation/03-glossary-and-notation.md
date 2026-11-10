@@ -203,8 +203,8 @@ One line each, then the canonical source. The line identifies the term. The sour
 | Term | Identifier | Canonical source |
 |---|---|---|
 | **Axiom I, Law of Transaction Cost Composition** | Can a market exist? A participation threshold for each of the buyer's three costs, the seller's limit, and cost floors. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom II, Law of Transaction Investment** | What has to be paid down at time 0? Where the sale starts, which names the motion, and each party going ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom III, Law of Future Cost** | What prevents churn and contraction at time 1? Specific investment exposes a party to what it cannot verify or enforce, and sets what a failure costs. What can be foreseen is contracted before the investment is sunk, and a standing review plans for what cannot. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom II, Law of Transaction Investment** | What has to be paid down at Time1? Where the sale starts, which names the motion, and each party going ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom III, Law of Future Cost** | What prevents churn and contraction at Time2? Specific investment exposes a party to what it cannot verify or enforce, and sets what a failure costs. What can be foreseen is contracted before the investment is sunk, and a standing review plans for what cannot. | [Constitution, Part I](./00-tcg-constitution.md) |
 
 ### Definitions
 

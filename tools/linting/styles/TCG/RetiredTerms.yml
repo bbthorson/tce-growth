@@ -164,20 +164,20 @@ swap:
   01-cases: "publishing/02-tools/ (the cases folder was removed on 2026-10-13)"
   00-foundation: 01-foundation
   01-research: 02-research
-  Toaster deal: Turnkey deal
-  Toaster deals: Turnkey deals
-  toaster deal: turnkey deal
-  toaster deals: turnkey deals
-  Bridge deal: a deal with specific exposure
-  Bridge deals: deals with specific exposure
-  bridge deal: a deal with specific exposure
-  bridge deals: deals with specific exposure
+  Toaster deal: plug-in purchase
+  Toaster deals: plug-in purchases
+  toaster deal: plug-in purchase
+  toaster deals: plug-in purchases
+  Bridge deal: built-in purchase
+  Bridge deals: built-in purchases
+  bridge deal: built-in purchase
+  bridge deals: built-in purchases
   Bridge motion: implementation-led motion
   bridge motion: implementation-led motion
-  Bridge vs. Toaster: specific exposure vs. Turnkey
-  bridge vs. toaster: specific exposure vs. turnkey
-  Bridge and Toaster: specific exposure and Turnkey
-  bridge and toaster: specific exposure and turnkey
+  Bridge vs. Toaster: built-in vs. plug-in
+  bridge vs. toaster: built-in vs. plug-in
+  Bridge and Toaster: built-in and plug-in
+  bridge and toaster: built-in and plug-in
 
   tcg-concept-map\.md: "publishing/README.md, Content pillars (the concept map was deleted in the 2026-09 restructure; it still carried the ILG title, the retired market phases and unsourced statistics)"
   ai-persona\.md: writing-protocols.md
@@ -242,3 +242,9 @@ swap:
   # or an evaluation, defined by its relation to the workflow, not its occupant.
   seats?: "decision role (Constitution 4.0)"
   Seats?: "Decision role (Constitution 4.0)"
+  # Constitution 7.0 (2026-11). The times were renumbered so that the market
+  # has one: Time0 is the market, Time1 contracting, Time2 renewal. Earlier
+  # versions called the deal "time 0" and the relationship "time 1". The new
+  # labels are written without a space, so these rows catch only the old ones.
+  "[Tt]ime 0": "Time1, contracting (Constitution 7.0 renumbered the times)"
+  "[Tt]ime 1": "Time2, renewal (Constitution 7.0 renumbered the times)"

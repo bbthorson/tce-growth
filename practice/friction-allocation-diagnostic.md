@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 Version: 2.0
 Goal: Decide whether one piece of evidence counts as verification, meaning a buyer can rely on it to lower what it cannot check. Evidence that fails is a claim, however much it cost to produce.
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), the Friction Allocation Principles under Axiom III. The diagnostic tests one of the two jobs Axiom II gives seller spending: letting a deal that creates value go ahead with evidence the buyer can check. It does not test the other job, raising what the deal creates, so a discovery workshop can fail here and still earn its cost by lowering the cost at time 1. Why each of the four principles is needed is argued in [costly-signals.md](../theory/02-research/costly-signals.md).
+**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), the Friction Allocation Principles under Axiom III. The diagnostic tests one of the two jobs Axiom II gives seller spending: letting a deal that creates value go ahead with evidence the buyer can check. It does not test the other job, raising what the deal creates, so a discovery workshop can fail here and still earn its cost by lowering the cost at Time2. Why each of the four principles is needed is argued in [costly-signals.md](../theory/02-research/costly-signals.md).
 
 | | |
 |---|---|

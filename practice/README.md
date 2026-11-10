@@ -14,7 +14,7 @@ Each document carries its own header table stating its inputs, outputs, next ste
 
 ## By decision
 
-The Constitution's axioms answer three questions: whether a market can exist, what has to be paid down at time 0, and what prevents churn and contraction at time 1. The instruments meet those questions at different moments. Name the question, then open the instrument.
+The Constitution's axioms answer three questions: whether a market can exist, what has to be paid down at Time1, and what prevents churn and contraction at Time2. The instruments meet those questions at different moments. Name the question, then open the instrument.
 
 | Moment | Your question | Instrument |
 |---|---|---|

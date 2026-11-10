@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 Version: 1.0
 Goal: On one deal, close the policing gap from both sides and settle the allocation before anything specific is sunk. One ledger, one row per workflow step, shared in full with the buyer. It grows a column at each of three stages: **Map**, which the field calls the Blueprint, **Test**, the Red Team, and **Stage**, the Mutual Implementation Plan. Maintain runs after signature in the [Sustaining Adoption Review](./adoption-review.md).
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), Axiom III: specificity, who cannot check what, contracting what can be foreseen, enforcement, staged commitment and the gate. Axiom II for discovery as spending that lowers the cost at time 1. The derivation is [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5.
+**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), Axiom III: specificity, who cannot check what, contracting what can be foreseen, enforcement, staged commitment and the gate. Axiom II for discovery as spending that lowers the cost at Time2. The derivation is [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5.
 
 | | |
 |---|---|

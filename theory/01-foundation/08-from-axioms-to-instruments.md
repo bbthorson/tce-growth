@@ -19,7 +19,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 ## 1. Three phases, two levels
 
-The [Constitution](./00-tcg-constitution.md) asks three questions at three levels: whether a market can exist, what has to be paid down at time 0, and what prevents churn and contraction at time 1. Read in order, they give the three things a reader has to be able to do.
+The [Constitution](./00-tcg-constitution.md) asks three questions at three levels: whether a market can exist, what has to be paid down at Time1, and what prevents churn and contraction at Time2. Read in order, they give the three things a reader has to be able to do.
 
 | Phase | What the reader must be able to do | From | Unit |
 |---|---|---|---|

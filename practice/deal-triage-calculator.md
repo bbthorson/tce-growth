@@ -10,7 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 # The Deal Triage Calculator
 
 Version: 9.2
-Goal: Read one deal against the Constitution's three questions, in order. Can this buyer enter? What has to be paid down at time 0, and what must the seller's spending do? What has to be settled before anything is sunk, so time 1 does not decay? This is the deal reading that [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 derives. It varies around [the Market Reading](./00-market-reading.md), which is read first.
+Goal: Read one deal against the Constitution's three questions, in order. Can this buyer enter? What has to be paid down at Time1, and what must the seller's spending do? What has to be settled before anything is sunk, so Time2 does not decay? This is the deal reading that [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 derives. It varies around [the Market Reading](./00-market-reading.md), which is read first.
 
 **Canonical reference:** [Constitution 6.3](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions and the buyer's expected reading, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance form and the standing review. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6. The motions are [01-motions.md](../theory/01-foundation/01-motions.md).
 
@@ -121,7 +121,7 @@ An unnamed category or a missing channel puts search in the third row whatever t
 
 ---
 
-## Step 2: What has to be paid down at time 0? (Axiom II)
+## Step 2: What has to be paid down at Time1? (Axiom II)
 
 ### 2a. Where the sale starts
 
@@ -143,7 +143,7 @@ Representatives time deals and concede price to suit their pay (Larkin 2014), so
 
 ### 2c. What the seller's spending must do, and who pays
 
-Seller spending on the cost where the sale starts earns its cost by one of two jobs. Where that cost is Unshown, the job is to let a deal that creates value go ahead: show the cost with evidence the buyer can check. Otherwise the job is to raise what the deal creates, by doing the work more cheaply than the buyer could or by lowering what the relationship will cost at time 1, as discovery does. A discount or quarter-end pressure does neither. Which investment does which job is the plan's to record ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 45).
+Seller spending on the cost where the sale starts earns its cost by one of two jobs. Where that cost is Unshown, the job is to let a deal that creates value go ahead: show the cost with evidence the buyer can check. Otherwise the job is to raise what the deal creates, by doing the work more cheaply than the buyer could or by lowering what the relationship will cost at Time2, as discovery does. A discount or quarter-end pressure does neither. Which investment does which job is the plan's to record ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 45).
 
 **The seller's share.** Can what this relationship pays, the first contract, renewal and expansion, or the deals it unlocks, recover the seller's planned investment? Name which one repays it. Spending that nothing repays is a price cut.
 
