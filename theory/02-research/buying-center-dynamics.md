@@ -57,3 +57,13 @@ The last five sources reached the repository through an external review in 2026-
 **Contracting is the external part of the bargain.** Procurement, legal, security review and the paper process are the buyer's bargain with the seller over terms. Constitution 5.0 folded them into bargaining and decision rather than treating contracting as a fourth cost. Negotiating a term is a cost the buyer pays today, under Axiom II. What the term governs after signature belongs to policing and enforcement, which is Williamson's line between ex ante and ex post costs. The buyer's own rules for this part, spend thresholds and required reviews, are set outside any one deal, which makes them the bargaining cost floor in [information-environment.md](./information-environment.md).
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
+
+## Extension: capacity and approval thresholds (2026-11)
+
+**Sources.** Each source reached the repository through the [2026-11-09 research review](./research-review-2026-11-09.md) and is marked by how far it has been read. Check any finding at the primary before quoting it.
+- Milgrom, P. & Roberts, J. (1988). "An Economic Approach to Influence Activities in Organizations." *American Journal of Sociology*, 94 (Supplement), S154–S179. (secondary)
+- Carril, R. (2021). "Rules Versus Discretion in Public Procurement." Barcelona School of Economics Working Paper 1232. (introduction read, abstract rechecked)
+
+**Capacity does not move freely between payers.** Milgrom and Roberts show that the authority to move resources by order invites costly influence activity, as members spend effort lobbying for the decision. Constitution 6.2 cites them for why each payer's capacity is specific to it, and why ease on one payer never buys back another.
+
+**Approval thresholds bind.** When the US simplified acquisition threshold rose in 2011, purchases bunched under it, award amounts were pushed down to fit, and buyers dropped some purchases above it. [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 6 reads this as consistent with the gate and with the buyer's condition alike, and says what would separate them.

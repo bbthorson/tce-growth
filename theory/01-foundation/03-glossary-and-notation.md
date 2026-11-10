@@ -217,7 +217,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 ### Component names
 
-Coase (1937) owns the question, whether to use the market at all. Dahlman (1979) supplied the three names, which are canonical in theory prose. The field names stay, and so do the notation subscripts.
+Coase (1937) showed that using the market costs something, and the question whether to use it at all parallels Akerlof and search theory. Dahlman (1979) supplied the three names, which are canonical in theory prose. The field names stay, and so do the notation subscripts.
 
 | Dahlman's name (canonical in theory) | Field name (notation subscript) | What B2B adds |
 |---|---|---|

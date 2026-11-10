@@ -124,7 +124,7 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 
 *From [buyer-cost-neighbors.md](../../theory/02-research/buyer-cost-neighbors.md).*
 
-- Most of TCG is synthesis. The assembly is the contribution.
+- Most of TCG is synthesis. The gate, the expected position against the actual one, Turnkey's erosion and the directional seller limit are its own.
 - The costs add. A prohibitive one is not bought back by savings on the others.
 - Price is a transfer. That is standard economics and not yet standard sales practice.
 

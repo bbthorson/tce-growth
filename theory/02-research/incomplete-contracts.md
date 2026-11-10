@@ -10,6 +10,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **Sources:**
 - Grossman, S.J. & Hart, O.D. (1986). "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration." *Journal of Political Economy*, 94(4), 691–719.
+- Hart, O. & Moore, J. (1988). "Incomplete Contracts and Renegotiation." *Econometrica*, 56(4), 755–785. (not yet read here)
 - Hart, O. & Moore, J. (1990). "Property Rights and the Nature of the Firm." *Journal of Political Economy*, 98(6), 1119–1158.
 - Hart, O. (2016). Nobel Prize Lecture: "Incomplete Contracts and Control."
 - Crocker, K.J. & Reynolds, K.J. (1993). "The Efficiency of Incomplete Contracts: An Empirical Analysis of Air Force Engine Procurement." *RAND Journal of Economics*, 24(1), 126–146.

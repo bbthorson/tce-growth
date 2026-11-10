@@ -117,6 +117,19 @@ The two views make different predictions on closed-won deals. Code each pre-sign
 
 No peer-reviewed study links unverified pre-sale claims to business-market churn, renewal or references, so the prediction fills a gap. Synthetic data must not be used to fit anything.
 
+## Extension: advertising, discounts and representatives' incentives (2026-11)
+
+**Sources.** Each source reached the repository through the [2026-11-09 research review](./research-review-2026-11-09.md) and is marked by how far it has been read. Check any finding at the primary before quoting it.
+- Bagwell, K. (2007). "The Economic Analysis of Advertising." In M. Armstrong & R. Porter (Eds.), *Handbook of Industrial Organization*, vol. 3, 1701–1844. Elsevier. (read in part)
+- Lewis, M. (2006). "Customer Acquisition Promotions and Customer Asset Value." *Journal of Marketing Research*, 43(2), 195–203. (abstract)
+- Larkin, I. (2014). "The Cost of High-Powered Incentives: Employee Gaming in Enterprise Software Sales." *Journal of Labor Economics*, 32(2), 199–227. (abstract)
+
+**Persuasion changes welfare.** Bagwell surveys three views of advertising: informative, persuasive and complementary. Under the persuasive and complementary views advertising changes welfare in either direction. In one study the survey reports, Ackerberg's, measured effects were mostly informative. That is why Constitution 6.3 withdrew the claim that persuasion leaves the joint condition unchanged. It now costs the joint condition what the seller spends on it, and raises it only where the second standing assumption fails.
+
+**A discount selects buyers.** At a newspaper and an online grocer, Lewis finds that customers acquired on deeper discounts bought again less and were worth less over time. Constitution 6.3 cites only its direction, as evidence that a price cancelling in each deal still changes which deals occur. The [citation audit](./audits/citation-provenance-audit.md) records it as read at the abstract.
+
+**Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor. That is why the Deal Triage Calculator dates any reason to depart from the default order before the investment, and why [open question 61](../01-foundation/07-open-questions.md)'s comparison is confounded.
+
 ## Related
 
 - [Costly Signals](./costly-signals.md): why only costly evidence lowers the chance of future loss, which is the range-narrowing test in another form.
