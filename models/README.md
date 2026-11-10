@@ -31,6 +31,7 @@ The dependency chain runs `theory/` to `practice/` to `publishing/`, one way. Th
 |---|---|
 | `tcg_models.py` | Every live formula, one function each, with its canonical home named in the docstring. |
 | `test_tcg_models.py` | Every worked example in the documents, plus the properties the documents claim (price cancelling between the two conditions, boundedness, monotonicity, the band edges). |
+| `sat_bunching.py` | The simplified acquisition threshold test in [sat-threshold-test.md](../theory/02-research/sat-threshold-test.md). `--pull` fetches award counts from the USAspending API into `data/sat_counts.json`, and a plain run computes the registered measures. Unlike the rest of this directory it reads public data, not the documents. |
 | `make_figures.py` | Writes the axiom figures in `theory/01-foundation/assets/` by sampling `tcg_models.py`. `--check` regenerates and fails on any diff. |
 
 Formula coverage, by canonical home:
