@@ -10,14 +10,16 @@ status: active
 
 Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 
-The three decisions are the framework's primary index: should the buyer use the market, what will it cost today, and what might it cost later. Each axiom answers one of them, in time order, in [00-tcg-constitution.md](./00-tcg-constitution.md) Part I.
+The three times are the framework's primary index: Time0 the market, Time1 contracting and Time2 renewal. Each axiom covers one of them, in [00-tcg-constitution.md](./00-tcg-constitution.md) Part I.
+
+Files 1, 2 and 4 below match Constitution 7.0. The others still describe ideas 7.0 retired until their pass in the trim ([TRIM-PROPOSAL.md](../../TRIM-PROPOSAL.md)).
 
 ## Reading order
 
-1. **[00-tcg-constitution.md](./00-tcg-constitution.md)**: three standing assumptions, two definitions, the premise, the three axioms as three questions at three levels (market, deal, relationship), and the two conditions, one per party, that tie them together. Each axiom carries one figure, all generated from [`models/`](../../models/README.md). Everything else in the repo traces to this file.
-2. **[01-motions.md](./01-motions.md)**: derives the motion from where the sale starts, the tightest cost, says what each motion deploys and why Turnkey is a market condition that erodes through entry, and closes with the map onto Product-Led, Sales-Led and the rest of the incumbent vocabulary. Section 9 records what it does not settle.
-3. **[02-mathematical-models.md](./02-mathematical-models.md)**: *(reference)* functional forms behind the two conditions, the gaps, future loss and the thresholds, and a record of the forms Constitution 4.0 retired.
-4. **[03-glossary-and-notation.md](./03-glossary-and-notation.md)**: *(reference)* every symbol and term in one place, with a pointer to where each is canonically defined. The notation index is itself canonical.
+1. **[00-tcg-constitution.md](./00-tcg-constitution.md)**: three standing assumptions, the definitions, the premise, and twelve claims under three axioms, each with a test that could fail. Everything else in the repo traces to this file.
+2. **[01-motions.md](./01-motions.md)**: a motion is named for the cost it carries. How a leader reads which one a market needs, what each motion deploys, where no motion is enough, the relay model and what replaces it, and the map onto Product-Led, Sales-Led and the rest of the incumbent vocabulary. Section 8 records what it does not settle.
+3. **[02-mathematical-models.md](./02-mathematical-models.md)**: *(reference, due to retire except sections 1.1 to 1.4)* functional forms behind the two conditions, the gaps, future loss and the thresholds.
+4. **[03-glossary-and-notation.md](./03-glossary-and-notation.md)**: *(reference)* every term in one place, with a pointer to where each is defined. Its notation index is older and retires with the math.
 5. **[04-seller-surplus-model.md](./04-seller-surplus-model.md)**: the seller's side of the transaction. What the seller invests, what portion of it is specific and exposed, and when the investment is worth making.
 6. **[05-governance-forms.md](./05-governance-forms.md)**: what shape the arrangement should take once the deal closes. Derives Williamson's four governance forms from specific exposure and frequency under Axiom III, and names the make-or-buy boundary that sits in the two conditions.
 7. **[06-calibration.md](./06-calibration.md)**: *(reference)* every coefficient, threshold and band in the framework, with an honest provenance status on each. Nothing in it is measured. Read it before quoting any number outside this repository.

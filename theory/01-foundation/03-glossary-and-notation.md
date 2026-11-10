@@ -2,27 +2,165 @@
 title: "Glossary and Notation"
 layer: theory
 status: active
-version: 1.1
+version: 2.0
 ---
 
 # Glossary and Notation
 
-**Version:** 1.1
-**Purpose:** To supply one place to look up any symbol or term used in this repo, and to say where its canonical definition lives.
+**Version:** 2.0
+**Purpose:** To supply one place to look up any term used in this repo, and to say where its canonical definition lives.
 
 ## How to use this file
 
-Two rules govern what is written here, and they differ by section.
+**The term index is an index, not a source of truth.** Every entry carries a one-line identifier and a link to where the concept is defined. The identifier exists so you can confirm you found the right entry, not so you can skip reading the source. If an entry and its linked source disagree, **the source wins** and the entry is a bug. Report it or fix it.
 
-**The term index is an index, not a source of truth.** Every entry carries a one-line identifier and a link to where the concept is actually defined. The identifier exists so you can confirm you found the right entry, not so you can skip reading the source. If an entry and its linked source disagree, **the source wins** and the entry is a bug. Report it or fix it.
+The term index matches Constitution 7.0. The notation index below it is older and is marked as such.
 
-**The notation index is canonical.** Symbols had no home before this file. Several are reused across documents with different meanings, and one collision was serious enough that [02-mathematical-models.md](./02-mathematical-models.md) had to stop mid-derivation to disambiguate it by hand. That is the gap this section closes. When a document introduces a new symbol, add it here in the same commit.
+---
 
-Every symbol below matches Constitution 4.0. Symbols that 4.0 retired are collected at the end of the notation index, so a reader meeting them in an older analysis can find what replaced them.
+## Term index
+
+One line each, then the canonical source. The line identifies the term. The source defines it.
+
+### The three axioms and their times
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Axiom I, Law of Transaction Cost Composition** | Time0, the market. The buyer asks whether to buy, build or do nothing, and the seller whether it can serve these buyers at a profit. Claims 1 to 5. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom II, Law of Transaction Investment** | Time1, contracting. The buyer asks whether its organization can agree and what the purchase will take, and the seller whether the deal is worth what it takes. Claims 6 to 9. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom III, Law of Future Cost** | Time2, renewal. The buyer asks whether it worked here and whether it is free to leave, and the seller whether the relationship pays. Claims 10 to 12. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Time0, Time1, Time2** | The market, contracting and renewal. Written without a space. Each cost has a home time. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Claim** | One of the twelve numbered statements in the Constitution, each with a test that could fail. The numbers are stable, so cite a claim by its number. | [Constitution, Part I](./00-tcg-constitution.md) |
+
+### The three costs
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Search** | Finding a seller to trust, telling whether a solution fits, and reaching the seller at all. Home time Time0. Descends from Dahlman's search and information. | [Constitution, premise](./00-tcg-constitution.md) |
+| **Consensus** | The buyer's own decision roles reaching agreement. Home time Time1. One half of Dahlman's bargaining and decision. | [Constitution, premise](./00-tcg-constitution.md) |
+| **Implementation** | Making the product work in the buyer's environment, and checking that the seller delivered. Home time Time2. Wider than Dahlman's policing and enforcement. It is a fear at Time1 and work at Time2. | [Constitution, premise](./00-tcg-constitution.md) |
+
+### Definitions
+
+*Market* and *deal* keep their ordinary meanings.
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Workflow** | The procedure a product changes. Read for how settled and how entangled it is. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Settled** | Written down, followed, with its exceptions known. | [01-motions.md](./01-motions.md) section 2 |
+| **Entangled** | How much else changes when the workflow changes. | [01-motions.md](./01-motions.md) section 2 |
+| **Decision role** | A position in the buyer's organization that can stop or must approve the purchase, defined by its relation to the workflow and not by its occupant. | [Constitution, Definitions](./00-tcg-constitution.md) |
+| **Plug-in purchase** | Works on arrival. The buyer can try it on its own work and walk away having stranded nothing. | [Constitution, claim 6](./00-tcg-constitution.md) |
+| **Built-in purchase** | The buyer, the seller or both build something that is worth less anywhere else. | [Constitution, claim 6](./00-tcg-constitution.md) |
+| **Specific investment** | The economists' word for what a built-in purchase builds. The research files use it. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
+| **Motion** | What a seller does, and is organized to do, to carry part of a buyer's cost. | [01-motions.md](./01-motions.md) |
+| **Turnkey** | A market where buyers can carry every cost alone and the purchase is plug-in. It does not stay that way on its own. | [Constitution, claim 3](./00-tcg-constitution.md), [01-motions.md](./01-motions.md) section 4 |
+
+### Time0 terms
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Search-led, consensus-led, implementation-led** | The three motions, each named for the cost it carries. Two costs in the way are run together. | [01-motions.md](./01-motions.md) section 3 |
+| **Relay model** | One role per funnel stage, each with a fixed playbook, and pay on bookings. The right motion for a Turnkey market. | [01-motions.md](./01-motions.md) section 6 |
+| **Floor** | The part of a cost set outside any deal, which falls only through something shared across deals. | [Constitution, claim 4](./00-tcg-constitution.md), [information-environment.md](../02-research/information-environment.md) |
+| **Costly signal** | A commitment that costs a weak seller more than a strong one, so it tells them apart. | [costly-signals.md](../02-research/costly-signals.md) |
+| **Cheap talk** | A claim any seller could make at no cost. It carries no information and adds to the buyer's work. | [costly-signals.md](../02-research/costly-signals.md) |
+| **Friction Allocation Principles** | The four tests a signal must pass to count as evidence. | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
+| **Channel collapse** | A channel whose filtering ran on the cost of producing a message, and which fails when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
+| **Chaos Trap** | A buyer with no documented workflow, where the product automates the process. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
+
+### Time1 terms
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Price as a transfer** | What leaves the buyer arrives at the seller, so a discount changes the split and leaves the work of buying the same size. | [Constitution, claim 8](./00-tcg-constitution.md), [02-mathematical-models.md](./02-mathematical-models.md) sections 1.1 to 1.4 |
+| **Spend threshold** | The contract value above which the buyer's rules add an approver. The one case where price changes a cost. | [Constitution, claim 8](./00-tcg-constitution.md) |
+| **Commitment** | Something a seller would not offer if it expected to fail, such as capped overages or a guarantee tied to the buyer's environment. | [Constitution, claim 8](./00-tcg-constitution.md) |
+| **Discovery** | The seller learning the buyer's environment before either side builds. | [Enforcement Ledger, Map](../../practice/enforcement-ledger.md) |
+| **Pre-mortem** | Walking the buyer through how the project would fail before anyone signs. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
+| **Real option** | The value of being able to defer a decision that cannot be undone. | [real-options.md](../02-research/real-options.md) |
+
+### Time2 terms
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Hold-up** | One side squeezing the other once it cannot leave. | [Constitution, claim 11](./00-tcg-constitution.md), [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) |
+| **Earned lock-in, and lock-in by control** | A buyer stays because of what the two sides built, or because it cannot take its data or leave its terms. | [Constitution, claim 11](./00-tcg-constitution.md) |
+| **Staged plan** | Who carries which risk, in stages, with a point at each where either side can stop at a known price. Agreed before either side builds. | [Constitution, claim 12](./00-tcg-constitution.md), [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
+| **Standing review** | A review agreed before signature for what nobody can foresee, held before the renewal reads it. | [Constitution, claims 10 and 12](./00-tcg-constitution.md), [Sustaining Adoption Review](../../practice/adoption-review.md) |
+| **Account management** | The seller carrying a buyer's cost after signature. | [Constitution, claim 10](./00-tcg-constitution.md) |
+| **Residual control rights** | The agreed authority to decide where the contract is silent. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
+| **Handoff Rule** | Both deal ledgers must reach the account manager intact, or what the seller learned is lost on the receiving side. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
+
+### Artifact vocabulary
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **Contextual Blueprint** | The discovery artifact: what the seller learned of the buyer's environment, in writing. | [Enforcement Ledger, Map](../../practice/enforcement-ledger.md) |
+| **Red Team** | The pre-mortem workshop. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
+| **Mutual Implementation Plan (MIP)** | The staged plan both sides agree before either builds. | [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
+| **Sustaining Adoption Review** | The handoff, the standing review and renewal, after signature. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
+| **Vested Commission** | Pay that waits on what happens after signature. Claim 5 says when it applies. | [Constitution, claim 5](./00-tcg-constitution.md) |
+
+### External frameworks
+
+| Term | Identifier | Canonical source |
+|---|---|---|
+| **CFIR** | Implementation-science framework for reading a buyer's organization before the sale. | [cfir.md](../02-research/cfir.md), which says where each construct is read |
+| **RE-AIM** | Five-dimension framework for measuring success after the sale. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
+| **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
+
+### Retired terms
+
+Kept so older analyses stay readable. Do not use these in new writing. Files that have not yet had their pass in the trim still use the 7.0 retirements.
+
+<!-- vale TCG.RetiredTerms = NO -->
+**Retired in Constitution 7.0**
+
+| Retired term | Use instead |
+|---|---|
+| Time 0 for the deal, time 1 for the relationship | Time1 and Time2. Time0 is the market |
+| Position, zone, self-serve threshold, participation threshold, default edges | Nothing. A cost is in the way or it is not, read from the workflow and the organization (claim 2) |
+| The gate | The three plug-in tests in claim 6. The rule that one cost keeps a buyer out whatever else is true has no replacement, because value trades against cost |
+| Where the sale starts, the tightest cost | The cost in the way |
+| Specific exposure, read as none or specific | Plug-in or built-in |
+| Toaster and bridge | Plug-in and built-in |
+| Realizable, recognized and realized value | Value, set outside the sale |
+| Recognized cost, category prior, Unshown | What the buyer expects, and showing a cost with evidence the buyer can check |
+| The two conditions, as the Constitution's content | Price as a transfer (claim 8). The equations are in 02-mathematical-models.md sections 1.1 to 1.4 |
+| Three levers | Claim 8: a discount, against a commitment the seller would not make if it expected to fail |
+| Governance form, frequency | Standard terms for a plug-in purchase, and a staged plan with a standing review for a built-in one (claim 12) |
+| Stakes corollary | Claim 5, on pay |
+| Hold-up wedge, bond condition, drift rates, Decay Clock, Reputation Depreciation | Nothing in the Constitution. Claims 10 to 12 state what they defended |
+| Dahlman's names as the canonical names | Search, consensus and implementation. Dahlman is cited as their origin |
+
+**Retired earlier.** Some replacements in this table were themselves retired in 7.0. Follow them into the table above.
+
+| Retired term | Use instead |
+|---|---|
+| Law of Asset Specificity (Axiom II until 4.0) | Axiom III, Law of Future Cost. Axiom II is now the Law of Transaction Investment |
+| Law of Uncertainty Inflation (Axiom III until 4.0) | Axiom III, Law of Future Cost |
+| Market level, workflow level, deal level | The three times |
+| Seat, seat map, seat ledger | Decision role, decision-role map, decision-role ledger |
+| Coase's names: search, bargaining, enforcement | Search, consensus and implementation |
+| Structural deal | A built-in purchase, or a deal outside Turnkey, by meaning |
+| Turnkey deal, as a level below 15 | Turnkey, a market condition |
+| Level, magnitude, the 0 to 30 sum | Nothing |
+| Direction, shares, dominant component, dominance threshold, Composed | The cost in the way. Two are run together |
+| The cost that binds, the cost nearest its own threshold | The cost in the way |
+| Boundary Condition | The three plug-in tests in claim 6 |
+| Amplification, the per-component multiplier | Nothing |
+| The Surplus equation | Price as a transfer |
+| Under-frictioned | Unallocated |
+| Mis-composed | Imitation |
+<!-- vale TCG.RetiredTerms = YES -->
 
 ---
 
 ## Notation index
+
+> [!NOTE]
+> **This index and the symbol disambiguation after it describe [02-mathematical-models.md](./02-mathematical-models.md) as it stood at Constitution 6.4.** Constitution 7.0 holds no equation, so where a row gives the Constitution as a symbol's source, read that file. Both sections retire with the math in pass 5 of the trim ([TRIM-PROPOSAL.md](../../TRIM-PROPOSAL.md)).
 
 ### The two conditions (Axiom II, with Axiom III's losses)
 
@@ -194,139 +332,15 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 ---
 
-## Term index
-
-One line each, then the canonical source. The line identifies the term. The source defines it.
-
-### The three axioms
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **Axiom I, Law of Transaction Cost Composition** | Can a market exist? A participation threshold for each of the buyer's three costs, the seller's limit, and cost floors. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom II, Law of Transaction Investment** | What has to be paid down at Time1? Where the sale starts, which names the motion, and each party going ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom III, Law of Future Cost** | What prevents churn and contraction at Time2? Specific investment exposes a party to what it cannot verify or enforce, and sets what a failure costs. What can be foreseen is contracted before the investment is sunk, and a standing review plans for what cannot. | [Constitution, Part I](./00-tcg-constitution.md) |
-
-### Definitions
-
-*Market* and *deal* keep their ordinary meanings and are not Definitions.
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **Workflow** | The procedure a product changes. A product is an encoded reference workflow, and the buyer's distance from it is what makes an investment specific under Axiom III. | [Constitution, Definitions](./00-tcg-constitution.md) |
-| **Decision role** | A position in the buyer's organization holding a veto or an evaluation over the purchase, defined by its relation to the workflow and not by its occupant. An occupant change reopens a gap. A role dissolving changes the coalition. | [Constitution, Definitions](./00-tcg-constitution.md) |
-
-### Component names
-
-Coase (1937) showed that using the market costs something, and the question whether to use it at all parallels Akerlof and search theory. Dahlman (1979) supplied the three names, which are canonical in theory prose. The field names stay, and so do the notation subscripts.
-
-| Dahlman's name (canonical in theory) | Field name (notation subscript) | What B2B adds |
-|---|---|---|
-| **Search and information** | search | Reachability. |
-| **Bargaining and decision** | consensus | The buyer is a coalition. The bargain is internal, among the decision roles, and external, with the seller over terms, which is contracting. |
-| **Policing and enforcement** | implementation | The buyer cannot police performance until the product is adapted to its environment, so the question becomes whether it will work here. The buyer's adaptation work is an Axiom II investment against this cost, not the cost itself. |
-
-### Axiom I concepts
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **Participation threshold** | The point on one cost above which the buyer does not enter the market, whatever the other two read. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| **Self-serve threshold** | The point on one cost below which the buyer pays it down alone. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| **Position and zone** | Where a cost sits between its own two thresholds, read as self-serve, needs investment, or keeps the buyer out. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Where the sale starts** | The tightest cost, the largest position. Two at the same position are run together. Names the motion. Which cost the seller works first follows the allocation rule, whose default is this one. | [Constitution, Axiom II](./00-tcg-constitution.md), [01-motions.md](./01-motions.md) |
-| **Turnkey** | A market condition: every cost self-serve and nothing specific sunk. It erodes through entry. | [Constitution, Axiom I corollaries](./00-tcg-constitution.md) |
-| **Chaos Trap** | A buyer with no documented workflow, where the product automates the process. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
-| **Akerlof Exit Threshold** | The research form of buyer exit under adverse selection. The framework states exit as the participation threshold. | [costly-signals.md](../02-research/costly-signals.md) |
-| **Jevons Vulnerability** | A channel whose filtering ran on production cost, and which therefore collapses when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
-
-### Axiom II concepts
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **The two conditions** | One per party, $S_b$ and $S_s$. A deal happens when both are positive and no cost keeps the buyer out. | [Constitution, Part II](./00-tcg-constitution.md) |
-| **Price as a transfer** | Price cancels when the two conditions are added, so it is not a transaction cost. Its size against the buyer's spend thresholds still sets who must approve. | [Constitution, Axiom II corollaries](./00-tcg-constitution.md) |
-| **Hold-up wedge** | The hold-up one side fears beyond what the other plans to take. The two conditions as written sum to what the deal creates, $W$, less the hold-up feared, so a deal that creates value can fail one side's condition. A bond, staged fees or an allocated right closes it without changing $W$. | [02-mathematical-models.md](./02-mathematical-models.md) section 1.3 |
-| **Make-or-buy boundary** | $V_{next\_best}$ read as Coase's founding question. A deal closes only when buying beats integrating, net of what transacting costs. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Cost to serve is directional** | The seller's investment falls on whichever cost it pays down, so two markets with the same cost of sale can demand it in different places. | [Constitution, Axiom I](./00-tcg-constitution.md) |
-| **Pursuit** | The seller's condition asked of a population: whether buyers' contract value and frequency can recover the investment their costs demand. | [04-seller-surplus-model.md](./04-seller-surplus-model.md) |
-
-### Axiom III concepts
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **Specific exposure** | Whether a deal sinks anything worth less outside this relationship. The calculator reads it as none or specific. | [Constitution, Axiom III](./00-tcg-constitution.md), [Deal Triage Calculator, Step 2](../../practice/deal-triage-calculator.md) |
-| **Appropriable quasi-rent** | What a party has sunk less what it could recover elsewhere. Whoever sinks it is the exposed party. | [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) |
-| **The gate** | Where nothing specific is sunk and a trial verifies fit, market terms hold. Apparatus below it is over-frictioning. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Frequency** | How often the same two parties transact. One-shot, recurrent, or continuous. With specific exposure, selects the governance form. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Governance Form** | The shape of the arrangement that holds the deal. Market, trilateral, bilateral, or unified. | [05-governance-forms.md](./05-governance-forms.md) |
-| **Stakes corollary** | Every party holding exposed rent, or adjudicating it, needs a stake, including the seller's own agents and the channel. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Williamson Hold-Up** | Once asset-specific investment is sunk, the other party can extract its value. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
-| **Residual Control Rights** | The pre-agreed authority to decide in states no contract specified. | [incomplete-contracts.md](../02-research/incomplete-contracts.md) |
-| **Staged Commitment** | Why commitment to a specific investment must be staged, with a right to stop at each gate. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Real Option** | The economic value of being able to defer an irreversible decision under uncertainty. | [real-options.md](../02-research/real-options.md) |
-| **Three levers** | Discount, take risk back, or verify. A discount never raises the joint surplus. Taking risk back raises it only by what it changes in the seller's conduct and what it reveals about which seller it is, both of which lower the chance of loss. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Friction Allocation Principles** | The four conditions a signal mechanism must satisfy to reduce a gap. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Single Crossing Property** | A signal informs only when it costs the high-quality actor proportionally less. | [costly-signals.md](../02-research/costly-signals.md) |
-| **Cheap Talk** | A signal that fails the Single Crossing Property and therefore carries no information. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| **Reputation Depreciation** | Past signals lose value without intervening evidence of continued delivery, so credibility must be re-earned. The rebuild clause after signature. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Decay Clock** | Value decaying from the trigger while the gaps rebuild, both pushing the conditions toward zero. | [Constitution, Axiom III corollaries](./00-tcg-constitution.md) |
-| **Handoff Rule** | Both deal ledgers must reach the account manager intact, or the seller's half of the policing gap reopens on the receiving side. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
-
-### Artifact vocabulary
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **Contextual Blueprint** | Discovery artifact that reduces Seller Ignorance. | [Enforcement Ledger, Map](../../practice/enforcement-ledger.md) |
-| **Red Team** | Pre-mortem workshop that reduces Buyer Uncertainty. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
-| **Mutual Implementation Plan (MIP)** | The bilateral governance instrument that distributes decision authority and stages commitment. | [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
-| **Sustaining Adoption Review** | The Maintain stage of both deal ledgers, after signature: the handoff, the standing review with the rights each finding invokes, and renewal. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
-| **Count Variance** | The triage counts re-taken at renewal against the counts taken at triage, read across a book beside each outcome. It audits the counter. | [Deal Triage Calculator](../../practice/deal-triage-calculator.md) |
-| **Vested Commission** | Comp structure tying rep payout to outcomes rather than signature. | [05-governance-forms.md](./05-governance-forms.md) section 5 |
-
-### External frameworks
-
-| Term | Identifier | Canonical source |
-|---|---|---|
-| **CFIR** | Implementation-science framework for reading a buyer's organization pre-sale. | [cfir.md](../02-research/cfir.md), which says where each construct is read |
-| **RE-AIM** | Five-dimension framework for post-sale success measurement. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
-| **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
-
-### Retired terms
-
-Kept so older analyses stay readable. Do not use these in new writing.
-
-<!-- vale TCG.RetiredTerms = NO -->
-| Retired term | Use instead |
-|---|---|
-| Law of Asset Specificity (Axiom II until 4.0) | Axiom III, Law of Future Cost. Axiom II is now the Law of Transaction Investment |
-| Law of Uncertainty Inflation (Axiom III until 4.0) | Axiom III, Law of Future Cost |
-| Market level, workflow level, deal level | The three decisions, in time order |
-| Market and deal as Definitions | Ordinary words. Only workflow and decision role are Definitions |
-| Seat, seat map, seat ledger | Decision role, decision-role map, decision-role ledger |
-| Coase's names: search, bargaining, enforcement | Dahlman's names: search and information, bargaining and decision, policing and enforcement |
-| Structural deal | A deal with specific exposure, or a deal outside Turnkey, by meaning |
-| Turnkey deal, as a level below 15 | Turnkey, a market condition |
-| Level, magnitude, the 0 to 30 sum | How much seller investment the deal needs (Axiom II), or specific exposure (Axiom III), by meaning |
-| Direction, shares, dominant component, dominance threshold, Composed | Where the sale starts. Ties are run together |
-| The cost that binds | The tightest cost, where the sale starts |
-| The cost nearest its own threshold | The tightest cost, the largest position |
-| Boundary Condition | The gate |
-| Amplification, the per-component multiplier | Nothing. Gaps feed the chance of future loss |
-| The Surplus equation | The two conditions |
-| Under-frictioned | Unallocated |
-| Mis-composed | Mis-sequenced (a deal) or imitation (an organization) |
-<!-- vale TCG.RetiredTerms = YES -->
-
----
-
 ## Maintaining this file
 
-- **New symbol introduced anywhere:** add a row to the notation index in the same commit.
 - **New concept that two or more directories reference:** add a row to the term index, pointing at its canonical home. Do not define it here. A term used in one file belongs in that file and not here.
 - **A term is renamed or retired:** move the row to the retired table, and add the old name to the retired-terms lint rule, so the rename cannot drift back.
 - **An entry disagrees with its source:** the source wins. Fix the entry.
+- **New symbol:** do not add one. The notation index retires with the math.
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) supplies the axioms and the corollaries most term entries point to.
-- [02-mathematical-models.md](./02-mathematical-models.md) supplies the functional forms. [06-calibration.md](./06-calibration.md) carries every parameter and its provenance.
-- [01-motions.md](./01-motions.md) derives the motions from where the sale starts and carries the incumbent-vocabulary map.
+- [00-tcg-constitution.md](./00-tcg-constitution.md) states the twelve claims most entries point to.
+- [01-motions.md](./01-motions.md) carries the motions and the incumbent-vocabulary map.
+- [02-mathematical-models.md](./02-mathematical-models.md) holds the symbols the notation index lists.
