@@ -8,25 +8,24 @@ A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market
 
 | Directory | Function |
 |---|---|
-| `theory/` | Develop and pressure-test the framework. Axioms, equations, academic backing. |
-| `practice/` | Operationalize theory. The instruments the axioms name and the measurement tools the tests assert. |
+| `theory/` | Develop and pressure-test the framework. Axioms, claims, academic backing. |
+| `practice/` | Operationalize theory. The instruments the claims name. |
 | `publishing/` | Turn the framework into public writing. Voice guide, writing protocols, content generators. |
-| `models/` | Executable forms of the equations, the tests that check the worked examples, and the figure generator. Python, no dependencies. |
-| `tools/` | The two linters and the Vale style that keep the other directories consistent. |
+| `tools/` | The two linters and the Vale style that keep the other directories consistent. Python, no dependencies. |
 
 ## Standing scope decisions
 
 Recorded in the Constitution 5.0 proposal, now in git history (`git show b5b3386:CONSTITUTION-5.0-PROPOSAL.md`, section 6).
 
 - **The math is scaffolding.** It keeps the argument honest and the falsifiers checkable, and it is not shown in public writing.
-- **`06-calibration.md` and `models/` stay only while they help defend a claim.** Code that checks a worked example passes. Simulation with invented coefficients does not.
+- **Supporting files stay only while they help defend a claim.** The trim applied this to `models/` and to the parameter tables in `06-calibration.md`, which retired in pass 5.
 - **The audience is founders and revenue leaders, held to academic citation standards.** Health tech supplies the examples, built from public patterns.
 - **Every falsifier is written for others to run.** The author's experience supplies hypotheses, not evidence.
 
 Recorded in `TRIM-PROPOSAL.md` on 2026-11-10:
 
 - **The goal is a differentiated point of view for founders and revenue leaders.** The twelve claims in the Constitution are the ones the author holds, most of them already published. Material that defends a claim sits behind it. Do not add machinery to answer an objection unless asked.
-- **The math and `models/` retire in pass 5 of the trim**, except `02-mathematical-models.md` sections 1.1 to 1.4, which show that price is a transfer.
+- **The math and `models/` retired in pass 5 of the trim.** `02-mathematical-models.md` keeps sections 1.1 to 1.4, which show that price is a transfer. `06-calibration.md` is now a list of predictions and tests.
 
 ## Conceptual architecture
 
@@ -38,7 +37,7 @@ The premise: buying costs the buyer three things beyond price (search, consensus
 - **II, Transaction Investment. Time1, contracting.** The buyer asks whether its organization can agree and what the purchase will take. The seller asks whether the deal is worth what it takes. Claims 6 to 9: a purchase is plug-in or built-in, implementation is a fear that acts through the buyer's own people, a discount moves money and lowers no cost, and work skipped here moves to Time2 and grows.
 - **III, Future Cost. Time2, renewal.** The buyer asks whether it worked here and whether it is free to leave. The seller asks whether the relationship pays. Claims 10 to 12: whether the product worked here decides renewal, lock-in earned by building together holds while lock-in made by control is hold-up, and a contract built for partnership does what a discount cannot.
 
-**A trim is in progress.** `TRIM-PROPOSAL.md` at the root gives a verdict for every file and seven passes of work. Pass 1 rewrote the Constitution, the root README and this file. Pass 2 rewrote `01-motions.md` and the glossary's term index. Pass 3 rewrote the Market Reading and the Deal Triage Calculator. Pass 4 folded `04-seller-surplus-model.md` and `05-governance-forms.md` into the Constitution's claims and removed both, with `08-from-axioms-to-instruments.md`. Until a file's pass, it may still describe ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
+**A trim is in progress.** `TRIM-PROPOSAL.md` at the root gives a verdict for every file and seven passes of work. Pass 1 rewrote the Constitution, the root README and this file. Pass 2 rewrote `01-motions.md` and the glossary's term index. Pass 3 rewrote the Market Reading and the Deal Triage Calculator. Pass 4 folded the seller surplus model and the governance forms into the Constitution's claims and removed both files, with the file that derived the instruments. Pass 5 cut the math file to sections 1.1 to 1.4, removed `models/`, rewrote `06-calibration.md` as predictions and tests, and shortened the open questions. Until a file's pass, it may still describe ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 
@@ -72,22 +71,20 @@ Apply the voice rules in `publishing/02-tools/voice-guide.md`. Vale enforces mos
 
 ## Drift rules
 
-Each of these has a check behind it. Do the step in the same commit as the change.
+Do each step in the same commit as the change.
 
 - **New headline statistic in `theory/`**: add a row to `theory/02-research/audits/citation-provenance-audit.md` with an honest verification status. When two files disagree on a number, record it there first, then fix both against the primary source.
-- **New coefficient, threshold or band edge**: declare it in `theory/01-foundation/06-calibration.md` with its provenance. Every parameter is unfitted and must say so. Do not fit to synthetic data. The test suite fails on an undeclared constant.
-- **Changing an equation**: the document is the specification and the code is the bug. Edit the document, then `models/tcg_models.py`, then rerun `make_figures.py` if the Constitution plots it, then fix any worked example whose result moved. `models/README.md` has the detail.
+- **New coefficient, threshold or band edge**: do not add one. The Constitution states no measured quantity. A prediction that only evidence can settle goes in `theory/01-foundation/06-calibration.md`, under a number that is never reused.
+- **Changing the accounting**: `02-mathematical-models.md` sections 1.1 to 1.4 hold the only equations left. The price-window figure under claim 8 is a fixed image, so a change there means redrawing it by hand.
 - **Renaming anything canonical**: grep the whole repo for the old term, add it to `swap:` in `tools/linting/styles/TCG/RetiredTerms.yml`, and bump the Constitution version and the root README footer together. Then check descriptions, not just names: a paragraph can use every current term and still describe a superseded axiom. `tools/linting/README.md` has the detail.
 
 ## Checking your work
 
-Run all five before finishing an edit:
+Run all three before finishing an edit:
 
 ```bash
 python3 tools/linting/check_playbook.py && \
-python3 tools/linting/check_frontmatter.py && \
-python3 models/test_tcg_models.py && \
-python3 models/make_figures.py --check && vale .
+python3 tools/linting/check_frontmatter.py && vale .
 ```
 
 They also run in `.githooks/pre-commit`, which is active only after `git config core.hooksPath .githooks`, and in `.github/workflows/checks.yml` on every pull request and push to `main`.

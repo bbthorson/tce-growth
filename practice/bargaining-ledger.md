@@ -77,7 +77,7 @@ A role counts as closed when its occupant has stated one to one and has received
 
 $$F_{consensus} = \alpha \cdot N^{\beta} \cdot (1 + \text{Var}) \cdot (1 + \gamma \cdot TO)$$
 
-$N$ is the roles that can say no. Var is the variance of the Direction column across them, read from the measure. Where no role reads −1, compute it as though one more unstated role read −1, because the casualty has not been met. $TO$, from 1 to 5, scores how far the technical evaluators diverge on architecture: 1 is shared standards, 3 is disagreement on integration pattern or hosting, 5 is a split philosophy such as cloud against strict on-premises. It is the one ordinal rating left in the field instruments, so read it as a rank. [06-calibration.md](../theory/01-foundation/06-calibration.md) declares $\alpha$, $\beta$, $\gamma$ and the band edges as chosen.
+$N$ is the roles that can say no. Var is the variance of the Direction column across them, read from the measure. Where no role reads −1, compute it as though one more unstated role read −1, because the casualty has not been met. $TO$, from 1 to 5, scores how far the technical evaluators diverge on architecture: 1 is shared standards, 3 is disagreement on integration pattern or hosting, 5 is a split philosophy such as cloud against strict on-premises. It is the one ordinal rating left in the field instruments, so read it as a rank. $\alpha$, $\beta$, $\gamma$ and the band edges are chosen and unmeasured.
 
 | $F_{consensus}$ | Reading | What it calls for |
 |---|---|---|

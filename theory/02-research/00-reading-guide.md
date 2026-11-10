@@ -99,7 +99,7 @@ Plus the Constitution 5.0 layer, added 2026-11 as the evidence for the 5.0 propo
 
 Plus the adversarial layer:
 
-19. **[Adversarial Review, 2026-11](./adversarial-review-2026-11.md)** — Read last. An external review set out to break seven claims. Records what the Constitution already answered, the five objections that survive, about thirty uncited sources, and which of the review's own figures are not fit to cite. Opened open questions 37 to 43, which now wait on data in the [calibration list](../01-foundation/06-calibration.md).
+19. **[Adversarial Review, 2026-11](./adversarial-review-2026-11.md)** — Read last. An external review set out to break seven claims. Records what the Constitution already answered, the five objections that survive, about thirty uncited sources, and which of the review's own figures are not fit to cite. Opened open questions 37 to 43, most of which now wait on data in [06-calibration.md](../01-foundation/06-calibration.md).
 20. **[Research Review, 2026-11-09](./research-review-2026-11-09.md)** — Read after item 19. Tests novelty and each axiom against the literature, with how far each source was read, and records what changed in 6.2.
 
 ---
@@ -121,5 +121,5 @@ Each file's `operationalizes` field carries the same mapping. The Constitution's
 This is a citation index, not a theoretical synthesis. The synthesis lives elsewhere:
 
 - **Three axioms and their derivations:** [Constitution](../01-foundation/00-tcg-constitution.md), Parts I and II.
-- **The two conditions and the failure modes table:** Constitution Part II. The per-axiom figures are in Part I, generated from [`models/`](../../models/).
+- **The two conditions and the failure modes table:** Constitution Part II. The price-window figure is under claim 8, as a fixed image.
 - **Operational tools** (rubric, artifacts): [`practice/`](../../practice/).

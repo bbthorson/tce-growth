@@ -117,7 +117,7 @@ swap:
   ilg_models: tcg_models
   styles/ILG: styles/TCG
   vale ILG\.: "vale TCG."
-  ax\^2: "nothing; the reduced form y = a gap^2 + c was retired in Constitution 4.0 (02-mathematical-models.md section 7)"
+  ax\^2: "nothing; the reduced form y = a gap^2 + c was retired in Constitution 4.0 (the record is in git history)"
   amplified by the bilateral information asymmetry: "exposed, through the chance of future loss, to what each party cannot verify (Constitution 4.0 retired the multiplier)"
   The teaching equation uses a global multiplier: "the two conditions, in which the gaps feed future loss and multiply no cost (Constitution 4.0)"
   global multiplier: "the chance of future loss (Constitution 4.0 retired every cost multiplier)"
@@ -204,6 +204,10 @@ swap:
   04-glossary-and-notation\.md: 03-glossary-and-notation.md
   05-seller-surplus-model\.md: "Constitution claims 9 and 11 (the seller surplus model was folded in and removed in the 2026-11 trim)"
   07-governance-forms\.md: "Constitution claims 5, 7, 11 and 12 (the governance forms file was folded in and removed in the 2026-11 trim)"
+  04-seller-surplus-model\.md: "Constitution claims 9 and 11 (folded in and removed in the 2026-11 trim)"
+  05-governance-forms\.md: "Constitution claims 5, 7, 11 and 12 (folded in and removed in the 2026-11 trim)"
+  08-from-axioms-to-instruments\.md: "no replacement; each instrument states its own purpose (removed in the 2026-11 trim)"
+  models/tcg_models\.py: "no replacement; the code retired with the math in the 2026-11 trim"
   08-calibration\.md: 06-calibration.md
   # Constitution v2.0 (2026-09). Governance stopped being an axiom and became a
   # corollary of Axiom II, the Law of Asset Specificity, which is where

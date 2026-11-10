@@ -30,7 +30,7 @@ The Market Reading and the Deal Triage Calculator match Constitution 7.0. A *plu
 
 ## Quantitative instruments
 
-Two instruments convert deal observations into comparable numbers, each a quantity the axioms name. Each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
+Two instruments convert deal observations into comparable numbers, each a quantity the axioms name. Each ranks deals against each other, and none predicts a close date. Every parameter they use is chosen and unmeasured. Pass 7 of the trim drops the arithmetic.
 
 | Instrument | Measures | Run it when |
 |---|---|---|
@@ -53,7 +53,7 @@ Each file below is in git history. What it carried that the axioms still need no
 |---|---|
 | Contextual Blueprint, Red Team Protocol, Mutual Implementation Plan, Milestone Valuation Model, Bilateral Asymmetry Scorecard | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, and its policing gap |
 | Consensus Friction Calculator, and the Blueprint's and Red Team's stakeholder sections | The [Bargaining Ledger](./bargaining-ledger.md) |
-| Friction Efficiency Index | Its allocation coverage ratio, in the Enforcement Ledger, and its test of Axiom III's allocation clause, in [06-calibration.md](../theory/01-foundation/06-calibration.md) section 4. The other three measures and the composite changed no decision on a deal. |
+| Friction Efficiency Index | Its allocation coverage ratio, in the Enforcement Ledger, and its test of Axiom III's allocation clause, which is in git history with the calibration tables. The other three measures and the composite changed no decision on a deal. |
 | CFIR Field Mapping | [cfir.md](../theory/02-research/cfir.md), section "Where each construct is read" |
 
 ---

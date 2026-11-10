@@ -1,4 +1,4 @@
-# Runs the same five checks as .githooks/pre-commit, so commits made where the
+# Runs the same three checks as .githooks/pre-commit, so commits made where the
 # hook is not active (cloud sessions, fresh clones) are still checked before merge.
 name: checks
 
@@ -30,12 +30,6 @@ jobs:
 
       - name: Frontmatter and version parity
         run: python3 tools/linting/check_frontmatter.py
-
-      - name: Worked examples reproduce from the models
-        run: python3 models/test_tcg_models.py
-
-      - name: Figures match their equations
-        run: python3 models/make_figures.py --check
 
       - name: Vale
         run: vale .

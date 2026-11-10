@@ -41,7 +41,6 @@ The theory is twelve claims, each with a test that could fail. None is confirmed
 | **[theory/](./theory/)** | `theory/01-foundation/` + `theory/02-research/` | The Constitution and what backs it. |
 | **[practice/](./practice/)** | `practice/` | The instruments, one or more per time. |
 | **[publishing/](./publishing/)** | `publishing/02-tools/` | The voice guide, the writing protocols, and the published posts kept verbatim. |
-| **[models/](./models/)** | `models/` | Equations in code, with their tests. Due to retire with the math they check. |
 | **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
 
 **A trim is in progress.** Constitution 7.0 rewrote the theory around the twelve claims on 2026-11-10. The other files are being brought into line in passes, and until a file's pass it may still describe ideas 7.0 retired. [TRIM-PROPOSAL.md](./TRIM-PROPOSAL.md) lists the verdict on each file and the order of work.
@@ -74,9 +73,7 @@ To run them by hand:
 
 ```bash
 python3 tools/linting/check_playbook.py && \
-python3 tools/linting/check_frontmatter.py && \
-python3 models/test_tcg_models.py && \
-python3 models/make_figures.py --check && vale .
+python3 tools/linting/check_frontmatter.py && vale .
 ```
 
 Theory changes flow downstream to practice and publishing, never the reverse. [CLAUDE.md](./CLAUDE.md) lists the drift rules: what must be recorded in the same commit as a new statistic, a rename or an equation change.

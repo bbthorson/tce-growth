@@ -117,7 +117,7 @@ Both halves run over the same rows, so the seller cannot shrink the buyer's half
 | Above 0.25, up to 0.625 | Moderate | Hold final pricing until the system and resource rows are evidenced. |
 | Above 0.625 | High | Commercial hold. No terms until Map and Test have run again. |
 
-**A writeback row without Map evidence holds the level at Moderate or above,** whatever the fraction, because one unmapped write into the buyer's record outweighs any number of evidenced setup rows. [06-calibration.md](../theory/01-foundation/06-calibration.md) records the edges as chosen.
+**A writeback row without Map evidence holds the level at Moderate or above,** whatever the fraction, because one unmapped write into the buyer's record outweighs any number of evidenced setup rows. The edges are chosen and unmeasured.
 
 ---
 

@@ -51,6 +51,6 @@ CFIR names why an implementation succeeds in one organization and fails in anoth
 
 **Not read by any instrument.** *Relative Priority* has no row: the deal record dates the economic event, and nothing reads how fast its urgency decays. *Cosmopolitanism*, how far the buyer benchmarks against outside peers, has no row. Neither has a decision that turns on it yet, so neither is a gap to fill until one does.
 
-**Frame alignment has no instrument.** Snow's four processes move what a stakeholder believes. Under the second standing assumption that moves recognized value, and the Bargaining Ledger answers a reservation with a term that changes the plan, the scope, the sequence or the money instead. [Open question 32](../01-foundation/06-calibration.md), now in calibration section 4.1, is the standing objection to that choice.
+**Frame alignment has no instrument.** Snow's four processes move what a stakeholder believes. Under the second standing assumption that moves recognized value, and the Bargaining Ledger answers a reservation with a term that changes the plan, the scope, the sequence or the money instead. [Item 32](../01-foundation/06-calibration.md) in the list of predictions is the standing objection to that choice.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
