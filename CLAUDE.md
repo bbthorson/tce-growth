@@ -19,7 +19,7 @@ A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market
 Recorded in the Constitution 5.0 proposal, now in git history (`git show b5b3386:CONSTITUTION-5.0-PROPOSAL.md`, section 6).
 
 - **The math is scaffolding.** It keeps the argument honest and the falsifiers checkable, and it is not shown in public writing.
-- **`06-calibration.md`, `08-from-axioms-to-instruments.md` and `models/` stay only while they help defend a claim.** Code that checks a worked example passes. Simulation with invented coefficients does not.
+- **`06-calibration.md` and `models/` stay only while they help defend a claim.** Code that checks a worked example passes. Simulation with invented coefficients does not.
 - **The audience is founders and revenue leaders, held to academic citation standards.** Health tech supplies the examples, built from public patterns.
 - **Every falsifier is written for others to run.** The author's experience supplies hypotheses, not evidence.
 
@@ -38,7 +38,7 @@ The premise: buying costs the buyer three things beyond price (search, consensus
 - **II, Transaction Investment. Time1, contracting.** The buyer asks whether its organization can agree and what the purchase will take. The seller asks whether the deal is worth what it takes. Claims 6 to 9: a purchase is plug-in or built-in, implementation is a fear that acts through the buyer's own people, a discount moves money and lowers no cost, and work skipped here moves to Time2 and grows.
 - **III, Future Cost. Time2, renewal.** The buyer asks whether it worked here and whether it is free to leave. The seller asks whether the relationship pays. Claims 10 to 12: whether the product worked here decides renewal, lock-in earned by building together holds while lock-in made by control is hold-up, and a contract built for partnership does what a discount cannot.
 
-**A trim is in progress.** `TRIM-PROPOSAL.md` at the root gives a verdict for every file and seven passes of work. Pass 1 rewrote the Constitution, the root README and this file. Pass 2 rewrote `01-motions.md` and the glossary's term index. Pass 3 rewrote the Market Reading and the Deal Triage Calculator. Until a file's pass, it may still describe ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
+**A trim is in progress.** `TRIM-PROPOSAL.md` at the root gives a verdict for every file and seven passes of work. Pass 1 rewrote the Constitution, the root README and this file. Pass 2 rewrote `01-motions.md` and the glossary's term index. Pass 3 rewrote the Market Reading and the Deal Triage Calculator. Pass 4 folded `04-seller-surplus-model.md` and `05-governance-forms.md` into the Constitution's claims and removed both, with `08-from-axioms-to-instruments.md`. Until a file's pass, it may still describe ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 

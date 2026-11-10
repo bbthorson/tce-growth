@@ -50,7 +50,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Axiom II — Law of Transaction Investment** — Williamson's ex ante costs, drafting, negotiating and safeguarding the agreement, are what today's investment by buyer or seller pays down.
 - **Axiom III — Law of Future Cost** — direct theoretical basis. Williamson's ex post costs, and the asset specificity that creates them, are the future cost. Frequency is the governance-form selector.
 - **The gate** (Axiom III corollary) — Williamson's result that nonspecific investment takes market governance at any frequency is the gate: with nothing specific sunk and a trial that verifies fit, market terms hold.
-- **Governance Form** (Axiom III corollary) — the four structures above, mapped onto specificity and frequency in [05-governance-forms.md](../01-foundation/05-governance-forms.md). The MIP is the bilateral form.
+- **Claim 12** — the staged plan with a standing review is the bilateral structure above. Constitution 7.0 retired the table that mapped all four onto specificity and frequency.
 - **Williamson Hold-Up** — direct.
 - **Axiom III — Law of Future Cost, governance corollary** — bilateral hostages and relational contracts are the mechanism behind the stakes corollary and behind mutual sanction at each renewal boundary. A hostage makes the seller's commitment credible. Taken alone it moves future loss from buyer to seller, which the three-levers corollary counts as a transfer, except for what it changes in the seller's conduct and what it reveals about which seller it is.
 

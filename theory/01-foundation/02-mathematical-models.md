@@ -14,6 +14,9 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 The Constitution is axioms-first. It states that each cost has a threshold that keeps the buyer out, that each party goes ahead only when its own share of today's investment is covered by its own return, and that what a party sinks exposes it to what it cannot verify or enforce. It does not say *by how much*, or *as a function of what*. This file supplies those functional forms.
 
+> [!NOTE]
+> **Three files this one cites were removed on 2026-11-10** in pass 4 of the trim: `04-seller-surplus-model.md`, `05-governance-forms.md` and `08-from-axioms-to-instruments.md`. Their names below are plain text, and each is in git history (`git show 8b84891:theory/01-foundation/<file>`). This file retires in pass 5, except sections 1.1 to 1.4.
+
 Nothing here introduces new claims. Every model traces to a term the Constitution already defines. If a model here cannot be traced to an axiom, it does not belong in this file either.
 
 > [!IMPORTANT]
@@ -35,7 +38,7 @@ $$S_b = V_{switch}(t) - P - \sum_{k} I^b_k - L_b \qquad S_s = P - C_{deliver} - 
 | $I^b_k$, $I^s_k$ | What the buyer and the seller invest today against cost $k \in \{search,\; consensus,\; implementation\}$ (Axiom II) |
 | $L_b$, $L_s$ | Each party's expected future loss (Axiom III), section 5 |
 
-A deal closes when $S_b > 0$, $S_s > 0$, no cost sits above its participation threshold, and no payer carries more than its capacity across the costs it carries (section 6). Recurrence enters through $P$ and $C_{deliver}$ summed over expected renewals, which [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7 writes out with a retention probability and a discount rate.
+A deal closes when $S_b > 0$, $S_s > 0$, no cost sits above its participation threshold, and no payer carries more than its capacity across the costs it carries (section 6). Recurrence enters through $P$ and $C_{deliver}$ summed over expected renewals, which `04-seller-surplus-model.md` section 7 writes out with a retention probability and a discount rate.
 
 The seller's condition is the seller surplus model's $S_{seller} = p_{close}(V_{contract} - C_{deliver}) - C_{invest}$ conditional on a close, with $C_{invest}$ split by the cost it pays down and the future loss written out instead of left inside $p_{close}$.
 
@@ -81,7 +84,7 @@ $$\Delta(S_b + S_s) = w\left(\theta^b_k - \theta^s_k\right) - \Delta L_b - \Delt
 
 The first term is specialization: positive when the seller does the work more cheaply. The second and third are Axiom III, entering with a minus because each condition subtracts its loss. The move can lower the buyer's future loss, by catching misfit in use, which raises the joint surplus. It also raises the seller's, by making the seller's investment specific to this buyer, which lowers it. With equal unit costs and no change in future loss, the move only changes the split. It still closes deals, because it lifts $S_b$ above zero whenever $S_s$ has room to fall.
 
-A forward-deployed engineer is the case where all three terms move. [04-seller-surplus-model.md](./04-seller-surplus-model.md) carries the seller's side.
+A forward-deployed engineer is the case where all three terms move. `04-seller-surplus-model.md` carries the seller's side.
 
 ### 1.5 Where the seller's next dollar goes
 
@@ -172,7 +175,7 @@ $$\hat{\Delta}_{search} = 1 - \frac{e_{search}}{m_{search}}, \qquad \hat{\Delta}
 
 Where $m_k$ counts the items in scope and $e_k$ counts those with evidence attached. An instrument emitting no items leaves its gap undefined rather than zero.
 
-**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md) section 2.2 carries the argument. Earlier calculators read a proxy, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. The Deal Triage Calculator 9.0 retired it, and [07-open-questions.md](./07-open-questions.md) item 2 records that the decision-role map that reads the gap is not yet built.
+**The bargaining gap has one definition:** the share of decision roles whose occupant has stated their own exposure. `08-from-axioms-to-instruments.md` section 2.2 carries the argument. Earlier calculators read a proxy, the share with a documented measured objective, which is the seller's uncertainty about them rather than theirs about themselves. The Deal Triage Calculator 9.0 retired it, and [07-open-questions.md](./07-open-questions.md) item 2 records that the decision-role map that reads the gap is not yet built.
 
 **The bargaining gap is not the same quantity as incentive variance.** $\text{Var}(I_i)$ in section 3.2 measures how far apart the decision roles' interests actually sit, and it sets the size of the bargaining cost. The gap measures what each role cannot yet see about its own exposure, and it feeds the chance of future loss. A committee can be genuinely aligned and unable to prove it, which is cheap to fix, or genuinely split and unaware, which is the expensive case and the one that surfaces late.
 
@@ -301,9 +304,9 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 
 $$L_p = Q_p \cdot \pi_p, \qquad Q_p = C^{p}_{invest} - R^{p}_{redeploy}, \qquad p \in \{b, s\}$$
 
-$Q_p$ is the appropriable quasi-rent of Klein, Crawford and Alchian: what party $p$ has sunk, less what it could recover by redeploying it elsewhere. [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 3 defines it for the seller, and the definition reads the same for the buyer, whose non-redeployable investment is the integration built and the workflows rewired to fit this product.
+$Q_p$ is the appropriable quasi-rent of Klein, Crawford and Alchian: what party $p$ has sunk, less what it could recover by redeploying it elsewhere. `04-seller-surplus-model.md` section 3 defines it for the seller, and the definition reads the same for the buyer, whose non-redeployable investment is the integration built and the workflows rewired to fit this product.
 
-$Q_p$ is what a failure can cost, and $\pi_p$ the expected share of it lost, through a failed fit or through what the other side takes (section 5.5). A larger $Q_p$ raises what a failed fit costs, and once it outgrows the other side's stake it makes hold-up possible, so $\pi_p$ rises with it there. Where the bond condition holds, a larger $Q_b$ also raises what leaving costs, so a buyer with more sunk stays longer on a failing fit and the failure shows first as stalled use and contraction ([05-governance-forms.md](./05-governance-forms.md) section 1, and the switching-cost evidence in [tce-empirical-record.md](../02-research/tce-empirical-record.md)). $L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use. It is not a second charge for the investment Axiom II already counted, which is why it sits on the return side: $Q_p$ bounds it because it is the most the other side can extract or a failure can destroy.
+$Q_p$ is what a failure can cost, and $\pi_p$ the expected share of it lost, through a failed fit or through what the other side takes (section 5.5). A larger $Q_p$ raises what a failed fit costs, and once it outgrows the other side's stake it makes hold-up possible, so $\pi_p$ rises with it there. Where the bond condition holds, a larger $Q_b$ also raises what leaving costs, so a buyer with more sunk stays longer on a failing fit and the failure shows first as stalled use and contraction (`05-governance-forms.md` section 1, and the switching-cost evidence in [tce-empirical-record.md](../02-research/tce-empirical-record.md)). $L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use. It is not a second charge for the investment Axiom II already counted, which is why it sits on the return side: $Q_p$ bounds it because it is the most the other side can extract or a failure can destroy.
 
 ### 5.2 The chance of loss
 
@@ -383,7 +386,7 @@ Section 5.2 reads the chance of loss off the gaps a party cannot close, which is
 
 **The renegotiation.** If the two parties part at a boundary, each loses what it sank and cannot redeploy, so continuing is worth $Q_b + Q_s$ more to the pair than parting. Where the contract is silent, the pair splits that amount when it renegotiates. Write $\omega$ for the share the other side, $-p$, captures. Party $p$ expected to recover its whole quasi-rent and recovers $(1 - \omega)(Q_p + Q_{-p})$, so the most the other side can take from it is $\omega Q_p - (1 - \omega) Q_{-p}$.
 
-Forcing the renegotiation also costs the other side something: the future surplus it puts at risk by souring the relationship, $F_{-p}$, read in contract value off the repeated game in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7. It forces the renegotiation only when the gain exceeds that cost, so party $p$'s hold-up loss is
+Forcing the renegotiation also costs the other side something: the future surplus it puts at risk by souring the relationship, $F_{-p}$, read in contract value off the repeated game in `04-seller-surplus-model.md` section 7. It forces the renegotiation only when the gain exceeds that cost, so party $p$'s hold-up loss is
 
 $$H_p = \max\left(0,\; \omega\, Q_p - (1 - \omega)\, Q_{-p} - F_{-p}\right)$$
 
@@ -403,7 +406,7 @@ $$\pi_p = 1 - \left(1 - \pi^{gap}_p\right)\left(1 - \frac{H_p}{Q_p}\right), \qqu
 
 So $L_p = Q_p \pi_p$ keeps its form and its bound, and $H_p / Q_p$ never exceeds $\omega$. Where the bond condition holds, $H_p = 0$ and $\pi_p$ is the gap form alone, which is what every worked example in the repository assumes.
 
-**The split is a placeholder.** $\omega = 0.5$ is the symmetric split Grossman and Hart (1986) use for the renegotiation, chosen and not fitted, and it describes a renegotiation with nothing allocated in advance. $F_{-p}$ is named and not valued. It is also the variable under the three frequency readings, which [05-governance-forms.md](./05-governance-forms.md) section 1 reads off this condition.
+**The split is a placeholder.** $\omega = 0.5$ is the symmetric split Grossman and Hart (1986) use for the renegotiation, chosen and not fitted, and it describes a renegotiation with nothing allocated in advance. $F_{-p}$ is named and not valued. It is also the variable under the three frequency readings, which `05-governance-forms.md` section 1 reads off this condition.
 
 *Falsifier.* Among deals where both parties sink specific investment, forced renegotiations and terminations should track the imbalance between the two quasi-rents against the value left in the relationship, and not the total sunk. If they rise with the total at a fixed imbalance, the condition is wrong.
 
@@ -418,7 +421,7 @@ $$A_p = \max\left(0,\; \omega\, Q_p - (1 - \omega)\, Q_{-p} - F_{-p}\right), \qq
 $A_p$ is the hold-up loss $H_p$ read at the moment of sinking. $\alpha_p$ is the share of $p$'s quasi-rent that needs an allocation, and it never exceeds $\omega$.
 
 - **The requirement rises with the imbalance, and not with specificity as such.** At a fixed $Q_{-p}$ and $F_{-p}$, $\alpha_p$ rises with $Q_p$ toward $\omega$, which is the axiom's earlier claim in the case where one party sinks alone. When both sink evenly, $\alpha_p$ falls toward zero and the bond does the work. Constitution 5.1 states the mechanism this way.
-- **Staging keeps the requirement small.** Read at each gate on the quasi-rents sunk so far, $A_p$ stays near zero while the two sides' investments grow together, which is what [05-governance-forms.md](./05-governance-forms.md) section 5 means by the two stakes growing together. A gate where one side sinks alone is the gate that needs the allocation.
+- **Staging keeps the requirement small.** Read at each gate on the quasi-rents sunk so far, $A_p$ stays near zero while the two sides' investments grow together, which is what `05-governance-forms.md` section 5 means by the two stakes growing together. A gate where one side sinks alone is the gate that needs the allocation.
 - **Allocation answers hold-up, and not a failed fit.** The fit term $Q_p \pi^{gap}_p$ is lowered by verification and by staging (section 5.4), and moved by a guarantee.
 
 The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s allocation coverage ratio reads whether an allocation was made. $\alpha_p$ says how much was needed.
@@ -435,12 +438,12 @@ $\sigma_p$ is the share of the gap closed in advance. It rises with $Q_p$, becau
 
 ### 5.7 Account management is the seller's maintenance
 
-Account management is a seller function and a seller investment, justified by the seller's condition like any other. It is $C_{sustain}$ in [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7, and what it protects is the seller's margin at the next boundary, its stake $F_s$ from section 5.5. Write its cost as $c_\eta$ per unit of $\eta$ each period, and read the chance the buyer does not renew as rising with the held gap on the form of section 5.2. The seller then funds the rate that maximizes $F_s\left(1 - \pi(\hat{\Delta}^*)\right) - c_\eta \eta$:
+Account management is a seller function and a seller investment, justified by the seller's condition like any other. It is $C_{sustain}$ in `04-seller-surplus-model.md` section 7, and what it protects is the seller's margin at the next boundary, its stake $F_s$ from section 5.5. Write its cost as $c_\eta$ per unit of $\eta$ each period, and read the chance the buyer does not renew as rising with the held gap on the form of section 5.2. The seller then funds the rate that maximizes $F_s\left(1 - \pi(\hat{\Delta}^*)\right) - c_\eta \eta$:
 
 $$\eta^* = \sqrt{\frac{(1 - \pi_0)\, F_s\, \gamma}{c_\eta}} - \gamma, \qquad \eta^* > 0 \;\text{ only when }\; (1 - \pi_0)\, F_s > c_\eta\, \gamma$$
 
 - **Below a threshold the seller funds none.** Where the margin at stake does not cover the cost of keeping pace with the rebuild, the account is unmaintained. Pooled or automated customer success below some contract value follows rather than being assumed.
-- **With no stake there is no maintenance.** At $F_s = 0$, a one-shot deal by section 1 of [05-governance-forms.md](./05-governance-forms.md), the seller maintains nothing, and the account follows the unmaintained curve.
+- **With no stake there is no maintenance.** At $F_s = 0$, a one-shot deal by section 1 of `05-governance-forms.md`, the seller maintains nothing, and the account follows the unmaintained curve.
 - **Spend rises slower than the stake.** Here as its square root.
 - **Fast drift can make maintenance not worth funding.** $\eta^*$ rises with $\gamma$ and then falls, to zero at $\gamma = (1 - \pi_0) F_s / c_\eta$. With no drift there is nothing to maintain, and with very fast drift no affordable rate holds the gap. Past the peak the seller does better to lower $\gamma$ than to chase it.
 
@@ -448,7 +451,7 @@ $$\eta^* = \sqrt{\frac{(1 - \pi_0)\, F_s\, \gamma}{c_\eta}} - \gamma, \qquad \et
 
 The threshold and the zero at no stake follow from any maintenance cost that is positive at the margin. The rise and fall in $\gamma$ follows from the two limits. The square root is illustrative, from the proportional, linear and straight-line forms, and $c_\eta$ is named and not valued.
 
-Fit drift is weighed against the same stake. Re-adaptation and an allocated change process are seller investments when the arrangement puts them on the seller, and the seller funds them while the margin they protect covers them. The account manager holds a decision role inside the seller, so by [05-governance-forms.md](./05-governance-forms.md) section 5 its pay needs a stake at the renewal it maintains. The buyer maintains its own side, the owner of its workflow, out of its own condition, and that is not account management.
+Fit drift is weighed against the same stake. Re-adaptation and an allocated change process are seller investments when the arrangement puts them on the seller, and the seller funds them while the margin they protect covers them. The account manager holds a decision role inside the seller, so by `05-governance-forms.md` section 5 its pay needs a stake at the renewal it maintains. The buyer maintains its own side, the owner of its workflow, out of its own condition, and that is not account management.
 
 ### 5.8 Separation in a market
 
@@ -543,7 +546,7 @@ Until then, treat every output as a structured comparison between deals rather t
 
 - [00-tcg-constitution.md](./00-tcg-constitution.md) — The axioms these models serve. Part II carries the two conditions.
 - [01-motions.md](./01-motions.md) — Motion selection, which consumes the positions in section 6.
-- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's condition in full, including the repeated game.
+- `04-seller-surplus-model.md` — The seller's condition in full, including the repeated game.
 - [Enforcement Ledger](../../practice/enforcement-ledger.md) — Field instrument producing the implementation gap.
 - [Bargaining Ledger](../../practice/bargaining-ledger.md) — Field instrument producing $F_{consensus}$.
 - [Enforcement Ledger](../../practice/enforcement-ledger.md) — Its Stage column applies section 5.4 to gate design.

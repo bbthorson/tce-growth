@@ -12,14 +12,14 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 Version: 1.0
 Goal: On one deal, close the bargaining gap one decision role at a time, and settle an arrangement that holds each exposed role once the investment is sunk. The ledger is two documents: a **private decision-role map**, filled one to one and never shared, and a **shared arrangement record**, which lists terms and names no role. Where the sale starts at bargaining, it adds a safeguard inside the buyer, because no contract between the two firms binds the role whose budget the change cuts.
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md). Axiom III's bargaining row: map who loses what, one role at a time, and collect objections apart before any room convenes. Axiom I for the count and the spend thresholds that add approvers. The derivation is [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 2.2, 4 and 5, the safeguard is [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 2, and the functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.
+**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md). Axiom III's bargaining row: map who loses what, one role at a time, and collect objections apart before any room convenes. Axiom I for the count and the spend thresholds that add approvers. The safeguard inside the buyer is claim 7 of Constitution 7.0, and the functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.
 
 | | |
 |---|---|
 | **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading. The [Enforcement Ledger](./enforcement-ledger.md)'s rows, where the purchase is built-in. |
 | **Outputs** | The decision-role map, the bargaining gap, the size of the bargaining cost and its band, the arrangement record, and the safeguard inside the buyer where one is needed. |
 | **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage column or the contract. The map is re-read in the [Sustaining Adoption Review](./adoption-review.md). |
-| **Owner** | The account executive, staked on retention as [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5 derives, or a reviewer who is. The map stays with the seller's account team. |
+| **Owner** | The account executive, staked on retention under claim 5 of the Constitution, or a reviewer who is. The map stays with the seller's account team. |
 
 > [!IMPORTANT]
 > **Two documents, never merged.** An occupant will state a reservation one to one and will not write it where a peer can find it, and a probe of private vulnerability reads as opportunism however it is framed ([buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md)). So the map is private, and the shared record lists terms without saying whom they answer. An occupant's uncertainty about their own outcome closes when they receive the answer, not when they state the concern.
@@ -109,7 +109,7 @@ $N$ is the roles that can say no. Var is the variance of the Direction column ac
 
 ## The safeguard inside the buyer
 
-A Mutual Implementation Plan binds the buyer that signs it, not the role whose budget the change cuts. So where the sale starts at bargaining, or the size reads High, the deal needs a safeguard inside the buyer ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 2):
+A Mutual Implementation Plan binds the buyer that signs it, not the role whose budget the change cuts. So where the sale starts at bargaining, or the size reads High, the deal needs a safeguard inside the buyer (claim 7):
 
 - **A staked sponsor:** an executive whose own measure rides on the initiative.
 - **A bonded arrangement:** every role whose direction reads −1 holds terms under which what it gains, staged with adoption, covers what it loses, so defecting after the investment is sunk costs it something. Consent records agreement, and the staging is the bond. Where no term can answer a role, the safeguard closes only on a written overrule from whoever holds authority over that role, and the role stays an open exposure in the buyer's chance of loss.
@@ -140,8 +140,7 @@ A Mutual Implementation Plan binds the buyer that signs it, not the role whose b
 
 ## Related
 
-- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), Axioms I and III. [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) sections 2 and 5.
-- **Derivation:** [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 2.2, 4 and 5.
+- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), Axioms I and III, with claim 7 for the safeguard inside the buyer and claim 5 for pay.
 - **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.4 and 3.
 - **Research:** [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md), [tce-empirical-record.md](../theory/02-research/tce-empirical-record.md).
 - **Beside it:** the [Enforcement Ledger](./enforcement-ledger.md), whose rows seed this one, and the [Deal Triage Calculator](./deal-triage-calculator.md).

@@ -83,7 +83,7 @@ Run all four and record every failure. Fix them in this order, because a signal 
 |---|---|---|
 | Nothing | **Fails** | A ratings firm or certifier paid by the vendors it rates. A channel paid on referral. A sponsor staked on success judging between the buyer's own roles ([open question 59](../theory/01-foundation/07-open-questions.md)). A seller's manager forecasting a deal above the gate with no stake in what happens after signature. |
 | Reputation only | **Passes while re-earned.** Standing that is not refreshed with evidence of continued delivery depreciates, so weight the signal by how recently it was earned. | An analyst ranking. A review site. |
-| Something direct | Passes | A peer whose relationship rides on the recommendation. A channel paid on a share of what survives signature ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5). |
+| Something direct | Passes | A peer whose relationship rides on the recommendation. A channel paid on a share of what survives signature (claim 3 of the Constitution). |
 
 **Prefer an adjudicator that discloses a grade over one that reports pass or fail.** A certifier does best by revealing only whether quality clears a minimum, so even an honest one tells the buyer less than it knows ([information-environment.md](../theory/02-research/information-environment.md)).
 

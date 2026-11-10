@@ -38,12 +38,12 @@ Formula coverage, by canonical home:
 | Document | What the module implements |
 |---|---|
 | [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) | The two conditions and their sum, moving investment between parties, the section 2.5 normalization, both halves of the asymmetry gap, consensus friction in core and field form, the coalition read after exposure, the decay rate, future loss and staging, the bond condition and hold-up, the allocation required and the work done in advance, bounded drift, the maintained gap and the account management a seller funds, and each cost's position between its thresholds. |
-| [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
+| `04-seller-surplus-model.md`, removed in pass 4 of the trim and in git history | Seller surplus, the quasi-rent, the marginal investment rule, the repeated form, and the cooperation threshold. |
 | [Bargaining Ledger](../practice/bargaining-ledger.md) | The bargaining-cost form and its bands, and the worked example the retired Consensus Friction Calculator carried. |
 | [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.4, applied in the [Enforcement Ledger](../practice/enforcement-ledger.md) | The stage equation on expected loss per gate, the reference table, and the uncertainty decay chain. |
 | [Enforcement Ledger](../practice/enforcement-ledger.md), Allocation coverage | The allocation coverage ratio. |
 | [deal-triage-calculator.md](../practice/deal-triage-calculator.md) | Version 9.2, which is in git history. The document is now 10.0 and reads no positions or edges, so this code describes a retired instrument until `models/` retires in pass 5 of the trim. The maturity gate, the three counts and their edges, the positions and zones as measured and as the buyer expects them, the Kept out and Unshown overrides, both gates and the specific-exposure reading, the routing, and the frequency reading. |
-| [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) | The four governance forms selected by specific exposure and frequency, whether the seller's investment can be amortized, the frequency reading off the bond condition, and the build margin. |
+| `05-governance-forms.md`, removed in pass 4 of the trim and in git history | The four governance forms selected by specific exposure and frequency, whether the seller's investment can be amortized, the frequency reading off the bond condition, and the build margin. |
 
 ## Nothing here is fitted, and it must stay that way
 

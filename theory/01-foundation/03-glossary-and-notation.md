@@ -160,7 +160,7 @@ Kept so older analyses stay readable. Do not use these in new writing. Files tha
 ## Notation index
 
 > [!NOTE]
-> **This index and the symbol disambiguation after it describe [02-mathematical-models.md](./02-mathematical-models.md) as it stood at Constitution 6.4.** Constitution 7.0 holds no equation, so where a row gives the Constitution as a symbol's source, read that file. Both sections retire with the math in pass 5 of the trim ([TRIM-PROPOSAL.md](../../TRIM-PROPOSAL.md)).
+> **This index and the symbol disambiguation after it describe [02-mathematical-models.md](./02-mathematical-models.md) as it stood at Constitution 6.4.** Constitution 7.0 holds no equation, so where a row gives the Constitution as a symbol's source, read that file. Both sections retire with the math in pass 5 of the trim ([TRIM-PROPOSAL.md](../../TRIM-PROPOSAL.md)). Rows that cite `04-seller-surplus-model.md` name a file removed in pass 4, which is in git history.
 
 ### The two conditions (Axiom II, with Axiom III's losses)
 
@@ -173,7 +173,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $S_b + S_s$ | The joint surplus. Price cancels from it, because price is a transfer. | [02-mathematical-models.md §1.3](./02-mathematical-models.md) |
 | $V_{switch}(t)$ | The buyer's opportunity cost of staying where they are. Equals $\tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$, read on recognized value. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $P$ | Price over the relationship. Appears in both conditions and in neither party's cost of transacting. **Not the punishment payoff.** | [Constitution, Axiom II](./00-tcg-constitution.md) |
-| $C_{deliver}$ | The seller's cost of delivering against that price. Contingent on revenue. | [Constitution, Axiom II](./00-tcg-constitution.md), [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
+| $C_{deliver}$ | The seller's cost of delivering against that price. Contingent on revenue. | [Constitution, Axiom II](./00-tcg-constitution.md), 04-seller-surplus-model.md §2 |
 | $I^b_k$ | What the buyer invests today against cost $k$. Includes the buyer's adaptation work: integrations built, workflows rewired. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $I^s_k$ | What the seller invests today against cost $k$. The seller's cost of acquiring customers lives here. | [Constitution, Axiom II](./00-tcg-constitution.md) |
 | $L_b$, $L_s$ | Each party's expected future loss, from Axiom III. | [Constitution, Axiom III](./00-tcg-constitution.md) |
@@ -185,16 +185,16 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 
 | Symbol | Meaning | Defined in |
 |---|---|---|
-| $S_{seller}$ | Seller surplus in the seller surplus model. $S_s$ is the same condition read on a close, with $C_{invest}$ split by cost and the future loss written out. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $C_{invest}$ | The seller's pre-signature, deal-specific engineering. Sunk whether or not the deal closes. The seller's case of $C^{p}_{invest}$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $V_{contract}$ | Contract value the seller receives. **Seller revenue, not buyer cost.** | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$ or $\pi_p$. | [04-seller-surplus-model.md §2](./04-seller-surplus-model.md) |
-| $R_{redeploy}$ | Value of the seller's pre-signature work redeployed to other deals. The seller's case of $R^{p}_{redeploy}$. **Not $R$, the reward payoff.** | [04-seller-surplus-model.md §3](./04-seller-surplus-model.md) |
+| $S_{seller}$ | Seller surplus in the seller surplus model. $S_s$ is the same condition read on a close, with $C_{invest}$ split by cost and the future loss written out. | 04-seller-surplus-model.md §2 |
+| $C_{invest}$ | The seller's pre-signature, deal-specific engineering. Sunk whether or not the deal closes. The seller's case of $C^{p}_{invest}$. | 04-seller-surplus-model.md §2 |
+| $V_{contract}$ | Contract value the seller receives. **Seller revenue, not buyer cost.** | 04-seller-surplus-model.md §2 |
+| $p_{close}$ | Probability the deal closes given the investment made. Not the same as $p_m$ or $\pi_p$. | 04-seller-surplus-model.md §2 |
+| $R_{redeploy}$ | Value of the seller's pre-signature work redeployed to other deals. The seller's case of $R^{p}_{redeploy}$. **Not $R$, the reward payoff.** | 04-seller-surplus-model.md §3 |
 | $p_m$ | Probability of achieving milestone stage $m$. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
 | $S_m$ | Expected surplus at milestone stage $m$. A buyer-side quantity. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
-| $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. **Not $r_k$, a cost's position.** | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
-| $C_{sustain}$ | Ongoing relationship investment per period. Holds the gaps down, and is distinct from $C_{deliver}$. | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
-| $\rho$ | Discount rate on future periods. **A policy choice, not $\delta_{discount}$.** | [04-seller-surplus-model.md §7](./04-seller-surplus-model.md) |
+| $r_t$ | Probability the relationship is live in period $t$. $r_1$ equals $p_{close}$. **Not $r_k$, a cost's position.** | 04-seller-surplus-model.md §7 |
+| $C_{sustain}$ | Ongoing relationship investment per period. Holds the gaps down, and is distinct from $C_{deliver}$. | 04-seller-surplus-model.md §7 |
+| $\rho$ | Discount rate on future periods. **A policy choice, not $\delta_{discount}$.** | 04-seller-surplus-model.md §7 |
 
 ### Value terms (second standing assumption)
 
@@ -318,7 +318,7 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 **1. $\gamma$ carries three unrelated meanings, and one of them has three subscripts of its own.** In the Constitution, $\gamma_k$ is the rate at which a gap rebuilds over time, one rate per cost: $\gamma_{search}$, $\gamma_{consensus}$, $\gamma_{implementation}$. In the mathematical models the letter appears twice more, as $\gamma_r$ (responsiveness to an external catalyst) and $\gamma_{TO}$ (the technical overlap weight). The subscripts are load-bearing, and the two families are told apart by what the subscript names: a cost, or a mechanism. Bare $\gamma$, the deal-level average, retired with the deal-level gap.
 
-**2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to the value-decay half of the Decay Clock, a standing assumption. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to the cooperation condition in Axiom III's frequency corollary. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in [04-seller-surplus-model.md §7](./04-seller-surplus-model.md): $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
+**2. $\delta$ and $\delta_{discount}$ are unrelated.** Bare $\delta$ is the urgency decay rate, and it belongs to the value-decay half of the Decay Clock, a standing assumption. $\delta_{discount}$ is a party's weight on future payoffs, and it belongs to the cooperation condition in Axiom III's frequency corollary. They share a letter and nothing else. A rising $\delta$ is bad for the deal, and a rising $\delta_{discount}$ is good for it. A third rate joins them in 04-seller-surplus-model.md §7: $\rho$ discounts the seller's future cash flows and is set by finance policy, where $\delta_{discount}$ describes how much a party actually weighs its future and is a behavioural fact about them.
 
 **3. $\Delta_A$ and $\hat{\Delta}_{implementation}$ differ by an order of magnitude, and neither is the deal's gap.** The model's scorecard form produces a raw score on $[2, 10]$ that must be normalized before any equation accepts it. The [Enforcement Ledger](../../practice/enforcement-ledger.md) reports the normalized value directly. The normalization and its rationale live in [02-mathematical-models.md §2.5](./02-mathematical-models.md). Separately, what the scorecard measures is the policing and enforcement cost's gap alone, the implementation gap in field terms, because that is the only pair that is buyer against seller. Constitution 4.0 retired the deal-level mean $\hat{\Delta}_A$, so there is no single deal gap to substitute the scorecard's output for. Each party's loss reads its own half.
 
@@ -328,7 +328,7 @@ Seven groups look alike and mean different things. Each has produced a documente
 
 **6. The $C$ terms carry their party.** $C_{deliver}$ and bare $C_{invest}$ are what the seller spends. $C^{p}_{invest}$ is what either party sinks, and for the buyer it is the integration built and the workflows rewired. $V_{contract}$ is seller revenue, the price $P$ seen from the seller's side, and not a value the buyer receives. A figure quoted without its party is unreadable.
 
-**7. Four surpluses and three probabilities share letters.** $S_b$ and $S_s$ are the two conditions of Part II, and both must hold. $S_{seller}$ is the seller surplus model's form of $S_s$. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes, $p_m$ is the probability a stage completes, and $\pi_p$ is the chance a party's exposure does not come back. The $p_{close}$ and $p_m$ pair was caught while drafting [04-seller-surplus-model.md](./04-seller-surplus-model.md) rather than in use.
+**7. Four surpluses and three probabilities share letters.** $S_b$ and $S_s$ are the two conditions of Part II, and both must hold. $S_{seller}$ is the seller surplus model's form of $S_s$. $S_m$ is neither: it is the buyer's expected surplus at one milestone stage. Likewise $p_{close}$ is the probability a deal closes, $p_m$ is the probability a stage completes, and $\pi_p$ is the chance a party's exposure does not come back. The $p_{close}$ and $p_m$ pair was caught while drafting 04-seller-surplus-model.md rather than in use.
 
 ---
 

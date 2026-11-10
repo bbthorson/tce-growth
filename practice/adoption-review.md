@@ -12,14 +12,14 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 Version: 2.0
 Goal: After signature, keep the gaps the two deal ledgers closed from reopening, catch the fit drifting apart before the renewal finds it, and earn the renewal on delivered evidence. It runs the Maintain stage of the [Enforcement Ledger](./enforcement-ledger.md) and the [Bargaining Ledger](./bargaining-ledger.md), and the standing review the Enforcement Ledger's Stage agreed before anything was sunk.
 
-**Canonical reference:** [Constitution 6.4](../theory/01-foundation/00-tcg-constitution.md), Axiom III's drift and enforcement corollaries. The derivation is [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5, and the functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 5.3, 5.5 and 5.7.
+**Canonical reference:** [Constitution 6.4](../theory/01-foundation/00-tcg-constitution.md), Axiom III's drift and enforcement corollaries. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 5.3, 5.5 and 5.7.
 
 | | |
 |---|---|
 | **Inputs** | The signed Enforcement Ledger: its deal record, rows, gates, outcome measure and the standing review's terms. The Bargaining Ledger's private map and shared arrangement record. |
 | **Outputs** | A receipted handoff, a review record per cycle with each finding coded by cause and the right it invoked, and a renewal posture with its forecast call. |
 | **Next step** | Renewal, a remediation under new gates, or a lapse decided in writing. The counts re-taken at renewal go to the [Deal Triage Calculator](./deal-triage-calculator.md)'s audit. An expansion that reaches new roles or steps opens there as a new deal. |
-| **Owner** | The account manager, whose pay carries a stake at the renewal it maintains ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5). The account executive stays accountable through the first review. |
+| **Owner** | The account manager, whose pay carries a stake at the renewal it maintains (claim 5 of the Constitution). The account executive stays accountable through the first review. |
 
 **When to run it, and how deep.** The seller funds maintenance only while the margin it holds at the next renewal covers keeping pace with the rebuild ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.7).
 
@@ -107,7 +107,7 @@ Each finding invokes a right agreed in Stage. A finding with no right to invoke 
 - [ ] **The risks that materialized,** and which of them the seller named in Test.
 - [ ] **The rows a challenger would have to map** that this seller has already evidenced.
 
-**The buyer's alternatives.** Record a challenger it has evaluated, its own team on the adjacent function, and its own build estimate where it has one. Past the bond condition, price at or under what those alternatives allow and offer a cap on the renewal price. Taking more teaches the buyer to build ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 3).
+**The buyer's alternatives.** Record a challenger it has evaluated, its own team on the adjacent function, and its own build estimate where it has one. Past the bond condition, price at or under what those alternatives allow and offer a cap on the renewal price. Taking more teaches the buyer to build (claim 11 of the Constitution).
 
 **Posture.**
 
@@ -140,7 +140,6 @@ Each finding invokes a right agreed in Stage. A finding with no right to invoke 
 
 ## Related
 
-- **Theory:** [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) sections 1, 3 and 5.
-- **The repeated game:** [04-seller-surplus-model.md](../theory/01-foundation/04-seller-surplus-model.md) section 7.
+- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), claims 10 to 12, and claim 5 for pay.
 - **Research:** [re-aim-framework.md](../theory/02-research/re-aim-framework.md), [game-theory-and-nrr.md](../theory/02-research/game-theory-and-nrr.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
 - **Before it:** the [Enforcement Ledger](./enforcement-ledger.md) and the [Bargaining Ledger](./bargaining-ledger.md). **Beside it:** the [Deal Triage Calculator](./deal-triage-calculator.md)'s count audit.

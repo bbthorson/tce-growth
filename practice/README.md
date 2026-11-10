@@ -24,7 +24,7 @@ The Constitution's axioms answer three questions: whether a market can exist, wh
 | **Deal, a built-in purchase** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) |
 
-The Market Reading and the Deal Triage Calculator match Constitution 7.0. A *plug-in* purchase works on arrival, and a *built-in* purchase has either side build something that is worth less anywhere else. The three ledgers and the Adoption Review were built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1, and pass 7 of the trim brings them into line. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator names the cost in the way. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
+The Market Reading and the Deal Triage Calculator match Constitution 7.0. A *plug-in* purchase works on arrival, and a *built-in* purchase has either side build something that is worth less anywhere else. The three ledgers and the Adoption Review were built for Constitution 6.1, and pass 7 of the trim brings them into line. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator names the cost in the way. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
 
 ---
 
@@ -60,5 +60,5 @@ Each file below is in git history. What it carried that the axioms still need no
 
 ## Related
 
-- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-motions.md](../theory/01-foundation/01-motions.md) for why where the sale starts selects the instrument, [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) for what shape the arrangement takes after signature.
+- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-motions.md](../theory/01-foundation/01-motions.md) for why where the sale starts selects the instrument, and claim 12 for what the two sides settle before either builds.
 - **Checks:** [`tools/linting/`](../tools/linting/) for the link, frontmatter and style checkers.

@@ -91,6 +91,8 @@ Claim 2 says two things a leader can see predict the cost before any deal. Read 
 
 **Turnkey is a condition of a market, not a fourth cost to carry.** A light funnel feeding a trial feeding a buyer-run deployment is a light touch on all three costs at once, and it works only while buyers can carry all three alone.
 
+**A motion sets who a seller can reach.** Claim 5 makes the addressable market a property of the motion as much as of the product. A market sized without naming the motion counts the buyers who need the product and reports them as buyers the seller can reach. Deals that die at the same stage for the same reason are usually outside the motion's reach, and coaching representatives harder on them spends against a limit coaching does not move. Reaching those buyers means building for their cost. That is a decision about the organization, and it takes longer than a campaign.
+
 ---
 
 ## 4. The motion moves

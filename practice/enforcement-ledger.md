@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 Version: 1.0
 Goal: On one deal, close the policing gap from both sides and settle the allocation before anything specific is sunk. One ledger, one row per workflow step, shared in full with the buyer. It grows a column at each of three stages: **Map**, which the field calls the Blueprint, **Test**, the Red Team, and **Stage**, the Mutual Implementation Plan. Maintain runs after signature in the [Sustaining Adoption Review](./adoption-review.md).
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), Axiom III: specificity, who cannot check what, contracting what can be foreseen, enforcement, staged commitment and the gate. Axiom II for discovery as spending that lowers the cost at Time2. The derivation is [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5.
+**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), Axiom III: specificity, who cannot check what, contracting what can be foreseen, enforcement, staged commitment and the gate. Axiom II for discovery as spending that lowers the cost at Time2.
 
 | | |
 |---|---|
@@ -189,8 +189,7 @@ $n_{exposure}$ counts what either side sinks that only works here: the buyer's d
 
 ## Related
 
-- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), Axiom III. [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) for the bilateral form this ledger is the instrument of.
-- **Derivation:** [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) sections 4 and 5.
+- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), Axiom III. Claim 12 states the staged plan this ledger builds.
 - **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2, 5.2 and 5.4.
 - **Research:** [costly-signals.md](../theory/02-research/costly-signals.md), [re-aim-framework.md](../theory/02-research/re-aim-framework.md), [real-options.md](../theory/02-research/real-options.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
 - **Before it:** [Deal Triage Calculator](./deal-triage-calculator.md). **After it:** [Sustaining Adoption Review](./adoption-review.md).
