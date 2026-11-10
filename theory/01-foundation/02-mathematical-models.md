@@ -59,11 +59,11 @@ $$W = V_{switch}(t) - C_{deliver} - \sum_{k} \left(I^b_k + I^s_k\right) - L^{fit
 
 Where each side expects exactly the take the other plans, that take belongs in the taker's condition, the sum is $W$, and some price closes any deal with $W > 0$. Hold-up then costs both sides through the specific investment a party declines to sink because it keeps only part of its return (Grossman and Hart 1986), which lowers $W$ itself. Where one side fears more than the other plans, the difference is the *hold-up wedge*, the premise's two readings applied to $H$, and a deal with $W > 0$ can fail one side's condition because of it. A posted bond, staged fees or an allocated right close the wedge without changing $W$. A reciprocal specific investment closes it too, but it is itself sunk, so it lowers $W$ unless it is productive. Haggling over the renegotiation also destroys value, and it is not modeled here. Where the bond condition holds, both $H_p$ are zero, the wedge closes, and $S_b + S_s = W$, which is what every worked example assumes.
 
-**The three levers.** A seller can move a deal three ways. A discount never raises what the deal creates, and the other two raise it only by lowering $\pi^{gap}$.
+**The three levers.** A seller can move a deal three ways. A discount raises what the deal creates in one case only, where it takes the price under a spend threshold and so removes an approver and the bargaining work that approver required (section 6). The other two raise it only by lowering $\pi^{gap}$.
 
 | Lever | What it moves | Effect on $W$ |
 |---|---|---|
-| Discount | $P$ | None. Surplus moves from seller to buyer one for one. |
+| Discount | $P$ | None while the same roles must approve. Surplus moves from seller to buyer one for one. A price taken under a spend threshold lowers the bargaining investment, and the exposure of the role it removed returns at renewal. |
 | Guarantee, clawback, hostage | Part of $L_b$ onto the seller, $\pi^{gap}$, and $H_p$ | None for the transfer itself. Rises by as much as the commitment lowers $\pi^{gap}$, by changing what the seller does or by revealing which sellers can afford to offer it. A bond or staged fees that lower $H_p$ close the hold-up wedge without changing $W$. A reciprocal specific investment also adds to the other side's $L^{fit}$ |
 | Verification | $\pi^{gap}$ for whichever party cannot verify | Rises. A cost both sides were carrying shrinks. |
 
