@@ -69,7 +69,7 @@ Start from the reference workflow, one row per step, with the columns the seller
 
 **Closes the buyer's half:** what the buyer does not know about the seller's capability in its environment.
 
-**Find the failures.** Collect each attendee's failure list in writing before the session, because a room suppresses what only one member knows. Then run the pre-mortem with the champion and the skeptic, who must attend. Assume the project failed a year from now and walk five ways it failed, the RE-AIM dimensions inverted ([re-aim-framework.md](../theory/02-research/re-aim-framework.md)): nobody knew it existed, a group refused it, the integration broke, it delivered no measurable value, and use decayed. Attach each failure to its row, or add a row.
+**Find the failures.** Collect each attendee's failure list in writing before the session, because a room suppresses what only one member knows. Then run the pre-mortem with the champion and the skeptic, who must attend. Assume the project failed a year from now and walk five ways it failed, the RE-AIM dimensions inverted ([implementation-science.md](../theory/02-research/implementation-science.md)): nobody knew it existed, a group refused it, the integration broke, it delivered no measurable value, and use decayed. Attach each failure to its row, or add a row.
 
 | Column | Filled with |
 |---|---|
@@ -191,5 +191,5 @@ $n_{exposure}$ counts what either side sinks that only works here: the buyer's d
 
 - **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), Axiom III. Claim 12 states the staged plan this ledger builds.
 - **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2, 5.2 and 5.4.
-- **Research:** [costly-signals.md](../theory/02-research/costly-signals.md), [re-aim-framework.md](../theory/02-research/re-aim-framework.md), [real-options.md](../theory/02-research/real-options.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
+- **Research:** [costly-signals.md](../theory/02-research/costly-signals.md), [implementation-science.md](../theory/02-research/implementation-science.md), [fear-of-failure.md](../theory/02-research/fear-of-failure.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
 - **Before it:** [Deal Triage Calculator](./deal-triage-calculator.md). **After it:** [Sustaining Adoption Review](./adoption-review.md).

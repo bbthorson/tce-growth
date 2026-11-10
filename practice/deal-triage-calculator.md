@@ -218,4 +218,4 @@ Re-count whenever the deal moves to a new instrument or stage, and keep the old 
 - **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), claims 6 to 9 and claim 12, and [01-motions.md](../theory/01-foundation/01-motions.md) for the motions.
 - **The market:** [The Market Reading](./00-market-reading.md), read before this one.
 - **Where the routing sends a deal:** the [Bargaining Ledger](./bargaining-ledger.md), the [Enforcement Ledger](./enforcement-ledger.md) and the [Adoption Review](./adoption-review.md).
-- **Misfit and trial:** [process-misfit.md](../theory/02-research/process-misfit.md), and [cfir.md](../theory/02-research/cfir.md) for the constructs Steps 2 and 3 read.
+- **Misfit and trial:** [process-misfit.md](../theory/02-research/process-misfit.md), and [implementation-science.md](../theory/02-research/implementation-science.md) for the constructs Steps 2 and 3 read.

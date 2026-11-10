@@ -14,7 +14,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Quasi-rents and supplier exposure
 
-*From [klein-crawford-alchian.md](../../theory/02-research/klein-crawford-alchian.md).*
+*From [transaction-cost-economics.md](../../theory/02-research/transaction-cost-economics.md), the section on hold-up.*
 
 - The exposure follows the investment, not the invoice. Whoever sinks the specific work is the party who can be held up.
 - A quasi-rent measures redeployability, not effort. Ten weeks of work that transfers to the next deal is not exposure. One week that does not is.
@@ -56,7 +56,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 ## Prospect theory
 
-*From [prospect-theory.md](../../theory/02-research/prospect-theory.md).*
+*From [fear-of-failure.md](../../theory/02-research/fear-of-failure.md), section 2.*
 
 - "The pain of losing $1,000 is significantly greater than the pleasure of gaining $1,000."
 - "The single largest competitor in complex B2B sales is not a rival firm, but 'No Decision,' the decision to maintain the status quo."
@@ -75,7 +75,7 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 
 ## Real options
 
-*From [real-options.md](../../theory/02-research/real-options.md).*
+*From [fear-of-failure.md](../../theory/02-research/fear-of-failure.md), section 3.*
 
 - The status quo is not inertia. It is an option the buyer currently holds and the seller is asking them to give up.
 - A buyer who says "not yet" is often pricing the option to wait correctly. The counter is to make waiting cost something.
@@ -98,7 +98,7 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 
 ## Implementation science
 
-*From [cfir.md](../../theory/02-research/cfir.md) and [re-aim-framework.md](../../theory/02-research/re-aim-framework.md).*
+*From [implementation-science.md](../../theory/02-research/implementation-science.md).*
 
 - "Customer Resistance is reframed. It is no longer a barrier to the sale; it is **Implementation Data**."
 - "A highly effective drug that no one can afford (low Reach) or a complex exercise regimen that no hospital can staff (low Adoption) has a net public health impact of zero."
@@ -146,14 +146,3 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 - Evidence that narrows the buyer's range lowers the search cost. A claim that moves the estimate without narrowing the range is persuasion.
 - Persuasion is punished only when delivery makes the gap visible.
 - Changing the offer changes value. That is a product decision, even when it is made inside a deal.
-
-## Adversarial review
-
-*From [adversarial-review-2026-11.md](../../theory/02-research/adversarial-review-2026-11.md).*
-
-- A discount moves surplus between the parties. Verification adds to it only when it lowers a loss by more than it costs.
-- Information that changes no decision only moves wealth between the parties.
-- Contracts can solve hold-up without hostages, through options and renegotiation design. Hostages are one remedy among several.
-- A seller that absorbs all of the buyer's effort also removes the buyer's commitment.
-
-The adversarial review's own statistics are vendor material or unverified, and none belongs in public writing until its primary is opened. The provenance audit lists them.

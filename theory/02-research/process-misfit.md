@@ -2,7 +2,7 @@
 title: "Process Misfit"
 layer: theory
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -24,12 +24,13 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - A codified workflow does not reduce misfit on its own. Codification records the choices an organization has already made, and those recorded choices are precisely what the package must then match.
 
 **Supports in TCG:**
-- **Axiom II — Law of Transaction Investment** — the four responses to misfit are the buyer's adaptation work, which Axiom II counts as investment against the policing cost. Each carries a different cost and reversibility, and a seller who customizes on the buyer's behalf takes that investment on.
-- **Axiom III — Law of Future Cost** — Williamson explains why asset specificity (an investment locked to one relationship) creates exposure. The misfit literature explains what that specificity consists of in a software deal: distance from the reference workflow, in six named domains a seller can inspect one at a time.
-- **Axiom III — Law of Future Cost** — misfit is invisible to both parties at first contact, which makes it a direct generator of the bilateral implementation gap $\Delta_A$, and so of the chance of future loss on both sides. The buyer cannot articulate exception paths they have stopped noticing. The seller cannot see them from outside. Neither side is withholding information; the information does not yet exist in a form either can transmit.
-- **Contextual Blueprint** — the six domains give the Blueprint a coverage checklist. Role misfit and control misfit are what stakeholder mapping is for, and they are the two domains a demonstration-led process never reaches.
-- **Enforcement Ledger, Test** — deficiency and imposition are two distinct classes of failure mode. A Test that surfaces only deficiencies has done half the work, because impositions are what add a blocking role to the [Bargaining Ledger](../../practice/bargaining-ledger.md)'s map, as [buying-center-dynamics.md](./buying-center-dynamics.md) explains.
-- **Staged commitment, the Enforcement Ledger's Stage column** — the four resolution responses are what a phase gate actually chooses between. A gate that has not named which response the buyer will take has not resolved the uncertainty it claims to price.
+- **Claim 2.** Misfit is what an entangled workflow produces. The six domains are the places a change has knock-on effects, and a demonstration exposes only two of them.
+- **Claim 6.** The four responses to misfit are what a built-in purchase builds: a changed organization, a workaround or a customized package. Each is worth less anywhere else, which is Williamson's specific investment named for a software deal. A seller who customizes on the buyer's behalf takes that investment on, and the exposure with it.
+- **Claim 7.** A deficiency leaves someone going without. An imposition makes someone change what they do, and that adds a role that can say no. A Test in the [Enforcement Ledger](../../practice/enforcement-ledger.md) that surfaces only deficiencies has done half the work, because impositions are what add a blocking role to the [Bargaining Ledger](../../practice/bargaining-ledger.md)'s map.
+- **Claim 9.** Misfit is invisible to both parties at first contact. The buyer cannot describe exception paths it has stopped noticing, and the seller cannot see them from outside. Neither side is withholding anything. Discovery is the work that makes the misfit visible, and skipped, it returns as scope changes.
+- **Claim 10.** Four of the six domains surface only in use, which is why the Constitution cites Strong and Volkoff for a fit that has to be read again after signature.
+- **Contextual Blueprint.** The six domains give the Blueprint a coverage checklist. Role misfit and control misfit are the two a demonstration-led process never reaches.
+- **Mutual Implementation Plan.** The four responses are what a stage chooses between. A stage that has not named which response the buyer will take has not resolved the uncertainty it claims to price.
 
 **Open question this source raises.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) reads how settled the workflow is before anything else, and counts divergent steps toward what the purchase builds rather than adding them to any cost. The misfit literature suggests workflow codification and divergence are coupled rather than independent, because codification is itself a relationship-specific investment. Resolving this requires deciding whether workflow definition and workflow divergence are one variable or two. The framework treats these as two variables and does not argue that they are.
 

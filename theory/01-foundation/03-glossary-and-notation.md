@@ -78,13 +78,13 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Commitment** | Something a seller would not offer if it expected to fail, such as capped overages or a guarantee tied to the buyer's environment. | [Constitution, claim 8](./00-tcg-constitution.md) |
 | **Discovery** | The seller learning the buyer's environment before either side builds. | [Enforcement Ledger, Map](../../practice/enforcement-ledger.md) |
 | **Pre-mortem** | Walking the buyer through how the project would fail before anyone signs. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
-| **Real option** | The value of being able to defer a decision that cannot be undone. | [real-options.md](../02-research/real-options.md) |
+| **Real option** | The value of being able to defer a decision that cannot be undone. | [fear-of-failure.md](../02-research/fear-of-failure.md), section 3 |
 
 ### Time2 terms
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Hold-up** | One side squeezing the other once it cannot leave. | [Constitution, claim 11](./00-tcg-constitution.md), [klein-crawford-alchian.md](../02-research/klein-crawford-alchian.md) |
+| **Hold-up** | One side squeezing the other once it cannot leave. | [Constitution, claim 11](./00-tcg-constitution.md), [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
 | **Earned lock-in, and lock-in by control** | A buyer stays because of what the two sides built, or because it cannot take its data or leave its terms. | [Constitution, claim 11](./00-tcg-constitution.md) |
 | **Staged plan** | Who carries which risk, in stages, with a point at each where either side can stop at a known price. Agreed before either side builds. | [Constitution, claim 12](./00-tcg-constitution.md), [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
 | **Standing review** | A review agreed before signature for what nobody can foresee, held before the renewal reads it. | [Constitution, claims 10 and 12](./00-tcg-constitution.md), [Sustaining Adoption Review](../../practice/adoption-review.md) |
@@ -106,9 +106,9 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **CFIR** | Implementation-science framework for reading a buyer's organization before the sale. | [cfir.md](../02-research/cfir.md), which says where each construct is read |
-| **RE-AIM** | Five-dimension framework for measuring success after the sale. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
-| **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [re-aim-framework.md](../02-research/re-aim-framework.md) |
+| **CFIR** | Implementation-science framework for reading a buyer's organization before the sale. | [implementation-science.md](../02-research/implementation-science.md), which says where each construct is read |
+| **RE-AIM** | Five-dimension framework for measuring success after the sale. | [implementation-science.md](../02-research/implementation-science.md) |
+| **NRR** | Net Revenue Retention. The lagging indicator of the four upstream RE-AIM dimensions. | [implementation-science.md](../02-research/implementation-science.md) |
 
 ### Retired terms
 

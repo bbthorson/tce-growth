@@ -2,7 +2,7 @@
 title: "Costly Signals"
 layer: theory
 status: active
-operationalizes: [axiom-3]
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -23,7 +23,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Adverse selection (before signing).** The buyer cannot distinguish a capable vendor from an incapable one, so they discount price toward the average. This is the failure costly signals solve.
 - **Moral hazard (after signing).** Effort becomes unobservable once work begins, on both sides. The seller can under-resource delivery; the buyer can under-resource adoption. This is the failure governance solves, not signals.
 
-Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the buyer-seller gap that $\Delta_A$, the implementation gap, measures. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the [Bargaining Ledger](../../practice/bargaining-ledger.md) maps each decision role's reservation rather than simply proving vendor capability.
+Agency friction also runs along two vectors at once, and TCG treats them differently. The **inter-organizational vector** is the gap between buyer and seller. The **intra-organizational vector** runs inside the buying committee, between an executive sponsor and the departments evaluating on their own scorecards. Costly signals reduce the first. They do nothing for the second, which is why the [Bargaining Ledger](../../practice/bargaining-ledger.md) maps each decision role's reservation rather than simply proving vendor capability.
 
 **Key claims:**
 - Information asymmetry without signals collapses markets to average (lemons) quality.
@@ -36,13 +36,11 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 - When all signals become production-cheap, the channel reaches a babbling equilibrium (Crawford-Sobel).
 
 **Supports in TCG:**
-- **Axiom III — Law of Future Cost** — direct theoretical basis for why only costly evidence lowers the chance of future loss. Friction is the signal, asymmetry is the noise.
-- **Friction Allocation Principles** — the first three derive from the Single Crossing Property, and the fourth from the theory of certification intermediaries. The section below says why there are four.
-- **Single Crossing Property** — direct.
-- **Akerlof saturation** (Axiom I failure mode) — direct.
-- **Jevons Vulnerability** — Crawford-Sobel babbling equilibrium is what Jevons collapse produces at the channel level.
-- **Axiom III — Law of Future Cost, governance corollary** — via the moral hazard axis. Once signing removes the screening problem, unobservable effort on both sides becomes the problem to govern, which is what the mutual commitments in the [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Stage column address.
-- **$I_{buyer}$ in the asymmetry model** — the exponential decay of buyer doubt against accumulated vendor proof ($\nu e^{-\kappa K_{vendor}}$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md)) is Spence's separating equilibrium expressed as a field-measurable quantity.
+- **Claim 3.** Direct basis. Akerlof is why buyers who cannot tell good sellers from bad assume the worst and many buy from no one. Spence is why a signal informs only when it costs a weak seller more than a strong one. Crawford and Sobel give the end state when a message costs nothing to send: receivers ignore all of them, which [channel-collapse.md](./channel-collapse.md) shows at the level of a channel.
+- **Claim 8.** A commitment the seller would not make if it expected to fail is a Spence signal. The extension below ranks such signals and names two limits on a guarantee.
+- **Claim 7.** A signal lowers doubt between the two firms. It does nothing for disagreement inside the buyer, which is why a seller its buyer believes can still stall in an organization that has not agreed.
+- **Claim 12.** Once signing ends the screening problem, effort neither side can observe becomes the problem. The staged plan in the [Enforcement Ledger](../../practice/enforcement-ledger.md) governs it.
+- **Friction Allocation Principles.** The first three derive from the single crossing property, and the fourth from the theory of certification intermediaries. The section below says why there are four.
 
 ## Why four principles
 
@@ -52,10 +50,10 @@ Each Friction Allocation Principle answers a different question a receiver needs
 |---|---|---|
 | 1. The cost cannot be automated away | Does the signal cost a weak sender more than a strong one? | The single crossing property. A cost tools remove falls for every sender alike, and the signal pools. |
 | 2. The claimant bears the cost | Does the cost fall on the party whose quality is in doubt? | The single crossing property again. A cost the receiver pays tells it nothing about the sender. |
-| 3. The cost scales with the claim | Is the cost large enough to separate at this claim's stakes? | Spence's condition read against the premium a seller earns by being told apart, $B$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 5.8. A larger claim raises what a weak seller gains by faking it. |
+| 3. The cost scales with the claim | Is the cost large enough to separate at this claim's stakes? | Spence's condition, read against what a seller earns by being told apart. A larger claim raises what a weak seller gains by faking it. |
 | 4. The adjudicator loses when a bad signal passes | Does whoever certifies the signal keep certifying honestly over time? | The theory of certification intermediaries, carried in [information-environment.md](./information-environment.md). An adjudicator with nothing to lose drifts from screening toward extraction. Lizzeri (1999) adds that even an honest certifier gains by coarsening what it reveals to pass or fail, so a staked adjudicator that discloses a grade beats one that does not. |
 
-The first three are conditions on the sender's cost. The fourth is a condition on the institution that carries the signal across time and buyers. Each is necessary: a signal that is too cheap, paid for by the wrong party or vouched for by someone with nothing to lose is cheap talk, which informs only as far as the two sides' interests already agree. The third also fails the other way, and evidence far costlier than the claim needs is waste under Axiom III's gate corollary. The Constitution claims necessity only. Whether the four suffice is untested, and the trust-proxy extension below is the standing candidate for a fifth.
+The first three are conditions on the sender's cost. The fourth is a condition on the institution that carries the signal across time and buyers. Each is necessary: a signal that is too cheap, paid for by the wrong party or vouched for by someone with nothing to lose is cheap talk, which informs only as far as the two sides' interests already agree. The third also fails the other way, and evidence far costlier than the claim needs is waste, which is what claim 6 says of heavy proof laid over a plug-in purchase. The framework claims necessity only. Whether the four suffice is untested, and the trust-proxy extension below is the standing candidate for a fifth.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
 
@@ -81,6 +79,6 @@ Removing a proxy without substituting a produced signal does not reduce friction
 4. **Risk transfer:** seller holds the financial downside of the buyer's outcome. The widest separation, within the two limits above.
 
 **Supports in TCG (proposed):**
-- **Axiom III — Law of Future Cost**: extends the friction-as-signal claim with a quality ordering of signals. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
+- **Claim 3**: extends it with an ordering of signals by quality. Friction removal is safe only when the deleted proxy is replaced at tier 3 or 4.
 - **Friction Allocation Principles**: candidate fifth principle, or a refinement of existing ones. When allocating friction, prefer friction that forces tier-3/tier-4 signal production over friction that merely gates access.
-- **$I_{buyer}$, the buyer's half of the implementation gap**: a tier-4 signal does two things to the buyer, and they should be kept apart. As insurance, it means the buyer no longer has to resolve its uncertainty before contracting, because the seller carries the loss. As a signal, the offer itself narrows the uncertainty, because only a seller confident of delivering can afford it. Constitution 4.1's three-levers corollary counts the first as a transfer and the second as verification.
+- **Claim 8**: a tier-4 signal does two things to the buyer, and they should be kept apart. As insurance, it means the buyer no longer has to resolve its uncertainty before contracting, because the seller carries the loss. As a signal, the offer itself narrows the uncertainty, because only a seller confident of delivering can afford it. [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 1.3 counts the first as a transfer and the second as verification.

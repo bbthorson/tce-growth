@@ -48,7 +48,7 @@ Item numbers are stable, because other files cite them, so a number is never reu
 
 ## Axiom III, renewal
 
-**62. Whether a buyer that built more stays longer on a failing fit.** Claim 10 says failure shows first as stalled use and contraction and only later as an exit. Switching-cost studies support the first half (Burnham, Frels and Mahajan 2003, Whitten and Wakefield 2006, in [tce-empirical-record.md](../02-research/tce-empirical-record.md)). The order is a hypothesis. Buyers also build more when they expect a better fit, which lowers churn with no lock-in at all. *Settled by:* account-level records of integrations built, against exit timing and contraction before exit.
+**62. Whether a buyer that built more stays longer on a failing fit.** Claim 10 says failure shows first as stalled use and contraction and only later as an exit. Switching-cost studies support the first half (Burnham, Frels and Mahajan 2003, Whitten and Wakefield 2006, in [tce-empirical-record.md](../02-research/tce-empirical-record.md)). The order is a hypothesis. Buyers also build more when they expect a better fit, which lowers churn with no lock-in at all. *Settled by:* account-level records of integrations built, against exit timing and contraction before exit. A coarse public test: gross retention at public software companies against the share of revenue from professional services, as a stand-in for what buyers built.
 
 **51. A failure after signature can always be explained afterward.** A verified deal that fails has three explanations: the evidence went stale, the fit moved, or the other side squeezed. Read afterward, any failure fits one of them. Discovery that finds a misfit also stops deals before signature, so the signed deals are already screened. The [Sustaining Adoption Review](../../practice/adoption-review.md) codes each finding by cause on the day it is found, though the account manager who keeps the record is paid on the renewal. *Settled by:* a book of those records read against churn and contraction, and a count of the deals that discovery stopped before signature.
 
@@ -77,6 +77,7 @@ Item numbers are stable, because other files cite them, so a number is never reu
 <!-- vale TCG.RetiredTerms = NO -->
 - **Dropped in the 2026-11 trim,** because each rested on an idea Constitution 7.0 retired: 60, on committee variance and the gate, and 61, on working the tightest cost first. Item 54, on entering a market to learn whether it exists, left because the Market Reading now treats a thin ledger's first deals as research.
 - **Moved to the evidence list** in [06-calibration.md](./06-calibration.md) on 2026-11-04, and later: 3, 7, 19, 22, 28, 32, 33, 35, 36, 38 to 43, 52 and 53. Five more moved there and have since left it with the machinery they tested: 15, 17, 27, 37 and 55.
+- **Numbered in 06-calibration.md directly,** on 2026-11-10: 68 and 69.
 - **Closed before 7.0:** 1, 2, 4, 8 to 11, 13, 14, 16, 18, 20, 21, 23 to 26, 29 to 31, 46 and 50. Most were settled inside machinery that has since retired.
 <!-- vale TCG.RetiredTerms = YES -->
 

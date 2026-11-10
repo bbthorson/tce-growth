@@ -2,7 +2,7 @@
 title: "Game Theory and Net Revenue Retention"
 layer: theory
 status: active
-operationalizes: [axiom-3]
+operationalizes: [axiom-1, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -19,15 +19,15 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Key claims:**
 - Single-shot sales games make overselling dominant; iterated games can make cooperation dominant.
 - The Shadow of the Future is artificially suppressed when reps are paid on signature only.
-- Tit-for-Tat customers retaliate when the Promise Gap surfaces post-implementation: first through stalled use and contraction, and through churn once an alternative clears the cost of leaving.
+- Tit-for-Tat customers retaliate when the gap between promise and delivery surfaces after implementation: first through stalled use and contraction, and through churn once an alternative clears the cost of leaving.
 - Clawbacks and deferred commissions raise rep $\delta_{discount}$ above the cooperation threshold.
 - Functional alignment pays: Aberdeen Group found 36% higher retention and 38% higher win rates in organizations with tightly aligned sales and marketing. The same repeated-game logic extends to Sales-CS alignment.
 - NRR is the lagging indicator of whether the repeated game is being played well.
 
 **Supports in TCG:**
-- **Axiom III — Law of Future Cost, governance corollary** — direct theoretical basis. The cooperation condition $\delta_{discount} > (T-R)/(T-P)$ comes from Axelrod.
-- **Stakes for agents and adjudicators** (Axiom III corollary) — the Shadow of the Future must hold for every party in the system, including adjudicators.
-- **Reputation Depreciation** — the Promise Gap is what reputation depreciation looks like when not actively refreshed.
-- **The two conditions** — NRR > 100% is the macro-level evidence that both parties' conditions keep holding across renewals.
+- **Claim 5.** Direct basis for pay. A representative paid on signature plays a game with one round, and overselling wins it. Pay that waits until the implementation confirms the scope makes the game repeat. Jensen and Meckling are why the representative's payoff is not the seller's, which is the third standing assumption. The Constitution adds a limit the game leaves out: deferred pay works only where the seller has defined what a complete discovery is, because otherwise the representative is paid on an outcome it cannot affect.
+- **Claim 10.** The customer's answer to an oversold deal comes first as stalled use and contraction and later as an exit. Net revenue retention is the lagging reading of it.
+- **Claim 12.** A renewal that either side can decline is what gives both sides something to lose. Axelrod's condition says the future has to weigh enough for cooperation to pay, and a built-in purchase that happens once has no such future.
+- **Claim 3.** The same logic covers whoever recommends a seller. A channel or analyst paid on referral loses nothing when a bad recommendation passes.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

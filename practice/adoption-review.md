@@ -62,7 +62,7 @@ This is Axiom III's plan for what nobody could foresee. A review that reads neit
 
 ### 2.2 The value reading
 
-Three of the five [RE-AIM](../theory/02-research/re-aim-framework.md) dimensions. The other two, implementation fidelity and maintenance, are the fit-drift and stale-evidence readings above.
+Three of the five [RE-AIM](../theory/02-research/implementation-science.md) dimensions. The other two, implementation fidelity and maintenance, are the fit-drift and stale-evidence readings above.
 
 | Dimension | Reads | Evidence |
 |---|---|---|
@@ -141,5 +141,5 @@ Each finding invokes a right agreed in Stage. A finding with no right to invoke 
 ## Related
 
 - **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), claims 10 to 12, and claim 5 for pay.
-- **Research:** [re-aim-framework.md](../theory/02-research/re-aim-framework.md), [game-theory-and-nrr.md](../theory/02-research/game-theory-and-nrr.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
+- **Research:** [implementation-science.md](../theory/02-research/implementation-science.md), [game-theory-and-nrr.md](../theory/02-research/game-theory-and-nrr.md), [incomplete-contracts.md](../theory/02-research/incomplete-contracts.md).
 - **Before it:** the [Enforcement Ledger](./enforcement-ledger.md) and the [Bargaining Ledger](./bargaining-ledger.md). **Beside it:** the [Deal Triage Calculator](./deal-triage-calculator.md)'s count audit.

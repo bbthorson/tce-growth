@@ -2,7 +2,7 @@
 title: "Value and Persuasion"
 layer: theory
 status: active
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -26,114 +26,98 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - McNatt, D.B. (2000). "Ancient Pygmalion Joins Contemporary Management: A Meta-Analysis of the Result." *Journal of Applied Psychology*, 85(2), 314–322. (secondary)
 - Adams, W. & Yellen, J. (1976). "Commodity Bundling and the Burden of Monopoly." *Quarterly Journal of Economics*, 90(3), 475–498. (secondary)
 - Bakos, Y. & Brynjolfsson, E. (1999). "Bundling Information Goods: Pricing, Profits, and Efficiency." *Management Science*, 45(12), 1613–1630.
-- Vargo, S. & Lusch, R. (2008). "Service-Dominant Logic: Continuing the Evolution." *Journal of the Academy of Marketing Science*, 36(1), 1–10. (secondary)
 - Grönroos, C. & Voima, P. (2013). "Critical Service Logic: Making Sense of Value Creation and Co-creation." *Journal of the Academy of Marketing Science*, 41(2), 133–150. (secondary)
 - Payne, J., Bettman, J. & Schkade, D. (1999). "Measuring Constructed Preferences: Towards a Building Code." *Journal of Risk and Uncertainty*, 19(1–3), 243–270. (secondary)
 - Anderson, J., Narus, J. & van Rossum, W. (2006). "Customer Value Propositions in Business Markets." *Harvard Business Review*, 84(3), 90–99.
 - Hinterhuber, A. (2017). "Value Quantification Capabilities in Industrial Markets." *Journal of Business Research*, 76, 163–178. (secondary)
 - Dixon, M. & Adamson, B. (2011). *The Challenger Sale*. Portfolio/Penguin. (practitioner, not peer reviewed)
+- Bagwell, K. (2007). "The Economic Analysis of Advertising." In M. Armstrong & R. Porter (Eds.), *Handbook of Industrial Organization*, vol. 3, 1701–1844. Elsevier. (read in part)
+- Lewis, M. (2006). "Customer Acquisition Promotions and Customer Asset Value." *Journal of Marketing Research*, 43(2), 195–203. (abstract)
+- Datta, H., Foubert, B. & van Heerde, H.J. (2015). *Journal of Marketing Research*. (abstract. The review that brought it recorded no title or pages)
+- Larkin, I. (2014). "The Cost of High-Powered Incentives: Employee Gaming in Enterprise Software Sales." *Journal of Labor Economics*, 32(2), 199–227. (abstract)
 
-**Abstract.** The second standing assumption says value is exogenous to the sale. This file separates three things the word *value* can mean. *Realizable value* is what the change can be worth to this buyer for a given offer. The product and the buyer's situation set it, and the sale does not move it. *Recognized value* is the buyer's current estimate of realizable value, usually held as a range, and the seller moves it. *Realized value* is what the buyer captures after go-live, and adoption and delivery raise it toward realizable. The persuasion literature supports the split between the first two. It also shows that the useful line for a seller is whether an intervention narrows the buyer's range of plausible values by means the buyer can check, and does not depend on whether the claim is true. The evidence needs four amendments to the old wording, and it leaves one strong objection open.
+The last four sources reached the repository through a research review on 2026-11-09. Check any finding marked secondary or abstract at the primary before quoting it.
+
+**Abstract.** The second standing assumption says value is set outside the sale: within it, the seller changes what the buyer knows and what the buyer pays. Claim 8 says a discount moves money and lowers no cost. This file carries the evidence for both. The persuasion literature shows that a seller can change a buyer's decision while what the change is worth stays fixed. It also gives a test that separates evidence from persuasion, which is whether the seller narrowed the buyer's range of plausible values by means the buyer can check. The evidence on discounts, advertising and representatives' pay follows, and one strong objection stays open.
 
 **Key claims:**
 - A seller can change a rational buyer's decision while the buyer's payoff stays fixed. Only beliefs move.
 - Honest but deliberately incomplete information can raise conversions. The extra buyers are poor matches who learn so after signing.
 - Anchoring, framing and decoy effects shrink with expertise, information, comparators and group review, and they do not vanish.
-- The largest business anchoring effect, on first offers, moves price. TCG treats price as a transfer, so it moves the split and leaves the value alone.
 - Evidence that narrows the buyer's range lowers the search cost. A claim that moves the estimate without narrowing the range is persuasion.
-- After the sale, inflated expectations are punished only when delivery makes the gap visible to the buyer. Where the outcome stays unverifiable, the inflated estimate can persist.
-- Conviction can raise a buyer's adoption effort. TCG prices that as buyer investment under Axiom II.
-- Changing the offer changes value. That is a product decision, even when made inside a deal.
-- Preferences for unfamiliar, complex purchases may be constructed during evaluation. This is the strongest objection and sits in the open questions.
+- An inflated expectation is punished only when delivery makes the gap visible to the buyer.
+- A discount selects buyers who retain worse, and representatives concede price to suit their pay.
+- Preferences for unfamiliar, complex purchases may be constructed during evaluation. This is the strongest objection.
 
-## 1. The split: beliefs move, value for a given offer does not
+## 1. Beliefs move, and value for a given offer does not
 
-Kamenica and Gentzkow build a model in which a sender picks what a receiver can learn and must report the result honestly. The model forbids the sender from affecting the receiver's payoffs. The true state, including what the product is worth to the buyer, is fixed by construction. Their result is that the sender can still change the receiver's action. Bayes's law only requires that the receiver's posterior beliefs average out to the prior. Within that limit, a well-designed signal raises how often the receiver says yes.
+Kamenica and Gentzkow model a sender who chooses what a receiver can learn and must report the result honestly. The sender cannot affect the receiver's payoffs, so what the product is worth to the buyer is fixed by construction. The sender can still change the receiver's action, by choosing a signal that raises how often the receiver says yes. Their product-information case fits a sale. A firm decides what the buyer can learn about fit, through trials, demonstrations and detail. The best signal for the firm pools some poor matches with good ones until the marginal buyer is just indifferent. Buyers are not misled on average. The seller has chosen how much the buyer learns, and the extra buyers it converts are the ones who will be disappointed.
 
-The product-information case in their paper fits a sale closely. A firm decides what the consumer can learn about match quality, through trials, demos and detail, and price is held fixed. The best signal pools some poor matches with good ones until the marginal buyer is just indifferent. Buyers are not misled on average. The seller has chosen how much the buyer learns, and the extra buyers it converts are the ones who will be disappointed.
+TCG reads this as discovery left undone where doing it would lose the deal, which is the work claim 9 says returns at Time2. So the second standing assumption has to cover how much the buyer learns as well as whether a claim is true.
 
-TCG reads this as a search cost left partly unpaid. The seller declines to pay down verification where paying would lose the deal, and the shortfall arrives after signature as realized loss. So the second standing assumption cannot police only false claims. It has to cover how much the buyer learns.
+DellaVigna and Gentzkow sort the empirical literature into persuasion that changes what the receiver knows and persuasion that enters preferences directly. They find the second concentrated among inexperienced receivers with little information, and they find that sophisticated institutions discount messages from conflicted senders. Mullainathan, Schwartzstein and Shleifer add that people carry a message's meaning from a category where it informs into one where it does not, so an uninformative message can persuade. By their own account the effect is largest in low-involvement choices, and a deliberated enterprise purchase is the opposite case.
 
-DellaVigna and Gentzkow review the empirical persuasion literature and sort it into belief-based models, where persuasion changes what the receiver knows, and preference-based models, where persuasion enters utility directly. The authors call the line blurry. The belief-based branch is the TCG split. Preference-based persuasion is the residual case where the seller would change value itself, and the review finds the field evidence concentrated among inexperienced, low-information receivers. Sophisticated institutions discount messages from conflicted senders.
+## 2. What weakens anchoring and framing
 
-Mullainathan, Schwartzstein and Shleifer add the coarse-thinking channel. People sort situations into categories and carry a message's meaning from a category where it informs into one where it does not, so uninformative messages can persuade. This also leaves the product's worth untouched. It breaks the claim that only information moves an estimate. Their own scope condition matters for TCG: the effect is largest in low-involvement choices, and a deliberated enterprise purchase is the opposite case.
+- **Information and experience.** In a meta-analysis of simulated negotiations, Orr and Guthrie find the opening anchor strongly related to the outcome. The relationship weakens when the negotiator knows something about the other side's position, and a little more with experience.
+- **Comparators.** LeBoeuf and Shafir find that careful thought does not remove a framing effect and that seeing the alternative frame does. In a B2B deal the competitor, the incumbent and the internal skeptic usually supply it.
+- **Decoys.** Frederick, Lee and Baskin find the decoy effect mostly on stylized menus with numeric attributes. It is a pricing-page effect.
+- **Groups.** Whyte and Sebenius find that groups of experienced managers anchor as individuals do. A buying committee does not wash out the seller's anchor. Information and a counter-frame do.
 
-## 2. Moderators: expertise, information, comparators and groups
+The largest business anchoring effect is the first offer, and it decides where in the bargaining range the price lands. Price is a transfer, so the first offer moves the split and leaves what the deal creates alone.
 
-Anchoring is the pull of an early number on later judgment. Framing is the effect of describing the same choice as a gain or a loss. A decoy is an inferior option added to a menu to make another option look better. The evidence on each points the same way for TCG.
+## 3. The test: narrowing the range
 
-- **Information and experience.** In a meta-analysis of simulated negotiations, Orr and Guthrie find the opening anchor strongly related to the outcome. The relationship weakens when the negotiator knows something about the other side's position, and weakens a little more for experienced negotiators. Experience reduces the effect. It does not remove it.
-- **Comparators.** LeBoeuf and Shafir find that careful thought does not remove framing. Seeing the alternative frame does. In a B2B deal the competitor, the incumbent and the internal skeptic usually supply that frame.
-- **Decoys.** Frederick, Lee and Baskin find the decoy effect mostly on stylized menus with numeric attributes. It looks like a package and price-page design effect and not a lever on deliberated enterprise value.
-- **Groups.** Whyte and Sebenius find that groups of experienced managers anchor as individuals do, because groups aggregate members who are already anchored. A buying committee does not wash out the seller's anchor. Information and a counter-frame do, and both are search-cost reductions.
+A buyer rarely holds one number for what a change is worth. It holds a range. Gilboa and Schmeidler model a buyer who values an ambiguous prospect at its worst plausible case. For that buyer, evidence that shrinks the range raises the valuation even when the midpoint stays put. A seller can therefore raise what a buyer will pay by information alone, and TCG counts that as search cost carried, which is why documented value selling works in its terms. Fox and Tversky find that aversion to ambiguity appears when a clearer comparison is available, and a competitive evaluation always supplies one.
 
-The largest and most robust business anchoring effect is the first offer, and it decides where in the bargaining range the price lands. In the two conditions $P$ is a transfer that cancels when they are added. The first-offer effect moves the split between buyer and seller. It leaves joint surplus alone, and it does not touch realizable value.
-
-## 3. Narrowing the range
-
-The buyer rarely holds one number for what the change is worth. It holds a range, and the range is what the search cost buys down. Gilboa and Schmeidler model a buyer who evaluates an ambiguous prospect by its worst plausible case. For that buyer, evidence that shrinks the range raises the valuation even when the midpoint stays put. A pure information intervention can therefore legitimately raise willingness to pay. TCG counts that as search cost paid down and not as value moved, which is why value selling works in TCG terms.
-
-Asserting a figure without shrinking the range leaves the buyer's set of plausible values unchanged. For the worst-case buyer it should do nothing unless the buyer reads it as information. Where it does move the buyer, the cause is coarse thinking or anchoring from section 1 and 2. Fox and Tversky find that ambiguity aversion appears when a clearer comparison is available. A competitive B2B evaluation always supplies one, so range-narrowing matters most where TCG claims it does.
-
-Beauchêne, Li and Li add a warning. A seller can profit from creating ambiguity as well as from reducing it. The line is therefore not that information reduces ambiguity and persuasion exploits it. The working test is narrowing. An intervention lowers search cost when it shrinks the buyer's range of plausible values for this buyer, by evidence the buyer can check, such as a pilot on its own data, a reference in the same situation or an outcome guarantee. An intervention is persuasion when it moves the estimate or the decision without shrinking the range. Under real ambiguity there is no single true figure to overshoot, so "past the truth" gives way to "outside the range the evidence supports."
-
-Hinterhuber's study of industrial sellers fits this. Value quantification helps firm performance more where value is stable, meaning the true range is narrow, and less where markets move.
+Beauchêne, Li and Li add a warning: a seller can profit from creating ambiguity as well as from reducing it. So the working test is narrowing. A seller's act lowers search cost when it shrinks the buyer's range for this buyer by evidence the buyer can check, such as a pilot on its own data, a reference in the same situation or a guarantee tied to the outcome. It is persuasion when it moves the estimate or the decision and leaves the range as wide as it was. Hinterhuber's study of industrial sellers fits: quantifying value helps a firm's performance more where value is stable.
 
 ## 4. After the sale
 
-Expectation-disconfirmation research says satisfaction depends on what the buyer expected and on whether performance met it. Oliver set out the model. Anderson compared the competing predictions and suggested that a small gap assimilates while a large gap can backfire. A 2026 meta-analysis attributed to Schiebler, Lee and Brodbeck, not yet checked at the primary, reportedly finds that, on average, higher expectations go with higher reported satisfaction and finds no support for contrast effects. Most of the evidence is consumer and cross-sectional.
+Research on expectation and disconfirmation says satisfaction depends on what the buyer expected and on whether performance met it (Oliver, Anderson). A 2026 meta-analysis attributed to Schiebler, Lee and Brodbeck, not yet checked at the primary, reportedly finds that higher expectations go with higher reported satisfaction on average. Most of that evidence is from consumers.
 
-This is a real problem for any claim that persuasion is always punished. A seller who raises the estimate is not automatically penalized after the sale. The penalty comes through disconfirmation, which needs the buyer to observe the gap between promise and delivery. That ties the second standing assumption to Axiom III. The inflated estimate is exposure the buyer carries, realized only when delivery makes it visible. Where the outcome stays unmeasurable to the buyer, the exposure can stay unrealized and the inflated estimate can persist.
+So a seller who inflates the estimate is not automatically punished. The penalty needs the buyer to see the gap between promise and delivery. Where the outcome stays unmeasurable to the buyer, the inflated estimate can persist. That is why claim 10's review reads the result in the buyer's own numbers.
 
-The shortfall risk enters the buyer's expected future loss $L_b$ through $\pi_b$. Persuasion that inflates recognized value raises $L_b$ by the mechanism Axiom III already prices.
-
-The second amendment is the belief-to-effort channel. Shiv, Carmon and Ariely find that expectations from price changed task performance. McNatt's meta-analysis of manager-expectation effects finds that expectations can change actual performance. In B2B the matching mechanism is a convinced champion who invests more effort in adoption, which raises realized value. TCG does not treat this as value failing to be exogenous. The buyer's own effort moved, so the seller bought buyer investment with belief and not with a transfer. Axiom II prices that investment as $I^b_k$.
+Belief can also raise effort. Shiv, Carmon and Ariely find that expectations set by price changed task performance, and McNatt's meta-analysis finds that a manager's expectations change what subordinates do. A convinced champion who works harder at adoption raises what the buyer captures. TCG counts that as the buyer's own investment, which the seller bought with belief.
 
 ## 5. What the seller can change
 
-Three different things get called changing value inside a sale.
+Changing the offer changes value. Scope, bundling and committed services alter what is on offer, and the bundling literature treats each buyer's value for each component as given (Adams and Yellen, Bakos and Brynjolfsson). That is a product decision even when a seller makes it inside a deal. Work the two sides do together after the sale raises what the buyer captures (Grönroos and Voima), and whether the buyer credits a promise of it is the question claim 12 answers. Helping the buyer win budget lowers the consensus cost. Naming a real event that makes the buyer act shows the buyer something that already existed.
 
-1. **Changing the offer.** Scope, bundling, customization and committed services change what is on offer. Adams and Yellen treat bundling as a way to price when buyers value components differently, and each buyer's value for each component stays fixed. Bakos and Brynjolfsson show that bundling lowers the seller's uncertainty about what buyers will pay. Both treat component value as given and change the offer. That is a product decision even when made inside a deal, so "for a given offer" carries it.
-2. **Committing to post-sale co-creation.** Service-dominant logic holds that a firm can only make a value proposition, and Grönroos and Voima place co-creation in the joint sphere after the sale. In TCG terms that joint activity is the investment terms $I^b_k$ and $I^s_k$ and the implementation component. Realized value depends on the relationship, not on the signature. A commitment to post-sale support changes the offer, and whether the buyer credits it is an Axiom III question: the buyer asks whether it can verify and enforce the commitment.
-3. **Raising conviction so the buyer invests more.** Section 4 covers this. It routes through $I^b$.
+## 6. Discounts, advertising and pay
 
-Two further clarifications follow from the same reasoning. Helping the buyer win budget or a mandate lowers the bargaining cost, because it relieves the buyer of a cost it carries inside its own organization. It does not change the buyer's state. Naming a real catalyst is recognition. The catalyst already existed, and the seller made it visible.
+- **A discount selects buyers.** At a newspaper and an online grocer, Lewis finds that customers acquired on deeper discounts bought again less and were worth less over time. Datta, Foubert and van Heerde report the same direction for customers acquired on free trials. Claim 8 cites Lewis for the direction only. Whether the cause is selection or the step up to full price is unchecked, and the [citation audit](./audits/citation-provenance-audit.md) says so.
+- **Persuasion changes welfare.** Bagwell surveys three views of advertising: informative, persuasive and complementary. Under the second and third, advertising changes welfare in either direction. In one study the survey reports, Ackerberg's, measured effects were mostly informative. Persuasion costs the pair what the seller spends on it.
+- **Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor of 6 to 8 percent of revenue. That backs claim 5, and it is why the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) dates every reading before the seller invests.
 
-## 6. The strongest objection
+## 7. The strongest objection
 
-Payne, Bettman and Schkade argue that preferences for unfamiliar, complex options are constructed during evaluation. They describe valuation as architecture and not archaeology. If that holds for the purchases TCG cares about, realizable value may have no stable referent before the sale. A seller who reframes the buyer's problem changes the estimate and, through adoption effort, the value. The distinction between estimate and value then lacks a fixed object. The most the evidence would allow is that the value lever is weaker than the cost lever.
+Payne, Bettman and Schkade argue that preferences for unfamiliar, complex options are constructed during evaluation. If that holds for the purchases TCG cares about, what a change can be worth has no stable referent before the sale. A seller who reframes the buyer's problem then changes the estimate and, through adoption effort, the value.
 
-TCG has two partial replies. First, if experience reveals preferences the buyer already held, post-sale disconfirmation measures exactly those. Second, the adoption channel is an investment the buyer makes, and TCG can price it. Neither reply settles the question, because no study here measures anchoring or framing on the realized value of an enterprise purchase. The evidence covers stated estimates, prices and choices. The objection is recorded as an open question in `theory/01-foundation/07-open-questions.md`.
+TCG has two partial replies. If experience reveals preferences the buyer already held, the gap between promise and delivery measures exactly those. And the adoption channel is an investment the buyer makes, which TCG can count. Neither settles it, because no study here measures anchoring or framing on what an enterprise buyer captured. The evidence covers stated estimates, prices and choices. The objection is item 32 in [06-calibration.md](../01-foundation/06-calibration.md).
 
-## 7. Where value selling diverges
+## 8. Where value selling diverges
 
-Anderson, Narus and van Rossum argue that most value propositions claim savings without backing them up, and that buyers dismiss undocumented claims. Their prescription, to demonstrate, document and compare against the next-best alternative, is a search-cost reduction. Dixon and Adamson's Challenger Sale goes further. It teaches the buyer something about its own business so that the buyer's model of its situation changes. A reframe that is true of the buyer's business is information. A reframe that is merely compelling works through the framing channel in section 1. The evidence base does not separate the two. The academic value-selling literature measures sales performance and never compares realized value with the claim. The Challenger evidence is a cross-sectional study of sales representatives, not peer reviewed.
+Anderson, Narus and van Rossum argue that most value propositions claim savings without backing them, and that buyers dismiss undocumented claims. Their prescription, to demonstrate, document and compare against the next-best alternative, lowers the search cost. Dixon and Adamson go further and teach the buyer something about its own business. A reframe that is true of the buyer's business is information, and one that is merely compelling works through framing. The evidence does not separate the two. The academic literature on value selling measures sales performance and never compares what the buyer captured with the claim, and the Challenger evidence is a cross-sectional study of representatives that was not peer reviewed.
 
-The two views make different predictions on closed-won deals. Code each pre-signature value claim as verified on the buyer's own data or situation, or asserted from vendor benchmarks and other customers' cases, and hold the claimed magnitude constant. Compare within account type. Buyers share their own data mostly with sellers they already buy from, so verified claims cluster in the running seller's existing accounts and asserted claims in new ones, and a pooled comparison measures that difference instead (open question 32).
+The two views predict differently on closed-won deals. Code each value claim made before signature as verified on the buyer's own data or asserted from other customers, hold the claimed size constant, and compare within account type.
 
-- **Win rate.** TCG predicts that verification drives the win and the asserted magnitude matters weakly, less so as buyer expertise and comparators grow. Value selling predicts that a larger credible claim wins more often whatever the verification mode.
-- **Retention where outcomes are measurable.** TCG predicts that a larger gap between asserted and realized value lowers net revenue retention and references. The assimilation reading of value selling predicts little or no effect.
-- **Retention where outcomes are not measurable.** TCG predicts no penalty from the gap. A penalty here would count against the Axiom III mechanism.
+- **Win rate.** TCG predicts verification drives the win. Value selling predicts a larger credible claim wins more often however it was backed.
+- **Retention where outcomes are measurable.** TCG predicts a larger gap between claim and result lowers retention and references.
+- **Retention where outcomes are not measurable.** TCG predicts no penalty. A penalty here would count against it.
 
-No peer-reviewed study links unverified pre-sale claims to business-market churn, renewal or references, so the prediction fills a gap. Synthetic data must not be used to fit anything.
+No peer-reviewed study links unverified claims before a sale to churn, renewal or references in business markets.
 
-## Extension: advertising, discounts and representatives' incentives (2026-11)
+## Supports in TCG
 
-**Sources.** Each source reached the repository through the [2026-11-09 research review](./research-review-2026-11-09.md) and is marked by how far it has been read. Check any finding at the primary before quoting it.
-- Bagwell, K. (2007). "The Economic Analysis of Advertising." In M. Armstrong & R. Porter (Eds.), *Handbook of Industrial Organization*, vol. 3, 1701–1844. Elsevier. (read in part)
-- Lewis, M. (2006). "Customer Acquisition Promotions and Customer Asset Value." *Journal of Marketing Research*, 43(2), 195–203. (abstract)
-- Larkin, I. (2014). "The Cost of High-Powered Incentives: Employee Gaming in Enterprise Software Sales." *Journal of Labor Economics*, 32(2), 199–227. (abstract)
-
-**Persuasion changes welfare.** Bagwell surveys three views of advertising: informative, persuasive and complementary. Under the persuasive and complementary views advertising changes welfare in either direction. In one study the survey reports, Ackerberg's, measured effects were mostly informative. That is why Constitution 6.3 withdrew the claim that persuasion leaves the joint condition unchanged. It now costs the joint condition what the seller spends on it, and raises it only where the second standing assumption fails.
-
-**A discount selects buyers.** At a newspaper and an online grocer, Lewis finds that customers acquired on deeper discounts bought again less and were worth less over time. Constitution 6.3 cites only its direction, as evidence that a price cancelling in each deal still changes which deals occur. The [citation audit](./audits/citation-provenance-audit.md) records it as read at the abstract.
-
-**Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor. That is why the Deal Triage Calculator dates every reading before the seller invests, and why [open question 61](../01-foundation/07-open-questions.md)'s comparison is confounded.
+- **The second standing assumption.** Sections 1 and 5 are its evidence, and section 7 is the objection that survives.
+- **The premise.** Only evidence the other side can check changes what it expects. Section 3 is the test.
+- **Claim 3.** A claim that moves an estimate without narrowing the range is the cheap claim that raises every buyer's search cost.
+- **Claims 5 and 8.** Section 6.
+- **Claim 10.** Section 4 says when a buyer notices that the product did not work here.
 
 ## Related
 
-- [Costly Signals](./costly-signals.md): why only costly evidence lowers the chance of future loss, which is the range-narrowing test in another form.
-- [Prospect Theory](./prospect-theory.md): the reference point against which a buyer reads recognized value.
-- [Incomplete Contracts](./incomplete-contracts.md): who carries what neither party can verify, the Axiom III side of the post-sale penalty.
-- [Citation Provenance Audit](./audits/citation-provenance-audit.md): the verification status of every number cited from this literature.
-- [Constitution](../01-foundation/00-tcg-constitution.md): the second standing assumption and Axioms II and III.
+- [costly-signals.md](./costly-signals.md), for why only evidence that costs the sender informs.
+- [fear-of-failure.md](./fear-of-failure.md), for the reference point a buyer judges a change against.
+- [citation-provenance-audit.md](./audits/citation-provenance-audit.md), for the status of every number cited here.

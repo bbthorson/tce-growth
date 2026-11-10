@@ -187,7 +187,7 @@ swap:
   02-internal-ops: "practice/ (flattened in the 2026-09 restructure; the linters are in tools/linting/)"
   04-incentives-asymmetry-scorecard\.md: enforcement-ledger.md
   05-diagnostics-friction-efficiency-index\.md: "enforcement-ledger.md, Allocation coverage (the rest of the Friction Efficiency Index was archived in the practice rebuild)"
-  02-cfir-field-mapping\.md: "theory/02-research/cfir.md, Where each construct is read"
+  02-cfir-field-mapping\.md: "theory/02-research/implementation-science.md, Where each construct is read"
   costly-signal-discovery-scripts\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
   structural-deal-calibration-checklist\.md: "removed in the 2026-09 restructure (operating procedure, no theoretical content)"
   01-standard-order-protocol\.md: "removed in the 2026-09 restructure (a short vector needs no instrument file)"
@@ -208,6 +208,13 @@ swap:
   05-governance-forms\.md: "Constitution claims 5, 7, 11 and 12 (folded in and removed in the 2026-11 trim)"
   08-from-axioms-to-instruments\.md: "no replacement; each instrument states its own purpose (removed in the 2026-11 trim)"
   models/tcg_models\.py: "no replacement; the code retired with the math in the 2026-11 trim"
+  prospect-theory\.md: "theory/02-research/fear-of-failure.md, section 2 (folded in the 2026-11 trim)"
+  real-options\.md: "theory/02-research/fear-of-failure.md, section 3 (folded in the 2026-11 trim)"
+  klein-crawford-alchian\.md: "theory/02-research/transaction-cost-economics.md, the section on hold-up (folded in the 2026-11 trim)"
+  cfir\.md: "theory/02-research/implementation-science.md (folded in the 2026-11 trim)"
+  re-aim-framework\.md: "theory/02-research/implementation-science.md (folded in the 2026-11 trim)"
+  adversarial-review-2026-11\.md: "theory/01-foundation/06-calibration.md, which holds its predictions and sources (the review retired to git history in the 2026-11 trim)"
+  research-review-2026-11-09\.md: "theory/01-foundation/06-calibration.md, which holds its predictions and sources (the review retired to git history in the 2026-11 trim)"
   08-calibration\.md: 06-calibration.md
   # Constitution v2.0 (2026-09). Governance stopped being an axiom and became a
   # corollary of Axiom II, the Law of Asset Specificity, which is where

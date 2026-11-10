@@ -24,4 +24,4 @@ The canonical TCG framework. Start here if you're new to TCG.
 
 The academic evidence backing each axiom and artifact. Plus a provenance audit so any quantitative claim can be traced to its primary source.
 
-Start with [00-reading-guide.md](./02-research/00-reading-guide.md) — it shows how the papers depend on each other and says which axiom each paper backs.
+Start with [00-reading-guide.md](./02-research/00-reading-guide.md) — it maps each claim to the research files that back it.

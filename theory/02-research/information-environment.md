@@ -2,7 +2,7 @@
 title: "The Information Environment: Cost Floors"
 layer: theory
 status: active
-operationalizes: [axiom-1, axiom-2, axiom-3]
+operationalizes: [axiom-1]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -29,17 +29,23 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Black, F. (1986). "Noise." *Journal of Finance*, 41(3), 528-543.
 - Shahidi, P., Rusak, G., Manning, B.S., Fradkin, A. & Horton, J.J. (2025). "The Coasean Singularity? Demand, Supply, and Market Design with AI Agents." NBER Working Paper 34468.
 - Salop, S.C. & Scheffman, D.T. (1983). "Raising Rivals' Costs." *American Economic Review*, 73(2), 267–271. Cited in open question 48. (not yet read here)
+- Johnson, G., Shriver, S. & Goldberg, S. (2023). *Management Science*. (abstract)
+- Scheibehenne, B., Greifeneder, R. & Todd, P.M. (2010). *Journal of Consumer Research*. (abstract)
+- Honka, E. (2014). *RAND Journal of Economics*. (abstract)
+- Brown, J.R. & Goolsbee, A. (2002). *Journal of Political Economy*. (abstract)
 
-**Abstract.** Each of the three transaction costs has two parts. One is the deal-specific gap, which a seller or buyer pays down inside one deal. The other is set by the environment the deal sits in, and this file calls it the **cost floor**: the part of a cost that no seller can lower within one deal at a return that deal repays. The environment differs by cost. For search and information (search) it is the volume of messages against the buyer's attention and the record of the seller's category. For bargaining and decision (consensus) it is the buyer's institutions. For policing and enforcement (implementation) it is the measurement environment. The cost floor is an equilibrium of everyone's behavior, so it moves. It is one reason a deal can stay above a participation threshold after the seller has done everything the deal can repay. It is a different object from the floor above zero on the chance of loss $\pi_p$ in Axiom III, which says some risk survives any amount of proof. The two floors sit in different axioms and carry different names.
+The last four reached the repository through a research review on 2026-11-09, which recorded no titles or pages. Check each at the primary before quoting it.
+
+**Abstract.** Claim 4 of the [Constitution](../01-foundation/00-tcg-constitution.md) says part of each cost is set outside any deal and falls only through something shared across deals. This file calls that part the **cost floor** and carries the evidence for it. The environment that sets it differs by cost. For search it is the volume of messages against the buyer's attention and the record of the seller's category. For consensus it is the buyer's rules. For implementation it is whether anyone can measure and attribute an outcome. The floor is an equilibrium of everyone's behavior, so it moves. It is one reason a deal can stall after the seller has done everything the deal can repay.
 
 **Key claims:**
 1. A seller's message loses value when other sellers send more messages, so the search cost floor rises as volume outgrows buyer attention.
-2. The bargaining cost floor is the buyer's institutions. Most committee disagreement is goal incongruence, which no information environment explains.
-3. Post-sale, the policing cost floor decides which contract forms work. Pre-sale fit uncertainty is deal-specific and is not a cost floor.
+2. The consensus floor is the buyer's rules. Most committee disagreement is goal incongruence, which no information environment explains.
+3. After the sale, the implementation floor decides which contract forms work. Doubt about fit before the sale belongs to one deal and is not a cost floor.
 4. Cost floors fall through investments whose return is spread over many deals, or through signals costly enough to separate sellers.
 5. The claim concerns one seller in one deal. Platforms and intermediaries do lower cost floors, and they do it because they collect the return across many deals.
 
-## 1. Search and information: the information environment
+## 1. Search: the information environment
 
 Anderson and de Palma model advertising as a contest for scarce attention. Receivers give attention according to the average benefit of the messages they get, while each sender weighs only its own profit. One seller's message is therefore discounted by every other seller's messages, and each sender ignores the cost it imposes on the rest. Congestion works as an externality (a cost one party's action imposes on others who are not paid for bearing it) among senders. Too many messages get sent, or the wrong ones.
 
@@ -49,15 +55,15 @@ Tirole adds a second source, and it matters most for entrants. When buyers see a
 
 Bakos fits with these. Digitization lowers the cost of checking one alternative, and that lowers buyer search cost per alternative. It also brings more alternatives and more messages than any buyer has attention for. Both hold at once. The search cost floor rises when the second effect outruns the first, and the testable prediction is whether buyer search effort per purchase rises as a category's vendor count grows.
 
-## 2. Bargaining and decision: the buyer's institutions
+## 2. Consensus: the buyer's rules
 
-The cost floor for bargaining is the buyer's institutions: procurement rules, spend thresholds, required reviews and the process by which the organization decides. A seller entering one deal meets these rules as given. A seller does not rewrite a procurement policy to win one contract.
+The cost floor for consensus is the buyer's rules: procurement rules, spend thresholds, required reviews and the process by which the organization decides. A seller entering one deal meets these rules as given. A seller does not rewrite a procurement policy to win one contract.
 
 Ouchi separates two sources of exchange cost. Goal incongruence means the parties want different things. Performance ambiguity means nobody can tell how well a task was done. Most disagreement inside a buying coalition is goal incongruence. Two decision roles with different budgets and exposures should judge differently, and the Constitution already says so. Treating that disagreement as noise would relabel rational opposition as an error to clean up.
 
 Noise in Kahneman, Sibony and Sunstein's sense is narrower. It is unwanted variation among judges who should agree, so it applies to factual questions such as whether a product will integrate or what it will cost. That variance belongs to one buyer's process, it differs across buyers, and a seller can lower much of it by supplying structured evidence and independent estimates. It sits closer to the deal-specific gap than to a cost floor. The cost floor in this section is the institutional rule set, not the judgment variance.
 
-## 3. Policing and enforcement: the measurement environment
+## 3. Implementation: the measurement environment
 
 Holmström shows that when one party cannot observe the other's action, the contract trades insurance against incentive, and a noisy outcome forces a risk-averse party to carry risk it did not cause. Baker shows that paying on a measure that diverges from the real objective distorts effort even when the agent is risk neutral. Holmström and Milgrom add that when some tasks resist measurement, strong pay on the measurable ones pulls effort away from the rest, so muted incentives can be better. Ouchi calls the underlying condition performance ambiguity and links it to the choice of governance. Barzel treats measurement itself as the transaction cost, with warranties and brands as ways to economize on it.
 
@@ -85,16 +91,25 @@ Grossman and Stiglitz, and Black, add a point about why environmental noise pers
 
 ## 6. Counter-evidence and limits
 
-- **Platforms lower cost floors.** Bakos, Biglaiser and Lizzeri all describe a single party that does. The defensible claim is narrower: no seller within one deal can lower a cost floor at a return that deal repays. That is a statement about who collects the return, and it is Axiom II's participation logic.
+- **Platforms lower cost floors.** Bakos, Biglaiser and Lizzeri all describe a single party that does. The defensible claim is narrower: no seller within one deal can lower a cost floor at a return that deal repays. That is a statement about who collects the return, and it is claim 5's logic applied to a floor. No single deal repays what is built across deals.
 - **Incumbents sit below the search cost floor.** A seller the buyer already knows, or one the category's reputation favors, does not pay the entrant's inherited cost. The same cost floor binds different sellers differently.
 - **The cost floor is endogenous.** Sellers' choices of channel and category help set it. Cheap seller effort raises it through congestion, and measures built to lower it can inflate. A seller chooses its cost floor partly when it chooses where to sell.
-- **Weak support for the bargaining and pre-sale policing cases.** The bargaining cost floor is mostly institutional, not informational, and the pre-sale policing gap is not a cost floor. The strongest cases are search, and post-sale policing.
-- **AI buying agents may break the link between entry and the search cost floor.** Shahidi and coauthors describe agents that search, negotiate and transact for principals, lowering search, communication and contracting costs while adding congestion and obfuscation of prices. If agents screen vendors, more entrants need not mean more buyer effort. Turnkey erosion would then run through pooled policing signals and not through search. This is open and worth a register entry.
+- **Weak support for two cases.** The consensus floor is mostly institutional, not informational, and doubt about fit before the sale is not a cost floor. The strongest cases are search, and implementation after the sale.
+- **AI buying agents may break the link between entry and the search cost floor.** Shahidi and coauthors describe agents that search, negotiate and transact for principals, lowering search, communication and contracting costs while adding congestion and obfuscation of prices. If agents screen vendors, more entrants need not mean more buyer effort. Turnkey would then erode through signals that all sound alike and not through the buyer's search effort. This is item 35 in [06-calibration.md](../01-foundation/06-calibration.md).
+- **More sellers do not reliably raise a buyer's burden.** Choice overload averages near zero across studies (Scheibehenne, Greifeneder and Todd). High search cost protects incumbents (Honka). A comparison site lowered prices and did not raise participation (Brown and Goolsbee). Claim 3's line that entry raises every buyer's search cost holds where entrants' claims sound alike and no intermediary sorts them.
+- **A rule moves share toward those who had met it.** After the European privacy regulation took effect, websites dropped part of their technology vendors and concentration among the vendors rose (Johnson, Shriver and Goldberg). That is the direction claim 4's second sentence predicts.
+
+## Supports in TCG
+
+- **Claim 4.** The whole file. Section 5 places the floor inside transaction cost economics, and section 6 holds the limits.
+- **Claim 3.** Section 1 is why a market that is cheap to enter fills with claims that all sound alike, and why a new seller inherits its category's record. Section 4 is why a certifier or middleman helps only when it loses something by passing a bad seller.
+- **Claim 12.** Section 3 is why a guarantee on an outcome nobody can attribute is costly, whatever proof the seller adds.
+- **Open question 34.** A floor and a belief show the same sign. This file describes the floor and offers no test that tells the two apart.
 
 ## Related
 
 - [Channel Collapse](channel-collapse.md) holds the Jevons argument and channel volume that this file builds on.
 - [Costly Signals](costly-signals.md) holds the signals that separate sellers and clear a cost floor.
-- [Incomplete Contracts](incomplete-contracts.md) holds the contract forms the policing cost floor selects among.
+- [Incomplete Contracts](incomplete-contracts.md) holds the contract forms the implementation floor selects among.
 - [Buying Center Dynamics](buying-center-dynamics.md) holds the decision roles behind goal incongruence.
 - [Transaction Cost Economics](transaction-cost-economics.md) holds the Dahlman root and the framework this file extends.

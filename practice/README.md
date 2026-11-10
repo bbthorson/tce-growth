@@ -54,7 +54,7 @@ Each file below is in git history. What it carried that the axioms still need no
 | Contextual Blueprint, Red Team Protocol, Mutual Implementation Plan, Milestone Valuation Model, Bilateral Asymmetry Scorecard | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, and its policing gap |
 | Consensus Friction Calculator, and the Blueprint's and Red Team's stakeholder sections | The [Bargaining Ledger](./bargaining-ledger.md) |
 | Friction Efficiency Index | Its allocation coverage ratio, in the Enforcement Ledger, and its test of Axiom III's allocation clause, which is in git history with the calibration tables. The other three measures and the composite changed no decision on a deal. |
-| CFIR Field Mapping | [cfir.md](../theory/02-research/cfir.md), section "Where each construct is read" |
+| CFIR Field Mapping | [implementation-science.md](../theory/02-research/implementation-science.md), section "Where each construct is read" |
 
 ---
 
