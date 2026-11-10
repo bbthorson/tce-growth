@@ -12,20 +12,21 @@ A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market
 | `practice/` | Operationalize theory. The instruments the claims name. |
 | `publishing/` | Turn the framework into public writing. Voice guide, writing protocols, content generators. |
 | `tools/` | The two linters and the Vale style that keep the other directories consistent. Python, no dependencies. |
+| `models/` | One test on public data: a script and the counts it pulled, for `theory/02-research/sat-threshold-test.md`. It is not a check. |
 
 ## Standing scope decisions
 
 Recorded in the Constitution 5.0 proposal, now in git history (`git show b5b3386:CONSTITUTION-5.0-PROPOSAL.md`, section 6).
 
 - **The math is scaffolding.** It keeps the argument honest and the falsifiers checkable, and it is not shown in public writing.
-- **Supporting files stay only while they help defend a claim.** The 2026-11 trim applied this to `models/`, to the parameter tables in `06-calibration.md` and to the scores in the ledgers.
+- **Supporting files stay only while they help defend a claim.** The 2026-11 trim applied this to the model code, to the parameter tables in `06-calibration.md` and to the scores in the ledgers.
 - **The audience is founders and revenue leaders, held to academic citation standards.** Health tech supplies the examples, built from public patterns.
 - **Every falsifier is written for others to run.** The author's experience supplies hypotheses, not evidence.
 
 Recorded in the trim proposal on 2026-11-10, now in git history (`git show 59ab41e:TRIM-PROPOSAL.md`):
 
 - **The goal is a differentiated point of view for founders and revenue leaders.** The twelve claims in the Constitution are the ones the author holds, most of them already published. Material that defends a claim sits behind it. Do not add machinery to answer an objection unless asked.
-- **The math and `models/` retired in the trim.** `02-mathematical-models.md` keeps sections 1.1 to 1.4, which show that price is a transfer. `06-calibration.md` is now a list of predictions and tests.
+- **The math and the model code retired in the trim.** `models/` now holds only the public-data test. `02-mathematical-models.md` keeps sections 1.1 to 1.4, which show that price is a transfer. `06-calibration.md` is now a list of predictions and tests.
 
 ## Conceptual architecture
 
@@ -37,7 +38,7 @@ The premise: buying costs the buyer three things beyond price (search, consensus
 - **II, Transaction Investment. Time1, contracting.** The buyer asks whether its organization can agree and what the purchase will take. The seller asks whether the deal is worth what it takes. Claims 6 to 9: a purchase is plug-in or built-in, implementation is a fear that acts through the buyer's own people, a discount moves money and lowers no cost, and work skipped here moves to Time2 and grows.
 - **III, Future Cost. Time2, renewal.** The buyer asks whether it worked here and whether it is free to leave. The seller asks whether the relationship pays. Claims 10 to 12: whether the product worked here decides renewal, lock-in earned by building together holds while lock-in made by control is hold-up, and a contract built for partnership does what a discount cannot.
 
-**The repository was trimmed around 7.0 on 2026-11-10,** in seven passes. Every file in `theory/`, `practice/` and `publishing/` now matches the Constitution. The trim removed the seller surplus model, the governance forms, the file that derived the instruments, most of the math, `models/`, the parameter tables, seven research files and the ledgers' arithmetic. All of it is in git history, and files that were cut say which commit holds the longer version. Git history before that date uses ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
+**The repository was trimmed around 7.0 on 2026-11-10,** in seven passes. Every file in `theory/`, `practice/` and `publishing/` now matches the Constitution. The trim removed the seller surplus model, the governance forms, the file that derived the instruments, most of the math, the model code, the parameter tables, seven research files and the ledgers' arithmetic. All of it is in git history, and files that were cut say which commit holds the longer version. Git history before that date uses ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 

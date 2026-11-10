@@ -41,6 +41,7 @@ The theory is twelve claims, each with a test that could fail. None is confirmed
 | **[theory/](./theory/)** | `theory/01-foundation/` + `theory/02-research/` | The Constitution and what backs it. |
 | **[practice/](./practice/)** | `practice/` | The instruments, one or more per time. |
 | **[publishing/](./publishing/)** | `publishing/02-tools/` | The voice guide, the writing protocols, and the published posts kept verbatim. |
+| **[models/](./models/)** | `models/` | One test on public data, with the counts it pulled. |
 | **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
 
 **The repository was trimmed around the twelve claims on 2026-11-10.** Constitution 7.0 rewrote the theory, and every other file was brought into line with it. What the trim removed is in git history, and so is the proposal that gave a verdict on each file: `git show 59ab41e:TRIM-PROPOSAL.md`.
