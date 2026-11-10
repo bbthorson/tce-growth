@@ -19,7 +19,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 **Key claims:**
 - Single-shot sales games make overselling dominant; iterated games can make cooperation dominant.
 - The Shadow of the Future is artificially suppressed when reps are paid on signature only.
-- Tit-for-Tat customers retaliate via churn when the Promise Gap surfaces post-implementation.
+- Tit-for-Tat customers retaliate when the Promise Gap surfaces post-implementation: first through stalled use and contraction, and through churn once an alternative clears the cost of leaving.
 - Clawbacks and deferred commissions raise rep $\delta_{discount}$ above the cooperation threshold.
 - Functional alignment pays: Aberdeen Group found 36% higher retention and 38% higher win rates in organizations with tightly aligned sales and marketing. The same repeated-game logic extends to Sales-CS alignment.
 - NRR is the lagging indicator of whether the repeated game is being played well.
