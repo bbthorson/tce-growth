@@ -2,262 +2,200 @@
 title: "Motions"
 layer: theory
 status: active
-version: 2.3
-operationalizes: [axiom-1, axiom-2, axiom-3]
+version: 3.0
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Motions
 
-**Version:** 2.2
-**Purpose:** To derive the motion from where the sale starts under Axiom II, which is the tightest cost, the largest position under Axiom I. Then to say what each motion deploys, why Turnkey is a condition of a market rather than a fourth motion, and how the names map onto the vocabulary the industry already uses.
+**Version:** 3.0
+**Purpose:** To carry the argument behind claims 1, 2, 4 and 5 of the [Constitution](./00-tcg-constitution.md). A motion is named for the cost it carries. A leader can read which one a market needs before any deal. Some costs no motion reaches. And the relay model is the right motion for one kind of market. Section 9 maps the names onto the vocabulary the industry already uses.
 
-> [!IMPORTANT]
-> **This file carries the argument behind Axiom II's claim that the motion is where the sale starts.** The positions and thresholds are stated in the [Constitution](./00-tcg-constitution.md) and given their functional form in [02-mathematical-models.md](./02-mathematical-models.md) section 6. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) emits them, and [03-glossary-and-notation.md](./03-glossary-and-notation.md) carries the symbols. Section 9 records what this file does not settle, and section 10 is the translation table for readers arriving with Product-Led and Sales-Led in hand.
+A sales motion is what a seller does, and is organized to do, to carry part of a buyer's cost. A seller cannot change what an offer is worth to a buyer from inside a sale, and price is a transfer (claim 8). So a motion works by lowering one or more of three costs:
 
-A sales motion is the instrument set a seller deploys to pay down a buyer's cost of using the market. A seller cannot alter the buyer's realizable value for a given offer, which the product and the buyer's situation set, only what the buyer recognizes of it, and price is a transfer that cancels between the two parties' conditions under Axiom II. So a motion works entirely by lowering one or more of three costs, which take Dahlman's (1979) names in theory and keep the field's names in the notation:
+* **Search:** the buyer cannot find, compare or reach a solution it trusts.
+* **Consensus:** the buyer's decision roles cannot agree, because each is unsure what the change does to its own budget, headcount and standing.
+* **Implementation:** the buyer cannot tell whether the product will work in its environment and whether the seller will deliver.
 
-* **Search and information, $F_{search}$:** the buyer cannot discover, compare, or reach a viable solution at acceptable cost.
-* **Bargaining and decision, $F_{consensus}$:** the buyer's decision roles cannot agree, because each is uncertain what the change does to its own budget, headcount and standing. The field calls this the consensus cost.
-* **Policing and enforcement, $F_{implementation}$:** the buyer cannot yet verify that the seller will deliver what was promised and that the product will work in its environment. The field calls this the implementation cost. The buyer's own adaptation work, the integrations built and the workflows rewired, is an investment against this cost under Axiom II rather than the cost itself.
-
-The three are separately addressable rather than separately caused. A workflow the product must fit but does not raises $F_{implementation}$ and creates $F_{consensus}$ at the same time, because an imposition creates a decision role whose objectives worsen. Treat them as three bills the buyer pays, not as three independent variables.
+The three are separately addressable and not separately caused. A workflow the product does not fit raises the implementation cost and creates a consensus cost at the same time, because an imposition creates a decision role whose position worsens. Treat them as three bills the buyer pays, not as three independent variables.
 
 ---
 
-## 1. Where the sale starts
+## 1. A motion is named for the cost it carries
 
-Axiom I reads each cost's demand on the payer who carries it as a position $r_k$ between two thresholds that belong to that payer: its capacity, and its capacity plus what the seller or an outside party can move off it ([02-mathematical-models.md](./02-mathematical-models.md) section 6). At or below zero the cost is self-serve, up to one it needs seller investment, and above one it keeps the buyer out whatever the other two read.
-
-**The sale starts at the largest $r_k$**, the tightest cost, and the motion is named after it. *Starts* is the buyer's: a buyer expecting any cost past its limit never begins, and the motion names the job that decides whether this one gets through the stages every buyer moves through (section 9). Across a market, the cost tightest for most target buyers is what the seller has to be built to absorb. Which cost the seller works first is a separate rule ([02-mathematical-models.md](./02-mathematical-models.md) section 1.5), and the tightest cost first is its special case, which the instruments use as the default until the seller reads each cost's unit cost, sharpness and spillover to rivals. Before the buyer has entered, it decides on the recognized positions $\tilde{r}_k$, so a seller that has lowered a cost must also show it. Two costs at the same position are run together.
-
-**Positions, not shares.** Earlier versions summed the three costs into a level and divided each by the total to get a direction, which assumed a scale the costs never shared. A position catches what shares could not: a cost with a small share of the total can still end the deal. The costs are non-compensatory because each payer's capacity is specific to it, so a small buyer whose one person carries all three faces one summed test, and a large coalition three. Until a buyer's thresholds are read, the calculator uses default edges that [06-calibration.md](./06-calibration.md) records as chosen.
-
----
-
-## 2. Each cost has its own instrument family
-
-A seller can discount, and a discount moves surplus from seller to buyer one for one without shrinking any cost ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3). That can close a deal whose joint surplus is already positive, and it cannot rescue one whose joint surplus is negative. What remains is the three costs.
-
-**A motion is therefore defined by which cost is tightest.** There are three costs, so there are three families of instrument, and no more.
+A discount moves money from seller to buyer and shrinks no cost. What remains is the three costs, so there are three families of instrument and no more.
 
 | Cost | What the buyer cannot do | What the seller produces |
 |---|---|---|
-| $F_{search}$ | Find a viable solution at acceptable cost | Artifacts that travel without the seller present |
-| $F_{consensus}$ | Get their own organization to agree | Artifacts that let each decision role see and accept its own outcome |
-| $F_{implementation}$ | Tell whether the seller will deliver and the product will work here | Artifacts that resolve technical and operational uncertainty |
+| Search | Find a solution it trusts at acceptable cost | Material that travels without the seller present, and signals that cost the seller something |
+| Consensus | Get its own organization to agree | Material that lets each decision role see and accept its own outcome |
+| Implementation | Tell whether the product will work here and the seller will deliver | Discovery, proof in the buyer's environment, and a plan both sides hold |
 
-**Where the sale starts is a label, and the default order.** A deal with positions $(0.2,\, 0.8,\, 0.5)$ starts at consensus and by default runs implementation instruments behind it. The seller works implementation first where section 1.5's rule says so, as when it absorbs that cost far more cheaply. Pay the consensus cost down and the order can invert. Both are ordinary deals and neither is a special case.
+**Motions are not exclusive.** Every deal carries all three costs. What varies is which one is in the way now. Asking whether consensus work is a separate motion or a phase of an implementation-heavy one assumes a seller has to choose, and it does not.
 
-This resolves a question the older framing could not answer. Asking whether consensus work is a separate motion or a phase of an implementation-heavy one assumes motions are exclusive. They never were. Every deal carries all three costs, and what varies is which one is tightest now.
-
-### 2.1 The two blockers inside search
-
-$F_{search}$ carries two distinct blockers.
+### 1.1 The two blockers inside search
 
 | Blocker | Instrument |
 |---|---|
-| The buyer cannot name the category | Commercial teaching, reference architectures, category definition |
-| The buyer cannot reach the seller | Partnerships, channel, marketplace listing, group purchasing |
+| The buyer cannot name the category | Teaching, reference architectures, category definition |
+| The buyer cannot reach the seller | Partnerships, a channel, a marketplace listing, group purchasing |
 
-**Fit verification is not a search blocker.** Trying the product is verification the buyer runs on themselves, and it resolves fit only when nothing specific is sunk, because nobody can trial a six-month integration. Where nothing specific is sunk, a trial settles the question at no cost and market terms hold under Axiom III's gate. Where something is, the same question becomes the policing pair's uncertainty and needs the seller's proof. Gate B of the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) is where the framework reads which case it is in.
+**Trying the product is not a search instrument.** A trial is the buyer checking fit alone, and it settles the question only for a plug-in purchase, where the buyer can walk away having stranded nothing. Nobody can trial a six-month integration.
 
-The second row is a cost most frameworks do not name. A hospital chief information officer can know the category, name five vendors, and still be structurally unreachable without a channel. A missing channel puts search above its participation threshold whatever else the deal reads, and neither education nor a trial reduces it. Research backing is in [channel-collapse.md](../02-research/channel-collapse.md), and Axiom III's requirement that any adjudicator carry a stake applies directly to the channels involved.
-
-These are two instruments serving one cost. They are not two motions.
-
-### 2.2 Bargaining has one instrument here, and a mature practice beside it
-
-The bargaining and decision cost, which the field calls consensus, is worked hard by the wider sales profession. Qualification frameworks built around economic buyer access, written decision criteria, documented decision process, and champion development are instruments for that cost, and they are the incumbent practice for it.
-
-The [Bargaining Ledger](../../practice/bargaining-ledger.md) is this repository's instrument for it: a private map of each decision role's exposure, a shared arrangement each exposed role ratifies, and a safeguard inside the buyer. The incumbent practice runs beside it. The cost resists the instruments that work on the other two because its gap sits inside each decision role, about its own outcome, where nothing the seller knows and withholds is causing it. Research is in [buying-center-dynamics.md](../02-research/buying-center-dynamics.md).
-
-The gap is real and it is the largest one this document surfaces.
+The second row is a cost most frameworks do not name. A hospital chief information officer can know the category, name five vendors, and still be out of reach without a channel. Neither teaching nor a trial lowers that cost. Research backing is in [channel-collapse.md](../02-research/channel-collapse.md).
 
 ---
 
-## 3. What positions do not read
+## 2. Reading which cost is in the way
 
-Positions answer where the sale starts. Two other questions sit beside them, and each belongs to a different axiom.
+Claim 2 says two things a leader can see predict the cost before any deal. Read them across the buyers in a market.
 
-**Whether the buyer enters at all.** A cost above its participation threshold keeps the buyer out, and no work on the other two reaches it. The seller pulls that cost back into range with the instrument for it, or declines. Working it as though it were an ordinary sales problem is the kept-out failure Axiom I names.
+**How settled is the workflow?** Ask three people in a buyer how the work is done. Three different answers means it is not settled. A written procedure that people call out of date means it is partly settled. A procedure that is written, followed and has volumes for its exceptions is settled. Note who wrote it down. A regulator's version makes buyers alike. Each buyer's own version makes them differ.
 
-**How much apparatus the deal needs.** Earlier versions read this off the summed level and drew a Turnkey and Structural boundary at half its range. Both retired in Constitution 4.0, because the level stood in for specificity and conflated it with size. The question now splits in two. How much the seller must invest today is Axiom II's seller condition: the seller goes ahead only when its own share is covered by its own return. Whether governance apparatus is needed is Axiom III's specific exposure: whether the deal sinks anything worth less outside this relationship. Apparatus applied where nothing specific is sunk is the over-frictioned failure.
+**How entangled is it?** Count what else changes when the workflow changes: the systems that must exchange data with the product, and the procedures some named group will perform differently.
 
-**Where the sale starts and specific exposure are independent.** A deal can start at implementation and sink nothing specific, which is expensive work against a standard rather than uncertain work. A deal can have every cost self-serve and still sink a specific integration, which is a light sale with a heavy contract. The calculator crosses the two readings for that reason.
+**How complex is the buyer's organization?** Count the roles that can say no, and the formal bodies the buyer's rules require at this spend, such as procurement, a security review or a board.
+
+| What the leader sees | The cost in the way | The motion |
+|---|---|---|
+| The workflow is not settled | Search. The buyer cannot yet name what it is buying | Search-led, by teaching |
+| The workflow is settled and stands alone, and the organization is simple | None | Turnkey |
+| The workflow is settled and entangled | Implementation | Implementation-led |
+| The organization is complex | Consensus, and often implementation with it | Consensus-led, or both run together |
+
+**Where buyers stop is the cross-check.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. A seller's own records show which.
+
+**The signals come first, because a stall can appear before its cause.** A buyer prices a later cost when it makes an earlier decision. One that expects its organization to fight the change may never look at all, and the seller records a search problem. Where buyers stop says where the stall appears. The workflow and the organization say why.
+
+**What this reading does not yet do.** It does not ask first whether the buyer wants the change, and it has no shared scale for ranking two costs that are both in the way. Open questions 66 and 67 in [07-open-questions.md](./07-open-questions.md) carry both. Until the second is settled, a market with two costs in the way runs both motions.
 
 ---
 
-## 4. Four readings, and what each deploys
+## 3. What each motion deploys
 
-The three motions are named after the tightest cost. Turnkey names the condition where no cost needs paying down.
-
-| Condition | Name | What the seller deploys | State of the instruments |
+| The reading | Name | What the seller deploys | Instruments in this repository |
 |---|---|---|---|
-| Every cost self-serve, nothing specific sunk | **Turnkey** | Published pricing, automated provisioning, self-service trial, zero-touch onboarding. Fit verification transfers entirely to the buyer. | None needed. A market in this condition repays no dedicated apparatus. |
-| The sale starts at search | **Search-led** | The two search instruments of section 2.1: teaching where the category is unnamed, channel where the buyer is unreachable. | Present and thin. No instrument file in this repository. |
-| The sale starts at consensus | **Consensus-led** | Mapping each decision role's exposure, champion enablement, bilateral decision criteria. | The [Bargaining Ledger](../../practice/bargaining-ledger.md), beside the incumbent qualification practice. |
-| The sale starts at implementation | **Implementation-led** | The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map, Test and Stage, the Blueprint, Red Team and Mutual Implementation Plan, then [Sustaining Adoption Review](../../practice/adoption-review.md). | Present and developed. |
-| Two costs at the same position | **Run together** | Both instrument sets, neither picked as the motion. | Whatever the two motions supply. |
+| Buyers carry every cost alone, and the purchase is plug-in | **Turnkey** | Published pricing, automated provisioning, a self-service trial. The relay model and pay on bookings fit here | None needed |
+| Search is in the way | **Search-led** | Teaching where the category is unnamed, a channel where the buyer is out of reach, and commitments that cost the seller something | The [Market Reading](../../practice/00-market-reading.md)'s search ledger and the [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
+| Consensus is in the way | **Consensus-led** | Each decision role's concern collected one to one, an arrangement each role can accept, and a sponsor who holds the decision together | The [Bargaining Ledger](../../practice/bargaining-ledger.md), beside the incumbent qualification practice |
+| Implementation is in the way | **Implementation-led** | Discovery, a walk through how the project would fail, a staged plan agreed before signature, and a review after it | The [Enforcement Ledger](../../practice/enforcement-ledger.md), then the [Sustaining Adoption Review](../../practice/adoption-review.md) |
+| Two costs are in the way | **Run together** | Both sets, with neither picked as the motion | Whatever the two supply |
 
-The names in the second column are the words the Deal Triage Calculator returns.
+**Each reading has a characteristic misread.**
 
-**Each reading has a characteristic misread.** Turnkey's is a low decision-role count inside a complex enterprise architecture, which masks a specific integration downstream. Search-led's is mid-cycle commoditization: as teaching succeeds, search cost falls and the buyer pivots to price comparison. Implementation-led's is applying governance artifacts to a deal that starts at search, forcing operational rigor onto an uncommitted prospect. Running together's is picking one of the two and calling it the motion.
+- **Turnkey:** a simple purchase decision inside a complicated architecture, which hides a built-in purchase downstream.
+- **Search-led:** teaching that succeeds. Once buyers can name the category the search cost falls and they turn to comparing prices.
+- **Implementation-led:** discovery workshops and joint plans laid over a buyer that has not yet decided it has a problem.
+- **Run together:** picking one of the two and calling it the motion.
 
-**Turnkey is a condition of the market, not a fourth cost to pay down.** A light marketing funnel feeding a low-cost trial feeding buyer-run deployment is a light touch on all three costs at once, and it works only while all three stay self-serve. Reading it as a competitor to the other three motions is the error this document is most concerned to correct, and sections 6 and 8 say what that error costs. The condition also does not last on its own, for the reason section 5.2 gives.
+**Turnkey is a condition of a market, not a fourth cost to carry.** A light funnel feeding a trial feeding a buyer-run deployment is a light touch on all three costs at once, and it works only while buyers can carry all three alone.
 
-Naming the consensus motion beyond its cost is still open. Any name chosen here would enter the repository ahead of the instrument set that justifies it, and the instrument set is the missing piece rather than the name.
+**A motion sets who a seller can reach.** Claim 5 makes the addressable market a property of the motion as much as of the product. A market sized without naming the motion counts the buyers who need the product and reports them as buyers the seller can reach. Deals that die at the same stage for the same reason are usually outside the motion's reach, and coaching representatives harder on them spends against a limit coaching does not move. Reaching those buyers means building for their cost. That is a decision about the organization, and it takes longer than a campaign.
 
 ---
 
-## 5. Positions move, and gaps rebuild
+## 4. The motion moves
 
-Where the sale starts is a reading taken at a moment. Two mechanisms change it, and they belong to different axioms.
+**Work moves it.** A seller that lowers the cost in the way finds another in its place. A reading is taken at a moment, and a seller re-takes it as the work proceeds.
 
-**Investment moves positions.** A seller's investment against a cost pays it down under Axiom II and lowers that cost's position. Pay down the cost where the sale started and another cost becomes the tightest. The calculator re-takes its counts at every artifact boundary for this reason, and the sequence of readings is the record of what the work moved.
+**A category moves it.** An emerging category has a high search cost, and selling is teaching. Once the industry has learned the category, the search cost falls and implementation is in the way. Once integrations standardize, buyers can carry every cost alone and the category is Turnkey. Sellers miss the second and third changes, and the third more often, because nothing outside prompts a fresh reading.
 
-**Verification closes gaps.** Each cost runs between its own pair of parties, and each pair's uncertainty is a gap. Under Constitution 4.0 the gaps no longer multiply costs. They feed the chance of future loss under Axiom III, and closing one lowers a loss both sides were carrying.
+**Entry moves it back.** A market that needs little seller investment is cheap to enter. Each entrant is another alternative to rule out, and claims that all sound alike stop telling good sellers from bad (claim 3). The category leaves Turnkey unless a standard, a dominant brand or a channel with something at stake holds the search cost down.
 
-### 5.1 Three pairs, three gaps
+**A departure moves it at once.** A champion who leaves reopens the consensus cost in a day, with no change in the product, the price or the technical work. A role can also dissolve when its mandate leaves with the person, and then the coalition itself has changed.
 
-| Cost | Whose uncertainty, about what |
-|---|---|
-| $F_{search}$ | The buyer's, about the market |
-| $F_{consensus}$ | Each decision role's, about its own outcome |
-| $F_{implementation}$ | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability in it. |
+---
 
-The [Enforcement Ledger](../../practice/enforcement-ledger.md) measures the third pair alone. The search gap mostly prices today's cost and decides participation. The other two decide what each party can lose once something specific is sunk.
+## 5. Where no motion is enough
 
-### 5.2 Drift, departures and categories
+Claim 4 says part of every cost is set outside the deal. No motion lowers that part deal by deal, because no single deal repays the work. So the first decision a seller makes about cost is where to sell.
 
-Absent maintenance, each gap rebuilds toward its ceiling at its own rate $\gamma_k$, per [02-mathematical-models.md](./02-mathematical-models.md) section 5.3. Discovery is a separate, discrete step down that someone pays for. A deal is therefore a path rather than a point, and so is an account after signature.
+**The sign of a floor.** Buyers name the problem and buy from no one. They stop at the same cost whichever seller they meet, and deal effort moves no seller's results. A buyer who chose a competitor is a lost deal. A buyer who chose nobody is this case, or the next one.
 
-| Rate | What drives it | Where it is already named |
+**Or buyers only believe the cost is that high.** The same sign appears when the cost is within reach and the category has taught buyers otherwise. The remedy differs. A real floor takes a shared investment. A mistaken belief takes one seller showing its own cost with evidence the buyer can check, which separates it from the rest. Open question 34 asks how to tell the two apart.
+
+| Cost | What the market looks like | What lowers the floor |
 |---|---|---|
-| $\gamma_{search}$ | New entrants, category redefinition | Nowhere |
-| $\gamma_{consensus}$ | Occupant turnover, reorganization | Nowhere |
-| $\gamma_{implementation}$ | Staff turnover, workflow change, systems installed unseen | [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 7.2 |
+| Search | Buyers cannot name the category, or no signal a good seller can afford tells sellers apart | Category definition, a marketplace, a channel with something at stake, a certification |
+| Consensus | The buyer's rules require approvals no single deal can win | A pre-approved contract, standard terms, a purchasing consortium |
+| Implementation | Nobody can measure the outcome or attribute it to the seller | A standard, a certification, independent measurement, a mandate |
 
-**The field consequence sits in the bargaining row.** A champion leaving is the bargaining gap reopening all at once. What the new occupant cannot verify is open again, and the deal can leave the viable zone without any change in the product, the price or the technical work. That event is among the most common ways an enterprise deal dies, and the framework has not sourced how common. It is also one of two events. A decision role can dissolve rather than change occupant, when the mandate leaves with the person, and then the coalition changes and the bargaining cost with it. No re-statement by a successor recovers that.
-
-**Where the sale starts moves at the level of a category too.** An emerging category carries high search and policing cost and the sale starts at search. As industry-wide education completes, search cost collapses and the sale starts at implementation. As integrations standardize, every cost falls into the self-serve zone and the category reaches Turnkey, at which point the apparatus retires. Sellers miss the second and third transitions, and they miss the third more often, because nothing external prompts a re-count.
-
-**Turnkey then erodes through entry.** A motion that needs little seller investment is cheap to copy, so competitors enter. Each entrant is another alternative to rule out, which raises the search cost, and free trials and identical claims stop separating good sellers from bad, which raises the policing cost. The category leaves Turnkey unless something holds the search cost down as sellers arrive. The Constitution states this as an Axiom I corollary, and a self-serve motion kept running through it is the Turnkey-erosion-unread failure.
-
-### 5.3 What this retires
-
-The per-component multiplier, the summed level, the direction shares and the reduced form $y = a\hat{\Delta}_A^2 + c$ all retired in Constitution 4.0. [02-mathematical-models.md](./02-mathematical-models.md) section 7 records why each went. The argument the reduced form existed to make, that cutting price cannot offset a wide gap, now follows from price cancelling between the two conditions.
+**Who pays to lower it.** Every deal on a floor shares the return from lowering it. One seller funds the work only when its own share of the deals that follow repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a group of sellers, or a platform. That predicts who opens such markets, which is the dominant seller or an outsider, and rarely a seller in the middle. [information-environment.md](../02-research/information-environment.md) carries the evidence.
 
 ---
 
-## 6. What follows for the seller's market
+## 6. The relay model, and what replaces it
 
-A seller who runs only self-serve tactics can transact only with buyers whose every cost is self-serve. Buyers whose sale starts at a cost that needs investment are not lost somewhere in the funnel. They were never reachable, because the motion offered no instrument for the tightest cost.
+**The relay model.** One role per funnel stage, each with a fixed playbook, each handing off to the next: a development representative for outreach, an account executive for the deal, an account manager for retention. Pay is on bookings. The model assumes each cost stays inside its home time. That is true in a Turnkey market, and the model is the right motion there.
 
-Addressable market is therefore a property of the motion rather than of the product, and [05-governance-forms.md](./05-governance-forms.md) section 4 carries that argument and its three consequences.
+**What replaces it elsewhere.** Each cost has a home time, and it acts earlier through what the buyer expects. So the person who carries the cost in the way leads at the time that cost acts. Where fear of implementation is what stops buyers from signing, the solutions engineer owns the job that decides the deal during contracting. The relay sends that engineer to a demonstration as support for the account executive.
 
-**The market also sets each cost's floor.** Axiom I's cost floor corollary says part of every cost is set outside the deal: the information environment for search, the buyer's institutions for bargaining and the measurement environment for policing. No motion lowers a cost floor deal by deal, because no single deal repays it. So the first decision a seller makes about cost is where to sell. A market whose search cost floor is rising, because message volume has outgrown buyer attention, punishes a search-led motion no matter how well it is run. A seller lowers a cost floor only by investing in something shared across deals, such as a marketplace contract, a certification, an intermediary with a stake or a standard. [information-environment.md](../02-research/information-environment.md) carries the evidence.
+| Job | What the buyer needs done | Home time | Where it also acts |
+|---|---|---|---|
+| Search | Name the problem, find the alternatives and compare them | Time0 | Renewal, when the buyer looks at challengers |
+| Consensus | Bring its own decision roles to agreement, and settle terms | Time1 | Time0, where a buyer that expects a fight never looks |
+| Implementation | Check the product will fit and the seller will deliver, then make it fit | Time2 | Time1, as the fear that stops a signature |
+| Maintenance | Keep what was verified current, and catch the fit drifting | Time2 | |
 
-**A market whose floor keeps buyers out.** Where a cost floor sits above the participation threshold, no seller wins on its own effort. The market reading can see it before entry, because the stall belongs to the market rather than to any seller: buyers name the problem and buy from no one, they stop at the same cost whichever seller they meet, and deal-level effort moves no seller's conversion. A buyer who chose a competitor is a lost deal. A buyer who chose nobody is this case, or the next one.
+**Handoffs.** Each handoff is a seam where what one owner learned fails to travel. A long deal adds a second problem, because what the seller learned early goes stale as the buyer changes. So the seller does the work that decides whether the deal is viable early and keeps it bounded, times the full discovery to just before either side builds, and carries what was learned between the two in writing. Where the cycle is short, one owner from proof through implementation costs little and removes the seam.
 
-**Or the prior keeps them out.** The same sign appears when only the category prior, what buyers believe a cost is before they meet any seller, sits above the threshold while the cost itself does not. The remedy differs. A floor above the threshold takes a shared investment. A prior above it takes a seller showing its own cost with evidence the buyer can check, which one seller can do alone and which separates it from the pool. Telling the two apart needs a reading of the prior beside the floor, which item 34 in [07-open-questions.md](./07-open-questions.md) now asks for.
+**Pay follows the same reading.** Claim 5 pays the seller's people for work on the cost in the way, and ties pay to implementation only where the seller has defined what a complete discovery is.
 
-| Cost | What the market looks like | What opens it |
-|---|---|---|
-| Search | Buyers cannot name the category, or no signal a good seller can afford tells sellers apart, which is Akerlof saturation in [02-mathematical-models.md](./02-mathematical-models.md) section 5.8 | Category definition, a marketplace, a channel with a stake, a certification |
-| Bargaining | The buyer's rules require approvals no single deal can win | A pre-approved contract vehicle, standard terms, a purchasing consortium |
-| Policing | Outcomes cannot be measured or attributed to the seller, so nobody can verify delivery | A standard, a certification, independent measurement, a mandate |
-
-**Who pays to open it.** By the cost floor corollary, the return on lowering a floor is shared by every deal on it. A single seller funds the shared investment only when its own share of the deals the investment unlocks repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a coalition of sellers, or a platform. That predicts who opens such markets, the dominant seller or an outsider, and rarely a seller in the middle. The certified-API requirement under the 21st Century Cures Act, item 34 in [07-open-questions.md](./07-open-questions.md), is the regulator lowering the policing floor across every deal at once.
-
----
-
-## 7. Two symptoms of the unallocated failure
-
-Axiom III's unallocated failure, specific investment sunk with no staging or stop rights agreed, shows in two places. Before the investment, a party that expects to be held up declines to sink it at all, and the buyer defers or builds internally. After it, a buyer whose policing uncertainty was never resolved signs on an easy commercial path, fails to deploy, and leaves, and the failure is misdiagnosed as product or onboarding. The second is the one positions alone cannot see, which is why the calculator reads specific exposure apart from where the sale starts and names the light-sale, heavy-contract case.
+*A test at the level of a deal.* Among deals where implementation is in the way, those whose implementation owner led during contracting should convert and launch better than those where the engineer arrived as support. In long cycles, deals whose discovery was re-run just before the build should show fewer surprises after go-live than deals whose discovery was done only early. If neither holds, the stage carries the work and the job does not.
 
 ---
 
-## 8. Why sellers choose the wrong motion
+## 7. Why sellers choose the wrong motion
 
-Self-serve tactics carry a lower cost of sale, and a representative paid on bookings or a leader measured on efficiency picks them for reasons that have nothing to do with the deal in front of them. That is expected, because the representative holds a decision role inside the seller and acts on its own payoff, and by Axiom III's stakes corollary the remedy is vesting compensation on outcomes that survive signature, needed in proportion to what the seller sinks on the representative's reading ([05-governance-forms.md](./05-governance-forms.md) section 5). It is usually read as protection against poor execution on specific deals. It is also the instrument that governs motion selection, and that is the wider claim. At the level of an organization the same mistake is imitation: a motion copied from another market, with the organization built to pay down a cost its buyers do not carry.
+**Fashion.** A leader adopts forward-deployed engineering because admired companies use it, or adds outbound volume because pipeline is thin, without reading what stops the buyers in front of them.
 
----
+**Cost.** Self-serve tactics carry a lower cost of sale, and a leader measured on efficiency picks them for reasons that have nothing to do with the buyer.
 
-## 9. Stages are fixed, and the jobs vary
+**Pay.** A representative paid on bookings chooses the path to the fastest signature. That is expected, because the representative acts on their own payoff, and the remedy is pay that follows the cost in the way (claim 5).
 
-Every buyer moves through the same stages: awareness, consideration, purchase, and after it renewal, which runs consideration again against challengers. The stages are the buyer's order of decision, and they do not vary by market. What varies is which costs the buyer cannot get through alone. Each such cost is a job the buyer needs done, and the seller staffs the job at whichever stage it arises. Read through TCG, each of Gartner's six buying jobs falls under one cost, and Gartner reports buyers looping back and revisiting the jobs in no fixed order ([buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md)). That does not contradict fixed stages if a stage is an order of decision rather than of time: a buyer can loop back to search during consideration, and it cannot renew before it buys. A buyer that loops back to awareness after it has bought would contradict it.
-
-| Job | What the buyer needs done | Where it usually arises |
-|---|---|---|
-| Search | Name the problem, find the alternatives and compare them | Awareness and consideration |
-| Bargaining | Bring its own decision roles to agreement, and settle terms with the seller | Consideration and purchase |
-| Policing | Check that the product will fit and the seller will deliver, then make it fit | Consideration, as proof, and after purchase, as implementation |
-| Maintenance | Keep what was verified current, and catch the fit drifting apart | After purchase and at renewal |
-
-The buyer does a self-serve job alone, from published material or a trial. A job that needs investment is staffed. A job above its threshold makes the deal unviable until someone brings it into range. Any of the three, as the buyer expects it, can stop the stages from starting. A buyer who cannot get through search never reaches consideration. A buyer through search that expects the bargaining or policing cost past its threshold declines discovery, so the seller never reads costs that would have shown it was wrong. Search is special in two ways: it is paid first, and it is where the buyer forms its expectation of the other two. Showing the buyer the other two costs early, in a form it can check, is part of the search job.
-
-**What the standard organization gets wrong.** It gives each stage one owner and assumes each stage has one job: business development for search, the account executive for bargaining, the solutions engineer for policing. A deal that starts at policing needs the policing job done during consideration, and the standard organization sends its engineer to the demo as support for the account executive rather than as the owner of the job deciding the deal. Staffing by where the sale starts means deploying each job at the stage the market's positions put it, with the owner of the deciding job leading the stage where it arises.
-
-**Whether the owner travels.** Two pressures pull opposite ways. Handing off keeps a scarce specialist from being tied up in one long deal. And each handoff is a seam where what one owner learned fails to travel, so the seller's gap reopens at once, the same discrete event a departed champion is on the buyer's side. A long deal adds a third pressure: discovery drifts. What the seller learned of the buyer's environment early goes stale over the cycle, and the fit itself drifts as the buyer changes ([02-mathematical-models.md](./02-mathematical-models.md) section 5.3). So keeping one owner throughout does not keep the discovery fresh, and in a long deal early discovery decays whoever holds it.
-
-Section 5.6 of the same file resolves it. Do the work that decides viability early and keep it bounded, settle the allocation, and time the full discovery to just before the investment is sunk. The specialist then works the deal twice, at the proof and at the sinking, and hands off between the two through an artifact that carries what was learned, the Contextual Blueprint, rather than staying in the deal throughout. Where the cycle is short against the drift, one owner carrying the job from proof through implementation costs little and removes the seam.
-
-**Account management is the maintenance job.** After purchase the jobs repeat in small. At renewal the buyer reconsiders, and account management, a seller investment funded while the renewal margin covers it ([02-mathematical-models.md](./02-mathematical-models.md) section 5.7), holds the gaps down between renewals.
-
-*Falsifier.* At equal positions, deals whose sale starts at policing and whose policing owner led during consideration should convert and launch no better than deals where the engineer arrived at the demo as support. And in long cycles, deals whose full discovery was re-run just before the investment was sunk should show as many divergent steps after go-live as deals whose discovery was done only early. Either finding would mean the stages carry the work and the jobs do not.
+**Imitation.** At the level of an organization the same mistake is a motion copied from another market, with a team built to carry a cost its buyers do not have. The heavy version has its own cost. A seller that puts engineers into every deal charges all its buyers for them, and a lighter rival wins the buyers who never needed the help (claim 9).
 
 ---
 
-## 10. What this does not settle
+## 8. What this does not settle
 
-Each item points at its entry in [07-open-questions.md](./07-open-questions.md) where one exists.
-
-- **The consensus motion has no instrument file.** The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) says so out loud when a deal routes there. Building the instrument set is the open work, and naming the motion further before that would produce a label with nothing behind it. Open question 2.
-- **Whether the largest position orders the work well enough.** Since Constitution 6.3 the largest position is the special case of the general allocation rule, kept as the default until the seller reads each cost's unit cost, sharpness and spillover to rivals. Open question 61.
-- **Where the thresholds sit.** Since Constitution 6.2 the thresholds belong to the payer and are read for each buyer from staffing, written authority or record. Until they are read, the calculator uses default edges placed on the boundaries of the score bands earlier versions used, and [06-calibration.md](./06-calibration.md) records them as chosen. A position read on the defaults is evidence neither way.
-- **Whether the position is vendor-relative.** An incumbent defending a renewal and a challenger attacking it face the same opportunity with different positions, because the incumbent's adaptation is already sunk. The instrument scores the deal rather than a vendor, which is a decision rather than an oversight: a vendor-scored instrument owes the reader an account of how each vendor wins, and that account does not exist yet. Until it does, an incumbent counting a renewal will read implementation-light for a reason the counts cannot see, and should say so on the sheet rather than trusting the routing.
-- **How early a reading can be trusted.** Misfit raises the policing cost and creates a bargaining cost at once, and the Constitution now says the bargaining count is read after exposure and the reading is a lower bound until fit is verified ([02-mathematical-models.md](./02-mathematical-models.md) section 3.5). A seller reading before discovery should expect the start to move toward implementation or consensus, never toward search. Whether induced vetoes appear at the rate the count predicts is a calibration question, item 3 in [06-calibration.md](./06-calibration.md) section 4.1.
-- **How to read a cost floor apart from the deal's own cost.** The calculator reads each cost's position and cannot yet say how much of it the market set. Open question 34.
-- **Whether the three drift rates behave as one mechanism.** $\gamma_{consensus}$ is the only one with a discrete field event attached, an occupant change. The other two are asserted to be continuous and nothing tests that. Open question 15.
+- **Whether the buyer wants the change at all.** Open question 66.
+- **How to rank two costs that are both in the way.** Open question 67 proposes time against the buyer's window as the shared scale.
+- **The consensus motion's instruments.** The incumbent qualification practice is older and better staffed than the [Bargaining Ledger](../../practice/bargaining-ledger.md).
+- **Whether a reading belongs to the deal or to a vendor.** An incumbent defending a renewal and a challenger attacking it face the same buyer with different costs, because the incumbent's work is already built in.
+- **How to tell a floor from a belief.** Open question 34.
 
 ---
 
-## 11. The incumbent vocabulary
+## 9. The incumbent vocabulary
 
-Everyone arriving here knows what Product-Led Growth means. This section says where it and its neighbours land, and where they mislead. Nothing here is used to decide anything.
+Everyone arriving here knows what Product-Led Growth means. This section says where it and its neighbors land, and where they mislead.
 
 <!-- vale TCG.RetiredTerms = NO -->
-<!--
-  The retired-term rule is off for the rest of this section. Naming retired
-  terms is what the section is for, so the rule would fire on every row of the
-  map and the fix would be to stop doing the job. This is the one place in the
-  repository where an old name is the subject rather than a mistake.
--->
+<!-- Naming retired terms is what this section is for, so the rule is off to its end. -->
 
-**The incumbent names do not form a set.** Product-Led Growth is named after the instrument, Sales-Led Growth after the actor, and Implementation-Led Growth after a cost. Only the third names a cost, which is why the obvious extensions, Search-Led and Consensus-Led, had nowhere to sit. This framework names every motion after the tightest cost, because that is what the theory says a motion is. The set then closes: three costs, three motions, plus one market condition in which no cost needs a seller's investment.
+**The incumbent names do not form a set.** Product-Led Growth is named after the instrument, Sales-Led Growth after the actor, and Implementation-Led Growth after a cost. Only the third names a cost. This framework names every motion after the cost it carries, and the set then closes: three costs, three motions, and one market condition in which no cost needs a seller's help.
 
 | This framework | Closest incumbent term | Relationship |
 |---|---|---|
-| **Turnkey** | Product-Led Growth | Overlapping, not equal. Turnkey is a condition of a market: every cost self-serve and nothing specific sunk. Product-Led is a company-level strategy: the product is the primary acquisition instrument, and it works under that condition. The two come apart in the case that matters most, a Product-Led company moving upmarket. Security review arrives and the committee grows, so the bargaining cost leaves the self-serve zone. Integration deepens, so something specific is sunk. The deals have left Turnkey while the company still calls its motion Product-Led, and the instrument set did not follow. Entry produces the same split with the company unchanged, because a Product-Led market that fills with competitors raises its own search cost. Reading each cost's position deal by deal is what makes either transition visible while it is happening. |
-| **Search-led** | Sales-Led Growth, category creation, evangelical selling | Search-led is wider. It also covers channel and trial, which Sales-Led does not. |
-| **Consensus-led** | The consensus sale (Schmidt, Adamson and Bird 2015), Gartner's consensus-creation job, Miller Heiman's buying influences, MEDDPICC-style qualification and multithreading | The motion is described and staffed. What is new is the label, and the formal rule that names it for the largest position. |
-| **Implementation-led** | Implementation-Led Growth, forward-deployed engineering, solution selling | Direct. This framework was called ILG before the theory outgrew the name. Older analyses still use it for the whole framework. |
-| **Run together** | No established term | The industry treats motions as exclusive, so the case where two costs sit at the same position has no name. Older analyses in this repository call it Composed. |
+| **Turnkey** | Product-Led Growth | Overlapping, not equal. Turnkey is a condition of a market. Product-Led is a company's strategy, and it works under that condition. The two come apart when a Product-Led company moves upmarket. Security review arrives and the committee grows, so consensus is now in the way. Integration deepens, so the purchase is now built-in. The company still calls its motion Product-Led, and its instruments did not follow. Entry produces the same split with the company unchanged |
+| **Search-led** | Sales-Led Growth, category creation, evangelical selling | Search-led is wider. It also covers channel work, which Sales-Led does not |
+| **Consensus-led** | The consensus sale (Schmidt, Adamson and Bird 2015), Gartner's consensus-creation job, Miller Heiman's buying influences, MEDDPICC-style qualification | The motion is already described and staffed. What is new is the label, and naming it for a cost |
+| **Implementation-led** | Implementation-Led Growth, forward-deployed engineering, solution selling | Direct. This framework was called ILG before the theory outgrew the name |
+| **Run together** | No established term | The industry treats motions as exclusive, so two costs in the way at once has no name |
 
-**Product-Led and Sales-Led name the seller, not the cost, and each bundles several costs.** A sales-led company runs evangelical representatives, who reduce search, and enterprise representatives working a committee, who reduce bargaining, and solutions engineers, who reduce policing uncertainty. Calling all of that one instrument narrows the term to one of its functions. And a trial, the Product-Led instrument, is not a search instrument at all: it is verification the buyer runs alone, and it works only when nothing specific is sunk, so the buyer can walk away at no cost. Read by cost, the argument the two camps are having splits into two measurable questions. Can the buyer verify fit alone, which is Axiom III's gate. Does the buyer know what they are looking for, which is Axiom I. Neither answer is a philosophy.
+**Product-Led and Sales-Led name the seller, and each bundles several costs.** A sales-led company runs evangelical representatives who lower search, enterprise representatives who work a committee, and solutions engineers who lower the fear of implementation. Calling all of that one instrument narrows the term to one of its functions. A trial, the Product-Led instrument, is the buyer checking fit alone, and it works only for a plug-in purchase. Read by cost, the argument between the two camps becomes two questions with answers. Can the buyer check fit alone? Does the buyer know what it is looking for?
 
 **What this framework is not competing with.** Go-to-market vocabulary mixes three tiers, and the tiers compose.
 
 | Tier | What it decides | Examples |
 |---|---|---|
-| **Theory of transaction cost** | Which costs a deal carries, and therefore which instruments can reduce them | This framework |
+| **Theory of transaction cost** | Which costs a market carries, and so which instruments can lower them | This framework |
 | **Qualification framework** | What must be true before a deal is called committed | MEDDPICC, BANT |
 | **Conversational methodology** | How a perspective gets reframed in the room | Challenger, SPIN |
 
-A team using this framework still needs a qualification standard and a conversational technique. Qualification tells you whether a deal is real. It does not tell you which of three costs is tightest, and it does not reduce any of them.
-
-The motions are written out rather than abbreviated, because SLG would mean two things in one conversation and the written names match the words the Deal Triage Calculator returns.
+A team using this framework still needs a qualification standard and a conversational technique. Qualification says whether a deal is real. It does not say which of three costs is in the way, and it lowers none of them.
 
 <!-- vale TCG.RetiredTerms = YES -->
 
@@ -265,13 +203,8 @@ The motions are written out rather than abbreviated, because SLG would mean two 
 
 ## Related
 
-- [00-tcg-constitution.md](./00-tcg-constitution.md) — Axiom I supplies the positions and participation thresholds, Axiom II the investment that moves them, and Axiom III the specific exposure and the gate.
-- [02-mathematical-models.md](./02-mathematical-models.md) — Section 6 for the thresholds and positions, section 7 for the forms Constitution 4.0 retired.
-- [05-governance-forms.md](./05-governance-forms.md) — Frequency, the governance form, and what the seller's market follows from.
-- [06-calibration.md](./06-calibration.md) — Provenance of every number named here, including every threshold edge.
-- [07-open-questions.md](./07-open-questions.md) — The register section 9 points into.
-- [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.
-- [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase's cost of using the market, Dahlman's three costs and Williamson's split by time.
-- [channel-collapse.md](../02-research/channel-collapse.md) — The reachability blocker, which most frameworks do not name as a cost.
-- [Deal Triage Calculator](../../practice/deal-triage-calculator.md) — The instrument that emits the positions and the specific exposure, and the conditions under which the implementation-led motion should be declined.
-- [models/README.md](../../models/README.md) — Executable forms of the equations referenced here.
+- [00-tcg-constitution.md](./00-tcg-constitution.md), claims 1 to 5 for the market and claims 6 to 9 for the deal.
+- [07-open-questions.md](./07-open-questions.md), the register section 8 points into.
+- [buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md), where this framework agrees with its neighbors and where it differs.
+- [channel-collapse.md](../02-research/channel-collapse.md), the reachability blocker and the noise in claim 3.
+- [The Market Reading](../../practice/00-market-reading.md), the instrument that reads a market before any deal.

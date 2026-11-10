@@ -2,7 +2,7 @@
 title: "Buying Center Dynamics"
 layer: theory
 status: active
-operationalizes: [axiom-1, axiom-3]
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -32,11 +32,10 @@ The last five sources reached the repository through an external review in 2026-
 - Any member holding veto power is a decision maker regardless of title or seniority.
 
 **Supports in TCG:**
-- **Axiom I — Law of Transaction Cost Composition** — supplies the internal structure of the bargaining and decision cost, $F_{consensus}$. The Constitution names the cost after Dahlman, and the field calls it consensus. Cyert-March and Webster-Wind explain what generates its internal part, the bargain among the decision roles. The external part, the bargain with the seller over terms, is in the 2026-11 extension below.
-- **Consensus Friction model** — direct theoretical basis for $F_{consensus} = \alpha N^{\beta}(1 + \text{Var}(I_i))$ in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md). The exponent $\beta > 1$ follows from channel growth, and the variance term follows from goal heterogeneity.
-- **The Red Team Protocol** — operationalizes variance reduction. Forcing stakeholders to state failure modes aloud converts quasi-resolution into explicit trade-off, which is the only mechanism that lowers $\text{Var}(I_i)$ before signature.
-- **The decision-role map** ([Bargaining Ledger](../../practice/bargaining-ledger.md)) — the buying center model explains why a role that blocks is structurally normal rather than exceptional. A stakeholder whose measured objectives worsen under the initiative is behaving rationally by blocking it.
-- **Axiom III — Law of Future Cost** — the bargaining gap is one of the two the buyer's future loss runs on: whether the coalition holds once the investment is sunk. Intra-organizational alignment is a cooperation condition applied inside the buyer, not only across the buyer-seller boundary.
+- **Claim 7.** Direct basis. The buyer is a coalition, so a proposal is judged once per role, against that role's own objective. A role whose measured objectives worsen under the change acts rationally by blocking it, which is why the arrangement answers each role by its position. Quasi-resolution is why objections arrive late as vetoes unless the seller collects them early. The Red Team has each role state how the project would fail, which turns a deferred conflict into a trade-off the roles make before signature.
+- **Claim 2.** A complex organization means more roles that can say no. Goal heterogeneity drives the stall more than size does, so the reading counts roles with different objectives and not heads.
+- **The premise.** Consensus is the buyer's own people reaching agreement, one half of Dahlman's bargaining and decision. Cyert and March, and Webster and Wind, explain what generates it. The other half, the bargain with the seller over terms, is in the 2026-11 extension below.
+- **After signature.** The coalition has to hold once the buyer has built something. A role's position outlasts its occupant, which is why claim 7 has a successor inherit the answer.
 
 ---
 
@@ -44,7 +43,7 @@ The last five sources reached the repository through an external review in 2026-
 
 **The room suppresses what one member knows.** Stasser and Titus showed that groups over-sample information every member already holds and under-sample what one member holds alone, and the meta-analysis by Lu, Yuan and McLeod across twenty-five years of hidden-profile experiments confirms that groups facing distributed private information rarely reach the answer the pooled information supports. Kuran's preference falsification says why the private information is withheld: people misrepresent what they want when the social cost of candor is high. Jackall's ethnography says what the cost is inside a corporation: managers survive on calculated ambiguity, and a written record of a parochial interest is ammunition for a peer.
 
-**What follows for the bargaining instrument.** The premise of the decision-role ledger in [08-from-axioms-to-instruments.md](../01-foundation/08-from-axioms-to-instruments.md) is confirmed: positions stated in a room are not evidence of anyone's exposure. Its first design was wrong in one respect: occupants will state a reservation one to one and will not write it on a document a seller holds and a peer can find, and Arikan adds that a probe of private vulnerability reads as opportunism however it is framed. So the diagnosis is private and the arrangement is shared, objections are collected apart before any room convenes, and Axiom III's bargaining row in the Constitution says so.
+**What follows for the bargaining instrument.** The premise of the decision-role map in the [Bargaining Ledger](../../practice/bargaining-ledger.md) is confirmed: positions stated in a room are not evidence of anyone's exposure. Its first design was wrong in one respect: occupants will state a reservation one to one and will not write it on a document a seller holds and a peer can find, and Arikan adds that a probe of private vulnerability reads as opportunism however it is framed. So the diagnosis is private and the arrangement is shared, objections are collected apart before any room convenes, and claim 7 says so. Item 28 in [06-calibration.md](../01-foundation/06-calibration.md) is the test of whether people will state an objection one to one.
 
 ---
 
@@ -52,18 +51,15 @@ The last five sources reached the repository through an external review in 2026-
 
 **The theory under the coalition claim.** Buchanan and Tullock analyze how a group chooses its own decision rule. Requiring more members to agree protects each member from decisions that harm it, which they call external cost. It also raises the cost of reaching any decision at all, which rises with the share of the group whose agreement is required. A group picks the rule that minimizes the two together. Webster and Wind say the buyer is a coalition. Buchanan and Tullock say what a coalition's agreement costs and why.
 
-**Exposure raises the required agreement.** Their analysis predicts that a group demands broader agreement when a decision can do more harm. Applied to a purchase, a buyer adds approvers and required reviews when the deal sinks more specific investment. Part of the bargaining cost is therefore a response to Axiom III exposure, which is one way the costs are coupled (open question 3).
+**Exposure raises the required agreement.** Their analysis predicts that a group demands broader agreement when a decision can do more harm. Applied to a purchase, a buyer adds approvers and required reviews when the purchase builds more. Part of the consensus cost is therefore a response to what the purchase builds, which is why claim 2 says a complex organization often brings implementation with it (item 3 in [06-calibration.md](../01-foundation/06-calibration.md)).
 
-**Contracting is the external part of the bargain.** Procurement, legal, security review and the paper process are the buyer's bargain with the seller over terms. Constitution 5.0 folded them into bargaining and decision rather than treating contracting as a fourth cost. Negotiating a term is a cost the buyer pays today, under Axiom II. What the term governs after signature belongs to policing and enforcement, which is Williamson's line between ex ante and ex post costs. The buyer's own rules for this part, spend thresholds and required reviews, are set outside any one deal, which makes them the bargaining cost floor in [information-environment.md](./information-environment.md).
+**Contracting is the other half of the bargain.** Procurement, legal, security review and the paper process are the buyer's bargain with the seller over terms, the other half of Dahlman's bargaining and decision. The Constitution's consensus cost names the buyer's own half, and treats the terms as what the two parties settle at Time1. What a term governs after signature belongs to Time2, which is Williamson's line between reaching an agreement and living under it. The buyer's own rules for this part, spend thresholds and required reviews, are set outside any one deal, which makes them part of claim 4's floor in [information-environment.md](./information-environment.md).
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).
 
-## Extension: capacity and approval thresholds (2026-11)
+## Extension: approval thresholds (2026-11)
 
-**Sources.** Each source reached the repository through the [2026-11-09 research review](./research-review-2026-11-09.md) and is marked by how far it has been read. Check any finding at the primary before quoting it.
-- Milgrom, P. & Roberts, J. (1988). "An Economic Approach to Influence Activities in Organizations." *American Journal of Sociology*, 94 (Supplement), S154–S179. (secondary)
+**Source.** It reached the repository through a research review on 2026-11-09. Check any finding at the primary before quoting it.
 - Carril, R. (2021). "Rules Versus Discretion in Public Procurement." Barcelona School of Economics Working Paper 1232. (introduction read, abstract rechecked)
 
-**Capacity does not move freely between payers.** Milgrom and Roberts show that the authority to move resources by order invites costly influence activity, as members spend effort lobbying for the decision. Constitution 6.2 cites them for why each payer's capacity is specific to it, and why ease on one payer never buys back another.
-
-**Approval thresholds bind.** When the US simplified acquisition threshold rose in 2011, purchases bunched under it, award amounts were pushed down to fit, and buyers dropped some purchases above it. [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 6 reads this as consistent with the gate and with the buyer's condition alike, and says what would separate them.
+**Approval thresholds bind.** When the US simplified acquisition threshold rose in 2011, purchases bunched under it, award amounts were pushed down to fit, and buyers dropped some purchases above it. That backs claim 8's exception, that a price taken under a spend threshold removes an approver. Carril models the buyers as weighing red tape against what the purchase is worth to them, which fits the premise's line that a cost is a penalty a large enough gain can offset. Item 68 in [06-calibration.md](../01-foundation/06-calibration.md) is the prediction this evidence leaves untested, and [sat-threshold-test.md](./sat-threshold-test.md) is the repository's own run on the same threshold.

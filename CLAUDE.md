@@ -4,87 +4,88 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market built on transaction cost economics: what a deal costs a buyer beyond the price determines how it can be sold. Search-led, consensus-led and implementation-led are motions inside it, each named after the cost the sale starts at. Turnkey is the market condition where every cost is low enough for the buyer to pay down alone. `theory/01-foundation/01-motions.md` maps them onto PLG and SLG. Almost all content is Markdown.
+A knowledge base for **Transaction Cost Growth (TCG)**, a theory of go-to-market built on transaction cost economics: what a deal costs a buyer beyond the price decides how it has to be sold. Search-led, consensus-led and implementation-led are motions inside it, each named after the cost it carries. Turnkey is the market where buyers can carry every cost alone and the purchase is plug-in. `theory/01-foundation/01-motions.md` maps them onto PLG and SLG. Almost all content is Markdown.
 
 | Directory | Function |
 |---|---|
-| `theory/` | Develop and pressure-test the framework. Axioms, equations, academic backing. |
-| `practice/` | Operationalize theory. The instruments the axioms name and the measurement tools the tests assert. |
+| `theory/` | Develop and pressure-test the framework. Axioms, claims, academic backing. |
+| `practice/` | Operationalize theory. The instruments the claims name. |
 | `publishing/` | Turn the framework into public writing. Voice guide, writing protocols, content generators. |
-| `models/` | Executable forms of the equations, the tests that check the worked examples, and the figure generator. Python, no dependencies. |
-| `tools/` | The two linters and the Vale style that keep the other directories consistent. |
+| `tools/` | The two linters and the Vale style that keep the other directories consistent. Python, no dependencies. |
+| `models/` | One test on public data: a script and the counts it pulled, for `theory/02-research/sat-threshold-test.md`. It is not a check. |
 
 ## Standing scope decisions
 
 Recorded in the Constitution 5.0 proposal, now in git history (`git show b5b3386:CONSTITUTION-5.0-PROPOSAL.md`, section 6).
 
 - **The math is scaffolding.** It keeps the argument honest and the falsifiers checkable, and it is not shown in public writing.
-- **`06-calibration.md`, `08-from-axioms-to-instruments.md` and `models/` stay only while they help defend a claim.** Code that checks a worked example passes. Simulation with invented coefficients does not.
+- **Supporting files stay only while they help defend a claim.** The 2026-11 trim applied this to the model code, to the parameter tables in `06-calibration.md` and to the scores in the ledgers.
 - **The audience is founders and revenue leaders, held to academic citation standards.** Health tech supplies the examples, built from public patterns.
 - **Every falsifier is written for others to run.** The author's experience supplies hypotheses, not evidence.
 
+Recorded in the trim proposal on 2026-11-10, now in git history (`git show 59ab41e:TRIM-PROPOSAL.md`):
+
+- **The goal is a differentiated point of view for founders and revenue leaders.** The twelve claims in the Constitution are the ones the author holds, most of them already published. Material that defends a claim sits behind it. Do not add machinery to answer an objection unless asked.
+- **The math and the model code retired in the trim.** `models/` now holds only the public-data test. `02-mathematical-models.md` keeps sections 1.1 to 1.4, which show that price is a transfer. `06-calibration.md` is now a list of predictions and tests.
+
 ## Conceptual architecture
 
-**The source of truth is `theory/01-foundation/00-tcg-constitution.md`**: three standing assumptions, a premise and three axioms. The premise: buying costs the buyer three things beyond price (search and information, bargaining and decision, policing and enforcement), the seller can absorb part of each (sales before commitment, account management after), and each party acts on what it can check. Each axiom answers one question at one level, with a falsifier:
+**The source of truth is `theory/01-foundation/00-tcg-constitution.md`**, version 7.0: three standing assumptions, a premise, and twelve numbered claims under three axioms. Each axiom covers one time and asks one question of each party. Each claim has a test that could fail and one failure mode. Cite a claim by its number, which is stable.
 
-- **I, Composition. Can a market exist?** Each side has a limit. Any one cost whose demand the buyer expects past its payer's threshold keeps it out, however low the other two. A seller stays out where the deals it wins cannot repay what it must build before the first one. Cost floors and Turnkey live here.
-- **II, Transaction Investment. What has to be paid down at time 0?** The tightest cost, the largest position, is where the sale starts and names the motion. No absorption reaches a cost past its threshold, so the seller lowers it, shows it lower, or stops. Inside the thresholds, seller spending goes where a dollar most raises the chance the buyer goes ahead (`02-mathematical-models.md` section 1.5), and tightest-first is only its default. Each party goes ahead only when its own share is covered by its own return. Seller spending earns its cost only by raising what the deal creates (cheaper work, a lower cost at time 1) or by letting a value-creating deal go ahead (evidence the buyer can check).
-- **III, Future Cost. What prevents churn and contraction at time 1?** Whatever a party sinks that is worth less outside the relationship exposes it to what it cannot verify or enforce. Exposure sets what a failure costs. A failed fit runs on what the party cannot check, and hold-up on what it cannot stop once its exposure outgrows the other side's stake. Contract what can be foreseen, before the investment is sunk, and plan a standing review for what cannot. Specificity, the gate, and the governance forms live here.
+The premise: buying costs the buyer three things beyond price (search, consensus, implementation), the seller can carry part of each (sales before commitment, account management after), and each party acts on what it can check. Each cost has a home time. Conditions run forward and expectations run backward: the market shapes the deal and the deal shapes the relationship, and a buyer prices a later cost when it makes an earlier decision. A cost can stop a deal, and a large enough gain or someone else doing the work can offset it.
+
+- **I, Composition. Time0, the market.** The buyer asks whether to buy, build or do nothing. The seller asks whether it can serve these buyers at a profit. Claims 1 to 5: the kind of cost in the way decides how to sell, workflow and organizational complexity predict that cost, cheap claims raise every buyer's search cost, rules set a floor, and a seller reaches only the buyers whose cost it is built to carry and pays its people for work on that cost.
+- **II, Transaction Investment. Time1, contracting.** The buyer asks whether its organization can agree and what the purchase will take. The seller asks whether the deal is worth what it takes. Claims 6 to 9: a purchase is plug-in or built-in, implementation is a fear that acts through the buyer's own people, a discount moves money and lowers no cost, and work skipped here moves to Time2 and grows.
+- **III, Future Cost. Time2, renewal.** The buyer asks whether it worked here and whether it is free to leave. The seller asks whether the relationship pays. Claims 10 to 12: whether the product worked here decides renewal, lock-in earned by building together holds while lock-in made by control is hold-up, and a contract built for partnership does what a discount cannot.
+
+**The repository was trimmed around 7.0 on 2026-11-10,** in seven passes. Every file in `theory/`, `practice/` and `publishing/` now matches the Constitution. The trim removed the seller surplus model, the governance forms, the file that derived the instruments, most of the math, the model code, the parameter tables, seven research files and the ledgers' arithmetic. All of it is in git history, and files that were cut say which commit holds the longer version. Git history before that date uses ideas 7.0 retired: positions, the two thresholds per cost, the gate, the tightest cost, where the sale starts, the governance forms and the drift rates. Where a file and the Constitution disagree, the Constitution governs.
 
 The dependency chain runs one way: `theory/` → `practice/` → `publishing/`. Changes to theory propagate downstream. Changes to practice or publishing never modify theory.
 
 Read before editing:
-- **Any `practice/` file**: `practice/README.md`, for the question each instrument answers and the three-question test every section must pass. For the ledgers and the Adoption Review, also `theory/02-research/cfir.md`, section "Where each construct is read", so an edit does not drop a construct. The Deal Triage Calculator (`practice/deal-triage-calculator.md`) is referenced by nearly every instrument. It emits each cost's position and zone, where the sale starts, and an exposure reading, and it sums costs only where one payer carries them.
-- **Any research file**: `theory/02-research/00-reading-guide.md`, which maps each paper to the axiom it backs.
+- **Any `practice/` file**: `practice/README.md`, for the question each instrument answers and the three-question test every section must pass. For the ledgers and the Adoption Review, also `theory/02-research/implementation-science.md`, section "Where each construct is read", so an edit does not drop a construct. The Deal Triage Calculator (`practice/deal-triage-calculator.md`) is referenced by nearly every instrument. No instrument scores a deal or adds the costs together, so do not add a score, a band or a fraction to one.
+- **Any research file**: `theory/02-research/00-reading-guide.md`, which maps each paper to what it backs.
 - **Before extending the theory**: `theory/01-foundation/07-open-questions.md`. An extension should land on a recorded gap or add one.
 
 <!-- vale TCG.RetiredTerms = NO -->
-Older analyses and git history use readings Constitution 4.0 retired: the friction vector, the summed 0-to-30 level, the Structural deal class, the coefficient 2.25, and the market states. `01-motions.md` and the Constitution's version history record what replaced them.
+Older analyses and git history use readings Constitution 4.0 retired: the friction vector, the summed 0-to-30 level, the Structural deal class, the coefficient 2.25, and the market states. Constitution 7.0 retired the old time labels, where "time 0" was the deal and "time 1" the relationship, along with positions, the gate and the two conditions as equations in the Constitution. `01-motions.md` and the Constitution's version history record what replaced them.
 <!-- vale TCG.RetiredTerms = YES -->
 
-## The two conditions
+## The one piece of accounting
 
-All framework claims trace to two conditions, one per party, and a participation test:
+The Constitution holds no equation. It relies on one result from `02-mathematical-models.md` sections 1.1 to 1.4: price is a transfer. What leaves the buyer arrives at the seller, so a discount changes the split and leaves the work of buying the same size. The exception is a price taken under a spend threshold, which removes an approver.
 
-$$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} - \sum_k I^s_k - L_s > 0 \qquad r_k \le 1 \;\; \forall k$$
-
-- **All terms are fractions of annual contract value** (`02-mathematical-models.md` section 1.2), not percentage points. The gate is the exception: it reads each cost's demand in its payer's own units (section 6).
-- **$P$** is a transfer, so it cancels when one deal's conditions are added, though it changes which deals occur. Hold-up is a transfer too: it drops out of what the deal creates, $W$, and costs through deterred investment and fear the other side does not share. A discount moves the split. Verification lowers a loss both sides carry.
-- **$I^b_k$, $I^s_k$** = what each party invests today against cost $k$ (Axiom II).
-- **$L_p = Q_p \cdot \pi_p$** = each party's expected future loss (Axiom III). The gaps behind $\pi_p$ are normalized to $[0, 1]$. The Enforcement Ledger reports the policing gap already normalized. The model's raw scorecard form runs on $[2, 10]$, so normalize that first.
-- **$r_k$** = cost $k$'s demand on its payer, read between that payer's capacity and its capacity plus what others can move off it (Axiom I). Above 1 the buyer stays out. The sale starts at the largest. The costs are non-compensatory, and costs one payer carries are tested together.
-
-When diagnosing a stall or editing a prescription, identify which term it addresses.
+When diagnosing a stall or editing a prescription, name the claim it addresses and the time it sits at.
 
 ## Content conventions
 
 Apply the voice rules in `publishing/02-tools/voice-guide.md`. Vale enforces most of them.
 
-- **Component names**: Dahlman's names are canonical in theory prose. *Search*, *consensus* and *implementation* are the field names and the notation subscripts. Introduce the field name at first use in a theory file. A position in the buyer's coalition is a *decision role*.
+- **Component names**: *search*, *consensus* and *implementation* are the names of the three costs. They descend from Dahlman's (search and information, bargaining and decision, policing and enforcement) and differ in two places, which the Constitution's premise states. Cite Dahlman as their origin, and use his names only where a research file discusses his paper. A position in the buyer's coalition is a *decision role*.
+- **The times** are written Time0, Time1 and Time2, with no space: the market, contracting and renewal.
+- **Plug-in and built-in** name the two kinds of purchase. Define both at first use, because "plug-in" also names a software add-on. Research files keep the economists' word, *specific*.
 - **Translate every technical term** in plain English right after first use.
 - **Em dashes and semicolons**: at most 30 per file for reference material, 3 for prose written for publication. Restructure into periods rather than raising either limit.
 - **Active voice with named actors.** No "It's not X, it's Y" constructions. No hype words, no emojis.
-- **The Constitution is axioms-first.** A claim that cannot be traced to an axiom does not belong in it. Operational content belongs in `practice/`.
+- **The Constitution is claims-first.** A statement that cannot be traced to one of the twelve claims does not belong in it. Operational content belongs in `practice/`.
 - **Frontmatter**: every file in `theory/` and `practice/` opens with `title` (matching the H1), `layer`, `status`, optional `version`, `operationalizes` and `canonical_source`. `check_frontmatter.py` enforces the schema. `grep -rl "axiom-1" theory/ practice/` lists everything that claims to derive from an axiom.
 
 ## Drift rules
 
-Each of these has a check behind it. Do the step in the same commit as the change.
+Do each step in the same commit as the change.
 
 - **New headline statistic in `theory/`**: add a row to `theory/02-research/audits/citation-provenance-audit.md` with an honest verification status. When two files disagree on a number, record it there first, then fix both against the primary source.
-- **New coefficient, threshold or band edge**: declare it in `theory/01-foundation/06-calibration.md` with its provenance. Every parameter is unfitted and must say so. Do not fit to synthetic data. The test suite fails on an undeclared constant.
-- **Changing an equation**: the document is the specification and the code is the bug. Edit the document, then `models/tcg_models.py`, then rerun `make_figures.py` if the Constitution plots it, then fix any worked example whose result moved. `models/README.md` has the detail.
+- **New coefficient, threshold or band edge**: do not add one. The Constitution states no measured quantity. A prediction that only evidence can settle goes in `theory/01-foundation/06-calibration.md`, under a number that is never reused.
+- **Changing the accounting**: `02-mathematical-models.md` sections 1.1 to 1.4 hold the only equations left. The price-window figure under claim 8 is a fixed image, so a change there means redrawing it by hand.
 - **Renaming anything canonical**: grep the whole repo for the old term, add it to `swap:` in `tools/linting/styles/TCG/RetiredTerms.yml`, and bump the Constitution version and the root README footer together. Then check descriptions, not just names: a paragraph can use every current term and still describe a superseded axiom. `tools/linting/README.md` has the detail.
 
 ## Checking your work
 
-Run all five before finishing an edit:
+Run all three before finishing an edit:
 
 ```bash
 python3 tools/linting/check_playbook.py && \
-python3 tools/linting/check_frontmatter.py && \
-python3 models/test_tcg_models.py && \
-python3 models/make_figures.py --check && vale .
+python3 tools/linting/check_frontmatter.py && vale .
 ```
 
 They also run in `.githooks/pre-commit`, which is active only after `git config core.hooksPath .githooks`, and in `.github/workflows/checks.yml` on every pull request and push to `main`.

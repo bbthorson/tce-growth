@@ -2,16 +2,19 @@
 title: "The Constitution of Transaction Cost Growth (TCG)"
 layer: theory
 status: active
-version: 6.4
+version: 7.0
 ---
 
 # The Constitution of Transaction Cost Growth (TCG)
 
-**Version:** 6.4
-**Purpose:** To state the three claims from which everything else in this repository derives. Each answers one question at one level: whether a market can exist, what a deal has to pay down at time 0, and what keeps the relationship from churning or contracting at time 1. Each is falsifiable on its own. A claim that cannot be traced to one of them does not belong here.
+**Version:** 7.0
+**Purpose:** To state the twelve claims everything else in this repository derives from. A buyer and a seller make three decisions in order: whether to enter a market, whether to sign, and whether to renew. Each axiom covers one of those times and asks one question of each party. Each claim carries a test that could fail. A claim that cannot be traced to one of the twelve does not belong here.
 
 > [!IMPORTANT]
-> **This document states structure and no measured quantity.** The thresholds, rates and band edges that turn its claims into numbers live in [06-calibration.md](./06-calibration.md). None of them is fitted, and a reader can reject any number there without rejecting the claim it sits inside.
+> **This document states structure and no measured quantity.** It holds no equation, threshold or rate. The one piece of accounting it relies on, that price is a transfer between the two parties, is in [02-mathematical-models.md](./02-mathematical-models.md) sections 1.1 to 1.4.
+
+> [!NOTE]
+> **The rest of the repository matches 7.0** since the trim of 2026-11-10. Where a file and this document disagree, this document governs. The proposal that set out the trim is in git history: `git show 59ab41e:TRIM-PROPOSAL.md`.
 
 Version history is at the end of this document.
 
@@ -19,220 +22,179 @@ Version history is at the end of this document.
 
 ## Standing assumptions
 
-Three premises sit above the axioms. They are inherited rather than argued, and each is named here so a reader who rejects one knows what falls with it.
+Three premises sit above the axioms. They are inherited and not argued here, and each is named so a reader who rejects one knows what falls with it.
 
-1. **Bounded rationality and opportunism** (Williamson 1985). No party can foresee every state the relationship will reach, so every contract is incomplete. And a party will exploit a gap once the other side's position is exposed. The first is why uncertainty has a price. The second is why safeguards exist.
-2. **Value is set outside the sale, and it decays.** What a change can be worth to this buyer, its *realizable value* $V_{solution}$, is set by the offer and the buyer's situation: its workflow, its alternatives and what it will invest in adoption. Changing the offer is a product decision, even when a seller makes it inside a deal. Within the sale, the seller moves only the buyer's *recognized value* $\tilde{V}_{solution}$, its current estimate, and what the buyer pays. What the buyer captures after go-live, its *realized value*, rises toward realizable as adoption and delivery proceed. From the triggering event, value decays, $V_{effective}(t) = \tilde{V}_{solution} \cdot e^{-\delta t}$, and the one term in $\delta$ a seller can touch is whether an external catalyst has been named ([02-mathematical-models.md](./02-mathematical-models.md) section 4). The assumption fails if, for the same offer, a claim the buyer cannot check raises realized value after go-live as well as the estimate at signature. [value-and-persuasion.md](../02-research/value-and-persuasion.md) carries the evidence and the objection that survives it.
-3. **Every actor acts on their own payoff** (Jensen and Meckling 1976). The parties the axioms reason about are the decision roles on each side and every intermediary between the two firms, and a role's payoff is not its organization's. An actor whose payoff does not depend on the outcome behaves as though the outcome does not matter, whatever their intent. The assumption describes and does not predict bad faith. The instruments build arrangements each party can say yes to, rather than governance designed around opportunism, which can produce the opportunism it assumes. [tce-empirical-record.md](../02-research/tce-empirical-record.md) carries that critique.
+1. **Bounded rationality and opportunism** (Williamson 1985). No party can foresee every state a relationship will reach, so every contract is incomplete. And a party may exploit a gap once the other side cannot easily leave. The first is why uncertainty has a price. The second is why safeguards exist.
+2. **Value is set outside the sale, and it fades.** What a change can be worth to a buyer is set by the offer and the buyer's situation. Changing the offer is a product decision, even when a seller makes it inside a deal. Within the sale the seller changes what the buyer knows and what the buyer pays. A buyer's reason to act fades with time unless a dated event holds it in place. [value-and-persuasion.md](../02-research/value-and-persuasion.md) carries the evidence and the objection that survives it.
+3. **Every actor acts on their own payoff** (Jensen and Meckling 1976). The parties are the decision roles on each side and every intermediary between the two firms, and a role's payoff is not its organization's. The assumption describes and does not predict bad faith.
 
 ---
 
 ## Definitions
 
-A *market* is the buyers who call a problem by one name, and a *deal* is one buyer's purchase. Two words carry a narrower meaning.
+A *market* is the buyers who call a problem by one name, and a *deal* is one buyer's purchase.
 
-- **Workflow.** The procedure a product changes. A product encodes a reference workflow, and how far a buyer's version sits from that reference is what makes an investment in the deal specific under Axiom III. A product that cannot name its workflow has no reference to read that distance against.
-- **Decision role.** A position in the buyer's organization that holds a veto or an evaluation over the purchase, defined by its relation to the workflow rather than by its occupant: who runs it, who owns it, who pays for it, who polices it. [03-glossary-and-notation.md](./03-glossary-and-notation.md) records what changes when an occupant leaves and when a role dissolves.
+- **Workflow.** The procedure a product changes. It has two readings. How *settled* it is: written down, followed, with its exceptions known. How *entangled* it is: how much else changes when it changes.
+- **Decision role.** A position in the buyer's organization that can stop or must approve the purchase, defined by its relation to the workflow and not by its occupant: who runs it, who owns it, who pays for it, who polices it.
+- **Plug-in and built-in.** A *plug-in* purchase works on arrival. The buyer can try it on its own work, and can walk away having stranded nothing. A *built-in* purchase has the buyer, the seller or both build something that is worth less anywhere else: integrations, changed workflows, training. Economists call such an investment *specific* (Williamson 1985), and the research files keep that word.
+- **Motion.** What a seller does, and is organized to do, to carry part of a buyer's cost.
+- **Turnkey.** A market where buyers can carry every cost alone and the purchase is plug-in.
 
 ---
 
 ## The premise
 
-Buying costs more than the price. The buyer has to find a seller it trusts, get its own organization to agree, and make the product work in its own environment. Dahlman (1979) calls these search and information, bargaining and decision, and policing and enforcement. The field calls them *search*, *consensus* and *implementation*, and the notation keeps those as subscripts.
+Buying costs more than the price. The buyer has to find a seller it trusts, get its own organization to agree, and make the product work in its own environment. This document calls those three costs *search*, *consensus* and *implementation*.
 
-| Cost (field name) | The buyer's question | What lowers it | What sets its cost floor |
+They descend from the three costs of using a market that Dahlman (1979) named: search and information, bargaining and decision, and policing and enforcement. They differ from his in two places. Consensus is the buyer's own people reaching agreement, which is one half of his bargaining and decision. Implementation covers making the product work in the buyer's environment as well as checking that the seller kept its terms, which is wider than his policing and enforcement. His three run in the same order as the three times here, with search before the bargain and policing after it.
+
+| Cost | The buyer's question | Home time | What lowers it |
 |---|---|---|---|
-| **Search and information** (search) | Which solutions exist, and does this one fit? | Category definition, education, a channel that reaches the buyer | The information environment: message volume against the buyer's attention, and the category's record |
-| **Bargaining and decision** (consensus) | Can my organization agree to this? | Mapping each decision role's exposure, and an arrangement each role can say yes to | The buyer's institutions: procurement rules, spend thresholds, required reviews and how decisions get made |
-| **Policing and enforcement** (implementation) | Will the seller deliver what was promised, and will it work here? | Outside validation: references, guarantees, a channel with a stake | The measurement environment: whether outcomes can be attributed and delivery verified |
+| **Search** | Which solutions exist, and does one fit? | Time0 | A named category, a channel that reaches the buyer, a signal that costs the seller something |
+| **Consensus** | Can my organization agree to this? | Time1 | Each decision role's concern answered in the arrangement |
+| **Implementation** | Will it work here, and will the seller deliver? | Time2 | Discovery, proof in the buyer's own environment, a plan both sides hold |
 
-Bargaining covers agreement among the buyer's decision roles (Webster and Wind 1972) and agreement with the seller on terms. Enforcing those terms after signature is policing. Integrations built and workflows rewired are investments against the policing cost under Axiom II, whichever party makes them.
+**The seller can carry part of each cost.** Sales is the seller carrying it before the buyer commits, and account management is the seller carrying it after. That pays when the seller does the work more cheaply than the buyer could, usually because it has done the work many times and the buyer is doing it once.
 
-**The seller can absorb part of each cost.** Sales is the seller absorbing them before the buyer commits, and account management is the seller absorbing them after. A sales organization divides that work by cost: business development absorbs search, the account executive bargaining, the solutions engineer policing, and account management what the relationship costs at time 1 ([01-motions.md](./01-motions.md) section 9).
+**Each party acts on what it can check.** A buyer decides on the cost it expects, which can differ from the cost it would meet. Before it meets any seller, that expectation is what the category has taught it. A seller that lowers a cost and never shows it gains nothing with buyers who never look. Only evidence the other side can check changes what it expects.
 
-**Each party acts on what it can check.** So each cost and each value has two readings: what it is, and what a party expects it to be. For a cost, its demand $n_k$ is what the deal asks of the buyer as it is, and $\tilde{n}_k$, the *recognized cost*, is the demand the buyer expects. Before the buyer meets any seller, that expectation is the category's prior. A seller therefore invests twice against a cost: to lower it, and to show it with evidence the buyer can check, such as published terms or a security packet. Only evidence the other side can check raises what the deal is worth to both. A discount changes the split, and persuasion moves the buyer's reading at the deal's expense.
+**The costs are not independent, and they are not walls.** Conditions run forward: the market shapes the deal, and the deal shapes what the relationship has to manage. Expectations run backward: a buyer prices a later cost when it makes an earlier decision. A cost can stop a deal, and a large enough gain or someone else doing the work can offset it. A buyer that knows its organization is hard to move looks only for a change it cannot deny or for a seller who will do the legwork.
 
 ---
 
 ## Part I: The Three Axioms
 
-| Axiom | The question | The level |
+| Axiom | Time | The buyer asks | The seller asks |
+|---|---|---|---|
+| **I. Law of Transaction Cost Composition** | Time0, the market | Buy, build or do nothing? | Can I serve these buyers at a profit? |
+| **II. Law of Transaction Investment** | Time1, contracting | Can my organization agree, and what will this take? | Is this deal worth what it takes? |
+| **III. Law of Future Cost** | Time2, renewal | Did it work here, and am I free to leave? | Does the relationship pay? |
+
+Two sources divide the work. Dahlman classified the costs of using a market by kind, which gives the three costs. Williamson (1985) divided them by time, into the costs of reaching an agreement and the costs of living under it. That split is the line between Time1 and Time2. [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) carries both.
+
+---
+
+### Axiom I: The Law of Transaction Cost Composition
+
+> At Time0 the buyer decides whether to buy, build or do nothing, and the seller decides whether it can serve these buyers at a profit. Which cost stands in the buyer's way is a fact about the market, and a seller can read it before any deal. It decides how the product has to be sold, what the seller has to be built to do, and what the seller pays its people for.
+
+*Origin: Coase (1937) for the insight that using a market costs something. Dahlman (1979) for the three costs. Akerlof (1970) for a market that fails to form. Attewell (1992) is the nearest ancestor of claim 1: one barrier, the know-how to implement, set how business computing was bought.*
+
+**Claim 1. The kind of cost in the way decides how to sell.** A motion is named for the cost it carries: search-led, consensus-led or implementation-led. Product-led and sales-led name the seller's tool and say nothing about the buyer. Leaders often pick a motion because it is in fashion. They hire forward-deployed engineers where implementation is not what stops their buyers, or add outbound email where the market is already too loud to hear it. The relay model gives each funnel stage one role and one fixed playbook and pays on bookings. It is the right motion for a Turnkey market and the wrong one elsewhere. [01-motions.md](./01-motions.md) maps the incumbent names.
+
+*Fails if* sellers whose organization is built for the cost claim 2 reads in their market win and keep buyers no better than sellers in the same market built for another cost.
+
+**Claim 2. Two things a leader can see predict that cost before any deal.** Both are read across the buyers in a market.
+
+| What the leader can see | What it predicts | What selling has to do |
 |---|---|---|
-| **I. Law of Transaction Cost Composition** | Can a market exist? | The market, before any deal |
-| **II. Law of Transaction Investment** | What has to be paid down at time 0? | The deal, up to signature |
-| **III. Law of Future Cost** | What prevents churn and contraction at time 1? | The relationship, after the investment is sunk |
+| The workflow is not settled | The buyer cannot yet name what it is buying | Teach, by giving the buyer a hypothesis about its own workflow |
+| The workflow is settled and stands alone | Little is in the way | Let the buyer try it |
+| The workflow is settled and entangled | A change has knock-on effects | Prove it will work here, and carry the change |
+| The buyer's organization is complex | More roles can say no, and more has to change | Bring the organization to a decision |
 
-Two sources divide the work. Dahlman classified the costs of using a market by kind, which gives the three costs. Williamson (1985) divided them by time, into the ex ante costs, incurred before the agreement, of drafting, negotiating and safeguarding it, and the ex post costs, incurred after, of maladaptation, haggling and running the governance, and made asset specificity what creates the second. The split by time is the line between Axioms II and III. [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) says why the three stay apart though Dahlman traced them to one root.
+*Fails if*, with both read before any deal, the point where buyers stop does not differ between markets that read differently. Buyers stop in three places: they never look, they look and decide nothing, or they sign and fail to adopt.
 
----
+**Claim 3. A claim that costs nothing to make raises every buyer's search cost.** Where buyers cannot tell good sellers from bad, they assume the worst and many buy from no one (Akerlof 1970). Each seller's message also adds to a volume that no seller pays for, so more outreach into a loud market lowers the response to every sender ([channel-collapse.md](../02-research/channel-collapse.md)). A buyer believes a seller for what it gave up: a published price, a capped customer load, a guarantee. Such a signal informs only when it costs a weak seller more than a strong one (Spence 1973). Insight given away works the same way. It helps rivals too, and it is believed because it cost something. The same test applies to whoever recommends a seller. A channel, marketplace or analyst paid on referral loses nothing when a bad recommendation passes, so its word is cheap too. The [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) tests a signal. A Turnkey market does not stay Turnkey on its own, because a market that is cheap to enter fills with sellers whose claims all sound alike.
 
-### Axiom I — The Law of Transaction Cost Composition
+*Fails if* sellers who publish a commitment that costs them bring no more buyers into a first conversation than matched sellers who make the same claim without one. It also fails if response to every sender holds steady while message volume per buyer rises in a category.
 
-> Can a market exist? Each side has a limit. A buyer enters only while every cost it expects, after what the seller and others absorb, sits within what its own people can carry. One cost above that keeps it out, and easing the other two does not bring it back. A seller enters only if the deals it wins there will pay back what it has to build before the first one, the team that absorbs these buyers' costs, and what it spends on the deals it loses. A market exists only where both limits hold. Part of each cost is set outside any deal, by the information environment, the buyer's institutions and how verifiable delivery is. Where that part puts either side past its limit, no single seller's effort opens the market.
+**Claim 4. Rules set a floor that no seller lowers alone, and the floor favors whoever has already paid it.** Part of each cost is set outside any deal: the volume of messages against the buyer's attention, the buyer's procurement and compliance rules, and whether anyone can attribute an outcome. That part falls only through something shared across deals, such as a standard, a certification, a marketplace or a pre-approved contract. Meeting a floor gives a seller permission to sell and brings it no customers, so a new rule moves a market toward the sellers that had already met it. [information-environment.md](../02-research/information-environment.md) carries the evidence.
 
-*Origin: Coase (1937) for the insight that using the price mechanism costs something, though his alternative to the market is the firm. The question here, whether the buyer uses the market at all or decides nothing, parallels Akerlof (1970), a market that fails to form, and search theory, where search costs limit how much a buyer looks (Stigler 1961) and a searcher stops once one more look is worth less than it costs (McCall 1970, Weitzman 1979). Coase (1960) lists the activities, and Dahlman (1979) groups them into three. The seller's limit follows [04-seller-surplus-model.md](./04-seller-surplus-model.md).*
+*Fails if* buyers enter no faster after a shared investment lowers a market's floor than in matched markets where no floor fell. It also fails if, after a rule raises a floor, share does not move toward sellers that had met it beforehand.
 
-**The buyer's limit.** Each cost is carried by a payer inside the buyer, named before the outcome: the evaluators carry search, the sponsor bargaining, and the technical and operating owners policing. A cost's *demand* $n_k$ counts what the deal asks of that payer, in its own units. The payer carries up to its capacity $\kappa_k$ alone, the seller or an outside party can move up to $\bar{A}_k$ off it, and nobody can move the rest within the deal, such as a veto that must still be cast. So $\tau^{self}_k = \kappa_k$ and $\tau^{part}_k = \kappa_k + \bar{A}_k$, both read before the outcome and never from whether the buyer bought:
+**Claim 5. A seller reaches only the buyers whose cost it is built to carry, and it pays its people for work on that cost.** What a seller builds before its first deal, the people and methods that carry one kind of cost, is something no single deal repays. Its addressable market is therefore set by what it is built to do. Deals that die at the same stage for the same reason are usually outside that reach, and coaching representatives harder does not bring them in. Pay follows the same cost. Where little is in the way, pay rewards fast movement from search to contract. Where implementation is in the way, part of the pay waits until the implementation confirms the scope. That holds only where the seller has defined what a complete discovery is. Where it has not, the representative is not paid on an outcome they cannot affect.
 
-$$r_k = \frac{n_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}, \qquad k \in \{search,\; consensus,\; implementation\}$$
-
-The position is the share of the movable demand that has to be moved. At $r_k \le 0$ the cost is self-serve, up to one it is bearable once that share is moved, and above one it keeps the buyer out whatever the other two read. No threshold moves with price, though price can add demand, as when a spend threshold adds an approver. What the work costs, $F_k$, is a separate quantity in fractions of annual contract value, and its two parts are the investments in Axiom II's conditions ([02-mathematical-models.md](./02-mathematical-models.md) section 6). The buyer decides on $\tilde{r}_k$, read on the demand it expects, and a buyer with any $\tilde{r}_k > 1$ never enters discovery. A seller that lowers a cost and does not show it gains nothing with those buyers. The nearest mechanism is a consideration set that leaves out options not worth evaluating (Hauser and Wernerfelt 1990), though there the bar rises with the expected gain and here it does not.
-
-**The costs are non-compensatory.** What the work costs adds, but ease on one never buys back another above its threshold, because each payer's capacity is specific to it: knowledge, authority and skill do not move between payers, and moving people by order is itself work for the sponsor. Costs one payer carries draw on its one capacity and are tested together, so a one-person buyer faces one summed test and a large coalition three. The costs are also coupled: a workflow the product does not fit raises the policing cost and adds decision roles whose objectives worsen, so until fit is verified the policing and bargaining positions are lower bounds ([02-mathematical-models.md](./02-mathematical-models.md) section 3.5).
-
-![Three horizontal bars, one per cost, each ending at that cost's position between its own self-serve threshold at zero and participation threshold at one. Search sits at 0.25, bargaining at 0.83 and policing at 0.44, all within reach of seller investment. A hollow marker shows the buyer expecting policing at 1.22, past the threshold, so it opts out of discovery though the cost itself was within reach.](./assets/axiom-1-where-the-sale-starts.svg)
-
-**The seller's limit.** What a seller builds before any deal, an organization able to absorb the cost these buyers carry, is what no single deal repays. That makes the limit a claim of its own, and not Axiom II's seller condition summed over buyers. The cost of sale is directional: two markets with the same cost of sale can demand it against different costs, so a seller built to absorb one cost reaches only the buyers that cost holds back. Addressable market is a property of what a seller is built to absorb ([05-governance-forms.md](./05-governance-forms.md) section 4).
-
-**Corollaries.**
-
-- **Every cost has a cost floor.** Part of each cost's demand, and a limit on what can be moved off the payer, is set outside the deal, as the premise's table names. Every deal on a floor shares the return from lowering it, so it falls only through investment across deals, such as a marketplace, a certification or a standard, or a seller clears it with a signal costly enough to separate it from the pool. Otherwise a seller chooses its floors with its market and channel. A floor can push either side past its limit, the buyer's participation threshold or the seller's cost of sale. Floors move: the search floor rises as messages outgrow buyers' attention, and the policing floor each time a buyer discovers a misrepresented fit (Akerlof 1970). Each cost also has a category prior, the demand buyers expect before meeting any seller, which follows the floor with a lag. A floor past the participation threshold and a prior past it look alike, since buyers name the problem and buy from no one, and they take different remedies: a shared investment for the floor, a seller showing its own cost for the prior ([information-environment.md](../02-research/information-environment.md), [01-motions.md](./01-motions.md) section 6).
-- **Turnkey is a market condition, and it does not last on its own.** Turnkey is the condition under which product-led growth works: every cost self-serve and nothing specific sunk. It is cheap to copy, so competitors enter, and each entrant raises the search floor and blurs good sellers into bad. The market leaves the condition unless a standard, a network effect, a dominant brand or a staked channel holds the search cost down ([02-mathematical-models.md](./02-mathematical-models.md) section 5.8, [01-motions.md](./01-motions.md) section 5.2).
-
-**What would falsify it.** With each cost's payer named and its capacity read from staffing or written authority before any outcome, buyers whose expected demand passes the participation threshold enter discovery as often as matched buyers within it, and buyers measured past it at the decision buy as often. Deals blocked by one payer past its threshold are rescued by lowering a cost another payer carries. [02-mathematical-models.md](./02-mathematical-models.md) section 6 says which readings count as evidence. Sellers who publish evidence the buyer can check of their bargaining and policing costs bring no more buyers into discovery than matched sellers with the same costs who do not. Sellers whose absorbing organization already exists, entering from an adjacent market, enter at contract values no lower than sellers who must build it. Buyer entry rises no faster after a shared investment lowers a market's cost floor than in matched markets where no floor fell. Buyers who discovered a misrepresented fit in a category require no more verification and no more approvers on their next purchase there, from a different seller, than matched buyers who did not. And for Turnkey: in categories where self-serve selling dominated, a rising vendor count does not come before falling trial-to-paid conversion and the arrival of sales-assist teams.
+*Fails if* sellers entering from an adjacent market, with the organization already built, enter at contract values no lower than sellers who must build it. It also fails if, where discovery is defined, representatives paid partly on confirmed scope produce as many scope changes after signature as representatives paid on bookings alone.
 
 ---
 
-### Axiom II — The Law of Transaction Investment
+### Axiom II: The Law of Transaction Investment
 
-> What has to be paid down at time 0? Every buyer moves through the same stages: awareness, consideration, purchase and renewal. Moving through them is an investment the buyer makes, and from the first stage it prices all three costs, mispricing those it has not reached. The tightest cost, the one needing the largest share of the help its payer can get, is where the sale starts, and it names the motion. No absorption reaches a cost past the buyer's limit, so while the seller expects one, it lowers that cost's demand, shows it lower, or stops spending on the deal. Otherwise it spends each dollar where it most raises the chance that this buyer goes ahead with it, in fact and in what the buyer can see. Each party goes ahead only if its own share is covered by its own return. Seller spending earns its cost by doing one of two jobs. It raises what the deal creates when the seller does the work more cheaply than the buyer could, or when the work lowers what the relationship will cost at time 1, as discovery does even when it costs more than the buyer would have spent. It lets a deal that creates value go ahead when it shows the buyer, with evidence the buyer can check, a cost lower or a value higher than the buyer expected, including a catalyst it had not named. Spending that does neither moves cost from one side to the other, as a discount does, or changes only the buyer's reading, as persuasion does. The seller recovers its spending through the first contract, renewal, expansion or the deals the relationship unlocks, and spending that nothing repays is a price cut by another name.
+> At Time1 the buyer decides whether its organization can agree and what the purchase will take, and the seller decides whether the deal is worth what it takes. Both invest before signature. What matters is what the investment buys: a buyer that knows what it will face, or money moved from one side to the other with the cost left where it was.
 
-*Origin: Williamson (1985), the ex ante costs of a transaction. The nearest ancestor of naming the motion for the tightest cost is Attewell (1992): one barrier, the know-how to implement, set how business computing was bought until shared intermediaries lowered it. The line between the two jobs and spending that only moves cost restates Walton and McKersie's (1965) integrative and distributive bargaining, creating value against dividing it, and the informative and persuasive advertising Bagwell (2007) surveys. The seller's side follows [04-seller-surplus-model.md](./04-seller-surplus-model.md).*
+*Origin: Williamson (1985), the costs of reaching an agreement. Webster and Wind (1972) for the buyer as a coalition. Walton and McKersie (1965) for bargaining that creates value against bargaining that divides it. Dixon and McKenna (2022) for limited and reversible commitments as the remedy for indecision.*
 
-**Two conditions, one per party.** Both are in fractions of annual contract value:
+**Claim 6. A purchase is plug-in or built-in.** Three tests make it plug-in, and all three must hold. The buyer can run the product on its real work without the seller's engineers. A bad fit costs it days. Walking away strands no spend and no data. A plug-in purchase needs standard terms and a trial, and discovery workshops and joint plans laid over it lose the buyer to a lighter competitor. A built-in purchase needs the rest of this axiom. The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) asks the three tests of a live deal.
 
-$$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b \qquad S_s = P - C_{deliver} - \sum_k I^s_k - L_s$$
+*Fails if* discovery, staging and a joint plan before signature raise close rates and renewal as much for plug-in purchases as for built-in ones.
 
-$V_{switch}(t) = \tilde{V}_{solution} \cdot e^{-\delta t} - V_{next\_best}$ is the buyer's opportunity cost of staying where it is, decaying by the second standing assumption, and $V_{next\_best}$ includes building it internally. It is read on recognized value, because that is what the buyer decides on. $P$ is price over the relationship, and $C_{deliver}$ is what delivering costs the seller. $I^b_k$ and $I^s_k$ are what the buyer and the seller invest today against cost $k$. $L_b$ and $L_s$ are each party's expected future loss, from Axiom III. Recurrence enters through $P$ and $C_{deliver}$ summed over expected renewals. Added together:
+**Claim 7. Implementation is a fear at Time1, and it acts through the buyer's own people.** The work comes at Time2. At Time1 the buyer holds only an expectation of it, and each decision role asks what the change does to its own budget, headcount and standing. A buyer that cannot buy alone looks for the reasons its colleagues will say no, and a demonstration aimed at one person hands it more of them. So the seller invites the organization's scrutiny. It collects each role's objection apart, before any room convenes, and it walks the buyer through how the project would fail before anyone signs. Some deals die under that scrutiny. Each counts as a loss only if it would have renewed. An agreement between the two firms binds the buyer that signs it. It does not bind the role whose budget the change cuts. So the arrangement answers each role by its position, which a successor inherits, and a sponsor with something riding on the outcome holds it together. [buying-center-dynamics.md](../02-research/buying-center-dynamics.md) carries the evidence, and the [Bargaining Ledger](../../practice/bargaining-ledger.md) is the instrument.
 
-$$S_b + S_s = V_{switch}(t) - C_{deliver} - \sum_k \left(I^b_k + I^s_k\right) - L_b - L_s$$
+*Fails if*, among buyers that cannot buy alone, deals where the seller collected each role's objections before a group demonstration close and renew no more often than deals led with the demonstration.
 
-Price cancels in each deal's joint condition, because price is a transfer. It still changes which deals occur and, where retention depends on the price path, how long they last: at a newspaper and an online grocer, customers acquired on a deeper discount bought again less (Lewis 2006). Read on what the deal can produce, the joint condition uses realizable value, and the difference from recognized value is a loss the buyer carries under Axiom III whether or not it priced it at signature. Persuasion moves the buyer's reading and not realizable value, so it costs the joint condition what the seller spends on it and can let through a deal that creates nothing. It raises the joint condition only where a convinced buyer adopts harder and realizes more, which is where the second standing assumption fails. Hold-up is a transfer too, so it drops out of what the deal creates. It costs both sides through the specific investment a party declines to sink, and where one side fears more hold-up than the other plans, the gap can block a deal that creates value ([02-mathematical-models.md](./02-mathematical-models.md) section 1.3).
+**Claim 8. A discount moves money and lowers no cost.** Price is a transfer: what leaves the buyer arrives at the seller, and the work of buying is the same size afterward. There is one exception. A price taken under a spend threshold removes an approver, and that role's concern comes back at renewal. A discount can also tell the buyer the wrong thing about the seller, and customers acquired on deeper discounts have been found to buy again less (Lewis 2006). What lowers the buyer's fear is a commitment the seller would not make if it expected to fail: capped overages, remediation hours written into the contract, a guarantee tied to the buyer's own environment. The seller trades such a commitment for what the buyer knows about that environment.
 
 ![The buyer's surplus falls with price and the seller's rises. Before verification both reach zero at the same price, so no price works and a discount only moves along the axis. After verification lowers each side's expected future loss, a window opens where both say yes.](./assets/axiom-2-price-window.svg)
 
-**The motion names the tightest cost.** That is the cost with the largest $\tilde{r}_k$ before the buyer enters, and the largest $r_k$ once discovery measures it. The sale starts there in the buyer's sense, since a buyer expecting any cost past its limit never begins, and the motion is named for it: search-led, consensus-led or implementation-led. Product-led and sales-led name the seller rather than the cost. Across a market, the cost tightest for most target buyers is what the seller has to be built to absorb, which is Axiom I's seller limit. Which cost the seller works first is a separate rule: the next dollar goes where it is likeliest to tip a payer into carrying the rest, per dollar spent and net of what rivals gain. The tightest cost first is its special case, which the instruments use as their default ([02-mathematical-models.md](./02-mathematical-models.md) section 1.5). Until fit is verified, the reading understates the policing and bargaining costs, so a seller who misrepresents fit hides where the sale starts until the investment is sunk. [01-motions.md](./01-motions.md) carries the map.
+*Fails if*, at equal cost to the seller, a commitment of that kind closes no more stalled built-in deals than a discount does. It also fails if deals closed on a discount renew as often as matched deals closed at list price.
 
-**Corollaries.**
+**Claim 9. Work skipped at Time1 moves to Time2 and grows.** Discovery left out of the sale comes back during implementation as scope changes, missed dates and a delivery team working to make the contract fit the environment. Work pulled forward has a cost too. The seller spends it whether or not the deal closes, and the relationship repays it, so a seller that tests the work against the first contract alone turns away deals a renewal would justify. The buyer pays for it through a price averaged across all the seller's deals, so buyers with easy implementations overpay and a lighter rival can win them. A seller therefore pulls forward the work its market's buyers need, by claim 2, and no more.
 
-- **Price is not a transaction cost, though its size against the buyer's spend thresholds sets who must approve.** A deal split or ramped under a threshold removes a decision role's veto without settling its exposure, which Axiom III says returns at renewal.
-- **Forward-deployed engineering works two ways at once.** The seller's engineers adapt their own product at lower cost, and their presence in use catches misfit while it is cheap. It also creates a future cost for the seller, because the engineering is specific to this buyer.
-- **Copying a motion copies another market's costs.** Product-led growth where the costs are not all self-serve leaves the buyer holding a cost it cannot pay down alone, and forward-deployed engineering where the buyer could carry the policing cost alone pays for an adaptation nobody needed. Read the other way, the investment a motion demands is its defense against entry.
-
-**What would falsify it.** With positions and the seller's quoted hours per unit of each cost recorded before the seller invests, and the order assigned or recorded before the investment: among deals with two costs at equal positions, those where the seller first absorbed the cost it moves more cheaply convert no faster than deals by the same representative where it first absorbed the other. Deals where the seller absorbed part of the buyer's investment close at no higher rate than matched deals where it did not, at equal total cost. And cost of sale spent on discovery and verification predicts net revenue retention no better than cost of sale spent on persuasion.
+*Fails if* built-in deals with discovery done before signature show as many scope changes after signature as matched deals without it. It also fails if buyers with simple implementations choose a seller that prices in heavy engineering before signature as often as buyers with hard ones do.
 
 ---
 
-### Axiom III — The Law of Future Cost
+### Axiom III: The Law of Future Cost
 
-> What prevents churn and contraction at time 1? Whatever a party sinks that pays off only in this relationship exposes it to what it cannot check or stop later. That exposure is what a failure can cost the party. Whether the fit fails runs on what the party cannot check. Whether the other side holds it up runs on what it cannot stop, and becomes possible once its exposure outgrows the other side's stake. For the buyer, exposure also makes leaving costly, so the more it sank, the longer a failing fit shows as stalled use and contraction before it shows as churn, and a buyer held up shows a higher price or thinner service rather than lost revenue. So time 1 is decided at time 0, before either side sinks anything. What the parties can foresee, they contract for: who carries which exposure, staged how, and what each loses by walking away. What they cannot foresee, they plan for with a standing review that carries rights either side can invoke, such as a quarterly business review that can trigger re-scoping, so drift is caught before renewal. Drift has two sources. What was verified goes stale, and the fit itself moves as either side changes.
+> At Time2 the buyer decides whether the product worked here and whether it is free to leave, and the seller decides whether the relationship pays. Most of what decides both was settled at Time1.
 
-*Origin: Williamson (1979, 1985), the ex post costs of a transaction and the specificity that creates them. Klein, Crawford and Alchian (1978) for whose exposure it is. Spence (1973) for why only costly evidence reduces it. Hart and Moore (1988) for hold-up under full information.*
+*Origin: Williamson (1979, 1985), the costs of living under an agreement and the specific investment that creates them. Klein, Crawford and Alchian (1978) for whose exposure it is. Grossman and Hart (1986) for who decides where the contract is silent.*
 
-**Specificity.** An investment is specific when it loses value outside this relationship. For the buyer, specificity is read as distance from the reference workflow: the further the buyer's version sits from what the product assumes, the more adaptation the deal requires and the less of it survives a failed deal. Once a specific investment is sunk, the party who made it can be held up, because the other side can extract the difference between what it is worth here and what it is worth anywhere else. Klein, Crawford and Alchian named that difference the appropriable quasi-rent, and the exposure follows the investment rather than the invoice, buyer or seller. Where the seller sinks first, as with forward-deployed engineering, the seller holds the exposure and its allocation has to be settled before the seller spends, which can be well before signature.
+**Claim 10. Whether the product worked here decides renewal.** Some misfits surface only in use (Strong and Volkoff 2010), and what the two sides verified before signature goes stale as either side changes. Account management is the seller carrying that cost after signature, and a review held before the renewal is where both sides read it. A buyer that built more stays longer on a failing fit, so failure shows first as stalled use and contraction and only later as an exit. Exits caused by an event outside the relationship, such as the buyer's own failure or an acquirer's contract, are out of scope. The [Sustaining Adoption Review](../../practice/adoption-review.md) is the instrument.
 
-**Who cannot check what.** Exposure becomes cost through what the exposed party cannot verify, and what it can see but cannot stop. Each cost runs between its own pair of parties.
+*Fails if* accounts whose implementation met the plan agreed before signature renew and expand at the same rate as accounts whose implementation did not, with outside exits held out by a rule fixed before the outcome.
 
-| Cost | Whose uncertainty, about what | What resolves it |
-|---|---|---|
-| Search and information | The buyer's, about the market. Which alternatives exist and whether this one fits. | Artifacts that travel without the seller: category definition, reference architectures, verifiable proof, a channel with a stake |
-| Bargaining and decision | Each decision role's, about its own outcome. What the change does to its budget, headcount and standing. | Mapping who loses what, one role at a time, and answering it in the arrangement. Objections are collected apart before any room convenes, because a room suppresses what only one member knows |
-| Policing and enforcement | Bilateral. The seller's, about the buyer's environment. The buyer's, about the seller's capability in it. | Discovery that maps the environment, and demonstrations the seller pays to produce |
+**Claim 11. Lock-in earned by building something together holds. Lock-in made by control is hold-up.** Hold-up is one side squeezing the other once it cannot leave (Klein, Crawford and Alchian 1978). A buyer that has built workflows with a seller stays because what they built is worth more here than anywhere else. It also stays because the seller already knows its environment and a challenger would have to learn it, which holds only while the seller keeps that knowledge current. A buyer kept by restricted access to its own data, or by terms that make leaving costly, stays until a rule or a rival removes the restriction. A buyer that sees lock-in coming prices it before it signs, so what holds a buyer at renewal costs the seller at signature. Control has a limit too. The buyer can build the function itself, building gets cheaper as patterns standardize, and a seller that takes more than building would cost teaches the buyer to build.
 
-The search gap mostly prices today's cost and decides participation under Axiom I. The other two decide the future loss. The bargaining gap holds opposed interests that proof cannot reconcile: two decision roles with perfect knowledge of each other can still disagree. What proof can close is each role's uncertainty about its own exposure.
+The exposure follows the investment, buyer or seller. Whoever built more of what cannot be reused elsewhere has more to lose. A connector the seller ships to every later customer is not exposed, and a mapping to one hospital's schema is. [incomplete-contracts.md](../02-research/incomplete-contracts.md) and [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) carry the evidence.
 
-**Contract what can be foreseen, plan for what cannot.** Some misfits surface only in use (Strong and Volkoff 2010), so the parties settle in advance who carries which risk and adapt later (Crocker and Reynolds 1993, Bajari and Tadelis 2001). The more one side sinks relative to the other, the more they must settle first ([02-mathematical-models.md](./02-mathematical-models.md) sections 5.5 and 5.6). Where the contract is silent, whoever holds the right to decide governs (Grossman and Hart 1986). A party that expects to be held up there will not invest, so legal review moves a stalled specific deal only by allocating who owns the integration and the data. For what nobody can foresee, the parties agree a standing review, which the drift corollary below describes.
+*Fails if*, after a rule opens access that sellers had restricted, sellers whose buyers built workflows with them lose buyers as fast as sellers whose retention rested on the restriction.
 
-**What the axiom does not cover.** Churn or contraction caused by an event outside the relationship, such as the buyer's own failure, a budget cut across its market, an acquirer replacing the product under its own contract, or a failed payment, arrives largely whatever the parties allocated, though committed terms and change-of-control clauses allocate part of it. A test counts all churn first, and holds out only exits dated to such an event in a public record, by rules fixed before the outcome.
+**Claim 12. Where both sides build something specific, a contract built for partnership does what a discount cannot.** No contract foresees everything, and proof before signature shows what a seller can do without binding what either side does once the other cannot easily leave. So before either side builds, the two settle who carries which risk, in stages, with a point at each stage where either can stop at a known price. The stages run in both directions: the buyer's payments follow proof, and the seller's engineering follows a commitment from the buyer. They also agree a standing review for what nobody can foresee. A plan of that kind gives both sides something to lose by walking away, and a discount changes the price once. The plan rests on a renewal that either side can decline. A built-in purchase that happens once has none, so the seller finds a structure that recurs, or the safeguard comes from outside the pair as fixed scope, acceptance a third party judges, or escrow. Contract terms are one layer beside trust and the norms of the relationship, and the layers mostly work together (Poppo and Zenger 2002). None of this belongs on a plug-in purchase. The [Enforcement Ledger](../../practice/enforcement-ledger.md) builds the plan.
 
-**Mathematical content.** Each party's expected future loss is its exposure, what a failure can cost it, times the expected share of that lost, through a failed fit or through what the other side takes:
-
-$$L_p = Q_p \cdot \pi_p, \qquad Q_p = C^{p}_{invest} - R^{p}_{redeploy}, \qquad p \in \{b, s\}$$
-
-$C^{p}_{invest}$ is what party $p$ sinks in the relationship and $R^{p}_{redeploy}$ what it would recover elsewhere. $L_p$ is a shortfall in the return $p$ expected, through hold-up or through a fit that fails in use, separate from the investment Axiom II already counted. The quasi-rent $Q_p$ bounds it, because it is the most the other side can extract or a failure can destroy. $\pi_p$ rises with the gaps party $p$ cannot close, and with what the other side can take in plain view at a renegotiation ([02-mathematical-models.md](./02-mathematical-models.md) section 5.5). Absent maintenance, each gap in the table above, normalized as $\hat{\Delta}_k \in [0, 1]$, rebuilds toward its ceiling at rate $\gamma_k$:
-
-$$\hat{\Delta}_k(t) = 1 - \left(1 - \hat{\Delta}_k(0)\right) e^{-\gamma_k t}$$
-
-Discovery is a separate, discrete step down, paid for by whoever runs it, and it is where Axiom II's spending pays off here. A departed champion is the bargaining gap reopening all at once, and a deal can leave the viable zone with no change in product, price or technical work.
-
-![Two rising curves from a near-zero implementation gap at go-live, against a horizontal line marking where a challenger begins. The unmaintained curve bends toward the challenger line and nearly reaches it within three years. The maintained curve levels off well below it, where maintenance matches the rebuild.](./assets/axiom-3-asymmetry-drift.svg)
-
-A buyer who commits in stages sinks $Q_m$ at gate $m$ against residual uncertainty $x_m$, so the expected loss is $\sum_m Q_m \, \pi(x_m)$ rather than $Q \, \pi(x_0)$. Staging puts the small commitments where the uncertainty is high. When an investment is irreversible and the environment uncertain, the right to wait has value, and a contract demanding full commitment at once asks the buyer to destroy it (Dixit and Pindyck 1994). Practitioner research on buyer indecision, built on recorded sales calls, recommends the same remedy, limited and reversible commitments (Dixon and McKenna 2022). The Stage column of the [Enforcement Ledger](../../practice/enforcement-ledger.md) is the instrument.
-
-**Corollaries.**
-
-- **The gate.** Where nothing specific is sunk and a trial verifies fit, the future cost is near zero and market terms hold: the buyer verifies by trying and walks away at no cost. Specificity is the master variable for governance, and apparatus applied below it is the over-frictioned failure.
-- **Governance form.** With frequency, specificity selects the arrangement that holds the deal: market terms where nothing specific is sunk, a third-party safeguard for a specific one-shot deal, bilateral governance where each repetition safeguards the next, and eventually integration, which for the seller means the buyer builds it. Recurrence is partly the seller's choice, and what it buys is mutual sanction, credible only when both sides hold exposure at the next boundary. A one-sided cheap exit hands the seller's sunk investment to the buyer to hold up (MacLeod and Malcomson 1989). The Mutual Implementation Plan is the bilateral form's instrument ([05-governance-forms.md](./05-governance-forms.md)).
-- **Enforcement governs what verification cannot.** A party that can see the other side refuse to adapt or force a renegotiation, and cannot stop it, is exposed under full information, and no proof protects it (Wathne and Heide 2000). The contract answers with a hostage, something the other side loses by defecting, such as staged fees or a reciprocal specific investment, or with an allocated right, such as an option to renew at a preset price or a right to stop at a price agreed up front. Both run in both directions. A discount changes the price once. A hostage or an allocated right changes what defection costs at every boundary that follows ([incomplete-contracts.md](../02-research/incomplete-contracts.md)). These are one layer of enforcement. Trust between the people in the relationship and its norms are another. The layers mostly work together (Poppo and Zenger 2002), though under uncertainty norms often stand in for formal safeguards ([tce-empirical-record.md](../02-research/tce-empirical-record.md)), and contracts grow more detailed with repeated dealing as the parties learn what to write (Argyres, Bercovitz and Mayer 2007). The formal layer is the one a party can write before it sinks anything.
-- **Every party holding exposed rent, or adjudicating it, needs a stake.** That includes the seller's own representative, whose reading of the deal the seller sinks on, and any channel that vouches for a seller. [05-governance-forms.md](./05-governance-forms.md) section 5 derives the stakes.
-- **The Friction Allocation Principles.** A mechanism reduces a gap only if its cost cannot be automated away, is borne by the claimant rather than the receiver, scales with the size of the claim, and is adjudicated by someone who loses when a bad signal passes. Violate any one and the mechanism is cheap talk, which informs only as far as the two sides' interests already agree (Crawford and Sobel 1982). Spence's single crossing property, that a signal costs a weak seller more than a strong one, backs the first three for signals the seller sends. The fourth comes from the theory of certification intermediaries. The [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) tests them.
-- **Three levers, and why verification wins.** A discount moves price and is a pure transfer. A guarantee is part transfer and part verification: it moves future loss to the seller, makes the seller work harder, and tells the buyer which seller it faces, because only a seller confident of delivering can afford it. Direct verification lowers $\pi_p$ outright. Of the three, only verification raises what the deal creates, so a resolved gap can close a deal no discount could. Whether a given verification costs less than the loss it removes stays empirical.
-- **Planning for drift is maintenance, and account management is the seller's.** What was verified goes stale, so credibility is re-earned with evidence of continued delivery. Re-verification cannot reach fit drifting as either party changes, which only re-adaptation, notice of change or a change process agreed in advance can govern. The standing review is where both get read before renewal reads them. The seller funds account management while what it buys, the fall in an account's chance of loss times the margin held at the next boundary, covers its cost. Across accounts it funds where maintenance moves that chance most, and the accounts likeliest to leave are not necessarily those (Ascarza 2018, [02-mathematical-models.md](./02-mathematical-models.md) sections 5.3 and 5.7, [Sustaining Adoption Review](../../practice/adoption-review.md)).
-- **The Decay Clock.** Value decays while the gaps rebuild, so a deal viable at $t_0$ needs intervention to stay viable at $t_1$ ([02-mathematical-models.md](./02-mathematical-models.md) section 4).
-
-**What would falsify it.** Specific deals with pre-agreed staging and stop rights write off no smaller a share of what each side sank than specific deals without them. Deals where verification closed a gap fail after signature at the same rate as matched deals where it did not. At equal verification, deals where both parties hold something to lose, or where the right to renew or stop was allocated in advance, drift after signature as often as deals where only one side has sunk investment and nothing was allocated. Where the bond condition holds, among relationships whose fit failed, dated by falling use, buyers that sank more, counted as integrations built and workflows changed, exit no later and contract no less before they exit than buyers that sank less. And relationships whose review, carrying rights either side can invoke, was agreed before anything was sunk keep no more revenue at renewal than matched relationships without one. That comparison keeps each relationship in the arm it was agreed into, whether or not a right was invoked. It counts from signature, compares within a renewal year, and holds out exits only as the scope paragraph allows.
+*Fails if* built-in deals whose staged plan and stop points were agreed before anything was built keep no more revenue at renewal than matched built-in deals without one. The comparison keeps each deal in the arm it was agreed into.
 
 ---
 
-## Part II: The Two Conditions
+## Part II: Reading a stall
 
-The three axioms are what the terms of two conditions mean.
+Ask in order, because each question assumes the one before it.
 
-$$S_b = V_{switch}(t) - P - \sum_k I^b_k - L_b > 0 \qquad S_s = P - C_{deliver} - \sum_k I^s_k - L_s > 0 \qquad r_k \le 1 \;\; \forall k$$
+1. **Does the buyer pay for the problem today?** Staff time on a workaround, an incumbent tool or a consultant shows the change is worth something to it. Without that, no cost reading applies. The [Market Reading](../../practice/00-market-reading.md) and the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) ask it first, and the reading is untested ([07-open-questions.md](./07-open-questions.md) item 66).
+2. **Time0. Which cost is in the way in this market, and is the seller built for it?** Claims 1 to 5.
+3. **Time1. Is the purchase plug-in or built-in, has the organization's scrutiny been invited, and is the seller's spending showing the buyer what it will face?** Claims 6 to 9.
+4. **Time2. Did it work here, and what did the two sides settle before they built?** Claims 10 to 12.
 
-- The participation clause, $r_k \le 1$ for every cost, with the costs one payer carries fitting its capacity together, is **Axiom I**, and so is the seller's condition asked of the whole market.
-- The investments $I^b_k$ and $I^s_k$, the fact that there are two conditions rather than one, and the cost with the largest $r_k$ as where the sale starts, are **Axiom II**.
-- The future losses $L_b$ and $L_s$, and the rebuild that moves them over time, are **Axiom III**.
-- $V_{switch}(t)$ decays by the second standing assumption.
+**Failure modes, one per claim.**
 
-A deal closes when both conditions hold at the moment of decision and no cost keeps the buyer out. It persists when the governance form selected under Axiom III holds every party's weight on the future above the cooperation threshold, the point at which keeping faith pays better than defecting ([05-governance-forms.md](./05-governance-forms.md) section 5), and when the gaps are maintained faster than they rebuild.
-
-**Reading a stall.** Ask the three questions in order, because each assumes the one before it holds.
-
-1. **Can this market exist?** Is any cost, as this buyer expects it, past its threshold, or are the costs one payer carries past its capacity together, or does the seller's cost of sale in this market exceed what its contracts return? No work on the other costs reaches it. Pull it back into range, invest across deals if a cost floor holds it there, or decline. (Axiom I.)
-2. **Is the deal paying down the right cost at time 0?** Is any cost past the buyer's limit being lowered or shown rather than worked around, is every other dollar going where it most raises the chance the buyer goes ahead, does each party's share fit inside its own return, and does the seller's spending raise what the deal creates, let it go ahead, or only move cost? (Axiom II.)
-3. **Is time 1 contracted and planned?** Was the allocation settled before anything specific was sunk, is a review in place, and is any gap rebuilding faster than discovery closes it? (Axiom III.)
-
-The [Deal Triage Calculator](../../practice/deal-triage-calculator.md) asks the same three questions of a live deal.
-
-**Failure modes, collected.**
-
-| Axiom | Failure | Signal |
+| Claim | Failure | Signal |
 |---|---|---|
-| I | Kept out | A cost above the participation threshold worked as though it were a sales problem |
-| I | Unshown | A cost the seller lowered and never showed, so the buyer's recognized position kept it out of discovery |
-| I | Unamortizable | What the seller builds for a market, or spends on one deal, exceeds what the deals it wins return |
-| I | Turnkey erosion unread | A self-serve motion kept running while entry raises the search cost |
-| I | Akerlof saturation | Telling good sellers from bad costs more than any affordable signal can cover, and the buyer exits |
-| I | Jevons collapse | Channel friction was production cost and fell to zero, the search cost floor rises, and the channel stops separating sellers |
-| II | Mis-sequenced | Seller spending went around a cost past the buyer's limit, or where a dollar raised the chance of going ahead less than elsewhere |
-| II | Imitation | A motion copied from another market, organization built to pay down a cost its buyers do not carry |
-| II | Under-invested | The buyer is left holding a cost it cannot pay down alone |
-| II | Over-invested | The seller pays down a cost the buyer could carry alone |
-| II | Spent as a discount | Seller spending that neither raises what the deal creates nor lets it go ahead, and nothing recovers it |
-| III | Unallocated | Specific investment sunk with no staging or stop rights agreed, buyer signs, stalls in use, contracts, churns |
-| III | Over-frictioned | Governance apparatus on a deal where nothing specific is sunk, buyer chooses a lighter competitor |
-| III | Mis-governed | Frequency ignored or sanction one-sided, wrong arrangement for the repetition pattern |
-| III | Unhostaged | Hold-up under full information met with more verification or a discount, when only a change in what defection costs would stop it |
-| III | Defection | A party's weight on the future below threshold, hold-up on either side |
-| III | Cheap talk | Signal fails single crossing, no gap moves |
-| III | Misallocated friction | Receiver bears the filtering cost |
-| III | Wrong gap closed | Effort on a gap that was already low |
-| III | Unreviewed | No review agreed at time 0, and the first reading of drift is the renewal |
-| III | Reputation hoarding | Past signals unrefreshed, incumbent coasts |
-| III | Option value dominates | Case accepted, commitment deferred, full commitment demanded before uncertainty resolves |
+| 1 | Imitation | A motion copied from another market, and an organization built to carry a cost its buyers do not have |
+| 2 | Unread market | The playbook chosen before anyone read the workflow or the buyer's organization |
+| 3 | Cheap talk | Claims any seller could make, and more of them sent |
+| 4 | Floor worked as a sales problem | Deal effort spent on a cost that only a shared investment lowers |
+| 5 | Paid for the wrong work | Bookings pay where implementation is the cost, or pay tied to an outcome the representative cannot affect |
+| 6 | Over-built or under-built | Workshops and joint plans on a plug-in purchase, or a trial offered on a built-in one |
+| 7 | Sold to one person | A champion convinced and an organization never asked |
+| 8 | Spent as a discount | A price cut where the buyer's fear was the obstacle |
+| 9 | Deferred work | Discovery skipped to close, and the delivery team paying for it |
+| 10 | Unreviewed | The renewal is the first time anyone reads whether it worked |
+| 11 | Control mistaken for a moat | Retention resting on what the buyer cannot take with it |
+| 12 | Unallocated | Something specific built with no stages or stop points agreed |
 
-Each mode names one axiom and one place to intervene. A stall matching none of them means the table is incomplete, which is itself worth recording in [07-open-questions.md](./07-open-questions.md).
+A stall that matches none of these means the table is incomplete, which is worth recording in [07-open-questions.md](./07-open-questions.md).
 
 ---
 
 ## Version History
 
-**Current version: 6.4.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
+**Current version: 7.0.** The framework's version tracks this document's, and the root README footer must agree, which `check_frontmatter.py` enforces.
 
 <!-- vale TCG.RetiredTerms = NO -->
 | Version | Date | Change |
 |---|---|---|
+| 7.0 | 2026-11 | Rewritten around twelve claims the author holds, at three times with both parties at each: Time0 the market, Time1 contracting, Time2 renewal. Earlier versions called the deal "time 0" and the relationship "time 1". Each cost gains a home time. Conditions run forward and expectations run backward. Plug-in and built-in name the two kinds of purchase. Pay follows the cost in the way. Retired: positions, the two thresholds per cost, the gate, the two conditions as equations in this document, the three-way split of value, drift rates, the bond condition, the governance forms as a table, and all but one failure mode per claim. The trim proposal records the reasoning (`git show 59ab41e:TRIM-PROPOSAL.md`), and 6.4 is in git history. Amended on 2026-11-10, when the seller surplus model, the governance forms and the derivation file were folded in: claims 3, 5, 7, 9, 11 and 12 each gained the sentences from those files that the claim needs. |
 | 6.4 | 2026-11 | The research review's fourth response. Exposure sets what a failure costs and makes leaving costly, so a buyer's failing fit shows as stalled use and contraction before churn. Hold-up grows once one side's exposure outgrows the other's stake. Outside exits are out of scope, contracts are one layer beside trust and norms, and maintenance goes where it moves an account most. Two falsifiers restated, open questions 62 to 65 filed. Amended on 2026-11-09 for the review's fifth and sixth responses: default edges frozen for tests that read them, Coase credited with the cost of using the market and the participation question with Akerlof and search theory, and Attewell, Walton and McKersie, Bagwell, Hauser and Wernerfelt, and Dixon and McKenna credited. |
 | 6.3 | 2026-11 | The research review's third response. The tightest cost is where the sale starts and names the motion. Which cost the seller works first is a separate rule, with the tightest first as its default special case, and Axiom II's first falsifier tests the rule's unit-cost term. Persuasion costs the joint condition what it spends, and price cancels in each deal but changes which deals occur. Open question 61 is filed. |
 | 6.2 | 2026-11 | After the 2026-11-09 research review. The gate reads each cost's demand in its payer's own units, against the payer's capacity and that capacity plus what the seller or others can move off it, read before the outcome. What the work costs is a separate quantity, so no threshold moves with price. Non-compensation follows from capacity specific to each payer, and costs one payer carries are tested together. |
@@ -255,16 +217,11 @@ Versions 1.0 to 3.0, and the nineteen revisions made under the earlier name, are
 - [01-motions.md](./01-motions.md)
 - [02-mathematical-models.md](./02-mathematical-models.md)
 - [03-glossary-and-notation.md](./03-glossary-and-notation.md)
-- [04-seller-surplus-model.md](./04-seller-surplus-model.md)
-- [05-governance-forms.md](./05-governance-forms.md)
-- [06-calibration.md](./06-calibration.md)
 - [07-open-questions.md](./07-open-questions.md)
-- [08-from-axioms-to-instruments.md](./08-from-axioms-to-instruments.md)
 
-**Academic backing:** [00-reading-guide.md](../02-research/00-reading-guide.md) maps each research file to the axiom it backs.
+**Academic backing:** [00-reading-guide.md](../02-research/00-reading-guide.md) maps each research file to what it backs.
 
 **Field operationalization:**
-- Whether a buyer can enter, where the sale starts, frequency and governance form → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md)
-- Map, Test and Stage (the Blueprint, Red Team and Mutual Implementation Plan) → [enforcement-ledger.md](../../practice/enforcement-ledger.md)
-- Bargaining: the decision-role map, the arrangement record and the safeguard inside the buyer → [bargaining-ledger.md](../../practice/bargaining-ledger.md)
-- Maintain: the handoff, the standing review and renewal → [adoption-review.md](../../practice/adoption-review.md)
+- Time0, reading a market → [00-market-reading.md](../../practice/00-market-reading.md)
+- Time1, reading a deal → [deal-triage-calculator.md](../../practice/deal-triage-calculator.md), [bargaining-ledger.md](../../practice/bargaining-ledger.md), [enforcement-ledger.md](../../practice/enforcement-ledger.md)
+- Time2, the handoff, the review and renewal → [adoption-review.md](../../practice/adoption-review.md)

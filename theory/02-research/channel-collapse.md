@@ -2,7 +2,7 @@
 title: "Channel Collapse: Jevons' Paradox in B2B Outreach"
 layer: theory
 status: active
-operationalizes: [axiom-1, axiom-3]
+operationalizes: [axiom-1]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -26,16 +26,13 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Sales enablement tools reduce marginal outreach cost to near-zero, triggering Jevons' Paradox.
 - Email volume grew from 293B/day (2019) to 376B/day (2025) while reply rates collapsed from 8.5% toward the low single digits.
 - Channels are Jevons-vulnerable when production cost is the binding constraint; Jevons-resistant when something else (time, relationships, expertise) binds first.
-- Vulnerability is highest where the sale starts at the search cost, because there the channel is the seller's instrument.
+- Vulnerability is highest in a search-led motion, because there the channel is the seller's instrument.
 - Mechanism design solutions require: hostages (credible commitments), deep quality measurement, and demurrage on reputation.
 
 **Supports in TCG:**
-- **Axiom I — Law of Transaction Cost Composition** — Jevons collapse and Akerlof saturation are Axiom I failure modes. A collapsing channel raises the search cost, and a buyer who can no longer tell good sellers from bad leaves the market.
-- **Axiom III — Law of Future Cost** — channel-level instantiation of cheap talk. The Single Crossing Property fails at the channel level when production cost (the friction) collapses to zero.
-- **Friction Allocation Principles** — Principle 1 (non-automatable) is the diagnostic for Jevons vulnerability.
-- **Jevons Vulnerability** — direct.
-- **Axiom III — Law of Future Cost, governance corollary** — demurrage and adjudicator skin-in-game are the mechanism-design fixes.
-- **Reputation Depreciation** — demurrage on reputation is the channel-level prescription.
-- **Where the sale starts** ([01-motions.md](../01-foundation/01-motions.md)) — Jevons vulnerability is highest where the sale starts at the search cost, because that is where a channel is the instrument.
+- **Claim 3.** Direct basis. Each seller's message adds to a volume that no seller pays for, so more outreach into a loud market lowers the response to every sender. Crawford and Sobel's result is the end state: when a message costs nothing to produce, receivers ignore all of them.
+- **Claim 4.** The volume of messages against the buyer's attention is the part of the search cost set outside any deal. [information-environment.md](./information-environment.md) carries the formal models.
+- **Claim 1.** A seller that adds outbound email where the market is already too loud to hear it has copied a motion. A search-led seller is the most exposed, because the channel is its instrument.
+- **Friction Allocation Principles.** Principle 1, that tools cannot remove the cost, is the test for whether a channel will collapse. The remedies from Ostrom and from mechanism design, such as a stake the sender loses or a reputation that lapses unless renewed, are open to whoever owns a channel and not to one seller in it.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

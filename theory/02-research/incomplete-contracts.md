@@ -2,7 +2,7 @@
 title: "Incomplete Contracts and Residual Control Rights"
 layer: theory
 status: active
-operationalizes: [axiom-3]
+operationalizes: [axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -36,34 +36,33 @@ This is the theoretical layer beneath Williamson's hold-up problem. Williamson e
 - Reducing the space of unspecified states is itself a governance intervention, distinct from reallocating control within that space.
 
 **Supports in TCG:**
-- **Axiom III — Law of Future Cost, governance corollary** — the missing theoretical layer. Skin in the game is the TCG prescription. Residual control rights are the mechanism it allocates, and a Mutual Implementation Plan is a residual control instrument.
-- **Axiom III — Law of Future Cost** — explains why high asset specificity forces structured intervention rather than standard contracting. The price mechanism cannot govern states no one specified.
-- **Williamson Hold-Up** — Grossman-Hart-Moore supplies the formal treatment underneath it.
-- **The Blueprint** — operationalizes the second governance intervention. By mapping the buyer's environment before commercial execution, the Blueprint shrinks the set of unspecified states rather than arguing about who controls them.
-- **The MIP** — operationalizes the first. Phase gates with joint sign-off distribute residual control across both parties, so neither can unilaterally impose an outcome when an unmapped constraint appears.
+- **Claim 12.** Direct basis. No contract foresees everything, so the two sides settle who decides where it is silent: who carries which risk, in stages, with a point at each where either can stop. A Mutual Implementation Plan is that allocation written down. Joint sign-off at each stage splits the right to decide, so neither side can impose an outcome when something unmapped appears.
+- **Claim 11.** Hold-up that a party expects suppresses its investment before it happens. That is why a buyer that sees lock-in coming prices it before it signs, and builds less.
+- **Claim 9.** Shrinking the set of states nobody specified is a separate act from deciding who controls them. Discovery does the first, and the Contextual Blueprint records it.
+- **Claim 6.** None of this applies to a plug-in purchase, where nothing is built that the price mechanism cannot govern.
 
 ---
 
 ## Extension: allocation before the investment is sunk, adaptation after (2026-09)
 
-Constitution 3.0 changed one word in Axiom II's second clause, from *paid* to *allocated*, and this is the evidence behind it. Constitution 4.0 moved the clause to Axiom III and anchored it to before the investment is sunk rather than to signature.
+This is the evidence behind claim 12's sentence that the two sides settle who carries which risk before either builds. Item 7 in [06-calibration.md](../01-foundation/06-calibration.md) is the test it still owes.
 
 **The empirical record on contract completeness.** Crocker and Reynolds found that Air Force engine procurement contracts were written more incompletely as technological uncertainty rose, deliberately, because drafting contingencies that would be obsolete by execution cost more than resolving them later. Bajari and Tadelis formalized the trade-off: fixed-price contracts on complete ex-ante specifications invite opportunistic change orders once adaptation is needed, and cost-plus contracts with deliberately incomplete specifications govern adaptation more cheaply when complexity is high. MacCormack, Verganti and Iansiti found that in fast-moving software environments, early specification freezes correlated negatively with product quality, and teams that deferred the freeze and iterated on feedback outperformed.
 
 **Where front-end definition pays.** Merrow's benchmarks across industrial capital projects, and the Construction Industry Institute's Project Definition Rating Index, show that scope definition before sanction is the strongest predictor of cost and schedule performance where the specification is static and the cost of change steep. Flyvbjerg and Budzier's work on IT projects adds that duration itself compounds tail risk, so lengthening definition cycles in uncertain projects raises exposure rather than lowering it.
 
-**What follows for Axiom III.** Under uncertainty, what can be settled before the investment is sunk is the allocation of adaptation risk, who bears it, staged how, with what right to stop, which is residual control in Grossman-Hart-Moore's sense. The adaptation itself follows, and Strong and Volkoff's finding that misfits in roles, controls and culture surface only in use says why it must. So the share of the arrangement settled in advance rises with specificity when one side sinks alone, and with the imbalance between the two sides in general, while the share of the work done in advance can fall as uncertainty rises. [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 5.6 gives both forms. Where specification is static, the two coincide and front-end loading pays directly. The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map and Stage divide along this line: the first shrinks the set of unspecified states as far as discovery can reach, the second allocates control over the states it cannot.
+**What follows for claims 9 and 12.** Under uncertainty, what can be settled before the investment is sunk is the allocation of adaptation risk, who bears it, staged how, with what right to stop, which is residual control in Grossman-Hart-Moore's sense. The adaptation itself follows, and Strong and Volkoff's finding that misfits in roles, controls and culture surface only in use says why it must. So the allocation is settled in advance, and the share of the work done in advance can fall as uncertainty rises. Where specification is static, the two coincide and front-end loading pays directly. The [Enforcement Ledger](../../practice/enforcement-ledger.md)'s Map and Stage divide along this line: the first shrinks the set of unspecified states as far as discovery can reach, the second allocates control over the states it cannot.
 
 ---
 
 ## Extension: hold-up under full information (2026-11)
 
-This is the evidence behind the 5.0 proposal to widen Axiom III from what a party cannot verify to what it cannot verify or enforce.
+This is the evidence behind claim 12's sentence that proof before signature shows what a seller can do without binding what either side does once the other cannot easily leave.
 
 **Two conditions, not one.** Wathne and Heide sort opportunism by whether it is passive or active and whether it happens under existing or new circumstances. That gives four forms: evasion, refusal to adapt, violation and forced renegotiation. They name two separate conditions that make opportunism possible. One is information asymmetry, where one party cannot see what the other does. The other is lock-in, where one party has sunk an investment that ties it to the relationship.
 
 **Monitoring reaches only the first.** Their treatment of governance pairs each condition with a remedy. Monitoring works only against opportunism that depends on hidden information. A party exploiting the other's lock-in, by refusing to adapt or by forcing a renegotiation, can do it in plain view, so watching more closely does not stop it. What governs lock-in is incentives, including hostages: something the defecting party loses, such as a bond, a reciprocal specific investment or fees staged against delivery. Selection and socialization are their other two remedies.
 
-**What follows for Axiom III.** Axiom III in 4.1 makes exposure a function of what the exposed party cannot verify, and its instruments are mostly verification: proof, references and maintained evidence. That covers the hidden-information half. The lock-in half needs a second clause, exposure to what a party can see and cannot stop, and a governance corollary for hostages that runs in both directions. Most drift after signature looks like this half. Nobody hides anything. The sponsor leaves, a priority changes, or the seller moves its best people to a newer account, and both sides can see it happen. The frequency corollary's mutual sanction is already a hostage renewed at each boundary. Option contracts and renegotiation design are the second remedy the corollary now names. They allocate in advance who controls the renegotiation, which is residual control in Grossman-Hart-Moore's sense applied to the terms of trade, and [the 2026-11 adversarial review](./adversarial-review-2026-11.md) carries the sources. The bond condition for joint exposure, formerly open question 9, is stated in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 5.5.
+**What follows for claims 11 and 12.** Proof, references and maintained evidence answer the hidden-information half. The lock-in half is exposure to what a party can see and cannot stop, and most drift after signature looks like it. Nobody hides anything. The sponsor leaves, a priority changes, or the seller moves its best people to a newer account, and both sides can see it happen. What answers it is something each side loses by defecting: fees staged against delivery, engineering staged against the buyer's commitment, and a renewal either side can decline. Option contracts and renegotiation design are a second remedy. They settle in advance who controls a renegotiation (Aghion, Dewatripont and Rey 1994, Nöldeke and Schmidt 1995). Section 4 of [06-calibration.md](../01-foundation/06-calibration.md) lists those sources, and item 40 there asks which remedy works where.
 
 **Quotes and statistics.** Citable passages from this source are collected in [source-quotes.md](../../publishing/02-tools/source-quotes.md). Its numbers are recorded, with provenance, in the [citation audit](./audits/citation-provenance-audit.md).

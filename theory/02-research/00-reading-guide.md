@@ -6,121 +6,68 @@ status: active
 
 # Reading Guide
 
-**How to navigate the research, in what order, for which audience.** This guide tells you where to start, what to read in what sequence, and what's safe to skip — given who you are and what you need.
-
-The theoretical synthesis of these papers lives in the [Constitution](../01-foundation/00-tcg-constitution.md). This guide tells you which papers back the Constitution's claims and how to read them efficiently.
+**Which research file backs which claim.** The [Constitution](../01-foundation/00-tcg-constitution.md) states twelve claims. This guide maps each one to the files that carry its evidence, and each file to the claims it backs. Every file's "Supports in TCG" section cites claims by the same numbers.
 
 ---
 
-## How the research builds
+## Where to start
 
-The papers in this directory depend on each other in a specific order. Each arrow points from a file to one that should be read after it, so the foundation sits at the left and the files that extend it sit to its right. The numbered list below the diagram gives the reason for each arrow.
+1. **[Transaction Cost Economics](./transaction-cost-economics.md).** Coase shows that using a market costs something, Dahlman names the three costs, and Williamson divides them by time, which is the line between Time1 and Time2. Every other file extends this one.
+2. **[Buyer Cost Neighbors](./buyer-cost-neighbors.md).** What the nearest frameworks in marketing and sales practice claim, where TCG concedes, and the prediction that separates each. It ends with what is the author's own.
+3. **[The TCE Empirical Record](./tce-empirical-record.md).** Where the evidence under the framework is weakest, recorded on purpose.
 
-```mermaid
-flowchart LR
-    TCE["1. Transaction Cost Economics<br/>the foundation"]
-
-    CS["2. Costly Signals"]
-    PT["3. Prospect Theory"]
-    GT["4. Game Theory and NRR"]
-    CC["8. Channel Collapse"]
-    IC["9. Incomplete Contracts"]
-    BCD["10. Buying Center Dynamics"]
-    PM["12. Process Misfit"]
-    KCA["13. Quasi-Rents and<br/>Supplier-Side Hold-Up"]
-    ER["15. TCE Empirical Record"]
-    BCN["16. Buyer Cost Neighbors"]
-
-    FF["5. Fear of Failure"]
-    RO["11. Real Options"]
-    VP["18. Value and Persuasion"]
-    IE["17. Information Environment:<br/>Cost Floors"]
-    IT["14. Integration Touchpoints"]
-
-    CFIR["6. CFIR<br/>pre-sale diagnosis"]
-    REAIM["7. RE-AIM<br/>post-sale measurement"]
-
-    ADV["19. Adversarial Review, 2026-11<br/>read last"]
-
-    TCE --> CS & PT & GT & CC & IC & BCD & PM & KCA & ER & BCN
-    IC -.-|read alongside| KCA
-
-    PT --> FF & RO & VP
-    CC --> IE
-    PM --> IT
-
-    CS & PT & BCD & PM --> CFIR
-    GT & CFIR --> REAIM
-
-    ER & BCN --> ADV
-```
-
-**Order of dependency:**
-
-1. **[Transaction Cost Economics](./transaction-cost-economics.md)** — Start here. Coase shows that using the market costs something, Dahlman names its three costs (Axiom I), and Williamson splits them into the ex ante costs today's investment pays (Axiom II) and the ex post costs specificity creates (Axiom III).
-2. **[Costly Signals](./costly-signals.md)** — Builds on TCE: how friction resolves information asymmetry.
-3. **[Prospect Theory](./prospect-theory.md)** — Explains *why* buyers fear change at the neurobiological level, and why a possible loss outweighs a matching gain.
-4. **[Game Theory and NRR](./game-theory-and-nrr.md)** — Shows how incentives must be structured to sustain cooperation across the repeated game.
-5. **[Fear of Failure](./fear-of-failure.md)** — Empirical evidence: Standish CHAOS, Gartner regret data, the JOLT Effect.
-6. **[CFIR](./cfir.md)** — Pre-sale diagnostic methodology.
-7. **[RE-AIM](./re-aim-framework.md)** — Post-sale measurement methodology.
-
-Plus the channel-level layer:
-
-8. **[Channel Collapse](./channel-collapse.md)** — Jevons' Paradox applied to outbound. Governance solutions for the channel-level externality problem.
-
-Plus three sources added under the Constitution's earlier numbering, before 4.0. Each deepens an axiom that already existed, so read them after the paper they extend rather than in sequence:
-
-9. **[Incomplete Contracts](./incomplete-contracts.md)** — Read after Transaction Cost Economics. Williamson explains why asset specificity creates exposure. Grossman-Hart-Moore explain what determines the outcome once exposure exists, which is the allocation of residual control rights. This is the theory beneath the MIP. Its 2026-09 extension carries the incomplete-contracting and front-end-loading evidence behind the allocation clause, now Axiom III's: allocation is settled before the investment is sunk, while the adaptation follows. Constitution 3.0 changed *paid* to *allocated* when the clause sat in Axiom II.
-10. **[Buying Center Dynamics](./buying-center-dynamics.md)** — Read before CFIR. Establishes that the buyer is a coalition rather than an agent, which is the premise CFIR's Inner Setting analysis depends on. Supplies the structure of $F_{consensus}$.
-11. **[Real Options](./real-options.md)** — Read after Prospect Theory. Loss aversion explains why the buyer fears the downside. Real options explains why waiting is a rationally priced alternative rather than mere inertia, and why staged commitment is the counter.
-
-Plus the implementation layer:
-
-12. **[Process Misfit](./process-misfit.md)** — Read after Transaction Cost Economics and before CFIR. Williamson establishes that asset specificity creates exposure. The misfit literature says what that specificity is made of in a software deal, and names the six domains a seller can inspect before the investment is sunk. Its four responses to misfit are the buyer's adaptation work, which Axiom II counts as investment against the policing cost, and its distance from the reference workflow is what Axiom III reads as specific.
-
-Plus the seller-side layer:
-
-13. **[Appropriable Quasi-Rents and Supplier-Side Hold-Up](./klein-crawford-alchian.md)** — Read after Transaction Cost Economics and alongside Incomplete Contracts. Williamson says specificity creates exposure. Klein, Crawford and Alchian name the quantity at stake and establish that it belongs to whichever party sank the investment, which in a forward-deployed motion is the seller. Backs [04-seller-surplus-model.md](../01-foundation/04-seller-surplus-model.md).
-
-Plus the workflow layer:
-
-14. **[Integration Touchpoints](./integration-touchpoints.md)** — Read after Process Misfit. Misfit says what specificity is made of. The touchpoint taxonomy says where a product meets the buyer's system of record, in five types that hold in any vertical. It is how the step library in [08-from-axioms-to-instruments.md](../01-foundation/08-from-axioms-to-instruments.md) matches steps across workflows, and how the decision roles around a workflow are predicted before a buyer is met. The one practitioner source in this directory, recorded as such.
-
-Plus the critiques:
-
-15. **[The TCE Empirical Record and Its Critiques](./tce-empirical-record.md)** — Read after Transaction Cost Economics and before extending Axiom III. Where the empirical record supports specificity and fails uncertainty, why Ghoshal and Moran say governing for opportunism is self-fulfilling, why List's field experiments count against borrowing loss aversion, and the software-economics account of subscription that retired the claim that subscription won for governance reasons. This file records where the framework is weakest, on purpose.
-
-Plus the Constitution 5.0 layer, added 2026-11 as the evidence for the 5.0 proposal. Each answers a neighbor or an objection, so read it after the file it extends:
-
-16. **[Buyer Cost Neighbors](./buyer-cost-neighbors.md)** — Read after Transaction Cost Economics. What Gartner, Moore, MEDDICC, value selling, Skok and Janz, total cost of ownership, Cannon and Homburg and Hockenmaier each claim, where TCG concedes, and the one prediction that separates them. Ends with what is original and what is synthesis.
-17. **[The Information Environment: Cost Floors](./information-environment.md)** — Read after Channel Collapse. The part of each cost set outside the deal, which no seller lowers within one deal at a return the deal repays, and what does lower it. Backs the cost floor corollary.
-18. **[Value and Persuasion](./value-and-persuasion.md)** — Read after Prospect Theory. The split between realizable, recognized and realized value behind the second standing assumption, and the constructed-preferences objection that survives it.
-
-Plus the adversarial layer:
-
-19. **[Adversarial Review, 2026-11](./adversarial-review-2026-11.md)** — Read last. An external review set out to break seven claims. Records what the Constitution already answered, the five objections that survive, about thirty uncited sources, and which of the review's own figures are not fit to cite. Opened open questions 37 to 43, which now wait on data in the [calibration list](../01-foundation/06-calibration.md).
-20. **[Research Review, 2026-11-09](./research-review-2026-11-09.md)** — Read after item 19. Tests novelty and each axiom against the literature, with how far each source was read, and records what changed in 6.2.
-21. **[The Simplified Acquisition Threshold Test](./sat-threshold-test.md)** — Read after item 20. The first test of the non-compensatory rule on public data, registered before its counts were pulled, with its result and the next test it points to.
+Then read by claim.
 
 ---
 
-## Which sources back which axiom
+## By claim
 
-Each file's `operationalizes` field carries the same mapping. The Constitution's Related section lists it too.
+| Claim | Files that back it |
+|---|---|
+| **The premise and the standing assumptions** | [Transaction Cost Economics](./transaction-cost-economics.md) for the three costs. [Value and Persuasion](./value-and-persuasion.md) for the second assumption, that value is set outside the sale. [The TCE Empirical Record](./tce-empirical-record.md) for the critiques of the first and third. |
+| **1.** The kind of cost in the way decides how to sell | [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for Attewell, Ram and Sheth, and Bunn, the nearest prior art. [Channel Collapse](./channel-collapse.md) for one copied motion and what it costs. |
+| **2.** The workflow and the organization predict that cost | [Process Misfit](./process-misfit.md) and [Integration Touchpoints](./integration-touchpoints.md) for the workflow. [Buying Center Dynamics](./buying-center-dynamics.md) for the organization. |
+| **3.** A cheap claim raises every buyer's search cost | [Costly Signals](./costly-signals.md) for Akerlof, Spence, and Crawford and Sobel. [Channel Collapse](./channel-collapse.md) for the volume no sender pays for. [Value and Persuasion](./value-and-persuasion.md) section 3 for the test that separates evidence from persuasion. |
+| **4.** Rules set a floor no seller lowers alone | [The Information Environment](./information-environment.md). |
+| **5.** A seller reaches the buyers whose cost it is built to carry, and pays for work on that cost | [Game Theory and NRR](./game-theory-and-nrr.md) and [Value and Persuasion](./value-and-persuasion.md) section 6 for pay. No file backs the reach half directly. [Buyer Cost Neighbors](./buyer-cost-neighbors.md) lists practitioner prior art that nobody has read yet. |
+| **6.** A purchase is plug-in or built-in | [Transaction Cost Economics](./transaction-cost-economics.md) for specific investment. [Process Misfit](./process-misfit.md) for what gets built. [Implementation Science](./implementation-science.md) for trialability. |
+| **7.** Implementation is a fear at Time1, and it acts through the buyer's people | [Buying Center Dynamics](./buying-center-dynamics.md) for the coalition and the private objection. [Fear of Failure](./fear-of-failure.md) for why a buyer waits. [Implementation Science](./implementation-science.md) for what each role's objection is made of. |
+| **8.** A discount moves money and lowers no cost | [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) sections 1.1 to 1.4 for the accounting. [Value and Persuasion](./value-and-persuasion.md) section 6 for the evidence on discounts. [Costly Signals](./costly-signals.md) for why a commitment informs. [Buying Center Dynamics](./buying-center-dynamics.md) for the spend threshold, and [The Simplified Acquisition Threshold Test](./sat-threshold-test.md) for the one test run on it. |
+| **9.** Work skipped at Time1 moves to Time2 and grows | [Incomplete Contracts](./incomplete-contracts.md), the 2026-09 extension, for where front-end work pays and where it does not. [Process Misfit](./process-misfit.md) for what discovery finds. |
+| **10.** Whether the product worked here decides renewal | [Implementation Science](./implementation-science.md). [Process Misfit](./process-misfit.md) for misfits that surface only in use. [Value and Persuasion](./value-and-persuasion.md) section 4 for when a buyer notices. |
+| **11.** Lock-in earned by building together holds, and lock-in made by control is hold-up | [Transaction Cost Economics](./transaction-cost-economics.md), the section on hold-up. [Incomplete Contracts](./incomplete-contracts.md). [The TCE Empirical Record](./tce-empirical-record.md) for lock-in as measured. |
+| **12.** A contract built for partnership does what a discount cannot | [Incomplete Contracts](./incomplete-contracts.md) for who decides where the contract is silent. [Fear of Failure](./fear-of-failure.md) section 3 for why stages are worth more than one commitment. [The TCE Empirical Record](./tce-empirical-record.md), the 2026-11 extension, for contracts beside trust and norms. |
 
-| Axiom | The question | Sources |
+---
+
+## By file
+
+| File | Claims | What it holds |
 |---|---|---|
-| **I. Composition** | Can a market exist? | [Transaction Cost Economics](./transaction-cost-economics.md) for the cost of using the market and Dahlman's three costs, [Buying Center Dynamics](./buying-center-dynamics.md), [Channel Collapse](./channel-collapse.md), [Fear of Failure](./fear-of-failure.md), [Integration Touchpoints](./integration-touchpoints.md), [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for the non-compensatory rule against its neighbors, [The Information Environment](./information-environment.md) for the cost floor corollary, [Adversarial Review, 2026-11](./adversarial-review-2026-11.md) |
-| **II. Investment** | What has to be paid down at time 0? | [Transaction Cost Economics](./transaction-cost-economics.md) for Williamson's ex ante costs, [Integration Touchpoints](./integration-touchpoints.md) for the adaptation each touchpoint demands, [Process Misfit](./process-misfit.md) for the buyer's four responses to misfit, [Value and Persuasion](./value-and-persuasion.md) for adoption effort priced as buyer investment and, in its 2026-11 extension, persuasion, discounts and representatives' pay, [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for the prior art of the allocation rule and the two jobs, [Adversarial Review, 2026-11](./adversarial-review-2026-11.md), [Research Review, 2026-11-09](./research-review-2026-11-09.md) |
-| **III. Future Cost** | What prevents churn and contraction at time 1? | Specificity and governance: [Transaction Cost Economics](./transaction-cost-economics.md) for Williamson's ex post costs, [Klein, Crawford and Alchian](./klein-crawford-alchian.md), [Incomplete Contracts](./incomplete-contracts.md), [Process Misfit](./process-misfit.md), [Game Theory and NRR](./game-theory-and-nrr.md), [Real Options](./real-options.md), [Integration Touchpoints](./integration-touchpoints.md). Gaps and verification: [Costly Signals](./costly-signals.md), [Prospect Theory](./prospect-theory.md), [Fear of Failure](./fear-of-failure.md), [Buying Center Dynamics](./buying-center-dynamics.md), [Channel Collapse](./channel-collapse.md), [CFIR](./cfir.md), [RE-AIM](./re-aim-framework.md). The critique: [The TCE Empirical Record](./tce-empirical-record.md), whose 2026-11 extension carries relational governance, ties between people and retention. The value assumption: [Value and Persuasion](./value-and-persuasion.md), [Adversarial Review, 2026-11](./adversarial-review-2026-11.md) |
+| [transaction-cost-economics.md](./transaction-cost-economics.md) | All | Coase, Dahlman, Williamson, the marketing line that followed, and Klein, Crawford and Alchian on hold-up |
+| [buyer-cost-neighbors.md](./buyer-cost-neighbors.md) | 1, 5, 8 | Gartner, Moore, MEDDICC, value selling, Skok and Janz, total cost of ownership and the academic buying literature, each with a separating prediction |
+| [costly-signals.md](./costly-signals.md) | 3, 8 | Why only a signal that costs a weak seller more informs, and the four tests a signal must pass |
+| [channel-collapse.md](./channel-collapse.md) | 3, 4 | Outreach volume as a cost each sender puts on the others |
+| [information-environment.md](./information-environment.md) | 4, 3 | The part of each cost set outside a deal, and who can lower it |
+| [buying-center-dynamics.md](./buying-center-dynamics.md) | 7, 2, 8 | The buyer as a coalition, objections that a room suppresses, and approval thresholds |
+| [process-misfit.md](./process-misfit.md) | 2, 6, 9, 10 | The gap between a package and a workflow, in six domains and four responses |
+| [integration-touchpoints.md](./integration-touchpoints.md) | 2, 6, 11 | Five types of point where a product meets a system of record. The one practitioner source |
+| [fear-of-failure.md](./fear-of-failure.md) | 7, 8, 12 | What buyers believe about failure, loss aversion, and the value of waiting |
+| [incomplete-contracts.md](./incomplete-contracts.md) | 9, 11, 12 | Who decides where a contract is silent, where front-end definition pays, and hold-up in plain view |
+| [game-theory-and-nrr.md](./game-theory-and-nrr.md) | 5, 10, 12 | One round against many, for pay and for renewal |
+| [implementation-science.md](./implementation-science.md) | 10, 7, 2 | CFIR and RE-AIM, and where each CFIR construct is read in the instruments |
+| [value-and-persuasion.md](./value-and-persuasion.md) | 3, 5, 8, 10 | What a seller can change inside a sale, and the evidence on discounts and pay |
+| [tce-empirical-record.md](./tce-empirical-record.md) | 6, 9, 11, 12 | Where the transaction cost record is strong, where it is weak, and its critics |
+| [sat-threshold-test.md](./sat-threshold-test.md) | 8, 4 | The one test run on public data so far: federal purchases around an approval threshold, registered before the counts were pulled. Its script and data are in [`models/`](../../models/) |
 
 ---
 
-## What you won't find here
+## How far to trust a citation
 
-This is a citation index, not a theoretical synthesis. The synthesis lives elsewhere:
+- A source marked *(secondary)*, *(abstract)* or *(not yet read here)* has not been opened in full. Check the finding at the primary before quoting it.
+- Every number a file cites has a row in the [citation audit](./audits/citation-provenance-audit.md), with how far its trace goes.
+- What only evidence can settle is in [06-calibration.md](../01-foundation/06-calibration.md), with the sources two outside reviews brought. What writing can settle is in [07-open-questions.md](../01-foundation/07-open-questions.md).
 
-- **Three axioms and their derivations:** [Constitution](../01-foundation/00-tcg-constitution.md), Parts I and II.
-- **The two conditions and the failure modes table:** Constitution Part II. The per-axiom figures are in Part I, generated from [`models/`](../../models/).
-- **Operational tools** (rubric, artifacts): [`practice/`](../../practice/).
+## What is not here
+
+This directory holds evidence. The claims are in the [Constitution](../01-foundation/00-tcg-constitution.md), and the instruments are in [`practice/`](../../practice/).

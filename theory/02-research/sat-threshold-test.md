@@ -2,11 +2,14 @@
 title: "The Simplified Acquisition Threshold Test"
 layer: theory
 status: under-review
-operationalizes: [axiom-1]
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Simplified Acquisition Threshold Test
+
+> [!NOTE]
+> **This is a registered test, kept as it was written on 2026-11-09 under Constitution 6.2.** It tested the rule that one cost past its limit keeps a buyer out whatever else is easy, which the file calls the gate. Constitution 7.0 retired that rule the next day. Sections 1 to 6 keep the wording of the test as registered, so they use terms 7.0 no longer does, and section 7 says what the result means now. Two things the text cites are in git history: the research review (`git show b449f40:theory/02-research/research-review-2026-11-09.md`) and section 6 of the math file (`git show 0e13ebf:theory/01-foundation/02-mathematical-models.md`).
 
 **What it tests.** Axiom I says the costs are non-compensatory: ease on one cost never buys back another past its threshold, because each payer's capacity is specific to it. This file runs the first test of that claim on public data. It uses the rise of the US simplified acquisition threshold, the *SAT*, from \$100,000 to \$150,000, effective 1 October 2010. Above the SAT a federal purchase goes through full procedures, more steps and approvals for the contracting office, which in TCG's terms is consensus demand on that office.
 
@@ -18,7 +21,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 ## 1. Why the review's version of the test does not separate the theories
 
-The [research review](./research-review-2026-11-09.md) section 4 proposed splitting the threshold's effect by purchase vehicle: an order under an existing contract vehicle, such as a GSA Schedule, carries lower search and policing cost than an open-market buy, so a non-compensatory gate predicts equal deterrence in both. That premise fails. The procedure the SAT adds is itself smaller for an order under a vehicle than for an open-market buy, which moves from simplified procedures to full ones. Both the gate and a compensatory account predict less deterrence for orders, so the split separates nothing. It is reported below as a description, not a test.
+The research review of 2026-11-09, in its section 4, proposed splitting the threshold's effect by purchase vehicle: an order under an existing contract vehicle, such as a GSA Schedule, carries lower search and policing cost than an open-market buy, so a non-compensatory gate predicts equal deterrence in both. That premise fails. The procedure the SAT adds is itself smaller for an order under a vehicle than for an open-market buy, which moves from simplified procedures to full ones. Both the gate and a compensatory account predict less deterrence for orders, so the split separates nothing. It is reported below as a description, not a test.
 
 ## 2. Design
 
@@ -40,7 +43,7 @@ Standard errors treat each count as Poisson.
 - **P1, both accounts.** M1 is positive in every group at both thresholds, and larger for open-market buys than for orders under a vehicle.
 - **P2, the gate.** Inside the open market, M2 does not differ between services and products. A compensatory account predicts M2 larger for services. The two are taken to differ when the services-minus-products difference exceeds both twice its standard error and 0.05 log points, a materiality bar chosen here and not derived. M1 is reported by cost kind but not used for P2, because a service purchase is easier to resize under a threshold than a product, which raises its bunching for reasons neither account is about.
 
-**What the test cannot do.** Commercial items, which skew toward products, could use simplified procedures above the SAT under a test program, so products may face less added procedure than services. That biases the result toward the compensatory prediction. A finding of no difference therefore counts for the gate more than a finding of a difference counts against it. The test also cannot read the contracting office's capacity, which [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 6 names as the gate's own signature.
+**What the test cannot do.** Commercial items, which skew toward products, could use simplified procedures above the SAT under a test program, so products may face less added procedure than services. That biases the result toward the compensatory prediction. A finding of no difference therefore counts for the gate more than a finding of a difference counts against it. The test also cannot read the contracting office's capacity, which section 6 of the math file, as it then stood, names as the gate's own signature.
 
 ## 4. Results
 
@@ -75,4 +78,20 @@ The counts were pulled on 2026-11-09: 960 cells covering 1,244,037 awards. Value
 
 ## 6. The next test
 
-[02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 6 names what separates the gate from the buyer's condition. Bunching that scales with each purchase's surplus belongs to the buyer's condition. Bunching that ignores surplus and moves with the contracting office's capacity belongs to the gate. Federal award records name the awarding office, so an office's workload, its awards per year against the size of its staff where that is published, can stand in for its capacity. The test asks whether deterrence at the threshold rises with workload, within one cost kind and one vehicle, and across the fiscal 2018 rise of the SAT to \$250,000 as well as the fiscal 2011 one. It is described here and not yet registered. Its windows wait on confirming when each agency adopted the \$250,000 threshold by class deviation, and its measure of capacity waits on finding which offices publish staffing.
+Section 6 of the math file, as it then stood, names what separates the gate from the buyer's condition. Bunching that scales with each purchase's surplus belongs to the buyer's condition. Bunching that ignores surplus and moves with the contracting office's capacity belongs to the gate. Federal award records name the awarding office, so an office's workload, its awards per year against the size of its staff where that is published, can stand in for its capacity. The test asks whether deterrence at the threshold rises with workload, within one cost kind and one vehicle, and across the fiscal 2018 rise of the SAT to \$250,000 as well as the fiscal 2011 one. It is described here and not yet registered. Its windows wait on confirming when each agency adopted the \$250,000 threshold by class deviation, and its measure of capacity waits on finding which offices publish staffing.
+
+## 7. What it means under Constitution 7.0
+
+Added on 2026-11-10. Nothing above was changed except two links to files that have since left.
+
+- **The rule this test was built for is gone.** Constitution 7.0 says a cost can stop a deal and that a large enough gain can offset it. The registered equality prediction failed, so the test gave the retired rule no support. It did not refute it either, for the reason section 5 gives.
+- **An approval threshold deters purchases.** On the open market, bunching under the threshold is large, and some purchases the old threshold had kept from happening appeared once it rose. That backs claim 8's exception, that a price taken under a spend threshold removes an approver.
+- **A contract vehicle responds less.** Orders under a vehicle bunched less and showed almost no purchases kept out. The threshold adds less procedure to such an order, so the finding describes a pre-approved contract carrying part of the cost, as claim 4 has it. It is a description and not a test.
+- **Item 68 in [06-calibration.md](../01-foundation/06-calibration.md) carries the prediction forward.** The test in section 6 would now read how much of the deterrence follows the contracting office's workload.
+
+## Related
+
+- [buying-center-dynamics.md](./buying-center-dynamics.md), for Carril's study of the same threshold.
+- [information-environment.md](./information-environment.md), for the floor a pre-approved contract lowers.
+- [`models/README.md`](../../models/README.md), for how to run the script.
+

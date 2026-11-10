@@ -6,59 +6,54 @@ status: active
 
 # Practice
 
-**Function:** operationalize the theory. Every file here is an instrument one of the three axioms names, or a measurement tool whose worked example the model tests assert. A section stays only if it passes three questions: it changes a decision the person using the instrument makes, it is said in one place, and the person can act on it when they use the instrument. Nothing here is operating procedure for a sales organization. That material was removed in the 2026-09 restructure, and the version history in the [Constitution](../theory/01-foundation/00-tcg-constitution.md) records what went.
+**Function:** operationalize the theory. Every file here is an instrument one of the twelve claims names. A section stays only if it passes three questions: it changes a decision the person using the instrument makes, it is said in one place, and the person can act on it when they use the instrument. Nothing here is operating procedure for a sales organization.
 
-Each document carries its own header table stating its inputs, outputs, next step, and owner. This README points at them and does not restate them.
-
----
-
-## By decision
-
-The Constitution's axioms answer three questions: whether a market can exist, what has to be paid down at time 0, and what prevents churn and contraction at time 1. The instruments meet those questions at different moments. Name the question, then open the instrument.
-
-| Moment | Your question | Instrument |
-|---|---|---|
-| **Before any buyer** | Where does the sale start across this buyer population, and are we built to pay down that cost? | [00. The Market Reading](./00-market-reading.md) |
-| **Deal** | Can this buyer enter, where does the sale start and what must the seller's spending do, and what must be settled before anything specific is sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
-| **Deal, a coalition** | Whose measure does this change, what does each role need answered, and who inside the buyer holds the decision together? | [Bargaining Ledger](./bargaining-ledger.md) |
-| **Deal, specific exposure** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
-| **Deal, after signature** | Did value land, and have we re-earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) |
-
-Every instrument here is built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
+Each document carries its own header table stating its inputs, outputs, next step and owner. This README points at them and does not restate them.
 
 ---
 
-## Quantitative instruments
+## By time
 
-Two instruments convert deal observations into comparable numbers, each a quantity the axioms name. Each ranks deals against each other, and none predicts a close date. Every parameter they use is declared in [06-calibration.md](../theory/01-foundation/06-calibration.md), and every worked example is asserted in [`models/`](../models/).
+The [Constitution](../theory/01-foundation/00-tcg-constitution.md) has a buyer and a seller make three decisions in order: whether to enter a market, whether to sign, and whether to renew. Name the time, then open the instrument.
 
-| Instrument | Measures | Run it when |
-|---|---|---|
-| [Enforcement Ledger](./enforcement-ledger.md) | The policing gap, the mean of the seller's and the buyer's unevidenced fractions, which feeds the chance of future loss. Its allocation coverage reads whether specific investment was allocated before it was sunk. | At each stage, from Map onward, and coverage at go-live |
-| [Bargaining Ledger](./bargaining-ledger.md) | The bargaining gap, and $F_{consensus}$ with its band | Whenever the triage reads bargaining as needing investment, and on every deal with specific exposure |
+| Time | Your question | Instrument | Claims |
+|---|---|---|---|
+| **Time0, the market** | Do these buyers pay for the problem, which cost is in their way, and are we built and paid to carry it? | [00. The Market Reading](./00-market-reading.md) | 1 to 5 |
+| **Time1, any deal** | Does this buyer pay for the problem, is the purchase plug-in or built-in, which cost is in the way, and what must the seller's spending do? | [Deal Triage Calculator](./deal-triage-calculator.md) | 6, 8, 9 |
+| **Time1, an organization that has to agree** | What does each role need answered, and who inside the buyer holds the decision together? | [Bargaining Ledger](./bargaining-ledger.md) | 7 |
+| **Time1, a built-in purchase** | What does each side not know about the other, how does this fail, and who carries which risk before either side builds? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage | 9, 12 |
+| **Time1, one piece of evidence** | Does this signal count? | [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) | 3 |
+| **Time2, renewal** | Did it work here, and have we earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) | 10 to 12 |
+
+A *plug-in* purchase works on arrival. A *built-in* purchase has either side build something that is worth less anywhere else.
+
+**How they connect.** The Market Reading says which cost is in the way across a market, and the Deal Triage Calculator says it for one deal. Search runs on the Market Reading's search ledger, consensus on the Bargaining Ledger, and implementation on the Enforcement Ledger. The Enforcement Ledger's three stages are what the field calls the Blueprint, the Red Team and the Mutual Implementation Plan. The Adoption Review carries both ledgers past signature and runs the standing review that Stage agreed.
+
+**The two ledgers keep older names.** They are named for Dahlman's costs, bargaining and decision, and policing and enforcement. The Constitution calls the buyer's side of those consensus and implementation.
 
 ---
 
-## The signal check
+## What the instruments count
 
-[The Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) decides whether one piece of evidence counts, against the four Friction Allocation Principles. The Enforcement Ledger's Test rows and the Market Reading's search ledger run every evidence cell through it.
+Every instrument counts named things: workflow steps, decision roles, rows with evidence, findings. A number with no list behind it is not a count. No instrument scores a deal, adds the costs together or predicts a close date. The readings compare deals inside one book, and the claims' tests in the Constitution say what would have to be recorded to check them.
 
 ---
 
-## Archived in the 6.1 rebuild
+## Archived
 
-Each file below is in git history. What it carried that the axioms still need now lives here:
+Each file below is in git history. What it carried that the claims still need now lives here:
 
 | Archived | Now in |
 |---|---|
-| Contextual Blueprint, Red Team Protocol, Mutual Implementation Plan, Milestone Valuation Model, Bilateral Asymmetry Scorecard | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, and its policing gap |
+| Contextual Blueprint, Red Team Protocol, Mutual Implementation Plan, Milestone Valuation Model, Bilateral Asymmetry Scorecard | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage |
 | Consensus Friction Calculator, and the Blueprint's and Red Team's stakeholder sections | The [Bargaining Ledger](./bargaining-ledger.md) |
-| Friction Efficiency Index | Its allocation coverage ratio, in the Enforcement Ledger, and its test of Axiom III's allocation clause, in [06-calibration.md](../theory/01-foundation/06-calibration.md) section 4. The other three measures and the composite changed no decision on a deal. |
-| CFIR Field Mapping | [cfir.md](../theory/02-research/cfir.md), section "Where each construct is read" |
+| Friction Efficiency Index | The Enforcement Ledger's reading of what was covered at go-live |
+| CFIR Field Mapping | [implementation-science.md](../theory/02-research/implementation-science.md), section "Where each construct is read" |
+| The ledgers' scores, bands and fractions | Nothing. The 2026-11 trim removed them, because every parameter was chosen and unmeasured. Version 1.0 of each ledger is in git history |
 
 ---
 
 ## Related
 
-- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the axioms, [01-motions.md](../theory/01-foundation/01-motions.md) for why where the sale starts selects the instrument, [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) for what shape the arrangement takes after signature.
+- **Theory:** [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md) for the claims, and [01-motions.md](../theory/01-foundation/01-motions.md) for how the cost in the way selects the motion and the instrument.
 - **Checks:** [`tools/linting/`](../tools/linting/) for the link, frontmatter and style checkers.

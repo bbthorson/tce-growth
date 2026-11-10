@@ -14,16 +14,14 @@ status: active
 
 The canonical TCG framework. Start here if you're new to TCG.
 
-- [00-tcg-constitution.md](./01-foundation/00-tcg-constitution.md) — Three standing assumptions, the premise, three axioms as three questions at three levels (market, deal, relationship), and the two conditions, one per party.
-- [01-motions.md](./01-foundation/01-motions.md) — The motion as where the sale starts, Turnkey as a market condition, and the map onto incumbent vocabulary.
-- [02-mathematical-models.md](./01-foundation/02-mathematical-models.md) — Functional forms behind the variables in the Constitution.
-- [03-glossary-and-notation.md](./01-foundation/03-glossary-and-notation.md) — Look up any symbol or term, and find where it is canonically defined.
-- [04-seller-surplus-model.md](./01-foundation/04-seller-surplus-model.md) — The seller's side: what the seller invests, what portion is exposed, and when it is worth making.
-- [05-governance-forms.md](./01-foundation/05-governance-forms.md) — What shape the arrangement takes after signature, selected by specific exposure and frequency.
-- [06-calibration.md](./01-foundation/06-calibration.md) — Every coefficient, threshold and band, with its provenance. Nothing in it is measured.
+- [00-tcg-constitution.md](./01-foundation/00-tcg-constitution.md) — Three standing assumptions, the premise, and twelve claims under three axioms, one per time: the market, contracting and renewal.
+- [01-motions.md](./01-foundation/01-motions.md) — A motion named for the cost it carries, how to read which one a market needs, the relay model, and the map onto incumbent vocabulary.
+- [02-mathematical-models.md](./01-foundation/02-mathematical-models.md) — The one piece of accounting the Constitution relies on: price is a transfer.
+- [03-glossary-and-notation.md](./01-foundation/03-glossary-and-notation.md) — Look up any term, and find where it is defined.
+- [06-calibration.md](./01-foundation/06-calibration.md) — What only evidence can settle: the objections to the claims, and what a seller would have to record to test them.
 
 ### [02-research/](./02-research/)
 
 The academic evidence backing each axiom and artifact. Plus a provenance audit so any quantitative claim can be traced to its primary source.
 
-Start with [00-reading-guide.md](./02-research/00-reading-guide.md) — it shows how the papers depend on each other and says which axiom each paper backs.
+Start with [00-reading-guide.md](./02-research/00-reading-guide.md) — it maps each claim to the research files that back it.
