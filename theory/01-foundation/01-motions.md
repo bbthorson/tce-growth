@@ -186,7 +186,7 @@ Self-serve tactics carry a lower cost of sale, and a representative paid on book
 
 ## 9. Stages are fixed, and the jobs vary
 
-Every buyer moves through the same stages: awareness, consideration, purchase, and after it renewal, which runs consideration again against challengers. The stages are the buyer's order of decision, and they do not vary by market. What varies is which costs the buyer cannot get through alone. Each such cost is a job the buyer needs done, and the seller staffs the job at whichever stage it arises.
+Every buyer moves through the same stages: awareness, consideration, purchase, and after it renewal, which runs consideration again against challengers. The stages are the buyer's order of decision, and they do not vary by market. What varies is which costs the buyer cannot get through alone. Each such cost is a job the buyer needs done, and the seller staffs the job at whichever stage it arises. Read through TCG, each of Gartner's six buying jobs falls under one cost, and Gartner reports buyers looping back and revisiting the jobs in no fixed order ([buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md)). That does not contradict fixed stages if a stage is an order of decision rather than of time: a buyer can loop back to search during consideration, and it cannot renew before it buys. A buyer that loops back to awareness after it has bought would contradict it.
 
 | Job | What the buyer needs done | Where it usually arises |
 |---|---|---|
@@ -241,7 +241,7 @@ Everyone arriving here knows what Product-Led Growth means. This section says wh
 |---|---|---|
 | **Turnkey** | Product-Led Growth | Overlapping, not equal. Turnkey is a condition of a market: every cost self-serve and nothing specific sunk. Product-Led is a company-level strategy: the product is the primary acquisition instrument, and it works under that condition. The two come apart in the case that matters most, a Product-Led company moving upmarket. Security review arrives and the committee grows, so the bargaining cost leaves the self-serve zone. Integration deepens, so something specific is sunk. The deals have left Turnkey while the company still calls its motion Product-Led, and the instrument set did not follow. Entry produces the same split with the company unchanged, because a Product-Led market that fills with competitors raises its own search cost. Reading each cost's position deal by deal is what makes either transition visible while it is happening. |
 | **Search-led** | Sales-Led Growth, category creation, evangelical selling | Search-led is wider. It also covers channel and trial, which Sales-Led does not. |
-| **Consensus-led** | No established term. Nearest neighbours are MEDDPICC-style qualification and multithreading | The incumbent practice exists as qualification discipline rather than as a named motion. |
+| **Consensus-led** | The consensus sale (Schmidt, Adamson and Bird 2015), Gartner's consensus-creation job, Miller Heiman's buying influences, MEDDPICC-style qualification and multithreading | The motion is described and staffed. What is new is the label, and the formal rule that names it for the largest position. |
 | **Implementation-led** | Implementation-Led Growth, forward-deployed engineering, solution selling | Direct. This framework was called ILG before the theory outgrew the name. Older analyses still use it for the whole framework. |
 | **Run together** | No established term | The industry treats motions as exclusive, so the case where two costs sit at the same position has no name. Older analyses in this repository call it Composed. |
 
@@ -271,7 +271,7 @@ The motions are written out rather than abbreviated, because SLG would mean two 
 - [06-calibration.md](./06-calibration.md) — Provenance of every number named here, including every threshold edge.
 - [07-open-questions.md](./07-open-questions.md) — The register section 9 points into.
 - [04-seller-surplus-model.md](./04-seller-surplus-model.md) — The seller's side of the transaction, which section 8 depends on.
-- [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase's question, Dahlman's three costs and Williamson's split by time.
+- [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) — Coase's cost of using the market, Dahlman's three costs and Williamson's split by time.
 - [channel-collapse.md](../02-research/channel-collapse.md) — The reachability blocker, which most frameworks do not name as a cost.
 - [Deal Triage Calculator](../../practice/deal-triage-calculator.md) — The instrument that emits the positions and the specific exposure, and the conditions under which the implementation-led motion should be declined.
 - [models/README.md](../../models/README.md) — Executable forms of the equations referenced here.
