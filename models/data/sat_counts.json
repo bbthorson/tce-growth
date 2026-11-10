@@ -1,0 +1,6726 @@
+{
+"source": "https://api.usaspending.gov/api/v2/search/spending_by_award_count/",
+"pulled": "2026-11-09",
+"rows": [
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 50000,
+"n": 4476
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 55000,
+"n": 3757
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 60000,
+"n": 3436
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 65000,
+"n": 3076
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 70000,
+"n": 2746
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 75000,
+"n": 2638
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 80000,
+"n": 2364
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 85000,
+"n": 2229
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 90000,
+"n": 2330
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 95000,
+"n": 2954
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 100000,
+"n": 839
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 105000,
+"n": 707
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 110000,
+"n": 657
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 115000,
+"n": 628
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 120000,
+"n": 655
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 125000,
+"n": 593
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 130000,
+"n": 542
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 135000,
+"n": 544
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 140000,
+"n": 493
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 145000,
+"n": 465
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 150000,
+"n": 480
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 155000,
+"n": 436
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 160000,
+"n": 436
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 165000,
+"n": 398
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 170000,
+"n": 382
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 175000,
+"n": 351
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 180000,
+"n": 359
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 185000,
+"n": 355
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 190000,
+"n": 294
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 195000,
+"n": 377
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 200000,
+"n": 294
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 205000,
+"n": 227
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 210000,
+"n": 243
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 215000,
+"n": 249
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 220000,
+"n": 231
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 225000,
+"n": 221
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 230000,
+"n": 253
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 235000,
+"n": 252
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 240000,
+"n": 261
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Product",
+"lo": 245000,
+"n": 315
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 50000,
+"n": 2237
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 55000,
+"n": 1822
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 60000,
+"n": 1687
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 65000,
+"n": 1528
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 70000,
+"n": 1384
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 75000,
+"n": 1342
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 80000,
+"n": 1075
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 85000,
+"n": 1070
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 90000,
+"n": 1102
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 95000,
+"n": 1582
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 100000,
+"n": 742
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 105000,
+"n": 530
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 110000,
+"n": 535
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 115000,
+"n": 503
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 120000,
+"n": 466
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 125000,
+"n": 439
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 130000,
+"n": 391
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 135000,
+"n": 397
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 140000,
+"n": 382
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 145000,
+"n": 384
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 150000,
+"n": 392
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 155000,
+"n": 302
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 160000,
+"n": 288
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 165000,
+"n": 315
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 170000,
+"n": 247
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 175000,
+"n": 265
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 180000,
+"n": 259
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 185000,
+"n": 247
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 190000,
+"n": 250
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 195000,
+"n": 254
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 200000,
+"n": 257
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 205000,
+"n": 222
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 210000,
+"n": 187
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 215000,
+"n": 207
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 220000,
+"n": 172
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 225000,
+"n": 219
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 230000,
+"n": 158
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 235000,
+"n": 198
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 240000,
+"n": 172
+},
+{
+"fy": 2008,
+"vehicle": "open",
+"kind": "Service",
+"lo": 245000,
+"n": 219
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 50000,
+"n": 8607
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 55000,
+"n": 7410
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 60000,
+"n": 6246
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 65000,
+"n": 5432
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 70000,
+"n": 4922
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 75000,
+"n": 4519
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 80000,
+"n": 4006
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 85000,
+"n": 3679
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 90000,
+"n": 3725
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 95000,
+"n": 3965
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 100000,
+"n": 2480
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 105000,
+"n": 2214
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 110000,
+"n": 2027
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 115000,
+"n": 1852
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 120000,
+"n": 1649
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 125000,
+"n": 1595
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 130000,
+"n": 1587
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 135000,
+"n": 1361
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 140000,
+"n": 1309
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 145000,
+"n": 1263
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 150000,
+"n": 1191
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 155000,
+"n": 1110
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 160000,
+"n": 1078
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 165000,
+"n": 985
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 170000,
+"n": 965
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 175000,
+"n": 940
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 180000,
+"n": 907
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 185000,
+"n": 866
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 190000,
+"n": 811
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 195000,
+"n": 833
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 200000,
+"n": 765
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 205000,
+"n": 677
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 210000,
+"n": 631
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 215000,
+"n": 649
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 220000,
+"n": 679
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 225000,
+"n": 621
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 230000,
+"n": 567
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 235000,
+"n": 604
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 240000,
+"n": 613
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Product",
+"lo": 245000,
+"n": 594
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 50000,
+"n": 5375
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 55000,
+"n": 4759
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 60000,
+"n": 4384
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 65000,
+"n": 3820
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 70000,
+"n": 3393
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 75000,
+"n": 3367
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 80000,
+"n": 2933
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 85000,
+"n": 2710
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 90000,
+"n": 2561
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 95000,
+"n": 3042
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 100000,
+"n": 2338
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 105000,
+"n": 1857
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 110000,
+"n": 1656
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 115000,
+"n": 1711
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 120000,
+"n": 1662
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 125000,
+"n": 1541
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 130000,
+"n": 1365
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 135000,
+"n": 1417
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 140000,
+"n": 1284
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 145000,
+"n": 1456
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 150000,
+"n": 1344
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 155000,
+"n": 1238
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 160000,
+"n": 1179
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 165000,
+"n": 1086
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 170000,
+"n": 1035
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 175000,
+"n": 1067
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 180000,
+"n": 971
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 185000,
+"n": 832
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 190000,
+"n": 987
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 195000,
+"n": 1041
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 200000,
+"n": 842
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 205000,
+"n": 770
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 210000,
+"n": 755
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 215000,
+"n": 753
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 220000,
+"n": 720
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 225000,
+"n": 640
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 230000,
+"n": 610
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 235000,
+"n": 553
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 240000,
+"n": 610
+},
+{
+"fy": 2008,
+"vehicle": "order",
+"kind": "Service",
+"lo": 245000,
+"n": 714
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 50000,
+"n": 4140
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 55000,
+"n": 3609
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 60000,
+"n": 3157
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 65000,
+"n": 2802
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 70000,
+"n": 2542
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 75000,
+"n": 2282
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 80000,
+"n": 2110
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 85000,
+"n": 2102
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 90000,
+"n": 2002
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 95000,
+"n": 2859
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 100000,
+"n": 755
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 105000,
+"n": 612
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 110000,
+"n": 568
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 115000,
+"n": 551
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 120000,
+"n": 557
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 125000,
+"n": 536
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 130000,
+"n": 479
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 135000,
+"n": 448
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 140000,
+"n": 420
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 145000,
+"n": 398
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 150000,
+"n": 381
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 155000,
+"n": 356
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 160000,
+"n": 333
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 165000,
+"n": 351
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 170000,
+"n": 343
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 175000,
+"n": 288
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 180000,
+"n": 270
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 185000,
+"n": 264
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 190000,
+"n": 248
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 195000,
+"n": 289
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 200000,
+"n": 257
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 205000,
+"n": 232
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 210000,
+"n": 199
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 215000,
+"n": 223
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 220000,
+"n": 192
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 225000,
+"n": 208
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 230000,
+"n": 217
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 235000,
+"n": 179
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 240000,
+"n": 223
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Product",
+"lo": 245000,
+"n": 286
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 50000,
+"n": 2344
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 55000,
+"n": 1763
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 60000,
+"n": 1687
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 65000,
+"n": 1488
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 70000,
+"n": 1381
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 75000,
+"n": 1309
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 80000,
+"n": 1150
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 85000,
+"n": 1044
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 90000,
+"n": 1044
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 95000,
+"n": 1627
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 100000,
+"n": 687
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 105000,
+"n": 578
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 110000,
+"n": 531
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 115000,
+"n": 490
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 120000,
+"n": 511
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 125000,
+"n": 479
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 130000,
+"n": 456
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 135000,
+"n": 410
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 140000,
+"n": 403
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 145000,
+"n": 420
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 150000,
+"n": 384
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 155000,
+"n": 346
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 160000,
+"n": 317
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 165000,
+"n": 287
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 170000,
+"n": 281
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 175000,
+"n": 292
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 180000,
+"n": 296
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 185000,
+"n": 266
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 190000,
+"n": 227
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 195000,
+"n": 285
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 200000,
+"n": 257
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 205000,
+"n": 221
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 210000,
+"n": 241
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 215000,
+"n": 210
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 220000,
+"n": 202
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 225000,
+"n": 208
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 230000,
+"n": 174
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 235000,
+"n": 205
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 240000,
+"n": 205
+},
+{
+"fy": 2009,
+"vehicle": "open",
+"kind": "Service",
+"lo": 245000,
+"n": 230
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 50000,
+"n": 8184
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 55000,
+"n": 7289
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 60000,
+"n": 6094
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 65000,
+"n": 5225
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 70000,
+"n": 4709
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 75000,
+"n": 4278
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 80000,
+"n": 3830
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 85000,
+"n": 3859
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 90000,
+"n": 3539
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 95000,
+"n": 4010
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 100000,
+"n": 2299
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 105000,
+"n": 2168
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 110000,
+"n": 1882
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 115000,
+"n": 1903
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 120000,
+"n": 1686
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 125000,
+"n": 1525
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 130000,
+"n": 1412
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 135000,
+"n": 1342
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 140000,
+"n": 1201
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 145000,
+"n": 1225
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 150000,
+"n": 1116
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 155000,
+"n": 1007
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 160000,
+"n": 980
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 165000,
+"n": 901
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 170000,
+"n": 1022
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 175000,
+"n": 947
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 180000,
+"n": 814
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 185000,
+"n": 849
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 190000,
+"n": 794
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 195000,
+"n": 849
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 200000,
+"n": 709
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 205000,
+"n": 680
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 210000,
+"n": 631
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 215000,
+"n": 623
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 220000,
+"n": 623
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 225000,
+"n": 559
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 230000,
+"n": 565
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 235000,
+"n": 572
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 240000,
+"n": 583
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Product",
+"lo": 245000,
+"n": 595
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 50000,
+"n": 5591
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 55000,
+"n": 4859
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 60000,
+"n": 4355
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 65000,
+"n": 4136
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 70000,
+"n": 3598
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 75000,
+"n": 3332
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 80000,
+"n": 2942
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 85000,
+"n": 2693
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 90000,
+"n": 2704
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 95000,
+"n": 3145
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 100000,
+"n": 2328
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 105000,
+"n": 1909
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 110000,
+"n": 1844
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 115000,
+"n": 1747
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 120000,
+"n": 1845
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 125000,
+"n": 1658
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 130000,
+"n": 1445
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 135000,
+"n": 1564
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 140000,
+"n": 1377
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 145000,
+"n": 1412
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 150000,
+"n": 1406
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 155000,
+"n": 1198
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 160000,
+"n": 1212
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 165000,
+"n": 1052
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 170000,
+"n": 1105
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 175000,
+"n": 1057
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 180000,
+"n": 1027
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 185000,
+"n": 883
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 190000,
+"n": 983
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 195000,
+"n": 1112
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 200000,
+"n": 928
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 205000,
+"n": 772
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 210000,
+"n": 735
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 215000,
+"n": 860
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 220000,
+"n": 702
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 225000,
+"n": 723
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 230000,
+"n": 657
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 235000,
+"n": 643
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 240000,
+"n": 658
+},
+{
+"fy": 2009,
+"vehicle": "order",
+"kind": "Service",
+"lo": 245000,
+"n": 686
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 50000,
+"n": 4227
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 55000,
+"n": 3734
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 60000,
+"n": 3096
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 65000,
+"n": 2789
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 70000,
+"n": 2658
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 75000,
+"n": 2273
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 80000,
+"n": 2185
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 85000,
+"n": 2073
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 90000,
+"n": 1984
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 95000,
+"n": 2787
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 100000,
+"n": 794
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 105000,
+"n": 658
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 110000,
+"n": 642
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 115000,
+"n": 635
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 120000,
+"n": 622
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 125000,
+"n": 546
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 130000,
+"n": 489
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 135000,
+"n": 496
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 140000,
+"n": 456
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 145000,
+"n": 439
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 150000,
+"n": 429
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 155000,
+"n": 377
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 160000,
+"n": 392
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 165000,
+"n": 363
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 170000,
+"n": 363
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 175000,
+"n": 349
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 180000,
+"n": 328
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 185000,
+"n": 336
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 190000,
+"n": 306
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 195000,
+"n": 331
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 200000,
+"n": 269
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 205000,
+"n": 241
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 210000,
+"n": 231
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 215000,
+"n": 256
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 220000,
+"n": 232
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 225000,
+"n": 253
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 230000,
+"n": 205
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 235000,
+"n": 234
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 240000,
+"n": 227
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Product",
+"lo": 245000,
+"n": 353
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 50000,
+"n": 2129
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 55000,
+"n": 1887
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 60000,
+"n": 1676
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 65000,
+"n": 1480
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 70000,
+"n": 1287
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 75000,
+"n": 1276
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 80000,
+"n": 1223
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 85000,
+"n": 1094
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 90000,
+"n": 1032
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 95000,
+"n": 1533
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 100000,
+"n": 756
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 105000,
+"n": 574
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 110000,
+"n": 538
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 115000,
+"n": 490
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 120000,
+"n": 436
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 125000,
+"n": 443
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 130000,
+"n": 424
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 135000,
+"n": 419
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 140000,
+"n": 397
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 145000,
+"n": 427
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 150000,
+"n": 385
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 155000,
+"n": 358
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 160000,
+"n": 299
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 165000,
+"n": 298
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 170000,
+"n": 335
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 175000,
+"n": 290
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 180000,
+"n": 276
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 185000,
+"n": 277
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 190000,
+"n": 272
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 195000,
+"n": 302
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 200000,
+"n": 272
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 205000,
+"n": 216
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 210000,
+"n": 234
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 215000,
+"n": 224
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 220000,
+"n": 205
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 225000,
+"n": 240
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 230000,
+"n": 212
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 235000,
+"n": 222
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 240000,
+"n": 167
+},
+{
+"fy": 2010,
+"vehicle": "open",
+"kind": "Service",
+"lo": 245000,
+"n": 213
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 50000,
+"n": 8317
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 55000,
+"n": 7413
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 60000,
+"n": 6232
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 65000,
+"n": 6069
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 70000,
+"n": 5099
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 75000,
+"n": 4461
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 80000,
+"n": 4230
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 85000,
+"n": 3901
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 90000,
+"n": 3400
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 95000,
+"n": 4092
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 100000,
+"n": 2380
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 105000,
+"n": 2152
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 110000,
+"n": 2109
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 115000,
+"n": 1947
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 120000,
+"n": 1930
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 125000,
+"n": 1662
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 130000,
+"n": 1692
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 135000,
+"n": 1435
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 140000,
+"n": 1323
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 145000,
+"n": 1405
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 150000,
+"n": 1248
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 155000,
+"n": 1126
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 160000,
+"n": 1086
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 165000,
+"n": 1007
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 170000,
+"n": 1037
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 175000,
+"n": 940
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 180000,
+"n": 879
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 185000,
+"n": 872
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 190000,
+"n": 775
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 195000,
+"n": 908
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 200000,
+"n": 842
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 205000,
+"n": 723
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 210000,
+"n": 656
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 215000,
+"n": 669
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 220000,
+"n": 626
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 225000,
+"n": 574
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 230000,
+"n": 594
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 235000,
+"n": 582
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 240000,
+"n": 644
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Product",
+"lo": 245000,
+"n": 613
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 50000,
+"n": 5886
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 55000,
+"n": 5307
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 60000,
+"n": 4616
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 65000,
+"n": 4232
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 70000,
+"n": 3841
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 75000,
+"n": 3666
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 80000,
+"n": 3224
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 85000,
+"n": 2965
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 90000,
+"n": 2746
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 95000,
+"n": 3188
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 100000,
+"n": 2454
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 105000,
+"n": 2059
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 110000,
+"n": 1910
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 115000,
+"n": 1868
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 120000,
+"n": 1867
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 125000,
+"n": 1678
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 130000,
+"n": 1579
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 135000,
+"n": 1455
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 140000,
+"n": 1447
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 145000,
+"n": 1489
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 150000,
+"n": 1394
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 155000,
+"n": 1180
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 160000,
+"n": 1280
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 165000,
+"n": 1170
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 170000,
+"n": 1168
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 175000,
+"n": 1167
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 180000,
+"n": 1159
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 185000,
+"n": 965
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 190000,
+"n": 1044
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 195000,
+"n": 1131
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 200000,
+"n": 931
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 205000,
+"n": 847
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 210000,
+"n": 833
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 215000,
+"n": 934
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 220000,
+"n": 769
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 225000,
+"n": 791
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 230000,
+"n": 712
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 235000,
+"n": 692
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 240000,
+"n": 666
+},
+{
+"fy": 2010,
+"vehicle": "order",
+"kind": "Service",
+"lo": 245000,
+"n": 770
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 50000,
+"n": 4015
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 55000,
+"n": 3547
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 60000,
+"n": 3106
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 65000,
+"n": 2635
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 70000,
+"n": 2447
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 75000,
+"n": 2133
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 80000,
+"n": 1895
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 85000,
+"n": 1812
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 90000,
+"n": 1684
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 95000,
+"n": 2088
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 100000,
+"n": 1158
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 105000,
+"n": 951
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 110000,
+"n": 943
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 115000,
+"n": 907
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 120000,
+"n": 914
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 125000,
+"n": 807
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 130000,
+"n": 728
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 135000,
+"n": 765
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 140000,
+"n": 807
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 145000,
+"n": 1026
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 150000,
+"n": 395
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 155000,
+"n": 310
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 160000,
+"n": 337
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 165000,
+"n": 296
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 170000,
+"n": 321
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 175000,
+"n": 328
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 180000,
+"n": 258
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 185000,
+"n": 241
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 190000,
+"n": 279
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 195000,
+"n": 294
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 200000,
+"n": 231
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 205000,
+"n": 194
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 210000,
+"n": 200
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 215000,
+"n": 206
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 220000,
+"n": 190
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 225000,
+"n": 179
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 230000,
+"n": 213
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 235000,
+"n": 180
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 240000,
+"n": 194
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Product",
+"lo": 245000,
+"n": 213
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 50000,
+"n": 1883
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 55000,
+"n": 1564
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 60000,
+"n": 1465
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 65000,
+"n": 1341
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 70000,
+"n": 1130
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 75000,
+"n": 1199
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 80000,
+"n": 969
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 85000,
+"n": 933
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 90000,
+"n": 932
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 95000,
+"n": 992
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 100000,
+"n": 699
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 105000,
+"n": 551
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 110000,
+"n": 545
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 115000,
+"n": 505
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 120000,
+"n": 519
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 125000,
+"n": 466
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 130000,
+"n": 465
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 135000,
+"n": 450
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 140000,
+"n": 433
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 145000,
+"n": 542
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 150000,
+"n": 348
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 155000,
+"n": 307
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 160000,
+"n": 262
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 165000,
+"n": 286
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 170000,
+"n": 268
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 175000,
+"n": 253
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 180000,
+"n": 254
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 185000,
+"n": 236
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 190000,
+"n": 209
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 195000,
+"n": 254
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 200000,
+"n": 230
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 205000,
+"n": 195
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 210000,
+"n": 196
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 215000,
+"n": 181
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 220000,
+"n": 163
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 225000,
+"n": 195
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 230000,
+"n": 163
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 235000,
+"n": 173
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 240000,
+"n": 152
+},
+{
+"fy": 2011,
+"vehicle": "open",
+"kind": "Service",
+"lo": 245000,
+"n": 203
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 50000,
+"n": 7885
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 55000,
+"n": 7034
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 60000,
+"n": 6147
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 65000,
+"n": 5244
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 70000,
+"n": 4596
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 75000,
+"n": 4345
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 80000,
+"n": 3885
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 85000,
+"n": 3671
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 90000,
+"n": 3257
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 95000,
+"n": 3349
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 100000,
+"n": 2367
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 105000,
+"n": 2146
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 110000,
+"n": 1940
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 115000,
+"n": 1953
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 120000,
+"n": 1787
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 125000,
+"n": 1755
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 130000,
+"n": 1502
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 135000,
+"n": 1438
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 140000,
+"n": 1389
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 145000,
+"n": 1352
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 150000,
+"n": 1155
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 155000,
+"n": 1015
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 160000,
+"n": 956
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 165000,
+"n": 932
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 170000,
+"n": 812
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 175000,
+"n": 810
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 180000,
+"n": 793
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 185000,
+"n": 794
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 190000,
+"n": 717
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 195000,
+"n": 748
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 200000,
+"n": 867
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 205000,
+"n": 652
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 210000,
+"n": 567
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 215000,
+"n": 552
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 220000,
+"n": 593
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 225000,
+"n": 536
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 230000,
+"n": 527
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 235000,
+"n": 521
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 240000,
+"n": 511
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Product",
+"lo": 245000,
+"n": 553
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 50000,
+"n": 4939
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 55000,
+"n": 4424
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 60000,
+"n": 3947
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 65000,
+"n": 3631
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 70000,
+"n": 3372
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 75000,
+"n": 3180
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 80000,
+"n": 2965
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 85000,
+"n": 2632
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 90000,
+"n": 2493
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 95000,
+"n": 2620
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 100000,
+"n": 2169
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 105000,
+"n": 1846
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 110000,
+"n": 1667
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 115000,
+"n": 1618
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 120000,
+"n": 1645
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 125000,
+"n": 1542
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 130000,
+"n": 1378
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 135000,
+"n": 1351
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 140000,
+"n": 1379
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 145000,
+"n": 1435
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 150000,
+"n": 1294
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 155000,
+"n": 1072
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 160000,
+"n": 1014
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 165000,
+"n": 1052
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 170000,
+"n": 1009
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 175000,
+"n": 944
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 180000,
+"n": 1066
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 185000,
+"n": 906
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 190000,
+"n": 873
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 195000,
+"n": 1036
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 200000,
+"n": 802
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 205000,
+"n": 756
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 210000,
+"n": 750
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 215000,
+"n": 852
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 220000,
+"n": 757
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 225000,
+"n": 663
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 230000,
+"n": 717
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 235000,
+"n": 610
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 240000,
+"n": 614
+},
+{
+"fy": 2011,
+"vehicle": "order",
+"kind": "Service",
+"lo": 245000,
+"n": 702
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 50000,
+"n": 3925
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 55000,
+"n": 3359
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 60000,
+"n": 2948
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 65000,
+"n": 2557
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 70000,
+"n": 2233
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 75000,
+"n": 2189
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 80000,
+"n": 1855
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 85000,
+"n": 1691
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 90000,
+"n": 1488
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 95000,
+"n": 1617
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 100000,
+"n": 1133
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 105000,
+"n": 1047
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 110000,
+"n": 1005
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 115000,
+"n": 916
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 120000,
+"n": 902
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 125000,
+"n": 806
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 130000,
+"n": 875
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 135000,
+"n": 842
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 140000,
+"n": 889
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 145000,
+"n": 1260
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 150000,
+"n": 390
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 155000,
+"n": 282
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 160000,
+"n": 236
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 165000,
+"n": 244
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 170000,
+"n": 230
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 175000,
+"n": 241
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 180000,
+"n": 213
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 185000,
+"n": 231
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 190000,
+"n": 215
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 195000,
+"n": 246
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 200000,
+"n": 177
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 205000,
+"n": 192
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 210000,
+"n": 186
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 215000,
+"n": 190
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 220000,
+"n": 183
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 225000,
+"n": 170
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 230000,
+"n": 151
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 235000,
+"n": 162
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 240000,
+"n": 152
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Product",
+"lo": 245000,
+"n": 191
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 50000,
+"n": 1823
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 55000,
+"n": 1515
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 60000,
+"n": 1405
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 65000,
+"n": 1317
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 70000,
+"n": 1142
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 75000,
+"n": 1067
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 80000,
+"n": 876
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 85000,
+"n": 858
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 90000,
+"n": 965
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 95000,
+"n": 918
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 100000,
+"n": 675
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 105000,
+"n": 580
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 110000,
+"n": 502
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 115000,
+"n": 541
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 120000,
+"n": 545
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 125000,
+"n": 480
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 130000,
+"n": 448
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 135000,
+"n": 415
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 140000,
+"n": 462
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 145000,
+"n": 624
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 150000,
+"n": 341
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 155000,
+"n": 268
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 160000,
+"n": 239
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 165000,
+"n": 247
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 170000,
+"n": 224
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 175000,
+"n": 242
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 180000,
+"n": 225
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 185000,
+"n": 234
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 190000,
+"n": 190
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 195000,
+"n": 216
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 200000,
+"n": 198
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 205000,
+"n": 172
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 210000,
+"n": 171
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 215000,
+"n": 168
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 220000,
+"n": 151
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 225000,
+"n": 140
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 230000,
+"n": 162
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 235000,
+"n": 129
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 240000,
+"n": 139
+},
+{
+"fy": 2012,
+"vehicle": "open",
+"kind": "Service",
+"lo": 245000,
+"n": 192
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 50000,
+"n": 7215
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 55000,
+"n": 6536
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 60000,
+"n": 6044
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 65000,
+"n": 5073
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 70000,
+"n": 4539
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 75000,
+"n": 3987
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 80000,
+"n": 3939
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 85000,
+"n": 3267
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 90000,
+"n": 3061
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 95000,
+"n": 2973
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 100000,
+"n": 2445
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 105000,
+"n": 2147
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 110000,
+"n": 1870
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 115000,
+"n": 1750
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 120000,
+"n": 1735
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 125000,
+"n": 1624
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 130000,
+"n": 1455
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 135000,
+"n": 1386
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 140000,
+"n": 1451
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 145000,
+"n": 1483
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 150000,
+"n": 1165
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 155000,
+"n": 937
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 160000,
+"n": 969
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 165000,
+"n": 837
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 170000,
+"n": 855
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 175000,
+"n": 755
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 180000,
+"n": 763
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 185000,
+"n": 730
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 190000,
+"n": 645
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 195000,
+"n": 694
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 200000,
+"n": 1392
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 205000,
+"n": 853
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 210000,
+"n": 567
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 215000,
+"n": 524
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 220000,
+"n": 565
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 225000,
+"n": 522
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 230000,
+"n": 502
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 235000,
+"n": 503
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 240000,
+"n": 447
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Product",
+"lo": 245000,
+"n": 449
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 50000,
+"n": 3594
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 55000,
+"n": 3270
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 60000,
+"n": 3075
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 65000,
+"n": 2777
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 70000,
+"n": 2672
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 75000,
+"n": 2439
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 80000,
+"n": 2124
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 85000,
+"n": 2168
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 90000,
+"n": 1911
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 95000,
+"n": 2107
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 100000,
+"n": 1722
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 105000,
+"n": 1413
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 110000,
+"n": 1420
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 115000,
+"n": 1376
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 120000,
+"n": 1331
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 125000,
+"n": 1257
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 130000,
+"n": 1194
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 135000,
+"n": 1181
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 140000,
+"n": 1161
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 145000,
+"n": 1262
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 150000,
+"n": 1009
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 155000,
+"n": 895
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 160000,
+"n": 887
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 165000,
+"n": 809
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 170000,
+"n": 797
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 175000,
+"n": 752
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 180000,
+"n": 731
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 185000,
+"n": 715
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 190000,
+"n": 691
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 195000,
+"n": 776
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 200000,
+"n": 722
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 205000,
+"n": 570
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 210000,
+"n": 614
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 215000,
+"n": 604
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 220000,
+"n": 598
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 225000,
+"n": 559
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 230000,
+"n": 454
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 235000,
+"n": 536
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 240000,
+"n": 546
+},
+{
+"fy": 2012,
+"vehicle": "order",
+"kind": "Service",
+"lo": 245000,
+"n": 585
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 50000,
+"n": 3763
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 55000,
+"n": 3210
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 60000,
+"n": 2716
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 65000,
+"n": 2397
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 70000,
+"n": 2136
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 75000,
+"n": 1911
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 80000,
+"n": 1712
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 85000,
+"n": 1624
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 90000,
+"n": 1574
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 95000,
+"n": 1504
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 100000,
+"n": 1134
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 105000,
+"n": 1039
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 110000,
+"n": 945
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 115000,
+"n": 922
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 120000,
+"n": 902
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 125000,
+"n": 863
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 130000,
+"n": 802
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 135000,
+"n": 838
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 140000,
+"n": 848
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 145000,
+"n": 1345
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 150000,
+"n": 321
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 155000,
+"n": 275
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 160000,
+"n": 274
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 165000,
+"n": 239
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 170000,
+"n": 216
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 175000,
+"n": 234
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 180000,
+"n": 241
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 185000,
+"n": 244
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 190000,
+"n": 194
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 195000,
+"n": 230
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 200000,
+"n": 192
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 205000,
+"n": 171
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 210000,
+"n": 152
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 215000,
+"n": 158
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 220000,
+"n": 165
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 225000,
+"n": 151
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 230000,
+"n": 158
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 235000,
+"n": 132
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 240000,
+"n": 146
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Product",
+"lo": 245000,
+"n": 182
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 50000,
+"n": 1524
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 55000,
+"n": 1278
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 60000,
+"n": 1261
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 65000,
+"n": 1079
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 70000,
+"n": 939
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 75000,
+"n": 978
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 80000,
+"n": 837
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 85000,
+"n": 759
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 90000,
+"n": 733
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 95000,
+"n": 784
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 100000,
+"n": 604
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 105000,
+"n": 500
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 110000,
+"n": 466
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 115000,
+"n": 471
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 120000,
+"n": 452
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 125000,
+"n": 405
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 130000,
+"n": 373
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 135000,
+"n": 428
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 140000,
+"n": 386
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 145000,
+"n": 524
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 150000,
+"n": 322
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 155000,
+"n": 236
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 160000,
+"n": 226
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 165000,
+"n": 200
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 170000,
+"n": 182
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 175000,
+"n": 192
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 180000,
+"n": 175
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 185000,
+"n": 175
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 190000,
+"n": 148
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 195000,
+"n": 226
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 200000,
+"n": 184
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 205000,
+"n": 143
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 210000,
+"n": 150
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 215000,
+"n": 168
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 220000,
+"n": 147
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 225000,
+"n": 132
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 230000,
+"n": 124
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 235000,
+"n": 127
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 240000,
+"n": 108
+},
+{
+"fy": 2013,
+"vehicle": "open",
+"kind": "Service",
+"lo": 245000,
+"n": 130
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 50000,
+"n": 6688
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 55000,
+"n": 5450
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 60000,
+"n": 5186
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 65000,
+"n": 4364
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 70000,
+"n": 3917
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 75000,
+"n": 3444
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 80000,
+"n": 3149
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 85000,
+"n": 2800
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 90000,
+"n": 2570
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 95000,
+"n": 2514
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 100000,
+"n": 2147
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 105000,
+"n": 1872
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 110000,
+"n": 1589
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 115000,
+"n": 1492
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 120000,
+"n": 1629
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 125000,
+"n": 1381
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 130000,
+"n": 1235
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 135000,
+"n": 1188
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 140000,
+"n": 1220
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 145000,
+"n": 1372
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 150000,
+"n": 1247
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 155000,
+"n": 811
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 160000,
+"n": 781
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 165000,
+"n": 816
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 170000,
+"n": 710
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 175000,
+"n": 614
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 180000,
+"n": 613
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 185000,
+"n": 645
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 190000,
+"n": 590
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 195000,
+"n": 606
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 200000,
+"n": 569
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 205000,
+"n": 766
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 210000,
+"n": 503
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 215000,
+"n": 903
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 220000,
+"n": 460
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 225000,
+"n": 462
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 230000,
+"n": 433
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 235000,
+"n": 405
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 240000,
+"n": 397
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Product",
+"lo": 245000,
+"n": 409
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 50000,
+"n": 3180
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 55000,
+"n": 2917
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 60000,
+"n": 2724
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 65000,
+"n": 2512
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 70000,
+"n": 2396
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 75000,
+"n": 2208
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 80000,
+"n": 1934
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 85000,
+"n": 1831
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 90000,
+"n": 1768
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 95000,
+"n": 1836
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 100000,
+"n": 1497
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 105000,
+"n": 1283
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 110000,
+"n": 1244
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 115000,
+"n": 1312
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 120000,
+"n": 1243
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 125000,
+"n": 1150
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 130000,
+"n": 1104
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 135000,
+"n": 1062
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 140000,
+"n": 1045
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 145000,
+"n": 1220
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 150000,
+"n": 890
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 155000,
+"n": 787
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 160000,
+"n": 783
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 165000,
+"n": 733
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 170000,
+"n": 697
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 175000,
+"n": 704
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 180000,
+"n": 650
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 185000,
+"n": 655
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 190000,
+"n": 589
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 195000,
+"n": 712
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 200000,
+"n": 657
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 205000,
+"n": 603
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 210000,
+"n": 524
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 215000,
+"n": 530
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 220000,
+"n": 526
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 225000,
+"n": 491
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 230000,
+"n": 521
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 235000,
+"n": 478
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 240000,
+"n": 486
+},
+{
+"fy": 2013,
+"vehicle": "order",
+"kind": "Service",
+"lo": 245000,
+"n": 521
+}
+]
+}
