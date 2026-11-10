@@ -106,7 +106,7 @@ Every term is a fraction of annual contract value, per [02-mathematical-models.m
 | $Q_p$ | Appropriable quasi-rent. What party $p$ has sunk that is worth less outside this relationship, $C^{p}_{invest} - R^{p}_{redeploy}$. Bounds $L_p$. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | $C^{p}_{invest}$ | What party $p$ has sunk in this relationship. | [Constitution, Axiom III](./00-tcg-constitution.md) |
 | $R^{p}_{redeploy}$ | What party $p$ could recover by redeploying it elsewhere. | [Constitution, Axiom III](./00-tcg-constitution.md) |
-| $\pi_p$ | The chance party $p$'s exposure does not come back. Rises with the gaps $p$ cannot close. Placeholder form $\pi_0 + (1 - \pi_0)\, g_p$. | [02-mathematical-models.md §5.2](./02-mathematical-models.md) |
+| $\pi_p$ | The expected share of party $p$'s exposure lost, through a failed fit or through what the other side takes. Rises with the gaps $p$ cannot close, and with $H_p$ where the bond condition fails. Placeholder form for the gap part $\pi_0 + (1 - \pi_0)\, g_p$. | [02-mathematical-models.md §5.2, §5.5](./02-mathematical-models.md) |
 | $\pi_0$ | Floor on the chance of loss, above zero because some risk survives any amount of proof. Named, not valued. | [02-mathematical-models.md §5.2](./02-mathematical-models.md) |
 | $g_p$ | Mean of the normalized gaps in party $p$'s row: its own half of the implementation gap and the bargaining gap. | [02-mathematical-models.md §5.2](./02-mathematical-models.md) |
 | $Q_m$ | Quasi-rent sunk at milestone gate $m$. The staged loss is $\sum_m Q_m \, \pi(x_m)$. | [02-mathematical-models.md §5.4](./02-mathematical-models.md) |
@@ -204,7 +204,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 |---|---|---|
 | **Axiom I, Law of Transaction Cost Composition** | Can a market exist? A participation threshold for each of the buyer's three costs, the seller's limit, and cost floors. | [Constitution, Part I](./00-tcg-constitution.md) |
 | **Axiom II, Law of Transaction Investment** | What has to be paid down at time 0? Where the sale starts, which names the motion, and each party going ahead only when its own share is covered. | [Constitution, Part I](./00-tcg-constitution.md) |
-| **Axiom III, Law of Future Cost** | What prevents churn and contraction at time 1? Specific investment exposes a party to what it cannot verify or enforce. What can be foreseen is contracted before the investment is sunk, and a standing review plans for what cannot. | [Constitution, Part I](./00-tcg-constitution.md) |
+| **Axiom III, Law of Future Cost** | What prevents churn and contraction at time 1? Specific investment exposes a party to what it cannot verify or enforce, and sets what a failure costs. What can be foreseen is contracted before the investment is sunk, and a standing review plans for what cannot. | [Constitution, Part I](./00-tcg-constitution.md) |
 
 ### Definitions
 

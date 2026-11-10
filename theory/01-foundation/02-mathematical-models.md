@@ -297,13 +297,13 @@ $$\frac{\partial \delta}{\partial E_{external}} = \frac{-\gamma_r \lambda_{inert
 
 ## 5. Future Loss
 
-### 5.1 Exposure times the chance it does not come back
+### 5.1 Exposure times the share of it lost
 
 $$L_p = Q_p \cdot \pi_p, \qquad Q_p = C^{p}_{invest} - R^{p}_{redeploy}, \qquad p \in \{b, s\}$$
 
 $Q_p$ is the appropriable quasi-rent of Klein, Crawford and Alchian: what party $p$ has sunk, less what it could recover by redeploying it elsewhere. [04-seller-surplus-model.md](./04-seller-surplus-model.md) section 3 defines it for the seller, and the definition reads the same for the buyer, whose non-redeployable investment is the integration built and the workflows rewired to fit this product.
 
-$L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use. It is not a second charge for the investment Axiom II already counted, which is why it sits on the return side: $Q_p$ bounds it because it is the most the other side can extract or a failure can destroy.
+$Q_p$ is what a failure can cost, and $\pi_p$ the expected share of it lost, through a failed fit or through what the other side takes (section 5.5). A larger $Q_p$ raises what a failed fit costs, and once it outgrows the other side's stake it makes hold-up possible, so $\pi_p$ rises with it there. Where the bond condition holds, a larger $Q_b$ also raises what leaving costs, so a buyer with more sunk stays longer on a failing fit and the failure shows first as stalled use and contraction ([05-governance-forms.md](./05-governance-forms.md) section 1, and the switching-cost evidence in [tce-empirical-record.md](../02-research/tce-empirical-record.md)). $L_p$ is a shortfall in the return party $p$ expected from the relationship, through hold-up or through a fit that fails in use. It is not a second charge for the investment Axiom II already counted, which is why it sits on the return side: $Q_p$ bounds it because it is the most the other side can extract or a failure can destroy.
 
 ### 5.2 The chance of loss
 
@@ -443,6 +443,8 @@ $$\eta^* = \sqrt{\frac{(1 - \pi_0)\, F_s\, \gamma}{c_\eta}} - \gamma, \qquad \et
 - **With no stake there is no maintenance.** At $F_s = 0$, a one-shot deal by section 1 of [05-governance-forms.md](./05-governance-forms.md), the seller maintains nothing, and the account follows the unmaintained curve.
 - **Spend rises slower than the stake.** Here as its square root.
 - **Fast drift can make maintenance not worth funding.** $\eta^*$ rises with $\gamma$ and then falls, to zero at $\gamma = (1 - \pi_0) F_s / c_\eta$. With no drift there is nothing to maintain, and with very fast drift no affordable rate holds the gap. Past the peak the seller does better to lower $\gamma$ than to chase it.
+
+**Across accounts, fund what maintenance moves.** $\eta^*$ already funds, on one account, the fall in its chance of loss times its margin. Section 5.2's straight line gives every account the same response to the gap, $(1 - \pi_0)$, so it cannot rank accounts by that response. In the field the response differs across accounts and does not follow the level of risk: the customers likeliest to leave are not necessarily the ones a retention effort moves most (Ascarza 2018). Each account's response is named and not valued.
 
 The threshold and the zero at no stake follow from any maintenance cost that is positive at the margin. The rise and fall in $\gamma$ follows from the two limits. The square root is illustrative, from the proportional, linear and straight-line forms, and $c_\eta$ is named and not valued.
 

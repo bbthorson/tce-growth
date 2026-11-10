@@ -22,7 +22,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - **Novelty:** the gate is new. Each cost has two thresholds and a position between them, and any one cost past its participation threshold keeps the buyer out. Also new are the gap between the cost a buyer expects and the cost it would actually meet, and the claim that Turnkey erodes as sellers enter. Most of the rest is published work recombined, and three claims understate their prior art.
 - **Soundness:** six defects come before any data, among them units that contradict each other, a cost never linked to the investment against it, a headline rule that moves with chosen edges, and a falsifier that conditions on what happened after treatment.
 - **The evidence:** it narrows every axiom and refutes none outright. Price shows up as a tax on surplus more often than as a wall. "Absorb the cost nearest its threshold first" is optimal only in a special case. Exposure raises the loss when a fit fails, not the chance of churn. And most of the restraint on opportunism runs through trust and norms rather than contract terms.
-- **Overall:** TCG today is a vocabulary with three candidate theorems, none yet tested. Constitution 6.2 answers the first five defects, and 6.3 restates Axiom II's allocation rule.
+- **Overall:** TCG today is a vocabulary with three candidate theorems, none yet tested. Constitution 6.2 answers the first five defects, 6.3 restates Axiom II's allocation rule, and 6.4 restates Axiom III's exposure and answers D6.
 
 **Key claims:**
 - **The gate is the novel core,** and it is worth defending as such. Asking whether the buyer uses the market at all, rather than which governance form it chooses, is the cleanest statement of what TCG adds to transaction cost economics.
@@ -73,7 +73,7 @@ Each was checked against the files before any data, and the first five are answe
 - **D3. The summed test was missing from the formal statement,** though the shared payer is the usual case.
 - **D4. The headline rule depended on chosen edges.** Moving the consensus participation edge from 7 to 9 turns a position of 0.8 into 0.6 and can reorder the costs.
 - **D5. Thresholds were read from exit.** [fear-of-failure.md](./fear-of-failure.md) called the no-decision rate "the participation threshold being crossed."
-- **D6. One falsifier conditions on what happened after treatment.** Open question 46's treated arm is reviews that "invoked at least one right during the term," so a failing review can move into the control arm. The arm has to be assigned by whether a review was agreed in Stage. Not yet fixed.
+- **D6. One falsifier conditions on what happened after treatment.** Open question 46's treated arm is reviews that "invoked at least one right during the term," so a failing review can move into the control arm. The arm has to be assigned by whether a review was agreed in Stage. Fixed in 6.4.
 
 ---
 
@@ -140,19 +140,19 @@ Each is listed with the file it would change, and those applied say so.
 1. **Restate the gate in capacity units** (section 5): the Constitution's Axiom I, [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) sections 1 and 6, and calibration section 3.2. **Applied in Constitution 6.2 on 2026-11-09**, which also closed open question 50.
 2. **State the identity between a cost and the investment against it, and add the summed test to Part II.** Defects D2 and D3. **Applied in 6.2.**
 3. **Replace nearest-threshold-first with the general allocation rule** in Axiom II, keeping the motion as the name of the binding constraint. Withdraw the claim that persuasion leaves the joint condition unchanged. **Applied in 6.3**, with the general rule in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 1.5.
-4. **Restate Axiom III's exposure as loss given failure,** and add the churn drivers above as scope conditions. Narrow the enforcement corollary to one layer beside trust and norms, and fund account management on lift times margin.
-5. **Fix the falsifiers.** Assign open question 46's arm by intent to treat. Freeze the edges before any test of Axiom II's falsifier. Relabel the no-decision line in fear-of-failure.md, **applied in 6.2**.
+4. **Restate Axiom III's exposure as loss given failure,** and add the churn drivers above as scope conditions. Narrow the enforcement corollary to one layer beside trust and norms, and fund account management on lift times margin, lift being how far it moves an account's chance of loss. **Applied in 6.4.**
+5. **Fix the falsifiers.** Assign open question 46's arm by intent to treat, **applied in 6.4**. Freeze the edges before any test of Axiom II's falsifier, not yet applied: recording positions before the investment does not fix the band edges D4 names. Relabel the no-decision line in fear-of-failure.md, **applied in 6.2**.
 6. **Correct the prior-art record.**
    - Cite Attewell, Ram and Sheth, Wernerfelt, Walton and McKersie, Hauser and Wernerfelt, and Gartner's buying jobs.
    - Withdraw "no established term" for consensus-led.
    - Fix the Coase attribution and the description of the marketing TCE line.
    - Credit Dixon and McKenna for staging remedies.
 7. **File new open questions:**
-   - the sign of exposure on churn;
-   - whether contracts curb opportunism directly;
-   - learning against rebuild in support effects;
-   - funding by lift against margin;
-   - specificity between people against workflow distance;
+   - the sign of exposure on churn, **filed as open question 62**;
+   - whether contracts curb opportunism directly, **filed as 63**;
+   - learning against rebuild in support effects, **filed as 65**;
+   - funding by lift against margin, meaning by how far maintenance moves an account's chance of loss, **adopted in 6.4 as the cross-account rule in [02-mathematical-models.md](../01-foundation/02-mathematical-models.md) section 5.7, each account's response named and not valued**;
+   - specificity between people against workflow distance, **filed as 64**;
    - the general allocation rule against nearest-threshold-first, **filed as open question 61**.
 
 ---
