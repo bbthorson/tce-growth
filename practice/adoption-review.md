@@ -24,7 +24,7 @@ Goal: After signature, keep the gaps the two deal ledgers closed from reopening,
 **When to run it, and how deep.** The seller funds maintenance only while the margin it holds at the next renewal covers keeping pace with the rebuild ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.7).
 
 - **One-shot deal.** No renewal follows, so the seller has nothing to protect. Do not run it.
-- **Below the gate,** where nothing specific was sunk and a trial verified fit. The renewal is the review: read use and the outcome measure, and re-take the triage's counts for its audit.
+- **A plug-in purchase,** where nothing was built and a trial verified fit. The renewal is the review: read use and the outcome measure, and re-take the triage's counts for its audit.
 - **Recurring, with specific exposure.** Compare the hours a dedicated cycle takes, at the seller's cost, with the renewal's margin, counting only where a review can still change the renewal. Where the hours cover only some accounts, give the dedicated cycle to those where a review can still change the renewal most, which are not necessarily those the forecast call marks at risk (Constitution, drift corollary). Where the margin covers them, run all of it. Otherwise run it **pooled**: use and the outcome measure from telemetry, release notices sent automatically to every account whose mapped touchpoints a release touches, and the out-of-cycle triggers in section 2.4 routed to a pooled account manager who runs one review when a trigger fires. A pooled review reads stale rows and divergences from the two sides' change logs, so it still counts.
 
 ---

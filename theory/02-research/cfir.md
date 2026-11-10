@@ -43,8 +43,8 @@ CFIR names why an implementation succeeds in one organization and fails in anoth
 | Implementation Climate, Learning-Centeredness | Inner Setting | Enforcement Ledger, Map | Previous attempts, and why each failed |
 | Available Resources | Inner Setting | Enforcement Ledger, Map and Stage | The buyer invests first, and each gate names an owner on each side |
 | Self-Efficacy, Knowledge and Beliefs, Individual Identification | Characteristics of Individuals | Bargaining Ledger, the private decision-role map | Each occupant's reservation, stated one to one, and the term that answers it |
-| Compatibility (with workflow) | Intervention Characteristics | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), Step 0b and Gate A | Workflow maturity, and the divergent steps counted when the product must fit an encoded workflow |
-| Trialability | Intervention Characteristics | Deal Triage Calculator, Gate B | Whether the buyer can measure the gap itself and reverse the decision. Where it can, nothing specific is sunk and the Enforcement Ledger does not run. |
+| Compatibility (with workflow) | Intervention Characteristics | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), Steps 2 and 3 | How settled the workflow is, and the divergent steps counted when the product must fit a written workflow |
+| Trialability | Intervention Characteristics | Deal Triage Calculator, Step 3, the three plug-in tests | Whether the buyer can try the product on its own work and reverse the decision. Where it can, the purchase is plug-in, nothing specific is built, and the Enforcement Ledger does not run. |
 | Engaging | Process | Enforcement Ledger, Test | The skeptic, the person the integration lands on, judges every row |
 | Planning, Executing | Process | Enforcement Ledger, Stage | Gates, each with a risk bearer and a priced right to stop |
 | Reflecting and Evaluating | Process | Sustaining Adoption Review | The working review and the [RE-AIM](./re-aim-framework.md) value reading |

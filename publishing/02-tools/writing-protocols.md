@@ -10,7 +10,7 @@ Three short protocols that sit between the [voice guide](./voice-guide.md) and t
 
 **Directives**
 
-1. **Triage first.** Read the deal through the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) and name what it returns rather than a motion label: whether any cost keeps the buyer out, where the sale starts, and whether anything specific is sunk.
+1. **Triage first.** Read the deal through the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) and name what it returns rather than a motion label: whether the buyer pays for the problem today, which cost is in the way, and whether the purchase works on arrival or needs something built.
 2. **Calculate asymmetry.** Identify the bilateral asymmetry gap ($\Delta_A$). Diagnose seller ignorance ($I_{seller}$) and buyer uncertainty ($I_{buyer}$) separately, and say in plain English which gap is wider.
 3. **Multi-stage workflow.** Follow the three-phase pipeline (Scouting, Huddle, Final Play) in all content generation. Never draft a full post in the first response.
 4. **Proactive context capture.** Check for missing context using the context request protocol below.

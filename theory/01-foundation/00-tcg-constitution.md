@@ -159,7 +159,7 @@ Two sources divide the work. Dahlman classified the costs of using a market by k
 
 Ask in order, because each question assumes the one before it.
 
-1. **Does the buyer pay for the problem today?** Staff time on a workaround, an incumbent tool or a consultant shows the change is worth something to it. Without that, no cost reading applies. This reading is proposed and not yet built ([07-open-questions.md](./07-open-questions.md) item 66).
+1. **Does the buyer pay for the problem today?** Staff time on a workaround, an incumbent tool or a consultant shows the change is worth something to it. Without that, no cost reading applies. The [Market Reading](../../practice/00-market-reading.md) and the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) ask it first, and the reading is untested ([07-open-questions.md](./07-open-questions.md) item 66).
 2. **Time0. Which cost is in the way in this market, and is the seller built for it?** Claims 1 to 5.
 3. **Time1. Is the purchase plug-in or built-in, has the organization's scrutiny been invited, and is the seller's spending showing the buyer what it will face?** Claims 6 to 9.
 4. **Time2. Did it work here, and what did the two sides settle before they built?** Claims 10 to 12.

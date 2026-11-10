@@ -65,13 +65,13 @@ Run all four and record every failure. Fix them in this order, because a signal 
 
 **Ask two questions.** What does the buyer sink if the claim is wrong? And would a weak seller gain more by faking this evidence than it would cost to fake? The more the buyer pays and sinks on a claim, the more a weak seller gains by being taken for a strong one, so the evidence has to cost a weak seller more as the stake grows.
 
-**Read the stake from what the caller already has.** For a Test row, the row's own touchpoint and the workflows it changes. For a search-ledger cell, the Market Reading's exposure reading.
+**Read the stake from what the caller already has.** For a Test row, the row's own touchpoint and the workflows it changes. For a search-ledger cell, whether the Market Reading reads the purchase as plug-in, working on arrival, or built-in.
 
 **It fails** when a claim the buyer will sink *specific investment* on, meaning spending worth little outside this relationship, rests on evidence a weak seller could match cheaply.
 
 **Fix:** a demonstration in the buyer's environment, evidence the skeptic grades in Test, or a guarantee. A guarantee is partly verification, because only a seller confident of delivering can afford to offer one.
 
-**The opposite mistake is waste.** Where the triage's Gate B passed, meaning the buyer can measure fit itself and walk away, a trial is the signal. A paid pilot there is the over-frictioned failure under Axiom III's gate corollary, and it usually fails test 2 as well.
+**The opposite mistake is waste.** Where the triage reads the purchase as plug-in, meaning the buyer can measure fit itself and walk away, a trial is the signal. A paid pilot there is the over-built failure under claim 6, and it usually fails test 2 as well.
 
 **What signals cannot do.** Aim signals at the search cost, the implementation cost, and each decision role's uncertainty about what the change does to its own measure. Where roles want opposed things, proof cannot reconcile them, and the [Bargaining Ledger](./bargaining-ledger.md) answers with terms instead.
 

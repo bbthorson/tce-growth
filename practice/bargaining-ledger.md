@@ -16,7 +16,7 @@ Goal: On one deal, close the bargaining gap one decision role at a time, and set
 
 | | |
 |---|---|
-| **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading. The [Enforcement Ledger](./enforcement-ledger.md)'s rows, where the deal has specific exposure. |
+| **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading. The [Enforcement Ledger](./enforcement-ledger.md)'s rows, where the purchase is built-in. |
 | **Outputs** | The decision-role map, the bargaining gap, the size of the bargaining cost and its band, the arrangement record, and the safeguard inside the buyer where one is needed. |
 | **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage column or the contract. The map is re-read in the [Sustaining Adoption Review](./adoption-review.md). |
 | **Owner** | The account executive, staked on retention as [05-governance-forms.md](../theory/01-foundation/05-governance-forms.md) section 5 derives, or a reviewer who is. The map stays with the seller's account team. |
@@ -24,7 +24,7 @@ Goal: On one deal, close the bargaining gap one decision role at a time, and set
 > [!IMPORTANT]
 > **Two documents, never merged.** An occupant will state a reservation one to one and will not write it where a peer can find it, and a probe of private vulnerability reads as opportunism however it is framed ([buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md)). So the map is private, and the shared record lists terms without saying whom they answer. An occupant's uncertainty about their own outcome closes when they receive the answer, not when they state the concern.
 
-**When to run it.** Whenever the triage reads the bargaining position as needing investment, and on every deal with specific exposure.
+**When to run it.** Whenever the triage reads consensus as in the way, and on every *built-in* purchase, one where either side builds something that is worth less anywhere else.
 
 ---
 
@@ -85,7 +85,7 @@ $N$ is the roles that can say no. Var is the variance of the Direction column ac
 | **10 to 25** | Medium | The deal drifts rather than dies. Agree written decision criteria and a decision sequence before pricing. |
 | **Above 25** | High | A stall is the risk to plan for, more than a competitive loss. Add the safeguard inside the buyer before any specific investment. |
 
-**These bands size the work.** Whether the buyer can get through it at all is the triage's consensus position, which governs where the two disagree.
+**These bands size the work.** Whether consensus is in the way at all is the triage's reading, which governs where the two disagree.
 
 **Lower the variance, not the headcount.** The return on reducing it scales with $N^{\beta}$. Answering a reservation in the arrangement lowers it, and more meetings do not.
 

@@ -84,6 +84,9 @@ Mixing the two makes the framework weaker than it is. A reader who doubts where 
 
 ### 3.2 The triage instrument ([Deal Triage Calculator](../../practice/deal-triage-calculator.md))
 
+> [!NOTE]
+> **The instruments no longer read these.** The Deal Triage Calculator 10.0 and the Market Reading 4.0 dropped positions and the default edges in pass 3 of the trim. This section and section 3.2a describe versions 9.2 and 3.0, which `models/tcg_models.py` still implements. Both retire when this file is rewritten in pass 5.
+
 Every input to this instrument counts a cost's demand on its payer, read against that payer's own thresholds ([02-mathematical-models.md](./02-mathematical-models.md) section 6). The edges below are population defaults used until those are read. Each sits on a boundary of the score bands earlier versions used, so a reader comparing old and new readings can see where the line moved, and that placement is the only argument behind any of them.
 
 **Frozen for testing.** Moving one edge can reorder the costs, as the research review's defect D4 shows. A test that reads positions on these defaults, as Axiom II's first falsifier and open question 61 may, fixes them before its data are read and records them with the test. Axiom I's falsifier reads thresholds from staffing or written authority and does not use them ([02-mathematical-models.md](./02-mathematical-models.md) section 6). The defaults below are frozen at their 2026-11-09 values. A change to one is recorded below the table with its date, beside the old value, and a test whose edges moved after its data were read is void.

@@ -2,259 +2,188 @@
 title: "The Deal Triage Calculator"
 layer: practice
 status: active
-version: 9.2
+version: 10.0
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Deal Triage Calculator
 
-Version: 9.2
-Goal: Read one deal against the Constitution's three questions, in order. Can this buyer enter? What has to be paid down at Time1, and what must the seller's spending do? What has to be settled before anything is sunk, so Time2 does not decay? This is the deal reading that [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 derives. It varies around [the Market Reading](./00-market-reading.md), which is read first.
+Version: 10.0
+Goal: Read one deal at Time1, under its market reading. Five questions, in order. Does this buyer pay for the problem? Is its workflow settled? Is the purchase plug-in or built-in? Which cost is in the way? What must the seller's spending do? The answers route the deal to an instrument.
 
-**Canonical reference:** [Constitution 6.3](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions and the buyer's expected reading, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance form and the standing review. The functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6. The motions are [01-motions.md](../theory/01-foundation/01-motions.md).
+**Canonical reference:** [Constitution 7.0](../theory/01-foundation/00-tcg-constitution.md), claims 6 to 9, with claim 2 read on one buyer and claim 12 for what a built-in purchase settles before anyone builds. The Constitution's Part II asks the same questions of a stall, in the same order.
 
 | | |
 |---|---|
-| **Inputs** | A live deal, its market reading, and a willingness to count things rather than rate them. |
-| **Outputs** | Each cost's position as measured and as the buyer expects it, where the sale starts, the mandate, the job the seller's spending must do, a specific-exposure reading, a frequency, a governance form with what to contract and what to review, and a routing. |
-| **Next step** | See Step 4. |
+| **Inputs** | A live deal, its [market reading](./00-market-reading.md), and a willingness to count things rather than rate them. |
+| **Outputs** | Whether the buyer pays for the problem and holds a mandate. How settled its workflow is. Plug-in or built-in, with what would be built and who builds first. The cost in the way, as discovery finds it and as the buyer expects it. What the seller's spending must do, and what repays it. A routing. |
+| **Next step** | See Step 6. |
 | **Owner** | The account executive or pre-sales lead, with a spot-check on the counts by someone who does not carry the deal. |
 
 > [!IMPORTANT]
-> **This instrument counts. It does not rate.** Every input is a number of named things, backed by a list. A number with no list attached is not a count. Counts have a true zero and equal intervals, and each is read against its payer's two thresholds, so the counts are never converted to scores, and costs are summed only where one payer carries them. A count can still be gamed, but a disputed count is an argument about a named item on a list, and the [Adoption Review](./adoption-review.md) re-takes every count. The edges are chosen, so read positions as comparisons between deals in one book ([06-calibration.md](../theory/01-foundation/06-calibration.md)).
+> **This instrument counts. It does not rate.** Every input is a number of named things, backed by a list. A number with no list attached is not a count. A count can still be gamed, but a disputed count is an argument about a named item on a list, and the [Adoption Review](./adoption-review.md) re-takes every count at renewal. The counts size the work and compare deals in one book. No line is drawn on a count, and counts for different costs are never added.
 
 ---
 
-## Step 0: Before the deal
+## Step 0: The market reading
 
-**0a. The market reading.** Name the market reading this deal sits under and its verdict. A deal in a market the seller declined, or never read, is one the seller has not decided it can afford, so every routing below is provisional. A book of deal counts that disagrees with the market reading's counts is the evidence the market reading is wrong. Positions can differ for another reason, since a deal reads its own payers' thresholds and the market reading reads population edges.
+Name the market reading this deal sits under, its verdict, and the cost it says is in the way. A deal in a market the seller declined, or never read, is one the seller has not decided it is built for, so every routing below is provisional. Note where this deal reads differently from its market. A book of deals that disagree with the market reading is the evidence the market reading is wrong.
 
-**0b. Workflow maturity.** Classify the buyer's workflow for the problem being solved. A count of exception paths means nothing when no path is written down.
+---
 
-| Level | Condition | Evidence | Route |
+## Step 1: Does this buyer pay for the problem?
+
+Read this before any cost, and date it before the seller invests. A buyer that does not want the change looks like a buyer with a cost in the way, and no work on a cost moves it.
+
+| Ask | List |
+|---|---|
+| What does the buyer pay for the problem today? | Staff hours on a workaround, an incumbent tool, a consultant, an internal build |
+| What has the buyer put into this purchase that it will not get back? | A workflow map, a data sample, named staff time |
+
+A buyer's statement that it wants the change is a claim until it costs the buyer something. A stall reads as a cost only where the first list is not empty. On a deal that has already stalled, the test is whether the buyer puts in more once the cost it named falls. A new objection alone shows nothing, because lowering one cost exposes the next.
+
+**The mandate.** Is there a named executive sponsor, and is money allocated to this initiative? Read it apart from the decision roles, and re-read it whenever an occupant changes. A mandate that dissolves overrides every role, and its loss usually arrives looking like one person's departure.
+
+This step is new and untested ([open question 66](../theory/01-foundation/07-open-questions.md)).
+
+---
+
+## Step 2: Is the workflow settled?
+
+Classify the buyer's workflow for the problem being solved. A count of exception paths means nothing when no path is written down.
+
+| Reading | Condition | Evidence | Route |
 |---|---|---|---|
-| **1. Undefined** | No written process. Steps vary by person. | Ask three people to describe the workflow and get three different answers. | **Stop, the Chaos Trap**, if the product automates the process. Redirect to consulting or a paid workshop to define it. If the product supplies a medium the buyer encodes its own workflow into, an undefined workflow is not a trap. See Gate A. |
-| **2. Emergent** | A process exists and is partly written down, but units have diverged and nobody owns the variance. | A written procedure people describe as out of date. | **Conditional.** Continue, but the Blueprint must reconstruct the workflow before the Red Team runs. |
-| **3. Codified** | Documented, followed, and exception handling is quantified. | The current procedure, plus volumes for the exception paths. | **Continue.** |
+| **Not settled** | No written procedure. Steps vary by person. | Ask three people to describe the workflow and get three different answers. | **Teach.** The buyer cannot yet name what it is buying. Give it a hypothesis about its own workflow, or a paid workshop to define it. Proof of fit has nothing to run against. Where the product automates the process, pressing on is the *Chaos Trap*. Where the buyer writes its own workflow inside the product, an unsettled workflow is no trap. See Step 3. |
+| **Partly settled** | A procedure is written down, units have diverged, and nobody owns the variance. | A written procedure people describe as out of date. | **Continue, on a condition.** The [Enforcement Ledger](./enforcement-ledger.md)'s Map stage reconstructs the workflow before its Test stage runs. |
+| **Settled** | Written, followed, and the exceptions carry volumes. | The current procedure, plus volumes for the exception paths. | **Continue.** |
 
-**Level 2 is the level that gets misread.** A buyer at Level 2 can produce a document on request, which reads as Level 3 to anyone who does not check whether it matches practice. The failure surfaces during implementation as unmapped exception paths, the most common source of scope expansion after signature. When in doubt, score down.
-
----
-
-## Step 1: Can this buyer enter? (Axiom I)
-
-Count each cost twice. The **measured** count $n_k$ is what discovery establishes. The **expected** count $\tilde{n}_k$ is what the buyer says, before discovery, it thinks the cost will take: which vendors it must compare, who must sign, what must integrate. The buyer decides on the expected count. Each count is the demand the deal places on whoever carries that cost, read against that payer's two thresholds: its capacity, and its capacity plus what the seller or an outside party can move off it ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 6 defines both and what can be moved).
-
-**Name the payers and read their thresholds before the outcome.** Implementation has two payers, the technical owners for integration points and the operating owners for changed workflows and exceptions, so read each part against its own and take the larger position.
-
-| Cost | Ask | Source that settles it |
-|---|---|---|
-| Search | How many options can your team take to a written comparison before you decide? | The evaluation plan, or the last comparable purchase's scored shortlist |
-| Consensus | Who can approve this at this contract value without escalating? | The written delegation of authority |
-| Implementation, technical | How many integrations can your staff build in the delivery window? | Named staff free in the window |
-| Implementation, operating | How many process changes can the affected team take on at once? | The team's change calendar |
-
-Staffing or written authority supports the full gate. A buyer's record on a comparable purchase, counted net of what outside parties carried, supports only a graded reading. Until a threshold is read, use the default edge in each table below. A position on a default routes the deal and is not evidence. Record which source each position used.
-
-### 1a. Search
-
-**Count: alternatives the buyer must rule out before it can choose.** Every named vendor, plus "build it internally" as one, plus "do nothing" as one.
-
-$$n_{search} = (\text{named vendors}) + (\text{build}) + (\text{do nothing})$$
-
-| Default edge | $n_{search}$ |
-|---|---|
-| Self-serve, $\tau^{self}$ | 4 |
-| Participation, $\tau^{part}$ | 8 |
-
-> [!WARNING]
-> **A buyer who cannot name the category is not a short list. It is kept out.** Its alternative set is unbounded, because it cannot enumerate what it is choosing between. The route is category definition. **A buyer you hold no path to today is kept out too**, however well it knows the category, and neither education nor a trial touches that cost. Pull it back into range with a channel, or decline. [channel-collapse.md](../theory/02-research/channel-collapse.md) carries the research.
-
-### 1b. Bargaining and decision (consensus)
-
-**Count: decision roles that can say no.** Not people who attend. Roles whose objection stops the purchase. Add one for each formal body the buyer's rules require at this deal's size and exposure: a procurement process, a security review, a board.
-
-$$n_{consensus} = (\text{decision roles with a veto}) + (\text{formal bodies required})$$
-
-| Default edge | $n_{consensus}$ |
-|---|---|
-| Self-serve, $\tau^{self}$ | 1 |
-| Participation, $\tau^{part}$ | 7 |
-
-**Record the spend thresholds.** For each formal body, note the contract value above which the buyer's rules require it. Price sets who must approve, so a deal split or ramped under a threshold drops that body from the count. It does not settle the exposure of the role behind the body, which returns at renewal under Axiom III. Record any such restructuring as an open row in the decision-role map.
-
-### 1c. Policing and enforcement (implementation)
-
-**Count: three things, summed.**
-
-$$n_{impl} = (\text{integration points}) + (\text{workflows that change}) + (\text{undocumented exception paths})$$
-
-An integration point is one system that must exchange data with yours. A workflow that changes is one procedure a named group performs differently after go-live. An undocumented exception path is one branch of the workflow with no written handling and no volume attached.
-
-| Default edge | $n_{impl}$ |
-|---|---|
-| Self-serve, $\tau^{self}$ | 2 |
-| Participation, $\tau^{part}$ | 11 |
-
-### 1d. Positions
-
-For each cost, its position between its payer's two thresholds, once on each count:
-
-$$r_k = \frac{n_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k} \qquad \tilde{r}_k = \frac{\tilde{n}_k - \tau^{self}_k}{\tau^{part}_k - \tau^{self}_k}$$
-
-| Position | Zone |
-|---|---|
-| $\le 0$ | **Self-serve.** The buyer pays this cost down alone. |
-| above zero and at most one | **Needs investment.** Bearable, with what the seller absorbs. |
-| $> 1$ | **Keeps the buyer out.** |
-
-**Read the two together.**
-
-| Measured | Expected | Reading | Route |
-|---|---|---|---|
-| At most one | At most one | **Can enter** | Continue to Step 2. |
-| At most one | Above one | **Unshown.** The cost is within reach and the buyer does not believe it. | Show the cost with evidence the buyer can check, such as published terms, a security packet or an implementation timeline with references. That is the second job of seller spending under Step 2. |
-| Above one | Any | **Kept out.** | Pull it back into range with the instrument for that cost, invest across deals if its cost floor holds it there, or decline. No work on the other two costs reaches it. |
-
-An unnamed category or a missing channel puts search in the third row whatever the count. **Where one person or team carries more than one cost,** record it in the decision-role map and test the costs together: for each, take what is left once everything movable is moved, divide by the payer's capacity for that work, and add. A sum above one keeps the buyer out. Run it only on thresholds read for that payer. Costs on different payers are never summed.
+**Partly settled is the reading that gets misread.** A buyer there can produce a document on request, which reads as settled to anyone who does not check whether it matches practice. The failure surfaces during implementation as unmapped exception paths, the most common source of scope that grows after signature. When in doubt, read the workflow as less settled.
 
 ---
 
-## Step 2: What has to be paid down at Time1? (Axiom II)
+## Step 3: Plug-in or built-in?
 
-### 2a. Where the sale starts
+A *plug-in* purchase works on arrival. A *built-in* purchase has the buyer, the seller or both build something that is worth less anywhere else. Claim 6 gives three tests, and all three must hold for a purchase to be plug-in.
 
-**The cost with the largest expected position before the buyer has entered discovery, and the largest measured position after.** Two costs at the same position are run together, and the instrument returns both. Date every reading and say what had been verified when it was taken. Until fit is verified on the buyer's own workflow, the policing and bargaining counts are lower bounds. Keep every old reading, because a reading written after the outcome cannot test the sequencing falsifier.
-
-**The tightest cost orders the work by default.** Where a cost reads past its threshold, no absorption reaches it: lower its demand, show it lower, or stop spending on the deal. Inside the limits, work another cost first only on one of three readings, each dated before the investment ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 1.5):
-
-- **Unit cost.** Quoted hours for each side show the seller moves that cost's demand far more cheaply.
-- **A sharp limit.** A written cap, such as an approval threshold, sits just under what that cost's payer is left carrying.
-- **Spillover.** The tightest cost's paydown would carry over to a named rival's deal, as category education does.
-
-Representatives time deals and concede price to suit their pay (Larkin 2014), so a reason recorded after the investment does not count.
-
-**The gaps are not read here.** They change no output of this instrument. They are filled during discovery and drive the plan: [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2 defines each, the decision-role map reads the bargaining gap, and the [Enforcement Ledger](./enforcement-ledger.md) reads the policing gap.
-
-### 2b. The mandate
-
-**Is there a named executive sponsor, and is capital allocated to this initiative?** Read it apart from the decision roles and re-read it at every occupant change. A mandate that dissolves overrides every role, and its loss usually arrives looking like one person's departure. No mandate routes the deal to the previous-attempts check in the [Enforcement Ledger](./enforcement-ledger.md)'s Map stage before any other investment.
-
-### 2c. What the seller's spending must do, and who pays
-
-Seller spending on the cost where the sale starts earns its cost by one of two jobs. Where that cost is Unshown, the job is to let a deal that creates value go ahead: show the cost with evidence the buyer can check. Otherwise the job is to raise what the deal creates, by doing the work more cheaply than the buyer could or by lowering what the relationship will cost at Time2, as discovery does. A discount or quarter-end pressure does neither. Which investment does which job is the plan's to record ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 45).
-
-**The seller's share.** Can what this relationship pays, the first contract, renewal and expansion, or the deals it unlocks, recover the seller's planned investment? Name which one repays it. Spending that nothing repays is a price cut.
-
-**The buyer's share.** What is the buyer being asked to invest against each cost, in people and time, and does it have them? A plan that assigns work to staff the buyer does not have fails Axiom II on the buyer's side, whatever the price.
-
-Where either share is not covered, move work to the party that does it more cheaply or whose doing it lowers a future loss, restructure, or decline.
-
----
-
-## Step 3: What has to be settled before anything is sunk? (Axiom III)
-
-### 3a. Specific exposure
-
-**Gate A: must the product fit a workflow the buyer has already encoded?**
-
-| Answer | Condition | Route |
-|---|---|---|
-| **No, greenfield** | No encoded workflow exists for this problem. The product creates the practice. | Do not count divergence. It has no reference point. |
-| **No, the product absorbs it** | The product ships underspecified on purpose, and the buyer encodes its own workflow inside it without vendor engineering. | Do not count divergence. |
-| **Yes** | The buyer runs an encoded workflow the product must fit, extend or replace. | Count divergence if Gate B fails. |
-
-**Gate B: can the buyer measure the gap itself, and reverse the decision?** This is the Constitution's gate, and CFIR's Trialability construct. All three must hold:
-
-- The buyer can run the product against its real work, with its real data, without seller engineering.
+- The buyer can run the product on its real work, with its real data, without the seller's engineers.
 - Discovering a bad fit costs it days rather than quarters.
 - Walking away strands no committed spend and no migrated data.
 
-If all three hold, nothing specific is sunk and the exposure reading is none. Otherwise count what the deal sinks that only works here:
+**All three hold: plug-in.** Standard terms and a trial. Discovery workshops and joint plans laid over a plug-in purchase lose the buyer to a lighter competitor. Go to Step 4 with implementation out of the way.
 
-$$n_{exposure} = (\text{integration points}) + (\text{workflows that change}) + (\text{divergent steps})$$
+**Any one fails: built-in.** List what would be built.
 
-Integration points and changed workflows are the Step 1c counts. Divergent steps are counted only when Gate A answers yes: walk the buyer's procedure and mark each step the product cannot perform as written ([process-misfit.md](../theory/02-research/process-misfit.md)).
-
-| Reading | Condition |
+| What is built | What to list |
 |---|---|
-| **None** | Gate B passes, or $n_{exposure} = 0$ |
-| **Specific** | Gate B fails and $n_{exposure} > 0$ |
+| Integration points | Each system that must exchange data with the product |
+| Workflows that change | Each procedure a named group performs differently after go-live |
+| Divergent steps | Each step in the buyer's procedure that the product cannot perform as written |
 
-**Who sinks first.** Record which party sinks its specific investment first. Where the seller does, as with forward-deployed engineering before signature, the seller is the exposed party and the allocation has to be settled before the seller spends.
+**Is there a written workflow the product must fit?** Divergent steps are counted only where the answer is yes.
 
-**Who codified the workflow predicts the count.** A regulator's codification converges across buyers, and a buyer's own diverges. A demonstration reaches functionality and data misfits, and misfits in roles, controls and culture surface only in use.
-
-### 3b. Frequency
-
-**A classification, not a count.** How often the same two parties transact. With the exposure reading it selects the governance form.
-
-| Reading | Condition | Evidence |
+| Answer | Condition | Divergent steps |
 |---|---|---|
-| **One-shot** | The transaction completes and neither party has a structural reason to meet again. | No renewal date exists, and nobody on either side can name what a second purchase would be. |
-| **Recurrent** | The transaction renews on a cycle and either party can decline at the boundary. | A renewal date, and a named owner of it on each side. |
-| **Continuous** | The product sits inside the buyer's operations and leaving is itself a project. | Ask what migrating away would cost. If nobody can answer, it is continuous. |
+| **No, the practice is new** | No workflow exists for this problem. The product creates the practice. | None to count. Nothing exists to diverge from. |
+| **No, the buyer writes it inside the product** | The product ships open on purpose, and the buyer encodes its own workflow in it without the seller's engineers. | None to count. |
+| **Yes** | The buyer runs a workflow the product must fit, extend or replace. | Walk the buyer's procedure and mark each step the product cannot perform as written ([process-misfit.md](../theory/02-research/process-misfit.md)). |
 
-**Do not read your own pricing model as the answer.** A product billed annually that the buyer treats as a one-time installation with a maintenance fee is one-shot.
+A demonstration reaches misfits in function and data. Misfits in roles, controls and culture surface only in use.
 
-### 3c. What to contract, and what to review
-
-Read the governance form off the exposure and the frequency together ([05-governance-forms.md](../theory/01-foundation/05-governance-forms.md)).
-
-| Exposure | Frequency | Form | What to contract |
-|---|---|---|---|
-| None | Any | **Market** | Standard terms, published pricing, no relationship apparatus. |
-| Specific | One-shot | **Trilateral** | Safeguards from outside the pair: fixed scope, external acceptance criteria, escrow or arbitration, a named third party who adjudicates. |
-| Specific | Recurrent | **Bilateral** | A [Mutual Implementation Plan](./enforcement-ledger.md): staged gates with a priced right to stop at each, who carries which adaptation risk, and what each side loses by walking away. |
-| Specific | Continuous | **Bilateral, watching for unified** | The Mutual Implementation Plan, plus a reading of what the buyer's build alternative now costs, because rising specificity eventually makes integrating beat any contract. |
-
-Where one side sinks far more than the other, contract a hostage, such as fees staged against delivery, or an allocated right, such as an option to renew at a preset price or who owns the integration and the data. For any specific exposure, agree the standing review before anything is sunk, with what each side can invoke from it: a re-scoping, a change process, a right to stop. A review with nothing to invoke is a meeting ([07-open-questions.md](../theory/01-foundation/07-open-questions.md) item 46).
-
-> [!WARNING]
-> **A specific one-shot deal is the case to escalate.** Something will be sunk and there is nothing to amortize the seller's investment over. Do not run a lighter version of the motion, which produces the unallocated failure with the cost already sunk. Find a structure that makes the relationship recurrent, which changes the governance form, or decline.
+**Who builds first.** Record which party builds first. Whoever built more has more to lose (claim 11). Where the seller builds before signature, as with engineers placed in the deal, the seller is the exposed party, and the two sides settle who carries which risk before the seller spends.
 
 ---
 
-## Step 4: Route
+## Step 4: Which cost is in the way?
+
+Read each cost as in the way or not, backed by a count. Take each reading twice: what discovery finds, and what the buyer says before discovery it expects. The buyer decides on what it expects.
+
+### Search
+
+**In the way when** the buyer cannot name the category, the seller holds no path to this buyer, or the buyer cannot yet compare the alternatives it has named.
+
+**Count:** the alternatives the buyer must rule out. Every named vendor, plus building it internally as one, plus doing nothing as one.
+
+> [!WARNING]
+> **A buyer who cannot name the category has no short list.** It cannot enumerate what it is choosing between, and the route is category definition. **A buyer the seller holds no path to is out of reach** however well it knows the category. Neither teaching nor a trial touches that cost. A channel does. [channel-collapse.md](../theory/02-research/channel-collapse.md) carries the research.
+
+### Consensus
+
+**In the way when** the buyer cannot buy alone: more than one role can say no, or the buyer's rules require a formal body at this price.
+
+**Count:** the decision roles that can say no, plus one for each formal body the buyer's rules require at this deal's size, such as a procurement process, a security review or a board. A role counts when its objection stops the purchase. Attendance does not make one.
+
+**Record the spend thresholds.** For each formal body, note the contract value above which the buyer's rules require it. A price taken under a threshold removes that approver, which is the one exception in claim 8. The role's concern returns at renewal, so record it as an open row in the [Bargaining Ledger](./bargaining-ledger.md)'s decision-role map.
+
+### Implementation
+
+**In the way when** the purchase is built-in. At Time1 implementation is a fear, and it acts through the buyer's own decision roles (claim 7).
+
+**Count, to size the work:** integration points, plus workflows that change, plus undocumented exception paths. An undocumented exception path is one branch of the workflow with no written handling and no volume attached. Ask the technical owners about the integrations and the operating owners about the changed workflows, because different people carry each.
+
+### What the buyer expects
+
+| Discovery finds | The buyer expects | Reading |
+|---|---|---|
+| Not in the way | In the way | The buyer fears a cost it would not meet. Show the cost with evidence the buyer can check: published terms, a security packet, an implementation timeline with references. Nothing else reaches a buyer that will not enter discovery. |
+| In the way | Not in the way | The buyer has not priced a cost it will meet. Say so before signature. Work skipped now moves to Time2 and grows (claim 9). |
+| The two agree | | Continue. |
+
+**The cost in the way** is what this step returns. Where two are in the way, the instrument returns both, and nothing here ranks them ([open question 67](../theory/01-foundation/07-open-questions.md)). Date every reading and say what had been verified when it was taken. Until fit is verified on the buyer's own workflow, the consensus and implementation counts are lower bounds. Keep every old reading, because a reading written after the outcome tests nothing.
+
+---
+
+## Step 5: What must the seller's spending do?
+
+**The job.** Spending on the cost in the way earns its cost in one of two ways. It shows the buyer what it will face, or it does work the buyer would otherwise do at a higher cost. A discount and quarter-end pressure do neither, because price is a transfer (claim 8). Where the buyer's fear is the obstacle, offer a commitment the seller would not make if it expected to fail: capped overages, remediation hours written into the contract, a guarantee tied to the buyer's own environment. Trade it for what the buyer knows about that environment.
+
+**Pull forward what this buyer needs, and no more.** Discovery skipped to close comes back at Time2 as scope changes. Engineering put into a deal that did not need it is charged to every buyer through the price (claim 9).
+
+**What repays the seller.** Name what repays the seller's planned work: the first contract, renewal, expansion, or the deals this one unlocks. Spending that nothing repays is a price cut. A built-in purchase with no renewal behind it is the case to escalate, because something is built and nothing follows to repay it. Find a structure that renews, price the work, or decline. Do not read the seller's own pricing model as the answer. A product billed annually that the buyer treats as a one-time installation has no renewal.
+
+**What the buyer must put in.** List the people and time the plan asks of the buyer against each cost, and check that it has them. A plan that assigns work to staff the buyer does not have fails whatever the price.
+
+---
+
+## Step 6: Route
 
 **Overrides first.**
 
 | Condition | Route |
 |---|---|
-| Step 0b returned the Chaos Trap | Stop. Consulting or a paid definition workshop. |
-| Any cost is Kept out in Step 1d | Name it. Pull it back into range, invest across deals if its floor holds it, or decline. |
-| Any cost is Unshown in Step 1d | Show it first, with evidence the buyer can check. Nothing else reaches a buyer that will not enter discovery. |
-| A share in Step 2c that nothing covers | Move work to the party that does it more cheaply, restructure as recurrent, or decline. |
-| The specification is externally fixed by a mandate or a rigid request for proposal | Compete on unit economics, service levels and delivery credibility. Discovery has nothing left to win. |
-| The seller lacks the delivery depth the motion needs | Stop the motion until the capability is real. A Red Team run without it produces false confidence. |
-| The buyer asked for a pilot or proof of concept | Implementation-led, whatever was counted. A buyer requesting a pilot is reporting that it expects a policing cost it cannot verify alone. Pilots run under the [Red Team Protocol](./enforcement-ledger.md). |
+| Step 1: the buyer pays nothing for the problem and has put nothing in | Stop spending on the deal. Ask the buyer to invest first, with a workflow map or a data sample. |
+| Step 1: no mandate | Run the previous-attempts check in the [Enforcement Ledger](./enforcement-ledger.md)'s Map stage before any other investment. |
+| Step 2: the workflow is not settled | Teach, or sell a workshop that defines it. |
+| Step 4: the buyer expects a cost that discovery does not find | Show it first, with evidence the buyer can check. |
+| Step 5: nothing repays the seller's work, or the buyer lacks the people | Move work to the party that does it more cheaply, restructure so the deal renews, or decline. |
+| The specification is fixed from outside, by a mandate or a rigid request for proposal | Compete on unit economics, service levels and delivery credibility. Discovery has nothing left to win. |
+| The buyer asked for a pilot or proof of concept | Read the purchase as built-in, whatever Step 3 returned. A buyer requesting a pilot is reporting that it expects an implementation cost it cannot check alone. Pilots run under the Enforcement Ledger's Test stage. |
 
-**Then the two readings.**
+**Then the motion, by the cost in the way.**
 
-| | Exposure: none | Exposure: specific |
+| Cost in the way | Motion | Run |
 |---|---|---|
-| **Every cost self-serve** | **Turnkey.** Standard terms, published pricing, self-service provisioning. | **Light sale, heavy contract.** The sale is easy and the allocation is not. Settle Step 3c before the specific investment is sunk. |
-| **Some cost needs investment** | **Heavy sale, light contract.** Run the motion where the sale starts, then standard terms hold. | **The motion where the sale starts, with governance.** Where the sale starts at implementation, this is the full chain. |
+| None | None | Standard terms, published pricing and a trial. |
+| Search | **Search-led** | Category definition, teaching, reference architectures and channel work, run from the [Market Reading](./00-market-reading.md)'s search ledger. |
+| Consensus | **Consensus-led** | The [Bargaining Ledger](./bargaining-ledger.md): each decision role's concern collected one to one, an arrangement each role accepts, and a sponsor inside the buyer who holds the decision together. Do not substitute the Enforcement Ledger because it is the more familiar one. |
+| Implementation | **Implementation-led** | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, then the [Adoption Review](./adoption-review.md). The Bargaining Ledger runs beside it. |
+| Two at once | Both, run together | Do not pick one and call it the motion. |
 
-**The motion where the sale starts:**
+**And the contract, by the kind of purchase.**
 
-| Sale starts at | Motion | Run |
-|---|---|---|
-| Search | **Search-led** | Category definition, commercial teaching, reference architectures, channel work, run from the [Market Reading](./00-market-reading.md)'s search ledger. |
-| Consensus | **Consensus-led** | The [Bargaining Ledger](./bargaining-ledger.md): each decision role's exposure mapped one to one, an arrangement each exposed role ratifies, and a safeguard inside the buyer. Do not substitute the Enforcement Ledger because it is the more familiar one. |
-| Implementation | **Implementation-led** | The [Enforcement Ledger](./enforcement-ledger.md)'s Map, Test and Stage, then the [Adoption Review](./adoption-review.md). |
-| A tie | Both, run together | Do not pick one and call it the motion. |
-
-**Possible over-frictioning.** Implementation needs investment and the exposure reads none. Deep integration against a standard the vendor already builds to is expensive work, not uncertain work. Run the instruments that pay down today's cost and skip the governance apparatus.
+| Purchase | What to settle |
+|---|---|
+| Plug-in | Standard terms. No workshop, no joint plan and no relationship apparatus. |
+| Built-in | Before either side builds, settle who carries which risk, in stages, with a point at each stage where either side can stop at a known price. Agree a standing review for what nobody can foresee, with what each side can invoke from it: a re-scoping, a change process, a right to stop. A review with nothing to invoke is a meeting. The Enforcement Ledger's Stage builds the plan (claim 12). |
 
 ---
 
 ## Auditing the counts
 
-At each renewal of every recurring deal, including those below the gate, the [Adoption Review](./adoption-review.md) re-counts what this instrument counted: integration points, workflows that change, undocumented exception paths and divergent steps. Whoever owns the triage across the book records each against the count taken here, measured or expected, beside the deal's outcome.
+At each renewal of every recurring deal, plug-in purchases included, the [Adoption Review](./adoption-review.md) re-counts what this instrument counted: integration points, workflows that change, undocumented exception paths and divergent steps. Whoever owns the triage across the book records each beside the count taken here and the deal's outcome.
 
-Read the variance across the book, never on one deal. A counter whose variance runs one way deal after deal has a counting problem, and the direction says which. Consistently under routes deals away from the apparatus they needed, and below-the-gate renewals are where that shows. Consistently over routes deals toward apparatus they did not need. No band applies, because a variance of 4 means something different on a deal of 5 items than on one of 30. Deals lost and one-shot deals are never re-counted, so the audit sees only deals that closed and renewed. It audits the counter. Whether the counts predict outcomes needs the outcome logged beside them.
+Read the variance across the book, never on one deal. A counter whose variance runs one way deal after deal has a counting problem, and the direction says which. Counting consistently under sends built-in purchases out as plug-in, and their renewals are where that shows. Counting consistently over lays apparatus on deals that did not need it. Lost deals and deals with no renewal are never re-counted, so the audit sees only deals that closed and renewed. It audits the counter. Whether the counts predict outcomes needs the outcome logged beside them.
 
 ---
 
@@ -262,35 +191,31 @@ Read the variance across the book, never on one deal. A counter whose variance r
 
 | Field | Value |
 |---|---|
-| Market reading, and its verdict | |
-| Workflow maturity (1, 2, 3) | |
-| Alternatives to rule out: measured, expected. Category named, channel exists today | |
-| Search position and zone: measured, expected. Thresholds read from staffing, record or default | |
-| Decision roles that can say no, formal bodies and their spend thresholds | |
-| Consensus position and zone: measured, expected. Thresholds read from staffing, record or default | |
-| Integration points, workflows that change, undocumented exception paths: measured, expected | |
-| Implementation position and zone: measured, expected. Thresholds read from staffing, record or default. Costs one payer carries, and their summed position | |
-| Step 1d reading per cost (can enter, Unshown, Kept out) | |
-| **Where the sale starts**, dated, with what had been verified. Any other cost worked first, with its coded reason and the date | |
-| Mandate: sponsor named, capital allocated | |
+| Market reading, its verdict, and the cost it names | |
+| What the buyer pays for the problem today. What it has put into this purchase | |
+| Mandate: sponsor named, money allocated | |
+| Workflow: not settled, partly settled or settled | |
+| The three plug-in tests (yes / no each) | |
+| **Plug-in or built-in** | |
+| Integration points, workflows that change, divergent steps. A written workflow to fit (yes / no) | |
+| Who builds first | |
+| Search: category named, path held, alternatives to rule out. Found, and expected | |
+| Consensus: roles that can say no, formal bodies and their spend thresholds. Found, and expected | |
+| Implementation: integration points, workflows that change, undocumented exception paths. Found, and expected | |
+| **The cost in the way**, dated, with what had been verified | |
 | The job the seller's spending must do | |
-| Seller's share repaid by (first contract, renewal, expansion, unlocked deals, nothing). Buyer's share staffed (yes / no) | |
-| Gate A, Gate B, divergent steps | |
-| **Exposure** (none / specific), with the count, and who sinks first | |
-| Frequency | |
-| Governance form, what is contracted, the review and what each side can invoke | |
+| What repays the seller (first contract, renewal, expansion, unlocked deals, nothing). The buyer has the people (yes / no) | |
+| What is settled before anyone builds, and what each side can invoke from the review | |
 | **Routing** | |
 | Date counted, and by whom | |
 
-Re-count at every artifact boundary and keep the old rows. A deal whose readings never change is a deal where nothing was learned.
+Re-count whenever the deal moves to a new instrument or stage, and keep the old rows. A deal whose readings never change is a deal where nothing was learned.
 
 ---
 
 ## Related
 
-- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md). Axiom I for the positions, Axiom II for where the sale starts and what seller spending buys, Axiom III for the exposure, the gate, the governance forms and the standing review.
-- **Derivation:** [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) section 2.2, and [01-motions.md](../theory/01-foundation/01-motions.md) for the motions.
-- **Market level:** [The Market Reading](./00-market-reading.md), read before this one.
-- **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.4, 3.1 and 6 consume these counts.
-- **Provenance:** [06-calibration.md](../theory/01-foundation/06-calibration.md) section 3.2 records every edge as chosen.
-- **Policing gap:** the [Enforcement Ledger](./enforcement-ledger.md) reads both halves.
+- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), claims 6 to 9 and claim 12, and [01-motions.md](../theory/01-foundation/01-motions.md) for the motions.
+- **The market:** [The Market Reading](./00-market-reading.md), read before this one.
+- **Where the routing sends a deal:** the [Bargaining Ledger](./bargaining-ledger.md), the [Enforcement Ledger](./enforcement-ledger.md) and the [Adoption Review](./adoption-review.md).
+- **Misfit and trial:** [process-misfit.md](../theory/02-research/process-misfit.md), and [cfir.md](../theory/02-research/cfir.md) for the constructs Steps 2 and 3 read.

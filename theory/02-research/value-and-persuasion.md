@@ -128,7 +128,7 @@ No peer-reviewed study links unverified pre-sale claims to business-market churn
 
 **A discount selects buyers.** At a newspaper and an online grocer, Lewis finds that customers acquired on deeper discounts bought again less and were worth less over time. Constitution 6.3 cites only its direction, as evidence that a price cancelling in each deal still changes which deals occur. The [citation audit](./audits/citation-provenance-audit.md) records it as read at the abstract.
 
-**Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor. That is why the Deal Triage Calculator dates any reason to depart from the default order before the investment, and why [open question 61](../01-foundation/07-open-questions.md)'s comparison is confounded.
+**Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor. That is why the Deal Triage Calculator dates every reading before the seller invests, and why [open question 61](../01-foundation/07-open-questions.md)'s comparison is confounded.
 
 ## Related
 

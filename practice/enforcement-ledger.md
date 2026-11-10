@@ -16,7 +16,7 @@ Goal: On one deal, close the policing gap from both sides and settle the allocat
 
 | | |
 |---|---|
-| **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading with specific exposure, a sale that starts at implementation, or a pilot request. The reference workflow from the [Market Reading](./00-market-reading.md), Step 0. |
+| **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading of a built-in purchase, or a pilot request. The workflow from the [Market Reading](./00-market-reading.md), Step 1. |
 | **Outputs** | The ledger, the policing gap by half and the stage it sends the deal to, signed gates, and the allocation coverage at go-live. |
 | **Next step** | The [Sustaining Adoption Review](./adoption-review.md), which runs Maintain and the standing review agreed in Stage. |
 | **Owner** | The account executive and solutions engineer, with the buyer's technical lead. The buyer's skeptic judges Test. |
@@ -24,7 +24,7 @@ Goal: On one deal, close the policing gap from both sides and settle the allocat
 > [!IMPORTANT]
 > **The ledger is the buyer's as much as the seller's,** and a buyer column the seller filled alone is a map of the seller's guesses. The empty cells are the seller's ignorance shown rather than hidden. What the change does to a person's budget, headcount or standing does not go here. It belongs in the private decision-role map of the [Bargaining Ledger](./bargaining-ledger.md), which this ledger's rows seed.
 
-**Do not run it where nothing specific is sunk.** If the triage's Gate B passed, the buyer verifies by trying, and running this ledger is the over-frictioned failure.
+**Do not run it on a plug-in purchase.** A *plug-in* purchase works on arrival, and a *built-in* one has either side build something that is worth less anywhere else. Where the triage's three plug-in tests hold, the buyer verifies by trying, and running this ledger is the over-built failure.
 
 ---
 

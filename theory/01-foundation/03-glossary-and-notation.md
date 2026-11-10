@@ -67,7 +67,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Cheap talk** | A claim any seller could make at no cost. It carries no information and adds to the buyer's work. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Friction Allocation Principles** | The four tests a signal must pass to count as evidence. | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
 | **Channel collapse** | A channel whose filtering ran on the cost of producing a message, and which fails when that cost falls. | [channel-collapse.md](../02-research/channel-collapse.md) |
-| **Chaos Trap** | A buyer with no documented workflow, where the product automates the process. Route to consulting, not to a motion. | [Deal Triage Calculator, Step 0](../../practice/deal-triage-calculator.md) |
+| **Chaos Trap** | Pressing on with proof of fit where the buyer's workflow is not settled and the product automates it. The route is teaching, or a paid workshop that defines the workflow. | [Deal Triage Calculator, Step 2](../../practice/deal-triage-calculator.md) |
 
 ### Time1 terms
 

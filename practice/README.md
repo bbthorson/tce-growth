@@ -18,13 +18,13 @@ The Constitution's axioms answer three questions: whether a market can exist, wh
 
 | Moment | Your question | Instrument |
 |---|---|---|
-| **Before any buyer** | Where does the sale start across this buyer population, and are we built to pay down that cost? | [00. The Market Reading](./00-market-reading.md) |
-| **Deal** | Can this buyer enter, where does the sale start and what must the seller's spending do, and what must be settled before anything specific is sunk? | [Deal Triage Calculator](./deal-triage-calculator.md) |
+| **Before any buyer** | Do these buyers pay for the problem, which cost is in their way, and are we built and paid to carry it? | [00. The Market Reading](./00-market-reading.md) |
+| **Deal** | Does this buyer pay for the problem, is the purchase plug-in or built-in, which cost is in the way, and what must the seller's spending do? | [Deal Triage Calculator](./deal-triage-calculator.md) |
 | **Deal, a coalition** | Whose measure does this change, what does each role need answered, and who inside the buyer holds the decision together? | [Bargaining Ledger](./bargaining-ledger.md) |
-| **Deal, specific exposure** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
+| **Deal, a built-in purchase** | What does each side not know about the other, how does this fail, and who commits what before anything is sunk? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage |
 | **Deal, after signature** | Did value land, and have we re-earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) |
 
-Every instrument here is built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator decides where the sale starts. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
+The Market Reading and the Deal Triage Calculator match Constitution 7.0. A *plug-in* purchase works on arrival, and a *built-in* purchase has either side build something that is worth less anywhere else. The three ledgers and the Adoption Review were built from [08-from-axioms-to-instruments.md](../theory/01-foundation/08-from-axioms-to-instruments.md) for Constitution 6.1, and pass 7 of the trim brings them into line. The Enforcement Ledger replaces the Blueprint, Red Team and Mutual Implementation Plan, which are now its three stages, and the Adoption Review runs the Maintain stage of both deal ledgers after signature, with the standing review agreed in Stage. The Deal Triage Calculator names the cost in the way. Search runs on the Market Reading's search ledger, bargaining on the Bargaining Ledger, and implementation on the Enforcement Ledger.
 
 ---
 
@@ -35,7 +35,7 @@ Two instruments convert deal observations into comparable numbers, each a quanti
 | Instrument | Measures | Run it when |
 |---|---|---|
 | [Enforcement Ledger](./enforcement-ledger.md) | The policing gap, the mean of the seller's and the buyer's unevidenced fractions, which feeds the chance of future loss. Its allocation coverage reads whether specific investment was allocated before it was sunk. | At each stage, from Map onward, and coverage at go-live |
-| [Bargaining Ledger](./bargaining-ledger.md) | The bargaining gap, and $F_{consensus}$ with its band | Whenever the triage reads bargaining as needing investment, and on every deal with specific exposure |
+| [Bargaining Ledger](./bargaining-ledger.md) | The bargaining gap, and $F_{consensus}$ with its band | Whenever the triage reads consensus as in the way, and on every built-in purchase |
 
 ---
 
