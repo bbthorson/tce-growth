@@ -12,7 +12,7 @@ Parent: [theory/](../) · Sibling: [02-research/](../02-research/)
 
 The three times are the framework's primary index: Time0 the market, Time1 contracting and Time2 renewal. Each axiom covers one of them, in [00-tcg-constitution.md](./00-tcg-constitution.md) Part I.
 
-Every file below matches Constitution 7.0. [TRIM-PROPOSAL.md](../../TRIM-PROPOSAL.md) records the trim that brought them into line. Pass 4 folded the seller surplus model and the governance forms into the Constitution and removed both, along with the file that derived the instruments. All three are in git history.
+Every file below matches Constitution 7.0. The proposal for the trim that brought them into line is in git history (`git show 59ab41e:TRIM-PROPOSAL.md`). Pass 4 folded the seller surplus model and the governance forms into the Constitution and removed both, along with the file that derived the instruments. All three are in git history.
 
 ## Reading order
 

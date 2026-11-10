@@ -2,27 +2,27 @@
 title: "The Bargaining Ledger"
 layer: practice
 status: active
-version: 1.0
-operationalizes: [axiom-1, axiom-2, axiom-3]
+version: 2.0
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # The Bargaining Ledger
 
-Version: 1.0
-Goal: On one deal, close the bargaining gap one decision role at a time, and settle an arrangement that holds each exposed role once the investment is sunk. The ledger is two documents: a **private decision-role map**, filled one to one and never shared, and a **shared arrangement record**, which lists terms and names no role. Where the sale starts at bargaining, it adds a safeguard inside the buyer, because no contract between the two firms binds the role whose budget the change cuts.
+Version: 2.0
+Goal: On one deal, collect each decision role's objection apart, answer it in the arrangement, and name who inside the buyer holds the decision together. The ledger is two documents: a **private decision-role map**, filled one to one and never shared, and a **shared arrangement record**, which lists terms and names no role.
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md). Axiom III's bargaining row: map who loses what, one role at a time, and collect objections apart before any room convenes. Axiom I for the count and the spend thresholds that add approvers. The safeguard inside the buyer is claim 7 of Constitution 7.0, and the functional forms are [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.
+**Canonical reference:** [Constitution 7.0](../theory/01-foundation/00-tcg-constitution.md), claim 7. Implementation is a fear at Time1, and it acts through the buyer's own people, so the seller invites the organization's scrutiny before anyone signs. Claim 2 for why a complex organization means more roles that can say no, and claim 8 for the spend threshold that removes an approver.
 
 | | |
 |---|---|
 | **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading. The [Enforcement Ledger](./enforcement-ledger.md)'s rows, where the purchase is built-in. |
-| **Outputs** | The decision-role map, the bargaining gap, the size of the bargaining cost and its band, the arrangement record, and the safeguard inside the buyer where one is needed. |
+| **Outputs** | The decision-role map, the roles still open, the arrangement record, and the sponsor who holds it together. |
 | **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage column or the contract. The map is re-read in the [Sustaining Adoption Review](./adoption-review.md). |
-| **Owner** | The account executive, staked on retention under claim 5 of the Constitution, or a reviewer who is. The map stays with the seller's account team. |
+| **Owner** | The account executive, where part of their pay waits on the implementation under claim 5, or a reviewer for whom it does. The map stays with the seller's account team. |
 
 > [!IMPORTANT]
-> **Two documents, never merged.** An occupant will state a reservation one to one and will not write it where a peer can find it, and a probe of private vulnerability reads as opportunism however it is framed ([buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md)). So the map is private, and the shared record lists terms without saying whom they answer. An occupant's uncertainty about their own outcome closes when they receive the answer, not when they state the concern.
+> **Two documents, never merged.** An occupant will state a reservation one to one and will not write it where a peer can find it, and a probe of what someone privately stands to lose reads as opportunism however it is framed ([buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md)). So the map is private, and the shared record lists terms without saying whom they answer. An occupant's doubt about their own outcome closes when they receive the answer, not when they state the concern.
 
 **When to run it.** Whenever the triage reads consensus as in the way, and on every *built-in* purchase, one where either side builds something that is worth less anywhere else.
 
@@ -35,10 +35,10 @@ A row is a decision role, a position defined by its relation to the workflow and
 **Build the list from three sources.**
 
 1. **The steps.** For each row of the Enforcement Ledger, the roles that run, own, pay for and police it. The touchpoint type predicts who polices it: writeback brings whoever owns the record and whoever polices it, enrollment brings whoever owns the operation, foundational sync brings whoever owns master data, and shared context brings security. Add whoever pays.
-2. **The impositions.** Each divergent step that forces a practice on whoever runs it adds that role, because it objects. A divergence the buyer accepts or works around adds exposure and no veto.
-3. **The buyer's rules.** The formal bodies its rules require at this deal's size and exposure: procurement above a spend threshold, security review above a data class, legal, a board above a commitment. Each counts through its occupant, the analyst or manager who runs it, with its lead time recorded. Record each threshold. Splitting or ramping a deal under one removes the body's veto and leaves the exposure behind it, so the role stays a row with its reservation open.
+2. **The impositions.** Each divergent step that forces a practice on whoever runs it adds that role, because it objects. A divergence the buyer accepts or works around adds no veto.
+3. **The buyer's rules.** The formal bodies its rules require at this deal's size: procurement above a spend threshold, security review above a data class, legal, a board above a commitment. Each counts through its occupant, the analyst or manager who runs it, with its lead time recorded. Record each threshold. Splitting or ramping a deal under one removes the body's veto and leaves its concern behind, so the role stays a row with its reservation open.
 
-**Read it after exposure, and again.** Each role added brings requirements, and a requirement the product does not meet is a new divergent row in the Enforcement Ledger, which may impose on a further role. Repeat until a pass adds no role ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 3.5).
+**Read the list again after the Enforcement Ledger's Test.** Each role added brings requirements, and a requirement the product does not meet is a new divergent row there, which may impose on a further role. Repeat until a pass adds no role.
 
 ---
 
@@ -51,43 +51,34 @@ A row is a decision role, a position defined by its relation to the workflow and
 | Reached by | Directly, or through the champion |
 | Measured on | What the occupant's own review measures: the budget, headcount, metric or control the change touches |
 | Reservation | What the occupant says, one to one, the change does to that, or their confirmation that it costs them nothing |
-| Direction | Gains, no effect, or loses, read from the measure and checked against the reservation: +1, 0 or −1. Where the two disagree, record both. |
+| Direction | Gains, no effect or loses, read from the measure and checked against the reservation. Where the two disagree, record both. |
 | Answer | The term that answers the reservation, the date the occupant received it, and their response in their own words |
-| Bond | Whether what the role gains, staged with adoption, covers what it loses |
-| Mandate | Whether the sponsorship and capital behind the role still stand |
+| Mandate | Whether the sponsorship and money behind the role still stand |
 | Re-statement | The new occupant's reservation, at each occupant change |
 
 **One to one, and never in a room.** Before any group session, collect each role's objections apart, in writing. Ask what the occupant is measured on and what the change does to it, and let them state the reservation.
 
-**The champion.** Name the occupant who gets the seller to each role and tells it what the room will not. A role reached only through the champion is mapped second-hand, and its gap stays open until its own occupant states.
+**The champion.** Name the occupant who gets the seller to each role and tells it what the room will not. A role reached only through the champion is mapped second-hand, and it stays open until its own occupant states.
 
-**Record a reservation and its answer, never a verdict on the person.** An occupant whose direction reads −1 is optimizing a measure the seller has not yet answered. A role whose mandate dissolves is a different event from an occupant change: the first changes the coalition, the second reopens what the new occupant cannot verify.
-
----
-
-## The bargaining gap
-
-$$\hat{\Delta}_{consensus} = 1 - \frac{\text{roles whose occupant has stated their exposure and received the answer}}{\text{roles that can say no}}$$
-
-A role counts as closed when its occupant has stated one to one and has received either a term that answers them or the written decision that their reservation will not be answered. A confirmation that the change costs them nothing counts as a statement only where their measure agrees. The gap feeds each party's chance of future loss ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 2.4). It is a different quantity from the variance below, which is how far apart the roles' interests actually sit.
+**Record a reservation and its answer, never a verdict on the person.** An occupant who loses under the change is protecting a measure the seller has not yet answered. A role whose mandate dissolves is a different event from an occupant change: the first changes who decides, and the second reopens what the new occupant has not been told.
 
 ---
 
-## The size of the cost, and what it calls for
+## Roles still open
 
-$$F_{consensus} = \alpha \cdot N^{\beta} \cdot (1 + \text{Var}) \cdot (1 + \gamma \cdot TO)$$
+A role is **closed** when its occupant has stated one to one and has received either a term that answers them or the written decision that their reservation will not be answered. A confirmation that the change costs them nothing counts only where their measure agrees. Every other role is **open**.
 
-$N$ is the roles that can say no. Var is the variance of the Direction column across them, read from the measure. Where no role reads −1, compute it as though one more unstated role read −1, because the casualty has not been met. $TO$, from 1 to 5, scores how far the technical evaluators diverge on architecture: 1 is shared standards, 3 is disagreement on integration pattern or hosting, 5 is a split philosophy such as cloud against strict on-premises. It is the one ordinal rating left in the field instruments, so read it as a rank. $\alpha$, $\beta$, $\gamma$ and the band edges are chosen and unmeasured.
+Report the open roles by name and as a count of the roles that can say no. Three readings say how much work is left.
 
-| $F_{consensus}$ | Reading | What it calls for |
-|---|---|---|
-| **Under 10** | Low | One champion can carry it. Fill the map for every role with a veto anyway. |
-| **10 to 25** | Medium | The deal drifts rather than dies. Agree written decision criteria and a decision sequence before pricing. |
-| **Above 25** | High | A stall is the risk to plan for, more than a competitive loss. Add the safeguard inside the buyer before any specific investment. |
+| Reading | What it calls for |
+|---|---|
+| Few roles, none loses, none open | One champion can carry it. Fill the map for every role that can say no anyway. |
+| Roles want different things, and none loses | The deal drifts before it dies. Agree written decision criteria and a decision sequence before pricing. |
+| A role that can say no loses under the change | A stall is the risk to plan for, more than a loss to a competitor. Name the sponsor below before either side builds. |
 
-**These bands size the work.** Whether consensus is in the way at all is the triage's reading, which governs where the two disagree.
+**Where no role reads as losing, assume one that has not stated does.** The person the change costs is usually the one nobody has met.
 
-**Lower the variance, not the headcount.** The return on reducing it scales with $N^{\beta}$. Answering a reservation in the arrangement lowers it, and more meetings do not.
+**Answer the disagreement.** A term in the arrangement that answers a reservation lowers it. More meetings and more attendees do not.
 
 ---
 
@@ -101,21 +92,21 @@ $N$ is the roles that can say no. Var is the variance of the Direction column ac
 
 **The record names no role.** Which role a term answers lives only in the private map, so a term such as a headcount commitment does not tell the committee whose reservation it was.
 
-**What a term may be.** It changes the plan, the scope or the sequence, or moves money between the two firms in the contract the buyer's procurement signs. It never pays a role or its budget outside that contract, which would buy an agent's assent around its principal. A reservation the role's measure does not show is recorded and not answered, or every occupant gains by stating one.
+**What a term may be.** It changes the plan, the scope or the sequence, or moves money between the two firms in the contract the buyer's procurement signs. It never pays a role or its budget outside that contract, which would buy one person's assent around their employer. A reservation the role's measure does not show is recorded and not answered, or every occupant gains by stating one.
 
 **Done when** every reservation in the map has an answer or a written decision not to answer it, and every term is signed where it binds.
 
 ---
 
-## The safeguard inside the buyer
+## Who holds it together
 
-A Mutual Implementation Plan binds the buyer that signs it, not the role whose budget the change cuts. So where the sale starts at bargaining, or the size reads High, the deal needs a safeguard inside the buyer (claim 7):
+An agreement between the two firms binds the buyer that signs it. It does not bind the role whose budget the change cuts. So where consensus is the cost in the way, or a role that can say no loses, the deal needs three things inside the buyer (claim 7).
 
-- **A staked sponsor:** an executive whose own measure rides on the initiative.
-- **A bonded arrangement:** every role whose direction reads −1 holds terms under which what it gains, staged with adoption, covers what it loses, so defecting after the investment is sunk costs it something. Consent records agreement, and the staging is the bond. Where no term can answer a role, the safeguard closes only on a written overrule from whoever holds authority over that role, and the role stays an open exposure in the buyer's chance of loss.
-- **Commitments written against roles, not people,** so a successor inherits each term and states again.
+- **A sponsor with something riding on the outcome:** an executive whose own measure moves with the initiative. [Open question 59](../theory/01-foundation/07-open-questions.md) records the limit: such a sponsor is a party to the disputes it settles.
+- **An answer for each role that loses:** a term under which what the role gains as adoption proceeds covers what it loses. Where no term can answer a role, whoever holds authority over it overrules it in writing, and the role stays on the map as open.
+- **Commitments written against roles and not people,** so a successor inherits each term and states again.
 
-**Maintain it.** Re-read the map at every occupant change, reorganization and budget cycle. A departed champion reopens the bargaining gap all at once, and no technical proof reaches it.
+**Maintain it.** Re-read the map at every occupant change, reorganization and budget cycle. A departed champion reopens every role reached through them, and no technical proof reaches that.
 
 ---
 
@@ -126,13 +117,11 @@ A Mutual Implementation Plan binds the buyer that signs it, not the role whose b
 | Roles that can say no, by source: steps, impositions, the buyer's rules, with each body's lead time | |
 | Spend thresholds, and any deal structured under one | |
 | The champion, and roles reached only through them | |
-| Roles closed, of roles | |
-| $\hat{\Delta}_{consensus}$ | |
-| Directions: gains, no effect, loses, and where measure and statement disagree. Var | |
-| $TO$, and $F_{consensus}$ with its band | |
+| Roles closed, and roles open by name | |
+| Directions: gains, no effect, loses, and where measure and statement disagree | |
 | Reservations answered, declined, open | |
 | Terms signed, of terms | |
-| Safeguard: sponsor named, −1 roles bonded or overruled, commitments written against roles | |
+| Sponsor named, roles that lose answered or overruled, commitments written against roles | |
 | Mandate standing (yes / no) | |
 | Date, and by whom | |
 
@@ -140,7 +129,6 @@ A Mutual Implementation Plan binds the buyer that signs it, not the role whose b
 
 ## Related
 
-- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), Axioms I and III, with claim 7 for the safeguard inside the buyer and claim 5 for pay.
-- **Functional forms:** [02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) sections 2.4 and 3.
+- **Theory:** [Constitution](../theory/01-foundation/00-tcg-constitution.md), claim 7, with claim 2 for the organization and claim 5 for pay.
 - **Research:** [buying-center-dynamics.md](../theory/02-research/buying-center-dynamics.md), [tce-empirical-record.md](../theory/02-research/tce-empirical-record.md).
 - **Beside it:** the [Enforcement Ledger](./enforcement-ledger.md), whose rows seed this one, and the [Deal Triage Calculator](./deal-triage-calculator.md).

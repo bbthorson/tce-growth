@@ -28,9 +28,9 @@ This generator is designed for a multi-stage dialogue. **Do not draft the full b
 - Use a football metaphor to frame the friction (e.g., "The Fumbled Handoff between Sales and CS").
 
 ### 2. The Theory (The Chalkboard)
-- Deconstruct the problem using **Axioms of TCG**.
+- Deconstruct the problem using the **claim** it falls under, cited by number from the Constitution.
 - Reference specific theories: **Coase**, **Dahlman**, **Williamson**, **Kahneman & Tversky**.
-- Use the **two conditions** (Constitution, Part II) to show whose condition fails, the buyer's or the seller's, and why the current system is failing.
+- Use the **four questions for reading a stall** (Constitution, Part II) to show where the current system fails and at which time: the market, contracting or renewal.
 
 ### 3. The Perspective (The Offensive Strategy)
 - Reframe the relationship as a **Bilateral Offensive Unit**.

@@ -43,7 +43,7 @@ The theory is twelve claims, each with a test that could fail. None is confirmed
 | **[publishing/](./publishing/)** | `publishing/02-tools/` | The voice guide, the writing protocols, and the published posts kept verbatim. |
 | **[tools/](./tools/)** | `tools/linting/` | The link, frontmatter and style checkers. |
 
-**A trim is in progress.** Constitution 7.0 rewrote the theory around the twelve claims on 2026-11-10. The other files are being brought into line in passes, and until a file's pass it may still describe ideas 7.0 retired. [TRIM-PROPOSAL.md](./TRIM-PROPOSAL.md) lists the verdict on each file and the order of work.
+**The repository was trimmed around the twelve claims on 2026-11-10.** Constitution 7.0 rewrote the theory, and every other file was brought into line with it. What the trim removed is in git history, and so is the proposal that gave a verdict on each file: `git show 59ab41e:TRIM-PROPOSAL.md`.
 
 ---
 

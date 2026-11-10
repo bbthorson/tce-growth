@@ -2,14 +2,14 @@
 title: "Open Questions"
 layer: theory
 status: active
-version: 2.0
+version: 2.1
 operationalizes: [axiom-1, axiom-2, axiom-3]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
 # Open Questions
 
-**Version:** 2.0
+**Version:** 2.1
 **Purpose:** To record where the twelve claims of the [Constitution](./00-tcg-constitution.md) are under-developed. Each entry says what is missing and what would settle it. This register holds what writing or an instrument can settle. A question that only evidence can settle sits in [06-calibration.md](./06-calibration.md) under the number it was given here.
 
 Item numbers are stable, because other files cite them, so a number is never reused. The last section lists the numbers that have left.
@@ -39,10 +39,6 @@ Item numbers are stable, because other files cite them, so a number is never reu
 **48. A rival can raise what this buyer expects a seller to cost.** In a competitive deal a rival seeds the request for proposal with requirements the seller fails, raises doubts about its integration, or forces a bake-off (Salop and Scheffman 1983). The Constitution moves what a buyer expects only through the category and the seller's own evidence. *Settled by:* a statement of whether a competitive deal is read once for each vendor, and of how a seller defends against a rival's claims.
 
 **59. A sponsor with a stake is a party to the dispute.** Claim 7 has a sponsor with something riding on the outcome hold the arrangement together. A sponsor whose own measure rides on the initiative gains from overruling objections (Staw 1976, on escalating commitment). *Settled by:* a statement of what neutral judgment between roles inside the buyer requires, and who besides the sponsor can hold it.
-
-**58. The Bargaining Ledger's bands saturate, and nothing tests them.** A coalition of nine or more reads High at the lowest variance, so the bands do not separate enterprise deals. Pass 7 of the trim drops the bands, and this entry leaves with them.
-
-**57. The Enforcement Ledger routes on fractions that a few rows can flip.** On a deal with few rows, one verdict moves a half of the gap across a routing edge. Pass 7 of the trim drops the routing fractions, and this entry leaves with them.
 
 ---
 
@@ -75,7 +71,7 @@ Item numbers are stable, because other files cite them, so a number is never reu
 ## Numbers that have left
 
 <!-- vale TCG.RetiredTerms = NO -->
-- **Dropped in the 2026-11 trim,** because each rested on an idea Constitution 7.0 retired: 60, on committee variance and the gate, and 61, on working the tightest cost first. Item 54, on entering a market to learn whether it exists, left because the Market Reading now treats a thin ledger's first deals as research.
+- **Dropped in the 2026-11 trim,** because each rested on an idea Constitution 7.0 retired: 60, on committee variance and the gate, and 61, on working the tightest cost first. Item 54, on entering a market to learn whether it exists, left because the Market Reading now treats a thin ledger's first deals as research. Items 57 and 58, on the Enforcement Ledger's fractions and the Bargaining Ledger's bands, left when the ledgers dropped that arithmetic.
 - **Moved to the evidence list** in [06-calibration.md](./06-calibration.md) on 2026-11-04, and later: 3, 7, 19, 22, 28, 32, 33, 35, 36, 38 to 43, 52 and 53. Five more moved there and have since left it with the machinery they tested: 15, 17, 27, 37 and 55.
 - **Numbered in 06-calibration.md directly,** on 2026-11-10: 68 and 69.
 - **Closed before 7.0:** 1, 2, 4, 8 to 11, 13, 14, 16, 18, 20, 21, 23 to 26, 29 to 31, 46 and 50. Most were settled inside machinery that has since retired.

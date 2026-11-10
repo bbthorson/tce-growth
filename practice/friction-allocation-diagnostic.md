@@ -3,7 +3,7 @@ title: "Friction Allocation Diagnostic"
 layer: practice
 status: active
 version: 2.0
-operationalizes: [axiom-2, axiom-3]
+operationalizes: [axiom-1, axiom-2]
 canonical_source: theory/01-foundation/00-tcg-constitution.md
 ---
 
@@ -12,7 +12,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 Version: 2.0
 Goal: Decide whether one piece of evidence counts as verification, meaning a buyer can rely on it to lower what it cannot check. Evidence that fails is a claim, however much it cost to produce.
 
-**Canonical reference:** [Constitution 6.1](../theory/01-foundation/00-tcg-constitution.md), the Friction Allocation Principles under Axiom III. The diagnostic tests one of the two jobs Axiom II gives seller spending: letting a deal that creates value go ahead with evidence the buyer can check. It does not test the other job, raising what the deal creates, so a discovery workshop can fail here and still earn its cost by lowering the cost at Time2. Why each of the four principles is needed is argued in [costly-signals.md](../theory/02-research/costly-signals.md).
+**Canonical reference:** [Constitution 7.0](../theory/01-foundation/00-tcg-constitution.md), claim 3: a signal informs only when it costs a weak seller more than a strong one. The diagnostic tests whether a piece of the seller's spending gives the buyer evidence it can check, which is what claim 8 asks of it. It does not test spending that lowers the cost at Time2, so a discovery workshop can fail here and still earn its cost under claim 9. Why each of the four principles is needed is argued in [costly-signals.md](../theory/02-research/costly-signals.md).
 
 | | |
 |---|---|
@@ -27,9 +27,9 @@ Goal: Decide whether one piece of evidence counts as verification, meaning a buy
 
 A signal too cheap to separate a strong seller from a weak one is *cheap talk*: anyone can send it, so it says nothing about who sent it. Cheap talk still informs as far as the two sides' interests already agree (Crawford and Sobel 1982), so a failure matters where they diverge: whether the product fits here, whether the seller will deliver, and what the change will cost to run.
 
-**Where a failure lands.** In Test, evidence that fails leaves the row without the skeptic's verdict, so the row counts as unevidenced in the buyer's half of the policing gap. In the search ledger, the cell is marked as a claim. For [open question 45](../theory/01-foundation/07-open-questions.md)'s cost-of-sale tagging, a pass would tag the activity as verification and a failure as persuasion, unless it did the other job.
+**Where a failure lands.** In Test, evidence that fails leaves the row without the skeptic's verdict, so the row stays open on the buyer's side. In the search ledger, the cell is marked as a claim. For [open question 45](../theory/01-foundation/07-open-questions.md)'s cost-of-sale tagging, a pass would tag the activity as verification and a failure as persuasion, unless the activity lowered the cost at Time2.
 
-**Signals screen before signature and are re-earned after it.** A deal that closed on evidence that was sound and current, and then failed, is a governance failure, read in the Enforcement Ledger's Stage column and the [Sustaining Adoption Review](./adoption-review.md).
+**Signals screen before signature and are re-earned after it.** A deal that closed on evidence that was sound and current, and then failed, is a failure after signature, read in the Enforcement Ledger's Stage column and the [Sustaining Adoption Review](./adoption-review.md).
 
 ---
 
@@ -81,7 +81,7 @@ Run all four and record every failure. Fix them in this order, because a signal 
 
 | What the adjudicator loses | Result | Example |
 |---|---|---|
-| Nothing | **Fails** | A ratings firm or certifier paid by the vendors it rates. A channel paid on referral. A sponsor staked on success judging between the buyer's own roles ([open question 59](../theory/01-foundation/07-open-questions.md)). A seller's manager forecasting a deal above the gate with no stake in what happens after signature. |
+| Nothing | **Fails** | A ratings firm or certifier paid by the vendors it rates. A channel paid on referral. A sponsor staked on success judging between the buyer's own roles ([open question 59](../theory/01-foundation/07-open-questions.md)). A seller's manager forecasting a built-in deal with no stake in what happens after signature. |
 | Reputation only | **Passes while re-earned.** Standing that is not refreshed with evidence of continued delivery depreciates, so weight the signal by how recently it was earned. | An analyst ranking. A review site. |
 | Something direct | Passes | A peer whose relationship rides on the recommendation. A channel paid on a share of what survives signature (claim 3 of the Constitution). |
 
@@ -104,5 +104,5 @@ Run all four and record every failure. Fix them in this order, because a signal 
 
 ## Related
 
-- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md), Axiom III's corollaries, for the principles, the gate and the three levers.
+- [00-tcg-constitution.md](../theory/01-foundation/00-tcg-constitution.md), claims 3 and 8.
 - [costly-signals.md](../theory/02-research/costly-signals.md), for why each principle is needed, and the trust-proxy extension that is the standing candidate for a fifth.
