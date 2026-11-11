@@ -152,7 +152,8 @@ Read each cost as in the way or not, backed by a count. Take each reading twice:
 
 | Condition | Route |
 |---|---|
-| Step 1: the buyer pays nothing for the problem and has put nothing in | Stop spending on the deal. Ask the buyer to invest first, with a workflow map or a data sample. |
+| Step 1: the buyer pays nothing for the problem | Stop spending on the deal. No cost reading applies. |
+| Step 1: the buyer pays for the problem and has put nothing into this purchase | Ask the buyer to invest first, with a workflow map or a data sample, before the seller spends more. |
 | Step 1: no mandate | Run the previous-attempts check in the [Enforcement Ledger](./enforcement-ledger.md)'s Map stage before any other investment. |
 | Step 2: the workflow is not settled | Teach, or sell a workshop that defines it. |
 | Step 4: the buyer expects a cost that discovery does not find | Show it first, with evidence the buyer can check. |

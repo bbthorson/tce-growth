@@ -117,9 +117,11 @@ Claim 4 says part of every cost is set outside the deal. No motion lowers that p
 
 | Cost | What the market looks like | What lowers the floor |
 |---|---|---|
-| Search | Buyers cannot name the category, or no signal a good seller can afford tells sellers apart | Category definition, a marketplace, a channel with something at stake, a certification |
+| Search | Message volume outruns the buyers' attention, or the category's record is poor and no signal a good seller can afford tells sellers apart | A marketplace, a channel with something at stake, a certification |
 | Consensus | The buyer's rules require approvals no single deal can win | A pre-approved contract, standard terms, a purchasing consortium |
 | Implementation | Nobody can measure the outcome or attribute it to the seller | A standard, a certification, independent measurement, a mandate |
+
+A category buyers cannot name is left out of this table. Teaching carries that cost, and section 1.1 lists it as a motion's instrument.
 
 **Who pays to lower it.** Every deal on a floor shares the return from lowering it. One seller funds the work only when its own share of the deals that follow repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a group of sellers, or a platform. That predicts who opens such markets, which is the dominant seller or an outsider, and rarely a seller in the middle. A seller can also lower a floor for its own deals alone, by holding a certification or a pre-approved contract. That is an investment across its deals, and no single deal repays it either. [information-environment.md](../02-research/information-environment.md) carries the evidence.
 
