@@ -27,7 +27,7 @@ Five records, which most sellers do not keep, would let one seller run the tests
 2. **The triage's readings, dated before the seller invests** and kept after the outcome is known: plug-in or built-in, the cost in the way, whether each role's objection was collected before any group demonstration, and what each objection was about: the role's own budget, headcount or standing, its own work, or the price or the product. Claim 7's first test reads the first of these. Claims 6 and 7.
 3. **Cost of sale split by what it bought.** Discovery and proof on one side, persuasion and discount depth on the other, beside the renewal. For each stalled deal, whether any discount was offered. For each discount, whether it took the price under one of the buyer's approval thresholds. For each commitment, its largest possible cost to the seller. Claims 8 and 9, and open question 45.
 4. **Scope changes after signature,** beside whether discovery was done before it and whether the staged plan was agreed before anyone built. Claims 9 and 12.
-5. **At each renewal:** the triage's counts taken again, whether the signed outcome measure had moved toward the number signed by the last review, use and contraction before any exit, and exits caused from outside, marked by a rule fixed beforehand. Claim 10.
+5. **At each renewal:** the triage's counts taken again, whether the signed outcome measure had moved toward the number signed by the last review, or use of the steps that carry the value where none was signed, use and contraction before any exit, and exits caused from outside, marked by a rule fixed beforehand. Claim 10.
 
 Until those exist, every reading is a comparison between deals inside one book, and none predicts a close date.
 

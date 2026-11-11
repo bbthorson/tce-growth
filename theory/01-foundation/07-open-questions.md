@@ -161,7 +161,7 @@ Smaller limits remain in the first tests of claims 3, 5 and 9 and in the test of
 - The [Enforcement Ledger](../../practice/enforcement-ledger.md) routes on "far more", "many" and "few" open rows.
 - The [Sustaining Adoption Review](../../practice/adoption-review.md) calls a reading red or green and never defines either.
 - The Deal Triage Calculator gives a plug-in purchase with consensus in the way two answers, and reads any pilot request as built-in.
-- Four hand-offs have no receiving step: the counts re-taken at renewal, the outcome measure on a plug-in purchase, the approver a price under a threshold removed, and who owns a deal between signature and go-live.
+- Three hand-offs have no receiving step: the counts re-taken at renewal, the approver a price under a threshold removed, and who owns a deal between signature and go-live. A fourth was settled on 2026-11-11. A plug-in purchase signs no outcome measure, and claim 10's test reads use before the renewal decision.
 
 *Settled by:* a rule for each, chosen by someone who sells.
 

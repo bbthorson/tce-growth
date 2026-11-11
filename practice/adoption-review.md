@@ -24,7 +24,7 @@ Goal: After signature, read whether the product worked here before the renewal d
 **When to run it, and how deep.**
 
 - **A purchase that happens once.** No renewal follows. Do not run it.
-- **A plug-in purchase,** where nothing was built and a trial showed the fit. The renewal is the review: read use and the outcome measure, and re-take the triage's counts for its audit.
+- **A plug-in purchase,** where nothing was built and a trial showed the fit. The renewal is the review: read use of the steps that carry the value before the renewal decision, and re-take the triage's counts for its audit. A plug-in purchase signs no outcome measure, so claim 10's test reads that use.
 - **A built-in purchase that renews.** Run it in full where the renewal's margin covers the hours of a dedicated cycle. Where the hours cover only some accounts, give the dedicated cycle to those where a review can still change the renewal most, which are not always the ones the forecast marks at risk. Run the rest **pooled**: use and the outcome measure from telemetry, release notices sent automatically to every account whose mapped touchpoints a release touches, and the out-of-cycle triggers in section 2.4 routed to a pooled account manager who runs one review when a trigger fires.
 
 ---
@@ -134,7 +134,7 @@ Each finding invokes a right agreed in Stage. A finding with no right to invoke 
 | Findings: cause, signed or disputed, and the right invoked | |
 | Next review date, and why the cycle moved | |
 | Renewal: forecast call, evidence pack, the buyer's alternatives, posture | |
-| Outcome measure moved toward the number signed by the last review before renewal (yes / no) | |
+| Outcome measure moved toward the number signed by the last review before renewal, or use before the renewal decision where none was signed (yes / no) | |
 | Renewal result: renewed, expanded, contracted or exited, and the revenue kept | |
 | Counts re-taken at renewal, sent to the triage's audit | |
 | Date, and by whom | |
