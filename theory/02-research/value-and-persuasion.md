@@ -44,7 +44,7 @@ The last four sources reached the repository through a research review on 2026-1
 - A seller can change a rational buyer's decision while the buyer's payoff stays fixed. Only beliefs move.
 - Honest but deliberately incomplete information can raise conversions. The extra buyers are poor matches who learn so after signing.
 - Anchoring, framing and decoy effects shrink with expertise, information, comparators and group review, and they do not vanish.
-- Evidence that narrows the buyer's range lowers the search cost. A claim that moves the estimate without narrowing the range is persuasion.
+- Evidence that narrows the buyer's range lowers the buyer's cost: search where it is about the seller, and implementation where it is about fit in the buyer's own environment. A claim that moves the estimate without narrowing the range is persuasion.
 - An inflated expectation is punished only when delivery makes the gap visible to the buyer.
 - Customers acquired on a deeper discount have been found to retain worse, for a cause nobody here has checked. Representatives concede price to suit their pay.
 - Preferences for unfamiliar, complex purchases may be constructed during evaluation. This is the strongest objection.
@@ -70,7 +70,7 @@ The largest business anchoring effect is the first offer, and it decides where i
 
 A buyer rarely holds one number for what a change is worth. It holds a range. Gilboa and Schmeidler model a buyer who values an ambiguous prospect at its worst plausible case. For that buyer, evidence that shrinks the range raises the valuation even when the midpoint stays put. A seller can therefore raise what a buyer will pay by information alone, and TCG counts that as search cost carried, which is why documented value selling works in its terms. Fox and Tversky find that aversion to ambiguity appears when a clearer comparison is available, and a competitive evaluation usually supplies one.
 
-Beauchêne, Li and Li add a warning: a seller can profit from creating ambiguity as well as from reducing it. So the working test is narrowing. A seller's act lowers search cost when it shrinks the buyer's range for this buyer by evidence the buyer can check, such as a pilot on its own data, a reference in the same situation or a guarantee tied to the outcome. It is persuasion when it moves the estimate or the decision and leaves the range as wide as it was. Hinterhuber's study of industrial sellers fits: quantifying value helps a firm's performance more where value is stable.
+Beauchêne, Li and Li add a warning: a seller can profit from creating ambiguity as well as from reducing it. So the working test is narrowing. A seller's act lowers the buyer's cost when it shrinks the buyer's range for this buyer by evidence the buyer can check, such as a pilot on its own data, a reference in the same situation or a guarantee tied to the outcome. It is persuasion when it moves the estimate or the decision and leaves the range as wide as it was. Hinterhuber's study of industrial sellers fits: quantifying value helps a firm's performance more where value is stable.
 
 ## 4. After the sale
 

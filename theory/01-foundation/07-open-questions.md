@@ -14,7 +14,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 
 **How the numbers work.** Other files cite the old entries by number, so every number stays where it was. A number in brackets marks where that entry's content now sits. An entry that only evidence can settle keeps its own paragraph in [06-calibration.md](./06-calibration.md), under the same letter. Numbers are never reused, and the last section lists the ones that have left.
 
-Three questions can be settled by writing alone, and the theory leans on them most: A, C and D.
+The writing the theory leaned on most was done on 2026-11-11: the tests of claims 1 and 2 were restated, Part II's first question gained two statements, the premise said where each cost ends, and claim 4 gained one definition of a floor. Smaller pieces of writing remain under A, E, G and I. The rest needs evidence, or a reader from the field.
 
 ---
 
@@ -25,13 +25,13 @@ Three questions can be settled by writing alone, and the theory leans on them mo
 *Claims 1 and 2.*
 
 - **The reading has never been run (6).** Claims 1 and 2 say a leader can read the cost in the way before any deal. Without a worked case, the motion is still chosen by imitation.
-- **Claim 2 does not say where buyers stop under each reading.** Its table says what selling has to do for each reading. Its test asks only that the stopping place differ between markets that read differently, so any difference passes. Claim 1's test depends on the same reading.
+- **Claim 2 now says where more buyers stop under each reading,** and its test is three orderings across markets. Claim 1's test reads where buyers stop and no longer borrows the reading. Nobody has run either.
 - **One stopping place is invisible to a seller.** A buyer that never looked is in no seller's records.
 - **Reachability has research and no measurement (5).** A buyer the seller cannot reach is the second blocker inside search. [channel-collapse.md](../02-research/channel-collapse.md) backs it, and the triage reads it as a yes or no.
 - **The reading counts missing work and not what the seller has to build (56).** Step 5 of the [Market Reading](../../practice/00-market-reading.md) names who does each piece of work today. It cannot tell work built once from work repeated in every deal, and it weighs a template the same as a field team. The verdict to restructure or decline needs that difference.
 - **Settled and entangled may be one reading (70).** Claim 2 reads them apart. The misfit literature suggests they move together, because writing a workflow down records choices a package then has to match ([process-misfit.md](../02-research/process-misfit.md)).
 
-*Writing settles:* the stopping place each reading predicts, whether settled and entangled are one variable, and a reading that separates work built once from work repeated.
+*Writing settles:* whether settled and entangled are one variable, and a reading that separates work built once from work repeated.
 
 *Evidence settles:* two real markets, chosen and read by someone other than the reading's author, with the cost in the way predicted before the first deals and compared with what the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) reads on them. Then a book of deal readings checked against the market reading they sit under.
 
@@ -40,10 +40,8 @@ Three questions can be settled by writing alone, and the theory leans on them mo
 *The second standing assumption, and the first question in Part II.*
 
 - **The value reading is new and untested (66).** The Market Reading, in Step 2, and the Deal Triage Calculator, in Step 1, ask whether the buyer pays for the problem today before any cost is read. Before them, weak demand passed as a cost, and a buyer that did not want the change was filed under search. Raised on 2026-11-09.
-- **Two statements are owed.** One separates a buyer with no people free from a purchase with no priority. The other covers a new category, where no buyer pays for the problem yet and an unnamed category looks the same as no value. Part II says no cost reading applies without payment, and claim 2's first row is exactly that market. The proposed sign is whether buyers begin paying anyone for the problem, rivals and internal builds included, once the category has been taught.
+- **Two statements were owed, and Part II now makes them.** Spend on the problem counts under any name, so an unnamed category passes where buyers pay for a workaround. Where buyers spend nothing, no cost reading applies and teaching does not supply the demand. A buyer with no people free puts in more when the seller takes the work off it, and a purchase with no priority does not. Both are untested.
 - **In 06-calibration.md:** health tech may bias the reading (42), and value may be built during the sale (32).
-
-*Writing settles:* both statements.
 
 *Evidence settles:* the reading run on deals. On a stalled deal the test is whether the buyer puts in more once the cost it named falls.
 
@@ -52,13 +50,10 @@ Three questions can be settled by writing alone, and the theory leans on them mo
 *Claim 4.*
 
 - **A floor and a belief show the same sign (34).** Buyers who only believe a cost is that high look the same as buyers at a floor: they name the problem and buy from no one. The Market Reading asks both questions in Step 4, and nothing tells the answers apart.
-- **Claim 4 uses the word two ways.** The floor is first part of the buyer's cost, set outside any deal, and then something a seller meets or pays. Its two tests each use one sense.
-- **"No seller lowers alone" has an exception in the theory's own text.** [01-motions.md](./01-motions.md) section 5 has a dominant seller open a market.
-- **A floor still acts as a wall.** The premise says a gain can offset a cost. The motions file has buyers at a floor stop whichever seller they meet.
-- **Outside capital can hold costs below what a floor supports (44).** Venture funding lets sellers carry a market's costs at a loss no deal repays, so a market can look open, or look Turnkey, when it is neither.
+- **One definition now stands.** Claim 4 was restated on 2026-11-11. A floor is the part of a cost set outside any deal, and no single deal lowers it. It falls for every seller where a market shares the investment, and for one seller's deals where that seller holds it. That covers the dominant seller in [01-motions.md](./01-motions.md) section 5.
+- **A floor is a wall only where a rule forbids.** The premise now says so. Elsewhere most buyers stop and the ones with the most to gain get through.
+- **Outside capital can hold costs below what a floor supports (44).** Venture funding lets sellers carry a market's costs at a loss no deal repays, so a market can look open, or look Turnkey, when it is neither. The premise now says so, and the Market Reading reads such a cost as in the way. Whether the cost returns when funding stops is untested.
 - **In 06-calibration.md:** who opens a market a floor holds shut (36), and statute against internal policy (38).
-
-*Writing settles:* one definition of a floor, whether it is the case where a cost does act as a wall, and what the Market Reading shows when a seller is funded from outside the market.
 
 *Evidence settles:* a market-level reading of each floor, taken apart from any deal. A natural experiment exists in the home case. The 21st Century Cures Act required certified health record systems to offer a standard interface, and a public federal list records when each product was certified. If claim 4 holds, hospitals' adoption of third-party applications should jump once their system's interface went live, by more than any single seller's spending moved it before. Nobody has checked that adoption data with the needed dates is public.
 
@@ -66,13 +61,9 @@ Three questions can be settled by writing alone, and the theory leans on them mo
 
 *The premise.*
 
-- **Where implementation ends (49).** The premise says implementation is wider than Dahlman's policing and enforcement. It includes the buyer's doubt about fit before the contract, which is information, and the labor of integration, which Williamson counts as a cost of production.
-- **Where search ends.** The Constitution and the glossary put "does one fit?" under search. The motions file puts a trial, the buyer checking fit, under implementation. Nelson (1970) draws the line at purchase: a buyer that inspects before it buys is searching, and one that buys and uses is not. On that line a free trial is search and a paid pilot is not ([buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md)).
-- **Where consensus ends.** Claim 7 describes the fear of implementation in the words the motions file uses for consensus: each role asking what the change does to its own budget, headcount and standing.
-- **Two costs in the way are not ranked, because the costs share no scale (67).** A shared scale could be time: the time each cost takes the buyer, against how long its reason to act lasts. On that reading the costs mostly run in sequence, so their times add, the longest step has no special standing, and easing a cost gains at most that cost's share. A cost acts as a wall only for work done in parallel and for what never finishes, such as a veto or a statutory minimum. Time cannot read a veto, a wait the buyer chose, or a buyer with no dated reason to act.
+- **Where each cost ends is now stated (49).** The premise answered three boundaries on 2026-11-11. Implementation has three parts, the doubt, the work and the checking, and the work is a cost of production that sits here because the buyer weighs it in the same decision. Fit in the buyer's own environment is implementation, even when a trial answers it before signature. Nelson (1970) draws that line at purchase, and [buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md) records the difference. Consensus is who must agree, and implementation is what must work. Before signature either fear reaches the deal as a role that will not agree, so implementation acts as consensus at Time1.
+- **The order is stated, and two costs in the way are still not ranked (67).** The premise says the work mostly runs in the order of the home times, with agreement and the checking of fit side by side at Time1. It gives no rule for two costs in the way, because the costs share no scale. A shared scale could be time: the time each cost takes the buyer, against how long its reason to act lasts. On that reading easing a cost gains at most that cost's share, and a cost acts as a wall only for what never finishes, such as a veto or a statutory minimum. Time cannot read a veto, a wait the buyer chose, or a buyer with no dated reason to act.
 - **In 06-calibration.md:** whether work on a cost not in the way pays (69), and whether a built-in purchase adds roles that can say no (3).
-
-*Writing settles:* which part of implementation is a transaction cost and why the parts share a name, where fit belongs, and which costs run in sequence and which in parallel.
 
 *Evidence settles:* a seller's own pipeline records, days in each stage coded by cost and split into days worked and days waiting. If most of the time is waiting, a seller lowers consensus by removing steps more than by doing work. Two sources to check at the primary before citing: Djankov, La Porta, Lopez-de-Silanes and Shleifer (2002) measured the cost of starting a business in procedures, days and fees, and Liebman and Mahoney (2017) found lower-quality federal purchases under expiring budgets.
 
@@ -112,7 +103,7 @@ Nothing here is settled by writing. Both entries are in 06-calibration.md: wheth
 
 ### H. How much work should move before signature, and who should do it?
 
-*Claim 9, and the premise that a seller can carry part of each cost.*
+*Claims 6 and 9, and the premise that a seller can carry part of each cost.*
 
 - **Discovery spending should predict retention, and nothing records it (45).** Claims 8 and 9 say seller spending earns its cost when it shows the buyer what it will face, and that work skipped at Time1 returns at Time2. Testing that needs cost of sale split by what it bought, and no instrument records the split.
 - **Who does the discovery may decide whether the buyer believes it.** A buyer discounts a diagnosis from the party that sells the treatment (Darby and Karni 1973, in [buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md)). No claim says who has to do the work before signature for it to count.
@@ -129,7 +120,7 @@ Nothing here is settled by writing. Both entries are in 06-calibration.md: wheth
 *Claims 10 and 11.*
 
 - **Whether a buyer that built more stays longer on a failing fit (62).** Claim 10 says failure shows first as stalled use and contraction and only later as an exit. Switching-cost studies support the first half (Burnham, Frels and Mahajan 2003, Whitten and Wakefield 2006, in [tce-empirical-record.md](../02-research/tce-empirical-record.md)). The order is a hypothesis. Buyers also build more when they expect a better fit, which lowers churn with no lock-in at all.
-- **Whether a buyer can tell that it worked.** Claim 10 assumes it can. Where buyer and seller produce the result together, the buyer cannot read the seller's share off it, and a client keeps returning until it detects a fault (Darby and Karni 1973, in [buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md)). On that reading an account with no result and no detected failure renews.
+- **Whether a buyer can tell that it worked.** Claim 10 assumes it can. Where buyer and seller produce the result together, the buyer cannot read the seller's share off it, and a client keeps returning until it detects a fault (Darby and Karni 1973, in [buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md)). On that reading an account with no result and no detected failure renews. Claim 10's test now reads exactly that.
 - **Ties between people hold relationships too (64).** Claim 11 reads what the two sides built. Attachments between individuals weakened the link from a change in fit to switching auditors (Seabright, Levinthal and Fichman 1992), and managers' moves raise the chance that ties between their firms dissolve (Broschak 2004, from a secondary account).
 - **Whether account management teaches or only holds (65).** Claim 11 says the seller's knowledge of the buyer's environment holds only while the seller keeps it current. Proactive onboarding cut first-week churn and its effects decayed within a week, though accumulated usage stayed higher for months (Retana, Forman and Wu 2016).
 - **A failure after signature can always be explained afterward (51).** The evidence went stale, the fit moved, or the other side squeezed. Read afterward, any failure fits one of them. The [Sustaining Adoption Review](../../practice/adoption-review.md) codes each finding by cause on the day it is found, though the account manager who keeps the record is paid on the renewal.
@@ -159,15 +150,11 @@ Filed on 2026-11-11, after an independent review of the repository.
 
 **72. Nobody from the field has checked what is the author's own.** Every search for prior art was run with research tools, mostly at the abstract. [buyer-cost-neighbors.md](../02-research/buyer-cost-neighbors.md) lists neighbors nobody has read. The two most serious were read in full on 2026-11-11: Nelson (1970), on search and experience goods, and Darby and Karni (1973), on credence qualities. They hold the form of claim 1 for one cost, the cost of checking quality. They come near the second and fourth things the author counts as his own, and leave the third. That file carries the comparison. The rest of its table is unread. *Settled by:* reading the rest, and a reader from the marketing transaction-cost line.
 
-**73. Five tests do not yet test their claims.** A claim's test should be able to come out against it, on data someone could collect.
+**73. Five tests did not test their claims, and all five are rewritten.** A claim's test should be able to come out against it, on data someone could collect. An independent review found that the tests of claims 1, 2, 7, 8 and 10 could not. The author chose a replacement for each on 2026-11-11, and the Constitution's 7.0 history row records what changed. Claim 8 gave up one commitment: it no longer tests whether deals closed on a discount renew less. A second review the same day found faults in the new wording, and the history row records those fixes too.
 
-- *Claim 1.* The test rests on claim 2's reading and on "built for" a cost, which nothing defines. A failure can be charged to the reading.
-- *Claim 2.* Question A.
-- *Claim 7.* The test would pass whatever the objections were about, so it does not show that fear of implementation is the mechanism. "Each counts as a loss only if it would have renewed" excuses a lower close rate with something nobody can observe.
-- *Claim 8.* "Price is a transfer" is an identity and cannot fail. The first test needs the seller's private cost of a guarantee. The second measures which deals get discounted.
-- *Claim 10.* The test compares accounts whose implementation met the plan, and the claim itself says some misfits surface only in use.
+Two limits in the rewritten tests are known and left. Claim 2's third ordering can be absent with the claim true. Buyers who expect to fail may never sign, and sellers that already carry the change remove the failures. Claim 1's test reads a market where most stopped buyers stop in one place, and claim 2 reads where more stop than in other markets. So a market can read one way under claim 2 and give claim 1's test no majority to read.
 
-Smaller limits: the first tests of claims 3, 5 and 9, and the tests of claims 6 and 12. The review judged six sound: the second tests of claims 3, 4, 5 and 9, and the tests of claims 11 and 12. *Settled by:* rewriting each test, which changes what its claim commits to.
+Smaller limits remain in the first tests of claims 3, 5 and 9 and in the test of claim 6. The review judged five sound: the second tests of claims 3, 4, 5 and 9, and the test of claim 11. This entry once listed claim 12's test on both lists and claim 4's first test on neither, so neither is counted here. Nobody has run any of the twelve. *Settled by:* running them, on the records [06-calibration.md](./06-calibration.md) section 1 lists.
 
 **74. Several instrument rules are left to judgment.** The 2026-11 trim removed the instruments' scores and left some steps without a rule.
 

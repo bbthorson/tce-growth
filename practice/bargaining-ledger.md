@@ -120,6 +120,8 @@ An agreement between the two firms binds the buyer that signs it. It does not bi
 | Roles closed, and roles open by name | |
 | Directions: gains, no effect, loses, and where measure and statement disagree | |
 | Reservations answered, declined, open | |
+| Each reservation's subject: the role's own budget, headcount or standing, its own work, or the price or the product | |
+| Reservations collected before any group demonstration (yes / no) | |
 | Terms signed, of terms | |
 | Sponsor named, roles that lose answered or overruled, commitments written against roles | |
 | Mandate standing (yes / no) | |

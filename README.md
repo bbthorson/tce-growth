@@ -26,7 +26,7 @@ The theory is twelve claims, each with a test that could fail. None is confirmed
 | **II. Law of Transaction Investment** | Time1, contracting | Can my organization agree, and what will this take? | Is this deal worth what it takes? | 6 to 9 |
 | **III. Law of Future Cost** | Time2, renewal | Did it work here, and am I free to leave? | Does the relationship pay? | 10 to 12 |
 
-**Time0.** Which cost is in the way is a fact about the market. Two things a leader can see predict it before any deal: how settled and how entangled the buyers' workflow is, and how complex their organizations are. A claim that costs nothing to make raises every buyer's search cost. Rules set a floor that no seller lowers alone. A seller reaches only the buyers whose cost it is built to carry, and it pays its people for work on that cost.
+**Time0.** Which cost is in the way is a fact about the market. Two things a leader can see predict it before any deal: how settled and how entangled the buyers' workflow is, and how complex their organizations are. A claim that costs nothing to make raises every buyer's search cost. Rules set a floor that no single deal lowers. A seller reaches only the buyers whose cost it is built to carry, and it pays its people for work on that cost.
 
 **Time1.** A purchase is *plug-in* or *built-in*. A plug-in purchase works on arrival and the buyer can walk away. A built-in purchase has someone build something that works only here. Implementation is a fear at this point, and it acts through the buyer's own people, so the seller invites the organization's scrutiny. A discount moves money and lowers no cost. Work skipped here moves to Time2 and grows.
 
@@ -82,4 +82,4 @@ Theory changes flow downstream to practice and publishing, never the reverse. [C
 ---
 
 **Version:** 7.0 (tracks the [Constitution](./theory/01-foundation/00-tcg-constitution.md) version; bump both together)
-**Last updated:** 2026-11-10
+**Last updated:** 2026-11-11

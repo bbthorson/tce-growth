@@ -102,8 +102,8 @@ Each finding invokes a right agreed in Stage. A finding with no right to invoke 
 **The evidence pack.**
 
 - [ ] **The review record across the term,** read as a trend.
-- [ ] **The outcome measure** against the number signed in Stage, with the variance stated plainly.
-- [ ] **Whether the implementation met the plan agreed before signature,** which is what claim 10's test reads.
+- [ ] **The outcome measure** against the number signed in Stage, with the variance stated plainly. Claim 10's test reads whether it had moved toward that number by the last review before renewal.
+- [ ] **Whether the implementation met the plan agreed before signature.**
 - [ ] **The commitments** each side made and delivered.
 - [ ] **The risks that materialized,** and which of them the seller named in Test.
 - [ ] **The rows a challenger would have to map** that this seller has already evidenced.
@@ -134,7 +134,8 @@ Each finding invokes a right agreed in Stage. A finding with no right to invoke 
 | Findings: cause, signed or disputed, and the right invoked | |
 | Next review date, and why the cycle moved | |
 | Renewal: forecast call, evidence pack, the buyer's alternatives, posture | |
-| Implementation met the plan agreed before signature (yes / no) | |
+| Outcome measure moved toward the number signed by the last review before renewal (yes / no) | |
+| Renewal result: renewed, expanded, contracted or exited, and the revenue kept | |
 | Counts re-taken at renewal, sent to the triage's audit | |
 | Date, and by whom | |
 

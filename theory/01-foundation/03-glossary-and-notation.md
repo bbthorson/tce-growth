@@ -36,9 +36,9 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 | Term | Identifier | Canonical source |
 |---|---|---|
-| **Search** | Finding a seller to trust, telling whether a solution fits, and reaching the seller at all. Home time Time0. Descends from Dahlman's search and information. | [Constitution, premise](./00-tcg-constitution.md) |
-| **Consensus** | The buyer's own decision roles reaching agreement. Home time Time1. One half of Dahlman's bargaining and decision. | [Constitution, premise](./00-tcg-constitution.md) |
-| **Implementation** | Making the product work in the buyer's environment, and checking that the seller delivered. Home time Time2. Wider than Dahlman's policing and enforcement. It is a fear at Time1 and work at Time2. | [Constitution, premise](./00-tcg-constitution.md) |
+| **Search** | Finding which solutions exist and a seller to trust, and reaching the seller at all. Whether a solution will work here is implementation, even when a trial answers it early. Home time Time0. Descends from Dahlman's search and information. | [Constitution, premise](./00-tcg-constitution.md) |
+| **Consensus** | The buyer's own decision roles reaching agreement. Before signature a role's fear, that the product will not work or that the change will cost the role its budget, headcount or standing, reaches the deal here, as a role that will not agree. Home time Time1. One half of Dahlman's bargaining and decision. | [Constitution, premise](./00-tcg-constitution.md) |
+| **Implementation** | Three parts: the buyer's doubt that the product will fit, the work of making it fit, and checking that the seller delivered. Home time Time2. Wider than Dahlman's policing and enforcement, and wider than a transaction cost, because the work is a cost of production. It is a fear at Time1, where it acts as consensus, and work at Time2. | [Constitution, premise](./00-tcg-constitution.md) |
 
 ### Definitions
 
@@ -54,6 +54,7 @@ A *market* is the buyers who call a problem by one name, and a *deal* is one buy
 | **Built-in purchase** | The buyer, the seller or both build something that is worth less anywhere else. | [Constitution, claim 6](./00-tcg-constitution.md) |
 | **Specific investment** | The economists' word for what a built-in purchase builds. The research files use it. | [transaction-cost-economics.md](../02-research/transaction-cost-economics.md) |
 | **Motion** | What a seller does, and is organized to do, to carry part of a buyer's cost. | [01-motions.md](./01-motions.md) |
+| **Built for a cost** | A named person or team does each piece of that motion's work today. Someone who could do it does not count. | [Constitution, Definitions](./00-tcg-constitution.md), [Market Reading](../../practice/00-market-reading.md) Step 5 |
 | **Turnkey** | A market where buyers can carry every cost alone and the purchase is plug-in. It does not stay that way on its own. | [Constitution, claim 3](./00-tcg-constitution.md), [01-motions.md](./01-motions.md) section 4 |
 
 ### Time0 terms
@@ -63,7 +64,7 @@ A *market* is the buyers who call a problem by one name, and a *deal* is one buy
 | **Search-led, consensus-led, implementation-led** | The three motions, each named for the cost it carries. Two costs in the way are run together. | [01-motions.md](./01-motions.md) section 3 |
 | **Relay model** | One role per funnel stage, each with a fixed playbook, and pay on bookings. The right motion for a Turnkey market. | [01-motions.md](./01-motions.md) section 6 |
 | **The cost in the way** | Which of the three costs stops buyers in a market, or stops one deal. Claim 2 reads it for a market, and the triage reads it for a deal. | [Constitution, claims 1 and 2](./00-tcg-constitution.md), [Deal Triage Calculator, Step 4](../../practice/deal-triage-calculator.md) |
-| **Floor** | The part of a cost set outside any deal, which falls only through something shared across deals. | [Constitution, claim 4](./00-tcg-constitution.md), [information-environment.md](../02-research/information-environment.md) |
+| **Floor** | The part of a cost set outside any deal. No single deal lowers it. It falls through something shared across deals: for every seller where a market shares it, and for one seller's deals where that seller holds it. A rule that forbids a purchase outright is the one floor no gain offsets. | [Constitution, claim 4](./00-tcg-constitution.md), [information-environment.md](../02-research/information-environment.md) |
 | **Costly signal** | A commitment that costs a weak seller more than a strong one, so it tells them apart. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap talk** | A claim any seller could make at no cost. It carries no information and adds to the buyer's work. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Friction Allocation Principles** | The four tests a signal must pass to count as evidence. | [Friction Allocation Diagnostic](../../practice/friction-allocation-diagnostic.md) |
@@ -122,7 +123,7 @@ Kept so older analyses stay readable. Do not use these in new writing.
 |---|---|
 | Time 0 for the deal, time 1 for the relationship | Time1 and Time2. Time0 is the market |
 | Position, zone, self-serve threshold, participation threshold, default edges | Nothing. A cost is in the way or it is not, read from the workflow and the organization (claim 2) |
-| The gate | The three plug-in tests in claim 6. The rule that one cost keeps a buyer out whatever else is true has no replacement, because value trades against cost |
+| The gate | The three plug-in tests in claim 6. The rule that one cost keeps a buyer out whatever else is true has no replacement, because value trades against cost. The premise keeps one wall, a rule that forbids a purchase outright |
 | Where the sale starts, the tightest cost | The cost in the way |
 | Specific exposure, read as none or specific | Plug-in or built-in |
 | Toaster and bridge | Plug-in and built-in |

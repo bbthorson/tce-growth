@@ -41,7 +41,7 @@ Read this before any cost, and date it before the seller invests. A buyer that d
 | What does the buyer pay for the problem today? | Staff hours on a workaround, an incumbent tool, a consultant, an internal build |
 | What has the buyer put into this purchase that it will not get back? | A workflow map, a data sample, named staff time |
 
-A buyer's statement that it wants the change is a claim until it costs the buyer something. A stall reads as a cost only where the first list is not empty. On a deal that has already stalled, the test is whether the buyer puts in more once the cost it named falls. A new objection alone shows nothing, because lowering one cost exposes the next.
+A buyer's statement that it wants the change is a claim until it costs the buyer something. A stall reads as a cost only where the first list is not empty. Count what the buyer pays under any name, so a problem with no category name still counts where the buyer pays for a workaround. On a deal that has already stalled, the test is whether the buyer puts in more once the cost it named falls. A buyer with no people free puts in a date or a sponsor's time when the seller takes the work off it. A purchase with no priority gets neither. A new objection alone shows nothing, because lowering one cost exposes the next.
 
 **The mandate.** Is there a named executive sponsor, and is money allocated to this initiative? Read it apart from the decision roles, and re-read it whenever an occupant changes. A mandate that dissolves overrides every role, and its loss usually arrives looking like one person's departure.
 
@@ -204,6 +204,7 @@ Read the variance across the book, never on one deal. A counter whose variance r
 | Implementation: integration points, workflows that change, undocumented exception paths. Found, and expected | |
 | **The cost in the way**, dated, with what had been verified | |
 | The job the seller's spending must do | |
+| Each discount offered, and whether it took the price under an approval threshold. Each commitment offered, and its largest possible cost to the seller | |
 | What repays the seller (first contract, renewal, expansion, unlocked deals, nothing). The buyer has the people (yes / no) | |
 | What is settled before anyone builds, and what each side can invoke from the review | |
 | **Routing** | |
