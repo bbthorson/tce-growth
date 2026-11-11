@@ -57,7 +57,7 @@ The eight sources from Attewell to Miller and Heiman, and Swait, reached this fi
 **Key claims:**
 - Most of TCG is synthesis, and the neighbors below hold the parts.
 - Four things look like the author's own: the question asked by kind of cost, the cost a buyer expects against the cost it would meet, Turnkey's erosion, and a seller's reach set by the cost it is built to carry. Nelson (1970) and Darby and Karni (1973) narrow the first, come near the second and fourth, and leave the third.
-- TCG concedes that costs add and that a gain can offset one. Constitution 7.0 dropped the rule that forbade it.
+- TCG concedes that costs add and that a gain can offset one. Constitution 7.0 dropped the rule that forbade it, and keeps one wall: a rule that forbids a purchase outright.
 - Each neighbor yields a prediction that differs from TCG's. [06-calibration.md](../01-foundation/06-calibration.md) carries the ones waiting on data, as items 52 and 68. Item 69 is a question the neighbors raise and no claim answers.
 
 ## Gartner and CEB buyer enablement
@@ -123,7 +123,7 @@ Nelson (1970) sorts consumer goods by the cheaper way to learn their quality. *S
 
 - A buyer that verifies by trying, which is how claim 6's plug-in purchase is checked, is Nelson's experience where a purchase is cheap and frequent.
 - How often a buyer purchases sets how many options it samples. A rare purchase gets few samples and more outside advice, which is why a buyer making a large purchase once asks for references.
-- A free sample turns experience into search, because the buyer inspects without purchasing. A free trial does the same. That bears on where search ends ([07-open-questions.md](../01-foundation/07-open-questions.md), question D).
+- A free sample turns experience into search, because the buyer inspects without purchasing. A free trial does the same. TCG draws the line elsewhere. It names a cost for the buyer's question and not for when the buyer asks it, so a trial stays under implementation ([07-open-questions.md](../01-foundation/07-open-questions.md), question D).
 
 **Where TCG differs.**
 

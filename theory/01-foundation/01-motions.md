@@ -64,11 +64,11 @@ Claim 2 says two things a leader can see predict the cost before any deal. Read 
 | The workflow is settled and entangled | Implementation | Implementation-led |
 | The organization is complex | Consensus, and often implementation with it | Consensus-led, or both run together |
 
-**Where buyers stop is the cross-check.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. A seller's own records show the second and the third. A buyer that never looked is in no seller's records, so the first takes asking buyers the seller never met.
+**Where buyers stop is the cross-check.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. Claim 2 names the place where more buyers stop under each reading: they never look where the workflow is not settled, they decide nothing where the organization is complex, and they sign and fail to adopt where the workflow is entangled. A seller's own records show the second and the third. A buyer that never looked is in no seller's records, so the first takes asking buyers the seller never met.
 
-**The signals come first, because a stall can appear before its cause.** A buyer prices a later cost when it makes an earlier decision. One that expects its organization to fight the change may never look at all, and the seller records a search problem. Where buyers stop says where the stall appears. The workflow and the organization say why.
+**The signals come first, because a stall can appear before its cause.** A buyer prices a later cost when it makes an earlier decision. One that expects its organization to fight the change may never look at all, and the seller records a search problem. Where buyers stop says where the stall appears. The workflow and the organization say why. That holds for one buyer. Across markets claim 2's test still commits each reading to its place, and a market whose buyers stop somewhere else counts against the reading.
 
-**What this reading does not yet do.** It does not ask first whether the buyer wants the change, and it has no shared scale for ranking two costs that are both in the way. Open questions 66 and 67 in [07-open-questions.md](./07-open-questions.md) carry both. Until the second is settled, a market with two costs in the way runs both motions.
+**What this reading does not yet do.** The question that comes before it, whether the buyer pays for the problem today, is untested. The reading also has no shared scale for ranking two costs that are both in the way. Open questions 66 and 67 in [07-open-questions.md](./07-open-questions.md) carry both. Until the second is settled, a market with two costs in the way runs both motions.
 
 ---
 
@@ -111,9 +111,9 @@ Claim 2 says two things a leader can see predict the cost before any deal. Read 
 
 Claim 4 says part of every cost is set outside the deal. No motion lowers that part deal by deal, because no single deal repays the work. So the first decision a seller makes about cost is where to sell.
 
-**The sign of a floor.** Buyers name the problem and buy from no one. They stop at the same cost whichever seller they meet, and deal effort moves no seller's results. A buyer who chose a competitor is a lost deal. A buyer who chose nobody is this case, or the next one.
+**The sign of a floor.** Most buyers name the problem and buy from no one. They stop at the same cost whichever seller they meet, and deal effort moves no seller's results. The buyers with the most to gain get through, unless a rule forbids the purchase outright. A buyer who chose a competitor is a lost deal. A buyer who chose nobody is this case, or the next one.
 
-**Or buyers only believe the cost is that high.** The same sign appears when the cost is within reach and the category has taught buyers otherwise. The remedy differs. A real floor takes a shared investment. A mistaken belief takes one seller showing its own cost with evidence the buyer can check, which separates it from the rest. Open question 34 asks how to tell the two apart.
+**Or buyers only believe the cost is that high.** The same sign appears when the cost is within reach and the category has taught buyers otherwise. The remedy differs. A real floor takes an investment shared across deals. A mistaken belief takes one seller showing its own cost with evidence the buyer can check, which separates it from the rest. Open question 34 asks how to tell the two apart.
 
 | Cost | What the market looks like | What lowers the floor |
 |---|---|---|
@@ -121,7 +121,7 @@ Claim 4 says part of every cost is set outside the deal. No motion lowers that p
 | Consensus | The buyer's rules require approvals no single deal can win | A pre-approved contract, standard terms, a purchasing consortium |
 | Implementation | Nobody can measure the outcome or attribute it to the seller | A standard, a certification, independent measurement, a mandate |
 
-**Who pays to lower it.** Every deal on a floor shares the return from lowering it. One seller funds the work only when its own share of the deals that follow repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a group of sellers, or a platform. That predicts who opens such markets, which is the dominant seller or an outsider, and rarely a seller in the middle. [information-environment.md](../02-research/information-environment.md) carries the evidence.
+**Who pays to lower it.** Every deal on a floor shares the return from lowering it. One seller funds the work only when its own share of the deals that follow repays the cost. Otherwise the market waits for a party whose return comes from many deals: a regulator, a group of sellers, or a platform. That predicts who opens such markets, which is the dominant seller or an outsider, and rarely a seller in the middle. A seller can also lower a floor for its own deals alone, by holding a certification or a pre-approved contract. That is an investment across its deals, and no single deal repays it either. [information-environment.md](../02-research/information-environment.md) carries the evidence.
 
 ---
 
@@ -134,7 +134,7 @@ Claim 4 says part of every cost is set outside the deal. No motion lowers that p
 | Job | What the buyer needs done | Home time | Where it also acts |
 |---|---|---|---|
 | Search | Name the problem, find the alternatives and compare them | Time0 | Renewal, when the buyer looks at challengers |
-| Consensus | Bring its own decision roles to agreement, and settle terms | Time1 | Time0, where a buyer that expects a fight never looks |
+| Consensus | Bring its own decision roles to agreement | Time1 | Time0, where a buyer that expects a fight never looks |
 | Implementation | Check the product will fit and the seller will deliver, then make it fit | Time2 | Time1, as the fear that stops a signature |
 | Maintenance | Keep what was verified current, and catch the fit drifting | Time2 | |
 
@@ -160,7 +160,7 @@ Claim 4 says part of every cost is set outside the deal. No motion lowers that p
 
 ## 8. What this does not settle
 
-- **Whether the buyer wants the change at all.** Open question 66.
+- **Whether the reading of what the buyer pays today holds up.** The Constitution's Part II states it, and nobody has run it. Open question 66.
 - **How to rank two costs that are both in the way.** Open question 67 proposes time against the buyer's window as the shared scale.
 - **The consensus motion's instruments.** The incumbent qualification practice is older and better staffed than the [Bargaining Ledger](../../practice/bargaining-ledger.md).
 - **Whether a reading belongs to the deal or to a vendor.** An incumbent defending a renewal and a challenger attacking it face the same buyer with different costs, because the incumbent's work is already built in.

@@ -49,7 +49,9 @@ Read this before any cost. A buyer that does not want the change shows up as a c
 | V1 | Buyers that pay for the problem today: staff hours on a workaround, an incumbent tool, a consultant or an internal build | | | |
 | V2 | Buyers with a dated reason to act and a budget owner this year | | | |
 
-**Where V1 is zero.** In a category buyers already name, zero means decline. In a category nobody has named, no buyer pays for the problem yet, and that looks the same as no value. The proposed sign there is whether buyers begin paying anyone for the problem, rivals and internal builds included, once the category has been taught. [Open question 66](../theory/01-foundation/07-open-questions.md) records that this reading is untested.
+**Count spend on the problem under any name.** A category nobody has named still fills V1 where buyers pay for a workaround, a spreadsheet or a consultant.
+
+**Where V1 is zero,** decline. Buyers that spend nothing on the problem under any name do not want the change yet, and teaching does not supply that. A seller that teaches there anyway is making a bet. The sign that it paid is buyers beginning to pay anyone for the problem, rivals and internal builds included. [Open question 66](../theory/01-foundation/07-open-questions.md) records that this reading is untested.
 
 ---
 
@@ -87,7 +89,11 @@ Two costs in the way means both motions run. Nothing here ranks them, and [open 
 
 **Turnkey does not hold on its own.** A market that is cheap to enter fills with sellers whose claims sound alike (claim 3). Re-read S3 whenever the number of vendors moves.
 
-**Cross-check against where buyers stop.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. Read which from the seller's own records. Before any deals, read it from public requests for proposal that never became a purchase and from interviews with buyers who chose no one. Where the rows and the stopping point disagree, the rows name the cause. A buyer that expects its organization to fight the change may never look, and the seller records a search problem.
+**Outside money.** Where sellers in the category carry a cost at a loss, with free implementation or unpaid pilots that investors fund, read that cost as in the way. It returns when the funding stops.
+
+**Cross-check against where buyers stop.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. Read the second and third from the seller's own records. Before any deals, read them from public requests for proposal that never became a purchase and from interviews with buyers who chose no one. The first is in no seller's records. It takes asking buyers that no seller has met. Claim 2 names the place where more buyers stop under each reading: they never look where the workflow is not settled, they decide nothing where the organization is complex, and they sign and fail to adopt where the workflow is entangled.
+
+**Where the rows and the stopping point disagree, record it.** One buyer can stop early. A buyer that expects its organization to fight the change may never look, and the seller records a search problem. A market whose buyers mostly stop somewhere else counts against the reading, and claim 2's test reads exactly that.
 
 ---
 
@@ -97,8 +103,10 @@ One sign has two causes. Buyers name the problem and buy from no one, whichever 
 
 | Reading | How to tell | Remedy |
 |---|---|---|
-| **A floor.** Part of the cost is set outside any deal (claim 4) | Ask whether a seller that lowered the cost would keep the return. If every seller in the category would share it, a floor holds the cost: message volume against the buyers' attention, their procurement and compliance rules, or whether anyone can attribute an outcome | Something shared across deals: a standard, a certification, a marketplace, a pre-approved contract. Fund it, wait for whoever will, or choose another market |
+| **A floor.** Part of the cost is set outside any deal (claim 4) | Ask whether work inside one deal lowers the cost. Where no single deal repays the work, a floor holds it: message volume against the buyers' attention, their procurement and compliance rules, or whether anyone can attribute an outcome | Something shared across deals. A standard, a mandate or a marketplace lowers it for every seller: fund it, wait for whoever will, or choose another market. A certification or a pre-approved contract lowers it for this seller's deals alone |
 | **A belief.** The cost is within reach and buyers believe otherwise | Ask buyers who named the problem and bought from no one what they think the purchase takes, and compare the answers with rows W3 to S3. Buyers already in discovery cannot answer, because their beliefs did not keep them out | Show this seller's own cost with evidence buyers can check before they meet anyone. It goes in the search ledger in Step 7 |
+
+**A floor one seller can pay.** A certification or a place on a contract vehicle lowers the floor for this seller's deals alone. Its cost is repaid across those deals, so decide it here and not inside a deal. A rule that forbids the purchase outright leaves nothing to pay.
 
 Where this seller's own product sets the cost, lowering it is a product decision. No test yet tells a floor from a belief ([open question 34](../theory/01-foundation/07-open-questions.md)).
 
@@ -122,7 +130,7 @@ The count of missing work says which cost the organization is built to carry. It
 
 ## Step 6: Pursue, restructure or decline
 
-**Two overrides first.** Where V1 is zero in a named category, decline. Where Step 4 reads a floor, decline, unless this seller will fund the shared investment that lowers it.
+**Two overrides first.** Where V1 is zero, decline. Where Step 4 reads a floor, decline, unless this seller will fund the shared investment that lowers it or can pay it for its own deals.
 
 | Step 5 reads | Reading |
 |---|---|
@@ -171,7 +179,7 @@ An adjacent market starts partly filled. A workflow that shares typed touchpoint
 All four are recorded in [07-open-questions.md](../theory/01-foundation/07-open-questions.md).
 
 - **No worked case yet.** Item 6 records the two-market test this reading has to pass.
-- **The value reading in Step 2 is untested,** and so is its sign for an unnamed category. Item 66.
+- **The value reading in Step 2 is untested,** and so is the rule that spend under any name counts. Item 66.
 - **Two costs in the way are not ranked.** Item 67 proposes time against the buyer's window as the shared scale.
 - **Step 5 counts work and not money.** It cannot tell work built once from work repeated in every deal. Item 56.
 
