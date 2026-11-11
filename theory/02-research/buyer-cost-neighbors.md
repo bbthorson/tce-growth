@@ -46,14 +46,17 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Walton, R.E. & McKersie, R.B. (1965). *A Behavioral Theory of Labor Negotiations.* McGraw-Hill. (secondary)
 - Miller, R.B. & Heiman, S.E., with Tuleja, T. (1985). *Strategic Selling.* William Morrow. (secondary)
 - Swait, J. (2001). "A Non-Compensatory Choice Model Incorporating Attribute Cutoffs." *Transportation Research Part B*, 35(10), 903–928. (secondary)
+- Nelson, P. (1970). "Information and Consumer Behavior." *Journal of Political Economy*, 78(2), 311–329. (full text, from a transcription)
+- Darby, M.R. & Karni, E. (1973). "Free Competition and the Optimal Amount of Fraud." *Journal of Law and Economics*, 16(1), 67–88. (full text, from a transcription)
+- Dulleck, U. & Kerschbamer, R. (2001). "On Doctors, Mechanics and Computer Specialists, or Where Are the Problems with Credence Goods?" Working Paper 0101, Department of Economics, University of Vienna. (introduction, propositions and conclusions)
 
-The eight sources from Attewell to Miller and Heiman, and Swait, reached this file through two outside reviews in 2026-11. The mark beside each records how far it was read. Both reviews were run with research tools, mostly at the abstract, and no reader from the marketing transaction-cost line has checked the result.
+The eight sources from Attewell to Miller and Heiman, and Swait, reached this file through two outside reviews in 2026-11. The mark beside each records how far it was read. Both reviews were run with research tools, mostly at the abstract, and no reader from the marketing transaction-cost line has checked the result. Nelson, and Darby and Karni, were read in full on 2026-11-11, from transcriptions the author supplied. Nelson's drops at least one section heading and garbles the last table, and Darby and Karni's describes its two figures in words. Nobody has checked either against the journal's pages. Dulleck and Kerschbamer was read in its working-paper version, without the proofs. The *Journal of Economic Literature* published a later version in 2006, which nobody here has read.
 
 **Abstract.** TCG says a buyer pays three costs beyond price, search, consensus and implementation, and that the kind of cost in the way decides how a product has to be sold. Many neighbors hold a piece of that. This file sets out what each neighbor claims, where TCG agrees or concedes, and the prediction that separates them. Each prediction is a test a deal or a data set could settle. The file ends with what is the author's own and what is synthesis, and with neighbors nobody has read yet.
 
 **Key claims:**
 - Most of TCG is synthesis, and the neighbors below hold the parts.
-- Four things look like the author's own: the question asked by kind of cost, the cost a buyer expects against the cost it would meet, Turnkey's erosion, and a seller's reach set by the cost it is built to carry.
+- Four things look like the author's own: the question asked by kind of cost, the cost a buyer expects against the cost it would meet, Turnkey's erosion, and a seller's reach set by the cost it is built to carry. Nelson (1970) and Darby and Karni (1973) narrow the first, come near the second and fourth, and leave the third.
 - TCG concedes that costs add and that a gain can offset one. Constitution 7.0 dropped the rule that forbade it.
 - Each neighbor yields a prediction that differs from TCG's. [06-calibration.md](../01-foundation/06-calibration.md) carries the ones waiting on data, as items 52 and 68. Item 69 is a question the neighbors raise and no claim answers.
 
@@ -112,6 +115,57 @@ TCG concedes the sum. Before 7.0 it held that a low total built on one high cost
 - **Wernerfelt (1994)** models sales assistance as matching buyers to products, kept honest by the seller's reputation, and **Walton and McKersie (1965)** separate bargaining that creates value from bargaining that divides it. Axiom II's distinction between spending that shows the buyer what it will face and spending that moves money restates both.
 - **Gensch (1987) and Gilbride and Allenby (2004)** are reported to find that organizational choice runs in two stages: a screen on cutoffs, then trade-offs among the survivors. **Swait (2001)** estimates the cutoffs as penalties that respondents breach when another attribute compensates. The premise's line that the costs are not walls takes Swait's reading.
 
+## Nelson: search and experience goods
+
+Nelson (1970) sorts consumer goods by the cheaper way to learn their quality. *Search* is inspecting an option before buying it. *Experience* is buying a brand and using it. A consumer experiences when search costs more. Tuna is an experience good because a can is cheap. An appliance is one because no inspection shows how it will run over the years. Nelson then derives how a market behaves from the category. Experience goods are more concentrated. Buyers lean more on the recommendations of others for experience goods and for anything bought rarely. Stores that sell search goods cluster, advertise at retail more than by brand, and hold more inventory against sales. He tests each prediction on census and advertising data. Every result runs in the predicted direction, and two fall short of significance.
+
+**What TCG concedes.** Nelson holds the form of claim 1 for one cost: read how the buyer learns, and the sellers' behavior follows. Three smaller pieces are his too.
+
+- A buyer that verifies by trying, which is how claim 6's plug-in purchase is checked, is Nelson's experience where a purchase is cheap and frequent.
+- How often a buyer purchases sets how many options it samples. A rare purchase gets few samples and more outside advice, which is why a buyer making a large purchase once asks for references.
+- A free sample turns experience into search, because the buyer inspects without purchasing. A free trial does the same. That bears on where search ends ([07-open-questions.md](../01-foundation/07-open-questions.md), question D).
+
+**Where TCG differs.**
+
+- Nelson's consumer already knows where every option is sold, and always buys. He narrows search from Stigler's on that assumption. TCG's search cost includes finding that a seller exists, and its first question is whether the buyer buys from anyone.
+- His buyer is one person. Nothing in the paper corresponds to consensus.
+- His experience is learning quality. It carries none of the labor of putting a product to work, and nothing that either side builds for the other.
+- His consumer knows how quality is spread across brands before it samples, so the cost it expects is the cost it meets.
+- The number of sellers a market supports follows from how much buyers sample. He does not ask what entry does to a buyer's search.
+- He describes a market in equilibrium. He does not tell one seller how to sell.
+
+**How the categories map.** The mapping is looser than this file once recalled. Search-led names a market where the buyer does not find the seller or cannot evaluate it, and Nelson assumes the finding away. His experience covers a Turnkey market, where trying is cheap, and part of implementation-led, where the buyer learns only by using and each use is expensive. He separates those two by how often the buyer purchases. TCG separates them by whether either side builds something worth less anywhere else.
+
+**The separating prediction.** In Nelson's model the size of a buyer's sample depends on how often it buys and on the spread of quality, and the number of sellers does not enter. Entrants then compete to be among the few a buyer samples, through advertising and recommendation, and the buyer's cost of evaluating stays where it was. Nelson does not vary entry, so this is his model's implication and no claim of his. Claim 3 says entrants' cheap claims raise every buyer's search cost. The test is whether the number of vendors a buyer evaluates, and the time it spends, rise with the vendor count in a category. It sits beside item 52.
+
+## Darby and Karni: credence qualities
+
+Darby and Karni (1973) add a third kind of quality to Nelson's two. A *credence* quality is one the buyer cannot judge even after normal use, because judging it takes more costly information. Their case is repair. The mechanic who diagnoses the fault also sells the fix, and a part replaced too early runs exactly as a replacement for a failed part would. They class qualities and not goods, so one purchase carries a mix of all three. A credence quality arises where the buyer's result comes from several inputs together, the seller's and the buyer's own, and nobody can read one input's share off the result. The seller then has a reason to prescribe more than an expert buyer would take. The paper works out how far a seller goes and what markets do about it.
+
+**What TCG concedes.** Several pieces of axioms II and III are here.
+
+- **A sales organization evaluates for the buyer.** The paper calls evaluating other firms' output a key function of a sales organization. A firm that sells honest advice earns a reputation it can charge for. That is the premise that a seller carries part of the buyer's search.
+- **Future business keeps a seller honest.** The more a customer's future purchases are worth, the less the seller oversells, so tourists fare worse than regulars. Claims 10 to 12 lean on the same force, and so does the Enforcement Ledger's rule for a purchase that happens once.
+- **The remedies are the same three.** Markets raise the buyer's ability to judge, raise what the buyer's future business is worth, or shift the loss from a bad result to the seller through warranties, service contracts and leases. The Test stage, the renewal and the gates do those three jobs.
+- **A guarantee has a limit.** A seller that carries the whole result removes the buyer's reason to take care. Guarantees then appear only where the buyer's own effect on the result is small or easy to see. Claim 12 answers that limit with stages that bind both sides.
+- **A firm with enough demand builds.** A fleet owner runs its own repair shop, and the problem disappears. That is the build option in the buyer's first question.
+- **A joint result cannot be traced.** Where buyer and seller produce the outcome together, the buyer cannot tell what the seller's part was worth. Item 51 says the same of a failure after signature.
+
+**Where TCG differs.**
+
+- The buyer is one consumer. Nothing corresponds to consensus.
+- The buyer always arrives at the shop. The paper has no cost of finding a seller and no buyer that never looks.
+- Their seller oversells when it has idle capacity and undersells when it is busy. Claim 9's seller skips work to close the deal, whatever its capacity.
+- Their buyer fears being sold too much. Claim 7's buyer fears the project failing in its own people's hands. Credence is still the nearest of the three qualities to implementation-led, because the buyer cannot check before or after whether it got what it needed.
+- They describe a market in equilibrium and conclude against regulation. They do not tell one seller how to sell.
+
+**The separating predictions.** Both are implications of their model and not claims the paper makes.
+
+1. Their client keeps returning until it detects a fault, and detection is costly. Claim 10 says whether the product worked here decides renewal. Take accounts where the outcome measure has not moved and nobody has found a failure. Their model has those accounts renew, and claim 10 has them contract. The [Sustaining Adoption Review](../../practice/adoption-review.md)'s records could test it.
+2. A buyer discounts a diagnosis from the party that sells the treatment. Discovery that enlarges the seller's own billable work should then lose more buyers than discovery the seller pays for or someone else judges. TCG has Map and Test run at the seller's cost with the buyer's skeptic judging, and no claim says who has to do the discovery for a buyer to believe it.
+
+**The later literature.** Dulleck and Kerschbamer (2001) reduce the models that followed to three conditions. Markets solve the problem at no cost when buyers are alike, when the buyer stays with the seller once diagnosed, and when either the treatment can be verified or the seller is liable for the result. Without the second, buyers pay for diagnosis more than once. Without the third, sellers always supply the cheap treatment, and buyers who expect that stay away. Each condition names something an instrument supplies: the stop price holds the buyer after discovery, the Enforcement Ledger's evidence columns make the work checkable, and gates with credits make the seller liable. One result bears on pay. An expert that earns the same margin on every treatment has no reason to misadvise.
+
 ## Hockenmaier
 
 Hockenmaier (2023) applies Dahlman's three costs to marketplaces. A marketplace sells the removal of transaction costs, and its stages each remove another. This is the closest vocabulary match found. TCG adds the buyer's organization, the seller's side and what happens after signature.
@@ -124,27 +178,26 @@ These came up in working sessions on 2026-11-09 and 2026-11-10, from memory. Non
 
 | Source | What it would bear on |
 |---|---|
-| Nelson (1970), and Darby and Karni (1973), on search, experience and credence goods | Goods sorted by when a buyer can check quality: before buying, by trying, or never. That maps closely onto search-led, Turnkey and implementation-led, and is the most serious omission. |
 | Choffray and Lilien (1978) | A feasibility screen, then individual evaluation, then a group decision, for industrial buying. |
 | Hausmann, Rodrik and Velasco (2005), Kremer (1993), Goldratt | Relieving a constraint that does not bind does nothing. The interaction item 69 asks about is an old idea in other fields. |
 | Rogers, on the attributes of an innovation | Trialability and compatibility are claim 6's tests and claim 2's workflow reading. The repository cites them only through [implementation-science.md](./implementation-science.md). |
 | Zeithaml (1988), Kotler on total customer cost | The premise that buying costs more than the price. |
 | Munger (2018), *Tomorrow 3.0* | Firms that sell reductions in three transaction costs. |
 | Leslie's sales compass, Balfour's four fits | Practitioner prior art for claim 5, a seller's reach set by how it is built. |
-| Telser (1960) | Help given before commitment can walk to a cheaper rival, which bears on claim 9. |
+| Telser (1960) | Help given before commitment can walk to a cheaper rival, which bears on claim 9. Darby and Karni cite it for advice a seller cannot charge for. |
 
 None assembles TCG's structure as recalled, so they would narrow what is the author's own without removing it.
 
 ## What is the author's own and what is synthesis
 
-Most of TCG is synthesis. The three costs are Dahlman's. Hold-up and the contract apparatus come from Williamson and the marketing transaction-cost line. The buyer as an organization of roles comes from Webster and Wind and the Gartner work. Winning by carrying the buyer's cost is in Cannon and Homburg. Contract value against acquisition cost is Skok and Janz. Naming the motion for one barrier recombines Attewell, Ram and Sheth, and Bunn. "Price is a transfer" is standard economics, though not standard sales practice.
+Most of TCG is synthesis. The three costs are Dahlman's. Hold-up and the contract apparatus come from Williamson and the marketing transaction-cost line. The buyer as an organization of roles comes from Webster and Wind and the Gartner work. Winning by carrying the buyer's cost is in Cannon and Homburg. The seller as the buyer's evaluator, kept honest by the buyer's future business, is in Darby and Karni. Contract value against acquisition cost is Skok and Janz. Naming the motion for one barrier recombines Attewell, Ram and Sheth, and Bunn. "Price is a transfer" is standard economics, though not standard sales practice.
 
 Four things look like the author's own, as far as the searches reached.
 
-1. **The question, asked by kind of cost.** Transaction cost economics asks whether a firm buys or builds. TCG asks whether the buyer buys, builds or does nothing, reads which of three costs is in the way, and names the motion for it. Product-led and sales-led then name the seller's tool.
-2. **The cost a buyer expects against the cost it would meet.** A seller can lower a cost and never show it, and the buyer never looks. Hauser and Wernerfelt describe a mechanism of that kind for consumers, as read at the abstract, and applying it to each cost appears new.
+1. **The question, asked by kind of cost.** Transaction cost economics asks whether a firm buys or builds. TCG asks whether the buyer buys, builds or does nothing, reads which of three costs is in the way, and names the motion for it. Product-led and sales-led then name the seller's tool. Nelson (1970) and Darby and Karni (1973) hold the form for one cost, both read in full. They sort purchases by how the buyer can check quality, and derive how sellers behave and how buyer and seller arrange themselves. What is left is the three costs read together, a buyer that may buy from no one, and the motion stated as advice to one seller.
+2. **The cost a buyer expects against the cost it would meet.** A seller can lower a cost and never show it, and the buyer never looks. Hauser and Wernerfelt describe a mechanism of that kind for consumers, as read at the abstract, and applying it to each cost appears new. Darby and Karni's buyer walks from an honest quote above what it expected to pay, which is the same gap seen from the seller's side. Their buyer has already come to the seller.
 3. **Turnkey as a market condition that erodes with entry,** so sales-assist arrives as the vendor count rises with the buyer mix held constant.
-4. **A seller's reach set by the cost it is built to carry,** with pay following that cost.
+4. **A seller's reach set by the cost it is built to carry,** with pay following that cost. Darby and Karni give the reach half one sentence: firms that specialize in accurate evaluation draw the buyers whose time costs most. Neither paper addresses pay.
 
 The 2026-11-09 review counted a fifth and ranked it first: a hard gate, where any one cost past a limit kept the buyer out. Constitution 7.0 retired it for the reasons given under total cost of ownership.
 

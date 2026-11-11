@@ -25,7 +25,7 @@ Then read by claim.
 | Claim | Files that back it |
 |---|---|
 | **The premise and the standing assumptions** | [Transaction Cost Economics](./transaction-cost-economics.md) for the three costs. [Value and Persuasion](./value-and-persuasion.md) for the second assumption, that value is set outside the sale. [The TCE Empirical Record](./tce-empirical-record.md) for the critiques of the first and third. |
-| **1.** The kind of cost in the way decides how to sell | [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for Attewell, Ram and Sheth, and Bunn, the nearest prior art. [Channel Collapse](./channel-collapse.md) for one copied motion and what it costs. |
+| **1.** The kind of cost in the way decides how to sell | [Buyer Cost Neighbors](./buyer-cost-neighbors.md) for Nelson, Darby and Karni, Attewell, Ram and Sheth, and Bunn, the nearest prior art. [Channel Collapse](./channel-collapse.md) for one copied motion and what it costs. |
 | **2.** The workflow and the organization predict that cost | [Process Misfit](./process-misfit.md) and [Integration Touchpoints](./integration-touchpoints.md) for the workflow. [Buying Center Dynamics](./buying-center-dynamics.md) for the organization. |
 | **3.** A cheap claim raises every buyer's search cost | [Costly Signals](./costly-signals.md) for Akerlof, Spence, and Crawford and Sobel. [Channel Collapse](./channel-collapse.md) for the volume no sender pays for. [The Information Environment](./information-environment.md) for congestion and a category's shared record. [Value and Persuasion](./value-and-persuasion.md) section 3 for the test that separates evidence from persuasion. |
 | **4.** Rules set a floor no seller lowers alone | [The Information Environment](./information-environment.md). [Channel Collapse](./channel-collapse.md) for message volume as part of the floor. [Transaction Cost Economics](./transaction-cost-economics.md) for where the floor sits in the theory. [The Simplified Acquisition Threshold Test](./sat-threshold-test.md) for orders under a pre-approved contract. |
@@ -45,7 +45,7 @@ Then read by claim.
 | File | Claims | What it holds |
 |---|---|---|
 | [transaction-cost-economics.md](./transaction-cost-economics.md) | 3, 4, 6, 9, 11, 12 | Coase, Dahlman, Williamson, the marketing line that followed, and Klein, Crawford and Alchian on hold-up |
-| [buyer-cost-neighbors.md](./buyer-cost-neighbors.md) | 1, 5 | Gartner, Moore, MEDDICC, value selling, Skok and Janz, total cost of ownership and the academic buying literature, each with a separating prediction |
+| [buyer-cost-neighbors.md](./buyer-cost-neighbors.md) | 1, 5 | Gartner, Moore, MEDDICC, value selling, Skok and Janz, total cost of ownership, Nelson, Darby and Karni, and the academic buying literature, each with a separating prediction |
 | [costly-signals.md](./costly-signals.md) | 3, 8, 7, 12 | Why only a signal that costs a weak seller more informs, and the four tests a signal must pass |
 | [channel-collapse.md](./channel-collapse.md) | 3, 4, 1 | Outreach volume as a cost each sender puts on the others |
 | [information-environment.md](./information-environment.md) | 4, 3, 8 | The part of each cost set outside a deal, and who can lower it |
