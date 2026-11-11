@@ -21,7 +21,7 @@ Every file below matches Constitution 7.0. The proposal for the trim that brough
 3. **[02-mathematical-models.md](./02-mathematical-models.md)**: *(reference)* the one piece of accounting the Constitution relies on. Price is a transfer, so a discount moves the split and leaves the work of buying the same size.
 4. **[03-glossary-and-notation.md](./03-glossary-and-notation.md)**: *(reference)* every term in one place, with a pointer to where each is defined.
 5. **[06-calibration.md](./06-calibration.md)**: *(reference)* what only evidence can settle. The objections to the claims that writing cannot close, and what a seller would have to record to run the claims' tests. Nothing in the framework is measured.
-6. **[07-open-questions.md](./07-open-questions.md)**: where the theory is under-developed, grouped by the axiom each gap weakens, with what would settle it. Read it before extending the theory, so the extension lands on a recorded gap.
+6. **[07-open-questions.md](./07-open-questions.md)**: what is still unsettled, as ten questions lettered A to J and grouped by time, each with what writing settles and what only evidence does. Read it before extending the theory, so the extension lands on a recorded gap.
 
 ## What goes here vs. elsewhere
 

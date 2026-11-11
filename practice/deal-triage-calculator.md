@@ -187,7 +187,7 @@ Read the variance across the book, never on one deal. A counter whose variance r
 
 ---
 
-## Scoring sheet
+## Record sheet
 
 | Field | Value |
 |---|---|

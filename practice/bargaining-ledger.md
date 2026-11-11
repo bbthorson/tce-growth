@@ -18,7 +18,7 @@ Goal: On one deal, collect each decision role's objection apart, answer it in th
 |---|---|
 | **Inputs** | A [Deal Triage Calculator](./deal-triage-calculator.md) reading. The [Enforcement Ledger](./enforcement-ledger.md)'s rows, where the purchase is built-in. |
 | **Outputs** | The decision-role map, the roles still open, the arrangement record, and the sponsor who holds it together. |
-| **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage column or the contract. The map is re-read in the [Sustaining Adoption Review](./adoption-review.md). |
+| **Next step** | The arrangement's terms go into the Enforcement Ledger's Stage rows or the contract. The map is re-read in the [Sustaining Adoption Review](./adoption-review.md). |
 | **Owner** | The account executive, where part of their pay waits on the implementation under claim 5, or a reviewer for whom it does. The map stays with the seller's account team. |
 
 > [!IMPORTANT]
@@ -103,14 +103,14 @@ Report the open roles by name and as a count of the roles that can say no. Three
 An agreement between the two firms binds the buyer that signs it. It does not bind the role whose budget the change cuts. So where consensus is the cost in the way, or a role that can say no loses, the deal needs three things inside the buyer (claim 7).
 
 - **A sponsor with something riding on the outcome:** an executive whose own measure moves with the initiative. [Open question 59](../theory/01-foundation/07-open-questions.md) records the limit: such a sponsor is a party to the disputes it settles.
-- **An answer for each role that loses:** a term under which what the role gains as adoption proceeds covers what it loses. Where no term can answer a role, whoever holds authority over it overrules it in writing, and the role stays on the map as open.
+- **An answer for each role that loses:** a term under which what the role gains as adoption proceeds covers what it loses. Where no term can answer a role, whoever holds authority over it overrules it in writing. That written decision closes the role for the count above. The map keeps it marked as overruled, because its occupant can still stall the work after signature.
 - **Commitments written against roles and not people,** so a successor inherits each term and states again.
 
 **Maintain it.** Re-read the map at every occupant change, reorganization and budget cycle. A departed champion reopens every role reached through them, and no technical proof reaches that.
 
 ---
 
-## Scoring sheet
+## Record sheet
 
 | Field | Value |
 |---|---|

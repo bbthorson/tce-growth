@@ -19,7 +19,7 @@ This generator is designed for a multi-stage dialogue. **Do not jump to Phase 3 
 - Once an angle is approved, generate the post using the structure below.
 
 ## Style & Voice Guidelines
-- **Reference:** Always follow the guidelines in [voice-guide.md](./voice-guide.md).
+- **Reference:** Always follow the guidelines in [voice-guide.md](./voice-guide.md) and the three rules for a public piece in [publishing/README.md](../README.md).
 - **Tone:** Analytical, helpful, and conversational.
 - **Translation Layer:** Every technical term (Asymmetry, Transaction Costs, etc.) must be immediately followed by a plain-English explanation of the functional impact.
 - **Metaphors:** Use the football headers as structural frames, but keep the body text grounded in business reality.

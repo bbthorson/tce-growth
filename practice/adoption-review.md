@@ -19,7 +19,7 @@ Goal: After signature, read whether the product worked here before the renewal d
 | **Inputs** | The signed Enforcement Ledger: its deal record, rows, gates, outcome measure and the standing review's terms. The Bargaining Ledger's private map and shared arrangement record. |
 | **Outputs** | A receipted handoff, a review record per cycle with each finding coded by cause and the right it invoked, and a renewal posture with its forecast call. |
 | **Next step** | Renewal, a remediation under new gates, or a lapse decided in writing. The counts re-taken at renewal go to the [Deal Triage Calculator](./deal-triage-calculator.md)'s audit. An expansion that reaches new roles or steps opens there as a new deal. |
-| **Owner** | The account manager, whose pay carries a stake at the renewal it maintains (claim 5). The account executive stays accountable through the first review. |
+| **Owner** | The account manager, whose pay should carry a stake at the renewal it maintains. Claim 5 states that rule for representatives, and this extends it. The account executive stays accountable through the first review. |
 
 **When to run it, and how deep.**
 

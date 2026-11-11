@@ -19,6 +19,7 @@ The canonical TCG framework. Start here if you're new to TCG.
 - [02-mathematical-models.md](./01-foundation/02-mathematical-models.md) — The one piece of accounting the Constitution relies on: price is a transfer.
 - [03-glossary-and-notation.md](./01-foundation/03-glossary-and-notation.md) — Look up any term, and find where it is defined.
 - [06-calibration.md](./01-foundation/06-calibration.md) — What only evidence can settle: the objections to the claims, and what a seller would have to record to test them.
+- [07-open-questions.md](./01-foundation/07-open-questions.md) — Where the claims are under-developed, and what would settle each.
 
 ### [02-research/](./02-research/)
 

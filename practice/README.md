@@ -19,10 +19,10 @@ The [Constitution](../theory/01-foundation/00-tcg-constitution.md) has a buyer a
 | Time | Your question | Instrument | Claims |
 |---|---|---|---|
 | **Time0, the market** | Do these buyers pay for the problem, which cost is in their way, and are we built and paid to carry it? | [00. The Market Reading](./00-market-reading.md) | 1 to 5 |
-| **Time1, any deal** | Does this buyer pay for the problem, is the purchase plug-in or built-in, which cost is in the way, and what must the seller's spending do? | [Deal Triage Calculator](./deal-triage-calculator.md) | 6, 8, 9 |
+| **Time1, any deal** | Does this buyer pay for the problem, is the purchase plug-in or built-in, which cost is in the way, and what must the seller's spending do? | [Deal Triage Calculator](./deal-triage-calculator.md) | 6 to 9 |
 | **Time1, an organization that has to agree** | What does each role need answered, and who inside the buyer holds the decision together? | [Bargaining Ledger](./bargaining-ledger.md) | 7 |
-| **Time1, a built-in purchase** | What does each side not know about the other, how does this fail, and who carries which risk before either side builds? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage | 9, 12 |
-| **Time1, one piece of evidence** | Does this signal count? | [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) | 3 |
+| **Time1, a built-in purchase** | What does each side not know about the other, how does this fail, and who carries which risk before either side builds? | [Enforcement Ledger](./enforcement-ledger.md): Map, Test and Stage | 7, 9, 12 |
+| **Any time, one piece of evidence** | Does this signal count? | [Friction Allocation Diagnostic](./friction-allocation-diagnostic.md) | 3 |
 | **Time2, renewal** | Did it work here, and have we earned the renewal? | [Sustaining Adoption Review](./adoption-review.md) | 10 to 12 |
 
 A *plug-in* purchase works on arrival. A *built-in* purchase has either side build something that is worth less anywhere else.

@@ -55,7 +55,7 @@ The eight sources from Attewell to Miller and Heiman, and Swait, reached this fi
 - Most of TCG is synthesis, and the neighbors below hold the parts.
 - Four things look like the author's own: the question asked by kind of cost, the cost a buyer expects against the cost it would meet, Turnkey's erosion, and a seller's reach set by the cost it is built to carry.
 - TCG concedes that costs add and that a gain can offset one. Constitution 7.0 dropped the rule that forbade it.
-- Each neighbor yields a prediction that differs from TCG's. [06-calibration.md](../01-foundation/06-calibration.md) carries the ones waiting on data, as items 52, 68 and 69.
+- Each neighbor yields a prediction that differs from TCG's. [06-calibration.md](../01-foundation/06-calibration.md) carries the ones waiting on data, as items 52 and 68. Item 69 is a question the neighbors raise and no claim answers.
 
 ## Gartner and CEB buyer enablement
 
@@ -93,7 +93,7 @@ Ellram's total cost of ownership looks beyond price to the acquisition, transact
 
 TCG concedes the sum. Before 7.0 it held that a low total built on one high cost could not clear a buyer. The evidence read cutoffs as steep penalties (Swait), and the author's own account has a hard-to-move organization seeking a gain large enough to justify the effort, so 7.0 dropped the rule. What TCG adds is the earlier question, whether the buyer buys from anyone, and the claim that the kind of cost decides the motion.
 
-**The separating prediction.** Both neighbors model the costs as additive. TCG predicts an interaction: lowering a cost that is not in the way does little until the one in the way falls (item 69).
+**The open question.** Both neighbors model the costs as additive, so lowering any cost gains. Versions of TCG before 7.0 predicted an interaction, that work on a cost not in the way does little until the one in the way falls. No claim in 7.0 states it, and item 69 records the question.
 
 ## Academic channel and buying work
 
@@ -110,7 +110,7 @@ TCG concedes the sum. Before 7.0 it held that a low total built on one high cost
 - **Aldrich and Fiol (1994)** describe the legitimacy a new industry must win before any firm in it sells easily. That is a floor in claim 4's sense.
 - **Hauser and Wernerfelt (1990)** model a consideration set as the options whose expected gain exceeds the cost of evaluating them. That is the nearest mechanism for a buyer that never looks because of the cost it expects.
 - **Wernerfelt (1994)** models sales assistance as matching buyers to products, kept honest by the seller's reputation, and **Walton and McKersie (1965)** separate bargaining that creates value from bargaining that divides it. Axiom II's distinction between spending that shows the buyer what it will face and spending that moves money restates both.
-- **Gensch (1987) and Gilbride and Allenby (2004)** find organizational choice runs in two stages: a screen on cutoffs, then trade-offs among the survivors. **Swait (2001)** estimates the cutoffs as penalties that respondents breach when another attribute compensates. The premise's line that the costs are not walls takes Swait's reading.
+- **Gensch (1987) and Gilbride and Allenby (2004)** are reported to find that organizational choice runs in two stages: a screen on cutoffs, then trade-offs among the survivors. **Swait (2001)** estimates the cutoffs as penalties that respondents breach when another attribute compensates. The premise's line that the costs are not walls takes Swait's reading.
 
 ## Hockenmaier
 
@@ -126,7 +126,7 @@ These came up in working sessions on 2026-11-09 and 2026-11-10, from memory. Non
 |---|---|
 | Nelson (1970), and Darby and Karni (1973), on search, experience and credence goods | Goods sorted by when a buyer can check quality: before buying, by trying, or never. That maps closely onto search-led, Turnkey and implementation-led, and is the most serious omission. |
 | Choffray and Lilien (1978) | A feasibility screen, then individual evaluation, then a group decision, for industrial buying. |
-| Hausmann, Rodrik and Velasco (2005), Kremer (1993), Goldratt | Relieving a constraint that does not bind does nothing. Item 69's interaction is an old idea in other fields. |
+| Hausmann, Rodrik and Velasco (2005), Kremer (1993), Goldratt | Relieving a constraint that does not bind does nothing. The interaction item 69 asks about is an old idea in other fields. |
 | Rogers, on the attributes of an innovation | Trialability and compatibility are claim 6's tests and claim 2's workflow reading. The repository cites them only through [implementation-science.md](./implementation-science.md). |
 | Zeithaml (1988), Kotler on total customer cost | The premise that buying costs more than the price. |
 | Munger (2018), *Tomorrow 3.0* | Firms that sell reductions in three transaction costs. |
@@ -142,7 +142,7 @@ Most of TCG is synthesis. The three costs are Dahlman's. Hold-up and the contrac
 Four things look like the author's own, as far as the searches reached.
 
 1. **The question, asked by kind of cost.** Transaction cost economics asks whether a firm buys or builds. TCG asks whether the buyer buys, builds or does nothing, reads which of three costs is in the way, and names the motion for it. Product-led and sales-led then name the seller's tool.
-2. **The cost a buyer expects against the cost it would meet.** A seller can lower a cost and never show it, and the buyer never looks. Hauser and Wernerfelt supply the mechanism, and applying it to each cost appears new.
+2. **The cost a buyer expects against the cost it would meet.** A seller can lower a cost and never show it, and the buyer never looks. Hauser and Wernerfelt describe a mechanism of that kind for consumers, as read at the abstract, and applying it to each cost appears new.
 3. **Turnkey as a market condition that erodes with entry,** so sales-assist arrives as the vendor count rises with the buyer mix held constant.
 4. **A seller's reach set by the cost it is built to carry,** with pay following that cost.
 

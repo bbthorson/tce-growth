@@ -11,13 +11,13 @@ This generator is designed for a multi-stage dialogue. **Do not draft the full b
 
 ### Phase 2: The Chalkboard Review (Dialogue)
 - Ask the user to review the outline and the proposed arguments.
-- Refine the "Technical Thickness" (how much detail to go into regarding the math/theory) based on the target audience.
+- Refine the "Technical Thickness" (how much detail to go into regarding the theory, with no math) based on the target audience.
 
 ### Phase 3: The Deep Dive (The Draft)
 - Generate the full post based on the approved outline.
 
 ## Style & Voice Guidelines
-- **Reference:** Always follow the guidelines in [voice-guide.md](./voice-guide.md).
+- **Reference:** Always follow the guidelines in [voice-guide.md](./voice-guide.md) and the three rules for a public piece in [publishing/README.md](../README.md).
 - **Tone:** Academic but accessible, highly structured, forensic.
 - **CRITICAL:** **Do not use Antithesis.** Never use the "It's not X, it's Y" construction. This is a tell-tale sign of low-effort AI.
 

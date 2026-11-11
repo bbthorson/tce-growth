@@ -16,7 +16,7 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - Jensen, M.C. & Meckling, W.H. (1976). "Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure." *Journal of Financial Economics*, 3(4), 305–360.
 - Eisenhardt, K.M. (1989). "Agency Theory: An Assessment and Review." *Academy of Management Review*, 14(1), 57–74.
 
-**Abstract.** Akerlof showed that information asymmetry about quality causes adverse selection: rational buyers discount price to average quality, driving high-quality sellers out, until the market collapses to lemons. Spence's signaling theory provided the mechanism for restoring quality separation: a signal carries information only when its cost is proportionally lower for the high-quality actor — the *Single Crossing Property*. Crawford-Sobel formalized the limit case: when production costs collapse to zero, communication degenerates into a babbling equilibrium where receivers ignore all messages. The trio together explains why costly, rigorous sales processes are not waste — they are the only mathematically valid mechanism for separating quality vendors from imitators.
+**Abstract.** Akerlof showed that information asymmetry about quality causes adverse selection: rational buyers discount price to average quality, driving high-quality sellers out, until the market collapses to lemons. Spence's signaling theory provided the mechanism for restoring quality separation: a signal carries information only when its cost is proportionally lower for the high-quality actor — the *Single Crossing Property*. Crawford-Sobel formalized the limit case: when production costs collapse to zero, communication degenerates into a babbling equilibrium where receivers ignore all messages. Together the three explain why evidence that costs its sender something informs a buyer where a claim does not.
 
 **Agency extension (Jensen-Meckling, Eisenhardt).** Akerlof and Spence describe asymmetry before the deal. Agency theory describes what happens after it. Jensen and Meckling showed that when one party acts on another's behalf and effort is unobservable, the acting party has a standing incentive to divert effort, and the cost of preventing that (monitoring, bonding, and the residual loss neither can eliminate) is a real cost of the transaction. Eisenhardt's review separates the two failures cleanly:
 
@@ -30,13 +30,13 @@ Agency friction also runs along two vectors at once, and TCG treats them differe
 - Adverse selection and moral hazard are distinct failures requiring distinct instruments. Signals address the first, governance the second.
 - Agency friction operates inside the buyer as well as across the buyer-seller boundary. A perfectly credible vendor still stalls in a misaligned committee.
 - A signal carries information only if it satisfies the Single Crossing Property — cheaper to produce for the high-quality actor.
-- Cheap talk has zero signal value; without cost, the receiver's rational response is to ignore.
-- Paid pilots, rigorous discovery, and resource-intensive POCs are credible signals because lemons cannot afford them.
-- Bilateral signaling is required — buyer refusal to invest signals low organizational commitment.
+- Cheap talk informs only as far as the two sides' interests already agree. Past that point the receiver's rational response is to ignore it.
+- Discovery and proofs of concept that the seller pays for can be credible signals, where offering them costs a weak seller more than a strong one. A cost the buyer pays says nothing about the seller.
+- A buyer's refusal to invest is a signal too, of low commitment inside its organization. That is the framework's extension, and no source here tests it.
 - When all signals become production-cheap, the channel reaches a babbling equilibrium (Crawford-Sobel).
 
 **Supports in TCG:**
-- **Claim 3.** Direct basis. Akerlof is why buyers who cannot tell good sellers from bad assume the worst and many buy from no one. Spence is why a signal informs only when it costs a weak seller more than a strong one. Crawford and Sobel give the end state when a message costs nothing to send: receivers ignore all of them, which [channel-collapse.md](./channel-collapse.md) shows at the level of a channel.
+- **Claim 3.** Direct basis. Akerlof is why buyers who cannot tell good sellers from bad assume the worst and many buy from no one. Spence is why a signal informs only when it costs a weak seller more than a strong one. Crawford and Sobel give the end state when a message costs nothing to send: where interests diverge, receivers have no reason to credit any of them, which [channel-collapse.md](./channel-collapse.md) shows at the level of a channel.
 - **Claim 8.** A commitment the seller would not make if it expected to fail is a Spence signal. The extension below ranks such signals and names two limits on a guarantee.
 - **Claim 7.** A signal lowers doubt between the two firms. It does nothing for disagreement inside the buyer, which is why a seller its buyer believes can still stall in an organization that has not agreed.
 - **Claim 12.** Once signing ends the screening problem, effort neither side can observe becomes the problem. The staged plan in the [Enforcement Ledger](../../practice/enforcement-ledger.md) governs it.

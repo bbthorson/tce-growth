@@ -65,8 +65,6 @@ status: active
 | Statistic | Cited in | Primary source | Status |
 |---|---|---|---|
 | Customers acquired on a deeper discount bought again less, at a newspaper and an online grocer | [Constitution, claim 8](../../01-foundation/00-tcg-constitution.md), [02-mathematical-models.md](../../01-foundation/02-mathematical-models.md) section 1.3, [value-and-persuasion.md](../value-and-persuasion.md) | Lewis (2006), *Journal of Marketing Research* | **Abstract only.** Cited for the direction. Check at the primary whether the effect is selection or the step up to full price at renewal before citing it further. |
-| Price concessions made to suit a commission plan cost an enterprise software vendor 6 to 8% of revenue | [value-and-persuasion.md](../value-and-persuasion.md) | Larkin (2014), *Journal of Labor Economics* | **Abstract only.** Recorded by a research review on 2026-11-09. Check the figure at the primary before quoting it. |
-| 36% higher retention and 38% higher win rates from tight alignment of sales and marketing | [game-theory-and-nrr.md](../game-theory-and-nrr.md) | Aberdeen Group (with MathMarketing), sales-marketing alignment research | **Primary named.** The original report is no longer distributed and circulates through quotation. |
 
 ## Product adoption
 
@@ -85,6 +83,9 @@ status: active
 
 ## Cited without a number
 
+- Larkin (2014) is cited in [value-and-persuasion.md](../value-and-persuasion.md) for the direction of its finding. The paper was read at the abstract, so its size is not quoted.
+- CFIR's count of 19 earlier theories, in [implementation-science.md](../implementation-science.md), is from Damschroder et al. (2009) and has not been checked against the paper.
+- The results in [sat-threshold-test.md](../sat-threshold-test.md) are the repository's own measurements. The script and counts in `models/` reproduce them.
 - Schiebler, Lee and Brodbeck (2026), a meta-analysis of expectation and disconfirmation in *Journal of the Academy of Marketing Science*, is cited qualitatively in [value-and-persuasion.md](../value-and-persuasion.md) and marked unconfirmed there. Not located at the primary.
 - The sources listed in section 4 of [06-calibration.md](../../01-foundation/06-calibration.md) reached the repository through outside reviews. No file quotes a figure from them. Open the paper before any file does.
 

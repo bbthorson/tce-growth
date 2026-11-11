@@ -64,7 +64,7 @@ Claim 2 says two things a leader can see predict the cost before any deal. Read 
 | The workflow is settled and entangled | Implementation | Implementation-led |
 | The organization is complex | Consensus, and often implementation with it | Consensus-led, or both run together |
 
-**Where buyers stop is the cross-check.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. A seller's own records show which.
+**Where buyers stop is the cross-check.** Buyers stop in three places. They never look. They look and decide nothing. They sign and fail to adopt. A seller's own records show the second and the third. A buyer that never looked is in no seller's records, so the first takes asking buyers the seller never met.
 
 **The signals come first, because a stall can appear before its cause.** A buyer prices a later cost when it makes an earlier decision. One that expects its organization to fight the change may never look at all, and the seller records a search problem. Where buyers stop says where the stall appears. The workflow and the organization say why.
 
@@ -180,7 +180,7 @@ Everyone arriving here knows what Product-Led Growth means. This section says wh
 | This framework | Closest incumbent term | Relationship |
 |---|---|---|
 | **Turnkey** | Product-Led Growth | Overlapping, not equal. Turnkey is a condition of a market. Product-Led is a company's strategy, and it works under that condition. The two come apart when a Product-Led company moves upmarket. Security review arrives and the committee grows, so consensus is now in the way. Integration deepens, so the purchase is now built-in. The company still calls its motion Product-Led, and its instruments did not follow. Entry produces the same split with the company unchanged |
-| **Search-led** | Sales-Led Growth, category creation, evangelical selling | Search-led is wider. It also covers channel work, which Sales-Led does not |
+| **Search-led** | Category creation, evangelical selling, and the outbound half of Sales-Led Growth | Search-led is wider. It also covers channel work, which Sales-Led does not |
 | **Consensus-led** | The consensus sale (Schmidt, Adamson and Bird 2015), Gartner's consensus-creation job, Miller Heiman's buying influences, MEDDPICC-style qualification | The motion is already described and staffed. What is new is the label, and naming it for a cost |
 | **Implementation-led** | Implementation-Led Growth, forward-deployed engineering, solution selling | Direct. This framework was called ILG before the theory outgrew the name |
 | **Run together** | No established term | The industry treats motions as exclusive, so two costs in the way at once has no name |

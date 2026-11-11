@@ -14,7 +14,7 @@ version: 7.0
 > **This document states structure and no measured quantity.** It holds no equation, threshold or rate. The one piece of accounting it relies on, that price is a transfer between the two parties, is in [02-mathematical-models.md](./02-mathematical-models.md) sections 1.1 to 1.4.
 
 > [!NOTE]
-> **The rest of the repository matches 7.0** since the trim of 2026-11-10. Where a file and this document disagree, this document governs. The proposal that set out the trim is in git history: `git show 59ab41e:TRIM-PROPOSAL.md`.
+> **The rest of the repository was rewritten around 7.0** in the trim of 2026-11-10. Where a file and this document disagree, this document governs. The proposal that set out the trim is in git history: `git show 59ab41e:TRIM-PROPOSAL.md`.
 
 Version history is at the end of this document.
 
@@ -217,6 +217,7 @@ Versions 1.0 to 3.0, and the nineteen revisions made under the earlier name, are
 - [01-motions.md](./01-motions.md)
 - [02-mathematical-models.md](./02-mathematical-models.md)
 - [03-glossary-and-notation.md](./03-glossary-and-notation.md)
+- [06-calibration.md](./06-calibration.md)
 - [07-open-questions.md](./07-open-questions.md)
 
 **Academic backing:** [00-reading-guide.md](../02-research/00-reading-guide.md) maps each research file to what it backs.

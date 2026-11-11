@@ -42,7 +42,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 ### Definitions
 
-*Market* and *deal* keep their ordinary meanings.
+A *market* is the buyers who call a problem by one name, and a *deal* is one buyer's purchase.
 
 | Term | Identifier | Canonical source |
 |---|---|---|
@@ -62,6 +62,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 |---|---|---|
 | **Search-led, consensus-led, implementation-led** | The three motions, each named for the cost it carries. Two costs in the way are run together. | [01-motions.md](./01-motions.md) section 3 |
 | **Relay model** | One role per funnel stage, each with a fixed playbook, and pay on bookings. The right motion for a Turnkey market. | [01-motions.md](./01-motions.md) section 6 |
+| **The cost in the way** | Which of the three costs stops buyers in a market, or stops one deal. Claim 2 reads it for a market, and the triage reads it for a deal. | [Constitution, claims 1 and 2](./00-tcg-constitution.md), [Deal Triage Calculator, Step 4](../../practice/deal-triage-calculator.md) |
 | **Floor** | The part of a cost set outside any deal, which falls only through something shared across deals. | [Constitution, claim 4](./00-tcg-constitution.md), [information-environment.md](../02-research/information-environment.md) |
 | **Costly signal** | A commitment that costs a weak seller more than a strong one, so it tells them apart. | [costly-signals.md](../02-research/costly-signals.md) |
 | **Cheap talk** | A claim any seller could make at no cost. It carries no information and adds to the buyer's work. | [costly-signals.md](../02-research/costly-signals.md) |
@@ -100,7 +101,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 | **Red Team** | The pre-mortem workshop. | [Enforcement Ledger, Test](../../practice/enforcement-ledger.md) |
 | **Mutual Implementation Plan (MIP)** | The staged plan both sides agree before either builds. | [Enforcement Ledger, Stage](../../practice/enforcement-ledger.md) |
 | **Sustaining Adoption Review** | The handoff, the standing review and renewal, after signature. | [Sustaining Adoption Review](../../practice/adoption-review.md) |
-| **Vested Commission** | Pay that waits on what happens after signature. Claim 5 says when it applies. | [Constitution, claim 5](./00-tcg-constitution.md) |
+| **Vested Commission** | Pay that waits on what happens after signature. The term is the research file's. Claim 5 says when such pay applies and does not use the name. | [game-theory-and-nrr.md](../02-research/game-theory-and-nrr.md), [Constitution, claim 5](./00-tcg-constitution.md) |
 
 ### External frameworks
 
@@ -112,7 +113,7 @@ One line each, then the canonical source. The line identifies the term. The sour
 
 ### Retired terms
 
-Kept so older analyses stay readable. Do not use these in new writing. Files that have not yet had their pass in the trim still use the 7.0 retirements.
+Kept so older analyses stay readable. Do not use these in new writing.
 
 <!-- vale TCG.RetiredTerms = NO -->
 **Retired in Constitution 7.0**
@@ -159,7 +160,7 @@ Kept so older analyses stay readable. Do not use these in new writing. Files tha
 
 ## Notation
 
-Constitution 7.0 holds no equation. The only symbols left in the theory are the ones in [02-mathematical-models.md](./02-mathematical-models.md) sections 1.1 to 1.4, which defines each where it uses it. The ledgers in `practice/` define the symbols they still use.
+Constitution 7.0 holds no equation. The only symbols left in the theory are the ones in [02-mathematical-models.md](./02-mathematical-models.md) sections 1.1 to 1.4, which defines each where it uses it. No instrument in `practice/` uses a symbol.
 
 The notation index and the symbol disambiguation that stood here described the retired math. Both are in git history: `git show 0e13ebf:theory/01-foundation/03-glossary-and-notation.md`.
 

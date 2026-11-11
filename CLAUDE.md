@@ -48,7 +48,7 @@ Read before editing:
 - **Before extending the theory**: `theory/01-foundation/07-open-questions.md`. An extension should land on a recorded gap or add one.
 
 <!-- vale TCG.RetiredTerms = NO -->
-Older analyses and git history use readings Constitution 4.0 retired: the friction vector, the summed 0-to-30 level, the Structural deal class, the coefficient 2.25, and the market states. Constitution 7.0 retired the old time labels, where "time 0" was the deal and "time 1" the relationship, along with positions, the gate and the two conditions as equations in the Constitution. `01-motions.md` and the Constitution's version history record what replaced them.
+Older analyses and git history use readings Constitution 4.0 retired: the friction vector, the summed 0-to-30 level, the Structural deal class, the coefficient 2.25, and the market states. Constitution 7.0 retired the old time labels, where "time 0" was the deal and "time 1" the relationship, along with positions, the gate and the two conditions as equations in the Constitution. The glossary's retired-terms tables and the Constitution's version history record what replaced them.
 <!-- vale TCG.RetiredTerms = YES -->
 
 ## The one piece of accounting
