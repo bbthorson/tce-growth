@@ -1,6 +1,6 @@
 # Source Quotes
 
-Citable passages, collected from the research files so the theory directory carries argument and this one carries material for writing. Two kinds sit here. Quoted lines are the source's own words and should be cited as such. Unquoted lines are this framework's compression of a source and should be presented as ours. Statistics are not here. Every number lives in the [citation provenance audit](../../theory/02-research/audits/citation-provenance-audit.md), with its verification status, and nothing should be quoted from memory.
+Citable passages, collected from the research files so the theory directory carries argument and this one carries material for writing. Three kinds sit here. A quoted line that names its author is that author's words and is cited as such. Any other quoted line is this framework's own earlier wording, kept for the phrasing: present it as ours, and never attribute it to the authors of the file it sits under. Unquoted lines are this framework's compression of a source and are presented as ours. Statistics are not here. Every number lives in the [citation provenance audit](../../theory/02-research/audits/citation-provenance-audit.md), with its verification status, and nothing should be quoted from memory.
 
 ---
 
@@ -44,7 +44,7 @@ Citable passages, collected from the research files so the theory directory carr
 
 - The proposal is evaluated once per stakeholder, against a different objective each time, and it must survive all of them.
 - A saboteur is usually not irrational. They are optimizing a scorecard the seller never read.
-- Committee size sets the least the bargaining cost can be. Goal conflict sets how high it goes.
+- Committee size sets the least the consensus cost can be. Goal conflict sets how high it goes.
 
 ## Costly signals
 
@@ -60,17 +60,14 @@ Citable passages, collected from the research files so the theory directory carr
 
 - "The pain of losing $1,000 is significantly greater than the pleasure of gaining $1,000."
 - "The single largest competitor in complex B2B sales is not a rival firm, but 'No Decision,' the decision to maintain the status quo."
-- "To overcome 1 unit of Risk, the vendor must provide approximately 2.25 units of ROI."
 - "Stop selling the upside and start solving for the fear."
-
-The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coefficient, so do not present it as one.
 
 ## Fear of failure
 
 *From [fear-of-failure.md](../../theory/02-research/fear-of-failure.md).*
 
 - "The primary barrier to revenue is not the competitor's feature set; it is the buyer's calculation of risk."
-- "High-pressure (FOMO) tactics increase the likelihood of losing the deal by 84% when the buyer is indecisive."
+- Pressing an indecisive buyer with urgency backfires. The share is in the provenance audit.
 - "Organizations are so consumed by servicing the debt of previous failures that they lack the bandwidth to innovate."
 
 ## Real options
@@ -78,7 +75,7 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 *From [fear-of-failure.md](../../theory/02-research/fear-of-failure.md), section 3.*
 
 - The status quo is not inertia. It is an option the buyer currently holds and the seller is asking them to give up.
-- A buyer who says "not yet" is often pricing the option to wait correctly. The counter is to make waiting cost something.
+- A buyer who says "not yet" is often pricing the option to wait correctly. The counter is to shrink what has to be committed before the buyer knows.
 - Staging does not reduce the work. It reduces how much of the work must be committed before the buyer knows whether it will succeed.
 
 ## Game theory and retention
@@ -94,7 +91,7 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 *From [channel-collapse.md](../../theory/02-research/channel-collapse.md).*
 
 - "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." (Jevons, 1865)
-- A channel mismatch, using a Jevons-vulnerable channel for a buyer whose sale starts at a different cost, means the seller is fighting both channel-level congestion and structural irrelevance.
+- A channel mismatch, using a crowded channel for a buyer with a different cost in the way, means the seller is fighting both the crowd and its own irrelevance.
 
 ## Implementation science
 
@@ -118,14 +115,14 @@ The 2.25 ratio is the source's. Constitution 4.0 retired it as a framework coeff
 
 - Specificity predicts governance. Uncertainty mostly does not.
 - Governance designed around opportunism can produce the opportunism it assumes. Build the arrangement honest parties can say yes to.
-- Buyers under-price lock-in at signing and pay for it later.
+- Buyers are argued to under-price lock-in at signing and pay for it later. A buyer that sees it coming prices it before it signs.
 
 ## Buyer cost neighbors
 
 *From [buyer-cost-neighbors.md](../../theory/02-research/buyer-cost-neighbors.md).*
 
-- Most of TCG is synthesis. The gate, the expected position against the actual one, Turnkey's erosion and the directional seller limit are its own.
-- The costs add. A prohibitive one is not bought back by savings on the others.
+- Most of TCG is synthesis. Four things look like its own: the question asked by kind of cost, the cost a buyer expects against the cost it would meet, Turnkey's erosion, and a seller's reach set by the cost it is built to carry.
+- The costs add, and a large enough gain or someone else doing the work can offset one.
 - Price is a transfer. That is standard economics and not yet standard sales practice.
 
 ## Cost floors

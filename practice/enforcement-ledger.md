@@ -151,7 +151,7 @@ An item built without cover is claim 12's failure, something specific built with
 
 ---
 
-## Scoring sheet
+## Record sheet
 
 | Field | Value |
 |---|---|

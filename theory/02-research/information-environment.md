@@ -61,7 +61,7 @@ The cost floor for consensus is the buyer's rules: procurement rules, spend thre
 
 Ouchi separates two sources of exchange cost. Goal incongruence means the parties want different things. Performance ambiguity means nobody can tell how well a task was done. Most disagreement inside a buying coalition is goal incongruence. Two decision roles with different budgets and exposures should judge differently, and the Constitution already says so. Treating that disagreement as noise would relabel rational opposition as an error to clean up.
 
-Noise in Kahneman, Sibony and Sunstein's sense is narrower. It is unwanted variation among judges who should agree, so it applies to factual questions such as whether a product will integrate or what it will cost. That variance belongs to one buyer's process, it differs across buyers, and a seller can lower much of it by supplying structured evidence and independent estimates. It sits closer to the deal-specific gap than to a cost floor. The cost floor in this section is the institutional rule set, not the judgment variance.
+Noise in Kahneman, Sibony and Sunstein's sense is narrower. It is unwanted variation among judges who should agree, so it applies to factual questions such as whether a product will integrate or what it will cost. That variance belongs to one buyer's process, it differs across buyers, and a seller can lower much of it by supplying structured evidence and independent estimates. It belongs to one deal more than to a cost floor. The cost floor in this section is the institutional rule set, not the judgment variance.
 
 ## 3. Implementation: the measurement environment
 
@@ -87,7 +87,7 @@ A seller in one deal cannot recover the cost of lowering a floor. Parties who sp
 
 Williamson (1991) treats the institutional environment as a set of parameters that shift the comparative cost of governance, including property rights, contract law, reputation effects and uncertainty. Parties to one transaction do not choose them. They choose the governance form inside them. A cost floor is a shift parameter in this sense, which places the hypothesis inside transaction cost economics and not beside it. [Transaction Cost Economics](transaction-cost-economics.md) holds the Dahlman root this builds on.
 
-Grossman and Stiglitz, and Black, add a point about why environmental noise persists. In their markets a participant cannot remove noise, and a market with no noise would pay nobody to become informed. The cost floor is also what makes paying down the deal-specific gap pay. A seller who invests in proof earns a return because buyers cannot get the same information free.
+Grossman and Stiglitz, and Black, add a point about why environmental noise persists. In their markets a participant cannot remove noise, and a market with no noise would pay nobody to become informed. The cost floor is also what makes it pay to lower the part of a cost that belongs to one deal. A seller who invests in proof earns a return because buyers cannot get the same information free.
 
 ## 6. Counter-evidence and limits
 
@@ -97,13 +97,13 @@ Grossman and Stiglitz, and Black, add a point about why environmental noise pers
 - **Weak support for two cases.** The consensus floor is mostly institutional, not informational, and doubt about fit before the sale is not a cost floor. The strongest cases are search, and implementation after the sale.
 - **AI buying agents may break the link between entry and the search cost floor.** Shahidi and coauthors describe agents that search, negotiate and transact for principals, lowering search, communication and contracting costs while adding congestion and obfuscation of prices. If agents screen vendors, more entrants need not mean more buyer effort. Turnkey would then erode through signals that all sound alike and not through the buyer's search effort. This is item 35 in [06-calibration.md](../01-foundation/06-calibration.md).
 - **More sellers do not reliably raise a buyer's burden.** Choice overload averages near zero across studies (Scheibehenne, Greifeneder and Todd). High search cost protects incumbents (Honka). A comparison site lowered prices and did not raise participation (Brown and Goolsbee). Claim 3's line that entry raises every buyer's search cost holds where entrants' claims sound alike and no intermediary sorts them.
-- **A rule moves share toward those who had met it.** After the European privacy regulation took effect, websites dropped part of their technology vendors and concentration among the vendors rose (Johnson, Shriver and Goldberg). That is the direction claim 4's second sentence predicts.
+- **After a rule, vendors concentrate.** After the European privacy regulation took effect, websites dropped part of their technology vendors and concentration among the vendors rose (Johnson, Shriver and Goldberg). That is consistent with claim 4's second sentence and does not test it, because the claim is about sellers that had met the rule beforehand.
 
 ## Supports in TCG
 
 - **Claim 4.** The whole file. Section 5 places the floor inside transaction cost economics, and section 6 holds the limits.
-- **Claim 3.** Section 1 is why a market that is cheap to enter fills with claims that all sound alike, and why a new seller inherits its category's record. Section 4 is why a certifier or middleman helps only when it loses something by passing a bad seller.
-- **Claim 12.** Section 3 is why a guarantee on an outcome nobody can attribute is costly, whatever proof the seller adds.
+- **Claim 3.** Section 1 is why a market that is cheap to enter fills with claims that all sound alike, and why a new seller inherits its category's record. Section 4 is why a middleman can afford expertise only across many deals, and why a certifier's own incentive is to reveal little.
+- **Claim 8.** Section 3 is why a guarantee on an outcome nobody can attribute is costly, whatever proof the seller adds. Whether anyone can attribute an outcome is the third part of claim 4's floor.
 - **Open question 34.** A floor and a belief show the same sign. This file describes the floor and offers no test that tells the two apart.
 
 ## Related

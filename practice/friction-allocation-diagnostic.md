@@ -29,7 +29,7 @@ A signal too cheap to separate a strong seller from a weak one is *cheap talk*: 
 
 **Where a failure lands.** In Test, evidence that fails leaves the row without the skeptic's verdict, so the row stays open on the buyer's side. In the search ledger, the cell is marked as a claim. For [open question 45](../theory/01-foundation/07-open-questions.md)'s cost-of-sale tagging, a pass would tag the activity as verification and a failure as persuasion, unless the activity lowered the cost at Time2.
 
-**Signals screen before signature and are re-earned after it.** A deal that closed on evidence that was sound and current, and then failed, is a failure after signature, read in the Enforcement Ledger's Stage column and the [Sustaining Adoption Review](./adoption-review.md).
+**Signals screen before signature and are re-earned after it.** A deal that closed on evidence that was sound and current, and then failed, is a failure after signature, read against the Enforcement Ledger's staged plan in the [Sustaining Adoption Review](./adoption-review.md).
 
 ---
 
@@ -45,7 +45,7 @@ Run all four and record every failure. Fix them in this order, because a signal 
 
 | What limits it | Result |
 |---|---|
-| Production cost: drafting time, sends, tooling | **Fails.** Competitors' tools remove the cost, weak sellers copy the signal, and the category *pools*, meaning buyers can no longer tell sellers apart and judge them all by the average ([02-mathematical-models.md](../theory/01-foundation/02-mathematical-models.md) section 5.8). |
+| Production cost: drafting time, sends, tooling | **Fails.** Competitors' tools remove the cost, weak sellers copy the signal, and the category *pools*, meaning buyers can no longer tell sellers apart and judge them all by the average. |
 | Expertise shown on the buyer's own problem | Passes |
 | A relationship someone stakes, such as a named reference | Passes |
 | Time and presence, such as a site visit | Passes |

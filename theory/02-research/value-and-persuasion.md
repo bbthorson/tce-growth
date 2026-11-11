@@ -46,7 +46,7 @@ The last four sources reached the repository through a research review on 2026-1
 - Anchoring, framing and decoy effects shrink with expertise, information, comparators and group review, and they do not vanish.
 - Evidence that narrows the buyer's range lowers the search cost. A claim that moves the estimate without narrowing the range is persuasion.
 - An inflated expectation is punished only when delivery makes the gap visible to the buyer.
-- A discount selects buyers who retain worse, and representatives concede price to suit their pay.
+- Customers acquired on a deeper discount have been found to retain worse, for a cause nobody here has checked. Representatives concede price to suit their pay.
 - Preferences for unfamiliar, complex purchases may be constructed during evaluation. This is the strongest objection.
 
 ## 1. Beliefs move, and value for a given offer does not
@@ -68,7 +68,7 @@ The largest business anchoring effect is the first offer, and it decides where i
 
 ## 3. The test: narrowing the range
 
-A buyer rarely holds one number for what a change is worth. It holds a range. Gilboa and Schmeidler model a buyer who values an ambiguous prospect at its worst plausible case. For that buyer, evidence that shrinks the range raises the valuation even when the midpoint stays put. A seller can therefore raise what a buyer will pay by information alone, and TCG counts that as search cost carried, which is why documented value selling works in its terms. Fox and Tversky find that aversion to ambiguity appears when a clearer comparison is available, and a competitive evaluation always supplies one.
+A buyer rarely holds one number for what a change is worth. It holds a range. Gilboa and Schmeidler model a buyer who values an ambiguous prospect at its worst plausible case. For that buyer, evidence that shrinks the range raises the valuation even when the midpoint stays put. A seller can therefore raise what a buyer will pay by information alone, and TCG counts that as search cost carried, which is why documented value selling works in its terms. Fox and Tversky find that aversion to ambiguity appears when a clearer comparison is available, and a competitive evaluation usually supplies one.
 
 Beauchêne, Li and Li add a warning: a seller can profit from creating ambiguity as well as from reducing it. So the working test is narrowing. A seller's act lowers search cost when it shrinks the buyer's range for this buyer by evidence the buyer can check, such as a pilot on its own data, a reference in the same situation or a guarantee tied to the outcome. It is persuasion when it moves the estimate or the decision and leaves the range as wide as it was. Hinterhuber's study of industrial sellers fits: quantifying value helps a firm's performance more where value is stable.
 
@@ -76,7 +76,7 @@ Beauchêne, Li and Li add a warning: a seller can profit from creating ambiguity
 
 Research on expectation and disconfirmation says satisfaction depends on what the buyer expected and on whether performance met it (Oliver, Anderson). A 2026 meta-analysis attributed to Schiebler, Lee and Brodbeck, not yet checked at the primary, reportedly finds that higher expectations go with higher reported satisfaction on average. Most of that evidence is from consumers.
 
-So a seller who inflates the estimate is not automatically punished. The penalty needs the buyer to see the gap between promise and delivery. Where the outcome stays unmeasurable to the buyer, the inflated estimate can persist. That is why claim 10's review reads the result in the buyer's own numbers.
+So a seller who inflates the estimate is not automatically punished. The penalty needs the buyer to see the gap between promise and delivery. Where the outcome stays unmeasurable to the buyer, the inflated estimate can persist. That is why the Adoption Review reads the result in the buyer's own numbers.
 
 Belief can also raise effort. Shiv, Carmon and Ariely find that expectations set by price changed task performance, and McNatt's meta-analysis finds that a manager's expectations change what subordinates do. A convinced champion who works harder at adoption raises what the buyer captures. TCG counts that as the buyer's own investment, which the seller bought with belief.
 
@@ -86,9 +86,9 @@ Changing the offer changes value. Scope, bundling and committed services alter w
 
 ## 6. Discounts, advertising and pay
 
-- **A discount selects buyers.** At a newspaper and an online grocer, Lewis finds that customers acquired on deeper discounts bought again less and were worth less over time. Datta, Foubert and van Heerde report the same direction for customers acquired on free trials. Claim 8 cites Lewis for the direction only. Whether the cause is selection or the step up to full price is unchecked, and the [citation audit](./audits/citation-provenance-audit.md) says so.
+- **Discounted customers retain worse.** At a newspaper and an online grocer, Lewis finds that customers acquired on deeper discounts bought again less and were worth less over time. Datta, Foubert and van Heerde report the same direction for customers acquired on free trials. Claim 8 cites Lewis for the direction only. Whether the cause is selection or the step up to full price is unchecked, and the [citation audit](./audits/citation-provenance-audit.md) says so.
 - **Persuasion changes welfare.** Bagwell surveys three views of advertising: informative, persuasive and complementary. Under the second and third, advertising changes welfare in either direction. In one study the survey reports, Ackerberg's, measured effects were mostly informative. Persuasion costs the pair what the seller spends on it.
-- **Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor of 6 to 8 percent of revenue. That backs claim 5, and it is why the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) dates every reading before the seller invests.
+- **Representatives follow their pay.** Larkin finds enterprise software representatives timing deals and granting price concessions to suit a nonlinear commission plan, at a cost to the vendor. That backs the third standing assumption, that a role acts on its own payoff. It shows pay steering what representatives do, which claim 5 relies on, and it does not test claim 5's rule for how to pay. It is also why the [Deal Triage Calculator](../../practice/deal-triage-calculator.md) dates every reading before the seller invests.
 
 ## 7. The strongest objection
 
@@ -110,10 +110,10 @@ No peer-reviewed study links unverified claims before a sale to churn, renewal o
 
 ## Supports in TCG
 
-- **The second standing assumption.** Sections 1 and 5 are its evidence, and section 7 is the objection that survives.
+- **The second standing assumption.** Sections 1 and 5 are the evidence for its first half, and section 7 is the objection that survives. Nothing here bears on its second half, that a buyer's reason to act fades.
 - **The premise.** Only evidence the other side can check changes what it expects. Section 3 is the test.
-- **Claim 3.** A claim that moves an estimate without narrowing the range is the cheap claim that raises every buyer's search cost.
-- **Claims 5 and 8.** Section 6.
+- **Claim 3.** Section 3's test is a neighbor of claim 3's and not the same one. Claim 3 asks what a signal cost its sender. Section 3 asks whether the buyer can check it.
+- **Claim 8, and the third standing assumption behind claim 5.** Section 6.
 - **Claim 10.** Section 4 says when a buyer notices that the product did not work here.
 
 ## Related

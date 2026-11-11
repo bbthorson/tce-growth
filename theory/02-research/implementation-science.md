@@ -29,14 +29,14 @@ canonical_source: theory/01-foundation/00-tcg-constitution.md
 - The inner setting, meaning the organization's structure, networks, culture and climate, decides fit and how much change the organization can take.
 - The characteristics of individuals, such as belief in their own ability and identification with the organization, explain resistance person by person.
 - Agreement on the problem and the solution has to come before action (Klandermans).
-- Resistance is information. A vocal detractor exposes a real constraint on the implementation.
-- Software fails after signature on reach, adoption or fidelity more often than on technology. Pendo found that 80% of features in the average product are rarely or never used.
-- Retention is the last of RE-AIM's dimensions to move. The other four fail first.
+- Read through these domains, resistance is information: a vocal detractor exposes a real constraint on the implementation. That reading is the framework's, and no source here tests it.
+- Applied to software, RE-AIM puts failure after signature in reach, adoption and fidelity as well as in the technology. One figure fits: Pendo found that 80% of features in the average product are rarely or never used.
+- Maintenance is the last of RE-AIM's five dimensions. The framework reads net revenue retention as the lagging sign of the other four, which no source here establishes.
 
 ## Supports in TCG
 
-- **Claim 10.** RE-AIM is the value reading in the [Sustaining Adoption Review](../../practice/adoption-review.md). The review reads Reach, Adoption and Effectiveness directly, and reads implementation fidelity and maintenance as fit drift and stale evidence. The order in which the dimensions fail is why claim 10 says failure shows first as stalled use and contraction and only later as an exit.
-- **Claim 7.** CFIR's inner setting and characteristics of individuals are what each decision role's objection is made of. "Resistance is information" is the reason the seller invites the organization's scrutiny before anyone signs.
+- **Claim 10.** RE-AIM is the value reading in the [Sustaining Adoption Review](../../practice/adoption-review.md). The review reads Reach, Adoption and Effectiveness directly, and reads implementation fidelity and maintenance as fit drift and stale evidence. Claim 10 expects failure to show first as stalled use and contraction and only later as an exit, so the review reads the dimensions in that order. The order is a hypothesis, recorded as open question 62.
+- **Claim 7.** CFIR's inner setting and characteristics of individuals are what each decision role's objection is made of. Reading resistance as information is the framework's reason for inviting the organization's scrutiny before anyone signs.
 - **Claims 2 and 6.** CFIR's compatibility is how settled and how entangled the workflow is. Its trialability is claim 6's first test, whether the buyer can run the product on its real work.
 - The section below says where each construct is read in the instruments.
 
@@ -50,12 +50,12 @@ CFIR names why an implementation succeeds in one organization and fails in anoth
 | Networks and Communications, Structural Characteristics | Inner Setting | [Bargaining Ledger](../../practice/bargaining-ledger.md), the rows and the private map's "Reached by" column | The decision roles each step and each of the buyer's rules brings, and which roles the seller reaches only through the champion |
 | Culture, Compatibility (with norms) | Inner Setting | Enforcement Ledger, Map | Rows marked "surfaces in use", filled by the [Sustaining Adoption Review](../../practice/adoption-review.md) |
 | Implementation Climate, Learning-Centeredness | Inner Setting | Enforcement Ledger, Map | Previous attempts, and why each failed |
-| Available Resources | Inner Setting | Enforcement Ledger, Map and Stage | The buyer invests first, and each gate names an owner on each side |
+| Available Resources | Inner Setting | Enforcement Ledger, the resource rows, Map and Stage | The people and hours the buyer commits, the buyer investing first, and an owner on each side of every Stage row |
 | Self-Efficacy, Knowledge and Beliefs, Individual Identification | Characteristics of Individuals | Bargaining Ledger, the private decision-role map | Each occupant's reservation, stated one to one, and the term that answers it |
 | Compatibility (with workflow) | Intervention Characteristics | [Deal Triage Calculator](../../practice/deal-triage-calculator.md), Steps 2 and 3 | How settled the workflow is, and the divergent steps counted when the product must fit a written workflow |
 | Trialability | Intervention Characteristics | Deal Triage Calculator, Step 3, the three plug-in tests | Whether the buyer can try the product on its own work and reverse the decision. Where it can, the purchase is plug-in, nothing specific is built, and the Enforcement Ledger does not run. |
 | Engaging | Process | Enforcement Ledger, Test | The skeptic, the person the integration lands on, judges every row |
-| Planning, Executing | Process | Enforcement Ledger, Stage | Gates, each with a risk bearer and a priced right to stop |
+| Planning, Executing | Process | Enforcement Ledger, Stage | Gates, each with a named risk carrier and a priced right to stop |
 | Reflecting and Evaluating | Process | Sustaining Adoption Review | The working review and the RE-AIM value reading |
 
 **Not read by any instrument.** *Relative Priority* has no row: the deal record dates the economic event, and nothing reads how fast its urgency fades. *Cosmopolitanism*, how far the buyer benchmarks against outside peers, has no row. Neither has a decision that turns on it yet, so neither is a gap to fill until one does.

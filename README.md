@@ -6,7 +6,7 @@
 
 ## What is TCG?
 
-Buying costs more than money. Finding a seller to trust, getting your own organization to agree, and making the product work in your own environment are three separate bills. The field calls them *search*, *consensus* and *implementation*.
+Buying costs more than money. Finding a seller to trust, getting your own organization to agree, and making the product work in your own environment are three separate bills. The framework calls them *search*, *consensus* and *implementation*.
 
 > **The kind of cost in the buyer's way decides how to sell. Most teams pick a playbook because it is in fashion, and run it whatever the buyer faces.**
 

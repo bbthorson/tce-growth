@@ -106,7 +106,7 @@ Where this seller's own product sets the cost, lowering it is a product decision
 
 ## Step 5: Is the seller built for this cost, and does it pay for it?
 
-Claim 5 says a seller reaches only the buyers whose cost it is built to carry. For the cost in the way, both where two tie, name who does each piece of work today. Work counts as present when a named person or team does it now. Someone who could do it does not count.
+Claim 5 says a seller reaches only the buyers whose cost it is built to carry. For each cost in the way, name who does each piece of work today. Work counts as present when a named person or team does it now. Someone who could do it does not count.
 
 | Cost in the way | The work the motion needs | Who does it today |
 |---|---|---|
@@ -177,7 +177,7 @@ All four are recorded in [07-open-questions.md](../theory/01-foundation/07-open-
 
 ---
 
-## Scoring sheet
+## Record sheet
 
 | Field | Value |
 |---|---|
