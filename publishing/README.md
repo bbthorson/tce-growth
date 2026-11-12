@@ -13,6 +13,10 @@ The content-production toolkit:
 - **Generators** for long-form and short-form posts (multi-phase workflows)
 - **Style references**, published examples to calibrate against
 
+### [drafts/](./drafts/)
+
+Pieces not yet published. Each ends with notes on what it still needs. A published piece moves to the style references, verbatim.
+
 ## Content pillars
 
 Six recurring arguments, two at each of the three times in the [Constitution](../theory/01-foundation/00-tcg-constitution.md). Every public piece advances at least one. The main point sits in the first: the kind of cost in the way should decide how you sell, and most teams sell one way regardless.
